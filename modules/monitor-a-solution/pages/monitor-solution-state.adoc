@@ -1,0 +1,33 @@
+= Monitor Solution State
+
+TigerGraph Cloud allows you to view detailed operational data on a running solution, such as CPU usage, RAM usage and, and disk and network IO data.
+
+[discrete]
+=== 1. Navigate to My Solutions
+
+After https://tgcloud.io/[logging into TigerGraph Cloud], go to *My Solutions*.
+
+image::../../.gitbook/assets/image%20%2838%29%20%287%29%20%285%29.png[]
+
+[discrete]
+=== 2. Click Solution Details
+
+Find the solution you want to monitor, and click on the Solution Details icon on the right side of the same row.
+
+image::../../.gitbook/assets/image%20%2830%29.png[]
+
+[discrete]
+=== 3. Click Monitor
+
+Click the *Monitor* tab.
+
+image::../../.gitbook/assets/image%20%2873%29.png[Click monitor]
+
+This will bring you a brief summary of your solution:
+
+image::../../.gitbook/assets/image%20%2818%29.png[]
+
+[discrete]
+=== 4. Click Open Monitor
+
+Click *Open Monitor* to view more detailed statistics of your solution by https://learn.netdata.cloud/docs[Netdata monitor].

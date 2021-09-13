@@ -1,0 +1,10 @@
+= Manage Your TigerGraph Cloud Account
+
+== Reset your TigerGraph Cloud account password
+
+. Go to https://tgcloud.io[TigerGraph Cloud login portal].
+. Click *Login / Register*
+. Click *Don't remember your password?*
+. Enter your email address. If you signed up using an identity provider, use the email address associated with your account with the identity provider. Click *SEND EMAIL*.
+. Go to your email inbox, and find an email titled *Reset your password*. Click on the link in the email
+. Enter your new password.

@@ -1,0 +1,168 @@
+= Getting Started
+
+== Overview
+
+TigerGraph Cloud offers an easy way to analyze and query your graph data in the cloud. This tutorial guides you through creating your TigerGraph Cloud account, provisioning a free-tier TigerGraph Cloud Solution, and logging into GraphStudio.
+
+*Watch* https://www.youtube.com/watch?v=JARd9ULRP_I&feature=youtu.be[*Quick Start Video*] *and Start Your TigerGraph Cloud Solutions in 5 Minutes!*
+
+== Create a TigerGraph Cloud account
+
+Go to the https://tgcloud.io/[TigerGraph Cloud landing page].
+
+You can create a TigerGraph Cloud account with a Google account, a LinkedIn account, or an email address.
+
+{% tabs %}
+{% tab title="Email" %}
+
+. Click *Login/Register*.
+. Click *Sign Up*.
+. Enter your email and password.
+. A verification email with the subject "Verify your email" will be sent to the email address you provided.
+. Go to your email inbox. Find the verification email and click *Confirm my account.*
+{% endtab %}
+
+{% tab title="Google" %}
+
+. Click *Login/Register.*
+. Click *Sign up.*
+. Click *Sign up with Google.*
+. Enter the password for your Google account.
+. Click *Next*.
+. Review and click the checkbox to accept the *Terms of Service* and the *Privacy Policy*.
+. Click *Submit*.
+. After being redirected back to TigerGraph Cloud, enter the information on the signup form and click the checkbox to accept TigerGraph's *Terms & Conditions* and *Privacy Policy*.
+. Click *Submit*.
+{% endtab %}
+
+{% tab title="LinkedIn" %}
+
+. Click *Login/Register.*
+. Click *Sign up.*
+. Click Sign up with LinkedIn.
+. Enter your LinkedIn credentials and click Sign in.
+. Review the Terms and Conditions and click *Allow*.
+. After being redirected back to TigerGraph Cloud, enter the information on the signup form and click the checkbox to accept TigerGraph's *Terms & Conditions* and *Privacy Policy*.
+. Click *Submit*.
+{% endtab %}
+{% endtabs %}
+
+== Log in to your TigerGraph Cloud account
+
+If you already created a TigerGraph Cloud account, sign in to your account:
+
+. Go to the https://tgcloud.io[TigerGraph Cloud landing page].
+. Click *Login / Register*.
+. Enter your email and password, or if you registered with an identity provider, select the correct provider and enter your credentials.
+. Click *Log In.*
+
+== *Create* a free-tier solution
+
+TigerGraph Cloud free-tier solutions (subject to link:reference/service-limits.md#free-tier-solution-limits[limits]) offer a small-scale analytics platform to store and query your graph data.
+
+{% hint style="warning" %}
+Free-tier solutions are for training, learning, and light scale proof of concept (POC) use cases and do not support backup and restore. For in-depth POCs, consider adding a valid payment method and use paid-tier solutions to access the backup and restore feature. +
+{% endhint %}
+
+[discrete]
+==== 1. Click *My Solutions*.
+
+After logging in, you will be directed to the dashboard page, on the right side of the page, click *My Solutions.*
+
+image::../.gitbook/assets/image%20%2838%29%20%287%29%20%282%29.png[TigerGraph Cloud Dashboard view]
+
+[discrete]
+==== *2. Click Create Solution.*
+
+On the *My Solutions* page, click *Create Solution.*
+
+image::../.gitbook/assets/screen-shot-2021-02-19-at-9.21.12-am.png[TigerGraph Cloud My Solutions view]
+
+[discrete]
+==== *3. Select TigerGraph version.*
+
+Not all TigerGraph versions that are offered on-prem are offered on TigerGraph Cloud. In the dropdown list, choose the version of TigerGraph you want to run.
+
+image::../.gitbook/assets/image%20%2840%29.png[]
+
+[discrete]
+==== *4. Select a starter kit.*
+
+TigerGraph Cloud Starter Kits are built with sample graph data schema, dataset, and queries focused on a specific use case ***to help you get started quickly*.** Most of our starter kits have a https://www.tigergraph.com/starterkits/[demo video] that walks you through the schema and the queries built for its use case. If you wish to proceed with your own schema and data, select *Blank.*
+
+image::../.gitbook/assets/image%20%2858%29%20%281%29%20%281%29.png[]
+
+After you have selected a starter kit, scroll down to the bottom of the page and click *Next*.
+
+[discrete]
+==== 5. Select _Cloud Provider_ and instance type.
+
+Currently, TigerGraph Cloud only supports free-tier solutions on AWS. Select *AWS* as your cloud provider and select *TG.Free* as your instance type.
+
+image::../.gitbook/assets/image%20%2857%29.png[Cloud platform and instance type options]
+
+*6. Select Region.*
+
+image::../.gitbook/assets/image%20%2847%29.png[Regions for AWS]
+
+[discrete]
+==== 7. Select disk size.
+
+Select *50 GB* for your disk size. Scroll down to the bottom of the page and click *Next*.
+
+image::../.gitbook/assets/image%20%2839%29.png[]
+
+[discrete]
+==== 8. Enter a name and a tag for your solution.
+
+You can enter any name for your solution. A solution name may contain alphanumerics, dashes, underscores, and spaces, and cannot be longer than 20 characters. A solution tag can be no longer than 40 characters and can contain any character.
+
+[discrete]
+==== 9. Set initial password.
+
+This is the initial password for the default link:security/#tigergraph-users[TigerGraph user] `tigergraph`. You can link:../ui/admin-portal/management/user-management.md#my-profile[change the password] later in Admin Portal.
+
+image::../.gitbook/assets/image%20%2819%29%20%281%29.png[]
+
+{% hint style="info" %}
+This initial password allows you to log into the database when your solution is in the ready state. If you forget this password, you will need to terminate and recreate the solution.
+{% endhint %}
+
+[discrete]
+==== 10. Enter a subdomain and description.
+
+Customize the subdomain for your solution. If this field is left blank, a random subdomain will be automatically generated for the solution.
+
+image::../.gitbook/assets/image%20%2850%29.png[]
+
+Enter an optional description of what your solution will be used for, and click *Next*.
+
+image::../.gitbook/assets/image%20%2827%29.png[]
+
+[discrete]
+==== 11. Confirm your settings.
+
+Confirm your settings and click *Submit.* You will be redirected back to the *My Solutions* view, and your solution will be ready in minutes.
+
+== Log in to GraphStudio
+
+After you have created your solution, it may take a few minutes for it to be ready. Once you see the status of your solution turn to "Ready", you can proceed to log into GraphStudio.
+
+[discrete]
+==== 1. Open GraphStudio for your solution.
+
+Go to My Solutions. Find the solution that is ready, click the blue Applications icon, and Click *GraphStudio*.
+
+image::../.gitbook/assets/image%20%2871%29.png[]
+
+[discrete]
+==== 2. Enter your credentials.
+
+Enter the initial password set during *Create Solution* for the default database user `tigergraph` and click *Login*. This is not your TigerGraph Cloud account email and password.
+
+image::../.gitbook/assets/image%20%2843%29.png[GraphStudio login page]
+
+[discrete]
+==== 3. You are now ready to use your free-tier TigerGraph Solution.
+
+You can learn how to use GraphStudio in our link:../ui/graphstudio/[GraphStudio UI guide].

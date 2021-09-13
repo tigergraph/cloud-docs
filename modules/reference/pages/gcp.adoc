@@ -1,0 +1,59 @@
+= Google Cloud Platform (GCP)
+
+== Regions
+
+* Oregon
+* London
+
+== Instance types
+
+|===
+| Instance name | vCPU | RAM (GiB) | Price per hour
+
+| TG.C4.M16
+| 4
+| 16
+| $1.20
+
+| TG.C8.M32
+| 8
+| 32
+| $2.20
+
+| TG.C16.M64
+| 16
+| 64
+| $4.10
+
+| TG.C16.M128
+| 16
+| 128
+| $7.00
+
+| TG.C32.M256
+| 32
+| 256
+| $12.20
+
+| TG.C64.M512
+| 64
+| 512
+| $22.00
+
+| TG.C80.M640
+| 80
+| 640
+| $25.00
+|===
+
+== Disk storage
+
+Disk storage on GCP uses https://cloud.google.com/compute/docs/disks#pdspecs[GCP's SSD persistent disks]. Encryption-at-rest is turned on with GCP's native encryption protocol with keys managed by GCP.
+
+Disk Storage is $0.25 /GB/month, equivalent to _**_$0.000347222 /GB/hour.
+
+== Backup storage
+
+Backup storage on GCP uses https://cloud.google.com/filestore[GCP Filestore].  Encryption-at-rest is turned on with GCP's native encryption protocol with keys managed by GCP.
+
+Backup storage is $2.1/GB/Month = $ 0.0029166 /GB/hour.

@@ -1,0 +1,135 @@
+= Release Notes
+
+== TigerGraph Cloud V3.6 - May 2021 Updates
+
+Release Date: May 17, 2021
+
+=== New Features
+
+* ✅Support TigerGraph V3.1.1 for New Solutions (Single Server)
+
+== TigerGraph Cloud V3.5 - March 2021 Updates
+
+Release Date: March 17, 2021
+
+=== New Features
+
+* ✅Support GCP (Google Cloud Platform) as one of the Cloud Platforms
+
+== TigerGraph Cloud V3.4 - March 2021 Updates
+
+Release Date: March 9, 2021
+
+=== New Features
+
+* ✅Add Azure Central India and South India Regions to Cloud Platforms
+
+== TigerGraph Cloud V3.3 - Feb 2021 Updates
+
+Release Date: February 17, 2021
+
+=== New Features
+
+* ✅Add Cloud Portal Self Guided Tour
+* ✅Support Minimum Disk Size Check During New Solution Provisioning Process
+
+== TigerGraph Cloud V3.2 - Dec 2020 Updates
+
+Release Date:  December 16, 2020
+
+=== New Features
+
+* ✅Pricing Change
+ ** Instance Pricing Change
+ ** Backup Pricing Change
+ ** Replica Pricing Change
+ ** New Data Transfer Cost (First 50GB free for 2 hour+ uptime per month )
+* ​✅Support TigerGraph V3.0.6 for New Solutions
+* ​​✅Support TigerGraph v2.6.4 for New Solutions
+* ✅Support replication factor of 3 for TigerGraph V3.0.6 clusters
+* ✅New TigerGraph Cloud Instance Type TG.C4.M16 available from AWS
+* ✅SOC2 Type 2 report available to request
+* ✅5 New TigerGraph Starter Kits
+ ** Graph Convolutional Networks (V3.0.6)
+ ** Healthcare Graph (Drug Interaction/FAERS) (V3.0.6)
+ ** Social Network Analysis (V2.6.4 and V3.0.6)
+ ** Enterprise Knowledge Graph (Corporate Data) (V2.6.4 and V3.0.6)
+ ** Enterprise Knowledge Graph (Crunchbase) (V2.6.4 and V3.0.6)
+
+== TigerGraph Cloud V3.1 - September 2020 Updates
+
+Release Date:  September 29, 2020
+
+=== Patch
+
+* ✅Patch TigerGraph V3.0.5 with GSQL Bug Fixes for New Solutions
+
+== TigerGraph Cloud V3.0 - September 2020 Updates
+
+Release Date:  September 17, 2020
+
+=== New Features
+
+* ✅Support TigerGraph V3.0.5 for New Solutions
+* ✅Support TigerGraph v2.6.3 for New Solutions
+* ✅Allow Users to choose  v2.6.3 or V3.0.5 at New Solution Provisioning
+
+== TigerGraph Cloud V2.2 - July 2020 Updates
+
+Release Date:  July 10, 2020
+
+=== New Features
+
+* ✅Support Microsoft Azure as one of the Cloud Platforms
+
+== TigerGraph Cloud V2.1 - April 2020 Updates
+
+Release Date:  April 27, 2020
+
+=== New Features
+
+* ✅Advanced Developer Tool: GSQL Web Shell for Non-Free Tiers
+* ✅TigerGraph Database Version Upgrades to TigerGraph 2.6 For New Instances
+* ✅Starter Kit Categorization at Solution Provisioning
+* ✅6 New TigerGraph Starter Kits
+ ** COVID-19 Starter Kit
+ ** In-Database Machine Learning Recommendation
+ ** Low-Rank Approximation Machine Learning
+ ** Graph Algorithms
+  *** Shortest Path
+  *** Centrality
+  *** Community Detection
+
+== TigerGraph Cloud V2.0
+
+Release Date: January 08, 2020
+
+=== New Features
+
+* ✅New product name: "TigerGraph Distributed Cloud"
+* ✅New URL: tgcloud.io
+* ✅Option to provision a TigerGraph Distributed Cluster
+* ✅Option to provision a Highly Available TigerGraph Cluster
+* ✅Added Steps in Cloud Portal Provision Workflow
+* ✅New TigerGraph Starter Kits
+
+== TigerGraph Cloud V1.0
+
+Release Date: September 25, 2019
+
+Deprecation Date: March 31, 2020 (See https://docs.tigergraph.com/tigergraph-cloud/tigergraph-cloud-v1-to-tigergraph-distributed-cloud-faqs)
+
+=== New Features
+
+* ✅Single Server Enterprise Edition
+* ✅Self-service Signup and Registration at tgcloud.us
+* ✅Free Credits for 1st Time Sign Up
+* ✅Available in 8 Tiers of Instances (Free Tier Included) and 6 Global Regions
+* ✅Flexible Billing and Pay As You Go Pricing
+* ✅Secure and Isolated Network (VPC) for Each TigerGraph Cloud Account
+* ✅Fast Data Loading through S3 and Local Files
+* ✅13 TigerGraph Starter Kits with Sample Datasets and Queries
+* ✅Start/Stop/Terminate TigerGraph Solutions On Demand through Cloud Portal
+* ✅Built-in Backup and Restore through TigerGraph Admin Portal
+* ✅Rich Metrics from System Monitoring Panel on Cloud Portal
+* ✅Convenient Application Development Through RESTful Endpoints

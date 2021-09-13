@@ -1,0 +1,35 @@
+= Service Limits
+
+By default, TigerGraph Cloud limits how many instances and how many vCPUs a single account can provision. These limits can be waived by request if you have a valid credit card on your account. To waive a service limit, please contact link:mailto:sales@tigergraph.com[sales@tigergraph.com].
+
+The table below outlines the service limits for accounts with and without a valid credit card.+++<table>++++++<thead>++++++<tr>++++++<th style="text-align:left">+++Service+++</th>+++
+      +++<th style="text-align:left">++++++<b>+++Accounts with a valid credit card+++</b>++++++</th>+++
+      +++<th style="text-align:left">++++++<b>+++Accounts without a valid credit card+++</b>++++++</th>++++++</tr>++++++</thead>+++
+  +++<tbody>++++++<tr>++++++<td style="text-align:left">++++++<b>+++Free Tier Solution +++</b>++++++</td>+++
+      +++<td style="text-align:left">+++1+++</td>+++
+      +++<td style="text-align:left">+++1+++</td>++++++</tr>+++
+    +++<tr>++++++<td style="text-align:left">++++++<b>+++Total Instance+++</b>++++++</td>+++
+      +++<td style="text-align:left">+++20+++</td>+++
+      +++<td style="text-align:left">+++2+++</td>++++++</tr>+++
+    +++<tr>++++++<td style="text-align:left">++++++<b>+++Total vCPU+++</b>++++++</td>+++
+      +++<td style="text-align:left">+++160+++</td>+++
+      +++<td style="text-align:left">+++16+++</td>++++++</tr>+++
+    +++<tr>++++++<td style="text-align:left">++++++<p>++++++<b>+++Cluster Size+++</b>++++++</p>+++
+        +++<p>+++(replication factor * partition factor)+++</p>++++++</td>+++
+      +++<td style="text-align:left">+++10 instances+++</td>+++
+      +++<td style="text-align:left">+++1+++</td>++++++</tr>+++
+    +++<tr>++++++<td style="text-align:left">++++++<b>+++Replication Factor+++</b>++++++</td>+++
+      +++<td style="text-align:left">+++2+++</td>+++
+      +++<td style="text-align:left">+++1+++</td>++++++</tr>+++
+    +++<tr>++++++<td style="text-align:left">++++++<b>+++Backup and Restore+++</b>++++++</td>+++
+      +++<td style="text-align:left">+++No+++</td>+++
+      +++<td style="text-align:left">+++Yes+++</td>++++++</tr>+++
+    +++<tr>++++++<td style="text-align:left">++++++<b>+++GSQL Web Shell Access+++</b>++++++</td>+++
+      +++<td style="text-align:left">+++No+++</td>+++
+      +++<td style="text-align:left">+++Yes+++</td>++++++</tr>++++++</tbody>++++++</table>+++
+
+== Free tier solution limits
+
+Each registered account is allowed one solution from the Free Tier. Free Tier instances do not include backup and do not include support.
+
+If no user activity is detected for more than one hour, TigerGraph may automatically stop a Free Tier instance. Users can manually restart the free tier instances from their cloud portal. After 7 days of inactivity, TigerGraph may terminate the inactive free tier instances.

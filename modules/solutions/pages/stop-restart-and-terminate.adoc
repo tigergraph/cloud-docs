@@ -1,0 +1,65 @@
+= Stop, Restart, and Terminate a Solution
+
+== Stop a solution
+
+When you stop a solution, you shut down the virtual machine instance. The TigerGraph database is frozen in its current state. Billing for that machine instance also stops. Scheduled backups also stop, but the backup copies are kept in EFS on AWS, Azure Files on Azure, and GCP Filestore on GCP. You will still incur charges for disk storage and backups when a solution is stopped. You can start the solution again. After a warm-up period, the solution will return to its previous state.
+
+Below are the steps to stop a solution
+
+=== 1. Navigate to My Solutions.
+
+image::../../.gitbook/assets/image%20%2838%29%20%287%29%20%281%29.png[]
+
+=== 2. Stop the solution.
+
+Find the solution you want to stop and click on the Solution Operations icon and click *Stop*.
+
+image::../../.gitbook/assets/image%20%2825%29.png[]
+
+== Restart a solution
+
+You can restart a stopped solution at any time. After a warm-up period, the solution will return to the state it was in when it was stopped.
+
+Below are the steps to restart a solution:
+
+=== 1. Navigate to My Solutions
+
+image::../../.gitbook/assets/image%20%2838%29%20%287%29%20%2811%29.png[]
+
+=== 2. Restart the solution.
+
+Find the stopped solution, and click the Solution Operations icon image:../../.gitbook/assets/screen-shot-2021-02-24-at-5.26.45-pm.png[], and in the dropdown list, click *Start*.
+
+image::../../.gitbook/assets/image%20%2845%29.png[]
+
+== Terminate a solution
+
+By terminating a solution, you deprovision the virtual machine and the attached disk storage. The solution is deleted according to the cloud platform's policies and cannot be recovered, so is everything in the attached disk storage.
+
+Below are the steps to terminating a solution.
+
+=== 1. Navigate to My Solutions.
+
+image::../../.gitbook/assets/image%20%2838%29%20%287%29%20%289%29.png[]
+
+=== 2. Terminate the solution.
+
+Find the solution you want to stop and click on the  Solution Operations icon and click *Terminate*.
+
+image::../../.gitbook/assets/image%20%2825%29.png[]
+
+== Archive a solution
+
+After a solution has been terminated, it can be archived so that it no longer shows up on the default view in the list of solutions.
+
+=== Archive a solution
+
+To archive a solution, click on the solution row in My Solutions to expand it and click the *Archived* toggle.
+
+image::../../.gitbook/assets/image%20%2855%29.png[]
+
+=== Show archived solutions
+
+To view archived solutions, click the settings icon to the right of the *Actions* column and toggle on *Show Archived* in the *Display Settings*.
+
+image::../../.gitbook/assets/image%20%2864%29.png[]

@@ -1,0 +1,29 @@
+= Access a Solution through GSQL Web Shell
+
+With a paid tier solution and a valid payment method, you can also access the solution through the GSQL Web Shell. The web shell allows you to run GSQL commands on your TigerGraph Cloud solution.
+
+== Open GSQL Web Shell
+
+=== 1. Navigate to My Solutions
+
+After https://tgcloud.io/[logging into TigerGraph Cloud], go to *My Solutions*.
+
+image::../../.gitbook/assets/image%20%2838%29%20%287%29%20%285%29.png[]
+
+=== 2. Click GSQL Access
+
+Find the solution you want to access, and click on the Admin Operations iconimage:../../.gitbook/assets/screen-shot-2021-03-03-at-3.48.43-pm.png[]. Click *GSQL Access* from the dropdown menu.
+
+image::../../.gitbook/assets/image%20%2837%29.png[]
+
+=== 3. Provide session information
+
+In the pop-up window, provide the username of the TigerGraph user you'd like to proceed with, and specify a validity period for the session. The GSQL Web Shell session will terminate after the validity period is over.
+
+image::../../.gitbook/assets/image%20%2823%29.png[Validity period and username]
+
+=== 4. Enter your password
+
+When the GSQL Web Shell opens, the shell will ask you for your password. Enter the password for the TigerGraph user whose username you just entered and press the enter key.
+
+image::../../.gitbook/assets/image%20%2841%29.png[GSQL Web Shell]

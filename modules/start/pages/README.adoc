@@ -1,0 +1,102 @@
+= TigerGraph Cloud
+
+TigerGraph Cloud is a fully-managed cloud database built on the same TigerGraph Enterprise Server engine that is delivering the fastest and most scalable graph database. TigerGraoh Cloud handles all the complexity of deploying and managing your deployments on the cloud service provider of your choice (AWS, Azure, and GCP).
+
+Most of the documentation for TigerGraph Enterprise Server also applies to TigerGraph Cloud.  However, since TigerGraph Cloud does not have a command-line interface on the OS level, command-line features are not supported in the same way. In many cases, we introduced a GUI-based method for the same feature. For advanced OS-level commands, submit a support ticket for more information.
+
+*Watch* https://www.youtube.com/watch?v=mOsfjst6Ahs&ab_channel=TigerGraph[*Quick Start Video*] *and Start Your TigerGraph Cloud Solutions in 5 Minutes!*
+
+== Get started with TigerGraph Cloud
+
+* link:getting-started.md#create-a-tigergraph-cloud-account[Create a free TigerGraph Cloud account]
+* link:getting-started.md#create-a-free-tier-solution[Create a free-tier TigerGraph Cloud solution]
+* link:access-solutions/[Access your TigerGraph Cloud solution]
+
+== Manage TigerGraph Cloud solutions
+
+* link:monitor-a-solution/[Monitor a solution]
+* link:../ui/admin-portal/management/security/[Security and user management]
+* xref:backup-and-restore.adoc[Backup and restore]
+
+== Billing
+
+* xref:billing/manage-payment-methods.adoc[Manage payment methods]
+* xref:billing/subscriptions.adoc[Cloud Marketplace subscriptions]
+
+== FAQs
+
+See the xref:tigergraph-cloud-faqs.adoc[TigerGraph Cloud FAQs] for answers to common questions.
+
+== Comparison with TigerGraph Enterprise Server
+
+|===
+| Topic | TigerGraph Enterprise Server | TigerGraph Cloud
+
+| GSQL Graph Algorithm Library
+| Yes
+| Installation not yet supported. Generated algorithms can be copied-and-pasted into the Write Queries code panel in GraphStudio
+
+| Release Notes
+| Yes
+| TigerGraph Cloud Provides Two Database Versions: V2.6.4 and V3.0.6
+
+| GSQL 101
+| Yes
+| Basic concepts still apply, most CREATE, INSTALL, LOAD, and RUN commands are replaced with the GraphStudio GUI-based approach.
+
+| GSQL 102 Pattern Matching
+| Yes
+| The same patterns can be used in queries.
+
+| MultiGraph Overview
+| Yes
+| Yes. Choose V3.0.6 in TigerGraph Cloud
+
+| Hardware and Software Requirements
+| Yes
+| N/A
+
+| Installation and Configuration
+| Yes
+| N/A. There are a few simple steps to install a Starter Kit.  See the TigerGraph Cloud FAQs.
+
+| User Access Management
+| Yes
+| Yes. Choose V3.0.6 in TigerGraph Cloud for multiple users in one TigerGraph solution.
+
+| Data Encryption
+| Yes
+| N/A. TigerGraph Cloud is setup already for encrypted data at rest and at motion.
+
+| System Management
+| Yes
+| The Cloud Admin Portal is enhanced over the TigerGraph Server Admin Portal.  Backup and Restore is done through the Cloud Admin Portal.
+
+| GraphStudio UI Guide
+| Yes
+| Yes
+
+| GSQL Demo Examples
+| Yes
+| Yes
+
+| GSQL Language Reference, Part 1 Data Definition and Loading
+| Yes
+| Yes. GSQL Web Shell (Paid Tiers) supports Data Definition and Loading. Data files can be imported into the filesystem through GraphStudio, or submit support request to import into the filesystem. In addition, the operations can be performed through the GraphStudio user interface.
+
+| GSQL Language Reference, Part 2 Querying
+| Yes
+| Yes
+
+| RESTPP API User Guide
+| Yes
+| Yes. Note the URL assigned to your solution.
+
+| Transaction Processing and ACID Support
+| Yes
+| Yes
+
+| Data Loader User Guides
+| Yes
+| S3 Loader can be used through the GraphStudio interface. In addition, S3 Loader and Kafka Loader can be used in GSQL Web Shell (Paid Tiers).
+|===

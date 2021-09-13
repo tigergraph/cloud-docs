@@ -1,0 +1,23 @@
+= Access a Solution through GraphStudio
+
+The TigerGraph GraphStudio™ UI (User Interface) provides an intuitive, browser-based interface that helps users get started quickly with graph-based application development tasks: designing a graph schema, creating a schema mapping, loading data, exploring the graph, and writing GSQL queries. GraphStudio is supported in the same way on TigerGraph Cloud as the on-premise version of TigerGraph.
+
+== Open GraphStudio
+
+=== 1. Navigate to My Solutions
+
+After https://tgcloud.io/[logging into TigerGraph Cloud], go to *My Solutions*.
+
+image::../../.gitbook/assets/image%20%2838%29%20%287%29%20%285%29.png[]
+
+=== 2. Open GraphStudio
+
+Find the solution you want to access, and click the Applications icon in the same row, and click GraphStudios in the dropdown list.
+
+image::../../.gitbook/assets/image%20%2821%29.png[]
+
+== Use GraphStudio
+
+To learn how to use GraphStudio, read our link:../../ui/graphstudio/[GraphStudio UI Guide].
+
+##

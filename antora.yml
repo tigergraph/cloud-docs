@@ -1,0 +1,17 @@
+name: tigergraph-cloud
+title: TigerGraph Cloud User Guide
+version: 3.2
+start_page: start:README.adoc
+
+nav:
+- modules/start/nav.adoc
+- modules/solutions/nav.adoc
+- modules/access-solution/nav.adoc
+- modules/monitor-solution/nav.adoc
+- modules/resize-solution/nav.adoc
+- modules/security/nav.adoc
+- modules/backup-and-restore/backup-and-restore.adoc
+- modules/billing/nav.adoc
+- modules/release-notes/release-notes.adoc
+- modules/support/nav.adoc
+- modules/reference/nav.adoc

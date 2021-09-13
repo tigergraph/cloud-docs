@@ -1,0 +1,75 @@
+= Amazon Web Services (AWS)
+
+== Regions
+
+* US-West-1 (N.Cal)
+* US-East-1 (N. Virginia)
+* EU-West-1 (Ireland)
+* EU-West-2 (UK)
+* EU-Central-1 (Germany)
+* AP-Northeast-1 (Japan)
+
+== Instance types
+
+The table below shows the instance types available on AWS.
+
+|===
+| Instance name | vCPU | RAM (GiB) | Price per hour
+
+| TG.Free
+| 4
+| 7.5
+| 0
+
+| TG.C4.M16
+| 4
+| 16
+| $1.20
+
+| TG.C8.M15
+| 8
+| 15
+| $1.80
+
+| TG.C8.M32
+| 8
+| 32
+| $2.20
+
+| TG.C16.M64
+| 16
+| 64
+| $4.10
+
+| TG.C16.M122
+| 16
+| 122
+| $7.00
+
+| TG.C32.M244
+| 32
+| 244
+| $12.00
+
+| TG.C64.M488
+| 64
+| 488
+| $21.00
+
+| TG.C96.M768
+| 96
+| 768
+| $30.00
+|===
+
+== Disk storage
+
+On AWS, disk storage refers to the https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volumes.html[EBS volume] attached to your TigerGraph Cloud instance. By default, data in disk storage is encrypted-at-rest with platform-managed keys.
+
+Disk Storage is $0.15 /GB/month, equivalent to $0.0002083 /GB/hour
+
+== Backup storage
+
+Solution backups on AWS are stored on https://aws.amazon.com/efs/[Amazon Elastic File System] (EFS) and automatically encrypted at rest with platform-managed keys. When a solution is provisioned, backup storage is part of the running cost of the solution and only stops incurring charges when the solution is terminated.
+
+Backup Storage is $1.25 /GB/month = $0.001736 /GB/hour.

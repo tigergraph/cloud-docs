@@ -1,0 +1,7 @@
+= Subscriptions
+
+TigerGraph Cloud users can pay for TigerGraph Cloud via marketplace subscriptions through a cloud provider:
+
+* https://aws.amazon.com/marketplace/pp/prodview-5rpjtqdqixmds[AWS Marketplace]: Pay for TigerGraph Cloud via AWS
+* https://azuremarketplace.microsoft.com/en-us/marketplace/apps/tigergraph.tg_test_test?tab=Overview[Azure Marketplace]: Pay for TigerGraph Cloud via Azure
+* https://console.cloud.google.com/marketplace/product/tigergraph-public/tigergraph-cloud[GCP Marketplace]: Pay for TigerGraph Cloud via GCP

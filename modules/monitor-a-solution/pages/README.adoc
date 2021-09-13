@@ -1,0 +1,6 @@
+= Monitor a Solution
+
+TigerGraph Cloud offers users various ways to monitor the activities and the state of their solutions. This page lists a few resources that can help monitor a solution's usage:
+
+* xref:monitor-solution-state.adoc[Monitor Solution State]
+* xref:view-activity-log.adoc[View Activity Log]

@@ -1,0 +1,119 @@
+= Send REST Requests to a Solution
+
+Besides GraphStudio, another way to interact with your TigerGraph database is through our REST API. Use RESTful endpoints to send requests to TigerGraph solutions and develop applications.
+
+On TigerGraph Cloud, link:[RESTPP Authentication] is enabled by default, and only the requests made with a valid authorization token in the request header will be accepted.
+
+== Generate an authorization token
+
+Here is a step-by-step guide to generating and using an authorization token for RESTPP:
+
+=== 1. Navigate to User Management
+
+From GraphStudio, go to *Admin Portal*, and click *User Management*.
+
+image::../../.gitbook/assets/image%20%2846%29.png[Click User Management]
+
+=== 2. Generate a secret
+
+In the *My Profile* tab, find the graph you want to generate the secret for, enter an alias for your secret and click the "*+*" symbol at the right side of the row.
+
+Remember to copy and save the secret to a safe location. *This is the only time the secret will be exposed in full in Admin Portal, and you will not be able to see it again*.
+
+image::../../.gitbook/assets/image%20%2849%29.png[]
+
+=== 3. Generate a token
+
+Use the `/requesttoken` endpoint to generate an authorization token for your solution. You can use either a GET or POST request. In this tutorial, we will be using a GET request.
+
+==== 1. Find the domain name of your solution
+
+If you did not enter a subdomain when setting up your solution, a random subdomain will be automatically generated for you. Go to *My Solutions*, and click the solution you are trying to access, you will find the solution's domain name in the expanded view. Use this domain name as the server address when making REST requests.
+
+image::../../.gitbook/assets/image%20%2835%29.png[]
+
+==== 2. Send the request to `/requesttoken`
+
+The endpoint takes two parameters, `secret` and `lifetime`, and the latter is optional. Put the parameters in the query string and send the request using your favorite REST client. The below example uses curl to request the authentication token:
+
+[source,bash]
+----
+curl -X GET 'https://aa768d833bbf47fea6db80a7972a9477.i.tgcloud.io:9000/requesttoken?secret=5e3dmjc5l79n4v30jmsou02qji07f8tb'
+----
+
+The response will look like this, where the string in the response with the key token is your authorization token:
+
+[source,javascript]
+----
+{
+  "code": "REST-0000",
+  "expiration": 1617232169,
+  "error": false,
+  "message": "Generate new token successfully.",
+  "token": "eq87e740arn73pp8chbf6j930pa7qorm"
+}
+----
+
+=== 4. Send a request using your token
+
+Now that you have an authorization token, you can proceed to make requests to your solution. To use the authorization token, include it in the request header as a bearer token.
+
+Refer to our link:../../dev/restpp-api/[RESTful API User Guide] to learn about all the endpoints available. In this tutorial, we will make a request to the link:../../dev/restpp-api/built-in-endpoints.md#list-vertices[List vertices] endpoint on a solution with the https://www.youtube.com/watch?v=s6-QapCEz1M&feature=youtu.be&ab_channel=TigerGraph[COVID-19 starter kit] and list 5 patients and the patients' age.
+
+[source,bash]
+----
+curl -H "Authorization: Bearer fc6p0i2ijjt031n0sja6m9ci70p232h7" \
+"https://aa768d833bbf47fea6db80a7972a9477.i.tgcloud.io:9000/graph/MyGraph/vertices/Patient?limit=5&select=birth_year"
+----
+
+Response:
+
+[source,bash]
+----
+{
+  "version": {
+    "edition": "enterprise",
+    "api": "v2",
+    "schema": 0
+  },
+  "error": false,
+  "message": "",
+  "results": [
+    {
+      "v_id": "6100000100",
+      "v_type": "Patient",
+      "attributes": {
+        "birth_year": 1959
+      }
+    },
+    {
+      "v_id": "6023000024",
+      "v_type": "Patient",
+      "attributes": {
+        "birth_year": 0
+      }
+    },
+    {
+      "v_id": "6022000024",
+      "v_type": "Patient",
+      "attributes": {
+        "birth_year": 1978
+      }
+    },
+    {
+      "v_id": "6020000020",
+      "v_type": "Patient",
+      "attributes": {
+        "birth_year": 0
+      }
+    },
+    {
+      "v_id": "6015000008",
+      "v_type": "Patient",
+      "attributes": {
+        "birth_year": 0
+      }
+    }
+  ]
+}
+----

@@ -1,0 +1,7 @@
+= Access a Solution
+
+Once a solution has been provisioned, there are three ways to access the solution and interact with the database:
+
+* xref:graphstudio.adoc[GraphStudio]
+* xref:rest-requests.adoc[REST endpoints]
+* xref:gsql-web-shell.adoc[GSQL web shell]

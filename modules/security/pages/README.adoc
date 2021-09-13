@@ -1,0 +1,27 @@
+= Security and User Management
+
+== TigerGraph Cloud account
+
+Your TigerGraph Cloud account serves as your credential on the platform level. It allows you to manage solutions as well as payments. It also gives you superuser access to all of the graphs hosted by the solutions on the account.
+
+== TigerGraph users
+
+On the solution level, the same xref:../../ui/graphstudio/user-access-management.adoc[role-based access control] used by the on-prem version of TigerGraph also applies to TigerGraph Cloud. Each solution or solution cluster can have many TigerGraph users and each user can have different roles for each graph with different privileges.
+
+For more information on how to manage users and roles in Admin Portal, see xref:../../ui/admin-portal/management/user-management.adoc[User Management].
+
+== Preconfigured security features
+
+=== Encryption-at-rest
+
+All data loaded into TigerGraph Cloud, including data in disk storage and backups, are automatically encrypted-at-rest using the cloud provider's native encryption protocol with platform-managed keys.
+
+=== Transport Layer Security (TLS)
+
+TigerGraph Cloud uses TLS to encrypt connections to your graph databases.
+
+=== RESTPP Authentication
+
+By default, all TigerGraph Cloud solutions have RESTPP authentication turned on. To make requests to the RESTPP server, you must generate a secret in the Admin Portal and use that secret to generate an authentication token.
+
+###

@@ -1,0 +1,24 @@
+= View Activity Log
+
+TigerGraph Cloud solutions log their activities in an activity log, which you can view on TigerGraph Cloud.
+
+[discrete]
+=== 1. Navigate to My Solutions
+
+After https://tgcloud.io/[logging into TigerGraph Cloud], go to *My Solutions*.
+
+image::../../.gitbook/assets/image%20%2838%29%20%287%29%20%285%29.png[]
+
+[discrete]
+=== 2. Click Solution Details
+
+Find the solution you want to monitor, and click on the Solution Details icon on the right side of the same row.
+
+image::../../.gitbook/assets/image%20%2830%29.png[]
+
+[discrete]
+=== 3. Click Activity
+
+Click the *Activity* tab, which shows you the activity log of that solution.
+
+image::../../.gitbook/assets/image%20%2824%29.png[]

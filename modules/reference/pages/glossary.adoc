@@ -1,0 +1,36 @@
+= Glossary
+
+[discrete]
+=== backup
+
+A snapshot of the state of your solutions at a given point in time.
+
+[discrete]
+=== instance
+
+A virtual server in the cloud.
+
+[discrete]
+=== partitioning factor
+
+An internal TigerGraph characteristic of a TigerGraph cluster that determines how the data in the database will be distributed
+
+[discrete]
+=== replication factor
+
+A characteristic of the cluster design that will determine the number of copies of data that will be stored in the cluster.
+
+[discrete]
+=== role-based access control
+
+A policy-neutral access-control mechanism defined around roles and privileges.
+
+[discrete]
+=== solution
+
+Fully-managed TigerGraph deployment.
+
+[discrete]
+=== TigerGraph user
+
+A database user with its own roles and privileges for different graphs stored on a solution.

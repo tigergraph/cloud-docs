@@ -1,0 +1,31 @@
+= Support
+
+TigerGraph provides support for TigerGraph Cloud for customers with non-free-tier solutions. For more information on TigerGraph's support policy, visit our https://www.tigergraph.com/support-policy/[support policy page].
+
+== Submit a support ticket
+
+You can submit a support ticket in the TigerGraph Cloud portal or by email.
+
+=== 1. Submit a support ticket
+
+Click on the support icon image:../.gitbook/assets/screen-shot-2020-05-06-at-2.52.22-pm.png[], and fill out the form that pops up with information relevant to your issue. If you cannot access the TigerGraph Cloud portal, you can also email support@tigergraph.com to submit your support ticket. Either approach will automatically generate a support ticket in https://tigergraph.freshdesk.com/support/home[TigerGraph's FreshDesk support system], and you will receive an email with the link to your ticket.
+
+{% hint style="info" %}
+Please remember to use the email account associated with your TigerGraph Cloud account to submit the support email to link:mailto:support@tigergraph.com[support@tigergraph.com] so that TigerGraph Cloud Support can verify your account.
+{% endhint %}
+
+image::../.gitbook/assets/image%20%2867%29.png[]
+
+=== 2. Setup your FreshDesk account (first ticket submission only)
+
+{% hint style="info" %}
+If you already have a FreshDesk account with TigerGraph, you can skip this step.
+{% endhint %}
+
+When you submit a support ticket through TigerGraph Cloud or through email, and you don't already have a FreshDesk account with TigerGraph, an account will be created for you automatically. An account setup email titled *Welcome to TigerGraph Support* will be sent to you at the email address associated with your TigerGraph Cloud account, and you can follow the instructions in the email to set up your account.
+
+This setup email might arrive a few minutes later than the email containing the link to your ticket.
+
+=== 3. Follow up on your ticket
+
+If you have a paid subscription with TigerGraph, a support representative will be reviewing your request and will send you a personal response (usually within 24 hours). You can follow up on your ticket either by replying to the email thread or in FreshDesk.

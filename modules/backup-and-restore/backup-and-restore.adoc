@@ -1,0 +1,104 @@
+= Backup and Restore
+
+Backups are snapshots of the state of your solutions at a given point in time. Currently, any paid solutions provisioned by an account with a valid payment method can have a maximum of 7 backups concurrently.
+
+{% hint style="info" %}
+The backup feature is not supported on free-tier instances or instances provisioned by an account without a valid payment method.
+{% endhint %}
+
+== Data Storage and Encryption
+
+Backups are saved to Amazon EFS on AWS, Azure Files on Microsoft Azure, and GCP Filestore on GCP. Backup storage is provisioned when you start a paid-tier solution and is based on the maximum number of backups allowed (currently fixed at 7). It only stops incurring charges when the solution is terminated. Stopping the solution does not stop charges for backup storage.
+
+Backups are encrypted by default using the native encryption feature of the cloud provider with platform-managed keys.
+
+== Scheduled backup
+
+By default, scheduled backup is turned on when instances are running and will be done daily. If the maximum retention number is reached when a new backup is made, the oldest scheduled backup will be deleted. To change the backup schedule, change your backup settings in Admin Portal.
+
+=== Change backup schedule
+
+==== 1. Go to Admin Portal.
+
+From *My Solutions* page, go to GraphStudio. Then click *Admin* on the upper-right corner to go to *Admin Portal*.
+
+image::../.gitbook/assets/image%20%2866%29.png[]
+
+==== 2. Click Backup & Restore.
+
+On the left side of the screen, click *Backup & Restore.*
+
+*3. Specify backup schedule.*
+
+Choose the backup frequency you want, and supply the password of your TigerGraph user.
+
+image::../.gitbook/assets/image%20%2826%29.png[]
+
+==== 4. Click UPDATE.
+
+== Manual backup
+
+Aside from scheduled backups, you can also make backups manually in Admin Portal.
+
+{% hint style="info" %}
+
+* If you want to perform a manual backup when there are already seven copies of backups, you need to delete an older backup.
+* The maximum number of manual backups is six, as the platform always reserves one spot for scheduled backups.
+{% endhint %}
+
+Below are the procedures to create a backup manually:
+
+[discrete]
+==== 1. Go to Admin Portal.
+
+[discrete]
+==== 2. Click Backup & Restore.
+
+[discrete]
+==== 3. Provide tag and password.
+
+In Backup/Restore, supply a tag for your backup and enter the password of your TigerGraph user.
+
+image::../.gitbook/assets/image%20%2856%29.png[]
+
+[discrete]
+==== 4. Click BACK UP.
+
+== Restore a backup
+
+You can use a backup to restore your solution.
+
+Below are the procedures to restore a backup:
+
+[discrete]
+==== 1. Go to Admin Portal.
+
+[discrete]
+==== 2. Click Back up & Restore.
+
+[discrete]
+==== 3. Copy backup tag.
+
+In *Manage Backups*, find the backup you want to use for the restore and click the clipboard icon to copy the tag of the backup.
+
+image::../.gitbook/assets/image%20%2848%29%20%282%29.png[]
+
+== Delete a backup
+
+Below are the procedures to delete a backup
+
+[discrete]
+==== 1. Go to Admin Portal.
+
+[discrete]
+==== 2. Click to Backup & Restore
+
+[discrete]
+==== 3. Go to Manage Backups
+
+[discrete]
+==== 4. Delete the backup.
+
+In Backup List, find the backup you want to delete and click the delete button in the *Action* column.
+
+image::../.gitbook/assets/image%20%2848%29%20%281%29.png[]

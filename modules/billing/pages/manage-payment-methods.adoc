@@ -1,0 +1,67 @@
+= Manage Payment Methods
+
+For standard hourly use of TigerGraph Cloud solutions, we currently support payment through cards. This document offers is a tutorial on how to add or delete a card and how to set a card as the default payment option.
+
+If you need to use ACH payment, or purchase bulk cloud credits, please contact sales@tigergraph.com
+
+== Add a card
+
+=== 1. Navigate to My Account
+
+On the left-side menu, click *My Account*.
+
+image::../../.gitbook/assets/image%20%2863%29.png[]
+
+=== 2. Click Payment Method
+
+On the My Account page, click *Payment Method.*
+
+image::../../.gitbook/assets/image%20%2822%29.png[]
+
+=== 3. Click Add a new card
+
+In the *Payment Method* tab, click *Add a new card*.
+
+image::../../.gitbook/assets/image%20%2852%29.png[]
+
+=== 4. Enter your card information
+
+Enter your card information in the window that pops up, and click *Save*.
+
+== Delete a card
+
+You can delete a card if there is more than one card associated with the account.
+
+=== 1. Navigate to My Account
+
+On the left-side menu, click *My Account*.
+
+image::../../.gitbook/assets/image%20%2863%29.png[]
+
+=== 2. Click Payment Method
+
+On the My Account page, click *Payment Method.*
+
+image::../../.gitbook/assets/image%20%2822%29%20%283%29.png[]
+
+=== *3. Delete the card*
+
+Find the card you want to delete in *Card Management*, and click *Delete*.
+
+== Set card as default
+
+=== 1. Navigate to My Account
+
+On the left-side menu, click *My Account*.
+
+image::../../.gitbook/assets/image%20%2863%29.png[]
+
+=== 2. Click Payment Method
+
+On the My Account page, click *Payment Method.*
+
+image::../../.gitbook/assets/image%20%2822%29%20%283%29.png[]
+
+=== 3. Click Set as Default
+
+Find the card you want to set as the default card in *Card Management*, and click *Set as Default*.

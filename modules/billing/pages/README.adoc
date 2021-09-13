@@ -1,0 +1,13 @@
+= Billing
+
+Machine instances and storage are billed hourly, which means that you are charged for each continuous period of operation, measured in seconds. _Instances_ incur charges from when they are started until they are stopped (or terminated). _Disk storage_ attached to instances and _backup storage_ incur charges from when an instance is first activated until the instance is terminated. Our billing system will total the charges at the end of each calendar month, generate an itemized invoice, and charge your card.
+
+Data transfer costs from the cloud platforms are calculated according to the cloud platform charge and will be added to your invoice in the following month.
+
+{% hint style="info" %}
+This section only applies to the standard hourly service of TigerGraph Cloud. If you have a committed long-term contract with TigerGraph, please contact link:mailto:sales@tigergraph.com[sales@tigergraph.com] for questions.
+{% endhint %}
+
+== Pricing Information
+
+View our https://www.tigergraph.com/tigergraph-cloud-pricing/[pricing table] for detailed rates for each type of charge.

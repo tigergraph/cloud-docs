@@ -1,6 +1,6 @@
 name: tigergraph-cloud
-title: TigerGraph Cloud User Guide
-version: 3.2
+title: TigerGraph Cloud
+version: latest
 start_page: start:README.adoc
 
 nav:

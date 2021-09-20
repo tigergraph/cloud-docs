@@ -4,9 +4,10 @@ Machine instances and storage are billed hourly, which means that you are charge
 
 Data transfer costs from the cloud platforms are calculated according to the cloud platform charge and will be added to your invoice in the following month.
 
-{% hint style="info" %}
+[NOTE]
+====
 This section only applies to the standard hourly service of TigerGraph Cloud. If you have a committed long-term contract with TigerGraph, please contact link:mailto:sales@tigergraph.com[sales@tigergraph.com] for questions.
-{% endhint %}
+====
 
 == Pricing Information
 

@@ -2,9 +2,10 @@
 
 Backups are snapshots of the state of your solutions at a given point in time. Currently, any paid solutions provisioned by an account with a valid payment method can have a maximum of 7 backups concurrently.
 
-{% hint style="info" %}
+[NOTE]
+====
 The backup feature is not supported on free-tier instances or instances provisioned by an account without a valid payment method.
-{% endhint %}
+====
 
 == Data Storage and Encryption
 
@@ -40,11 +41,12 @@ image::../.gitbook/assets/image%20%2826%29.png[]
 
 Aside from scheduled backups, you can also make backups manually in Admin Portal.
 
-{% hint style="info" %}
+[NOTE]
+====
 
 * If you want to perform a manual backup when there are already seven copies of backups, you need to delete an older backup.
 * The maximum number of manual backups is six, as the platform always reserves one spot for scheduled backups.
-{% endhint %}
+====
 
 Below are the procedures to create a backup manually:
 

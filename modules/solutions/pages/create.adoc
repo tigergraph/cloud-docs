@@ -52,9 +52,10 @@ image::../../.gitbook/assets/image%20%2820%29.png[]
 
 Disk storage refers to the root disk that is attached to your instance. If you need help choosing the right disk storage, see xref:sizing-and-scaling.adoc[Sizing and Scaling].
 
-{% hint style="warning" %}
+[CAUTION]
+====
 To ensure your solution has enough disk storage, TigerGraph mandates that any solution's disk size must be *at least 3 times the size of the solution instance's RAM*. For example, if you choose an instance type that has a RAM of 64 GB, then the solution's disk size must be more than 192 GB.
-{% endhint %}
+====
 
 === 5. Enter cluster settings
 
@@ -84,9 +85,10 @@ When a solution is provisioned, a default link:../security/#tigergraph-users[Tig
 
 image::../../.gitbook/assets/image%20%2819%29.png[Set initial password]
 
-{% hint style="info" %}
+[NOTE]
+====
 This initial password allows you to log into the database when your solution is in the ready state. If you forget this password, you will need to terminate and recreate the solution.
-{% endhint %}
+====
 
 ==== 6.3. Set a subdomain
 

@@ -60,9 +60,10 @@ If you already created a TigerGraph Cloud account, sign in to your account:
 
 TigerGraph Cloud free-tier solutions (subject to link:reference/service-limits.md#free-tier-solution-limits[limits]) offer a small-scale analytics platform to store and query your graph data.
 
-{% hint style="warning" %}
+[CAUTION]
+====
 Free-tier solutions are for training, learning, and light scale proof of concept (POC) use cases and do not support backup and restore. For in-depth POCs, consider adding a valid payment method and use paid-tier solutions to access the backup and restore feature. +
-{% endhint %}
+====
 
 [discrete]
 ==== 1. Click *My Solutions*.
@@ -124,9 +125,10 @@ This is the initial password for the default link:security/#tigergraph-users[Tig
 
 image::../.gitbook/assets/image%20%2819%29%20%281%29.png[]
 
-{% hint style="info" %}
+[NOTE]
+====
 This initial password allows you to log into the database when your solution is in the ready state. If you forget this password, you will need to terminate and recreate the solution.
-{% endhint %}
+====
 
 [discrete]
 ==== 10. Enter a subdomain and description.

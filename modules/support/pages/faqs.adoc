@@ -70,7 +70,9 @@ A: TigerGraph Cloud includes automatic scheduled backup, built-in encryption and
 
 A: Yes. For basic accounts with credit card billing, there is a limit of 160 vCPUs and 20 instances. A solution is one logical database, which may include several instances due to a distribution database configuration and replication. For accounts running exclusively on Free Credit and that have not yet entered a valid credit card, there is a limit of 16 vCPUs and two solutions. For each registered account (with or without a valid credit card), you may only provision one solution from the Free Tier. To allow more vCPUs and solutions, please contact TigerGraph at _**_link:mailto:sales@tigergraph.com[sales@tigergraph.com].
 
-Total number of instances in a cluster = replication factor x partitioning factor+++<table>++++++<thead>++++++<tr>++++++<th style="text-align:left">++++++</th>+++
+Total number of instances in a cluster = replication factor x partitioning factor
+
++++<table>++++++<thead>++++++<tr>++++++<th style="text-align:left">++++++</th>+++
       +++<th style="text-align:left">++++++<b>+++Account With a Valid Credit Card+++</b>++++++</th>+++
       +++<th style="text-align:left">++++++<b>+++Account Without a Valid Credit Card+++</b>++++++</th>++++++</tr>++++++</thead>+++
   +++<tbody>++++++<tr>++++++<td style="text-align:left">++++++<b>+++Free Tier Solution Quota+++</b>++++++</td>+++
@@ -132,7 +134,7 @@ In addition, for TigerGraph paid tier solutions, users can use GSQL Web Shell to
 
 A: TigerGraph uses GSQL, the query language designed for fast and scalable graph operations and analytics. GSQL's similarity to SQL, high-level syntax, Turing completeness, and built-in parallelism brings faster performance, faster development and the ability to describe any algorithm.
 
-You can start learning GSQL from our tutorial link:../start/gsql-101/[GSQL 101]. We also support a RESTful API and JSON output for easy integration with application languages like Python, Java, and C{pp}.
+You can start learning GSQL from our GSQL tutorials. We also support a RESTful API and JSON output for easy integration with application languages like Python, Java, and C{pp}.
 
 Start learning GSQL and become a TigerGraph Certified Associate today: https://www.tigergraph.com/certification/[www.tigergraph.com/certification/]
 

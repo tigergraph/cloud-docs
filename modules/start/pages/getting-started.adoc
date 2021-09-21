@@ -58,7 +58,7 @@ If you already created a TigerGraph Cloud account, sign in to your account:
 
 == *Create* a free-tier solution
 
-TigerGraph Cloud free-tier solutions (subject to link:reference/service-limits.md#free-tier-solution-limits[limits]) offer a small-scale analytics platform to store and query your graph data.
+TigerGraph Cloud free-tier solutions (subject to xref:reference:service-limits.adoc[limits]) offer a small-scale analytics platform to store and query your graph data.
 
 [CAUTION]
 ====
@@ -121,7 +121,7 @@ You can enter any name for your solution. A solution name may contain alphanumer
 [discrete]
 ==== 9. Set initial password.
 
-This is the initial password for the default link:security/#tigergraph-users[TigerGraph user] `tigergraph`. You can link:../ui/admin-portal/management/user-management.md#my-profile[change the password] later in Admin Portal.
+This is the initial password for the default xref:security:manage-database-users.adoc[TigerGraph user] `tigergraph`. You can change the password later in Admin Portal.
 
 image::../.gitbook/assets/image%20%2819%29%20%281%29.png[]
 
@@ -167,4 +167,4 @@ image::../.gitbook/assets/image%20%2843%29.png[GraphStudio login page]
 [discrete]
 ==== 3. You are now ready to use your free-tier TigerGraph Solution.
 
-You can learn how to use GraphStudio in our link:../ui/graphstudio/[GraphStudio UI guide].
+You can learn how to use GraphStudio in our xref:gui:graphstudio:overview.adoc/[GraphStudio UI guide].

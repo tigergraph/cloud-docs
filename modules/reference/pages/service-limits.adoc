@@ -2,7 +2,9 @@
 
 By default, TigerGraph Cloud limits how many instances and how many vCPUs a single account can provision. These limits can be waived by request if you have a valid credit card on your account. To waive a service limit, please contact link:mailto:sales@tigergraph.com[sales@tigergraph.com].
 
-The table below outlines the service limits for accounts with and without a valid credit card.+++<table>++++++<thead>++++++<tr>++++++<th style="text-align:left">+++Service+++</th>+++
+The table below outlines the service limits for accounts with and without a valid credit card.
+
++++<table>++++++<thead>++++++<tr>++++++<th style="text-align:left">+++Service+++</th>+++
       +++<th style="text-align:left">++++++<b>+++Accounts with a valid credit card+++</b>++++++</th>+++
       +++<th style="text-align:left">++++++<b>+++Accounts without a valid credit card+++</b>++++++</th>++++++</tr>++++++</thead>+++
   +++<tbody>++++++<tr>++++++<td style="text-align:left">++++++<b>+++Free Tier Solution +++</b>++++++</td>+++

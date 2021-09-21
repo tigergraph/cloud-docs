@@ -4,8 +4,7 @@ TigerGraph Cloud offers three cloud platform options: Amazon Web Services (AWS),
 
 Each cloud provider has different offerings for instance type, disk storage, and backup storage. At the moment, TigerGraph Cloud only supports free-tier clusters on AWS. You may choose to deploy free-tier clusters on any region in AWS. For more information on the options of each cloud provider, see:
 
-* xref:../reference/aws.adoc[Amazon Web Services (AWS)]
-* xref:../reference/azure.adoc[Microsoft Azure]
-* xref:../reference/google-cloud-platform-gcp.adoc[Google Cloud Platform (GCP)]
+* xref:reference:aws.adoc[Amazon Web Services (AWS)]
+* xref:reference:azure.adoc[Microsoft Azure]
+* xref:reference:gcp.adoc[Google Cloud Platform (GCP)]
 
-###

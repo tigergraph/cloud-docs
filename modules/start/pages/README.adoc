@@ -6,26 +6,28 @@ Most of the documentation for TigerGraph Enterprise Server also applies to Tiger
 
 *Watch* https://www.youtube.com/watch?v=mOsfjst6Ahs&ab_channel=TigerGraph[*Quick Start Video*] *and Start Your TigerGraph Cloud Solutions in 5 Minutes!*
 
+video::mOsfjst6Ahs[youtube]
+
 == Get started with TigerGraph Cloud
 
-* link:getting-started.md#create-a-tigergraph-cloud-account[Create a free TigerGraph Cloud account]
-* link:getting-started.md#create-a-free-tier-solution[Create a free-tier TigerGraph Cloud solution]
-* link:access-solutions/[Access your TigerGraph Cloud solution]
+* xref:start:getting-started.adoc[Create a free TigerGraph Cloud account]
+* xref:start:getting-started.adoc[Create a free-tier TigerGraph Cloud solution]
+* xref:access-solution:README.adoc[Access your TigerGraph Cloud solution]
 
 == Manage TigerGraph Cloud solutions
 
-* link:monitor-a-solution/[Monitor a solution]
-* link:../ui/admin-portal/management/security/[Security and user management]
-* xref:backup-and-restore.adoc[Backup and restore]
+* xref:monitor-solution:monitor-solution-state.adoc[Monitor a solution]
+* xref:gui:admin-portal:management/user-management.adoc[Security and user management]
+* xref:backup-and-restore:backup-and-restore.adoc[Backup and restore]
 
 == Billing
 
-* xref:billing/manage-payment-methods.adoc[Manage payment methods]
-* xref:billing/subscriptions.adoc[Cloud Marketplace subscriptions]
+* xref:billing:manage-payment-methods.adoc[Manage payment methods]
+* xref:billing:subscriptions.adoc[Cloud Marketplace subscriptions]
 
 == FAQs
 
-See the xref:tigergraph-cloud-faqs.adoc[TigerGraph Cloud FAQs] for answers to common questions.
+See the xref:support:faqs.adoc[TigerGraph Cloud FAQs] for answers to common questions.
 
 == Comparison with TigerGraph Enterprise Server
 

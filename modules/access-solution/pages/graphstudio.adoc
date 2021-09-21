@@ -18,6 +18,6 @@ image::../../.gitbook/assets/image%20%2821%29.png[]
 
 == Use GraphStudio
 
-To learn how to use GraphStudio, read our link:../../ui/graphstudio/[GraphStudio UI Guide].
+To learn how to use GraphStudio, read our xref:3.2@gui:graphstudio:overview.adoc[GraphStudio UI Guide].
 
 ##

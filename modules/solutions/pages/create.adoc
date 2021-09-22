@@ -61,7 +61,7 @@ To ensure your solution has enough disk storage, TigerGraph mandates that any so
 
 ==== 5.1. Choose a partitioning factor
 
-In a xref:../../admin/admin-guide/install-and-config/ha-cluster.adoc[High Availability (HA) cluster,] the partitioning factor refers to the number of parts or components your graph data is split into, which also equals the number of instances that collectively store one copy of the full graph.
+In a xref:3.2@tigergraph-server:ha:ha-cluster.adoc[High Availability (HA) cluster,] the partitioning factor refers to the number of parts or components your graph data is split into, which also equals the number of instances that collectively store one copy of the full graph.
 
 If you only need a single instance to store your entire graph, enter 1 as your partition factor.
 

@@ -81,7 +81,7 @@ Give your solution a tag, which helps you sort and identify your solutions. A so
 
 ==== 6.2. Set initial password
 
-When a solution is provisioned, a default link:../security/#tigergraph-users[TigerGraph user] `tigergraph` is created in the installation process. This is the initial password for the default user.
+When a solution is provisioned, a default xref:security:manage-database-users.adoc[TigerGraph user] `tigergraph` is created in the installation process. This is the initial password for the default user.
 
 image::../../.gitbook/assets/image%20%2819%29.png[Set initial password]
 

@@ -12,18 +12,20 @@ Go to the https://tgcloud.io/[TigerGraph Cloud landing page].
 
 You can create a TigerGraph Cloud account with a Google account, a LinkedIn account, or an email address.
 
-{% tabs %}
-{% tab title="Email" %}
-
+[tabs]
+====
+Email::
++
+--
 . Click *Login/Register*.
 . Click *Sign Up*.
 . Enter your email and password.
 . A verification email with the subject "Verify your email" will be sent to the email address you provided.
 . Go to your email inbox. Find the verification email and click *Confirm my account.*
-{% endtab %}
-
-{% tab title="Google" %}
-
+--
+Google::
++
+--
 . Click *Login/Register.*
 . Click *Sign up.*
 . Click *Sign up with Google.*
@@ -33,10 +35,10 @@ You can create a TigerGraph Cloud account with a Google account, a LinkedIn acco
 . Click *Submit*.
 . After being redirected back to TigerGraph Cloud, enter the information on the signup form and click the checkbox to accept TigerGraph's *Terms & Conditions* and *Privacy Policy*.
 . Click *Submit*.
-{% endtab %}
-
-{% tab title="LinkedIn" %}
-
+--
+Linkedin::
++
+--
 . Click *Login/Register.*
 . Click *Sign up.*
 . Click Sign up with LinkedIn.
@@ -44,8 +46,8 @@ You can create a TigerGraph Cloud account with a Google account, a LinkedIn acco
 . Review the Terms and Conditions and click *Allow*.
 . After being redirected back to TigerGraph Cloud, enter the information on the signup form and click the checkbox to accept TigerGraph's *Terms & Conditions* and *Privacy Policy*.
 . Click *Submit*.
-{% endtab %}
-{% endtabs %}
+--
+====
 
 == Log in to your TigerGraph Cloud account
 

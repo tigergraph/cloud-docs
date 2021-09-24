@@ -72,29 +72,29 @@ A: Yes. For basic accounts with credit card billing, there is a limit of 160 vCP
 
 Total number of instances in a cluster = replication factor x partitioning factor
 
-+++<table>++++++<thead>++++++<tr>++++++<th style="text-align:left">++++++</th>+++
-      +++<th style="text-align:left">++++++<b>+++Account With a Valid Credit Card+++</b>++++++</th>+++
-      +++<th style="text-align:left">++++++<b>+++Account Without a Valid Credit Card+++</b>++++++</th>++++++</tr>++++++</thead>+++
-  +++<tbody>++++++<tr>++++++<td style="text-align:left">++++++<b>+++Free Tier Solution Quota+++</b>++++++</td>+++
-      +++<td style="text-align:left">+++1+++</td>+++
-      +++<td style="text-align:left">+++1+++</td>++++++</tr>+++
-    +++<tr>++++++<td style="text-align:left">++++++<b>+++Total Instance Quota+++</b>++++++</td>+++
-      +++<td style="text-align:left">+++20+++</td>+++
-      +++<td style="text-align:left">+++2+++</td>++++++</tr>+++
-    +++<tr>++++++<td style="text-align:left">++++++<b>+++Total vCPU Quota+++</b>++++++</td>+++
-      +++<td style="text-align:left">+++160+++</td>+++
-      +++<td style="text-align:left">+++16+++</td>++++++</tr>+++
-    +++<tr>++++++<td style="text-align:left">++++++<b>+++Cluster Size Limit+++</b>++++++</td>+++
-      +++<td style="text-align:left">+++10 instances+++</td>+++
-      +++<td style="text-align:left">+++1 (that is, distributed data is not enabled)+++</td>++++++</tr>+++
-    +++<tr>++++++<td style="text-align:left">++++++<b>+++Replication Factor Limit+++</b>++++++</td>+++
-      +++<td style="text-align:left">+++2+++</td>+++
-      +++<td style="text-align:left">+++1 (that is, HA is not enabled)+++</td>++++++</tr>+++
-    +++<tr>++++++<td style="text-align:left">++++++<b>+++Request Quota/Limit Increase+++</b>++++++</td>+++
-      +++<td style="text-align:left">+++Yes, Please contact +++<a href="mailto:sales@tigergraph.com">+++sales@tigergraph.com+++</a>+++.+++</td>+++
-      +++<td style="text-align:left">++++++<p>+++N/A+++</p>+++
-        +++<p>+++Please upgrade your account by entering a valid credit card.
-          +++<br>++++++</br>++++++</p>++++++</td>++++++</tr>++++++</tbody>++++++</table>+++
+[width="100%",cols="1,1,1",options="header",]
+|===
+|Service |*Account With a Valid Credit Card* |*Account Without a Valid Credit
+Card*
+|*Free Tier Solution Quota* |1 |1
+
+|*Total Instance Quota* |20 |2
+
+|*Total vCPU Quota* |160 |16
+
+|*Cluster Size Limit* |10 instances |1 (that is, distributed data is not
+enabled)
+
+|*Replication Factor Limit* |2 |1 (that is, HA is not enabled)
+
+|*Request Quota/Limit Increase* |Yes, Please contact
+mailto:sales@tigergraph.com[]sales@tigergraph.com. a|
+N/A
+
+Please upgrade your account by entering a valid credit card. +
++
+
+|===
 
 [discrete]
 ==== *Q: Can I run queries directly after sample starter kits are provisioned?*

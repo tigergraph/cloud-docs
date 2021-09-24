@@ -4,31 +4,29 @@ By default, TigerGraph Cloud limits how many instances and how many vCPUs a sing
 
 The table below outlines the service limits for accounts with and without a valid credit card.
 
-+++<table>++++++<thead>++++++<tr>++++++<th style="text-align:left">+++Service+++</th>+++
-      +++<th style="text-align:left">++++++<b>+++Accounts with a valid credit card+++</b>++++++</th>+++
-      +++<th style="text-align:left">++++++<b>+++Accounts without a valid credit card+++</b>++++++</th>++++++</tr>++++++</thead>+++
-  +++<tbody>++++++<tr>++++++<td style="text-align:left">++++++<b>+++Free Tier Solution +++</b>++++++</td>+++
-      +++<td style="text-align:left">+++1+++</td>+++
-      +++<td style="text-align:left">+++1+++</td>++++++</tr>+++
-    +++<tr>++++++<td style="text-align:left">++++++<b>+++Total Instance+++</b>++++++</td>+++
-      +++<td style="text-align:left">+++20+++</td>+++
-      +++<td style="text-align:left">+++2+++</td>++++++</tr>+++
-    +++<tr>++++++<td style="text-align:left">++++++<b>+++Total vCPU+++</b>++++++</td>+++
-      +++<td style="text-align:left">+++160+++</td>+++
-      +++<td style="text-align:left">+++16+++</td>++++++</tr>+++
-    +++<tr>++++++<td style="text-align:left">++++++<p>++++++<b>+++Cluster Size+++</b>++++++</p>+++
-        +++<p>+++(replication factor * partition factor)+++</p>++++++</td>+++
-      +++<td style="text-align:left">+++10 instances+++</td>+++
-      +++<td style="text-align:left">+++1+++</td>++++++</tr>+++
-    +++<tr>++++++<td style="text-align:left">++++++<b>+++Replication Factor+++</b>++++++</td>+++
-      +++<td style="text-align:left">+++2+++</td>+++
-      +++<td style="text-align:left">+++1+++</td>++++++</tr>+++
-    +++<tr>++++++<td style="text-align:left">++++++<b>+++Backup and Restore+++</b>++++++</td>+++
-      +++<td style="text-align:left">+++No+++</td>+++
-      +++<td style="text-align:left">+++Yes+++</td>++++++</tr>+++
-    +++<tr>++++++<td style="text-align:left">++++++<b>+++GSQL Web Shell Access+++</b>++++++</td>+++
-      +++<td style="text-align:left">+++No+++</td>+++
-      +++<td style="text-align:left">+++Yes+++</td>++++++</tr>++++++</tbody>++++++</table>+++
+[width="100%",cols="<34%,<33%,<33%",options="header",]
+|===
+|Service |*Accounts with a valid credit card* |*Accounts without a valid
+credit card*
+|*Free Tier Solution* |1 |1
+
+|*Total Instance* |20 |2
+
+|*Total vCPU* |160 |16
+
+a|
+*Cluster Size*
+
+(replication factor * partition factor)
+
+|10 instances |1
+
+|*Replication Factor* |2 |1
+
+|*Backup and Restore* |No |Yes
+
+|*GSQL Web Shell Access* |No |Yes
+|===
 
 == Free tier solution limits
 

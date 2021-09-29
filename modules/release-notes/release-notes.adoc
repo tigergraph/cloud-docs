@@ -1,5 +1,17 @@
 = Release Notes
 
+== TigerGraph Cloud V3.10 - Sep 2021 Updates
+
+Release Date: Sep 22, 2021
+
+=== New features
+
+* **TigerGraph V3.1.5 is now supported when creating new solutions**. Users can create solutions that include both single server and cluster deployment when they choose TigerGraph V3.1.5.
+* *VPC Peering*. Users can now create a VPC peering connection between their TigerGraph Cloud VPC and another VPC on all supported cloud providers.
+* *Automatic load balancing for HA clusters*. When users provision a cluster with replicas in TigerGraph Cloud, a load balancer will be automatically attached to the cluster.
+* *Multi-AZ deployment*. When a user provisions an HA cluster, the replicas of the cluster will automatically be provisioned on different availability zones. This feature is supported on AWS and GCP.
+* *Free-tier solutions on GCP*. We now offer the option to create a free-tier solution on GCP in addition to AWS.
+
 == TigerGraph Cloud V3.6 - May 2021 Updates
 
 Release Date: May 17, 2021

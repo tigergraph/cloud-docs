@@ -71,6 +71,23 @@ The replication factor is the number of copies of data, each on a separate machi
 
 If you don't need additional copies of your data, enter 1 as your replication factor.
 
+If you provision a cluster with a replication factor higher than 1:
+
+* If your solution is on AWS or GCP,  the replicas will automatically be provisioned on different availability zones.
+* A load balancer would be automatically attached to your cluster to balance traffic between the replicas.
+
+[NOTE]
+====
+If your cluster is on GCP and it has a replication factor higher than 1, you won't be able to use ports 9000 and 14240 to access API endpoints. Instead, you can access the endpoints using HTTPS requests on port 443:
+
+* To access the endpoints that normally listen on port 9000,  append/restpp after the domain and before the endpoint. Since an HTTPS request already implies port 443, specifying the port is optional. However, you need to ensure that you are making HTTPS requests instead of HTTP requests.
+** Example: To access the /echo endpoint: ``curl "https://examplesolution.i.tgcloud.io/restpp/echo"``
+* To access the endpoints that normally listen on port 14240, use the original endpoint address, but on port 443. Similar to port 9000 requests, specifying the port is optional.
+** Example: To access the health check endpoint on 14240:
+``curl "https://examplesolution.i.tgcloud.io/api/ping"``
+* Access to GraphStudio is not affected: opening the domain of the solution in a browser will directly take you to GraphStudio
+====
+
 === 6. Enter solution settings
 
 ==== 6.1. Name and tag your solution

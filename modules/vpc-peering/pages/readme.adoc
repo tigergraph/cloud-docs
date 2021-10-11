@@ -1,3 +1,6 @@
 = VPC Peering
 
 TigerGraph Cloud supports VPC Peering connections for AWS and GCP clusters.
+
+* xref:aws.adoc[]
+* xref:gcp.adoc[]

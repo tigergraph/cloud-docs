@@ -8,13 +8,13 @@ Below are the steps to stop a solution
 
 === 1. Navigate to My Solutions.
 
-image::../../.gitbook/assets/image%20%2838%29%20%287%29%20%281%29.png[]
+image::image%20%2838%29%20%287%29%20%281%29.png[]
 
 === 2. Stop the solution.
 
 Find the solution you want to stop and click on the Solution Operations icon and click *Stop*.
 
-image::../../.gitbook/assets/image%20%2825%29.png[]
+image::image%20%2825%29.png[]
 
 == Restart a solution
 
@@ -24,13 +24,13 @@ Below are the steps to restart a solution:
 
 === 1. Navigate to My Solutions
 
-image::../../.gitbook/assets/image%20%2838%29%20%287%29%20%2811%29.png[]
+image::image%20%2838%29%20%287%29%20%2811%29.png[]
 
 === 2. Restart the solution.
 
-Find the stopped solution, and click the Solution Operations icon image:../../.gitbook/assets/screen-shot-2021-02-24-at-5.26.45-pm.png[], and in the dropdown list, click *Start*.
+Find the stopped solution, and click the Solution Operations icon  image:screen-shot-2021-02-24-at-5.26.45-pm.png[] , and in the dropdown list, click *Start*.
 
-image::../../.gitbook/assets/image%20%2845%29.png[]
+image::image%20%2845%29.png[]
 
 == Terminate a solution
 
@@ -40,13 +40,13 @@ Below are the steps to terminating a solution.
 
 === 1. Navigate to My Solutions.
 
-image::../../.gitbook/assets/image%20%2838%29%20%287%29%20%289%29.png[]
+image::image%20%2838%29%20%287%29%20%289%29.png[]
 
 === 2. Terminate the solution.
 
 Find the solution you want to stop and click on the  Solution Operations icon and click *Terminate*.
 
-image::../../.gitbook/assets/image%20%2825%29.png[]
+image::image%20%2825%29.png[]
 
 == Archive a solution
 
@@ -56,10 +56,10 @@ After a solution has been terminated, it can be archived so that it no longer sh
 
 To archive a solution, click on the solution row in My Solutions to expand it and click the *Archived* toggle.
 
-image::../../.gitbook/assets/image%20%2855%29.png[]
+image::image%20%2855%29.png[]
 
 === Show archived solutions
 
 To view archived solutions, click the settings icon to the right of the *Actions* column and toggle on *Show Archived* in the *Display Settings*.
 
-image::../../.gitbook/assets/image%20%2864%29.png[]
+image::image%20%2864%29.png[]

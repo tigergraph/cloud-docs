@@ -23,7 +23,7 @@ By default, scheduled backup is turned on when instances are running and will be
 
 From *My Solutions* page, go to GraphStudio. Then click *Admin* on the upper-right corner to go to *Admin Portal*.
 
-image::../.gitbook/assets/image%20%2866%29.png[]
+image::image%20%2866%29.png[]
 
 ==== 2. Click Backup & Restore.
 
@@ -33,7 +33,7 @@ On the left side of the screen, click *Backup & Restore.*
 
 Choose the backup frequency you want, and supply the password of your TigerGraph user.
 
-image::../.gitbook/assets/image%20%2826%29.png[]
+image::image%20%2826%29.png[]
 
 ==== 4. Click UPDATE.
 
@@ -61,7 +61,7 @@ Below are the procedures to create a backup manually:
 
 In Backup/Restore, supply a tag for your backup and enter the password of your TigerGraph user.
 
-image::../.gitbook/assets/image%20%2856%29.png[]
+image::image%20%2856%29.png[]
 
 [discrete]
 ==== 4. Click BACK UP.
@@ -83,7 +83,7 @@ Below are the procedures to restore a backup:
 
 In *Manage Backups*, find the backup you want to use for the restore and click the clipboard icon to copy the tag of the backup.
 
-image::../.gitbook/assets/image%20%2848%29%20%282%29.png[]
+image::image%20%2848%29%20%282%29.png[]
 
 == Delete a backup
 
@@ -103,4 +103,4 @@ Below are the procedures to delete a backup
 
 In Backup List, find the backup you want to delete and click the delete button in the *Action* column.
 
-image::../.gitbook/assets/image%20%2848%29%20%281%29.png[]
+image::image%20%2848%29%20%281%29.png[]

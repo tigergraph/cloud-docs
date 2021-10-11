@@ -493,7 +493,7 @@ For paid tier solutions, please submit a support ticket for upgrade assistance. 
 [discrete]
 ==== *Q: How do I submit a support ticket?*
 
-A: In your cloud portal, on the top bar,  you can submit the support ticket by clicking on image:../.gitbook/assets/screen-shot-2020-05-06-at-2.52.22-pm.png[]. This will generate a support ticket in TigerGraph's freshdesk support system. You can track the ticket status in freshdesk.
+A: In your cloud portal, on the top bar,  you can submit the support ticket by clicking on  image:screen-shot-2020-05-06-at-2.52.22-pm.png[] . This will generate a support ticket in TigerGraph's freshdesk support system. You can track the ticket status in freshdesk.
 
 [discrete]
 ==== *Q: How do I submit a support ticket if I cannot access the Cloud Portal?*

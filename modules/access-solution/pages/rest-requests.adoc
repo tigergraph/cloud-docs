@@ -12,7 +12,7 @@ Here is a step-by-step guide to generating and using an authorization token for 
 
 From GraphStudio, go to *Admin Portal*, and click *User Management*.
 
-image::image%20%2846%29.png[Click User Management]
+image::image (46).png[Click User Management]
 
 === 2. Generate a secret
 
@@ -20,7 +20,7 @@ In the *My Profile* tab, find the graph you want to generate the secret for, ent
 
 Remember to copy and save the secret to a safe location. *This is the only time the secret will be exposed in full in Admin Portal, and you will not be able to see it again*.
 
-image::image%20%2849%29.png[]
+image::image (49).png[]
 
 === 3. Generate a token
 
@@ -30,7 +30,7 @@ Use the `/requesttoken` endpoint to generate an authorization token for your sol
 
 If you did not enter a subdomain when setting up your solution, a random subdomain will be automatically generated for you. Go to *My Solutions*, and click the solution you are trying to access, you will find the solution's domain name in the expanded view. Use this domain name as the server address when making REST requests.
 
-image::image%20%2835%29.png[]
+image::image (35).png[]
 
 ==== 2. Send the request to `/requesttoken`
 

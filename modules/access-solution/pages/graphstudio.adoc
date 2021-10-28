@@ -8,13 +8,13 @@ The TigerGraph GraphStudio™ UI (User Interface) provides an intuitive, browser
 
 After https://tgcloud.io/[logging into TigerGraph Cloud], go to *My Solutions*.
 
-image::image%20%2838%29%20%287%29%20%285%29.png[]
+image::image (38) (7) (5).png[]
 
 === 2. Open GraphStudio
 
 Find the solution you want to access, and click the Applications icon in the same row, and click GraphStudios in the dropdown list.
 
-image::image%20%2821%29.png[]
+image::image (21).png[]
 
 == Use GraphStudio
 

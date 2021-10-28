@@ -15,7 +15,7 @@ Below is the procedure to resize the instance type of a TigerGraph Cloud solutio
 
 After logging into your TigerGraph Cloud account, click *My Solutions* on the left side menu to go to the *My Solutions* page.
 
-image::image%20%2838%29%20%287%29%20%283%29.png[]
+image::image (38) (7) (3).png[]
 
 === Step 2: Choose a new instance type
 

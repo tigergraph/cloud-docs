@@ -36,7 +36,7 @@ image::image (35).png[]
 
 The endpoint takes two parameters, `secret` and `lifetime`, and the latter is optional. Put the parameters in the query string and send the request using your favorite REST client. The below example uses curl to request the authentication token:
 
-[source,bash]
+[source,console]
 ----
 curl -X GET 'https://aa768d833bbf47fea6db80a7972a9477.i.tgcloud.io:9000/requesttoken?secret=5e3dmjc5l79n4v30jmsou02qji07f8tb'
 ----
@@ -60,7 +60,7 @@ Now that you have an authorization token, you can proceed to make requests to yo
 
 Refer to our xref:3.2@tigergraph-server:API:built-in-endpoints.adoc[RESTful API User Guide] to learn about all the endpoints available. In this tutorial, we will make a request to the xref:3.2@tigergraph-server:API:built-in-endpoints.adoc#_list_vertices[List vertices] endpoint on a solution with the https://www.youtube.com/watch?v=s6-QapCEz1M&feature=youtu.be&ab_channel=TigerGraph[COVID-19 starter kit] and list 5 patients and the patients' age.
 
-[source,bash]
+[source,console]
 ----
 curl -H "Authorization: Bearer fc6p0i2ijjt031n0sja6m9ci70p232h7" \
 "https://aa768d833bbf47fea6db80a7972a9477.i.tgcloud.io:9000/graph/MyGraph/vertices/Patient?limit=5&select=birth_year"
@@ -68,7 +68,7 @@ curl -H "Authorization: Bearer fc6p0i2ijjt031n0sja6m9ci70p232h7" \
 
 Response:
 
-[source,bash]
+[source,console]
 ----
 {
   "version": {

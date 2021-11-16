@@ -1,7 +1,7 @@
 name: cloud
 title: TigerGraph Cloud
 version: latest
-start_page: start:README.adoc
+start_page: start:overview.adoc
 
 nav:
 - modules/start/nav.adoc

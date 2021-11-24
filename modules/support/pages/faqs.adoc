@@ -15,7 +15,7 @@ A:  TigerGraph Cloud gets you up and running with the fastest and best price-per
 
 A: New December 2020 pricing applies to new paid tier solutions provisioned after December 16th 2020. You can keep the old pricing if you keep your paid tier instances provisioned before December 16th, 2020 and keep its state (running or stopped). If you want to take advantage of the new pricing to lower your cost, you can migrate your workload to a newly provisioned instance, or simply start and stop the old instance. Note that TigerGraph Cloud accounts with valid credit cards are eligible for the paid tier migration. Please submit a support ticket for migration assistance.
 
-
+[#q-are-there-free-tier-instances-or-free-credits-for-the-system]
 === *Q: Are there Free Tier Instances or Free Credits for the System?*
 
 A: Yes,  in both instances.
@@ -65,7 +65,7 @@ A:  Please see the section on pricing on our website at https://www.tigergraph.c
 
 A: TigerGraph Cloud includes automatic scheduled backup, built-in encryption and other security features, patching, replication and distributed database option.  In addition, you can now provision a distributed database as well as a replica cluster for high availability. As a cloud service, many of the administrative and operational tasks - for monitoring, restoring, upgrading, for example - are just a click away. In addition to operations and management for your TigerGraph databases, TigerGraph Cloud also offers Starter Kits to provide instant experience to various graph analytics use cases. The list of Starter Kits can be found here: _**_https://www.tigergraph.com/starterkits/
 
-
+[#q-is-there-a-quota-for-the-number-of-solutions-i-can-provision-in-a-single-account]
 === *Q: Is there a quota for the number of solutions I can provision in a single account?*
 
 A: Yes. For basic accounts with credit card billing, there is a limit of 160 vCPUs and 20 instances. A solution is one logical database, which may include several instances due to a distribution database configuration and replication. For accounts running exclusively on Free Credit and that have not yet entered a valid credit card, there is a limit of 16 vCPUs and two solutions. For each registered account (with or without a valid credit card), you may only provision one solution from the Free Tier. To allow more vCPUs and solutions, please contact TigerGraph at _**_link:mailto:sales@tigergraph.com[sales@tigergraph.com].
@@ -152,7 +152,7 @@ In addition, for TigerGraph paid tier solutions, users can use GSQL Web Shell to
 
 For complex loading jobs through GSQL Web Shell for paid tier solutions, please submit a support ticket from your cloud portal for more information.
 
-
+[#q-if-i-dont-enter-a-valid-credit-card-in-the-account-and-use-the-initial-usd25-free-credit-will-the-data-in-the-provisioned-solutions-be-deleted-if-i-stop-the-solutions]
 === *Q: If I don't enter a valid credit card in the account and use the initial $25 free credit, will the data in the provisioned solutions be deleted if I stop the solutions?*
 
 A: As long as there is remaining free credits in your account, the data of your solutions will be preserved by the provisioned disk after you stop the solutions even if you don't have a credit card in your account. The data will be available and accessible after you restart the solutions.  The free credits is valid for 30 days after initial use. Your solutions will be deleted automatically if the following scenario is detected: there is no remaining valid free credits and there is no valid credit card in your account.
@@ -336,7 +336,7 @@ A:  TigerGraph Distributed Cloud offers active-active replication, for increased
 
 A TigerGraph system with HA is a cluster of server machines which uses replication to provide continuous service when one or more servers are not available or when some service components fail. TigerGraph HA service provides loading balancing when all components are operational, as well as automatic failover in the event of a service disruption.
 
-
+[#q-what-is-the-replication-factor]
 === *Q: What is the replication factor?*
 
 A: Replication factor means how many copies of data are stored, each on a separate machine. The default HA configuration has a replication factor of two, meaning that a fully-functioning system maintains two copies of the data, stored on separate machines. TigerGraph Distributed Cloud currently supports your choice of replication factor of one (only one copy of the data, not recommended for critical systems)*,* two. or three if you choose TigerGraph v3.0.6+. If you choose TigerGraph v2.6.x, only replication factor of one or two are supported.
@@ -345,7 +345,7 @@ A: Replication factor means how many copies of data are stored, each on a separa
 
 *Limitation for TigerGraph v3.1.1:* This version only supports single server configuration.
 
-
+[#q-what-is-the-partition-factor]
 === *Q: What is the partition factor?*
 
 A: Partition factor means the number of parts or components your graph data is split into, which also equals the number of instances that collectively store one copy of the full graph.  For example, if you select a partition factor of 3, each instance will hold approximately 1/3 of your data. Please read https://docs.tigergraph.com/admin/admin-guide/installation-and-configuration/ha-cluster#examples for additional details about partitions and replications.

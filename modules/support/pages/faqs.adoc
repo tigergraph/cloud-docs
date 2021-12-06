@@ -68,7 +68,7 @@ A: TigerGraph Cloud includes automatic scheduled backup, built-in encryption and
 [#q-is-there-a-quota-for-the-number-of-solutions-i-can-provision-in-a-single-account]
 === *Q: Is there a quota for the number of solutions I can provision in a single account?*
 
-A: Yes. For basic accounts with credit card billing, there is a limit of 160 vCPUs and 20 instances. A solution is one logical database, which may include several instances due to a distribution database configuration and replication. For accounts running exclusively on Free Credit and that have not yet entered a valid credit card, there is a limit of 16 vCPUs and two solutions. For each registered account (with or without a valid credit card), you may only provision one solution from the Free Tier. To allow more vCPUs and solutions, please contact TigerGraph at _**_link:mailto:sales@tigergraph.com[sales@tigergraph.com].
+A: Yes. For basic accounts with credit card billing, there is a limit of 160 vCPUs and 20 instances. A solution is one logical database, which may include several instances due to a distribution database configuration and replication. For accounts running exclusively on Free Credit and that have not yet entered a valid credit card, there is a limit of 16 vCPUs and two solutions. For each registered account (with or without a valid credit card), you may only provision one solution from the Free Tier. To allow more vCPUs and solutions, please contact TigerGraph at link:mailto:sales@tigergraph.com[sales@tigergraph.com].
 
 Total number of instances in a cluster = replication factor x partitioning factor
 
@@ -88,7 +88,7 @@ enabled)
 |*Replication Factor Limit* |2 |1 (that is, HA is not enabled)
 
 |*Request Quota/Limit Increase* |Yes, Please contact
-mailto:sales@tigergraph.com[]sales@tigergraph.com. a|
+mailto:sales@tigergraph.com[]. a|
 N/A
 
 Please upgrade your account by entering a valid credit card. +

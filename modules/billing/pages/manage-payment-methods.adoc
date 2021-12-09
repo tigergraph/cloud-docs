@@ -1,6 +1,6 @@
 = Manage Payment Methods
 
-For standard hourly use of TigerGraph Cloud solutions, we currently support payment through cards. This document offers is a tutorial on how to add or delete a card and how to set a card as the default payment option.
+For standard hourly use of TigerGraph Cloud solutions, we currently support payment through cards. This document is a tutorial on how to add or delete a card and how to set a card as the default payment option.
 
 If you need to use ACH payment, or purchase bulk cloud credits, please contact sales@tigergraph.com
 
@@ -8,7 +8,7 @@ If you need to use ACH payment, or purchase bulk cloud credits, please contact s
 
 === 1. Navigate to My Account
 
-On the left-side menu, click *My Account*.
+On the left side menu, click *My Account*.
 
 image::image (63).png[]
 
@@ -48,7 +48,7 @@ image::image (22) (3).png[]
 
 Find the card you want to delete in *Card Management*, and click *Delete*.
 
-== Set card as default
+== Set a card as default
 
 === 1. Navigate to My Account
 

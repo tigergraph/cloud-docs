@@ -1,6 +1,6 @@
 = Monitor Solution State
 
-TigerGraph Cloud allows you to view detailed operational data on a running solution, such as CPU usage, RAM usage and, and disk and network IO data.
+TigerGraph Cloud allows you to view detailed operational data on a running solution, such as CPU usage, RAM usage and disk and network IO data.
 
 == 1. Navigate to My Solutions
 
@@ -26,4 +26,4 @@ image::image (18).png[]
 
 == 4. Click Open Monitor
 
-Click *Open Monitor* to view more detailed statistics of your solution by https://learn.netdata.cloud/docs[Netdata monitor].
+Click *Open Monitor* to view more detailed statistics of your solution with https://learn.netdata.cloud/docs[Netdata monitor].

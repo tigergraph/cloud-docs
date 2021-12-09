@@ -24,6 +24,6 @@ image::image (23).png[Validity period and username]
 
 === 4. Enter your password
 
-When the GSQL Web Shell opens, the shell will ask you for your password. Enter the password for the TigerGraph user whose username you just entered and press the enter key.
+When the GSQL Web Shell opens, you will be prompted for your password. Enter the password for the TigerGraph user whose username you just entered, then press Enter.
 
 image::image (41).png[GSQL Web Shell]

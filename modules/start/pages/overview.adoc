@@ -7,7 +7,7 @@ Most of the documentation for TigerGraph Enterprise Server also applies to Tiger
 However, since TigerGraph Cloud does not have a command-line interface on the OS level, command-line features are not supported in the same way. In many cases, we introduced a GUI-based method for the same feature.
 For advanced OS-level commands, submit a support ticket for more information.
 
-*Watch* https://www.youtube.com/watch?v=mOsfjst6Ahs&ab_channel=TigerGraph[*Quick Start Video*] *and Start Your TigerGraph Cloud Solutions in 5 Minutes!*
+*Watch the* https://www.youtube.com/watch?v=mOsfjst6Ahs&ab_channel=TigerGraph[*Quick Start Video*] *and Start Your TigerGraph Cloud Solutions in 5 Minutes!*
 
 video::mOsfjst6Ahs[youtube]
 

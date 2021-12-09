@@ -1,11 +1,15 @@
 = Backup and Restore
 
-Backups are snapshots of the state of your solutions at a given point in time. Currently, any paid solutions provisioned by an account with a valid payment method can have a maximum of 7 backups concurrently.
+Backups are snapshots of the state of your solutions at a given point in time. Currently, any paid solutions provisioned by an account with a valid payment method can have a maximum of 7 concurrent backups.
 
 [NOTE]
 ====
 The backup feature is not supported on free-tier instances or instances provisioned by an account without a valid payment method.
 ====
+
+All tasks described on this page can be completed in the *Admin Portal*. To get to the *Admin Portal*, go to the *My Solutions* page in GraphStudio and click *Admin* in the upper-right corner.
+
+image::image (66).png[]
 
 == Data Storage and Encryption
 
@@ -15,56 +19,47 @@ Backups are encrypted by default using the native encryption feature of the clou
 
 == Scheduled backup
 
-By default, scheduled backup is turned on when instances are running and will be done daily. If the maximum retention number is reached when a new backup is made, the oldest scheduled backup will be deleted. To change the backup schedule, change your backup settings in Admin Portal.
+By default, scheduled backup is turned on when instances are running and will be done daily. If the maximum retention number is reached when a new backup is made, the oldest scheduled backup will be deleted. The backup schedule can be customized.
 
-=== Change backup schedule
+=== Change the backup schedule
 
-==== 1. Go to Admin Portal.
-
-From *My Solutions* page, go to GraphStudio. Then click *Admin* on the upper-right corner to go to *Admin Portal*.
-
-image::image (66).png[]
-
-==== 2. Click Backup & Restore.
+==== 1. Click Backup & Restore.
 
 On the left side of the screen, click *Backup & Restore.*
 
-*3. Specify backup schedule.*
+==== 2. Specify backup schedule.
 
-Choose the backup frequency you want, and supply the password of your TigerGraph user.
+Choose the backup frequency you want and supply the password of your TigerGraph user.
 
 image::image (26).png[]
 
-==== 4. Click UPDATE.
+==== 3. Click UPDATE.
 
 == Manual backup
 
-Aside from scheduled backups, you can also make backups manually in Admin Portal.
+Aside from scheduled backups, you can also make backups manually in the Admin Portal.
 
 [NOTE]
 ====
 
-* If you want to perform a manual backup when there are already seven copies of backups, you need to delete an older backup.
+* If you want to perform a manual backup when there are already seven copies of backups, you must delete an older backup.
 * The maximum number of manual backups is six, as the platform always reserves one spot for scheduled backups.
 ====
 
-Below are the procedures to create a backup manually:
+Below are the procedures to create a backup manually in the Admin Portal:
 
 [discrete]
-==== 1. Go to Admin Portal.
+==== 1. Click Backup & Restore.
 
 [discrete]
-==== 2. Click Backup & Restore.
-
-[discrete]
-==== 3. Provide tag and password.
+==== 2. Provide tag and password.
 
 In Backup/Restore, supply a tag for your backup and enter the password of your TigerGraph user.
 
 image::image (56).png[]
 
 [discrete]
-==== 4. Click BACK UP.
+==== 3. Click BACK UP.
 
 == Restore a backup
 
@@ -73,10 +68,10 @@ You can use a backup to restore your solution.
 Below are the procedures to restore a backup:
 
 [discrete]
-==== 1. Go to Admin Portal.
+==== 1. Go to the Admin Portal.
 
 [discrete]
-==== 2. Click Back up & Restore.
+==== 2. Click Backup & Restore.
 
 [discrete]
 ==== 3. Copy backup tag.
@@ -87,20 +82,17 @@ image::image (48) (2).png[]
 
 == Delete a backup
 
-Below are the procedures to delete a backup
+Below are the procedures to delete a backup from the Admin Portal.
 
 [discrete]
-==== 1. Go to Admin Portal.
+==== 1. Click Backup & Restore
 
 [discrete]
-==== 2. Click to Backup & Restore
+==== 2. Go to Manage Backups
 
 [discrete]
-==== 3. Go to Manage Backups
+==== 3. Delete the backup.
 
-[discrete]
-==== 4. Delete the backup.
-
-In Backup List, find the backup you want to delete and click the delete button in the *Action* column.
+In the Backup List, find the backup you want to delete and click the delete button in the *Action* column.
 
 image::image (48) (1).png[]

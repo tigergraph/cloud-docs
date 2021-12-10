@@ -1,0 +1,9 @@
+= TigerGraph Cloud Documentation
+
+This repository contains the user-facing documentation for TigerGraph Cloud.
+This repository only contains the source files for the published documentation.
+
+To view the published version, see link:https://docs.tigergraph.com/cloud[TigerGraph Cloud Documentation].
+
+== Contribution
+For instructions on how to contribute to this repository, see link:https://github.com/tigergraph/doc-site/blob/main/contribution.adoc[Contribution guidelines].

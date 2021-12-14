@@ -373,11 +373,6 @@ A: Yes, TigerGraph Cloud encrypts all data in transit and at rest.
 A: You are not sharing storage with other customers. Each TigerGraph solution is provisioned as one or more virtual machine instances of the TigerGraph engine, used only for your account, and provisioned with its own disk space. No two accounts are sharing the same TigerGraph database.
 
 
-=== *Q: Can I use TigerGraph Cloud to do VPC peering?*
-
-A: The current version of TigerGraph Cloud does not support VPC peering. The feature is coming soon. If you want VPC peering, contact link:mailto:sales@tigergraph.com[sales@tigergraph.com] for managed services.
-
-
 === *Q: How do I log in to the GraphStudio UI of my solution for the first time?*
 
 A: You provide the initial password through provisioning steps in your cloud portal. Hence, remember the initial password you provided to your tigergraph user. To log in to GraphStudio for the first time, use tigergraph/<initial password>.

@@ -21,11 +21,11 @@ a|
 
 |10 instances |1
 
-|*Replication Factor* |2 |1
+|*Replication Factor* |3 |1
 
-|*Backup and Restore* |No |Yes
+|*Backup and Restore* |Yes |No
 
-|*GSQL Web Shell Access* |No |Yes
+|*GSQL Web Shell Access* |Yes |No
 |===
 
 == Free tier solution limits

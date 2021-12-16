@@ -7,7 +7,7 @@ This is a guide for setting up a Virtual Network(VN) peering connection between 
 
 
 == Prerequisite
-* At least one unterminated TigerGraph Cloud solution on GCP
+* At least one unterminated TigerGraph Cloud solution on Azure
 
 == Procedure
 

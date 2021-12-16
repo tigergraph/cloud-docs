@@ -23,7 +23,7 @@ Then choose the region of the platform you want to initiate the peering connecti
 Click btn:[Next].
 
 === 2. Add TigerGraph Cloud to your Azure tenant
-In the Peered VPC tab, fill in your link:https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-how-to-find-tenan[Azure tenant ID] and your VN ID (Resource ID for your VN).
+In the Peered VPC tab, fill in your link:https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-how-to-find-tenant[Azure tenant ID] and your VN ID (Resource ID for your VN).
 Click btn:[Next].
 
 Click on the link in the instructions to add TigerGraph Cloud to your tenant.

@@ -3,7 +3,7 @@
 :experimental:
 
 
-This is a guide for setting up a Virtual Network(VN) peering connection between the TigerGraph Cloud VN and another Azure VN.
+This is a guide for setting up a Virtual Network (VN) peering connection between the TigerGraph Cloud VN and another Azure VN.
 
 
 == Prerequisite
@@ -45,4 +45,4 @@ You'll see a notification if the role assignment is successful.
 
 === 4. Initiate peering
 Go back to the Cloud Portal, and click btn:[Initiate Peering].
-If connection is successful, you'll see the connection listed under Azure and its status is "Connected".
+If connection is successful, you'll see the connection listed under Azure with its status shown as "Connected".

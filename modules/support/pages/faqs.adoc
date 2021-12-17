@@ -125,7 +125,7 @@ A: Yes, TigerGraph supports TigerGraph cloud users using paid tiers. See the Sup
 
 === *Q: What is the user interface for the TigerGraph Cloud instance?*
 
-A: The TigerGraph https://docs.tigergraph.com/ui/graphstudio/overview[GraphStudio™ UI (User Interface)] provides an intuitive, browser-based interface that helps users get started quickly with graph-based application development tasks: designing a graph schema, creating a schema mapping, loading data, exploring the graph, and writing GSQL queries.
+A: The TigerGraph xref:gui:graphstudio:overview.adoc[GraphStudio™ UI (User Interface)] provides an intuitive, browser-based interface that helps users get started quickly with graph-based application development tasks: designing a graph schema, creating a schema mapping, loading data, exploring the graph, and writing GSQL queries.
 
 In addition, for TigerGraph paid tier solutions, users can use GSQL Web Shell to write GSQL Commands in an interactive command line shell. Users can access GSQL Web Shell through the solution panel from their Cloud Portal. This GSQL Web Shell opens up more data loading options such as S3 Loader (parquet format) and Kafka Loader.
 

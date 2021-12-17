@@ -477,11 +477,16 @@ A: Access to TigerGraph system and component logs is coming soon via the TigerGr
 == Upgrade
 
 
-=== *Q: Can I upgrade from V2.6.x, V3.0.5, V3.0.6 to V3.1.1?*
+=== Q: Can I upgrade TigerGraph version on my solution?
 
-A: For free tier solutions, the upgrade is not supported unless you are migrating to paid tier solutions. If you want to change the database version in your free tier, you can terminate the existing free tier solution, and create a new free tier with the new version. In each TigerGraph Cloud account, you can have one free tier. If you want to migrate to paid tier solutions, please send a support ticket through your cloud portal.
+A: For free tier solutions, upgrading is not supported unless you are migrating to paid tier solutions.
+If you want to change the database version in your free tier, you can terminate the existing free tier solution, and create a new free tier with the new version.
+In each TigerGraph Cloud account, you can have one free tier solution.
+If you want to migrate to paid tier solutions, please send a support ticket through your cloud portal.
 
-For paid tier solutions, please submit a support ticket for upgrade assistance. Downtime is expected during this upgrade. It is recommended to create a new blank V3.1.1 solution, import your data and copy the GSQL queries to test and experiment before upgrading your production instance from V2.6.x, V3.0.5, V3.0.6 to V3.1.1.
+For paid tier solutions, please submit a support ticket for upgrade assistance.
+Downtime is expected during this upgrade.
+It is recommended to create a new blank solution, import your data and copy the GSQL queries to test and experiment before upgrading your production instance.
 
 == TigerGraph Cloud Support
 

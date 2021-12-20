@@ -28,7 +28,7 @@ A policy-neutral access-control mechanism defined around roles and privileges.
 
 == solution
 
-Fully-managed TigerGraph deployment.
+A fully-managed TigerGraph deployment.
 
 
 == TigerGraph user

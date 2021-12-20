@@ -1,6 +1,6 @@
 = Access a Solution through GraphStudio
 
-The TigerGraph GraphStudio™ UI (User Interface) provides an intuitive, browser-based interface that helps users get started quickly with graph-based application development tasks: designing a graph schema, creating a schema mapping, loading data, exploring the graph, and writing GSQL queries. GraphStudio is supported in the same way on TigerGraph Cloud as the on-premise version of TigerGraph.
+The TigerGraph GraphStudio™ UI (User Interface) provides an intuitive, browser-based interface that helps users get started quickly with graph-based application development tasks: designing a graph schema, creating a schema mapping, loading data, exploring the graph, and writing GSQL queries. GraphStudio is supported in the same way on TigerGraph Cloud as on the on-premise version of TigerGraph.
 
 == Open GraphStudio
 
@@ -12,7 +12,7 @@ image::image (38) (7) (5).png[]
 
 === 2. Open GraphStudio
 
-Find the solution you want to access, and click the Applications icon in the same row, and click GraphStudios in the dropdown list.
+Find the solution you want to access, click the Applications icon in the same row, and click GraphStudios in the dropdown list.
 
 image::image (21).png[]
 

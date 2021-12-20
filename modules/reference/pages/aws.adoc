@@ -66,10 +66,10 @@ The table below shows the instance types available on AWS.
 
 On AWS, disk storage refers to the https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volumes.html[EBS volume] attached to your TigerGraph Cloud instance. By default, data in disk storage is encrypted-at-rest with platform-managed keys.
 
-Disk Storage is $0.15 /GB/month, equivalent to $0.0002083 /GB/hour
+Disk Storage is $0.15 /GB/month, equivalent to about $0.0002083 /GB/hour
 
 == Backup storage
 
 Solution backups on AWS are stored on https://aws.amazon.com/efs/[Amazon Elastic File System] (EFS) and automatically encrypted at rest with platform-managed keys. When a solution is provisioned, backup storage is part of the running cost of the solution and only stops incurring charges when the solution is terminated.
 
-Backup Storage is $1.25 /GB/month = $0.001736 /GB/hour.
+Backup Storage is $1.25 /GB/month or about $0.001736 /GB/hour.

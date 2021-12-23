@@ -1,0 +1,6 @@
+= Pages to translate
+
+All pages to translated are in the `pages` directory of the corresponding module.
+
+* start
+** Both pages.

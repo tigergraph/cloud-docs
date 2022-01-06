@@ -1,3 +1,4 @@
+:experimental:
 = Send REST Requests to a Solution
 
 Besides GraphStudio, another way to interact with your TigerGraph database is through our REST API. Use RESTful endpoints to send requests to TigerGraph solutions and develop applications.
@@ -10,13 +11,13 @@ Here is a step-by-step guide to generating and using an authorization token for 
 
 === 1. Navigate to User Management
 
-From GraphStudio, go to *Admin Portal* and click *User Management*.
+From GraphStudio, go to menu:Admin Portal[User Management].
 
 image::image (46).png[Click User Management]
 
 === 2. Generate a secret
 
-In the *My Profile* tab, find the graph you want to generate the secret for, enter an alias for your secret and click the "*+*" symbol on the right side of the row.
+In the *My Profile* tab, find the graph you want to generate the secret for, enter an alias for your secret and click the btn:[*] symbol on the right side of the row.
 
 Remember to copy and save the secret to a safe location. *This is the only time the secret will be fully visible in Admin Portal. You will not be able to see it again*.
 

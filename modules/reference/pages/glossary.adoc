@@ -18,7 +18,7 @@ TigerGraph's UI for exploring and manipulating graphs and queries.
 
 == GSQL
 
-The SQL-like query language used by all TigerGraph solutions for graph operations and analytics.
+TigerGraph's proprietary query language for fast and scalable graph operations and analytics. 
 
 == instance
 

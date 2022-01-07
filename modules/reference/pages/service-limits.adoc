@@ -10,9 +10,9 @@ The table below outlines the service limits for accounts with and without a vali
 credit card*
 |*Free Tier Solution* |1 |1
 
-|*Total Instance* |20 |2
+|*Total Instances* |20 |2
 
-|*Total vCPU* |160 |16
+|*Total vCPUs* |160 |16
 
 a|
 *Cluster Size*
@@ -30,6 +30,6 @@ a|
 
 == Free tier solution limits
 
-Each registered account is allowed one solution from the Free Tier. Free Tier instances do not include backup and do not include support.
+Each registered account is allowed one solution from the Free Tier. Free Tier instances do not include backups or support.
 
 If no user activity is detected for more than one hour, TigerGraph may automatically stop a Free Tier instance. Users can manually restart the free tier instances from their cloud portal. After 7 days of inactivity, TigerGraph may terminate the inactive free tier instances.

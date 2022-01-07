@@ -1,10 +1,24 @@
 = Glossary
 
-
 == backup
 
 A snapshot of the state of your solutions at a given point in time.
 
+== cluster
+
+A group of servers connected together. TigerGraph allows High Availability (HA) clusters that provide redundancy so that user instances are not interrupted in the case of a server outage.
+
+== credentials
+
+Information authenticating a user's identity. TigerGraph allows either username:password or API token credentials.
+
+== GraphStudio
+
+TigerGraph's UI for exploring and manipulating graphs and queries.
+
+== GSQL
+
+TigerGraph's proprietary query language for fast and scalable graph operations and analytics. 
 
 == instance
 
@@ -20,11 +34,21 @@ An internal TigerGraph characteristic of a TigerGraph cluster that determines ho
 
 A characteristic of the cluster design that will determine the number of copies of data that will be stored in the cluster.
 
+== resizing
+
+Allocating more or fewer resources to existing instances, enabling a balance between cost and performance as workloads change.
+
+== REST++/RESTPP
+
+A REST server customized for TigerGraph users.
 
 == role-based access control
 
 A policy-neutral access-control mechanism defined around roles and privileges.
 
+== schema
+
+A formal description of the graph. The schema defines what types of edges and vertices exist in a graph as well as their relationships.
 
 == solution
 
@@ -34,3 +58,19 @@ A fully-managed TigerGraph deployment.
 == TigerGraph user
 
 A database user with its own roles and privileges for different graphs stored on a solution.
+
+== vCPU
+
+A virtual central processing unit. A vCPU is a core within a virtual machine inside TigerGraph Cloud.
+
+== VPC
+
+Virtual Private Cloud. A private cloud environment inside a public cloud. By default, your instances are separated from other TigerGraph users by different VPCs. The term "VPC" is used by AWS and GCP, while Azure uses "VN" for "Virtual Network."
+
+== VPC Peering
+
+A network between two VPCs allowing instances to communicate as if they are on the same network.
+
+== web shell
+
+A browser-accessible command line for running GSQL commands on a TigerGraph Cloud solution.

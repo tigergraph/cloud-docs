@@ -12,7 +12,7 @@ image::image (38) (7) (1).png[]
 
 === 2. Stop the solution.
 
-Find the solution you want to stop and click on the Solution Operations icon and click *Stop*.
+Find the solution you want to stop. Click on the Solution Operations icon and click *Stop*.
 
 image::image (25).png[]
 
@@ -28,13 +28,13 @@ image::image (38) (7) (11).png[]
 
 === 2. Restart the solution.
 
-Find the stopped solution, and click the Solution Operations icon  image:screen-shot-2021-02-24-at-5.26.45-pm.png[] , and in the dropdown list, click *Start*.
+Find the stopped solution and click the Solution Operations icon  image:screen-shot-2021-02-24-at-5.26.45-pm.png[]. In the dropdown list, click *Start*.
 
 image::image (45).png[]
 
 == Terminate a solution
 
-By terminating a solution, you deprovision the virtual machine and the attached disk storage. The solution is deleted according to the cloud platform's policies and cannot be recovered, so is everything in the attached disk storage.
+By terminating a solution, you deprovision the virtual machine and the attached disk storage. The solution, as well as everything in the attached disk storage, is deleted according to the cloud platform's policies and cannot be recovered.
 
 Below are the steps to terminating a solution.
 

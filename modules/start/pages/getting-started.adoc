@@ -4,7 +4,9 @@
 
 TigerGraph Cloud offers an easy way to analyze and query your graph data in the cloud. This tutorial guides you through creating your TigerGraph Cloud account, provisioning a free-tier TigerGraph Cloud Solution, and logging into GraphStudio.
 
-*Watch* https://www.youtube.com/watch?v=JARd9ULRP_I&feature=youtu.be[*Quick Start Video*] *and Start Your TigerGraph Cloud Solutions in 5 Minutes!*
+*Watch the Quick Start Video and Start Your TigerGraph Cloud Solutions in 5 Minutes!*
+
+video::JARd9ULRP_I[youtube]
 
 == Create a TigerGraph Cloud account
 
@@ -21,7 +23,8 @@ Email::
 . Click *Sign Up*.
 . Enter your email and password.
 . A verification email with the subject "Verify your email" will be sent to the email address you provided.
-. Go to your email inbox. Find the verification email and click *Confirm my account.*
+. Find the verification email in your inbox and click *Confirm my account.*
+
 --
 Google::
 +
@@ -41,7 +44,7 @@ Linkedin::
 --
 . Click *Login/Register.*
 . Click *Sign up.*
-. Click Sign up with LinkedIn.
+. Click *Sign up with LinkedIn*.
 . Enter your LinkedIn credentials and click Sign in.
 . Review the Terms and Conditions and click *Allow*.
 . After being redirected back to TigerGraph Cloud, enter the information on the signup form and click the checkbox to accept TigerGraph's *Terms & Conditions* and *Privacy Policy*.

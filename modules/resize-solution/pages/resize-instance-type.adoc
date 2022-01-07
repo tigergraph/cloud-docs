@@ -5,7 +5,7 @@ As your workload changes after you have created a solution, you can choose to re
 == Before you begin
 
 * If you choose to upgrade the instance type of a free-tier solution, you must also upgrade the disk volume of the solution.
-* Resizing instance types would result in a short period of downtime.
+* Resizing instance types will result in a short period of downtime.
 
 == Procedure
 
@@ -19,7 +19,7 @@ image::image (38) (7) (3).png[]
 
 === Step 2: Choose a new instance type
 
-On the My Solutions page, click the Solutions Operations icon in the Actions column and hover over *Resize*. In the dropdown menu that appears, select *Instance Type*.
+On the *My Solutions* page, click the Solutions Operations icon in the Actions column and hover over *Resize*. In the dropdown menu that appears, select *Instance Type*.
 
 image::screen-shot-2021-07-27-at-10.50.06-am.png[Hover over Resize ]
 

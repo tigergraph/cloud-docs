@@ -6,7 +6,7 @@ A snapshot of the state of your solutions at a given point in time.
 
 == cluster
 
-A group of servers connected together. TigerGraph allows High Availability (HA) clusters that provide redundancy so that user instances are not interrupted in the case of a server outage.
+A group of instances connected together. TigerGraph allows High Availability (HA) clusters that provide redundancy so that user instances are not interrupted in the case of a server outage.
 
 == credentials
 
@@ -14,15 +14,15 @@ Information authenticating a user's identity. TigerGraph allows either username:
 
 == GraphStudio
 
-TigerGraph's UI for exploring and manipulating graphs and queries.
+TigerGraph's visual interface for designing a graph, ingesting data, exploring the graph, developing and running queries, and visualizing the results.
 
 == GSQL
 
-TigerGraph's proprietary query language for fast and scalable graph operations and analytics. 
+TigerGraph's query language for fast and scalable graph operations and analytics.
 
 == instance
 
-A virtual server in the cloud.
+One virtual machine or virtual server.
 
 
 == partitioning factor
@@ -48,7 +48,7 @@ A policy-neutral access-control mechanism defined around roles and privileges.
 
 == schema
 
-A formal description of the graph. The schema defines what types of edges and vertices exist in a graph as well as their relationships.
+A formal description of a graph's data model.
 
 == solution
 

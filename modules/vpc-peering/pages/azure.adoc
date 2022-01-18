@@ -1,6 +1,7 @@
 = Set up VN Peering on Azure
-:description: The process to set up VPC peering between the TigerGraph Cloud Azure VN and another Azure VN.
+:description: The steps to set up VPC peering between the TigerGraph Cloud Azure VN and another Azure VN.
 :experimental:
+:sectnums:
 
 
 This is a guide for setting up a Virtual Network (VN) peering connection between the TigerGraph Cloud VN and another Azure VN.
@@ -11,7 +12,7 @@ This is a guide for setting up a Virtual Network (VN) peering connection between
 
 == Procedure
 
-=== 1. Choose the Azure VN to initiate peering from
+=== Choose the Azure VN to initiate peering from
 
 From the Cloud Portal, navigate to menu:Network[VPC Peering].
 From the platform list, click btn:[Initiate a VPC Peering].
@@ -22,7 +23,7 @@ In the pop-up window, choose Azure as your network platform.
 Then choose the region of the platform you want to initiate the peering connection from.
 Click btn:[Next].
 
-=== 2. Add TigerGraph Cloud to your Azure tenant
+=== Add TigerGraph Cloud to your Azure tenant
 In the Peered VPC tab, fill in your link:https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-how-to-find-tenant[Azure tenant ID] and your VN ID (Resource ID for your VN).
 Click btn:[Next].
 
@@ -30,7 +31,7 @@ Click on the link in the instructions to add TigerGraph Cloud to your tenant.
 Doing so opens a new tab, and if authorization is successful, it will redirect you back to the cloud portal.
 You can now safely close this tab.
 
-=== 3. Assign Network Contributor role to TigerGraph Cloud VN Peerer
+=== Assign Network Contributor role to TigerGraph Cloud VN Peerer
 From the Azure portal, navigate to btn:[Virtual Networks] and choose the network you are peering with.
 Then navigate to menu:Access Control[Add > Add role assignment].
 

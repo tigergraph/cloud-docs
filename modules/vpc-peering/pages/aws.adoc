@@ -1,6 +1,7 @@
-= Set Up VPC Peering on AWS
+= Set up VPC Peering on AWS
 :sectnums:
-
+:experimental:
+:description: The steps to set up VPC peering between TigerGraph's AWS VPC and your AWS VPC.
 
 This is a guide for setting up a VPC peering connection between your
 TigerGraph Cloud VPC and another AWS VPC.
@@ -45,7 +46,7 @@ https://docs.aws.amazon.com/vpc/latest/peering/create-vpc-peering-connection.htm
 VPC Peering Request].
 
 [arabic]
-. Go to “VPC service” → “Peering Connections” in the AWS web console
+. Go to menu:VPC service[Peering Connections] in the AWS web console
 . Accept the connection from the TigerGraph VPC
 
 [[update-route-table-for-vpc-peering-connection]]
@@ -54,18 +55,18 @@ VPC Peering Request].
 After accepting the peering request, you still need to update your route
 table for the peering connection.
 
-*To add a route for a VPC peering connection*
+To add a route for a VPC peering connection:
 
 [arabic]
 . Open the Amazon VPC console at https://console.aws.amazon.com/vpc/.
-. In the navigation pane, choose *Route Tables*.
-. Select the check box next to the route table that's associated with
+. In the navigation pane, choose btn:[Route Tables].
+. Select the checkbox next to the route table that's associated with
 the subnet in which your instance resides.
-. Choose *Actions*, *Edit routes*.
-. Choose *Add route*.
+. Choose menu:Actions[Edit routes].
+. Choose btn:[Add route].
 . For *Destination*, enter the CIDR block of the TigerGraph VPC you are
 peering with. You can find the CIDR block of the TigerGraph VPC at
-*Peering Connections* in the VPC service where you accepted the peering
+btn:[Peering Connections] in the VPC service where you accepted the peering
 connection. There is a column "*Requester CIDRs*"*.*
 . For *Target*, select the VPC peering connection, and then choose *Save
 changes*.

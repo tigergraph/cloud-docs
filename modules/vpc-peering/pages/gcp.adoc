@@ -1,4 +1,7 @@
-= Set Up VPC Peering on GCP
+= Set up VPC Peering on GCP
+:description: The steps to set up VPC peering between TigerGraph's GCP VPC and your GCP VPC.
+:sectnums:
+:experimental:
 
 This is a guide for setting up a VPC peering connection between your
 TigerGraph Cloud VPC and another GCP VPC.
@@ -13,7 +16,7 @@ TigerGraph Cloud VPC and another GCP VPC.
 === Initiate VPC Peering
 
 Log in to the Cloud portal and navigate to the Network tab, click
-"*Initiate VPC Peering*"
+btn:[Initiate VPC Peering]
 
 image:cloud-network.png[Network tab]
 
@@ -37,25 +40,25 @@ connection, your still need to create a matching peering configuration
 on your peered VPC to the TigerGraph VPC:
 
 [arabic]
-. In the Google Cloud Console, go to the *VPC Network Peering* page.
+. In the Google Cloud Console, go to the btn:[VPC Network Peering] page.
 https://console.cloud.google.com/networking/peering/list[Go to VPC
 Network Peering]
-. Click *Create connection*.
-. Click *Continue*.
+. Click btn:[Create connection].
+. Click btn:[Continue].
 . Enter a *Name* for your peering connection.
-. Under *Your VPC network*, select a network you want to peer.
+. Under btn:[Your VPC network], select a network you want to peer.
 . Select the TigerGraph network as the network to peer with.
-* Select *In another project*. You will need to specify the project ID
+* Select btn:[In another project]. You will need to specify the project ID
 that includes the network you want to peer with and the name of the VPC
 network:
 ** Project ID:`+tgcloud-prod+`
 ** VPC network name: Name of your TigerGraph Cloud VPC. You can find it
-in the *TigerGraph Cloud portal - Network tab - VPC Peering* page.
+in the menu:TigerGraph Cloud portal[Network tab > VPC Peering] page.
 Choose `+GCP+` as the platform, and in the VPC column is the VPC name.
-. You can leave the other fields as they are (with only *Export subnet
-routes with public IP* selected) unless you need special configurations.
-. Click *Create*.
+. You can leave the other fields as they are (with only btn:[Export subnet
+routes with public IP] selected) unless you need special configurations.
+. Click btn:[Create].
 
 image:vpcname-gcp.png[Location of VPC name]
 
-After creating the matching peering configuration, the status of your VPC connection should change to `+Active,+` meaning the two VPCs are peered successfully.
+After creating the matching peering configuration, the status of your VPC connection should change to btn:[Active] meaning the two VPCs are peered successfully.

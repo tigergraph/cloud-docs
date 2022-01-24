@@ -67,6 +67,7 @@ You can use a backup to restore your solution.
 
 Below are the procedures to restore a backup in the Admin Portal:
 
+[discrete]
 ==== 1. Click Backup & Restore.
 
 [discrete]

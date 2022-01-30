@@ -42,8 +42,8 @@ IPv6 CIDR here if your peered VPC has one.
 After you have completed the first step, a VPC peering connection will
 be sent to your VPC. Follow the steps below to accept the peering
 connection on your AWS VPC. See more in AWS's documentation on
-https://docs.aws.amazon.com/vpc/latest/peering/create-vpc-peering-connection.html#accept-vpc-peering-connection[Accept
-VPC Peering Request].
+https://docs.aws.amazon.com/vpc/latest/peering/create-vpc-peering-connection.html#accept-vpc-peering-connection[Accepting
+VPC Peering Connections].
 
 [arabic]
 . Go to menu:VPC service[Peering Connections] in the AWS web console
@@ -70,3 +70,9 @@ btn:[Peering Connections] in the VPC service where you accepted the peering
 connection. There is a column "*Requester CIDRs*"*.*
 . For *Target*, select the VPC peering connection, and then choose *Save
 changes*.
+
+=== View IP Address
+
+The public and private IPs of a peered solution are shown just like any other solution. To view IP addresses, click on the instance on the *My Solutions* page. The IPs will be shown on the right side of the expanded information box.
+
+image:ipaddress.png[IP Addresses]

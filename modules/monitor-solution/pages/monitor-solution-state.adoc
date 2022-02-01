@@ -27,3 +27,9 @@ image::image (18).png[]
 == 4. Click Open Monitor
 
 Click *Open Monitor* to view more detailed statistics of your solution with https://learn.netdata.cloud/docs[Netdata monitor].
+
+== View IP Address
+
+To view IP addresses, click the instance on the *My Solutions* page to show details. The IPs will appear on the right side of the expanded information box.
+
+image:ipaddress.png[IP Addresses]

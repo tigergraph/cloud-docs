@@ -50,6 +50,4 @@ If connection is successful, you'll see the connection listed under Azure with i
 
 === View IP Address
 
-The public and private IPs of a peered solution are shown just like any other solution. To view IP addresses, click on the instance on the *My Solutions* page. The IPs will be shown on the right side of the expanded information box.
-
-image:ipaddress.png[IP Addresses]
+The public and private IP addresses of a solution in a peered VPC are shown just like any other solution. Please see the following page for details: xref:monitor-solution:monitor-solution-state.adoc#_view_ip_address[View IP Address]

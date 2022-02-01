@@ -1,7 +1,7 @@
 = VPC Peering
 :description: Instructions for VPC peering. 
 
-TigerGraph Cloud supports VPC Peering connections for VPCs and VNs on AWS, GCP and Azure.
+TigerGraph Cloud supports xref:reference:glossary.adoc#_vpc_peering[VPC Peering] connections for VPCs and VNs on AWS, GCP and Azure.
 
 * xref:aws.adoc[]
 * xref:gcp.adoc[]

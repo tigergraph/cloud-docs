@@ -1,4 +1,6 @@
 = Backup and Restore
+:description: The procedure to perform backup and restore on TigerGraph Cloud.
+:page-aliases: backup-and-restore.adoc
 
 Backups are snapshots of the state of your solutions at a given point in time. Currently, any paid solutions provisioned by an account with a valid payment method can have a maximum of 7 concurrent backups.
 

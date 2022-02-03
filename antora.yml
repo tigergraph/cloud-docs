@@ -11,7 +11,7 @@ nav:
 - modules/monitor-solution/nav.adoc
 - modules/resize-solution/nav.adoc
 - modules/security/nav.adoc
-- modules/backup-and-restore/backup-and-restore.adoc
+- modules/backup-and-restore/nav.adoc
 - modules/vpc-peering/nav.adoc
 - modules/billing/nav.adoc
 - modules/release-notes/nav.adoc

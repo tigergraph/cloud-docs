@@ -464,7 +464,7 @@ A: When you register your account, you will select a username and password. You 
 
 === *Q: How do I access my TigerGraph database and POST to TigerGraph?*
 
-A: You can access the database through TigerGraph's GraphStudio visual interface and through RESTful endpoints. Use RESTful endpoints to POST to TigerGraph solutions and develop applications. Please refer to the xref:tigergraph-server:API:intro.adoc[RESTful API User Guide] for more information. To find the RESTful endpoints for queries created in GraphStudio, please read our documentation on xref:gui:graphstudio:write-queries.adoc[showing query endpoints]. There is also a recorded webinar which demos the process in detail: link:https://info.tigergraph.com/graph-gurus-24[Graph Gurus Episode 24]
+A: You can access the database through TigerGraph's GraphStudio visual interface and through RESTful endpoints. Use RESTful endpoints to POST to TigerGraph solutions and develop applications. Please refer to the xref:tigergraph-server:API:index.adoc[RESTful API User Guide] for more information. To find the RESTful endpoints for queries created in GraphStudio, please read our documentation on xref:gui:graphstudio:write-queries.adoc[showing query endpoints]. There is also a recorded webinar which demos the process in detail: link:https://info.tigergraph.com/graph-gurus-24[Graph Gurus Episode 24]
 
 *Here is the step-by-step instructions:*
 
@@ -584,7 +584,7 @@ A: TigerGraph is a native parallel graph database built on C{pp}. It is not buil
 === *Q: How can I monitor the speed or throughput of queries and data loading?*
 
 A: The GraphStudio visual design tool provides several monitors.
-The xref:gui:graphstudio:load-data.adoc[]  page includes a real time monitor and statistics. Query performance and many other measures are available on the xref:tigergraph-server:intro:introduction.adoc[Administrator Portal].
+The xref:gui:graphstudio:load-data.adoc[]  page includes a real time monitor and statistics. Query performance and many other measures are available on the xref:tigergraph-server:intro:index.adoc[Administrator Portal].
 
 
 === *Q: How can I improve the speed of my system?*

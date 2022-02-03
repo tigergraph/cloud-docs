@@ -1,1 +1,1 @@
-* xref:backup-and-restore.adoc[]
+* xref:index.adoc[]

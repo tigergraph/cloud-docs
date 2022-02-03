@@ -21,7 +21,7 @@ video::mOsfjst6Ahs[youtube]
 
 * xref:monitor-solution:monitor-solution-state.adoc[Monitor a solution]
 * xref:gui:admin-portal:management/user-management.adoc[Security and user management]
-* xref:backup-and-restore:backup-and-restore.adoc[Backup and restore]
+* xref:backup-and-restore:index.adoc[Backup and restore]
 
 == Billing
 

@@ -28,6 +28,10 @@ image::image (18).png[]
 
 Click *Open Monitor* to view more detailed statistics of your solution with https://learn.netdata.cloud/docs[Netdata monitor].
 
+WARNING: Netdata is temporarily unavailable for solutions created after March 8th, 2022 due to changes to TigerGraph Cloud's networking architecture.
+We are working to restore this feature and apologize for any inconvenience.
+
+
 == View IP Address
 
 To view IP addresses, click the instance on the *My Solutions* page to show details. The IPs will appear on the right side of the expanded information box.

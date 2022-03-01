@@ -1,6 +1,11 @@
 = Access a Solution through GSQL Web Shell
 
-With a paid tier solution and a valid payment method, you can also access the solution through the GSQL Web Shell. The web shell allows you to run GSQL commands on your TigerGraph Cloud solution.
+With a paid tier solution and a valid payment method, you can also access the solution through the GSQL Web Shell.
+The web shell allows you to run GSQL commands on your TigerGraph Cloud solution.
+
+WARNING: GSQL Web Shell is temporarily unavailable for solutions created after March 8th due to changes to TigerGraph Cloud's networking architecture.
+We are working to restore this feature and apologize for any inconvenience.
+If you need shell access to your solution, you may xref:tigergraph-server:gsql-shell:using-a-remote-gsql-client.adoc[use a remote GSQL client] instead.
 
 == Open GSQL Web Shell
 

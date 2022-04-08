@@ -2,8 +2,10 @@
 
 == Regions
 
-* Oregon
-* London
+* US-West1 (Oregon)
+* Europe-West2 (London)
+* Asia-Southeast1 (Singapore)
+* Australia-Southeast1 (Australia)
 
 == Instance types
 

@@ -2,15 +2,23 @@
 
 == Regions
 
-* West US
-* West Europe
-* Central India
-* South India
+* East US (Virginia)
+* East US (Virginia 2)
+* West US (California)
+* West Europe (Amsterdam)
+* Central India (Pune)
+* South India (Chennai)
+* Australia East (New South Wales)
 
 == Instance types
 
 |===
 | Instance name | vCPU | RAM (GiB) | Price per hour
+
+|TG.C4.M16
+|4
+|16
+|$1.20
 
 | TG.C8.M16
 | 8

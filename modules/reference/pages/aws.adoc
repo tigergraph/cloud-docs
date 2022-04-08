@@ -2,12 +2,15 @@
 
 == Regions
 
-* US-West-1 (N.Cal)
-* US-East-1 (N. Virginia)
-* EU-West-1 (Ireland)
-* EU-West-2 (UK)
-* EU-Central-1 (Germany)
-* AP-Northeast-1 (Japan)
+* US-West-1 (Northern California, USA)
+* US-East-1 (Northern Virginia, USA)
+* EU-West-1 (Dublin, Ireland)
+* EU-West-2 (London, UK)
+* EU-Central-1 (Frankfurt, Germany)
+* AP-Northeast-1 (Tokyo, Japan)
+* AP-Southeast-1 (Singapore)
+* AP-Southeast-2 (Sydney, Australia)
+* SA-East-1 (São Paulo, Brazil)
 
 == Instance types
 
@@ -19,7 +22,7 @@ The table below shows the instance types available on AWS.
 | TG.Free
 | 4
 | 7.5
-| 0
+| $0.00
 
 | TG.C4.M16
 | 4

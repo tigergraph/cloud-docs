@@ -55,13 +55,13 @@ To reserve an instance for guaranteed capacity, please submit a support ticket a
 
 === *Q: In what cloud platforms and regions does TigerGraph operate?*
 
-A: TigerGraph Cloud offers three cloud platform options: AWS, Azure and GCP. In AWS,  supported regions are: US-West-1 (N.Cal), US-East-1 (N. Virginia), EU-West-1(Ireland), EU-West-2(UK), EU-Central-1(Germany) and  AP-Northeast-1(Japan). In Azure, supported regions are: West US (California, US West), West Europe (Amsterdam, Netherlands), Central India (Pune, India), South India (Chennai, India). In GCP, supported regions are: Europe-West-2 (London, UK), US-West-1 (oregon, US).
+A: TigerGraph Cloud offers three cloud platform options: xref:reference:aws.adoc[Amazon Web Services (AWS)], xref:reference:azure.adoc[Azure] and xref:reference:gcp.adoc[Google Cloud Platform (GCP)].
 
-More regions and platforms will be added soon.
+Visit each platform's reference page to learn more about the available regions.
 
-*Q: Can I choose different versions of TigerGraph on TigerGraph Cloud?*
+=== *Q: Can I choose different versions of TigerGraph on TigerGraph Cloud?*
 
-A: Yes. When you create a solution, you can choose the database version you would like to use. _**_
+A: Yes. When you create a solution, you can choose the database version you would like to use.
 
 
 === *Q: Does TigerGraph Cloud support distributed databases?*
@@ -204,7 +204,7 @@ For paid tier solutions, please submit a support ticket for upgrade assistance. 
 
 == Pricing
 
-See https://www.tigergraph.com/cloud[www.tigergragraph.com/cloud] for pricing information.
+See https://www.tigergraph.com/cloud[the TigerGraph Cloud main page] for pricing information.
 
 
 === *Q: How do I migrate to the new December 2020 pricing to lower my bill?*
@@ -216,7 +216,7 @@ A: New December 2020 pricing applies to new paid tier solutions provisioned afte
 
 A: Yes, there is a discount for contracting with TigerGraph for a one-year term.  Please contact link:mailto:sales@tigergraph.com[sales@tigergraph.com] to request your discount.
 
-*Q: Can I purchase TigerGraph Cloud Credits?*
+=== *Q: Can I purchase TigerGraph Cloud Credits?*
 
 A: Yes. You can purchase cloud credits applied to TigerGraph Cloud usage. Please refer to https://www.tigergraph.com/cloud-credits/
 
@@ -356,7 +356,7 @@ Please see pricing for backup costs while your instance is stopped.
 
 More options for longer retention policies are in development.
 
-*Q: Can I restore from a backup from another solution in my account?*
+=== *Q: Can I restore from a backup from another solution in my account?*
 
 A: Only single server solutions can be restored from the backup of another solution in the same account within the same cloud platform.
 Distributed and replicated cluster cannot be restored from the backup of another cluster in the same account.
@@ -561,7 +561,7 @@ It is recommended to create a new blank solution, import your data and copy the 
 
 === *Q: How do I submit a support ticket?*
 
-A: In your cloud portal, on the top bar,  you can submit the support ticket by clicking on this icon: image:screen-shot-2020-05-06-at-2.52.22-pm.png[]
+A: In your cloud portal, on the top bar,  you can submit the support ticket by clicking on the support icon: image:support-icon.png[]
 
 This will generate a support ticket in TigerGraph's freshdesk support system.
 You can track the ticket status in Freshdesk.

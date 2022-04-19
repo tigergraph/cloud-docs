@@ -89,23 +89,23 @@ image::screen-shot-2021-02-19-at-9.21.12-am.png[TigerGraph Cloud My Solutions vi
 
 Not all TigerGraph versions that are offered on-prem are offered on TigerGraph Cloud. In the dropdown list, choose the version of TigerGraph you want to run.
 
-image::image (40).png[]
+image::select-version.png[]
 
 [discrete]
 ==== *4. Select a starter kit.*
 
 TigerGraph Cloud Starter Kits are built with sample graph data schema, dataset, and queries focused on a specific use case ***to help you get started quickly*.** Most of our starter kits have a https://www.tigergraph.com/starterkits/[demo video] that walks you through the schema and the queries built for its use case. If you wish to proceed with your own schema and data, select *Blank.*
 
-image::image (58) (1) (1).png[]
+image::select-a-starter-kit.png[]
 
 After you have selected a starter kit, scroll down to the bottom of the page and click *Next*.
 
 [discrete]
 ==== 5. Select _Cloud Provider_ and instance type.
 
-Currently, TigerGraph Cloud only supports free-tier solutions on AWS. Select *AWS* as your cloud provider and select *TG.Free* as your instance type.
+TigerGraph Cloud supports free-tier solutions on AWS and GCP. Select *AWS* or *GCP* as your cloud provider and *TG.Free* as your instance type.
 
-image::image (57).png[Cloud platform and instance type options]
+image::select-an-instance-type.png[Cloud platform and instance type options]
 
 *6. Select Region.*
 

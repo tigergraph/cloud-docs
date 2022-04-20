@@ -1,0 +1,9 @@
+= Access a Solution
+:description: Methods to access a TigerGraph Cloud solution.
+:page-aliases: readme.adoc, README.adoc
+
+Once a solution has been provisioned, you access the solution and interact with the database in the following ways:
+
+* xref:graphstudio.adoc[GraphStudio]
+* xref:rest-requests.adoc[REST endpoints]
+* xref:gsql-web-shell.adoc[GSQL web shell]

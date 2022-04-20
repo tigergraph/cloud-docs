@@ -1,9 +1,9 @@
-:experimental:
 = Send REST Requests to a Solution
+:experimental:
 
-Besides GraphStudio, another way to interact with your TigerGraph database is through our REST API. Use RESTful endpoints to send requests to TigerGraph solutions and develop applications.
+Besides GraphStudio, another way to interact with your TigerGraph database is through the REST API.
 
-On TigerGraph Cloud, RESTPP authentication is enabled by default, and only the requests made with a valid authorization token in the request header will be accepted.
+On TigerGraph Cloud, RESTPP authentication is enabled by default, and only the requests made with a valid authorization token in the request header are accepted.
 
 == Generate an authorization token
 
@@ -26,50 +26,74 @@ image::image (49).png[]
 
 === 3. Generate a token
 
-Use the `/requesttoken` endpoint to generate an authorization token for your solution. You can use either a GET or POST request. In this tutorial, we will be using a GET request.
+Use the `POST /requesttoken` endpoint to generate an authorization token for your solution.
 
 ==== 1. Find the domain name of your solution
 
-If you did not enter a subdomain when setting up your solution, a random subdomain will be automatically generated for you. Go to *My Solutions*, and click the solution you are trying to access. You will find the solution's domain name in the expanded view. Use this domain name as the server address when making REST requests.
+If you did not enter a subdomain when setting up your solution, a random subdomain is automatically generated for you.
+Go to *My Solutions*, and click the solution you are trying to access.
+You will find the solution's domain name in the expanded view.
+Use this domain name as the server address when making REST requests.
 
 image::image (35).png[]
 
-==== 2. Send the request to `/requesttoken`
+==== 2. Send the request to `POST /requesttoken`
 
-The endpoint takes two parameters, `secret` and `lifetime`, and the latter is optional. Put the parameters in the query string and send the request using your favorite REST client. The below example uses curl to request the authentication token:
+The endpoint takes two parameters, `secret` and `lifetime`, and the latter is optional.
+Put the parameters in the query string and send the request using your favorite REST client.
+The below example uses curl to request the authentication token:
 
-[source,console]
+[tabs]
+====
+Request::
++
+--
+[source.wrap,console]
 ----
-curl -X GET 'https://aa768d833bbf47fea6db80a7972a9477.i.tgcloud.io:9000/requesttoken?secret=5e3dmjc5l79n4v30jmsou02qji07f8tb'
+$ curl -X POST https://example.i.tgcloud.io:9000/requesttoken -d '{"secret": "n35lsqofc1if62fld2rmnb9hocqbh8ia", "lifetime": "100000"}'
 ----
-
-The response will look like this, where the string in the response with the key `token` is your authorization token:
+--
+Response::
++
+--
+This is a sample response, where the string in the response with the key `token` is your authorization token:
 
 [source,javascript]
 ----
 {
   "code": "REST-0000",
-  "expiration": 1617232169,
+  "expiration": 1616042814,
   "error": false,
-  "message": "Generate new token successfully.",
-  "token": "eq87e740arn73pp8chbf6j930pa7qorm"
+  "message": "Generate new token successfully.\nWarning: Tigergraph Support cannot restore access to secrets/tokens for security reasons. Please save your secret/token and keep it safe and accessible.",
+  "token": "tohvf6khjqju8jf0r0l1cohhlm8gi5fq"
 }
 ----
+--
+====
 
 === 4. Send a request using your token
 
 Now that you have an authorization token, you can proceed to make requests to your solution. To use the authorization token, include it in the request header as a bearer token.
 
-Refer to our xref:3.2@tigergraph-server:API:built-in-endpoints.adoc[RESTful API User Guide] to learn about all the endpoints available. In this tutorial, we will make a request to the xref:3.2@tigergraph-server:API:built-in-endpoints.adoc#_list_vertices[List vertices] endpoint on a solution with the https://www.youtube.com/watch?v=s6-QapCEz1M&feature=youtu.be&ab_channel=TigerGraph[COVID-19 starter kit]. We'll list 5 patients and their ages.
+See xref:tigergraph-server:API:built-in-endpoints.adoc[] to learn about all the endpoints available.
+The following example makes a request to the xref:tigergraph-server:API:built-in-endpoints.adoc#_list_vertices[List vertices] endpoint on a solution with the https://www.youtube.com/watch?v=s6-QapCEz1M&feature=youtu.be&ab_channel=TigerGraph[COVID-19 starter kit].
 
-[source,console]
+The request lists 5 patients and their ages.
+
+[tabs]
+====
+Request::
++
+--
+[source.wrap,console]
 ----
-curl -H "Authorization: Bearer fc6p0i2ijjt031n0sja6m9ci70p232h7" \
+$ curl -H "Authorization: Bearer fc6p0i2ijjt031n0sja6m9ci70p232h7" \
 "https://aa768d833bbf47fea6db80a7972a9477.i.tgcloud.io:9000/graph/MyGraph/vertices/Patient?limit=5&select=birth_year"
 ----
-
+--
 Response:
-
++
+--
 [source,console]
 ----
 {
@@ -119,3 +143,5 @@ Response:
   ]
 }
 ----
+--
+====

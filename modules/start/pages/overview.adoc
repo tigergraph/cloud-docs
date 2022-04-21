@@ -15,7 +15,7 @@ video::mOsfjst6Ahs[youtube]
 
 * xref:start:getting-started.adoc[Create a free TigerGraph Cloud account]
 * xref:start:getting-started.adoc[Create a free-tier TigerGraph Cloud solution]
-* xref:access-solution:README.adoc[Access your TigerGraph Cloud solution]
+* xref:access-solution:index.adoc[Access your TigerGraph Cloud solution]
 
 == Manage TigerGraph Cloud solutions
 

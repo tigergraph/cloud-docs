@@ -15,6 +15,11 @@
 |===
 | Instance name | vCPU | RAM (GiB) | Price per hour
 
+|TG.Free
+|2
+|8
+|$0.00
+
 |TG.C4.M16
 |4
 |16

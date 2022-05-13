@@ -5,12 +5,17 @@
 * US-West1 (Oregon)
 * Europe-West2 (London)
 * Asia-Southeast1 (Singapore)
-* Australia-Southeast1 (Australia)
+* Australia-Southeast1 (Sydney)
 
 == Instance types
 
 |===
 | Instance name | vCPU | RAM (GiB) | Price per hour
+
+| TG.Free
+| 2
+| 8
+| $0.00
 
 | TG.C4.M16
 | 4

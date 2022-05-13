@@ -1,5 +1,11 @@
 = Release Notes
 
+== TigerGraph Cloud - April 2022 updates
+Release date: May 13th, 2022
+
+=== New features
+*
+
 == TigerGraph Cloud - Feb 2022 Updates
 Release date: Feb 8th, 2022
 

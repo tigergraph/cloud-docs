@@ -70,7 +70,3 @@ btn:[Peering Connections] in the VPC service where you accepted the peering
 connection. There is a column "*Requester CIDRs*"*.*
 . For *Target*, select the VPC peering connection, and then choose *Save
 changes*.
-
-=== View IP Address
-
-The public and private IP addresses of a solution in a peered VPC are shown just like any other solution. Please see the following page for details: xref:monitor-solution:.monitor-solution-state.adoc#_view_ip_address[View IP Address]

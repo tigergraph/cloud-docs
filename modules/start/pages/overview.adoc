@@ -19,7 +19,7 @@ video::mOsfjst6Ahs[youtube]
 
 == Manage TigerGraph Cloud solutions
 
-* xref:monitor-solution:monitor-solution-state.adoc[Monitor a solution]
+* xref:monitor-solution:.monitor-solution-state.adoc[Monitor a solution]
 * xref:gui:admin-portal:management/user-management.adoc[Security and user management]
 * xref:backup-and-restore:index.adoc[Backup and restore]
 

@@ -1,5 +1,24 @@
 = Release Notes
 
+== TigerGraph Cloud - May 2022 Updates
+Release date: May 12, 2022
+
+=== New features
+
+* TigerGraph Version 3.5.3 is now supported when creating new solutions.
+* *Free-tier solutions on Azure.* We now offer the option to create a free-tier solution on Azure along with Amazon Web Services (AWS) and Google Cloud Platform (GCP).
+* Enabled search by solution ID in solution list.
+* Added download button for solution management.
+
+
+=== Feature Updates
+
+* *Netdata deprecation*. Monitoring network I/O data through Netdata is no longer supported because of security vulnerabilities.
+* Removed dependencies between credit card and backups when there are credits on account.
+* User interface improvements for quota outages
+* Improved observability with tags now on solution information
+* GSQL Output Path restricted for increased file security.
+
 == TigerGraph Cloud - Feb 2022 Updates
 Release date: Feb 8th, 2022
 

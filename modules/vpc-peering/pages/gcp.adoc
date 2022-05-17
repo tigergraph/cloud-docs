@@ -62,7 +62,3 @@ routes with public IP] selected) unless you need special configurations.
 image:vpcname-gcp.png[Location of VPC name]
 
 After creating the matching peering configuration, the status of your VPC connection should change to btn:[Active] meaning the two VPCs are peered successfully.
-
-=== View IP Address
-
-The public and private IP addresses of a solution in a peered VPC are shown just like any other solution. Please see the following page for details: xref:monitor-solution:monitor-solution-state.adoc#_view_ip_address[View IP Address]

@@ -6,9 +6,9 @@ Your TigerGraph Cloud account serves as your credential on the platform level. I
 
 == TigerGraph users
 
-On the solution level, the same xref:3.2@gui:admin-portal:management/user-management.adoc[role-based access control] used by the on-prem version of TigerGraph also applies to TigerGraph Cloud. Each solution or solution cluster can have many TigerGraph users and each user can have different roles for each graph with different privileges.
+On the solution level, the same xref:gui:admin-portal:management/user-management.adoc[role-based access control] used by the on-prem version of TigerGraph also applies to TigerGraph Cloud. Each solution or solution cluster can have many TigerGraph users and each user can have different roles for each graph with different privileges.
 
-For more information on how to manage users and roles in Admin Portal, see xref:3.2@gui:admin-portal:management/user-management.adoc.
+For more information on how to manage users and roles in Admin Portal, see xref:gui:admin-portal:management/user-management.adoc[].
 
 == Preconfigured security features
 
@@ -23,5 +23,3 @@ TigerGraph Cloud uses TLS to encrypt connections to your graph databases.
 === RESTPP Authentication
 
 By default, all TigerGraph Cloud solutions have RESTPP authentication turned on. To make requests to the RESTPP server, you must generate a secret in the Admin Portal and use that secret to generate an authentication token.
-
-###

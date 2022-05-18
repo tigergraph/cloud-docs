@@ -7,11 +7,9 @@ You can submit a support ticket in the TigerGraph Cloud portal or by email.
 
 == Submit a support ticket
 
-Click on the support icon image:screen-shot-2020-05-06-at-2.52.22-pm.png[support icon, 30], and fill out the form that pops up with information relevant to your issue.
-If you cannot access the TigerGraph Cloud portal, you can also email support@tigergraph.com to submit your support ticket.
-Either approach will automatically generate a support ticket in TigerGraph's FreshDesk support system, and you will receive an email with the link to your ticket.
+Click on the support icon image:support-icon-in-ui.png[support icon, 30], and fill out the form that pops up with information relevant to your issue.
+If you cannot access the TigerGraph Cloud portal, you can also https://tigergraph.zendesk.com/hc/en-us/[open a support ticket].
 
-NOTE: Please remember to use the email account associated with your TigerGraph Cloud account to submit the support email to support@tigergraph.com so that TigerGraph Cloud Support can verify your account.
 
 image::support-icon-in-ui.png[Support icon in UI]
 

@@ -189,7 +189,7 @@ If you choose to terminate the instance, your solutions and the data will not be
 
 === *Q: I can't find my registration activation email after registering for the first time. Where can I find it?*
 
-A: Please check your SPAM folder. The activation email could be sent to your SPAM folder. If you can't find it in SPAM folder, and does not receive verification email in your mailbox after resending the verification email, please contact link:mailto:support@tigergraph.com[support@tigergraph.com] so that we can assist you with manual email verification process.
+A: Please check your SPAM folder. The activation email could be sent to your SPAM folder. If you can't find it in SPAM folder, and does not receive verification email in your mailbox after resending the verification email, please https://tigergraph.zendesk.com/hc/en-us/[open a support ticket] so that we can assist you with manual email verification process.
 
 *Q: How do I develop a customized application on top of TigerGraph Cloud?*
 
@@ -272,12 +272,12 @@ In the pricing table, we recommend that your total RAM be about 1.5 times the ma
 
 If you see you need more space or more compute power, then just scale up.
 
-Please submit a support ticket from TigerGraph Cloud Portal or contact link:mailto:support@tigergraph.com[support@tigergraph.com] for more help.
+Please submit a support ticket from TigerGraph Cloud Portal or https://tigergraph.zendesk.com/hc/en-us/[from Zendesk] for more help.
 
 
 === *Q: How do I expand the disk size?*
 
-Please submit a support ticket from TigerGraph Cloud Portal or contact link:mailto:support@tigergraph.com[support@tigergraph.com] for more help.
+Please submit a support ticket from TigerGraph Cloud Portal for more help.
 
 
 === *Q: Can I migrate my database to a larger (or smaller) instance?*
@@ -569,9 +569,8 @@ You can track the ticket status in Freshdesk.
 
 === *Q: How do I submit a support ticket if I cannot access the Cloud Portal?*
 
-A: If in rare cases, you cannot submit TigerGraph Cloud support tickets through the cloud portal for your account, you can also submit the support request by email to link:mailto:support@tigergraph.com[support@tigergraph.com] directly.
-This action will automatically generates a new Freshdesk support ticket and you can track the support ticket in the Freshdesk portal.
-Please remember to use the email account associated with your TigerGraph Cloud account to submit the support email to link:mailto:support@tigergraph.com[support@tigergraph.com] so that TigerGraph Cloud Support can verify your account.
+A: If in rare cases, you cannot submit TigerGraph Cloud support tickets through the cloud portal for your account, you can also https://tigergraph.zendesk.com/hc/en-us/[open a support ticket] from Zendesk.
+This action automatically generates a new Freshdesk support ticket, and you can track the support ticket in the Freshdesk portal.
 
 == Performance
 

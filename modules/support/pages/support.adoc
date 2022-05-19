@@ -13,13 +13,13 @@ If you cannot access the TigerGraph Cloud portal, you can also https://tigergrap
 
 image::support-icon-in-ui.png[Support icon in UI]
 
-== Set up your FreshDesk account (first ticket submission only)
-NOTE: If you already have a FreshDesk account with TigerGraph, you can skip this step.
+== Set up your Zendesk account (first ticket submission only)
+NOTE: If you already have a Zendesk account with TigerGraph, you can skip this step.
 
-When you submit a support ticket through TigerGraph Cloud or through email, and you don't already have a FreshDesk account with TigerGraph, an account will be created for you automatically.
+When you submit a support ticket through TigerGraph Cloud, and you don't already have a Zendesk account with TigerGraph, an account will be created for you automatically.
 An account setup email titled Welcome to TigerGraph Support will be sent to you at the email address associated with your TigerGraph Cloud account, and you can follow the instructions in the email to set up your account.
 This setup email might arrive a few minutes later than the email containing the link to your ticket.
 
 == Follow up on your ticket
 
-If you have a paid subscription with TigerGraph, a support representative will be reviewing your request and will send you a personal response (usually within 24 hours). You can follow up on your ticket either by replying to the email thread or in FreshDesk.
+If you have a paid subscription with TigerGraph, a support representative will be reviewing your request and will send you a personal response (usually within 24 hours). You can follow up on your ticket either by replying to the email thread or in Zendesk.

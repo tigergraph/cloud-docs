@@ -21,4 +21,18 @@ jobs:
           #  Time zone to use. Default is UTC.
           time_zone: "America/Los_Angeles"
         env:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      # Runs a set of commands using the runners shell
+      - name: Make curl call to build hook
+        run: |
+          echo Making curl call to Netlify build hook
+          curl -X POST -d '{}' ${{ secrets.BUILD_HOOK }}

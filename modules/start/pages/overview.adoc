@@ -1,4 +1,5 @@
 = TigerGraph Cloud
+:description: Overview of TigerGraph Cloud.
 
 TigerGraph Cloud is a fully-managed cloud database built on the same TigerGraph Enterprise Server engine that is delivering the fastest and most scalable graph database.
 TigerGraph Cloud handles all the complexity of deploying and managing your deployments on the cloud service provider of your choice (AWS, Azure, and GCP).

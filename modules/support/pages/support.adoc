@@ -1,5 +1,6 @@
 = Support
 :sectnums:
+:experimental:
 
 TigerGraph provides support for TigerGraph Cloud for customers with non-free-tier solutions. For more information on TigerGraph's support policy, visit our https://www.tigergraph.com/support-policy/[support policy page].
 
@@ -7,19 +8,14 @@ You can submit a support ticket in the TigerGraph Cloud portal or by email.
 
 == Submit a support ticket
 
-Click on the support icon image:support-icon-in-ui.png[support icon, 30], and fill out the form that pops up with information relevant to your issue.
-If you cannot access the TigerGraph Cloud portal, you can also https://tigergraph.zendesk.com/hc/en-us/[open a support ticket].
-
+Click on the support icon.
+This takes you to TigerGraph's support platform, where you can submit support tickets.
 
 image::support-icon-in-ui.png[Support icon in UI]
 
-== Set up your Zendesk account (first ticket submission only)
-NOTE: If you already have a Zendesk account with TigerGraph, you can skip this step.
-
-When you submit a support ticket through TigerGraph Cloud, and you don't already have a Zendesk account with TigerGraph, an account will be created for you automatically.
-An account setup email titled Welcome to TigerGraph Support will be sent to you at the email address associated with your TigerGraph Cloud account, and you can follow the instructions in the email to set up your account.
-This setup email might arrive a few minutes later than the email containing the link to your ticket.
+If you don't already have an account, you can create one following the instructions on the page.
+if you already have an account, log in and click btn:[Submit a request] to submit a support ticket.
 
 == Follow up on your ticket
 
-If you have a paid subscription with TigerGraph, a support representative will be reviewing your request and will send you a personal response (usually within 24 hours). You can follow up on your ticket either by replying to the email thread or in Zendesk.
+If you have a paid subscription with TigerGraph, a support representative will be reviewing your request and will send you a personal response (usually within 24 hours). You can follow up on your ticket on the Zendesk platform.

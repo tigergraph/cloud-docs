@@ -1,0 +1,54 @@
+= Azure Private Link
+:experimental:
+:description: Setting up Private Link on Azure
+
+== Azure General Workflow
+
+After creating a new endpoint, select “Private“ or “Both“ for the TigerGraph Endpoint Type.
+
+Fill in your Azure subscription ID.
+
+Behind the scenes, TigerGraph will provision a PrivateLink Service and provide you with the PrivateLink Service Name.
+The subscription ID that you provided will be added to the auto-approval allow list.
+
+In your Azure account, create a Private Endpoint using the PrivateLink Service Name that TigerGraph provided.
+
+Confirm on the TGCloud Portal that the endpoint has been created and TigerGraph will automatically approve it.
+
+== Instructions
+=== Private Endpoint
+Verify that a dedicated subnet exists to contain the Private Endpoint and that network policies are disabled. For more information, see Microsoft's article titled link:https://docs.microsoft.com/en-us/azure/private-link/disable-private-endpoint-network-policy[Disable network policies for private endpoints].
+
+Navigate to the Azure portal. Search for and click on Private Link.
+
+Click Private endpoints and then click Add.
+
+In the Resource section, select *Connect to an Azure resource by resource ID or alias* and fill in the Resource ID or Alias Field fields.
+The Request message value is optional.
+
+Return to the Private endpoints section and allow a few minutes to wait. On approval, the Private Endpoint displays a CONNECTION STATE value of Approved.
+
+=== Private endpoint via CLI
+
+[source.wrap, bash]
+----
+az network private-endpoint create -g MyResourceGroup -n MyPrivateEndpoint \
+--vnet-name MyVnetName --subnet MySubnet \
+--private-connection-resource-id "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/MyResourceGroup/providers/Microsoft.Network/privateLinkServices/MyPLS" \
+--connection-name MyPrivateEndpointConnection -l eastus
+----
+
+=== Private DNS
+To get the endpoint IP address, navigate to the Private Endpoint. Locate the Network Interface, copy the value for the Private IP address (i.e. `172.16.1.4`).
+
+image::dns-configuration.png[]
+
+. Create a Private DNS Zone named `tgcloud.io`
+
+. Select “Virtual Network Link” on the left, click “Add“, and select the VNet that the Private Endpoint resides.
+
+. Add an A record named `{solutiondomain}.privatelink`  (example: `test-solution.privatelink`). The value is the private IP address from step 1.
+
+
+image::add-a-record.png[]
+

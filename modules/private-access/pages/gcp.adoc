@@ -5,6 +5,10 @@
 == GCP General Workflow
 After creating a new endpoint, select “Private“ or “Both“ for the TigerGraph Endpoint Type.
 
+image:enable-private-access-gcp.png[]
+
+Fill in your GCP Project ID and define a connection limit.
+
 Behind the scenes, TigerGraph will provision a Private Service Connect service and provide you with a Service Attachment name.
 
 In the GCP portal, create a Private Service Connect endpoint using the service name above.

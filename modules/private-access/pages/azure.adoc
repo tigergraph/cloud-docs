@@ -6,6 +6,8 @@
 
 After creating a new endpoint, select “Private“ or “Both“ for the TigerGraph Endpoint Type.
 
+image:enable-private-access-azure.png[]
+
 Fill in your Azure subscription ID.
 
 Behind the scenes, TigerGraph will provision a PrivateLink Service and provide you with the PrivateLink Service Name.

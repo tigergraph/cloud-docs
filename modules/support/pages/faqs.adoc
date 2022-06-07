@@ -17,10 +17,10 @@ Since it requires far fewer machines to achieve high performance, TigerGraph's p
 
 === *Q: How do I migrate to the new December 2020 pricing to lower my bill?*
 
-A: New December 2020 pricing applies to new paid tier solutions provisioned after December 16th 2020.
+A: New December 2020 pricing applies to new paid tier solutions provisioned after December 16th, 2020.
 You can keep the old pricing if you keep your paid tier instances provisioned before December 16th, 2020 and keep its state (running or stopped).
 If you want to take advantage of the new pricing to lower your cost, you can migrate your workload to a newly provisioned instance, or simply start and stop the old instance.
-Note that TigerGraph Cloud accounts with valid credit cards are eligible for the paid tier migration.
+Note that only TigerGraph Cloud accounts with valid credit cards are eligible for the paid tier migration.
 Please submit a support ticket for migration assistance.
 
 [#q-are-there-free-tier-instances-or-free-credits-for-the-system]
@@ -28,9 +28,11 @@ Please submit a support ticket for migration assistance.
 
 A: Yes,  in both instances.
 
-*Free Credits:* A $25 credit will be automatically granted to each new registered account. The free credits is valid for 30 days after initial use.
+*Free Credits:* A $25 credit is automatically granted to each new registered account. The free credits is valid for 30 days after initial use.
 
-*Free Tier Instance*: When you select an instance type, you will see that one instance type is designated as the Free Tier. For each registered account, you may provision one solution from the Free Tier. Free Tier instances do not include backup and do not include support.
+*Free Tier Instance*: When you select an instance type, you will see that one instance type is designated as the Free Tier.
+Each registered account may provision one solution at a time from the Free Tier.
+Free Tier instances do not include backup and do not include support. If you want to start another Free Tier solution, you will have to terminate your existing solution.
 
 If no user activity is detected for more than one hour, TigerGraph may automatically stop a Free Tier instance.
 Users can manually restart the Free Tier instances from their cloud portal.
@@ -42,12 +44,12 @@ TIP: If you need to save your work from a Free Tier instance, export the solutio
 
 === *Q: I cannot start my free tier instances. Why is there a capacity error in "My Activities"?*
 
-A: *Known Capacity Issues:* Free Tier instances are provisioned on a common instance type in a data center region of the cloud provider (AWS). During surge cloud usage periods, such as the current global lockdown due to COVID-19, cloud providers across the globe experience capacity issues.
+A: *Known Capacity Issues:* Free Tier instances are provisioned on a common instance type in a data center region of the cloud provider. During surge cloud usage periods, such as the current global lockdown due to COVID-19, cloud providers across the globe experience capacity issues.
 
-It is possible that when you provision a free tier instance, it will not provision successfully on the first try because of the peak usage in a certain region in the backend cloud platform (AWS).
+It is possible that when you provision a free tier instance, it will not provision successfully on the first try because of the peak usage in a certain region in the backend cloud platform.
 Please be patient and try to provision in another region, or at a later time when there is enough capacity in the region.
 Some free tier instances, when stopped, cannot be restarted at certain times due to cloud provider capacity issues.
-If this happens to you, try to restart the solution at a later time when there are more machines available in the region of the cloud provider (AWS).
+If this happens to you, try to restart the solution at a later time when there are more machines available in the region of the cloud provider.
 In both scenarios, you can look at the log in "My Activities" and see that the capacity issue is logged. Submit a support ticket if the capacity issue persists.
 
 To reserve an instance for guaranteed capacity, please submit a support ticket and contact link:mailto:sales@tigergraph.com[sales@tigergraph.com] to arrange a long-term contract for reserved TigerGraph instances.
@@ -62,7 +64,8 @@ Visit each platform's reference page to learn more about the available regions.
 === *Q: Can I choose different versions of TigerGraph on TigerGraph Cloud?*
 
 A: Yes. When you create a solution, you can choose the database version you would like to use.
-
+For security and stability reasons, only some legacy versions are available.
+There is no difference in cost for using different versions of TigerGraph.
 
 === *Q: Does TigerGraph Cloud support distributed databases?*
 
@@ -84,7 +87,10 @@ A:  Please see the section on pricing on our website at our link:https://www.tig
 
 === *Q: What kind of services do I get?*
 
-A: TigerGraph Cloud includes automatic scheduled backup, built-in encryption and other security features, patching, replication and distributed database option.  In addition, you can now provision a distributed database as well as a replica cluster for high availability. As a cloud service, many of the administrative and operational tasks - for monitoring, restoring, upgrading, for example - are just a click away. In addition to operations and management for your TigerGraph databases, TigerGraph Cloud also offers Starter Kits to provide instant experience to various graph analytics use cases. The list of Starter Kits can be found here: _**_https://www.tigergraph.com/starterkits/
+A: TigerGraph Cloud includes automatic scheduled backup, built-in encryption and other security features, patching, replication and distributed database option.  In addition, you can now provision a distributed database as well as a replica cluster for high availability.
+As a cloud service, many of the administrative and operational tasks - for monitoring, restoring, upgrading, for example - are just a click away.
+In addition to operations and management for your TigerGraph databases, TigerGraph Cloud also offers Starter Kits to provide instant experience to various graph analytics use cases.
+The list of Starter Kits can be found here: link:https://www.tigergraph.com/starterkits/[TigerGraph Cloud Starter Kits]
 
 [#q-is-there-a-quota-for-the-number-of-solutions-i-can-provision-in-a-single-account]
 === *Q: Is there a quota for the number of solutions I can provision in a single account?*
@@ -108,17 +114,17 @@ Card*
 
 |*Total vCPU Quota* |160 |16
 
-|*Cluster Size Limit* |10 instances |1 (that is, distributed data is not
+|*Cluster Size Limit* |10 instances |1 (distributed data is not
 enabled)
 
-|*Replication Factor Limit* |2 |1 (that is, HA is not enabled)
+|*Replication Factor Limit* |2 |1 (HA is not enabled)
 
 |*Request Quota/Limit Increase* |Yes, Please contact
 mailto:sales@tigergraph.com[]. a|
 N/A
 
-Please upgrade your account by entering a valid credit card. +
-+
+Please upgrade your account by entering a valid credit card.
+
 
 |===
 
@@ -138,6 +144,8 @@ Now you can run queries on the starter kit's sample data. Please visit our link:
 
 A: TigerGraph Cloud is instance-based and offers an administrator portal to monitor the performance and health of each machine instance.
 
+See TigerGraph's xref:gui:admin-portal:overview.adoc[Admin Portal Documentation] for more detailed information.
+
 
 === *Q:  Is TigerGraph Cloud cloud-agnostic?*
 
@@ -146,21 +154,24 @@ A:  TigerGraph Cloud will provide teams with the flexibility to use the cloud ve
 
 === *Q:  Is the support for TigerGraph Cloud the same as the support for TigerGraph Enterprise?*
 
-A: Yes, TigerGraph supports TigerGraph cloud users using paid tiers. See the Support Policy terms at https://www.tigergraph.com/support-policy/. For free tier instances, support is not included; therefore, support tickets for free tier solutions are answered when support staff bandwidths allows. See Section 1.4 in https://www.tigergraph.com/tigergraph-cloud-subscription-terms/. Additional developer resources for free tier users: join TigerGraph developer community at https://community.tigergraph.com.
+A: Yes, TigerGraph supports TigerGraph cloud users using paid tiers. See the Support Policy terms at link:https://www.tigergraph.com/support-policy/[www.tigergraph.com/support-policy].
+Support is not included for free tier instances; therefore, support tickets for free tier solutions are answered when support staff bandwidth allows.
+See Section 1.4 in link:https://www.tigergraph.com/tigergraph-cloud-subscription-terms/[www.tigergraph.com/tigergraph-cloud-subscription-terms].
+For additional developer resources for free tier users, join the TigerGraph developer community at link:https://community.tigergraph.com[community.tigergraph.com].
 
 
 === *Q: What is the user interface for the TigerGraph Cloud instance?*
 
 A: The TigerGraph xref:gui:graphstudio:overview.adoc[GraphStudio™ UI (User Interface)] provides an intuitive, browser-based interface that helps users get started quickly with graph-based application development tasks: designing a graph schema, creating a schema mapping, loading data, exploring the graph, and writing GSQL queries.
 
-In addition, for TigerGraph paid tier solutions, users can use GSQL Web Shell to write GSQL Commands in an interactive command line shell. Users can access GSQL Web Shell through the solution panel from their Cloud Portal. This GSQL Web Shell opens up more data loading options such as S3 Loader (parquet format) and Kafka Loader.
+In addition, for TigerGraph paid tier solutions, users can use GSQL Web Shell to write GSQL commands in an interactive command line shell. Users can access GSQL Web Shell through the solution panel from their Cloud Portal. This GSQL Web Shell opens up more data loading options such as S3 Loader (parquet format) and Kafka Loader.
 
 
 === *Q: What graph query language does TigerGraph support?*
 
 A: TigerGraph uses GSQL, the query language designed for fast and scalable graph operations and analytics. GSQL's similarity to SQL, high-level syntax, Turing completeness, and built-in parallelism brings faster performance, faster development and the ability to describe any algorithm.
 
-You can start learning GSQL from our GSQL tutorials. We also support a RESTful API and JSON output for easy integration with application languages like Python, Java, and C{pp}.
+You can start learning GSQL from our xref:3.5@gsql-ref:tutorials:gsql-101/index.adoc[GSQL tutorials]. We also support a RESTful API and JSON output for easy integration with application languages like Python, Java, and C{pp}.
 
 Start learning GSQL and become a TigerGraph Certified Associate today with our link:https://www.tigergraph.com/certification/[Certification Program].
 
@@ -171,16 +182,18 @@ A: Yes. If you use V3.0.5+ in TigerGraph Cloud, MultiGraph is supported through 
 
 === *Q: What methods do you support for importing data?*
 
-A: We support AWS S3 import and local file upload through GraphStudio. Spark loading is available through our open source JDBC Driver. See https://github.com/tigergraph/ecosys/tree/master/tools/etl[https://github.com/tigergraph/ecosys/tree/master/etl]
+A: We support AWS S3 import, Google Cloud Storage,  and local file upload through GraphStudio. Spark loading is available through our open source JDBC Driver. See https://github.com/tigergraph/ecosys/tree/master/tools/etl[https://github.com/tigergraph/ecosys/tree/master/etl]
 
-In addition, for TigerGraph paid tier solutions, users can use GSQL Web Shell to write GSQL Commands in an interactive command line shell. This GSQL Web Shell opens up more data loading options such as S3 Loader (parquet format), Kafka Loader and other complex loading jobs. Users can access GSQL Web Shell through the solution panel from their Cloud Portal.
+In addition, for TigerGraph paid tier solutions, users can use the GSQL Web Shell to write GSQL Commands in an interactive command line shell. This GSQL Web Shell opens up more data loading options such as S3 Loader (parquet format), Kafka Loader and other complex loading jobs. Users can access GSQL Web Shell through the solution panel from their Cloud Portal.
 
 For complex loading jobs through GSQL Web Shell for paid tier solutions, please submit a support ticket from your cloud portal for more information.
 
 [#q-if-i-dont-enter-a-valid-credit-card-in-the-account-and-use-the-initial-usd25-free-credit-will-the-data-in-the-provisioned-solutions-be-deleted-if-i-stop-the-solutions]
 === *Q: If I don't enter a valid credit card in the account and use the initial $25 free credit, will the data in the provisioned solutions be deleted if I stop the solutions?*
 
-A: As long as there is remaining free credits in your account, the data of your solutions will be preserved by the provisioned disk after you stop the solutions even if you don't have a credit card in your account. The data will be available and accessible after you restart the solutions.  The free credits is valid for 30 days after initial use. Your solutions will be deleted automatically if the following scenario is detected: there is no remaining valid free credits and there is no valid credit card in your account.
+A: As long as there is remaining free credits in your account, the data of your solutions will be preserved by the provisioned disk after you stop the solutions even if you don't have a credit card in your account. The data will be available and accessible after you restart the solutions.  The free credit is valid for 30 days after initial use.
+
+Your solutions will be deleted automatically if there are no remaining valid free credits and there is no valid credit card in your account.
 
 **‌**To use "`backup and restore`" functionality, you need to enter a valid credit card in your account and choose non free tier instances. The non free tier solutions provisioned after the credit card is entered have backup and restore functionality through TigerGraph's Admin Portal. Note that any solutions provisioned before entering the credit card will not be upgraded with the backup and restore functionality.
 
@@ -189,7 +202,7 @@ If you choose to terminate the instance, your solutions and the data will not be
 
 === *Q: I can't find my registration activation email after registering for the first time. Where can I find it?*
 
-A: Please check your SPAM folder. The activation email could be sent to your SPAM folder. If you can't find it in SPAM folder, and does not receive verification email in your mailbox after resending the verification email, please https://tigergraph.zendesk.com/hc/en-us/[open a support ticket] so that we can assist you with manual email verification process.
+A: Please check your spam folder. If you can't find it in the spam folder, and still cannot receive the verification email in your mailbox after resending the verification email, please https://tigergraph.zendesk.com/hc/en-us/[open a support ticket] so that we can assist you with manual email verification process.
 
 *Q: How do I develop a customized application on top of TigerGraph Cloud?*
 
@@ -339,7 +352,7 @@ A backup file, however, can be used to restore to a new solution within 15 days.
 
 === *Q: Do you offer backup in TigerGraph Cloud?*
 
-A: Yes. In GraphStudio, go to Admin Portal > Backup and Restore.
+A: Yes. Please see our guide for using xref:backup-and-restore:index.adoc[] in the Admin Portal.
 
 
 === *Q: What backup options are available?*

@@ -1,4 +1,5 @@
 = TigerGraph Cloud
+:experimental:
 
 TigerGraph Cloud is a fully-managed cloud database built on the same TigerGraph Enterprise Server engine that is delivering the fastest and most scalable graph database.
 TigerGraph Cloud handles all the complexity of deploying and managing your deployments on the cloud service provider of your choice (AWS, Azure, and GCP).
@@ -13,9 +14,17 @@ video::mOsfjst6Ahs[youtube]
 
 == Get started with TigerGraph Cloud
 
-* xref:start:getting-started.adoc[Create a free TigerGraph Cloud account]
-* xref:start:getting-started.adoc[Create a free-tier TigerGraph Cloud solution]
-* xref:access-solution:index.adoc[Access your TigerGraph Cloud solution]
+Click btn:[Login / Register] on the https://tgcloud.io/[TigerGraph Cloud landing page].
+
+Create a new account with a company name, personal name, email address, and password of your choice.
+
+After completing the signup page, you will get a link to verify your email address.
+Click the link in your email to verify, then log in using your username and password.
+
+Once logged in, you can create solutions and add more users to your organization.
+
+* xref:create-a-solution.adoc[]
+* xref:managing-users.adoc[]
 
 == Manage TigerGraph Cloud solutions
 
@@ -43,7 +52,7 @@ See the xref:support:faqs.adoc[TigerGraph Cloud FAQs] for answers to common ques
 
 | Release Notes
 | Yes
-| TigerGraph Cloud Provides Two Database Versions: V2.6.4 and V3.0.6
+| TigerGraph Cloud provides database versions kept up to date with TigerGraph Server releases.
 
 | GSQL 101
 | Yes
@@ -55,7 +64,7 @@ See the xref:support:faqs.adoc[TigerGraph Cloud FAQs] for answers to common ques
 
 | MultiGraph Overview
 | Yes
-| Yes. Choose V3.0.6 in TigerGraph Cloud
+| Yes
 
 | Hardware and Software Requirements
 | Yes
@@ -67,7 +76,7 @@ See the xref:support:faqs.adoc[TigerGraph Cloud FAQs] for answers to common ques
 
 | User Access Management
 | Yes
-| Yes. Choose V3.0.6 in TigerGraph Cloud for multiple users in one TigerGraph solution.
+| Yes
 
 | Data Encryption
 | Yes

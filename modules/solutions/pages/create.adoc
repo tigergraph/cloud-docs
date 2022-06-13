@@ -43,10 +43,13 @@ Each instance type indicates its vCPU and RAM specifications as well as the hour
 
 image::image (53).png[]
 
-In this step, you choose between the free tier and the paid tiers for your solution. The *TG.Free* tier is free, while all others require you to xref:billing:manage-payment-methods.adoc[have a valid payment method on file.]
+In this step, you choose between the free tier and the paid tiers for your solution.
+The *TG.Free* tier is free, while all others require you to either use the $25 credit that comes with every new account or xref:billing:manage-payment-methods.adoc[have a valid payment method on file]
+
+Free-tier solutions are also subject to service limits. For more details, please see the page on xref:reference:service-limits.adoc[].
 
 The cost to run each solution is shown in each button.
-In addition to this cost, when solutions are inactive but not yet terminated, there is a separate data storage fee of $1.25/GB/month (AWS and Azure) or $2.50/GB/month (GCP).
+In addition to this cost, when solutions are inactive but not yet terminated, there is a separate data storage fee for keeping data present on the server.
 See xref:reference:README.adoc[the Reference page] for each cloud provider for more information about each billing structure.
 
 ==== 4.3. Choose a region
@@ -80,8 +83,8 @@ If you don't need additional copies of your data, enter 1 as your replication fa
 
 If you provision a cluster with a replication factor higher than 1:
 
-* If your solution is on AWS or GCP,  the replicas will automatically be provisioned on different availability zones.
-* A load balancer will automatically be attached to your cluster to balance traffic between the replicas.
+* If your solution is on AWS or GCP, the replicas are automatically provisioned on different availability zones.
+* A load balancer is automatically  attached to your cluster to balance traffic between the replicas.
 
 [NOTE]
 ====

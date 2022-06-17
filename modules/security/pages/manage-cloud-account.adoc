@@ -1,10 +1,26 @@
-= Manage Your TigerGraph Cloud Account
+= Manage Your TigerGraph Cloud User Account
+:experimental:
 
-== Reset your TigerGraph Cloud account password
+== Account name
+
+Your user account is displayed in the order [First Name] [Last Name] in the list of users in the organization account.
+
+Changing your display name is not currently supported by TigerGraph Cloud.
+To change your name, an Organization Admin needs to remove your account and send a new invite for you to make a new account.
+
+== Account permissions
+
+Search for your own name under the *Users* tab to see what role you have been given in the organization.
+If you believe you have been given the wrong organization role in error, contact an Organization Admin for them to change your role.
+
+See xref:manage-database-users.adoc#_organization_roles_and_privileges[Organization roles and privileges] for detailed information on the privileges available to each organization role.
+
+== Reset your TigerGraph Cloud user account password
 
 . Go to the https://tgcloud.io[TigerGraph Cloud login portal].
-. Click *Login / Register*
-. Click *Don't remember your password?*
-. Enter your email address. If you signed up using an identity provider such as Google or LinkedIn, use the email address associated with that account. Click *SEND EMAIL*.
+. Click the *Login* link next to "Have an account?"
+. Enter your organization name. If you don't remember your organization name, contact your administrator.
+. Click *Forgot password?*
+. Enter your email address. If you signed up using an identity provider such as Google or LinkedIn, use the email address associated with that account. Click btn:[Continue].
 . Look for an email in your inbox titled *Reset your password*. Click on the link in the email.
 . Enter your new password.

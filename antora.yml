@@ -1,13 +1,14 @@
 name: cloud
 title: TigerGraph Cloud
-version: master
-display_version: default
+version: private-access
+display_version: private-access
 start_page: start:overview.adoc
 
 nav:
 - modules/start/nav.adoc
 - modules/solutions/nav.adoc
 - modules/access-solution/nav.adoc
+- modules/private-access/nav.adoc
 - modules/monitor-solution/nav.adoc
 - modules/resize-solution/nav.adoc
 - modules/security/nav.adoc

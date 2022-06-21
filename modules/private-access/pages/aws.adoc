@@ -1,0 +1,52 @@
+= AWS PrivateLink
+:experimental:
+:description: Setting up PrivateLink on Amazon Web Services
+
+This page describes the setup process for PrivateLink.
+You will need an AWS account with PrivateLink enabled to use this feature.
+
+== Instructions
+
+After creating a new endpoint, select “Private“ or “Both“ for the TigerGraph Endpoint Type.
+
+image:enable-private-access-aws.png[]
+
+Fill in your AWS subscription ID.
+
+Behind the scenes, TigerGraph will provision an Endpoint Service and provide you with the Endpoint Service Name.
+The subscription ID that you provided will be added to the auto-approval allow list.
+
+In your AWS account, create an Endpoint using the Endpoint Service Name that TigerGraph provided.
+
+Confirm on the TGCloud Portal that the endpoint has been created and TigerGraph will automatically approve it.
+
+DNS Hostnames must be set to enabled in your VPC (Virtual Private Cloud) to use the TigerGraph private DNS.
+
+See instructions at this link: link:https://docs.aws.amazon.com/vpc/latest/userguide/vpc-dns.html#vpc-dns-updating[View and update DNS attributes for your VPC]
+
+=== Create VPC endpoint via AWS CLI
+
+The following IDs are necessary to generate the CLI command:
+
+* Customer VPC ID
+* Customer Subnet ID(s)
+* Customer AWS Account ARN, IAM Role ARN, or IAM User ARN (for automatic approval)
+
+.Sample command-line request to create VPC endpoint
+[source.wrap]
+----
+aws ec2 create-vpc-endpoint
+--vpc-id vpc-ec43eb89
+--vpc-endpoint-type Interface
+--service-name com.amazonaws.vpce.us-east-1.vpce-svc-0a85faeb9b6f57977
+--subnet-id subnet-1 subnet-2
+--security-group-id sg-1a2b3
+----
+
+If no security group is specified, the default security group for your VPC will be selected.
+In order to communicate with your TigerGraph solution via AWS Private link, inbound and outbound connections to the TigerGraph services on ports 443, 14240, and 9000 must be allowed.
+
+=== Create VPC Endpoint via Console
+AWS has detailed step-by-step instructions here: link:https://docs.aws.amazon.com/vpc/latest/privatelink/vpce-interface.html#create-interface-endpoint[Access an AWS service using an interface VPC endpoint]
+
+

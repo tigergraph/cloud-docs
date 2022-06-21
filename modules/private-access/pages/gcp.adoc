@@ -1,0 +1,59 @@
+= GCP Private Service Connect
+:experimental:
+:description: Setting up Private Service Connect on Google Cloud Platform (GCP)
+
+== GCP General Workflow
+After creating a new endpoint, select “Private“ or “Both“ for the TigerGraph Endpoint Type.
+
+image:enable-private-access-gcp.png[]
+
+Fill in your GCP Project ID and define a connection limit.
+
+Behind the scenes, TigerGraph will provision a Private Service Connect service and provide you with a Service Attachment name.
+
+In the GCP portal, create a Private Service Connect endpoint using the service name above.
+
+Confirm on the TGCloud Portal that the endpoint has been created and TigerGraph will automatically approve it.
+
+=== Instructions
+==== Private Service Connect endpoint
+Verify that a dedicated subnet with Purpose set to “None“ exists in GCP to contain the Private Service Connect endpoint.
+
+Create a static IP address for the Private Service Connect endpoint in that subnet.
+
+In the GCP portal, search for btn:[Private Service Connect] and click btn:[Connect Endpoint].
+
+In the btn:[Target] field, choose btn:[Published service]. Use the service name provided by TigerGraph as the btn:[Target Service].
+Choose the Subnetwork and IP address services provided earlier. Click btn:[Add Endpoint].
+
+Return to the Private service connect section and allow a few minutes to wait. On approval, the Endpoint displays a Status value of Accepted.
+
+==== Create endpoint via CLI
+
+First create a subnetwork:
+
+[source.wrap, bash]
+----
+gcloud compute networks subnets create <subnetwork_name> --project=<customer_project> --range=<subnet_cidr_in_customer_network> --network=<customer_network> --region=<region>
+----
+
+Then create a static IP address for the Private Service Connect endpoint:
+
+[source.wrap, bash]
+----
+gcloud compute addresses create <static_ip_address_name> --region=<region> --subnet=<name_of_subnet_from_step_1> --addresses <ip_address_in_network_from_step_1>
+----
+
+Add the endpoint:
+
+[source.wrap, bash]
+----
+gcloud compute forwarding-rules create <forwarding_rule_name> --region=<region> --network=<customer_network_name> --address=<static_ip_address_name_from_step_2> --target-service-attachment=<URI_from_TG_cloud>
+----
+
+
+==== Private DNS
+Create a Private DNS Zone named `privatelink.i.tgcloud.io`
+
+In the new DNS zone, add a DNS A record named `{solutiondomain}`  (example: `test-solution`).
+The value is the private static IP address for Private Service Connect.

@@ -8,6 +8,11 @@ Release date: June 20, 2022
 * TigerGraph Version 3.6.0 is now supported when creating new solutions.
 * xref:private-access:index.adoc[] are now supported when creating new solutions.
 
+=== Feature Updates
+
+* TGCloud solutions created with TigerGraph versions 3.5.3 or later no longer expose ports 14240 or 9000. Use port 443 instead for API endpoint connectivity:
+** Use API endpoint `443/restpp/<endpoint>` for RESTPP endpoints
+** Use API endpoint `443/<endpoint>` for endpoints that were on port 14240
 
 == TigerGraph Cloud - May 2022 Updates
 Release date: May 12, 2022

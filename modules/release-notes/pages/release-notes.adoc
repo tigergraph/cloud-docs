@@ -1,5 +1,14 @@
 = Release Notes
 
+== TigerGraph Cloud - June 2022 Updates
+Release date: June 20, 2022
+
+=== New features
+
+* TigerGraph Version 3.6.0 is now supported when creating new solutions.
+* xref:private-access:index.adoc[] are now supported when creating new solutions.
+
+
 == TigerGraph Cloud - May 2022 Updates
 Release date: May 12, 2022
 

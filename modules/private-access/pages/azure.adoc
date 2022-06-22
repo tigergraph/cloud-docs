@@ -2,9 +2,14 @@
 :experimental:
 :description: Setting up Private Link on Azure
 
+This page describes the setup process for Azure Private Link.
+You need an Azure account to use this feature.
+
 == Azure General Workflow
 
-After creating a new endpoint, select “Private“ or “Both“ for the TigerGraph Endpoint Type.
+Begin creating a paid-tier solution in a region that supports private access.
+
+Select “Private“ for the TigerGraph Endpoint Type.
 
 image:enable-private-access-azure.png[]
 

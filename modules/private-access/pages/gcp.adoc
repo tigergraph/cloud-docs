@@ -2,8 +2,14 @@
 :experimental:
 :description: Setting up Private Service Connect on Google Cloud Platform (GCP)
 
+This page describes the setup process for Private Service Connect.
+You need a GCP account with Private Service Connect enabled to use this feature.
+
 == GCP General Workflow
-After creating a new endpoint, select “Private“ or “Both“ for the TigerGraph Endpoint Type.
+
+Begin creating a paid-tier solution in a region that supports private access.
+
+Select “Private“ for the TigerGraph Endpoint Type.
 
 image:enable-private-access-gcp.png[]
 

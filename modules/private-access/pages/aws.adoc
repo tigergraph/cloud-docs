@@ -3,11 +3,13 @@
 :description: Setting up PrivateLink on Amazon Web Services
 
 This page describes the setup process for PrivateLink.
-You will need an AWS account with PrivateLink enabled to use this feature.
+You need an AWS account with PrivateLink enabled to use this feature.
 
-== Instructions
+== AWS General Workflow
 
-After creating a new endpoint, select “Private“ or “Both“ for the TigerGraph Endpoint Type.
+Begin creating a paid-tier solution in a region that supports private access.
+
+Select “Private“ for the TigerGraph Endpoint Type.
 
 image:enable-private-access-aws.png[]
 
@@ -44,9 +46,18 @@ aws ec2 create-vpc-endpoint
 ----
 
 If no security group is specified, the default security group for your VPC will be selected.
-In order to communicate with your TigerGraph solution via AWS Private link, inbound and outbound connections to the TigerGraph services on ports 443, 14240, and 9000 must be allowed.
+In order to communicate with your TigerGraph solution via AWS Private link, inbound and outbound connections to the TigerGraph services on port 443 must be allowed.
 
 === Create VPC Endpoint via Console
 AWS has detailed step-by-step instructions here: link:https://docs.aws.amazon.com/vpc/latest/privatelink/vpce-interface.html#create-interface-endpoint[Access an AWS service using an interface VPC endpoint]
 
+Under btn:[Service Category], select btn:[Other endpoint services].
 
+Check the box labeled btn:[Enable DNS name] under Additional Settings if you are creating a VPC endpoint via the console.
+
+[NOTE]
+====
+The security group assigned to the VPC Endpoint created from the command *must* allow inbound and outbound connections on port 443.
+
+The security group assigned to the resource(s) used to communicate with the TigerGraph services through the Private Link MUST allow inbound and outbound connections on port 443.
+====

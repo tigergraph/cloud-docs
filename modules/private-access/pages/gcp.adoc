@@ -3,7 +3,7 @@
 :description: Setting up Private Service Connect on Google Cloud Platform (GCP)
 
 This page describes the setup process for Private Service Connect.
-You need a GCP account with Private Service Connect enabled to use this feature.
+You need a GCP account to use this feature.
 
 == GCP General Workflow
 

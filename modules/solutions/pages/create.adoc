@@ -80,7 +80,7 @@ If you provision a cluster with a replication factor higher than 1:
 ====
 If your cluster is on GCP and it has a replication factor higher than 1, you won't be able to use ports 9000 and 14240 to access API endpoints. Instead, you can access the endpoints using HTTPS requests on port 443:
 
-* To access the endpoints that normally listen on port 9000,  append/restpp after the domain and before the endpoint. Since an HTTPS request already implies port 443, specifying the port is optional. However, you need to ensure that you are making HTTPS requests instead of HTTP requests.
+* To access the endpoints that normally listen on port 9000, append `/restpp` after the domain and before the endpoint. Since an HTTPS request already implies port 443, specifying the port is optional. However, you need to ensure that you are making HTTPS requests instead of HTTP requests.
 ** Example: To access the /echo endpoint: ``curl "https://examplesolution.i.tgcloud.io/restpp/echo"``
 * To access the endpoints that normally listen on port 14240, use the original endpoint address, but on port 443. Similar to port 9000 requests, specifying the port is optional.
 ** Example: To access the health check endpoint on 14240:

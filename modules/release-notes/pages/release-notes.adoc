@@ -12,7 +12,6 @@ Release date: June 20, 2022
 
 === Feature Updates
 
-* Optimized query compilation during schema changes to greatly enhance schema change performance.
 * TGCloud solutions created with TigerGraph versions 3.5.3 or later no longer expose ports 14240 or 9000. Use port 443 instead for API endpoint connectivity:
 ** Use API endpoint `443/restpp/<endpoint>` for RESTPP endpoints
 ** Use API endpoint `443/<endpoint>` for endpoints that were on port 14240

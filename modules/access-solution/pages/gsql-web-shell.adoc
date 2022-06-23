@@ -1,5 +1,12 @@
 = Access a Solution through GSQL Web Shell
 
+[NOTE]
+====
+The GSQL Web Shell is temporarily disabled for new solutions due to recent networking improvements on the TigerGraph Cloud backend.
+Please use the xref:tigergraph-server:gsql-shell:using-a-remote-gsql-client.adoc[Remote GSQL client] to access GSQL on new TigerGraph Cloud solutions until access is restored.
+Solutions created before June 20, 2022 are unaffected and still have access to the Web Shell.
+====
+
 With a paid tier solution and a valid payment method, you can also access the solution through the GSQL Web Shell. The web shell allows you to run GSQL commands on your TigerGraph Cloud solution.
 
 == Open GSQL Web Shell

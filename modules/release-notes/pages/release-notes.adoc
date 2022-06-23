@@ -10,12 +10,19 @@ Release date: June 20, 2022
 ** Private Links are supported across all cloud providers: AWS, Azure, and GCP.
 ** Solutions can have public or private access.
 
-=== Feature Updates
+=== Feature updates
 
 * TigerGraph Cloud solutions created on or after June 20, 2022 no longer expose ports 14240 or 9000.
 This also applies to previously created solutions that are resized on or after June 20, 2022. Use port 443 instead for API endpoint connectivity:
 ** Use API endpoint `443/restpp/<endpoint>` for RESTPP endpoints that were on port 9000
 ** Use API endpoint `443/<endpoint>` for endpoints that were on port 14240
+
+=== Known issues
+
+* The GSQL Web Shell is temporarily disabled for new solutions due to recent networking improvements on the TigerGraph Cloud backend. Solutions created before June 20, 2022 are unaffected and still have access to the Web Shell.
+
+** Use the xref:tigergraph-server:gsql-shell:using-a-remote-gsql-client.adoc[Remote GSQL client] to access GSQL on new TigerGraph Cloud solutions until access is restored.
+
 
 == TigerGraph Cloud - May 2022 Updates
 Release date: May 12, 2022
@@ -28,7 +35,7 @@ Release date: May 12, 2022
 * Added download button for solution management.
 
 
-=== Feature Updates
+=== Feature updates
 
 * *Netdata deprecation*. Monitoring network I/O data through Netdata is no longer supported because of security vulnerabilities.
 * Removed dependencies between credit card and backups when there are credits on account.
@@ -62,7 +69,7 @@ Release date: Sep 22, 2021
 
 Release Date: May 17, 2021
 
-=== New Features
+=== New features
 
 * ✅Support TigerGraph V3.1.1 for New Solutions (Single Server)
 
@@ -70,7 +77,7 @@ Release Date: May 17, 2021
 
 Release Date: March 17, 2021
 
-=== New Features
+=== New features
 
 * ✅Support GCP (Google Cloud Platform) as one of the Cloud Platforms
 
@@ -78,7 +85,7 @@ Release Date: March 17, 2021
 
 Release Date: March 9, 2021
 
-=== New Features
+=== New features
 
 * ✅Add Azure Central India and South India Regions to Cloud Platforms
 
@@ -86,7 +93,7 @@ Release Date: March 9, 2021
 
 Release Date: February 17, 2021
 
-=== New Features
+=== New features
 
 * ✅Add Cloud Portal Self Guided Tour
 * ✅Support Minimum Disk Size Check During New Solution Provisioning Process
@@ -95,7 +102,7 @@ Release Date: February 17, 2021
 
 Release Date:  December 16, 2020
 
-=== New Features
+=== New features
 
 * ✅Pricing Change
  ** Instance Pricing Change
@@ -126,7 +133,7 @@ Release Date:  September 29, 2020
 
 Release Date:  September 17, 2020
 
-=== New Features
+=== New features
 
 * ✅Support TigerGraph V3.0.5 for New Solutions
 * ✅Support TigerGraph v2.6.3 for New Solutions
@@ -136,7 +143,7 @@ Release Date:  September 17, 2020
 
 Release Date:  July 10, 2020
 
-=== New Features
+=== New features
 
 * ✅Support Microsoft Azure as one of the Cloud Platforms
 
@@ -144,7 +151,7 @@ Release Date:  July 10, 2020
 
 Release Date:  April 27, 2020
 
-=== New Features
+=== New features
 
 * ✅Advanced Developer Tool: GSQL Web Shell for Non-Free Tiers
 * ✅TigerGraph Database Version Upgrades to TigerGraph 2.6 For New Instances
@@ -162,7 +169,7 @@ Release Date:  April 27, 2020
 
 Release Date: January 08, 2020
 
-=== New Features
+=== New features
 
 * ✅New product name: "TigerGraph Distributed Cloud"
 * ✅New URL: tgcloud.io
@@ -177,7 +184,7 @@ Release Date: September 25, 2019
 
 Deprecation Date: March 31, 2020 (See https://docs.tigergraph.com/tigergraph-cloud/tigergraph-cloud-v1-to-tigergraph-distributed-cloud-faqs)
 
-=== New Features
+=== New features
 
 * ✅Single Server Enterprise Edition
 * ✅Self-service Signup and Registration at tgcloud.us

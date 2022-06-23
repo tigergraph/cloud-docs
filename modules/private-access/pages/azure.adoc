@@ -18,7 +18,7 @@ Fill in your Azure subscription ID.
 Behind the scenes, TigerGraph will provision a PrivateLink Service and provide you with the PrivateLink Service Name.
 The subscription ID that you provided will be added to the auto-approval allow list.
 
-In your Azure account, create a Private Endpoint using the PrivateLink Service Name that TigerGraph provided.
+In your Azure account, create an Endpoint or Private Endpoint using the PrivateLink Service Name that TigerGraph provided.
 
 Confirm on the TGCloud Portal that the endpoint has been created and TigerGraph will automatically approve it.
 
@@ -26,23 +26,30 @@ Confirm on the TGCloud Portal that the endpoint has been created and TigerGraph 
 === Private Endpoint
 Verify that a dedicated subnet exists to contain the Private Endpoint and that network policies are disabled. For more information, see Microsoft's article titled link:https://docs.microsoft.com/en-us/azure/private-link/disable-private-endpoint-network-policy[Disable network policies for private endpoints].
 
-Navigate to the Azure portal. Search for and click on Private Link.
+Navigate to the Azure portal. Search for and click on btn:[Private Link].
 
-Click Private endpoints and then click Add.
+Click *Private endpoints* and then click btn:[Add].
 
-In the Resource section, select *Connect to an Azure resource by resource ID or alias* and fill in the Resource ID or Alias Field fields.
-The Request message value is optional.
+In the Resource section, select *Connect to an Azure resource by resource ID or alias* for Connection Method, and fill in the *Resource ID* or *Alias Field* fields.
+The *Request message* value is optional.
 
-Return to the Private endpoints section and allow a few minutes to wait. On approval, the Private Endpoint displays a CONNECTION STATE value of Approved.
+Return to the Private endpoints section and allow a few minutes for processing. On approval, the Private Endpoint displays a *CONNECTION STATE* value of *Approved*.
 
 === Private endpoint via CLI
 
+In this example, replace the values in angle brackets `<>` with the relevant information for your solution.
+
 [source.wrap, bash]
 ----
-az network private-endpoint create -g MyResourceGroup -n MyPrivateEndpoint \
---vnet-name MyVnetName --subnet MySubnet \
---private-connection-resource-id "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/MyResourceGroup/providers/Microsoft.Network/privateLinkServices/MyPLS" \
---connection-name MyPrivateEndpointConnection -l eastus
+az network private-endpoint \
+create -g resource-group \
+-n private-endpoint \
+--vnet-name <vnet> \
+--subnet <subnet> \
+--private-connection-resource-id <d26eb624-5dfe-4188-91e4-075891834eda-private-link-service--a399431deb702616.5c02aae8-aac9-4453-8485-2930a3fee4f1.westus.azure.privatelinkservice> \
+--connection-name <private-endpoint-connection> \
+--location <westus> \
+--manual-request true
 ----
 
 === Private DNS
@@ -52,9 +59,9 @@ image::dns-configuration.png[]
 
 . Create a Private DNS Zone named `tgcloud.io`
 
-. Select “Virtual Network Link” on the left, click “Add“, and select the VNet that the Private Endpoint resides.
+. Select “Virtual Network Link” on the left, click btn:[Add], and select the VNet that the Private Endpoint resides.
 
-. Add an A record named `{solutiondomain}.privatelink`  (example: `test-solution.privatelink`). The value is the private IP address from step 1.
+. Add an *A* record named `{solutiondomain}.privatelink`  (example: `test-solution.privatelink`). The value is the private IP address from step 1.
 
 
 image::add-a-record.png[]

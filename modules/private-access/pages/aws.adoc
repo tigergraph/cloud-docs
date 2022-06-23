@@ -37,11 +37,11 @@ The following IDs are necessary to generate the CLI command:
 .Sample command-line request to create VPC endpoint
 [source.wrap]
 ----
-aws ec2 create-vpc-endpoint
---vpc-id vpc-ec43eb89
---vpc-endpoint-type Interface
---service-name com.amazonaws.vpce.us-east-1.vpce-svc-0a85faeb9b6f57977
---subnet-id subnet-1 subnet-2
+aws ec2 create-vpc-endpoint \
+--vpc-id vpc-ec43eb89 \
+--vpc-endpoint-type Interface \
+--service-name com.amazonaws.vpce.us-east-1.vpce-svc-0a85faeb9b6f57977 \
+--subnet-id subnet-1 subnet-2 \
 --security-group-id sg-1a2b3
 ----
 
@@ -51,9 +51,9 @@ In order to communicate with your TigerGraph solution via AWS Private link, inbo
 === Create VPC Endpoint via Console
 AWS has detailed step-by-step instructions here: link:https://docs.aws.amazon.com/vpc/latest/privatelink/vpce-interface.html#create-interface-endpoint[Access an AWS service using an interface VPC endpoint]
 
-Under btn:[Service Category], select btn:[Other endpoint services].
+Under *Service Category*, select btn:[Other endpoint services].
 
-Check the box labeled btn:[Enable DNS name] under Additional Settings if you are creating a VPC endpoint via the console.
+Check the box labeled btn:[Enable DNS name] under *Additional Settings* if you are creating a VPC endpoint via the console.
 
 [NOTE]
 ====

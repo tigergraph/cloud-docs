@@ -57,9 +57,46 @@ Add the endpoint:
 gcloud compute forwarding-rules create <forwarding_rule_name> --region=<region> --network=<customer_network_name> --address=<static_ip_address_name_from_step_2> --target-service-attachment=<URI_from_TG_cloud>
 ----
 
+==== Private Service Connect Endpoint via console
 
-==== Private DNS
-Create a Private DNS Zone named `privatelink.i.tgcloud.io`
+Google has a detailed page about connecting to Private Service Connect at this link: link:https://cloud.google.com/vpc/docs/configure-private-service-connect-services#create-endpoint[Create a Private Service Connect Endpoint]
 
-In the new DNS zone, add a DNS A record named `{solutiondomain}`  (example: `test-solution`).
+. Verify that a subnet with *Purpose* “None“ exists to contain the Private Service Connect endpoint.
+.. The subnetwork region must be the same as TigerGraph’s cloud. You can reuse an existing subnetwork.
+
+. In the Google Cloud console, go to *Private Service Connect*.
+
+. Go to the *Connected endpoints* tab and click btn:[Connect endpoint].
+
+. For *Target*, select *Published service*.
+
+. For *Target service*, enter the service attachment URI from the TigerGraph Cloud Portal.
+.. The service attachment URI is in this format: `projects/SERVICE_PROJECT/regions/REGION/serviceAttachments/SERVICE_NAME`
+
+. Enter a name to use for the endpoint under *Endpoint name*
+
+. Select a *Network* for the endpoint. This is the endpoint that connects to the TigerGraph cluster.
+
+. Select a Subnetwork for the endpoint from step 1.
+
+. Select an IP address for the endpoint. If you need a new IP address, you can create one:
+
+.. Select btn:[Create IP address] from the *IP address* drop-down menu
+
+.. Enter a *Name* and optional *Description* for the IP address.
+
+.. For Static IP address, select either btn:[Assign automatically] or enter your own with btn:[Let me choose].
+
+.. Click btn:[Reserve] to finish the IP address setup.
+
+. Click btn:[Add endpoint] to complete the process.
+
+==== Private DNS via console
+Create a Private DNS Zone named `privatelink.i.tgcloud.io` on the *Cloud DNS* page.
+
+In the new DNS zone, add a DNS *A* record with the same name as the solution domain from the TigerGraph Cloud Portal.
 The value is the private static IP address for Private Service Connect.
+
+[WARNING]
+Do not add `privateline.tgcloud.io` to the DNS *A* record.
+

@@ -468,7 +468,10 @@ A: You can access the database through TigerGraph's GraphStudio visual interface
 
 *Here is the step-by-step instructions:*
 
-TigerGraph cloud enables xref:tigergraph-server:API:authentication.adoc[REST{pp} Authentication] to securely connect TigerGraph Cloud solutions with your application through port 9000.
+TigerGraph cloud enables xref:tigergraph-server:API:authentication.adoc[REST{pp} Authentication] to securely connect TigerGraph Cloud solutions with your application through an endpoint on port 443 at `443/restpp/<endpoint>`.
+
+[NOTE]
+TigerGraph Cloud solutions created before June 20, 2022 used port 9000 and 14240 for endpoints. See the xref:release-notes:release-notes.adoc[] for details.
 
 *Step 1:* (First time only) Navigate to the TigerGraph solution's Admin Portal, and generate a secret from User Management.
 
@@ -476,18 +479,18 @@ For example, the URL for the solution is:
 
 [source,text]
 ----
-https://SOLUTIONID.i.tgcloud.io:14240/admin/#/user-management
+https://SOLUTIONID.i.tgcloud.io:443/admin/#/user-management
 ----
 
 and the generated secret is `abcd1234` from the Admin Portal.
 
-*Step 2:* [Need to renew every lifetime] Use the secret generated in step 1 to get a RESTPP token (for example, xyz789) using `curl`. Note that the port is 9000.
+*Step 2:* [Need to renew every lifetime] Use the secret generated in step 1 to get a RESTPP token (for example, xyz789) using `curl`. Access RESTPP endpoints on port 443 using the syntax `443/restpp/<endpoint>`.
 
 Here is an example where you obtain a token with a lifetime of 1,000,000 seconds (11 days):
 
 [source,text]
 ----
-curl -X GET 'https://SOLUTIONID.i.tgcloud.io:9000/requesttoken secret=abcd1234&lifetime=1000000'Returning
+curl -X GET 'https://SOLUTIONID.i.tgcloud.io:443/restpp/requesttoken secret=abcd1234&lifetime=1000000'Returning
 ----
 
 [source,text]
@@ -505,13 +508,13 @@ curl -X GET 'https://SOLUTIONID.i.tgcloud.io:9000/requesttoken secret=abcd1234&l
 
 [source,text]
 ----
-curl -X GET -H "Authorization: Bearer xyz789" 'https://SOLUTIONID.i.tgcloud.io:9000/graph/MyGraph/vertices/Account?limit=3'
+curl -X GET -H "Authorization: Bearer xyz789" 'https://SOLUTIONID.i.tgcloud.io:443/restpp/graph/MyGraph/vertices/Account?limit=3'
 ----
 
 
 === *Q: Do free tier instances expose RESTful endpoints?*
 
-A: Yes. Free tier instances expose RESTful endpoints through port 9000 to allow access to TigerGraph database, similar to non free tier instances.
+A: Yes. Free tier instances expose RESTful endpoints on port 443 to allow access to TigerGraph database, similar to paid tier instances. Solutions created before June 20, 2022 use port 9000.
 
 
 === *Q: Does TigerGraph Cloud offer Role Based Access Control?*

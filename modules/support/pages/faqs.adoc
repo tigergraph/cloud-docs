@@ -468,7 +468,10 @@ A: You can access the database through TigerGraph's GraphStudio visual interface
 
 *Here is the step-by-step instructions:*
 
-TigerGraph cloud enables xref:tigergraph-server:API:authentication.adoc[REST{pp} Authentication] to securely connect TigerGraph Cloud solutions with your application through port 443.
+TigerGraph cloud enables xref:tigergraph-server:API:authentication.adoc[REST{pp} Authentication] to securely connect TigerGraph Cloud solutions with your application through an endpoint on port 443 at `443/restpp/<endpoint>`.
+
+[NOTE]
+TigerGraph Cloud solutions created before June 20, 2022 used port 9000 and 14240 for endpoints. See the xref:release-notes:release-notes.adoc[] for details.
 
 *Step 1:* (First time only) Navigate to the TigerGraph solution's Admin Portal, and generate a secret from User Management.
 
@@ -511,7 +514,7 @@ curl -X GET -H "Authorization: Bearer xyz789" 'https://SOLUTIONID.i.tgcloud.io:4
 
 === *Q: Do free tier instances expose RESTful endpoints?*
 
-A: Yes. Free tier instances expose RESTful endpoints on port 443 to allow access to TigerGraph database, similar to paid tier instances.
+A: Yes. Free tier instances expose RESTful endpoints on port 443 to allow access to TigerGraph database, similar to paid tier instances. Solutions created before June 20, 2022 use port 9000.
 
 
 === *Q: Does TigerGraph Cloud offer Role Based Access Control?*

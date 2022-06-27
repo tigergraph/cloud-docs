@@ -26,6 +26,21 @@ DNS Hostnames must be set to enabled in your VPC (Virtual Private Cloud) to use 
 
 See instructions at this link: link:https://docs.aws.amazon.com/vpc/latest/userguide/vpc-dns.html#vpc-dns-updating[View and update DNS attributes for your VPC]
 
+== Instructions
+=== Create VPC Endpoint via Console
+AWS has detailed step-by-step instructions here: link:https://docs.aws.amazon.com/vpc/latest/privatelink/vpce-interface.html#create-interface-endpoint[Access an AWS service using an interface VPC endpoint]
+
+Under *Service Category*, select btn:[Other endpoint services].
+
+Check the box labeled btn:[Enable DNS name] under *Additional Settings* if you are creating a VPC endpoint via the console.
+
+[NOTE]
+====
+The security group assigned to the VPC Endpoint created from the command *must* allow inbound and outbound connections on port 443.
+
+The security group assigned to the resource(s) used to communicate with the TigerGraph services through the Private Link MUST allow inbound and outbound connections on port 443.
+====
+
 === Create VPC endpoint via AWS CLI
 
 The following IDs are necessary to generate the CLI command:
@@ -48,16 +63,3 @@ aws ec2 create-vpc-endpoint \
 If no security group is specified, the default security group for your VPC will be selected.
 In order to communicate with your TigerGraph solution via AWS Private link, inbound and outbound connections to the TigerGraph services on port 443 must be allowed.
 
-=== Create VPC Endpoint via Console
-AWS has detailed step-by-step instructions here: link:https://docs.aws.amazon.com/vpc/latest/privatelink/vpce-interface.html#create-interface-endpoint[Access an AWS service using an interface VPC endpoint]
-
-Under *Service Category*, select btn:[Other endpoint services].
-
-Check the box labeled btn:[Enable DNS name] under *Additional Settings* if you are creating a VPC endpoint via the console.
-
-[NOTE]
-====
-The security group assigned to the VPC Endpoint created from the command *must* allow inbound and outbound connections on port 443.
-
-The security group assigned to the resource(s) used to communicate with the TigerGraph services through the Private Link MUST allow inbound and outbound connections on port 443.
-====

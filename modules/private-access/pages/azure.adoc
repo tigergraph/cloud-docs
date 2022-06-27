@@ -23,7 +23,7 @@ In your Azure account, create an Endpoint or Private Endpoint using the PrivateL
 Confirm on the TGCloud Portal that the endpoint has been created and TigerGraph will automatically approve it.
 
 == Instructions
-=== Private Endpoint
+=== Private Endpoint via Azure portal
 Verify that a dedicated subnet exists to contain the Private Endpoint and that network policies are disabled. For more information, see Microsoft's article titled link:https://docs.microsoft.com/en-us/azure/private-link/disable-private-endpoint-network-policy[Disable network policies for private endpoints].
 
 Navigate to the Azure portal. Search for and click on btn:[Private Link].
@@ -37,7 +37,7 @@ Return to the Private endpoints section and allow a few minutes for processing. 
 
 === Private endpoint via CLI
 
-In this example, replace the values in angle brackets `<>` with the relevant information for your solution.
+Replace the values in angle brackets `<>` with the relevant information for your solution.
 
 [source.wrap, bash]
 ----

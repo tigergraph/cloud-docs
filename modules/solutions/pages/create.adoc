@@ -20,11 +20,12 @@ image::image (29).png[]
 
 Not all TigerGraph versions that are offered on-prem are offered on TigerGraph Cloud. In the dropdown list, choose the version of TigerGraph you want to run.
 
-image::image (40).png[]
+image::start:select-version.png[]
 
 TigerGraph Cloud Starter Kits are built with sample graph data schema, dataset, and queries focused on a specific use case ***to help you get started quickly*.** Most of our starter kits have a https://www.tigergraph.com/starterkits/[demo video] that walks you through the schema and the queries built for its use case. If you wish to proceed with your own schema and data, select *Blank.*
 
-image::image (58) (1).png[]
+image::start:select-a-starter-kit.png[]
+
 
 After choosing the starter kit, scroll down to the bottom and click *Next*.
 
@@ -36,11 +37,20 @@ The choice of cloud provider affects the configuration options for the available
 
 image::image (68).png[]
 
-==== 4.2. Choose an instance type
+==== 4.2. Choose an instance type (free or paid)
 
 Each instance type indicates its vCPU and RAM specifications as well as the hourly rate for running the instance. For suggestions on choosing the right instance type and disk storage, see xref:sizing-and-scaling.adoc[Sizing and Scaling].
 
 image::image (53).png[]
+
+In this step, you choose between the free tier and the paid tiers for your solution.
+The *TG.Free* tier is free, while all others require you to either use the $25 credit that comes with every new account or xref:billing:manage-payment-methods.adoc[have a valid payment method on file]
+
+Free-tier solutions are also subject to service limits. For more details, please see the page on xref:reference:service-limits.adoc[].
+
+The cost to run each solution is shown in each button.
+In addition to this cost, when solutions are inactive but not yet terminated, there is a separate data storage fee for keeping data present on the server.
+See xref:reference:README.adoc[the Reference page] for each cloud provider for more information about each billing structure.
 
 ==== 4.3. Choose a region
 
@@ -73,8 +83,8 @@ If you don't need additional copies of your data, enter 1 as your replication fa
 
 If you provision a cluster with a replication factor higher than 1:
 
-* If your solution is on AWS or GCP,  the replicas will automatically be provisioned on different availability zones.
-* A load balancer would be automatically attached to your cluster to balance traffic between the replicas.
+* If your solution is on AWS or GCP, the replicas are automatically provisioned on different availability zones.
+* A load balancer is automatically  attached to your cluster to balance traffic between the replicas.
 
 [NOTE]
 ====
@@ -98,7 +108,8 @@ Give your solution a tag, which helps you sort and identify your solutions. A so
 
 ==== 6.2. Set initial password
 
-When a solution is provisioned, a default xref:security:manage-database-users.adoc[TigerGraph user] `tigergraph` is created in the installation process. This is the initial password for the default user.
+When a solution is provisioned, a default xref:security:manage-database-users.adoc[TigerGraph user] `tigergraph` is created in the installation process.
+The password you set here will be the initial password for the `tigergraph` user.
 
 image::image (19).png[Set initial password]
 
@@ -109,7 +120,7 @@ This initial password allows you to log into the database when your solution is 
 
 ==== 6.3. Set a subdomain
 
-Enter a unique subdomain for your solution. Only letters, numbers, and inner hyphen(-) are allowed in the subdomain. You can send HTTP requests to the REST endpoints on the domain once the solution is up and running. If you do not enter a subdomain, an automatically generated subdomain will be assigned to the solution.
+Enter a unique subdomain for your solution. Only letters, numbers, and a connecting hyphen `-` between words are allowed in the subdomain. You can send HTTP requests to the REST endpoints on the domain once the solution is up and running. If you do not enter a subdomain, an automatically generated subdomain will be assigned to the solution.
 
 ==== 6.4. Enter a description
 

@@ -2,40 +2,41 @@
 :experimental:
 :description: Setting up Private Link on Azure
 
-This page describes the setup process for Azure Private Link.
+This page describes the setup process for Azure Private Link, a Microsoft service that securely connects a Virtual Network (VN) to Azure APIs without creating an external IP address.
 You need an Azure account to use this feature.
 
 == Azure General Workflow
 
-Begin creating a paid-tier solution in a region that supports private access.
+. Begin creating a paid-tier TigerGraph Cloud solution in a region that supports private access.
 
-Select “Private“ for the TigerGraph Endpoint Type.
+. Select “Private“ for the TigerGraph Endpoint Type.
 
 image:enable-private-access-azure.png[]
-
-Fill in your Azure subscription ID.
+[start=3]
+. Fill in your Azure subscription ID.
 
 Behind the scenes, TigerGraph will provision a PrivateLink Service and provide you with the PrivateLink Service Name.
 The subscription ID that you provided will be added to the auto-approval allow list.
 
-In your Azure account, create an Endpoint or Private Endpoint using the PrivateLink Service Name that TigerGraph provided.
+. In your Azure account, create an endpoint or private endpoint using the PrivateLink Service Name that TigerGraph provided.
 
-Confirm on the TGCloud Portal that the endpoint has been created and TigerGraph will automatically approve it.
+. Confirm on the TGCloud Portal that the endpoint has been created and TigerGraph will automatically approve it.
 
 == Instructions
-=== Private Endpoint via Azure portal
-Verify that a dedicated subnet exists to contain the Private Endpoint and that network policies are disabled. For more information, see Microsoft's article titled link:https://docs.microsoft.com/en-us/azure/private-link/disable-private-endpoint-network-policy[Disable network policies for private endpoints].
+=== Private endpoint via Azure portal
+Verify that a dedicated subnet exists to contain the private endpoint and that network policies are disabled. For more information, see Microsoft's article titled link:https://docs.microsoft.com/en-us/azure/private-link/disable-private-endpoint-network-policy[Disable network policies for private endpoints].
 
-Navigate to the Azure portal. Search for and click on btn:[Private Link].
-
-Click *Private endpoints* and then click btn:[Add].
-
-In the Resource section, select *Connect to an Azure resource by resource ID or alias* for Connection Method, and fill in the *Resource ID* or *Alias Field* fields.
+. Navigate to the Azure portal.
+. Search for and click on btn:[Private Link].
+. Click *Private endpoints* and then click btn:[Add].
+. In the Resource section, select *Connect to an Azure resource by resource ID or alias* for Connection Method, and fill in the *Resource ID* or *Alias Field* fields.
 The *Request message* value is optional.
 
-Return to the Private endpoints section and allow a few minutes for processing. On approval, the Private Endpoint displays a *CONNECTION STATE* value of *Approved*.
+. Return to the Private endpoints section and allow a few minutes for processing. On approval, the Private Endpoint displays a *CONNECTION STATE* value of *Approved*.
 
 === Private endpoint via CLI
+
+Make sure you have the latest Azure CLI tools from this link: link:https://docs.microsoft.com/en-us/cli/azure/install-azure-cli[How to install the Azure CLI]
 
 Replace the values in angle brackets `<>` with the relevant information for your solution.
 
@@ -53,7 +54,8 @@ create -g resource-group \
 ----
 
 === Private DNS
-To get the endpoint IP address, navigate to the Private Endpoint. Locate the Network Interface, copy the value for the Private IP address (i.e. `172.16.1.4`).
+To get the endpoint IP address, navigate to the Private Endpoint.
+Locate the Network Interface and copy the value for the Private IP address (i.e. `172.16.1.4`).
 
 image::dns-configuration.png[]
 

@@ -2,23 +2,23 @@
 :experimental:
 :description: Setting up PrivateLink on Amazon Web Services
 
-This page describes the setup process for PrivateLink.
+This page describes the setup process for PrivateLink, an Amazon service that securely connects a Virtual Private Cloud (VPC) to AWS APIs without creating an external IP address.
 You need an AWS account with PrivateLink enabled to use this feature.
 
 == AWS General Workflow
 
-Begin creating a paid-tier solution in a region that supports private access.
+. Begin creating a paid-tier TigerGraph solution in a region that supports private access.
 
-Select “Private“ for the TigerGraph Endpoint Type.
+. Select “Private“ for the TigerGraph Endpoint Type.
 
 image:enable-private-access-aws.png[]
-
-Fill in your AWS subscription ID.
+[start = 3]
+. Fill in your AWS subscription ID.
 
 Behind the scenes, TigerGraph will provision an Endpoint Service and provide you with the Endpoint Service Name.
 The subscription ID that you provided will be added to the auto-approval allow list.
 
-In your AWS account, create an Endpoint using the Endpoint Service Name that TigerGraph provided.
+In your AWS account, create an endpoint using the Endpoint Service Name that TigerGraph provided.
 
 Confirm on the TGCloud Portal that the endpoint has been created and TigerGraph will automatically approve it.
 
@@ -27,12 +27,12 @@ DNS Hostnames must be set to enabled in your VPC (Virtual Private Cloud) to use 
 See instructions at this link: link:https://docs.aws.amazon.com/vpc/latest/userguide/vpc-dns.html#vpc-dns-updating[View and update DNS attributes for your VPC]
 
 == Instructions
-=== Create VPC Endpoint via Console
+=== Create VPC endpoint via console
 AWS has detailed step-by-step instructions here: link:https://docs.aws.amazon.com/vpc/latest/privatelink/vpce-interface.html#create-interface-endpoint[Access an AWS service using an interface VPC endpoint]
 
-Under *Service Category*, select btn:[Other endpoint services].
+. Under *Service Category*, select btn:[Other endpoint services].
 
-Check the box labeled btn:[Enable DNS name] under *Additional Settings* if you are creating a VPC endpoint via the console.
+. Check the box labeled btn:[Enable DNS name] under *Additional Settings* if you are creating a VPC endpoint via the console.
 
 [NOTE]
 ====
@@ -42,6 +42,8 @@ The security group assigned to the resource(s) used to communicate with the Tige
 ====
 
 === Create VPC endpoint via AWS CLI
+
+Make sure you have the latest AWS CLI tools from this link: link:https://aws.amazon.com/cli/[AWS Command Line Interface]
 
 The following IDs are necessary to generate the CLI command:
 

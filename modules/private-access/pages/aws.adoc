@@ -14,13 +14,12 @@ You need an AWS account with PrivateLink enabled to use this feature.
 image:enable-private-access-aws.png[]
 [start = 3]
 . Fill in your AWS subscription ID.
-
 Behind the scenes, TigerGraph will provision an Endpoint Service and provide you with the Endpoint Service Name.
 The subscription ID that you provided will be added to the auto-approval allow list.
 
-In your AWS account, create an endpoint using the Endpoint Service Name that TigerGraph provided.
+. In your AWS account, create an endpoint using the Endpoint Service Name that TigerGraph provided.
 
-Confirm on the TGCloud Portal that the endpoint has been created and TigerGraph will automatically approve it.
+. Confirm on the TGCloud Portal that the endpoint has been created and TigerGraph will automatically approve it.
 
 DNS Hostnames must be set to enabled in your VPC (Virtual Private Cloud) to use the TigerGraph private DNS.
 

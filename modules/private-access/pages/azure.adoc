@@ -14,7 +14,6 @@ You need an Azure account to use this feature.
 image:enable-private-access-azure.png[]
 [start=3]
 . Fill in your Azure subscription ID.
-
 Behind the scenes, TigerGraph will provision a PrivateLink Service and provide you with the PrivateLink Service Name.
 The subscription ID that you provided will be added to the auto-approval allow list.
 

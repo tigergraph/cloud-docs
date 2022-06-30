@@ -54,12 +54,13 @@ The following IDs are necessary to generate the CLI command:
 .Sample command-line request to create VPC endpoint
 [source.wrap]
 ----
-aws ec2 create-vpc-endpoint \
---vpc-id vpc-ec43eb89 \
---vpc-endpoint-type Interface \
---service-name com.amazonaws.vpce.us-east-1.vpce-svc-0a85faeb9b6f57977 \
---subnet-id subnet-1 subnet-2 \
+aws ec2 create-vpc-endpoint
+--vpc-id vpc-ec43eb89
+--vpc-endpoint-type Interface
+--service-name com.amazonaws.vpce.us-east-1.vpce-svc-0a85faeb9b6f57977
+--subnet-id subnet-1 subnet-2
 --security-group-id sg-1a2b3
+--region us-west-1
 ----
 
 If no security group is specified, the default security group for your VPC will be selected.

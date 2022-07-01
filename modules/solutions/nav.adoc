@@ -1,5 +1,5 @@
 * xref:README.adoc[]
 ** xref:cloud-providers-and-regions.adoc[]
 ** xref:create.adoc[]
-** xref:stop-restart-and-terminate.adoc[]
 ** xref:sizing-and-scaling.adoc[]
+** xref:stop-restart-and-terminate.adoc[]

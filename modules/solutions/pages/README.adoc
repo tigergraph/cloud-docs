@@ -8,5 +8,5 @@ Solutions are fully-managed TigerGraph deployments. Here are some resources you 
  ** Information on the different cloud providers and regions available on TigerGraph Cloud
 * xref:sizing-and-scaling.adoc[Sizing and Scaling]
  ** Learn how to choose the appropriate instance type and disk size
-* xref:stop-restart-and-terminate.adoc[Stop, Resume and Terminate a Solution]
+* xref:stop-restart-and-terminate.adoc[Stop, Restart and Terminate a Solution]
  ** A step-by-step guide on how to stop, restart, and terminate a solution

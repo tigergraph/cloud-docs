@@ -6,7 +6,7 @@
 Your user account is displayed in the order [First Name] [Last Name] in the list of users in the organization account.
 
 Changing your display name is not currently supported by TigerGraph Cloud.
-To change your name, an Organization Admin needs to remove your account and send a new invite for you to make a new account.
+To change your name, an Organization Admin needs to remove your account and send a new invitation for you to make a new account.
 
 == Account permissions
 
@@ -17,7 +17,7 @@ See xref:manage-database-users.adoc#_organization_roles_and_privileges[Organizat
 
 == Reset your TigerGraph Cloud user account password
 
-. Go to the https://tgcloud.io[TigerGraph Cloud login portal].
+. Go to the https://tgcloud.io[TigerGraph Cloud main page].
 . Click the *Login* link next to "Have an account?"
 . Enter your organization name. If you don't remember your organization name, contact your administrator.
 . Click *Forgot password?*

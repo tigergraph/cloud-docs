@@ -1,0 +1,26 @@
+= Private Access Services
+
+TigerGraph offers private access services through AWS (AWS PrivateLink), Azure (Azure Private Link), and GCP (Private Service Connect).
+
+This section includes instructions on setting up private access through TigerGraph Cloud.
+
+This feature is only available to new solutions on regions that support private endpoints, not solutions existing before the feature release.
+If your solution was active before this feature was released in June 2022, you cannot create a private link in that region. Please contact TigerGraph support for information about upgrading to be able to create private links.
+
+Private access services are only available for paid solutions.
+
+== Setup overview
+
+. Create a new solution on Tigergraph Cloud
+
+. Choose "Private" or "Public" for the "TigerGraph Endpoint Type"
+
+. Connect the new solution to your account with the cloud provider
+
+See each solution's main page for a detailed guide.
+
+* xref:gcp.adoc[]
+
+* xref:aws.adoc[]
+
+* xref:azure.adoc[]

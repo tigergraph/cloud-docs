@@ -2,7 +2,7 @@
 
 Solutions are fully-managed TigerGraph deployments. Here are some resources you can use to create, configure and manage your solutions:
 
-* xref:create.adoc[Create a new solution]
+* xref:create-a-solution.adoc[Create a new solution]
  ** A step-by-step guide to creating a new solution
 * xref:cloud-providers-and-regions.adoc[Cloud Providers and Regions]
  ** Information on the different cloud providers and regions available on TigerGraph Cloud

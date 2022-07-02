@@ -12,7 +12,7 @@ Free-tier solutions are for training, learning, and small-scale proof of concept
 For more advanced testing and learning, consider adding a payment method and using paid-tier solutions to access the backup and restore feature.
 ====
 
-On the home page, if you have no solutions, you will see an option in the center to create a solution.
+On the home page, if you have no solutions and have the privileges to create a solution in your organization, you will see an option in the center to create a solution.
 
 image::home-page-no-solutions.png[]
 

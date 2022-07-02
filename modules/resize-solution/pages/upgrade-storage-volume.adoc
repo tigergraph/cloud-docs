@@ -4,7 +4,7 @@ If you decide that your solution needs more disk storage space, TigerGraph Cloud
 
 == Before you begin
 
-* You need a paid-tier solution in order to upgrade disk volume
+* You need a paid-tier solution in order to upgrade disk volume.
 
 == Procedure
 
@@ -12,13 +12,7 @@ Below is the procedure to upgrade the disk volume of a solution.
 
 === Step 1: Navigate to My Solutions page
 
-After logging into your TigerGraph Cloud account, click *My Solutions* on the left side menu to go to the *My Solutions* page.
-
-image::image (38) (7) (3).png[]
-
-=== Step 2: Upgrade disk volume
-
-On *My Solutions*, click the Solutions Operations icon in the Actions column and hover over *Resize*. In the dropdown menu that appears, select *Disk Volume*.
+On the main page or the Solutions page, click the Solutions Operations icon in the Actions column and hover over *Resize*. In the dropdown menu that appears, select *Disk Volume*.
 
 image::screen-shot-2021-07-27-at-10.50.06-am.png[Hover over Resize ]
 

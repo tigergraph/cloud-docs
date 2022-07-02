@@ -1,67 +1,20 @@
 = Manage Payment Methods
+:experimental:
 
 For standard hourly use of TigerGraph Cloud solutions, we currently support payment through cards. This document is a tutorial on adding or deleting cards and on setting a card as the default payment option.
 
-If you need to use ACH payment, or purchase bulk cloud credits, please contact sales@tigergraph.com
+If you need to use ACH payment or purchase bulk cloud credits, please contact sales@tigergraph.com
 
-== Add a card
+== Billing menu
 
-=== 1. Navigate to My Account
+Click btn:[Billing] on the left side menu bar to get to the Billing page.
 
-On the left side menu, click *My Account*.
+image::billing-page.png[]
 
-image::image (63).png[]
+Each new organization account has $25 in credits to use for paid-tier solutions.
 
-=== 2. Click Payment Method
+To connect a credit card to your account, click the btn:[Payment Methods] tab at the top and add a card.
 
-On the My Account page, click *Payment Method.*
+You can also remove cards or set them as default payment methods to avoid being prompted in the future.
 
-image::image (22).png[]
-
-=== 3. Click Add a new card
-
-In the *Payment Method* tab, click *Add a new card*.
-
-image::image (52).png[]
-
-=== 4. Enter your card information
-
-Enter your card information in the window that pops up, and click *Save*.
-
-== Delete a card
-
-You can delete a card if there is more than one card associated with the account.
-
-=== 1. Navigate to My Account
-
-On the left-side menu, click *My Account*.
-
-image::image (63).png[]
-
-=== 2. Click Payment Method
-
-On the My Account page, click *Payment Method.*
-
-image::image (22) (3).png[]
-
-=== *3. Delete the card*
-
-Find the card you want to delete in *Card Management*, and click *Delete*.
-
-== Set a card as default
-
-=== 1. Navigate to My Account
-
-On the left-side menu, click *My Account*.
-
-image::image (63).png[]
-
-=== 2. Click Payment Method
-
-On the My Account page, click *Payment Method.*
-
-image::image (22) (3).png[]
-
-=== 3. Click Set as Default
-
-Find the card you want to set as the default card in *Card Management*, and click *Set as Default*.
+The btn:[Marketplace] tab gives you an overview of your xref:subscriptions.adoc[] to cloud service providers that are linked to your account.

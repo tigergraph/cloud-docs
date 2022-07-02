@@ -5,13 +5,17 @@ When you set up a TigerGraph Cloud account, you are granted the privileges of an
 
 TigerGraph Cloud allows an Organization Admin to manage multiple users in your organization and control their access to various solutions.
 
-This page explains the user access controls. For help with setting up solutions, visit xref:start:create-a-solution.adoc[].
+This page explains the user access controls. For help with setting up solutions, visit xref:solutions:create-a-solution.adoc[].
 
 == Manage users in an organization
 The account that creates an organization is automatically given the role of an Organization Admin.
 The first time you log in to a new organization account, you have the opportunity to add additional users to your organization with different roles and privileges.
 
+image:invite-more-users.png[]
+
 You can also add users later by going to the Access Management page under the sidebar button btn:[Users] in the TigerGraph Cloud interface.
+
+image:access-management.png[]
 
 === Organization roles and privileges
 
@@ -42,7 +46,7 @@ A user added to a solution as an Organization Member has no role on the solution
 
 === Access Management
 
-On the User Access Management page, you can check the invitation status of each user who has been sent an invitation and also invite new users.
+In the Access Management section on the Users page, you can check the invitation status of each user who has been sent an invitation and also invite new users.
 
 Click on the three-dot menu btn:[•••] to modify a user's role or delete the account. Deleting the account removes the user from all solutions in the organization.
 

@@ -6,16 +6,17 @@ Release date: July 5, 2022
 
 === New Features
 
-* Multiple users can now share access to the same organization account
-* Role based access control (RBAC) to control and manage access to specific solutions and capabilities
-* TigerGraph Cloud Console and GraphStudio user authentication are now integrated to eliminate repeated logins
-* All-new clean and unified user interface
+* TigerGraph Version 3.6.1 is now available for selection when creating new solutions.
+* Multiple users can now share access to the same organization account.
+* Role based access control (RBAC) to control and manage access to specific solutions and capabilities.
+* TigerGraph Cloud Console and GraphStudio user authentication are now integrated to eliminate repeated logins.
+* All-new clean and unified user interface.
 
 === Feature Updates
 
 * Username/password authentication has changed for connectors to TigerGraph Cloud instances.
-** Users need to create a secret in the Admin Portal UI
-** Secrets can only be created through the GUI after a graph has been created
+** Users need to create a secret in the Admin Portal UI.
+** Secrets can only be created through the GUI after a graph has been created.
 ** When entering the credentials, the username needs to be `\__GSQL__SECRET`, and the password needs to be the secret.
 
 == TigerGraph Cloud - June 2022 Updates

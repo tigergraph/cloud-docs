@@ -6,9 +6,9 @@ Release date: July 5, 2022
 
 === New Features
 
-* Enabled multiple users to share access to the same organization account
-* Implemented Role based access control (RBAC)  to control/manage access to different functionalities and screens
-* Integrated login between TigerGraph Cloud Console and GraphStudio to eliminate redundant logins
+* Multiple users can now share access to the same organization account
+* Role based access control (RBAC) to control and manage access to different functionalities and screens
+* TigerGraph Cloud Console and GraphStudio user authentication are now integrated to eliminate repeated logins
 * All-new clean and unified user interface
 
 === Feature Updates

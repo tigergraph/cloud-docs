@@ -7,7 +7,7 @@ TigerGraph Cloud allows an Organization Admin to manage multiple users in your o
 
 This page explains the user access controls. For help with setting up solutions, visit xref:solutions:create-a-solution.adoc[].
 
-== Manage users in an organization
+== Invite new users
 The account that creates an organization is automatically given the role of an Organization Admin.
 The first time you log in to a new organization account, you have the opportunity to add additional users to your organization with different roles and privileges.
 

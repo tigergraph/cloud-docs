@@ -1,9 +1,13 @@
 = User Management
 
+This section describes the way user accounts work at different access levels in TigerGraph Cloud.
+
 == TigerGraph Cloud user account
 
 Your TigerGraph Cloud user account serves as your credential on the platform level.
 Depending on your role, you have various levels of access to solutions, billing information and organization user information.
+
+See xref:manage-cloud-account.adoc[] for more information about making changes to your account.
 
 == TigerGraph user access levels
 

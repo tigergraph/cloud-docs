@@ -50,8 +50,12 @@ Request::
 --
 [source.wrap,console]
 ----
-$ curl -X POST https://example.i.tgcloud.io:9000/requesttoken -d '{"secret": "n35lsqofc1if62fld2rmnb9hocqbh8ia", "lifetime": "100000"}'
+$ curl -X POST https://example.i.tgcloud.io:443/restpp/requesttoken -d '{"secret": "n35lsqofc1if62fld2rmnb9hocqbh8ia", "lifetime": "100000"}'
 ----
+
+[NOTE]
+For TigerGraph Cloud solutions created before June 20, 2022, replace "443/restpp" with "9000". See the xref:release-notes:release-notes.adoc[] for details.
+
 --
 Response::
 +
@@ -88,8 +92,11 @@ Request::
 [source.wrap,console]
 ----
 $ curl -H "Authorization: Bearer fc6p0i2ijjt031n0sja6m9ci70p232h7" \
-"https://aa768d833bbf47fea6db80a7972a9477.i.tgcloud.io:9000/graph/MyGraph/vertices/Patient?limit=5&select=birth_year"
+"https://aa768d833bbf47fea6db80a7972a9477.i.tgcloud.io:443/restpp/graph/MyGraph/vertices/Patient?limit=5&select=birth_year"
 ----
+
+[NOTE]
+For TigerGraph Cloud solutions created before June 20, 2022, replace "443/restpp" with "9000". See the xref:release-notes:release-notes.adoc[] for details.
 --
 Response:
 +

@@ -18,7 +18,6 @@ Release date: July 5, 2022
 ** Secrets can only be created through the GUI after a graph has been created
 ** When entering the credentials, the username needs to be `\__GSQL__SECRET`, and the password needs to be the secret.
 
-
 == TigerGraph Cloud - June 2022 Updates
 Release date: June 20, 2022
 

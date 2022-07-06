@@ -5,6 +5,8 @@
 This page describes the setup process for Azure Private Link, a Microsoft service that securely connects a Virtual Network (VN) to Azure APIs without creating an external IP address.
 You need an Azure account to use this feature.
 
+video::Sv20Ugt_REk[youtube]
+
 == Azure General Workflow
 
 . Begin creating a paid-tier TigerGraph Cloud solution in a region that supports private access.

@@ -5,6 +5,8 @@
 This page describes the setup process for Private Service Connect, a Google service that securely connects a Virtual Private Cloud (VPC) to Google APIs without creating an external IP address.
 You need a GCP account to use this feature.
 
+video::NcZ2JQ5AKbw[youtube]
+
 == GCP General Workflow
 
 . Begin creating a paid-tier solution in a region that supports private access.
@@ -62,8 +64,7 @@ In the new DNS zone, add a DNS *A* record with the same name as the solution dom
 The value is the private static IP address for Private Service Connect.
 
 [WARNING]
-Do not add `privateline.tgcloud.io` to the DNS *A* record.
-
+Do not add `privatelink.tgcloud.io` to the DNS *A* record.
 
 === Create a connection via CLI
 

@@ -5,6 +5,8 @@
 This page describes the setup process for PrivateLink, an Amazon service that securely connects a Virtual Private Cloud (VPC) to AWS APIs without creating an external IP address.
 You need an AWS account with PrivateLink enabled to use this feature.
 
+video::VNOH-iOL0sg[youtube]
+
 == AWS General Workflow
 
 . Begin creating a paid-tier TigerGraph solution in a region that supports private access.

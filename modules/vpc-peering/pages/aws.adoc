@@ -20,7 +20,7 @@ Initiate VPC peering.
 
 image:cloud-network.png[Network tab]
 
-In the TigerGraph VPC section, Choose the TigerGraph VPC that you want
+In the TigerGraph VPC section, choose the TigerGraph VPC that you want
 to initiate the peering connection from.
 
 In the Peered VPC section, fill in the information of the VPC that you

@@ -11,15 +11,7 @@ As your workload changes after you have created a solution, you can choose to re
 
 Below is the procedure to resize the instance type of a TigerGraph Cloud solution:
 
-=== Step 1: Navigate to My Solutions page
-
-After logging into your TigerGraph Cloud account, click *My Solutions* on the left side menu to go to the *My Solutions* page.
-
-image::image (38) (7) (3).png[]
-
-=== Step 2: Choose a new instance type
-
-On the *My Solutions* page, click the Solutions Operations icon in the Actions column and hover over *Resize*. In the dropdown menu that appears, select *Instance Type*.
+On the main page or the Solutions page, click the Solutions Operations icon in the Actions column and hover over *Resize*. In the dropdown menu that appears, select *Instance Type*.
 
 image::screen-shot-2021-07-27-at-10.50.06-am.png[Hover over Resize ]
 

@@ -1,0 +1,83 @@
+= Create a Solution
+:experimental:
+
+TigerGraph Cloud solutions offer a full-scale analytics platform to store and query your graph data.
+
+This page guides you through the process of creating a *free-tier* solution (subject to xref:reference:service-limits.adoc[limits]).
+
+[CAUTION]
+====
+Free-tier solutions are for training, learning, and small-scale proof of concept use cases. Free-tier solutions do not support backup and restore.
+
+For more advanced testing and learning, consider adding a payment method and using paid-tier solutions to access the backup and restore feature.
+====
+
+On the home page, if you have no solutions and have the privileges to create a solution in your organization, you will see an option in the center to create a solution.
+
+image::home-page-no-solutions.png[]
+
+[discrete]
+==== 3. Select TigerGraph version and starter kit.
+
+Not all TigerGraph versions that are offered on-premises are offered on TigerGraph Cloud.
+In the dropdown list, choose the version of TigerGraph you want to run.
+
+TigerGraph Cloud Starter Kits are built with a sample graph data schema, dataset, and queries focused on a specific use case to help you get started quickly.
+Most of our starter kits have a link:https://www.tigergraph.com/starterkits/[demo video] that walks you through the schema and the queries built for its use case.
+If you wish to proceed with your own schema and data, select btn:[Blank].
+
+image::select-version-and-starter-kit.png[]
+
+After you have selected a starter kit, scroll down to the bottom of the page and click btn:[Next].
+
+[discrete]
+==== 5. Select platform, region and endpoint type.
+
+TigerGraph Cloud supports free-tier solutions on all three cloud providers.
+Select your preferred cloud provider and the region closest to you for the best performance.
+Different providers have different regions available.
+
+See the Reference section for a full list of regions available for each cloud provider: xref:reference:README.adoc[Cloud Provider Reference]
+
+image::select-endpoint-region-access.png[]
+
+[discrete]
+==== 6. Select instance type.
+
+Select TG.Free for the purposes of this guide to a free-tier solution.
+More powerful virtual machines require you to use credits in your account or connect a payment method.
+
+image:select-instance-type.png[]
+
+[discrete]
+==== 7. Select disk size.
+
+Select *50 GB* for your disk size to stay within the free tier.
+
+On the free tier, partition and replication are limited to 1, meaning xref:tigergraph-server:ha:index.adoc[high availability (HA)] is disabled.
+
+image:select-disk-partition-replication.png[]
+
+Scroll down to the bottom of the page and click *Next*.
+
+[discrete]
+==== 8. Enter a name and a tag for your solution.
+
+On the Solution Settings page, you can customize the name by which the solution appears in the solution list and give it a tag for reference.
+
+You can also customize the solution subdomain. If you leave this section blank, a random subdomain name will be automatically generated.
+
+image:name-tag-solution.png[]
+
+Click btn:[Next] to go to a confirmation page, then create the solution. You will be sent back to the main page, where you can see your solution being created under the Pending Tasks menu.
+
+image:provisioning-solution.png[]
+
+== Log in to GraphStudio
+
+After you have created your solution, it may take a few minutes for it to be ready. Once you see the status of your solution turn to "Ready", you can proceed to log into GraphStudio.
+
+
+Go to My Solutions. Find the solution that is ready, click the blue Applications icon, and click btn:[GraphStudio].
+
+image::image (71).png[]

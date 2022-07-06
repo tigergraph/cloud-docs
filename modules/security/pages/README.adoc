@@ -1,12 +1,18 @@
-= Security and User Management
+= User Management
 
-== TigerGraph Cloud account
+This section describes the way user accounts work at different access levels in TigerGraph Cloud.
 
-Your TigerGraph Cloud account serves as your credential on the platform level. It allows you to manage solutions as well as payments. It also gives you superuser access to all of the graphs hosted by the solutions on the account.
+== TigerGraph Cloud user account
 
-== TigerGraph users
+Your TigerGraph Cloud user account serves as your credential on the platform level.
+Depending on your role, you have various levels of access to solutions, billing information and organization user information.
 
-On the solution level, the same xref:gui:admin-portal:management/user-management.adoc[role-based access control] used by the on-prem version of TigerGraph also applies to TigerGraph Cloud. Each solution or solution cluster can have many TigerGraph users and each user can have different roles for each graph with different privileges.
+See xref:manage-cloud-account.adoc[] for more information about making changes to your account.
+
+== TigerGraph user access levels
+
+On the individual solution level, the same xref:gui:admin-portal:management/user-management.adoc[role-based access control] used by the on-premises version of TigerGraph also applies to TigerGraph Cloud.
+Each solution or solution cluster can have many TigerGraph Cloud users and each user can have different roles for each graph with different privileges.
 
 For more information on how to manage users and roles in Admin Portal, see xref:gui:admin-portal:management/user-management.adoc[].
 

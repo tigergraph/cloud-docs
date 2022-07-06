@@ -1,2 +1,1 @@
 * xref:overview.adoc[Introduction]
-* xref:getting-started.adoc[]

@@ -1,5 +1,23 @@
 = Release Notes
 
+== TigerGraph Cloud - July 2022 Updates
+
+Release date: July 6, 2022
+
+=== New Features
+
+* Multiple users can now share access to the same organization account.
+* Role based access control (RBAC) to control and manage access to specific solutions and capabilities.
+* TigerGraph Cloud Console and GraphStudio user authentication are now integrated to eliminate repeated logins.
+* All-new clean and unified user interface.
+
+=== Feature Updates
+
+* Username/password authentication has changed for connectors to TigerGraph Cloud instances.
+** Users need to create a secret in the Admin Portal UI.
+** Secrets can only be created through the GUI after a graph has been created.
+** When entering the credentials, the username needs to be `\__GSQL__SECRET`, and the password needs to be the secret.
+
 == TigerGraph Cloud - June 2022 Updates
 Release date: June 20, 2022
 
@@ -16,6 +34,8 @@ Release date: June 20, 2022
 This also applies to previously created solutions that are resized on or after June 20, 2022. Use port 443 instead for API endpoint connectivity:
 ** Use API endpoint `443/restpp/<endpoint>` for RESTPP endpoints that were on port 9000
 ** Use API endpoint `443/<endpoint>` for endpoints that were on port 14240
+* Resizing a solution created before June 20, 2022 will cause data loss due to a backend improvement in solution resizing.
+Always back up a solution before performing a resize operation.
 
 === Known issues
 
@@ -105,21 +125,21 @@ Release Date:  December 16, 2020
 === New features
 
 * ✅Pricing Change
- ** Instance Pricing Change
- ** Backup Pricing Change
- ** Replica Pricing Change
- ** New Data Transfer Cost (First 50GB free for 2 hour+ uptime per month )
+** Instance Pricing Change
+** Backup Pricing Change
+** Replica Pricing Change
+** New Data Transfer Cost (First 50GB free for 2 hour+ uptime per month )
 * ​✅Support TigerGraph V3.0.6 for New Solutions
 * ​​✅Support TigerGraph v2.6.4 for New Solutions
 * ✅Support replication factor of 3 for TigerGraph V3.0.6 clusters
 * ✅New TigerGraph Cloud Instance Type TG.C4.M16 available from AWS
 * ✅SOC2 Type 2 report available to request
 * ✅5 New TigerGraph Starter Kits
- ** Graph Convolutional Networks (V3.0.6)
- ** Healthcare Graph (Drug Interaction/FAERS) (V3.0.6)
- ** Social Network Analysis (V2.6.4 and V3.0.6)
- ** Enterprise Knowledge Graph (Corporate Data) (V2.6.4 and V3.0.6)
- ** Enterprise Knowledge Graph (Crunchbase) (V2.6.4 and V3.0.6)
+** Graph Convolutional Networks (V3.0.6)
+** Healthcare Graph (Drug Interaction/FAERS) (V3.0.6)
+** Social Network Analysis (V2.6.4 and V3.0.6)
+** Enterprise Knowledge Graph (Corporate Data) (V2.6.4 and V3.0.6)
+** Enterprise Knowledge Graph (Crunchbase) (V2.6.4 and V3.0.6)
 
 == TigerGraph Cloud V3.1 - September 2020 Updates
 
@@ -157,13 +177,13 @@ Release Date:  April 27, 2020
 * ✅TigerGraph Database Version Upgrades to TigerGraph 2.6 For New Instances
 * ✅Starter Kit Categorization at Solution Provisioning
 * ✅6 New TigerGraph Starter Kits
- ** COVID-19 Starter Kit
- ** In-Database Machine Learning Recommendation
- ** Low-Rank Approximation Machine Learning
- ** Graph Algorithms
-  *** Shortest Path
-  *** Centrality
-  *** Community Detection
+** COVID-19 Starter Kit
+** In-Database Machine Learning Recommendation
+** Low-Rank Approximation Machine Learning
+** Graph Algorithms
+*** Shortest Path
+*** Centrality
+*** Community Detection
 
 == TigerGraph Cloud V2.0
 

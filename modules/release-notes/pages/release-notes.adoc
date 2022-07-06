@@ -2,7 +2,7 @@
 
 == TigerGraph Cloud - July 2022 Updates
 
-Release date: July 5, 2022
+Release date: July 6, 2022
 
 === New Features
 
@@ -34,6 +34,8 @@ Release date: June 20, 2022
 This also applies to previously created solutions that are resized on or after June 20, 2022. Use port 443 instead for API endpoint connectivity:
 ** Use API endpoint `443/restpp/<endpoint>` for RESTPP endpoints that were on port 9000
 ** Use API endpoint `443/<endpoint>` for endpoints that were on port 14240
+* Resizing a solution created before June 20, 2022 will cause data loss due to a backend improvement in solution resizing.
+Always back up a solution before performing a resize operation.
 
 === Known issues
 

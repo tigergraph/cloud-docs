@@ -1,6 +1,7 @@
 = Backup and Restore
 :description: The procedure to perform backup and restore on TigerGraph Cloud.
 :page-aliases: backup-and-restore.adoc
+:experimental:
 
 Backups are snapshots of the state of your solutions at a given point in time. Currently, any paid solutions provisioned by an account with a valid payment method can have a maximum of 7 concurrent backups.
 
@@ -9,9 +10,9 @@ Backups are snapshots of the state of your solutions at a given point in time. C
 The backup feature is not supported on free-tier instances or instances provisioned by an account without a valid payment method.
 ====
 
-All tasks described on this page can be completed in the *Admin Portal*. To get to the *Admin Portal*, go to the *My Solutions* page in GraphStudio and click *Admin* in the upper-right corner.
+All tasks described on this page can be completed in the *Admin Portal*. To get to the *Admin Portal*, open the Applications menu under the Actions heading on any solution in the My Solutions view.
 
-image::image (66).png[]
+image::adminportal.png[]
 
 == Data Storage and Encryption
 
@@ -31,15 +32,15 @@ On the left side of the screen, click *Backup & Restore.*
 
 ==== 2. Specify backup schedule.
 
-Choose the backup frequency you want and supply the password of your TigerGraph user.
+Enter your desired backup time as a cron job.
 
-image::image (26).png[]
+image::scheduled-backup.png[]
 
 ==== 3. Click UPDATE.
 
 == Manual backup
 
-Aside from scheduled backups, you can also make backups manually in the  Admin Portal.
+Aside from scheduled backups, you can also make backups manually in the Admin Portal.
 
 [NOTE]
 ====
@@ -56,12 +57,12 @@ Below are the procedures to create a backup manually in the Admin Portal.
 [discrete]
 ==== 2. Provide tag and password.
 
-In Backup/Restore, supply a tag for your backup and enter the password of your TigerGraph user.
+In Backup/Restore, supply the tag for your backup.
 
-image::image (56).png[]
+image::backup-restore.png[]
 
 [discrete]
-==== 3. Click BACK UP.
+==== 3. Click btn:[BACK UP].
 
 == Restore a backup
 
@@ -73,7 +74,7 @@ Below are the procedures to restore a backup in the Admin Portal:
 ==== 1. Click Backup & Restore.
 
 [discrete]
-==== 2. Copy backup tag.
+==== 2. Copy the backup tag.
 
 In *Manage Backups*, find the backup you want to use for the restore and click the clipboard icon to copy the tag of the backup.
 

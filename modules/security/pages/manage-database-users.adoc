@@ -17,6 +17,8 @@ You can also add users later by going to the Access Management page under the si
 
 image:access-management.png[]
 
+Invitations will expire after seven days. If an invitation expires, resend the invitation.
+
 === Organization roles and privileges
 
 The privileges granted to the various roles in a TigerGraph Cloud organization are as follows:

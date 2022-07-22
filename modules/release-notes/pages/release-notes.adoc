@@ -3,8 +3,10 @@
 New updates to TigerGraph Cloud, both to the user experience and the backend capability, are regularly released.
 This page provides a summary of each update upon release.
 
-Solutions created before an update will not be automatically upgraded.
-For upgrades to existing solutions, please contact TigerGraph Support.
+These TigerGraph Cloud updates are separate from updates to the core TigerGraph architecture. For release notes about new TigerGraph versions, see xref:tigergraph-server:release-notes:index.adoc[TigerGraph Server Release Notes].
+
+Cloud solutions are not automatically upgraded to a new TigerGraph version when a new version is released.
+For version upgrades for existing solutions, please contact TigerGraph Support.
 
 == TigerGraph Cloud - July 2022 Updates
 

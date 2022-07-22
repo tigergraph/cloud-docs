@@ -1,5 +1,11 @@
 = Release Notes
 
+New updates to TigerGraph Cloud, both to the user experience and the backend capability, are regularly released.
+This page provides a summary of each update upon release.
+
+Solutions created before an update will not be automatically upgraded.
+For upgrades to existing solutions, please contact TigerGraph Support.
+
 == TigerGraph Cloud - July 2022 Updates
 
 Release date: July 6, 2022
@@ -16,7 +22,7 @@ Release date: July 6, 2022
 * Username/password authentication has changed for connectors to TigerGraph Cloud instances.
 ** Users need to create a secret in the Admin Portal UI.
 ** Secrets can only be created through the GUI after a graph has been created.
-** When entering the credentials, the username needs to be `\__GSQL__SECRET`, and the password needs to be the secret.
+** When entering the credentials, the username needs to be `\__GSQL__secret`, and the password needs to be the secret.
 
 == TigerGraph Cloud - June 2022 Updates
 Release date: June 20, 2022

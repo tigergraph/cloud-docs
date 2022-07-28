@@ -23,6 +23,16 @@ Click the link in your email to verify, then log in using your username and pass
 If you have already verified your email address, you can still create a new organization on the Sign Up page.
 The system recognizes a verified email address on the registration page and allows you to create a new organization with the same credentials.
 
+[NOTE]
+====
+TigerGraph recommends enterprise customers use a shared mailbox to set up an organization account.
+TigerGraph Cloud sends important email notifications to this address, including for:
+
+* Billing and credits
+* Solution behavior
+* New cloud products
+====
+
 === Log in
 
 Click btn:[Log In] on the https://tgcloud.io/[TigerGraph Cloud landing page].

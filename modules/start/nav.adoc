@@ -1,2 +1,2 @@
-* xref:overview.adoc[Introduction]
+* xref:overview.adoc[導入にあたり]
 * xref:getting-started.adoc[]

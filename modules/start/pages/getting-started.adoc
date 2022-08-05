@@ -1,172 +1,172 @@
-= Getting Started
+= はじめに
 
-== Overview
+== 概要
 
-TigerGraph Cloud offers an easy way to analyze and query your graph data in the cloud. This tutorial guides you through creating your TigerGraph Cloud account, provisioning a free-tier TigerGraph Cloud Solution, and logging into GraphStudio.
+TigerGraph Cloudはクラウド上のグラフデータを簡単に分析しクエリを実行する方法を提供します。このガイドは、TigerGraph Cloudのアカウントの作成、TigerGraph Cloudソリューションの無料ティアのプロビジョニング、GraphStudioのログインについて説明します。
 
-*Watch* https://www.youtube.com/watch?v=JARd9ULRP_I&feature=youtu.be[*Quick Start Video*] *and Start Your TigerGraph Cloud Solutions in 5 Minutes!*
+https://www.youtube.com/watch?v=JARd9ULRP_I[**クイックスタートビデオ**] **を見てTigerGraph Cloudソリューションを5分で立ち上げましょう! **
 
-== Create a TigerGraph Cloud account
+== TigerGraph Cloudアカウントを作成する
 
-Go to the https://tgcloud.io/[TigerGraph Cloud landing page].
+https://tgcloud.io/[TigerGraph Cloudのランディングページ]に移動します。
 
-You can create a TigerGraph Cloud account with a Google account, a LinkedIn account, or an email address.
+TigerGraph Cloudアカウントは、GoogleまたはLinkedInのアカウント、メールアドレスから作成できます。
 
 [tabs]
 ====
-Email::
+メールアドレス::
 +
 --
-. Click *Login/Register*.
-. Click *Sign Up*.
-. Enter your email and password.
-. A verification email with the subject "Verify your email" will be sent to the email address you provided.
-. Go to your email inbox. Find the verification email and click *Confirm my account.*
+. **ログイン/登録**をクリックします。
+. **サインイン**をクリックします。
+. メールアドレスとパスワードを入力します。
+. 「Verify your email(パスワードを確認してください)」 という件名の確認メールが入力したメールアドレス宛に送信されます。
+. メールのインボックスを開きます。確認メールをみつけて**Confirm my account(アカウントを確認)**をクリックします。
 --
 Google::
 +
 --
-. Click *Login/Register.*
-. Click *Sign up.*
-. Click *Sign up with Google.*
-. Enter the password for your Google account.
-. Click *Next*.
-. Review and click the checkbox to accept the *Terms of Service* and the *Privacy Policy*.
-. Click *Submit*.
-. After being redirected back to TigerGraph Cloud, enter the information on the signup form and click the checkbox to accept TigerGraph's *Terms & Conditions* and *Privacy Policy*.
-. Click *Submit*.
+. **ログイン/登録**をクリックします。
+. **サインイン**をクリックします。
+. **Googleでサインイン**をクリックします。
+. Googleアカウントのパスワードを入力します。
+. **次に進む**をクリックします。
+. **利用規約**と**プライバシーポリシー**の内容を読んでチェックボックスをクリックして同意します。
+. **送信**をクリックします。
+. TigerGraph Cloudに転送されたら、サインインの書式に入力して、TigerGraphの**利用条件**と**プライバシーポリシー**に同意します。
+. **送信**をクリックします。
 --
 Linkedin::
 +
 --
-. Click *Login/Register.*
-. Click *Sign up.*
-. Click Sign up with LinkedIn.
-. Enter your LinkedIn credentials and click Sign in.
-. Review the Terms and Conditions and click *Allow*.
-. After being redirected back to TigerGraph Cloud, enter the information on the signup form and click the checkbox to accept TigerGraph's *Terms & Conditions* and *Privacy Policy*.
-. Click *Submit*.
+. **ログイン/登録**をクリックします。
+. **サインイン**をクリックします。
+. **LinkedInでサインイン**をクリックします。
+. LinkedInの認証情報を入力してサインインをクリックします。
+. 利用条件を読んで**許可する**をクリックします。
+. TigerGraph Cloudに転送されたら、サインアップの書式に情報を入力して、TigerGraphの**利用条件**と**プライバシーポリシー**に同意します。
+. **送信**をクリックします。
 --
 ====
 
-== Log in to your TigerGraph Cloud account
+== TigerGraph Cloudアカウントにログインする
 
-If you already created a TigerGraph Cloud account, sign in to your account:
+TigerGraph Cloudアカウントが既に作成されている場合には、アカウントにサインインします。
 
-. Go to the https://tgcloud.io[TigerGraph Cloud landing page].
-. Click *Login / Register*.
-. Enter your email and password, or if you registered with an identity provider, select the correct provider and enter your credentials.
-. Click *Log In.*
+. https://tgcloud.io[TigerGraph Cloudのランディングページ]に移動します。
+. **ログイン/登録**をクリックします。
+. メールアアドレスとパスワードを入力します。認証情報プロバイダを介して登録した場合には、該当するプロバイダを選択して認証情報を入力します。
+. **ログイン**をクリックします。
 
-== *Create* a free-tier solution
+== 無料ティアのソリューションを**作成する**
 
-TigerGraph Cloud free-tier solutions (subject to xref:reference:service-limits.adoc[limits]) offer a small-scale analytics platform to store and query your graph data.
+TigerGraph Cloudの無料ティアのソリューション (xref:reference:service-limits.adoc[容量に限度あり]) は、グラフデータを保管しクエリを実行する小規模の分析プラットフォームを提供します。
 
 [CAUTION]
 ====
-Free-tier solutions are for training, learning, and light scale proof of concept (POC) use cases and do not support backup and restore. For in-depth POCs, consider adding a valid payment method and use paid-tier solutions to access the backup and restore feature. +
+無料ティアのソリューションは、トレーニング、学習、および簡単な概念実証(POC) のユースケースのためのものなので、バックアップと復元機能には対応していません。詳細な内容のPOCを実行するには、有効な支払い方法を追加して、有料ティアのソリューションで、バックアップと復元機能をお使いください。
 ====
 
 [discrete]
-==== 1. Click *My Solutions*.
+==== 1. **マイソリューション**をクリックします。
 
-After logging in, you will be directed to the dashboard page, on the right side of the page, click *My Solutions.*
+ログインすると、ダッシュボードのページが表示されます。右側にある**マイソリューション**をクリックします。
 
 image::image (38) (7) (2).png[TigerGraph Cloud Dashboard view]
 
 [discrete]
-==== *2. Click Create Solution.*
+==== **2. ソリューションの作成をクリックします。**
 
-On the *My Solutions* page, click *Create Solution.*
+**マイソリューション**のページで、**ソリューションの作成**をクリックします。
 
 image::screen-shot-2021-02-19-at-9.21.12-am.png[TigerGraph Cloud My Solutions view]
 
 [discrete]
-==== *3. Select TigerGraph version.*
+==== **3. TigerGraphのバージョンを選択します。**
 
-Not all TigerGraph versions that are offered on-prem are offered on TigerGraph Cloud. In the dropdown list, choose the version of TigerGraph you want to run.
+TigerGraphのオンプレミスのバージョンの中にはTigerGraph Cloud対象でないものがあります。ここでは、ドロップダウンのリストから、実行するTigerGraphのバージョンを選択します。
 
 image::image (40).png[]
 
 [discrete]
-==== *4. Select a starter kit.*
+==== **4. スターターキットを選択します。**
 
-TigerGraph Cloud Starter Kits are built with sample graph data schema, dataset, and queries focused on a specific use case ***to help you get started quickly*.** Most of our starter kits have a https://www.tigergraph.com/starterkits/[demo video] that walks you through the schema and the queries built for its use case. If you wish to proceed with your own schema and data, select *Blank.*
+TigerGraph Cloudのスターターキットは、グラフデータスキーマとデータセットのサンプルを基に、特定のユースケースのクエリに絞って作られており、**ソリューションをいち早く使い始めるために**用意されています。ほとんどのスターターキットには https://www.tigergraph.co.jp/starterkits/[デモ用の動画] が提供されています。ユースケース別に作成されたスキーマとクエリの使い方を順を追って見ることができます。ご自分のスキーマとデータを使う場合には、**ブランク**を選択します。
 
 image::image (58) (1) (1).png[]
 
-After you have selected a starter kit, scroll down to the bottom of the page and click *Next*.
+スターターキットを選択したら、ページの最下部までスクロールして、**次へ**をクリックします。
 
 [discrete]
-==== 5. Select _Cloud Provider_ and instance type.
+==== 5. __クラウドプロバイダ__とインスタンスタイプを選択します。
 
-Currently, TigerGraph Cloud only supports free-tier solutions on AWS. Select *AWS* as your cloud provider and select *TG.Free* as your instance type.
+現在、TigerGraph Cloudの無料ティアソリューションは、AWSでのみサポートしています。クラウドプロバイダは**AWS**を選択して、インスタンスタイプは**TG.Free**を選択します。
 
 image::image (57).png[Cloud platform and instance type options]
 
-*6. Select Region.*
+**6. 地域を選択します。**
 
 image::image (47).png[Regions for AWS]
 
 [discrete]
-==== 7. Select disk size.
+==== 7. ディスクサイズを選択します。
 
-Select *50 GB* for your disk size. Scroll down to the bottom of the page and click *Next*.
+ディスクサイズは**50 GB**を選択します。ページの最下部までスクロールして、**次へ**をクリックします。
 
 image::image (39).png[]
 
 [discrete]
-==== 8. Enter a name and a tag for your solution.
+==== 8. ソリューション名とタグを入力します。
 
-You can enter any name for your solution. A solution name may contain alphanumerics, dashes, underscores, and spaces, and cannot be longer than 20 characters. A solution tag can be no longer than 40 characters and can contain any character.
+ソリューションの名は自由に入力することができ、英数字、ダッシュ、下線、スペースのみを使い、最大20文字まで入力可能です。ソリューションのタグは40文字まで入力可能で、文字の種類には制限はありません。
 
 [discrete]
-==== 9. Set initial password.
+==== 9. 初期パスワードを設定します。
 
-This is the initial password for the default xref:security:manage-database-users.adoc[TigerGraph user] `tigergraph`. You can change the password later in Admin Portal.
+xref:security:manage-database-users.adoc[TigerGraphのデフォルトユーザー] ``tigergraph``のための初期パスワードを設定します。パスワードは後から管理ポータルで変更できます。
 
 image::image (19) (1).png[]
 
 [NOTE]
 ====
-This initial password allows you to log into the database when your solution is in the ready state. If you forget this password, you will need to terminate and recreate the solution.
+ソリューションのステータスがREADYになったときに、この初期パスワードを使ってデータベースにログインすることができます。初期パスワードを忘れた場合には、終了してソリューションを作成し直す必要があります。
 ====
 
 [discrete]
-==== 10. Enter a subdomain and description.
+==== 10. サブドメインと説明を入力します。
 
-Customize the subdomain for your solution. If this field is left blank, a random subdomain will be automatically generated for the solution.
+ソリューションに合わせてサブドメインをカスタマイズします。このフィールドに入力がないと、ソリューションのランダムなサブドメインが自動的に生成されます。
 
 image::image (50).png[]
 
-Enter an optional description of what your solution will be used for, and click *Next*.
+ソリューションの用途の説明を入力 (オプション) して、**次へ**をクリックします。
 
 image::image (27).png[]
 
 [discrete]
-==== 11. Confirm your settings.
+==== 11. 設定を確認します。
 
-Confirm your settings and click *Submit.* You will be redirected back to the *My Solutions* view, and your solution will be ready in minutes.
+設定を確認して**送信**をクリックします。**マイソリューション**の画面に転送され、ソリューションは数分で準備完了になります。
 
-== Log in to GraphStudio
+== GraphStudioにログインする
 
-After you have created your solution, it may take a few minutes for it to be ready. Once you see the status of your solution turn to "Ready", you can proceed to log into GraphStudio.
+マイソリューションに移動します。READYと表示されているソリューションをみつけて、青いアプリケーションアイコンをクリックして、GraphStudioをクリックします。
 
 [discrete]
-==== 1. Open GraphStudio for your solution.
+==== 1. GraphStudioでソリューションを開きます。
 
-Go to My Solutions. Find the solution that is ready, click the blue Applications icon, and Click *GraphStudio*.
+マイソリューションに移動します。READYと表示されているソリューションをみつけて、青いアプリケーションアイコンをクリックして、**GraphStudio**をクリックします。
 
 image::image (71).png[]
 
 [discrete]
-==== 2. Enter your credentials.
+==== 2. 認証情報を入力します。
 
-Enter the initial password set during *Create Solution* for the default database user `tigergraph` and click *Login*. This is not your TigerGraph Cloud account email and password.
+**ソリューションの作成**のステップで設定されたデフォルトのデータベースユーザー``tigergraph``のための初期パスワードを入力して**ログイン**をクリックします。これはTigerGraph Cloudアカウントのメールアドレスとパスワードではありませんので、ご注意ください。
 
 image::image (43).png[GraphStudio login page]
 
 [discrete]
-==== 3. You are now ready to use your free-tier TigerGraph Solution.
+==== 3. TigerGraphの無料ティアソリューションを使う準備が完了しました。
 
-You can learn how to use GraphStudio in our xref:gui:graphstudio:overview.adoc/[GraphStudio UI guide].
+GraphStudioの使い方は、 xref:gui:graphstudio:overview.adoc/[GraphStudio UI ガイド]の説明をご覧ください。

@@ -1,107 +1,107 @@
 = TigerGraph Cloud
 
-TigerGraph Cloud is a fully-managed cloud database built on the same TigerGraph Enterprise Server engine that is delivering the fastest and most scalable graph database.
-TigerGraph Cloud handles all the complexity of deploying and managing your deployments on the cloud service provider of your choice (AWS, Azure, and GCP).
+TigerGraph Cloudは、最速かつ最もスケーラブルなグラフデータベースを提供しているTigerGraph Enterprise Serverエンジンをベースに構築された、フルマネージド型のクラウドデータベースです。
+TigerGraph Cloudは、お使いのクラウドサービス (AWS、Azure、GCP) での複雑なデプロイと管理作業をすべて処理します。
 
-Most of the documentation for TigerGraph Enterprise Server also applies to TigerGraph Cloud.
-However, since TigerGraph Cloud does not have a command-line interface on the OS level, command-line features are not supported in the same way. In many cases, we introduced a GUI-based method for the same feature.
-For advanced OS-level commands, submit a support ticket for more information.
+TigerGraph Enterprise Serverのドキュメントのほとんどの部分がTigerGraph Cloudにも有効です。
+しかし、TigerGraph CloudにはOSレベルのコマンドラインによるインターフェースを持たないため、コマンドラインの機能は同等にサポートされません。多くの場合、同じ機能を実行できるように、GUIベースの方法を導入しています。
+OSレベルの高度なコマンドの場合には、サポートチケットを提出し、詳しい情報をご確認ください。
 
-*Watch* https://www.youtube.com/watch?v=mOsfjst6Ahs&ab_channel=TigerGraph[*Quick Start Video*] *and Start Your TigerGraph Cloud Solutions in 5 Minutes!*
+https://www.youtube.com/watch?v=i_Xdm6O7ghQ[*クイックスタートビデオ*] *を見てTigerGraph Cloudソリューションを5分で立ち上げましょう!*
 
-video::mOsfjst6Ahs[youtube]
+video::i_Xdm6O7ghQ[youtube]
 
-== Get started with TigerGraph Cloud
+== TigerGraph Cloudはじめに
 
-* xref:start:getting-started.adoc[Create a free TigerGraph Cloud account]
-* xref:start:getting-started.adoc[Create a free-tier TigerGraph Cloud solution]
-* xref:access-solution:README.adoc[Access your TigerGraph Cloud solution]
+* xref:start:getting-started.adoc[TigerGraph Cloud 無料アカウントを作成]
+* xref:start:getting-started.adoc[TigerGraph Cloud 無料ティアのソリューションを作成]
+* xref:access-solution:README.adoc[TigerGraph Cloud ソリューションにアクセス]
 
-== Manage TigerGraph Cloud solutions
+== TigerGraph Cloud ソリューションの管理
 
-* xref:monitor-solution:monitor-solution-state.adoc[Monitor a solution]
-* xref:gui:admin-portal:management/user-management.adoc[Security and user management]
-* xref:backup-and-restore:backup-and-restore.adoc[Backup and restore]
+* xref:monitor-solution:monitor-solution-state.adoc[ソリューションの監視]
+* xref:gui:admin-portal:management/user-management.adoc[セキュリティとユーザー管理]
+* xref:backup-and-restore:backup-and-restore.adoc[バックアップと復元]
 
-== Billing
+== 課金
 
-* xref:billing:manage-payment-methods.adoc[Manage payment methods]
-* xref:billing:subscriptions.adoc[Cloud Marketplace subscriptions]
+* xref:billing:manage-payment-methods.adoc[支払い方法の管理]
+* xref:billing:subscriptions.adoc[Cloud Marketplaceのサブスクリプション]
 
-== FAQs
+== FAQ
 
-See the xref:support:faqs.adoc[TigerGraph Cloud FAQs] for answers to common questions.
+xref:support:faqs.adoc[TigerGraph Cloud FAQ]をご覧ください。よくあるご質問の回答が掲載されています。
 
-== Comparison with TigerGraph Enterprise Server
+== TigerGraph Enterprise Serverとの比較
 
 |===
-| Topic | TigerGraph Enterprise Server | TigerGraph Cloud
+| 比較項目 | TigerGraph Enterprise Server | TigerGraph Cloud
 
-| GSQL Graph Algorithm Library
-| Yes
-| Installation not yet supported. Generated algorithms can be copied-and-pasted into the Write Queries code panel in GraphStudio
+| GSQL グラフ・アルゴリズム・ライブラリ
+| 〇
+| インストレーションはまだサポートされていません。生成されたアルゴリズムは、GraphStudioのWrite Queries のコードパネルにコピペして使用します。
 
-| Release Notes
-| Yes
-| TigerGraph Cloud Provides Two Database Versions: V2.6.4 and V3.0.6
+| リリースノート
+| 〇
+| TigerGraph Cloud にはデータベースのバージョンが2つあります (V2.6.4とV3.0.6)。
 
 | GSQL 101
-| Yes
-| Basic concepts still apply, most CREATE, INSTALL, LOAD, and RUN commands are replaced with the GraphStudio GUI-based approach.
+| 〇
+| 基本的な概念は同じです。大半のCREATE、INSTALL、LOAD、RUNコマンドは、GraphStudioのGUIベースのアプローチで実行できるようになっています。
 
-| GSQL 102 Pattern Matching
-| Yes
-| The same patterns can be used in queries.
+| GSQL 102 パターンマッチング
+| 〇
+| 同じパターンをクエリで使用できます。
 
-| MultiGraph Overview
-| Yes
-| Yes. Choose V3.0.6 in TigerGraph Cloud
+| MultiGraph概要
+| 〇
+| 対応しています。TigerGraph Cloudでバージョン3.0.6を選択してください。
 
-| Hardware and Software Requirements
-| Yes
-| N/A
+| ハードウェアとソフトウェア要件
+| 〇
+| 該当しません。
 
-| Installation and Configuration
-| Yes
-| N/A. There are a few simple steps to install a Starter Kit.  See the TigerGraph Cloud FAQs.
+| インストールと設定
+| 〇
+| 該当しません。スターターキットは短い、簡単な手順でインストールできます。TigerGraph Cloud FAQをご覧ください。
 
-| User Access Management
-| Yes
-| Yes. Choose V3.0.6 in TigerGraph Cloud for multiple users in one TigerGraph solution.
+| ユーザーアクセス管理
+| 〇
+| 対応しています。1つのTigerGraphソリューションで複数ユーザーに対応する場合には、TigerGraph Cloudでバージョン3.0.6を選択してください。
 
-| Data Encryption
-| Yes
-| N/A. TigerGraph Cloud is setup already for encrypted data at rest and at motion.
+| データの暗号処理
+| 〇
+| 該当しません。TigerGraph Cloudは静止時と移動時の暗号化されたデータに対応するように構成されています。
 
-| System Management
-| Yes
-| The Cloud Admin Portal is enhanced over the TigerGraph Server Admin Portal.  Backup and Restore is done through the Cloud Admin Portal.
+| システム管理
+| 〇
+| Cloud Admin PortalはTigerGraph Server Admin Portalを強化したものです。バックアップと復元はCloud Admin Portalから行います。
 
-| GraphStudio UI Guide
-| Yes
-| Yes
+| GraphStudio UIガイド
+| 〇
+| 〇
 
-| GSQL Demo Examples
-| Yes
-| Yes
+| GSQLデモの例
+| 〇
+| 〇
 
-| GSQL Language Reference, Part 1 Data Definition and Loading
-| Yes
-| Yes. GSQL Web Shell (Paid Tiers) supports Data Definition and Loading. Data files can be imported into the filesystem through GraphStudio, or submit support request to import into the filesystem. In addition, the operations can be performed through the GraphStudio user interface.
+| GSQLランゲージのレファレンス 第1部: データの定義と読み込み
+| 〇
+| 対応しています。GSQL Web Shell (有料ティア) はデータの定義と読み込みに対応しています。データのファイルはGraphStudioからファイルシステムにインポートするか、サポートリクエストを送信してファイルシステムへのインポートを要求してください。また、GraphStudioのユーザーインターフェースからも操作することができます。
 
-| GSQL Language Reference, Part 2 Querying
-| Yes
-| Yes
+| GSQLランゲージのレファレンス 第2部: クエリ
+| 〇
+| 〇
 
-| RESTPP API User Guide
-| Yes
-| Yes. Note the URL assigned to your solution.
+| RESTPP APIユーザーガイド
+| 〇
+| 対応しています。ソリューションに割り当てられたURLをメモしてください。
 
-| Transaction Processing and ACID Support
-| Yes
-| Yes
+| トランザクション処理とACIDサポート
+| 〇
+| 〇
 
-| Data Loader User Guides
-| Yes
-| S3 Loader can be used through the GraphStudio interface. In addition, S3 Loader and Kafka Loader can be used in GSQL Web Shell (Paid Tiers).
+| データローダー ユーザーガイド
+| 〇
+| S3ローダーは、GraphStudioのインターフェースを介して使うことができます。また、S3ローダーとKafkaローダーはGSQL Web Shell (有料ティア)内でも利用できます。
 |===

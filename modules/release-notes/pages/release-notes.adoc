@@ -1,4 +1,5 @@
 = Release Notes
+:page-toclevels: 1
 
 New updates to TigerGraph Cloud, both to the user experience and the backend capability, are regularly released.
 This page provides a summary of each update upon release.
@@ -8,7 +9,18 @@ These TigerGraph Cloud updates are separate from updates to the core TigerGraph 
 Cloud solutions are not automatically upgraded to a new TigerGraph version when a new version is released.
 For version upgrades for existing solutions, please contact TigerGraph Support.
 
-== TigerGraph Cloud - July 2022 Updates
+== August 2022 Updates
+Release date: August 17th, 2022
+
+=== New Features
+* Users with an invitation can provision xref:ml-workbench:on-cloud:index.adoc[ML Workbench (preview version)] instances on top of TigerGraph Cloud solutions.
+** If you are interested in experimenting with ML Workbench on Cloud, please contact sales@tigergraph.com
+
+=== Feature updates
+* Organization Admins can now create username-password pairs for user authentication from TigerGraph connectors and the remote GSQL client.
+* Minor UI improvements.
+
+== July 2022 Updates
 
 Release date: July 6, 2022
 
@@ -26,7 +38,7 @@ Release date: July 6, 2022
 ** Secrets can only be created through the GUI after a graph has been created.
 ** When entering the credentials, the username needs to be `\__GSQL__secret`, and the password needs to be the secret.
 
-== TigerGraph Cloud - June 2022 Updates
+== June 2022 Updates
 Release date: June 20, 2022
 
 === New features
@@ -52,7 +64,7 @@ Always back up a solution before performing a resize operation.
 ** Use the xref:tigergraph-server:gsql-shell:using-a-remote-gsql-client.adoc[Remote GSQL client] to access GSQL on new TigerGraph Cloud solutions until access is restored.
 
 
-== TigerGraph Cloud - May 2022 Updates
+== May 2022 Updates
 Release date: May 12, 2022
 
 === New features
@@ -71,7 +83,7 @@ Release date: May 12, 2022
 * Improved observability with tags now on solution information
 * GSQL Output Path restricted for increased file security.
 
-== TigerGraph Cloud - Feb 2022 Updates
+== Feb 2022 Updates
 Release date: Feb 8th, 2022
 
 === New features
@@ -81,7 +93,7 @@ Release date: Feb 8th, 2022
 * Improvements on secure access and auditability.
 * Improvements on operational SLAs and faster resolution of issues.
 
-== TigerGraph Cloud V3.10 - Sep 2021 Updates
+== Sep 2021 Updates
 
 Release date: Sep 22, 2021
 
@@ -93,7 +105,7 @@ Release date: Sep 22, 2021
 * *Multi-AZ deployment*. When a user provisions an HA cluster, the replicas of the cluster will automatically be provisioned on different availability zones. This feature is supported on AWS and GCP.
 * *Free-tier solutions on GCP*. We now offer the option to create a free-tier solution on GCP in addition to AWS.
 
-== TigerGraph Cloud V3.6 - May 2021 Updates
+== May 2021 Updates
 
 Release Date: May 17, 2021
 
@@ -101,7 +113,7 @@ Release Date: May 17, 2021
 
 * ✅Support TigerGraph V3.1.1 for New Solutions (Single Server)
 
-== TigerGraph Cloud V3.5 - March 2021 Updates
+== March 2021 Updates
 
 Release Date: March 17, 2021
 
@@ -109,7 +121,7 @@ Release Date: March 17, 2021
 
 * ✅Support GCP (Google Cloud Platform) as one of the Cloud Platforms
 
-== TigerGraph Cloud V3.4 - March 2021 Updates
+== March 2021 Updates
 
 Release Date: March 9, 2021
 
@@ -117,7 +129,7 @@ Release Date: March 9, 2021
 
 * ✅Add Azure Central India and South India Regions to Cloud Platforms
 
-== TigerGraph Cloud V3.3 - Feb 2021 Updates
+== Feb 2021 Updates
 
 Release Date: February 17, 2021
 
@@ -126,7 +138,7 @@ Release Date: February 17, 2021
 * ✅Add Cloud Portal Self Guided Tour
 * ✅Support Minimum Disk Size Check During New Solution Provisioning Process
 
-== TigerGraph Cloud V3.2 - Dec 2020 Updates
+== Dec 2020 Updates
 
 Release Date:  December 16, 2020
 

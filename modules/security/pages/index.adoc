@@ -1,4 +1,5 @@
 = User Management
+:page-aliases: readme.adoc, README.adoc
 
 This section describes the way user accounts work at different access levels in TigerGraph Cloud.
 

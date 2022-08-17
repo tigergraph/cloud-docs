@@ -1,5 +1,6 @@
 = Release Notes
 :page-toclevels: 1
+:page-aliases: release-notes.adoc
 
 New updates to TigerGraph Cloud, both to the user experience and the backend capability, are regularly released.
 This page provides a summary of each update upon release.
@@ -14,7 +15,7 @@ Release date: August 17th, 2022
 
 === New Features
 * Users with an invitation can provision xref:ml-workbench:on-cloud:index.adoc[ML Workbench (preview version)] instances on top of TigerGraph Cloud solutions.
-** If you are interested in experimenting with ML Workbench on Cloud, please contact sales@tigergraph.com
+** If you are interested in experimenting with ML Workbench on TigerGraph Cloud, please contact sales@tigergraph.com
 
 === Feature updates
 * Organization Admins can now create username-password pairs for user authentication from TigerGraph connectors and the remote GSQL client.

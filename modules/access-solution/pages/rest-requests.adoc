@@ -54,7 +54,7 @@ $ curl -X POST https://example.i.tgcloud.io:443/restpp/requesttoken -d '{"secret
 ----
 
 [NOTE]
-For TigerGraph Cloud solutions created before June 20, 2022, replace "443/restpp" with "9000". See the xref:release-notes:release-notes.adoc[] for details.
+For TigerGraph Cloud solutions created before June 20, 2022, replace "443/restpp" with "9000". See the xref:release-notes:index.adoc[] for details.
 
 --
 Response::
@@ -96,7 +96,7 @@ $ curl -H "Authorization: Bearer fc6p0i2ijjt031n0sja6m9ci70p232h7" \
 ----
 
 [NOTE]
-For TigerGraph Cloud solutions created before June 20, 2022, replace "443/restpp" with "9000". See the xref:release-notes:release-notes.adoc[] for details.
+For TigerGraph Cloud solutions created before June 20, 2022, replace "443/restpp" with "9000". See the xref:release-notes:index.adoc[] for details.
 --
 Response:
 +

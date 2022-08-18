@@ -16,6 +16,7 @@ Release date: August 18th, 2022
 === New Features
 * Users with an invitation can provision xref:ml-workbench:on-cloud:index.adoc[ML Workbench (preview version)] instances on top of TigerGraph Cloud solutions.
 ** If you are interested in experimenting with ML Workbench on TigerGraph Cloud, please contact sales@tigergraph.com
+* TigerGraph 3.6.2 is available when creating new solutions.
 
 === Feature updates
 * Organization Admins can now create username-password pairs for user authentication from TigerGraph connectors and the remote GSQL client.
@@ -162,7 +163,7 @@ Release Date:  December 16, 2020
 ** Enterprise Knowledge Graph (Corporate Data) (V2.6.4 and V3.0.6)
 ** Enterprise Knowledge Graph (Crunchbase) (V2.6.4 and V3.0.6)
 
-== TigerGraph Cloud V3.1 - September 2020 Updates
+== September 2020 Updates
 
 Release Date:  September 29, 2020
 
@@ -170,7 +171,7 @@ Release Date:  September 29, 2020
 
 * ✅Patch TigerGraph V3.0.5 with GSQL Bug Fixes for New Solutions
 
-== TigerGraph Cloud V3.0 - September 2020 Updates
+== September 2020 Updates
 
 Release Date:  September 17, 2020
 
@@ -180,7 +181,7 @@ Release Date:  September 17, 2020
 * ✅Support TigerGraph v2.6.3 for New Solutions
 * ✅Allow Users to choose  v2.6.3 or V3.0.5 at New Solution Provisioning
 
-== TigerGraph Cloud V2.2 - July 2020 Updates
+== July 2020 Updates
 
 Release Date:  July 10, 2020
 
@@ -188,7 +189,7 @@ Release Date:  July 10, 2020
 
 * ✅Support Microsoft Azure as one of the Cloud Platforms
 
-== TigerGraph Cloud V2.1 - April 2020 Updates
+== April 2020 Updates
 
 Release Date:  April 27, 2020
 

@@ -11,7 +11,7 @@ Cloud solutions are not automatically upgraded to a new TigerGraph version when 
 For version upgrades for existing solutions, please contact TigerGraph Support.
 
 == August 2022 Updates
-Release date: August 17th, 2022
+Release date: August 18th, 2022
 
 === New Features
 * Users with an invitation can provision xref:ml-workbench:on-cloud:index.adoc[ML Workbench (preview version)] instances on top of TigerGraph Cloud solutions.

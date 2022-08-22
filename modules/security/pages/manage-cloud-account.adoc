@@ -5,7 +5,7 @@
 
 Only an Organization Admin can create a new user account for someone else to use. Organization Members and Organization Solution Admins cannot create their own accounts; they need to be invited via email after their accounts are created for them.
 
-See xref:managa-org-users.adoc#_invite_new_users[Invite new users] for more detailed instructions.
+See xref:manage-org-users.adoc#_invite_new_users[Invite new users] for more detailed instructions.
 
 == Account name
 
@@ -19,7 +19,7 @@ To change your name, an Organization Admin needs to remove your account and send
 Search for your own name under the *Users* tab to see what role you have been given in the organization.
 If you believe you have been given the wrong organization role in error, contact an Organization Admin for them to change your role.
 
-See xref:managa-org-users.adoc#_organization_roles_and_privileges[Organization roles and privileges] for detailed information on the privileges available to each organization role.
+See xref:manage-org-users.adoc#_organization_roles_and_privileges[Organization roles and privileges] for detailed information on the privileges available to each organization role.
 
 == Reset your TigerGraph Cloud user account password
 

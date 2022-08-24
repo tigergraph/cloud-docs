@@ -2,7 +2,7 @@
 :experimental:
 
 When you connect to a TigerGraph Cloud instance programmatically, such as from connectors like pyTigerGraph or the remote GSQL client, you often need to provide credentials that are created in the database of your solution.
-This is different from your TigerGraph Organization account allows you to log in to solutions in your organization to which you have access.
+This is different from your TigerGraph Organization account which allows you to log in to solutions in your organization to which you have access.
 
 NOTE: You can only create database users for solutions created after August 18th, 2022.
 

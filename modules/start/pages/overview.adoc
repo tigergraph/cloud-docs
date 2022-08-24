@@ -43,7 +43,7 @@ If you were invited by a member of your organization and you do not know the nam
 Once logged in, you can create solutions and add more users to your organization.
 
 * xref:solutions:create-a-solution.adoc[]
-* xref:security:managa-org-users.adoc[]
+* xref:security:manage-org-users.adoc[]
 
 == Manage TigerGraph Cloud solutions
 

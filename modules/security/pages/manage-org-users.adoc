@@ -1,5 +1,5 @@
 = Manage Users in an Organization
-:page-aliases: manage-database-users.adoc
+:page-aliases: manage-database-users.adoc, managa-org-users.adoc
 :experimental:
 
 When you set up a TigerGraph Cloud account, you are granted the privileges of an Organization Admin for your company.

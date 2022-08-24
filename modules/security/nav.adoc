@@ -1,4 +1,4 @@
 * xref:index.adoc[]
-** xref:managa-org-users.adoc[]
+** xref:manage-org-users.adoc[]
 ** xref:manage-cloud-account.adoc[]
 ** xref:manage-db-users.adoc[]

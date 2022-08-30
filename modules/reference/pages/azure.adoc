@@ -56,10 +56,10 @@
 
 On Azure, disk storage refers to https://azure.microsoft.com/en-us/pricing/details/managed-disks/[Premium SSD Managed Disks]. Encryption is turned on by default and uses platform-managed keys.
 
-Disk Storage is charged per GB per hour.
+Disk storage is charged per GB per hour.
 
 == Backup storage
 
 Solutions deployed on Azure use https://azure.microsoft.com/en-us/services/storage/files/[Azure Files] for storage. By default, backups are encrypted and decrypted transparently using 256-bit https://en.wikipedia.org/wiki/Advanced_Encryption_Standard[AES encryption], one of the strongest block ciphers available, and is FIPS 140-2 compliant.
 
-Backup Storage is charged per GB per hour.
+Backup storage is charged per GB per hour.

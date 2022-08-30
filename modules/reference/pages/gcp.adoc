@@ -49,7 +49,7 @@
 
 Disk storage on GCP uses https://cloud.google.com/compute/docs/disks#pdspecs[GCP's SSD persistent disks]. Encryption-at-rest is turned on with GCP's native encryption protocol with keys managed by GCP.
 
-Disk Storage is charged per GB per hour.
+Disk storage is charged per GB per hour.
 
 == Backup storage
 

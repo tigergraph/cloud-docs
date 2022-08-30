@@ -37,7 +37,7 @@ TigerGraph Cloud supports free-tier solutions on all three cloud providers.
 Select your preferred cloud provider and the region closest to you for the best performance.
 Different providers have different regions available.
 
-See the Reference section for a full list of regions available for each cloud provider: xref:reference:README.adoc[Cloud Provider Reference]
+See the Reference section for a full list of regions available for each cloud provider: xref:reference:index.adoc[Cloud Provider Reference]
 
 image::select-endpoint-region-access.png[]
 

@@ -13,7 +13,7 @@
 == Instance types
 
 |===
-| Instance name | vCPU | RAM (GiB) | Price per hour
+| Instance name | vCPU | RAM (GiB)
 
 |TG.Free
 |2

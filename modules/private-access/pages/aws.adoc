@@ -9,7 +9,7 @@ video::-pAJlD2x8B0[youtube]
 
 == AWS General Workflow
 
-. Begin creating a paid-tier TigerGraph solution in a region that supports private access.
+. Begin creating a paid-tier TigerGraph cluster in a region that supports private access.
 
 . Select “Private“ for the TigerGraph Endpoint Type.
 
@@ -65,5 +65,5 @@ aws ec2 create-vpc-endpoint
 ----
 
 If no security group is specified, the default security group for your VPC will be selected.
-In order to communicate with your TigerGraph solution via AWS Private link, inbound and outbound connections to the TigerGraph services on port 443 must be allowed.
+In order to communicate with your TigerGraph cluster via AWS Private link, inbound and outbound connections to the TigerGraph services on port 443 must be allowed.
 

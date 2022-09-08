@@ -17,7 +17,7 @@ Since it requires far fewer machines to achieve high performance, TigerGraph's p
 
 === *Q: How do I migrate to the new December 2020 pricing to lower my bill?*
 
-A: New December 2020 pricing applies to new paid tier solutions provisioned after December 16th, 2020.
+A: New December 2020 pricing applies to new paid tier clusters provisioned after December 16th, 2020.
 You can keep the old pricing if you keep your paid tier instances provisioned before December 16th, 2020 and keep its state (running or stopped).
 If you want to take advantage of the new pricing to lower your cost, you can migrate your workload to a newly provisioned instance, or simply start and stop the old instance.
 Note that only TigerGraph Cloud accounts with valid credit cards are eligible for the paid tier migration.
@@ -31,15 +31,15 @@ A: Yes,  in both instances.
 *Free Credits:* A $25 credit is automatically granted to each new registered account. The free credits is valid for 30 days after initial use.
 
 *Free Tier Instance*: When you select an instance type, you will see that one instance type is designated as the Free Tier.
-Each registered account may provision one solution at a time from the Free Tier.
-Free Tier instances do not include backup and do not include support. If you want to start another Free Tier solution, you will have to terminate your existing solution.
+Each registered account may provision one cluster at a time from the Free Tier.
+Free Tier instances do not include backup and do not include support. If you want to start another Free Tier cluster, you will have to terminate your existing cluster.
 
 If no user activity is detected for more than one hour, TigerGraph may automatically stop a Free Tier instance.
 Users can manually restart the Free Tier instances from their cloud portal.
 TigerGraph may terminate Free Tier instances after 7 consecutive days of inactivity.
 For additional information, see link:https://www.tigergraph.com/tigergraph-cloud-subscription-terms/[TigerGraph Cloud Terms].
 
-TIP: If you need to save your work from a Free Tier instance, export the solution (which saves your graph and queries) and write queries which print all your data to files.
+TIP: If you need to save your work from a Free Tier instance, export the cluster (which saves your graph and queries) and write queries which print all your data to files.
 
 
 === *Q: I cannot start my free tier instances. Why is there a capacity error in "My Activities"?*
@@ -49,7 +49,7 @@ A: *Known Capacity Issues:* Free Tier instances are provisioned on a common inst
 It is possible that when you provision a free tier instance, it will not provision successfully on the first try because of the peak usage in a certain region in the backend cloud platform.
 Please be patient and try to provision in another region, or at a later time when there is enough capacity in the region.
 Some free tier instances, when stopped, cannot be restarted at certain times due to cloud provider capacity issues.
-If this happens to you, try to restart the solution at a later time when there are more machines available in the region of the cloud provider.
+If this happens to you, try to restart the cluster at a later time when there are more machines available in the region of the cloud provider.
 In both scenarios, you can look at the log in "My Activities" and see that the capacity issue is logged. Submit a support ticket if the capacity issue persists.
 
 To reserve an instance for guaranteed capacity, please submit a support ticket and contact link:mailto:sales@tigergraph.com[sales@tigergraph.com] to arrange a long-term contract for reserved TigerGraph instances.
@@ -63,7 +63,7 @@ Visit each platform's reference page to learn more about the available regions.
 
 === *Q: Can I choose different versions of TigerGraph on TigerGraph Cloud?*
 
-A: Yes. When you create a solution, you can choose the database version you would like to use.
+A: Yes. When you create a cluster, you can choose the database version you would like to use.
 For security and stability reasons, only some legacy versions are available.
 There is no difference in cost for using different versions of TigerGraph.
 
@@ -92,15 +92,15 @@ As a cloud service, many of the administrative and operational tasks - for monit
 In addition to operations and management for your TigerGraph databases, TigerGraph Cloud also offers Starter Kits to provide instant experience to various graph analytics use cases.
 The list of Starter Kits can be found here: link:https://www.tigergraph.com/starterkits/[TigerGraph Cloud Starter Kits]
 
-[#q-is-there-a-quota-for-the-number-of-solutions-i-can-provision-in-a-single-account]
-=== *Q: Is there a quota for the number of solutions I can provision in a single account?*
+[#q-is-there-a-quota-for-the-number-of-clusters-i-can-provision-in-a-single-account]
+=== *Q: Is there a quota for the number of clusters I can provision in a single account?*
 
 A: Yes.
 For basic accounts with credit card billing, there is a limit of 160 vCPUs and 20 instances.
-A solution is one logical database, which may include several instances due to a distribution database configuration and replication.
-For accounts running exclusively on Free Credit and that have not yet entered a valid credit card, there is a limit of 16 vCPUs and two solutions.
-For each registered account (with or without a valid credit card), you may only provision one solution from the Free Tier.
-To allow more vCPUs and solutions, please contact TigerGraph at link:mailto:sales@tigergraph.com[sales@tigergraph.com].
+A cluster is one logical database, which may include several instances due to a distribution database configuration and replication.
+For accounts running exclusively on Free Credit and that have not yet entered a valid credit card, there is a limit of 16 vCPUs and two clusters.
+For each registered account (with or without a valid credit card), you may only provision one cluster from the Free Tier.
+To allow more vCPUs and clusters, please contact TigerGraph at link:mailto:sales@tigergraph.com[sales@tigergraph.com].
 
 Total number of instances in a cluster = replication factor x partitioning factor
 
@@ -108,7 +108,7 @@ Total number of instances in a cluster = replication factor x partitioning facto
 |===
 |Service |*Account With a Valid Credit Card* |*Account Without a Valid Credit
 Card*
-|*Free Tier Solution Quota* |1 |1
+|*Free Tier Cluster Quota* |1 |1
 
 |*Total Instance Quota* |20 |2
 
@@ -131,9 +131,9 @@ Please upgrade your account by entering a valid credit card.
 
 === *Q: Can I run queries directly after sample starter kits are provisioned?*
 
-A: Data must be loaded and queries must be installed first. Please perform the following steps after the solution is provisioned:
+A: Data must be loaded and queries must be installed first. Please perform the following steps after the cluster is provisioned:
 
-. Connect to GraphStudio through "`Open Solution Via Domain`" from the cloud portal.
+. Connect to GraphStudio through "`Open Cluster Via Domain`" from the cloud portal.
 . On the Load Data tab, click the Load button to load the sample dataset.
 . On the Write Query tab, click the Install button to install the sample queries.
 
@@ -155,7 +155,7 @@ A:  TigerGraph Cloud will provide teams with the flexibility to use the cloud ve
 === *Q:  Is the support for TigerGraph Cloud the same as the support for TigerGraph Enterprise?*
 
 A: Yes, TigerGraph supports TigerGraph cloud users using paid tiers. See the Support Policy terms at link:https://www.tigergraph.com/support-policy/[www.tigergraph.com/support-policy].
-Support is not included for free tier instances; therefore, support tickets for free tier solutions are answered when support staff bandwidth allows.
+Support is not included for free tier instances; therefore, support tickets for free tier clusters are answered when support staff bandwidth allows.
 See Section 1.4 in link:https://www.tigergraph.com/tigergraph-cloud-subscription-terms/[www.tigergraph.com/tigergraph-cloud-subscription-terms].
 For additional developer resources for free tier users, join the TigerGraph developer community at link:https://community.tigergraph.com[community.tigergraph.com].
 
@@ -164,7 +164,7 @@ For additional developer resources for free tier users, join the TigerGraph deve
 
 A: The TigerGraph xref:gui:graphstudio:overview.adoc[GraphStudio™ UI (User Interface)] provides an intuitive, browser-based interface that helps users get started quickly with graph-based application development tasks: designing a graph schema, creating a schema mapping, loading data, exploring the graph, and writing GSQL queries.
 
-In addition, for TigerGraph paid tier solutions, users can use GSQL Web Shell to write GSQL commands in an interactive command line shell. Users can access GSQL Web Shell through the solution panel from their Cloud Portal. This GSQL Web Shell opens up more data loading options such as S3 Loader (parquet format) and Kafka Loader.
+In addition, for TigerGraph paid tier clusters, users can use GSQL Web Shell to write GSQL commands in an interactive command line shell. Users can access GSQL Web Shell through the cluster panel from their Cloud Portal. This GSQL Web Shell opens up more data loading options such as S3 Loader (parquet format) and Kafka Loader.
 
 
 === *Q: What graph query language does TigerGraph support?*
@@ -184,20 +184,20 @@ A: Yes. If you use V3.0.5+ in TigerGraph Cloud, MultiGraph is supported through 
 
 A: We support AWS S3 import, Google Cloud Storage,  and local file upload through GraphStudio. Spark loading is available through our open source JDBC Driver. See https://github.com/tigergraph/ecosys/tree/master/tools/etl[https://github.com/tigergraph/ecosys/tree/master/etl]
 
-In addition, for TigerGraph paid tier solutions, users can use the GSQL Web Shell to write GSQL Commands in an interactive command line shell. This GSQL Web Shell opens up more data loading options such as S3 Loader (parquet format), Kafka Loader and other complex loading jobs. Users can access GSQL Web Shell through the solution panel from their Cloud Portal.
+In addition, for TigerGraph paid tier clusters, users can use the GSQL Web Shell to write GSQL Commands in an interactive command line shell. This GSQL Web Shell opens up more data loading options such as S3 Loader (parquet format), Kafka Loader and other complex loading jobs. Users can access GSQL Web Shell through the cluster panel from their Cloud Portal.
 
-For complex loading jobs through GSQL Web Shell for paid tier solutions, please submit a support ticket from your cloud portal for more information.
+For complex loading jobs through GSQL Web Shell for paid tier clusters, please submit a support ticket from your cloud portal for more information.
 
-[#q-if-i-dont-enter-a-valid-credit-card-in-the-account-and-use-the-initial-usd25-free-credit-will-the-data-in-the-provisioned-solutions-be-deleted-if-i-stop-the-solutions]
-=== *Q: If I don't enter a valid credit card in the account and use the initial $25 free credit, will the data in the provisioned solutions be deleted if I stop the solutions?*
+[#q-if-i-dont-enter-a-valid-credit-card-in-the-account-and-use-the-initial-usd25-free-credit-will-the-data-in-the-provisioned-clusters-be-deleted-if-i-stop-the-clusters]
+=== *Q: If I don't enter a valid credit card in the account and use the initial $25 free credit, will the data in the provisioned clusters be deleted if I stop the clusters?*
 
-A: As long as there is remaining free credits in your account, the data of your solutions will be preserved by the provisioned disk after you stop the solutions even if you don't have a credit card in your account. The data will be available and accessible after you restart the solutions.  The free credit is valid for 30 days after initial use.
+A: As long as there is remaining free credits in your account, the data of your clusters will be preserved by the provisioned disk after you stop the clusters even if you don't have a credit card in your account. The data will be available and accessible after you restart the clusters.  The free credit is valid for 30 days after initial use.
 
-Your solutions will be deleted automatically if there are no remaining valid free credits and there is no valid credit card in your account.
+Your clusters will be deleted automatically if there are no remaining valid free credits and there is no valid credit card in your account.
 
-**‌**To use "`backup and restore`" functionality, you need to enter a valid credit card in your account and choose non free tier instances. The non free tier solutions provisioned after the credit card is entered have backup and restore functionality through TigerGraph's Admin Portal. Note that any solutions provisioned before entering the credit card will not be upgraded with the backup and restore functionality.
+**‌**To use "`backup and restore`" functionality, you need to enter a valid credit card in your account and choose non free tier instances. The non free tier clusters provisioned after the credit card is entered have backup and restore functionality through TigerGraph's Admin Portal. Note that any clusters provisioned before entering the credit card will not be upgraded with the backup and restore functionality.
 
-If you choose to terminate the instance, your solutions and the data will not be preserved. Please see "Provisioning, Backup and Restore" section for detailed explanation on the difference between stopping and terminating a solution.
+If you choose to terminate the instance, your clusters and the data will not be preserved. Please see "Provisioning, Backup and Restore" section for detailed explanation on the difference between stopping and terminating a cluster.
 
 
 === *Q: I can't find my registration activation email after registering for the first time. Where can I find it?*
@@ -211,9 +211,9 @@ A: Please see https://info.tigergraph.com/graph-gurus-24[Graph Gurus episode 24]
 
 === *Q: Can I upgrade from V2.6.x, V3.0.5, V3.0.6 to V3.1.1?*
 
-A: For free tier solutions, the upgrade is not supported unless you are migrating to paid tier solutions. If you want to change the database version in your free tier, you can terminate the existing free tier solution, and create a new free tier with the new version. In each TigerGraph Cloud account, you can have one free tier. If you want to migrate to paid tier solutions, please send a support ticket through your cloud portal.
+A: For free tier clusters, the upgrade is not supported unless you are migrating to paid tier clusters. If you want to change the database version in your free tier, you can terminate the existing free tier cluster, and create a new free tier with the new version. In each TigerGraph Cloud account, you can have one free tier. If you want to migrate to paid tier clusters, please send a support ticket through your cloud portal.
 
-For paid tier solutions, please submit a support ticket for upgrade assistance. Downtime is expected during this upgrade. It is recommended to create a new blank V3.1.1 solution, import your data and copy the GSQL queries to test and experiment before upgrading your production instance from V2.6.x, V3.0.5, V3.0.6 to V3.1.1.
+For paid tier clusters, please submit a support ticket for upgrade assistance. Downtime is expected during this upgrade. It is recommended to create a new blank V3.1.1 cluster, import your data and copy the GSQL queries to test and experiment before upgrading your production instance from V2.6.x, V3.0.5, V3.0.6 to V3.1.1.
 
 == Pricing
 
@@ -222,7 +222,7 @@ See https://www.tigergraph.com/cloud[the TigerGraph Cloud main page] for pricing
 
 === *Q: How do I migrate to the new December 2020 pricing to lower my bill?*
 
-A: New December 2020 pricing applies to new paid tier solutions provisioned after December 16th 2020. You can keep the old pricing if you keep your paid tier instances provisioned before December 16th, 2020 and keep its state (running or stopped). If you want to take advantage of the new pricing to lower your cost, you can migrate your workload to a newly provisioned instance, or simply start and stop the old instance. Note that TigerGraph Cloud accounts with valid credit cards are eligible for the paid tier migration. Please submit a support ticket for migration assistance.
+A: New December 2020 pricing applies to new paid tier clusters provisioned after December 16th 2020. You can keep the old pricing if you keep your paid tier instances provisioned before December 16th, 2020 and keep its state (running or stopped). If you want to take advantage of the new pricing to lower your cost, you can migrate your workload to a newly provisioned instance, or simply start and stop the old instance. Note that TigerGraph Cloud accounts with valid credit cards are eligible for the paid tier migration. Please submit a support ticket for migration assistance.
 
 
 === *Q:  Do you offer a discount for annual contracts/commitments?*
@@ -325,30 +325,30 @@ A: TigerGraph Cloud has been designed and tested for Chrome.  Other browsers may
 == Provisioning, Backup and Restore
 
 
-=== *Q: What is a Solution?*
+=== *Q: What is a Cluster?*
 
-A: A TigerGraph Solution is a graph database image which can be deployed on a virtual machine instance.  Most solutions also come with a starter kit, a sample graph schema, sample data, and sample queries for a common use case, such as Recommendation Engine, Anti-Fraud, and Healthcare Analytics.
-In a newly provisioned solution, the data files are ready to be loaded, and the queries are ready to be installed.
+A: A TigerGraph Cluster is a graph database image which can be deployed on a virtual machine instance.  Most clusters also come with a starter kit, a sample graph schema, sample data, and sample queries for a common use case, such as Recommendation Engine, Anti-Fraud, and Healthcare Analytics.
+In a newly provisioned cluster, the data files are ready to be loaded, and the queries are ready to be installed.
 
 
-=== *Q: Is there a warm-up period for TigerGraph instances and solutions?*
+=== *Q: Is there a warm-up period for TigerGraph instances and clusters?*
 
-A: When you provision or restart a solution, there will be a warm-up period for the machine instances and the disk attached to the instances.
+A: When you provision or restart a cluster, there will be a warm-up period for the machine instances and the disk attached to the instances.
 The larger the data size and the greater the number of instances, the longer the warm-up period will be.
 
 
-=== *Q: What is the difference between stopping and terminating a solution?*
+=== *Q: What is the difference between stopping and terminating a cluster?*
 
-A: When you stop a solution, you shut down the virtual machine instance.
+A: When you stop a cluster, you shut down the virtual machine instance.
 The TigerGraph database is frozen in its current state.
 Billing for that machine instance also stops.
 Scheduled backups also stop, but the backup copies are kept in EFS in AWS, Azure Files in Azure, and GCP Filestores in GCP.
-You will still incur charges for disk storage and backups when a solution is stopped. You can start the solution again.
-After a warmup period, the solution will return to its previous state.
+You will still incur charges for disk storage and backups when a cluster is stopped. You can start the cluster again.
+After a warmup period, the cluster will return to its previous state.
 
-When you terminate a solution, you will deprovision the virtual machine and the attached disk space.
-The solution is deleted according to the cloud platforms policies and cannot be recovered.
-A backup file, however, can be used to restore to a new solution within 15 days.
+When you terminate a cluster, you will deprovision the virtual machine and the attached disk space.
+The cluster is deleted according to the cloud platforms policies and cannot be recovered.
+A backup file, however, can be used to restore to a new cluster within 15 days.
 
 === *Q: Do you offer backup in TigerGraph Cloud?*
 
@@ -364,28 +364,28 @@ In current version, the retention policy is to retain up to seven backups.
 Therefore, daily backups are retained for a week, weekly backups for seven weeks, and monthly backups for seven months.
 If you want to perform an ad hoc manual backup when there are already seven existing backups, you need to delete an older backup in order to save the most recent ad hoc copy.
 The maximum number of manual backups is six, as the platform always reserves one spot for a scheduled backup.
-When a solution is stopped, backups in EFS, Azure Files and GCP Filestores will be charged for the time you have the solutions.
+When a cluster is stopped, backups in EFS, Azure Files and GCP Filestores will be charged for the time you have the clusters.
 Please see pricing for backup costs while your instance is stopped.
 
 More options for longer retention policies are in development.
 
-=== *Q: Can I restore from a backup from another solution in my account?*
+=== *Q: Can I restore from a backup from another cluster in my account?*
 
-A: Only single server solutions can be restored from the backup of another solution in the same account within the same cloud platform.
+A: Only single server clusters can be restored from the backup of another cluster in the same account within the same cloud platform.
 Distributed and replicated cluster cannot be restored from the backup of another cluster in the same account.
 
 
 === *Q: What password do I use for backup and restore?*
 
-A: To perform an ad hoc backup, use the password of the `tigergraph` user of your solution.
+A: To perform an ad hoc backup, use the password of the `tigergraph` user of your cluster.
 To restore from a previous backup, use the same password that was used to create the backup.
-This rule applies to restoring from a different solution in your account. All the backups of different solutions in your account can be found through the Admin Portal.
+This rule applies to restoring from a different cluster in your account. All the backups of different clusters in your account can be found through the Admin Portal.
 
 
-=== *Q: What happens to my automated backups if I terminate my solution?*
+=== *Q: What happens to my automated backups if I terminate my cluster?*
 
 A: We will keep the latest backup for 15 days and then delete.
-Within that 15 days, you may use your backup to restore into another similar solution if it is a single server solution.
+Within that 15 days, you may use your backup to restore into another similar cluster if it is a single server cluster.
 To restore a cluster within 15 days, please submit a support ticket through the cloud portal.
 
 
@@ -447,25 +447,25 @@ A: By default, you will be given your own VPC(s) for your TigerGraph Cloud accou
 A: Yes, TigerGraph Cloud encrypts all data in transit and at rest.
 
 
-=== *Q: Am I sharing data storage with other customers? Is TigerGraph a multi-tenant solution?*
+=== *Q: Am I sharing data storage with other customers? Is TigerGraph a multi-tenant cluster?*
 
-A: You are not sharing storage with other customers. Each TigerGraph solution is provisioned as one or more virtual machine instances of the TigerGraph engine, used only for your account, and provisioned with its own disk space. No two accounts are sharing the same TigerGraph database.
+A: You are not sharing storage with other customers. Each TigerGraph cluster is provisioned as one or more virtual machine instances of the TigerGraph engine, used only for your account, and provisioned with its own disk space. No two accounts are sharing the same TigerGraph database.
 
 
-=== *Q: How do I log in to the GraphStudio UI of my solution for the first time?*
+=== *Q: How do I log in to the GraphStudio UI of my cluster for the first time?*
 
 A: You provide the initial password through provisioning steps in your cloud portal. Hence, remember the initial password you provided to your `tigergraph` user. To log in to GraphStudio for the first time, use `tigergraph/<initial password>`.
 
 
-=== *Q: How do I change the password to my solutions?*
+=== *Q: How do I change the password to my clusters?*
 
 A: You provide the initial password through provisioning steps in your cloud portal. Hence, remember the initial password you provided to your `tigergraph` user.
 To change the password, you need to log in to GraphStudio using `tigergraph/<initial password>`, then go to the Admin Portal.
 The ability to change passwords is provided through administrator portal. You can access this page by GraphStudio > Admin Portal > User Management.
 
-*Q: Can I create multiple users with different roles to access TigerGraph solutions?*
+*Q: Can I create multiple users with different roles to access TigerGraph clusters?*
 
-A: If you choose V3.0.5+, the default `tigergraph` user with a superuser role can create other users with different roles through GraphStudio > Admin Portal > User Management for each solution. Please read the following documentation for more steps and information: xref:gui:admin-portal:management/user-management.adoc[]
+A: If you choose V3.0.5+, the default `tigergraph` user with a superuser role can create other users with different roles through GraphStudio > Admin Portal > User Management for each cluster. Please read the following documentation for more steps and information: xref:gui:admin-portal:management/user-management.adoc[]
 
 Additional information on Role Based Access Control can be found here: xref:gui:graphstudio:user-access-management.adoc[]
 
@@ -477,18 +477,18 @@ A: When you register your account, you will select a username and password. You 
 
 === *Q: How do I access my TigerGraph database and POST to TigerGraph?*
 
-A: You can access the database through TigerGraph's GraphStudio visual interface and through RESTful endpoints. Use RESTful endpoints to POST to TigerGraph solutions and develop applications. Please refer to the xref:tigergraph-server:API:index.adoc[RESTful API User Guide] for more information. To find the RESTful endpoints for queries created in GraphStudio, please read our documentation on xref:gui:graphstudio:write-queries.adoc[showing query endpoints]. There is also a recorded webinar which demos the process in detail: link:https://info.tigergraph.com/graph-gurus-24[Graph Gurus Episode 24]
+A: You can access the database through TigerGraph's GraphStudio visual interface and through RESTful endpoints. Use RESTful endpoints to POST to TigerGraph clusters and develop applications. Please refer to the xref:tigergraph-server:API:index.adoc[RESTful API User Guide] for more information. To find the RESTful endpoints for queries created in GraphStudio, please read our documentation on xref:gui:graphstudio:write-queries.adoc[showing query endpoints]. There is also a recorded webinar which demos the process in detail: link:https://info.tigergraph.com/graph-gurus-24[Graph Gurus Episode 24]
 
 *Here is the step-by-step instructions:*
 
-TigerGraph cloud enables xref:tigergraph-server:API:authentication.adoc[REST{pp} Authentication] to securely connect TigerGraph Cloud solutions with your application through an endpoint on port 443 at `443/restpp/<endpoint>`.
+TigerGraph cloud enables xref:tigergraph-server:API:authentication.adoc[REST{pp} Authentication] to securely connect TigerGraph Cloud clusters with your application through an endpoint on port 443 at `443/restpp/<endpoint>`.
 
 [NOTE]
-TigerGraph Cloud solutions created before June 20, 2022 used port 9000 and 14240 for endpoints. See the xref:release-notes:index.adoc[] for details.
+TigerGraph Cloud clusters created before June 20, 2022 used port 9000 and 14240 for endpoints. See the xref:release-notes:index.adoc[] for details.
 
-*Step 1:* (First time only) Navigate to the TigerGraph solution's Admin Portal, and generate a secret from User Management.
+*Step 1:* (First time only) Navigate to the TigerGraph cluster's Admin Portal, and generate a secret from User Management.
 
-For example, the URL for the solution is:
+For example, the URL for the cluster is:
 
 [source,text]
 ----
@@ -527,7 +527,7 @@ curl -X GET -H "Authorization: Bearer xyz789" 'https://SOLUTIONID.i.tgcloud.io:4
 
 === *Q: Do free tier instances expose RESTful endpoints?*
 
-A: Yes. Free tier instances expose RESTful endpoints on port 443 to allow access to TigerGraph database, similar to paid tier instances. Solutions created before June 20, 2022 use port 9000.
+A: Yes. Free tier instances expose RESTful endpoints on port 443 to allow access to TigerGraph database, similar to paid tier instances. Clusters created before June 20, 2022 use port 9000.
 
 
 === *Q: Does TigerGraph Cloud offer Role Based Access Control?*
@@ -561,16 +561,16 @@ A: Access to TigerGraph system and component logs is coming soon via the TigerGr
 == Upgrade
 
 
-=== Q: Can I upgrade TigerGraph version on my solution?
+=== Q: Can I upgrade TigerGraph version on my cluster?
 
-A: For free tier solutions, upgrading is not supported unless you are migrating to paid tier solutions.
-If you want to change the database version in your free tier, you can terminate the existing free tier solution, and create a new free tier with the new version.
-In each TigerGraph Cloud account, you can have one free tier solution.
-If you want to migrate to paid tier solutions, please send a support ticket through your cloud portal.
+A: For free tier clusters, upgrading is not supported unless you are migrating to paid tier clusters.
+If you want to change the database version in your free tier, you can terminate the existing free tier cluster, and create a new free tier with the new version.
+In each TigerGraph Cloud account, you can have one free tier cluster.
+If you want to migrate to paid tier clusters, please send a support ticket through your cloud portal.
 
-For paid tier solutions, please submit a support ticket for upgrade assistance.
+For paid tier clusters, please submit a support ticket for upgrade assistance.
 Downtime is expected during this upgrade.
-It is recommended to create a new blank solution, import your data and copy the GSQL queries to test and experiment before upgrading your production instance.
+It is recommended to create a new blank cluster, import your data and copy the GSQL queries to test and experiment before upgrading your production instance.
 
 == TigerGraph Cloud Support
 

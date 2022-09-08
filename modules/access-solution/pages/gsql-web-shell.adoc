@@ -1,25 +1,25 @@
-= Access a Solution through GSQL Web Shell
+= Access a Cluster through GSQL Web Shell
 
 [NOTE]
 ====
-The GSQL Web Shell is temporarily disabled for new solutions due to recent networking improvements on the TigerGraph Cloud backend.
-Please use the xref:tigergraph-server:gsql-shell:using-a-remote-gsql-client.adoc[Remote GSQL client] to access GSQL on new TigerGraph Cloud solutions until access is restored.
-Solutions created before June 20, 2022 are unaffected and still have access to the Web Shell.
+The GSQL Web Shell is temporarily disabled for new clusters due to recent networking improvements on the TigerGraph Cloud backend.
+Please use the xref:tigergraph-server:gsql-shell:using-a-remote-gsql-client.adoc[Remote GSQL client] to access GSQL on new TigerGraph Cloud clusters until access is restored.
+Clusters created before June 20, 2022 are unaffected and still have access to the Web Shell.
 ====
 
-With a paid tier solution and a valid payment method, you can also access the solution through the GSQL Web Shell. The web shell allows you to run GSQL commands on your TigerGraph Cloud solution.
+With a paid tier cluster and a valid payment method, you can also access the cluster through the GSQL Web Shell. The web shell allows you to run GSQL commands on your TigerGraph Cloud cluster.
 
 == Open GSQL Web Shell
 
-=== 1. Navigate to My Solutions
+=== 1. Navigate to My Clusters
 
-After https://tgcloud.io/[logging into TigerGraph Cloud], go to *My Solutions*.
+After https://tgcloud.io/[logging into TigerGraph Cloud], go to *My Clusters*.
 
 image::image (38) (7) (5).png[]
 
 === 2. Click GSQL Access
 
-Find the solution you want to access, and click on the Admin Operations icon image:screen-shot-2021-03-03-at-3.48.43-pm.png[] . Click *GSQL Access* from the dropdown menu.
+Find the cluster you want to access, and click on the Admin Operations icon image:screen-shot-2021-03-03-at-3.48.43-pm.png[] . Click *GSQL Access* from the dropdown menu.
 
 image::image (37).png[]
 

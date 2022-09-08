@@ -1,18 +1,18 @@
 = Upgrade Storage Volume
 
-If you decide that your solution needs more disk storage space, TigerGraph Cloud allows you to upgrade your disk volume.
+If you decide that your cluster needs more disk storage space, TigerGraph Cloud allows you to upgrade your disk volume.
 
 == Before you begin
 
-* You need a paid-tier solution in order to upgrade disk volume.
+* You need a paid-tier cluster in order to upgrade disk volume.
 
 == Procedure
 
-Below is the procedure to upgrade the disk volume of a solution.
+Below is the procedure to upgrade the disk volume of a cluster.
 
-=== Step 1: Navigate to My Solutions page
+=== Step 1: Navigate to My Clusters page
 
-On the main page or the Solutions page, click the Solutions Operations icon in the Actions column and hover over *Resize*. In the dropdown menu that appears, select *Disk Volume*.
+On the main page or the Clusters page, click the Clusters Operations icon in the Actions column and hover over *Resize*. In the dropdown menu that appears, select *Disk Volume*.
 
 image::screen-shot-2021-07-27-at-10.50.06-am.png[Hover over Resize ]
 

@@ -1,6 +1,6 @@
-= Monitor a Solution
+= Monitor a Cluster
 
-TigerGraph Cloud allows users to monitor the activities of their solutions:
+TigerGraph Cloud allows users to monitor the activities of their clusters:
 
 
 * xref:view-activity-log.adoc[View Activity Log]

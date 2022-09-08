@@ -29,7 +29,7 @@ TigerGraph recommends enterprise customers use a shared mailbox to set up an org
 TigerGraph Cloud sends important email notifications to this address, including for:
 
 * Billing and credits
-* Solution behavior
+* Cluster behavior
 * New cloud products
 ====
 
@@ -40,12 +40,12 @@ Click btn:[Log In] on the https://tgcloud.io/[TigerGraph Cloud landing page].
 When you log in, you must first provide an organization name before entering your username and password.
 If you were invited by a member of your organization and you do not know the name used for the organization account, contact your organization's administrator.
 
-Once logged in, you can create solutions and add more users to your organization.
+Once logged in, you can create clusters and add more users to your organization.
 
 * xref:solutions:create-a-solution.adoc[]
 * xref:security:manage-org-users.adoc[]
 
-== Manage TigerGraph Cloud solutions
+== Manage TigerGraph Cloud clusters
 
 * xref:gui:admin-portal:management/user-management.adoc[Security and user management]
 * xref:backup-and-restore:index.adoc[Backup and restore]
@@ -122,7 +122,7 @@ See the xref:support:faqs.adoc[TigerGraph Cloud FAQs] for answers to common ques
 
 | RESTPP API User Guide
 | Yes
-| Yes. Note the URL assigned to your solution.
+| Yes. Note the URL assigned to your cluster.
 
 | Transaction Processing and ACID Support
 | Yes

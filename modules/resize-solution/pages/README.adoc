@@ -1,6 +1,6 @@
-= Resize a Solution
+= Resize a Cluster
 
-As your workload changes, you can resize your TigerGraph Cloud solution to maximize the efficiency of your resources. You can resize the instance type or upgrade the storage volume:
+As your workload changes, you can resize your TigerGraph Cloud cluster to maximize the efficiency of your resources. You can resize the instance type or upgrade the storage volume:
 
 * xref:resize-instance-type.adoc[Resize instance type]
 * xref:upgrade-storage-volume.adoc[Upgrade storage volume]

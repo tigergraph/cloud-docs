@@ -4,9 +4,9 @@
 
 When you set up a TigerGraph Cloud account, you are granted the privileges of an Organization Admin for your company.
 
-TigerGraph Cloud allows an Organization Admin to manage multiple users in your organization and control their access to various solutions.
+TigerGraph Cloud allows an Organization Admin to manage multiple users in your organization and control their access to various clusters.
 
-This page explains the user access controls. For help with setting up solutions, visit xref:solutions:create-a-solution.adoc[].
+This page explains the user access controls. For help with setting up clusters, visit xref:solutions:create-a-solution.adoc[].
 
 == Invite new users
 The account that creates an organization is automatically given the role of an Organization Admin.
@@ -25,41 +25,41 @@ Invitations will expire after seven days. If an invitation expires, resend the i
 The privileges granted to the various roles in a TigerGraph Cloud organization are as follows:
 
 |====
-|Action | Organization Member | Organization Solution Admin |Organization Admin
+|Action | Organization Member | Organization Cluster Admin |Organization Admin
 |Can add and remove new members | No 🚫 | No 🚫|  Yes ✅
 |Can view organization billing information | No 🚫 |No 🚫|Yes ✅
-|Can create new solutions |No 🚫|Yes ✅|Yes ✅
-|Can view solution activities |No 🚫|Yes ✅|Yes ✅
-|Can shut down/modify an existing solution |No 🚫|Yes ✅|Yes ✅
-|Can view solution data |Only if assigned to the solution |Yes ✅|Yes ✅
-|Can access GraphStudio| Only if assigned to the solution |Only if assigned to the solution |Only if assigned to the solution
+|Can create new clusters |No 🚫|Yes ✅|Yes ✅
+|Can view cluster activities |No 🚫|Yes ✅|Yes ✅
+|Can shut down/modify an existing cluster |No 🚫|Yes ✅|Yes ✅
+|Can view cluster data |Only if assigned to the cluster |Yes ✅|Yes ✅
+|Can access GraphStudio| Only if assigned to the cluster |Only if assigned to the cluster |Only if assigned to the cluster
 |====
 
-=== TigerGraph solution roles
+=== TigerGraph cluster roles
 
-A user in an organization on TigerGraph Cloud is separate from a user on a TigerGraph solution.
-On TigerGraph Cloud, a single user in an organization may be assigned to several solutions and have various roles on those solutions.
+A user in an organization on TigerGraph Cloud is separate from a user on a TigerGraph cluster.
+On TigerGraph Cloud, a single user in an organization may be assigned to several clusters and have various roles on those clusters.
 
-In this documentation, for consistency, we will refer to these using the terms "organization role" and "solution role."
+In this documentation, for consistency, we will refer to these using the terms "organization role" and "cluster role."
 
-For information about the TigerGraph solution roles, see the page xref:tigergraph-server:user-access:access-control-model.adoc[].
+For information about the TigerGraph cluster roles, see the page xref:tigergraph-server:user-access:access-control-model.adoc[].
 
-When a TigerGraph Cloud user is added to a solution as an Organization Solution Admin or Organization Admin, they are granted the `superuser` role on that solution.
-A user added to a solution as an Organization Member has no role on the solution by default, but can be assigned a solution role by anyone with the `superuser` solution role.
+When a TigerGraph Cloud user is added to a cluster as an Organization Cluster Admin or Organization Admin, they are granted the `superuser` role on that cluster.
+A user added to a cluster as an Organization Member has no role on the cluster by default, but can be assigned a cluster role by anyone with the `superuser` cluster role.
 
 === Access Management
 
 In the Access Management section on the Users page, you can check the invitation status of each user who has been sent an invitation and also invite new users.
 
-Click on the three-dot menu btn:[•••] to modify a user's role or delete the account. Deleting the account removes the user from all solutions in the organization.
+Click on the three-dot menu btn:[•••] to modify a user's role or delete the account. Deleting the account removes the user from all clusters in the organization.
 
 Click btn:[Invite Users] in the upper-right corner of the page to send out more email invitations to new users and place them in various roles.
 
 //=== Teams
 
-//You can group your users into a team by clicking btn:[Create Team] in the upper-right corner. Teams are helpful for granting and revoking access to certain solutions for large numbers of users.
+//You can group your users into a team by clicking btn:[Create Team] in the upper-right corner. Teams are helpful for granting and revoking access to certain clusters for large numbers of users.
 
-=== Solution Management
+=== Cluster Management
 
-On the *My Solutions* page, click the third button in the Actions row for each solution to enter the *Solution Access Management* page.
-From there, you can grant or revoke access to the solution for different users.
+On the *My Clusters* page, click the third button in the Actions row for each cluster to enter the *Cluster Access Management* page.
+From there, you can grant or revoke access to the cluster for different users.

@@ -3,20 +3,20 @@
 :page-aliases: backup-and-restore.adoc
 :experimental:
 
-Backups are snapshots of the state of your solutions at a given point in time. Currently, any paid solutions provisioned by an account with a valid payment method can have a maximum of 7 concurrent backups.
+Backups are snapshots of the state of your clusters at a given point in time. Currently, any paid clusters provisioned by an account with a valid payment method can have a maximum of 7 concurrent backups.
 
 [NOTE]
 ====
 The backup feature is not supported on free-tier instances or instances provisioned by an account without a valid payment method.
 ====
 
-All tasks described on this page can be completed in the *Admin Portal*. To get to the *Admin Portal*, open the Applications menu under the Actions heading on any solution in the My Solutions view.
+All tasks described on this page can be completed in the *Admin Portal*. To get to the *Admin Portal*, open the Applications menu under the Actions heading on any cluster in the My Clusters view.
 
 image::adminportal.png[]
 
 == Data Storage and Encryption
 
-Backups are saved to Amazon EFS on AWS, Azure Files on Microsoft Azure, and GCP Filestore on GCP. Backup storage is provisioned when you start a paid-tier solution and is based on the maximum number of backups allowed (currently fixed at 7). It only stops incurring charges when the solution is terminated. Stopping the solution does not stop charges for backup storage.
+Backups are saved to Amazon EFS on AWS, Azure Files on Microsoft Azure, and GCP Filestore on GCP. Backup storage is provisioned when you start a paid-tier cluster and is based on the maximum number of backups allowed (currently fixed at 7). It only stops incurring charges when the cluster is terminated. Stopping the cluster does not stop charges for backup storage.
 
 Backups are encrypted by default using the native encryption feature of the cloud provider with platform-managed keys.
 
@@ -66,7 +66,7 @@ image::backup-restore.png[]
 
 == Restore a backup
 
-You can use a backup to restore your solution.
+You can use a backup to restore your cluster.
 
 Below are the procedures to restore a backup in the Admin Portal:
 

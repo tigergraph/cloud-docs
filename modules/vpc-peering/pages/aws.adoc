@@ -8,7 +8,7 @@ TigerGraph Cloud VPC and another AWS VPC.
 
 == Prerequisites
 
-* Unterminated TigerGraph Cloud solutions on AWS
+* Unterminated TigerGraph Cloud clusters on AWS
 
 == Procedure
 

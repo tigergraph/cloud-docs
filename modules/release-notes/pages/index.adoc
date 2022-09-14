@@ -10,6 +10,19 @@ These TigerGraph Cloud updates are separate from updates to the core TigerGraph 
 Cloud clusters are not automatically upgraded to a new TigerGraph version when a new version is released.
 For version upgrades for existing clusters, please contact TigerGraph Support.
 
+== September 2022 Updates
+Release date: September 15th, 2022
+
+=== New Features
+* TigerGraph Insights, an all-new data visualization platform, is now available in TigerGraph Cloud
+* Enabled SSO with Okta and Azure Active Directory
+* Seamless UI redesign to integrate with the full TigerGraph Suite of web applications
+* TigerGraph 3.7.0 is available when creating new clusters
+
+=== Feature updates
+* UI refinements with a focus on intuitive use
+* Shift in terminology from "Solution" to "Cluster"
+
 == August 2022 Updates
 Release date: August 18th, 2022
 

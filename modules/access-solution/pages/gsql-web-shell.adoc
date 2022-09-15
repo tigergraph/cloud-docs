@@ -1,37 +1,15 @@
-= Access a Cluster through GSQL Web Shell
+= Access a Cluster through GSQL Shell
+:experimental:
 
-[NOTE]
-====
-The GSQL Web Shell is temporarily disabled for new clusters due to recent networking improvements on the TigerGraph Cloud backend.
-Please use the xref:tigergraph-server:gsql-shell:using-a-remote-gsql-client.adoc[Remote GSQL client] to access GSQL on new TigerGraph Cloud clusters until access is restored.
-Clusters created before June 20, 2022 are unaffected and still have access to the Web Shell.
-====
+Most TigerGraph Cloud solutions have access to the GSQL Shell in the TigerGraph suite.
 
-With a paid tier cluster and a valid payment method, you can also access the cluster through the GSQL Web Shell. The web shell allows you to run GSQL commands on your TigerGraph Cloud cluster.
+Please see the main xref:3.7@tigergraph-server:gsql-shell:web.adoc[GSQL Shell documentation page] for complete information.
 
-== Open GSQL Web Shell
+== Access
 
-=== 1. Navigate to My Clusters
+From the Tools menu in the Cluster view, select btn:[GSQL Shell].
 
-After https://tgcloud.io/[logging into TigerGraph Cloud], go to *My Clusters*.
+image::full-cluster-actions-dropdown.png[]
 
-image::image (38) (7) (5).png[]
+Please note that the GSQL Shell is not available for solutions created on Azure, so the option will not be available.
 
-=== 2. Click GSQL Access
-
-Find the cluster you want to access, and click on the Admin Operations icon image:screen-shot-2021-03-03-at-3.48.43-pm.png[] . Click *GSQL Access* from the dropdown menu.
-
-image::image (37).png[]
-
-=== 3. Provide session information
-
-In the pop-up window, provide the username of the TigerGraph user you'd like to proceed with, and specify a validity period for the session. The GSQL Web Shell session will terminate after the validity period is over.
-
-image::image (23).png[Validity period and username]
-
-=== 4. Enter your password
-
-When the GSQL Web Shell opens, you will be prompted for your password. Enter the password for the TigerGraph user whose username you just entered and press Enter.
-
-
-image::image (41).png[GSQL Web Shell]

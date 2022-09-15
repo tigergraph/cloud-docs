@@ -1,0 +1,35 @@
+= Resize a Cluster
+:experimental:
+
+As your workload changes, you can resize your TigerGraph Cloud cluster to maximize the efficiency of your resources.
+You can resize the instance type (the CPU and RAM allocated to your instance) or upgrade the storage volume:
+
+If you choose to upgrade the instance type of a free-tier cluster, you must also upgrade the disk volume of the cluster.
+
+[NOTE]
+Resizing instance types will result in a short period of downtime.
+
+== Procedure
+
+In the Clusters view, click the three-dot button to show the Actions menu column and select btn:[Resize cluster].
+
+image::cluster-actions-dropdown.png[]
+
+=== Resize instance size
+
+In the window that appears, by default, the *Resize instance size* panel is selected.
+*Resize disk size* is grayed out by default for free-tier clusters.
+
+image::sample-cluster-resizing.png[]
+
+Click btn:[Resize Instance] and choose the new instance type that you'd like to change to.
+
+=== Resize disk size
+
+If you decide that your cluster needs more disk storage space, TigerGraph Cloud allows you to upgrade your disk volume.
+
+image::screen-shot-2021-07-27-at-10.58.44-am.png[]
+
+[NOTE]
+You need a paid-tier cluster in order to upgrade disk volume.
+

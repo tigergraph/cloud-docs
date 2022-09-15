@@ -1,14 +1,14 @@
 = Stop, Restart, and Terminate a Cluster
 
-The Cluster Operations icon image:screen-shot-2021-02-24-at-5.26.45-pm.png[] in the Clusters list opens a menu with the options to stop, restart, and terminate a cluster.
+The three-dot menu next to each cluster opens a menu with the options to stop, restart, and terminate a cluster.
 
-image::image (25).png[]
+image::cluster-actions-dropdown.png[]
 
-This list can be found under Clusters on the left side menu or on the main page. If you know that your organization account has running clusters but you are unable to see them, check to see that your account has the correct xref:security:manage-org-users.adoc[user access privileges].
+If you know that your organization account has running clusters but you are unable to see them, check to see that your account has the correct xref:security:manage-org-users.adoc[user access privileges].
 
-== Stop a cluster
+== Pause a cluster
 
-When you stop a cluster, you shut down the virtual machine instance.
+When you pause a cluster, you shut down the virtual machine instance.
 The TigerGraph database is frozen in its current state.
 Billing for that machine instance also stops.
 Scheduled backups also stop, but the backup copies are kept in EFS on AWS, Azure Files on Azure, and GCP Filestore on GCP.
@@ -21,19 +21,6 @@ You can restart a stopped cluster at any time. After a warm-up period, the clust
 
 == Terminate a cluster
 
-By terminating a cluster, you deprovision the virtual machine and the attached disk storage. The cluster, as well as everything in the attached disk storage, is deleted according to the cloud platform's policies and cannot be recovered.
+By terminating a cluster, you deprovision the virtual machine and the attached disk storage.
+The cluster, as well as everything in the attached disk storage, is deleted according to the cloud platform's policies and cannot be recovered.
 
-
-=== Archive a cluster
-
-After a cluster has been terminated, it can be archived so that it no longer shows up on the default view in the list of clusters.
-
-To archive a cluster, click on the cluster row in My Clusters to expand it and click the *Archived* toggle.
-
-image::image (55).png[]
-
-=== Show archived clusters
-
-To view archived clusters, click the settings icon to the right of the *Actions* column and toggle on *Show Archived* in the *Display Settings*.
-
-image::image (64).png[]

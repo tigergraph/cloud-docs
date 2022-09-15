@@ -1,3 +1,1 @@
-* xref:README.adoc[]
-** xref:resize-instance-type.adoc[]
-** xref:upgrade-storage-volume.adoc[]
+* xref:index.adoc[]

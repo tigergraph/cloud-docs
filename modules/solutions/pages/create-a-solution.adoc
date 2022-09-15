@@ -16,7 +16,7 @@ For more advanced testing and learning, consider adding a payment method and usi
 
 On the home page, if you have no clusters and have the privileges to create a cluster in your organization, you will see an option in the center to create a cluster.
 
-image::home-page-no-solutions.png[]
+image::main-page-no-clusters.png[]
 
 
 === Select TigerGraph version and starter kit
@@ -62,7 +62,7 @@ image:select-disk-partition-replication.png[]
 
 Scroll down to the bottom of the page and click *Next*.
 
-=== Enter a name and a tag for your solution
+=== Enter a name and a tag for your cluster
 
 On the Cluster Settings page, you can customize the name by which the cluster appears in the cluster list and give it a tag for reference.
 
@@ -70,15 +70,14 @@ You can also customize the cluster subdomain. If you leave this section blank, a
 
 image:name-tag-solution.png[]
 
-Click btn:[Next] to go to a confirmation page, then create the cluster. You will be sent back to the main page, where you can see your cluster being created under the Pending Tasks menu.
+Click btn:[Next] to go to a confirmation page, then create the cluster. You will be sent back to the main page, where you can see your cluster being created.
 
-image:provisioning-solution.png[]
+image:sample-cluster-provisioning.png[]
 
 == Log in to GraphStudio
 
 After you have created your cluster, it may take a few minutes for it to be ready. Once you see the status of your cluster turn to "Ready", you can proceed to log into GraphStudio.
 
+Go to the Clusters view. Find an active cluster that has finished provisioning, click btn:[Tools], and click btn:[GraphStudio].
 
-Go to My Clusters. Find the cluster that is ready, click the blue Applications icon, and click btn:[GraphStudio].
-
-image::my-solutions-action-highlighted.png[]
+image::full-cluster-actions-dropdown.png[]

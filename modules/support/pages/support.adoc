@@ -8,8 +8,7 @@ You can submit a support ticket in the TigerGraph Cloud portal or by email.
 
 == Submit a support ticket
 
-Click on the support icon in the upper right corner of the screen: image:support-icon.png[]
-
+Click on the question mark icon in the upper right corner of the screen and select Support from the drop-down menu.
 
 This takes you to TigerGraph's support platform, where you can submit support tickets.
 

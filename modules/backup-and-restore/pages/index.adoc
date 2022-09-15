@@ -10,9 +10,10 @@ Backups are snapshots of the state of your clusters at a given point in time. Cu
 The backup feature is not supported on free-tier instances or instances provisioned by an account without a valid payment method.
 ====
 
-All tasks described on this page can be completed in the *Admin Portal*. To get to the *Admin Portal*, open the Applications menu under the Actions heading on any cluster in the My Clusters view.
+All tasks described on this page can be completed in the *Admin Portal*.
+To get to the *Admin Portal*, open the Tools menu on any cluster in the My Clusters view.
 
-image::adminportal.png[]
+image::access-solution:full-cluster-actions-dropdown.png[]
 
 == Data Storage and Encryption
 

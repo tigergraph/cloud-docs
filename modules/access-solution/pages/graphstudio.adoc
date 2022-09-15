@@ -9,9 +9,9 @@ GraphStudio is supported in the same way on TigerGraph Cloud as on the on-prem v
 
 After link:https://tgcloud.io/[logging into TigerGraph Cloud], go to the home page or the Clusters page in the left-hand menu.
 
-Find your cluster in the list and click the Applications icon under the Actions heading in the same row, then choose btn:[GraphStudio] from the dropdown list.
+Find your cluster in the list and click the Tools button in the same row, then choose btn:[GraphStudio] from the dropdown list.
 
-image::backup-and-restore:adminportal.png[]
+image::full-cluster-actions-dropdown.png[]
 
 == Use GraphStudio
 

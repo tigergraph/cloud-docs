@@ -1,7 +1,10 @@
 = Access a Cluster through GSQL Shell
 :experimental:
 
-Most TigerGraph Cloud solutions have access to the GSQL Shell in the TigerGraph suite.
+The GSQL Shell is a newly redesigned browser-based interface for running GSQL commands on a cluster.
+It includes useful developer tools such as keyboard shortcuts and customized autocomplete for commands.
+
+Most TigerGraph Cloud solutions, free and paid, have access to the GSQL Shell in the TigerGraph suite.
 
 Please see the main xref:3.7@tigergraph-server:gsql-shell:web.adoc[GSQL Shell documentation page] for complete information.
 
@@ -13,3 +16,6 @@ image::full-cluster-actions-dropdown.png[]
 
 Please note that the GSQL Shell is not available for solutions created on Azure, so the option will not be available.
 
+In addition, the GSQL Shell is newly available for solutions running Tigergraph Server version 3.7.0 and newer.
+Older solutions created before 3.7.0 do not have access to the GSQL Shell.
+Please contact support@tigergraph.com to discuss migration to a newer version.

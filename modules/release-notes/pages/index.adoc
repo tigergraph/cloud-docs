@@ -16,7 +16,7 @@ Release date: September 15th, 2022
 === New Features
 * TigerGraph Insights, an all-new data visualization platform, is now available in TigerGraph Cloud
 * Enabled SSO with Okta and Azure Active Directory
-* Seamless UI redesign to integrate with the full TigerGraph Suite of web applications
+* Seamless UI redesign that integrates with the TigerGraph Suite of web applications
 * TigerGraph 3.7.0 is available when creating new clusters
 
 === Feature updates

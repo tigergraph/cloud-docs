@@ -9,8 +9,8 @@ Only one IDP can be connected to a single Organization.
 
 == Process Outline
 
-. Enable IDP on your TigerGraph Cloud Organization account.
-. Create an app integration inside the IDP portal to configure it to link with TigerGraph Cloud.
+. Have IDP enabled on your TigerGraph Cloud Organization account.
+. Create an app integration on the IDP side to configure it to link with TigerGraph Cloud.
 . Map user roles inside the IDP.
 . Users log in to the TigerGraph Cloud portal using credentials from your IDP.
 

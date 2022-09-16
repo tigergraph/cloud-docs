@@ -1,0 +1,29 @@
+= User Management
+:description:
+
+This section describes the way user accounts work at different access levels in TigerGraph Cloud.
+
+== TigerGraph Cloud user account
+
+Your TigerGraph Cloud user account serves as your credential on the platform level.
+Depending on your role, you have various levels of access to clusters, billing information and organization user information.
+
+See xref:manage-cloud-account.adoc[] for more information about making changes to your account.
+
+== Single Sign-On (SSO)
+
+Organization admins can link a TigerGraph Cloud Organization with an IDP such as Okta and Azure Active Directory (AAD).
+This allows for user management to be done entirely outside TigerGraph Cloud inside a preferred IDP.
+
+See xref:idp.adoc[] for more information.
+
+== TigerGraph user access levels
+
+On the individual cluster level, the same xref:gui:admin-portal:management/user-management.adoc[role-based access control] used by the on-premises version of TigerGraph also applies to TigerGraph Cloud.
+Each cluster can have many TigerGraph Cloud users and each user can have different roles for each graph with different privileges.
+
+For more information on how to manage users and roles in Admin Portal, see xref:gui:admin-portal:management/user-management.adoc[].
+
+[NOTE]
+User management was redesigned with the release of TigerGraph v3.6.0 in July 2022. Clusters created before then are only visible to Organization Admins and Cluster Admins.
+These legacy clusters exist entirely outside of the User Management system and can still be accessed by ordinary users with the URL.

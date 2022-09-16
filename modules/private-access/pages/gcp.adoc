@@ -9,7 +9,7 @@ video::NcZ2JQ5AKbw[youtube]
 
 == GCP General Workflow
 
-. Begin creating a paid-tier solution in a region that supports private access.
+. Begin creating a paid-tier cluster in a region that supports private access.
 
 . Select “Private“ for the TigerGraph Endpoint Type.
 
@@ -60,7 +60,7 @@ Google has a detailed page about using Private Service Connect at this link: lin
 === Private DNS via GCP console
 Create a Private DNS Zone named `privatelink.i.tgcloud.io` on the *Cloud DNS* page.
 
-In the new DNS zone, add a DNS *A* record with the same name as the solution domain from the TigerGraph Cloud Portal.
+In the new DNS zone, add a DNS *A* record with the same name as the cluster domain from the TigerGraph Cloud Portal.
 The value is the private static IP address for Private Service Connect.
 
 [WARNING]

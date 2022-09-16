@@ -9,7 +9,7 @@ video::Sv20Ugt_REk[youtube]
 
 == Azure General Workflow
 
-. Begin creating a paid-tier TigerGraph Cloud solution in a region that supports private access.
+. Begin creating a paid-tier TigerGraph Cloud cluster in a region that supports private access.
 
 . Select “Private“ for the TigerGraph Endpoint Type.
 
@@ -39,7 +39,7 @@ The *Request message* value is optional.
 
 Make sure you have the latest Azure CLI tools from this link: link:https://docs.microsoft.com/en-us/cli/azure/install-azure-cli[How to install the Azure CLI]
 
-Replace the values in angle brackets `<>` with the relevant information for your solution.
+Replace the values in angle brackets `<>` with the relevant information for your cluster.
 
 [source.wrap, bash]
 ----
@@ -64,7 +64,7 @@ image::dns-configuration.png[]
 
 . Select “Virtual Network Link” on the left, click btn:[Add], and select the VNet that the Private Endpoint resides.
 
-. Add an *A* record named `{solutiondomain}.privatelink`  (example: `test-solution.privatelink`). The value is the private IP address from step 1.
+. Add an *A* record named `{clusterdomain}.privatelink`  (example: `test-cluster.privatelink`). The value is the private IP address from step 1.
 
 
 image::add-a-record.png[]

@@ -1,22 +1,22 @@
-= Create a Solution
+= Create a Cluster
 :experimental:
 
-TigerGraph Cloud solutions offer a full-scale analytics platform to store and query your graph data.
+TigerGraph Cloud clusters offer a full-scale analytics platform to store and query your graph data.
 
-This page guides you through the process of creating a *free-tier* solution (subject to xref:reference:service-limits.adoc[limits]).
+This page guides you through the process of creating a *free-tier* cluster (subject to xref:reference:service-limits.adoc[limits]).
 
 [CAUTION]
 ====
-Free-tier solutions are for training, learning, and small-scale proof of concept use cases. Free-tier solutions do not support backup and restore.
+Free-tier clusters are for training, learning, and small-scale proof of concept use cases. Free-tier clusters do not support backup and restore.
 
-For more advanced testing and learning, consider adding a payment method and using paid-tier solutions to access the backup and restore feature.
+For more advanced testing and learning, consider adding a payment method and using paid-tier clusters to access the backup and restore feature.
 ====
 
-== Create a Solution
+== Create a Cluster
 
-On the home page, if you have no solutions and have the privileges to create a solution in your organization, you will see an option in the center to create a solution.
+On the home page, if you have no clusters and have the privileges to create a cluster in your organization, you will see an option in the center to create a cluster.
 
-image::home-page-no-solutions.png[]
+image::main-page-no-clusters.png[]
 
 
 === Select TigerGraph version and starter kit
@@ -36,7 +36,7 @@ Scroll down to the bottom of the page and click btn:[Next].
 
 === Select platform, region and endpoint type
 
-TigerGraph Cloud supports free-tier solutions on all three cloud providers.
+TigerGraph Cloud supports free-tier clusters on all three cloud providers.
 Different providers have different regions available.
 
 Select your preferred cloud provider and the region closest to you for the best performance.
@@ -47,7 +47,7 @@ image::select-endpoint-region-access.png[]
 
 === Select instance type
 
-Select TG.Free to create a free-tier solution for the purposes of this guide.
+Select TG.Free to create a free-tier cluster for the purposes of this guide.
 More powerful virtual machines require you to use credits in your account or connect a payment method.
 
 image:select-instance-type.png[]
@@ -62,23 +62,22 @@ image:select-disk-partition-replication.png[]
 
 Scroll down to the bottom of the page and click *Next*.
 
-=== Enter a name and a tag for your solution
+=== Enter a name and a tag for your cluster
 
-On the Solution Settings page, you can customize the name by which the solution appears in the solution list and give it a tag for reference.
+On the Cluster Settings page, you can customize the name by which the cluster appears in the cluster list and give it a tag for reference.
 
-You can also customize the solution subdomain. If you leave this section blank, a random subdomain name will be automatically generated.
+You can also customize the cluster subdomain. If you leave this section blank, a random subdomain name will be automatically generated.
 
 image:name-tag-solution.png[]
 
-Click btn:[Next] to go to a confirmation page, then create the solution. You will be sent back to the main page, where you can see your solution being created under the Pending Tasks menu.
+Click btn:[Next] to go to a confirmation page, then create the cluster. You will be sent back to the main page, where you can see your cluster being created.
 
-image:provisioning-solution.png[]
+image:sample-cluster-provisioning.png[]
 
 == Log in to GraphStudio
 
-After you have created your solution, it may take a few minutes for it to be ready. Once you see the status of your solution turn to "Ready", you can proceed to log into GraphStudio.
+After you have created your cluster, it may take a few minutes for it to be ready. Once you see the status of your cluster turn to "Ready", you can proceed to log into GraphStudio.
 
+Go to the Clusters view. Find an active cluster that has finished provisioning, click btn:[Tools], and click btn:[GraphStudio].
 
-Go to My Solutions. Find the solution that is ready, click the blue Applications icon, and click btn:[GraphStudio].
-
-image::my-solutions-action-highlighted.png[]
+image::full-cluster-actions-dropdown.png[]

@@ -1,4 +1,4 @@
-= Send REST Requests to a Solution
+= Send REST Requests to a Cluster
 :experimental:
 
 Besides GraphStudio, another way to interact with your TigerGraph database is through the REST API.
@@ -26,13 +26,13 @@ image::image (49).png[]
 
 === 3. Generate a token
 
-Use the `POST /requesttoken` endpoint to generate an authorization token for your solution.
+Use the `POST /requesttoken` endpoint to generate an authorization token for your cluster.
 
-==== 1. Find the domain name of your solution
+==== 1. Find the domain name of your cluster
 
-If you did not enter a subdomain when setting up your solution, a random subdomain is automatically generated for you.
-Go to *My Solutions*, and click the solution you are trying to access.
-You will find the solution's domain name in the expanded view.
+If you did not enter a subdomain when setting up your cluster, a random subdomain is automatically generated for you.
+Go to *My Clusters*, and click the cluster you are trying to access.
+You will find the cluster's domain name in the expanded view.
 Use this domain name as the server address when making REST requests.
 
 image::image (35).png[]
@@ -54,7 +54,7 @@ $ curl -X POST https://example.i.tgcloud.io:443/restpp/requesttoken -d '{"secret
 ----
 
 [NOTE]
-For TigerGraph Cloud solutions created before June 20, 2022, replace "443/restpp" with "9000". See the xref:release-notes:index.adoc[] for details.
+For TigerGraph Cloud clusters created before June 20, 2022, replace "443/restpp" with "9000". See the xref:release-notes:index.adoc[] for details.
 
 --
 Response::
@@ -77,10 +77,10 @@ This is a sample response, where the string in the response with the key `token`
 
 === 4. Send a request using your token
 
-Now that you have an authorization token, you can proceed to make requests to your solution. To use the authorization token, include it in the request header as a bearer token.
+Now that you have an authorization token, you can proceed to make requests to your cluster. To use the authorization token, include it in the request header as a bearer token.
 
 See xref:tigergraph-server:API:built-in-endpoints.adoc[] to learn about all the endpoints available.
-The following example makes a request to the xref:tigergraph-server:API:built-in-endpoints.adoc#_list_vertices[List vertices] endpoint on a solution with the https://www.youtube.com/watch?v=s6-QapCEz1M&feature=youtu.be&ab_channel=TigerGraph[COVID-19 starter kit].
+The following example makes a request to the xref:tigergraph-server:API:built-in-endpoints.adoc#_list_vertices[List vertices] endpoint on a cluster with the https://www.youtube.com/watch?v=s6-QapCEz1M&feature=youtu.be&ab_channel=TigerGraph[COVID-19 starter kit].
 
 The request lists 5 patients and their ages.
 
@@ -96,7 +96,7 @@ $ curl -H "Authorization: Bearer fc6p0i2ijjt031n0sja6m9ci70p232h7" \
 ----
 
 [NOTE]
-For TigerGraph Cloud solutions created before June 20, 2022, replace "443/restpp" with "9000". See the xref:release-notes:index.adoc[] for details.
+For TigerGraph Cloud clusters created before June 20, 2022, replace "443/restpp" with "9000". See the xref:release-notes:index.adoc[] for details.
 --
 Response:
 +

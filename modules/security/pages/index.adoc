@@ -6,14 +6,21 @@ This section describes the way user accounts work at different access levels in 
 == TigerGraph Cloud user account
 
 Your TigerGraph Cloud user account serves as your credential on the platform level.
-Depending on your role, you have various levels of access to solutions, billing information and organization user information.
+Depending on your role, you have various levels of access to clusters, billing information and organization user information.
 
 See xref:manage-cloud-account.adoc[] for more information about making changes to your account.
 
+== Single Sign-On (SSO)
+
+Organization admins can link a TigerGraph Cloud Organization with an IDP such as Okta and Azure Active Directory (AAD).
+This allows for user management to be done entirely outside TigerGraph Cloud inside a preferred IDP.
+
+See xref:idp.adoc[] for more information.
+
 == TigerGraph user access levels
 
-On the individual solution level, the same xref:gui:admin-portal:management/user-management.adoc[role-based access control] used by the on-premises version of TigerGraph also applies to TigerGraph Cloud.
-Each solution or solution cluster can have many TigerGraph Cloud users and each user can have different roles for each graph with different privileges.
+On the individual cluster level, the same xref:gui:admin-portal:management/user-management.adoc[role-based access control] used by the on-premises version of TigerGraph also applies to TigerGraph Cloud.
+Each cluster can have many TigerGraph Cloud users and each user can have different roles for each graph with different privileges.
 
 For more information on how to manage users and roles in Admin Portal, see xref:gui:admin-portal:management/user-management.adoc[].
 
@@ -33,4 +40,4 @@ TigerGraph Cloud uses TLS to encrypt connections to your graph databases.
 
 === RESTPP Authentication
 
-By default, all TigerGraph Cloud solutions have RESTPP authentication turned on. To make requests to the RESTPP server, you must generate a secret in the Admin Portal and use that secret to generate an authentication token.
+By default, all TigerGraph Cloud clusters have RESTPP authentication turned on. To make requests to the RESTPP server, you must generate a secret in the Admin Portal and use that secret to generate an authentication token.

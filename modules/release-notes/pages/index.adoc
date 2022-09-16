@@ -7,16 +7,29 @@ This page provides a summary of each update upon release.
 
 These TigerGraph Cloud updates are separate from updates to the core TigerGraph architecture. For release notes about new TigerGraph versions, see xref:tigergraph-server:release-notes:index.adoc[TigerGraph Server Release Notes].
 
-Cloud solutions are not automatically upgraded to a new TigerGraph version when a new version is released.
-For version upgrades for existing solutions, please contact TigerGraph Support.
+Cloud clusters are not automatically upgraded to a new TigerGraph version when a new version is released.
+For version upgrades for existing clusters, please contact TigerGraph Support.
+
+== September 2022 Updates
+Release date: September 15th, 2022
+
+=== New Features
+* TigerGraph Insights, an all-new data visualization platform, is now available in TigerGraph Cloud
+* Enabled SSO with Okta and Azure Active Directory
+* Seamless UI redesign that integrates with the TigerGraph Suite of web applications
+* TigerGraph 3.7.0 is available when creating new clusters
+
+=== Feature updates
+* UI refinements with a focus on intuitive use
+* Shift in terminology from "Solution" to "Cluster"
 
 == August 2022 Updates
 Release date: August 18th, 2022
 
 === New Features
-* Users with an invitation can provision xref:ml-workbench:on-cloud:index.adoc[ML Workbench (preview version)] instances on top of TigerGraph Cloud solutions.
+* Users with an invitation can provision xref:ml-workbench:on-cloud:index.adoc[ML Workbench (preview version)] instances on top of TigerGraph Cloud clusters.
 ** If you are interested in experimenting with ML Workbench on TigerGraph Cloud, please contact sales@tigergraph.com
-* TigerGraph 3.6.2 is available when creating new solutions.
+* TigerGraph 3.6.2 is available when creating new clusters.
 
 === Feature updates
 * Organization Admins can now create username-password pairs for user authentication from TigerGraph connectors and the remote GSQL client.
@@ -29,7 +42,7 @@ Release date: July 6, 2022
 === New Features
 
 * Multiple users can now share access to the same organization account.
-* Role based access control (RBAC) to control and manage access to specific solutions and capabilities.
+* Role based access control (RBAC) to control and manage access to specific clusters and capabilities.
 * TigerGraph Cloud Console and GraphStudio user authentication are now integrated to eliminate repeated logins.
 * All-new clean and unified user interface.
 
@@ -45,25 +58,25 @@ Release date: June 20, 2022
 
 === New features
 
-* TigerGraph Version 3.6.0 is now available for selection when creating new solutions.
-* xref:private-access:index.adoc[Private Link connections] can now be created for TigerGraph solutions for secure, private access.
+* TigerGraph Version 3.6.0 is now available for selection when creating new clusters.
+* xref:private-access:index.adoc[Private Link connections] can now be created for TigerGraph clusters for secure, private access.
 ** Private Links are supported across all cloud providers: AWS, Azure, and GCP.
-** Solutions can have public or private access.
+** Clusters can have public or private access.
 
 === Feature updates
 
-* TigerGraph Cloud solutions created on or after June 20, 2022 no longer expose ports 14240 or 9000.
-This also applies to previously created solutions that are resized on or after June 20, 2022. Use port 443 instead for API endpoint connectivity:
+* TigerGraph Cloud clusters created on or after June 20, 2022 no longer expose ports 14240 or 9000.
+This also applies to previously created clusters that are resized on or after June 20, 2022. Use port 443 instead for API endpoint connectivity:
 ** Use API endpoint `443/restpp/<endpoint>` for RESTPP endpoints that were on port 9000
 ** Use API endpoint `443/<endpoint>` for endpoints that were on port 14240
-* Resizing a solution created before June 20, 2022 will cause data loss due to a backend improvement in solution resizing.
-Always back up a solution before performing a resize operation.
+* Resizing a cluster created before June 20, 2022 will cause data loss due to a backend improvement in cluster resizing.
+Always back up a cluster before performing a resize operation.
 
 === Known issues
 
-* The GSQL Web Shell is temporarily disabled for new solutions due to recent networking improvements on the TigerGraph Cloud backend. Solutions created before June 20, 2022 are unaffected and still have access to the Web Shell.
+* The GSQL Web Shell is temporarily disabled for new clusters due to recent networking improvements on the TigerGraph Cloud backend. Clusters created before June 20, 2022 are unaffected and still have access to the Web Shell.
 
-** Use the xref:tigergraph-server:gsql-shell:using-a-remote-gsql-client.adoc[Remote GSQL client] to access GSQL on new TigerGraph Cloud solutions until access is restored.
+** Use the xref:tigergraph-server:gsql-shell:using-a-remote-gsql-client.adoc[Remote GSQL client] to access GSQL on new TigerGraph Cloud clusters until access is restored.
 
 
 == May 2022 Updates
@@ -71,10 +84,10 @@ Release date: May 12, 2022
 
 === New features
 
-* TigerGraph Version 3.5.3 is now available for selection when creating new solutions.
-* *Free-tier solutions on Azure.* We now offer the option to create a free-tier solution on Azure along with Amazon Web Services (AWS) and Google Cloud Platform (GCP).
-* Enabled search by solution ID in solution list.
-* Added download button for solution management.
+* TigerGraph Version 3.5.3 is now available for selection when creating new clusters.
+* *Free-tier clusters on Azure.* We now offer the option to create a free-tier cluster on Azure along with Amazon Web Services (AWS) and Google Cloud Platform (GCP).
+* Enabled search by cluster ID in cluster list.
+* Added download button for cluster management.
 
 
 === Feature updates
@@ -82,7 +95,7 @@ Release date: May 12, 2022
 * *Netdata deprecation*. Monitoring network I/O data through Netdata is no longer supported because of security vulnerabilities.
 * Removed dependencies between credit card and backups when there are credits on account.
 * User interface improvements for quota outages
-* Improved observability with tags now on solution information
+* Improved observability with tags now on cluster information
 * GSQL Output Path restricted for increased file security.
 
 == Feb 2022 Updates
@@ -90,7 +103,7 @@ Release date: Feb 8th, 2022
 
 === New features
 
-* TigerGraph Version 3.5 is now available for selection when creating new solutions.
+* TigerGraph Version 3.5 is now available for selection when creating new clusters.
 * Added the framework to render TigerGraph Cloud UIs in other languages besides English.
 * Improvements on secure access and auditability.
 * Improvements on operational SLAs and faster resolution of issues.
@@ -101,11 +114,11 @@ Release date: Sep 22, 2021
 
 === New features
 
-* **TigerGraph V3.1.5 is now available for selection when creating new solutions**. Users can create solutions that include both single server and cluster deployment when they choose TigerGraph V3.1.5.
+* **TigerGraph V3.1.5 is now available for selection when creating new clusters**. Users can create clusters that include both single server and cluster deployment when they choose TigerGraph V3.1.5.
 * *VPC Peering*. Users can now create a VPC peering connection between their TigerGraph Cloud VPC and another VPC on all supported cloud providers.
 * *Automatic load balancing for HA clusters*. When users provision a cluster with replicas in TigerGraph Cloud, a load balancer will be automatically attached to the cluster.
 * *Multi-AZ deployment*. When a user provisions an HA cluster, the replicas of the cluster will automatically be provisioned on different availability zones. This feature is supported on AWS and GCP.
-* *Free-tier solutions on GCP*. We now offer the option to create a free-tier solution on GCP in addition to AWS.
+* *Free-tier clusters on GCP*. We now offer the option to create a free-tier cluster on GCP in addition to AWS.
 
 == May 2021 Updates
 
@@ -113,7 +126,7 @@ Release Date: May 17, 2021
 
 === New features
 
-* ✅Support TigerGraph V3.1.1 for New Solutions (Single Server)
+* ✅Support TigerGraph V3.1.1 for New Clusters (Single Server)
 
 == March 2021 Updates
 
@@ -138,7 +151,7 @@ Release Date: February 17, 2021
 === New features
 
 * ✅Add Cloud Portal Self Guided Tour
-* ✅Support Minimum Disk Size Check During New Solution Provisioning Process
+* ✅Support Minimum Disk Size Check During New Cluster Provisioning Process
 
 == Dec 2020 Updates
 
@@ -151,8 +164,8 @@ Release Date:  December 16, 2020
 ** Backup Pricing Change
 ** Replica Pricing Change
 ** New Data Transfer Cost (First 50GB free for 2 hour+ uptime per month )
-* ​✅Support TigerGraph V3.0.6 for New Solutions
-* ​​✅Support TigerGraph v2.6.4 for New Solutions
+* ​✅Support TigerGraph V3.0.6 for New Clusters
+* ​​✅Support TigerGraph v2.6.4 for New Clusters
 * ✅Support replication factor of 3 for TigerGraph V3.0.6 clusters
 * ✅New TigerGraph Cloud Instance Type TG.C4.M16 available from AWS
 * ✅SOC2 Type 2 report available to request
@@ -169,7 +182,7 @@ Release Date:  September 29, 2020
 
 === Patch
 
-* ✅Patch TigerGraph V3.0.5 with GSQL Bug Fixes for New Solutions
+* ✅Patch TigerGraph V3.0.5 with GSQL Bug Fixes for New Clusters
 
 == September 2020 Updates
 
@@ -177,9 +190,9 @@ Release Date:  September 17, 2020
 
 === New features
 
-* ✅Support TigerGraph V3.0.5 for New Solutions
-* ✅Support TigerGraph v2.6.3 for New Solutions
-* ✅Allow Users to choose  v2.6.3 or V3.0.5 at New Solution Provisioning
+* ✅Support TigerGraph V3.0.5 for New Clusters
+* ✅Support TigerGraph v2.6.3 for New Clusters
+* ✅Allow Users to choose  v2.6.3 or V3.0.5 at New Cluster Provisioning
 
 == July 2020 Updates
 
@@ -197,7 +210,7 @@ Release Date:  April 27, 2020
 
 * ✅Advanced Developer Tool: GSQL Web Shell for Non-Free Tiers
 * ✅TigerGraph Database Version Upgrades to TigerGraph 2.6 For New Instances
-* ✅Starter Kit Categorization at Solution Provisioning
+* ✅Starter Kit Categorization at Cluster Provisioning
 * ✅6 New TigerGraph Starter Kits
 ** COVID-19 Starter Kit
 ** In-Database Machine Learning Recommendation
@@ -236,7 +249,7 @@ Deprecation Date: March 31, 2020 (See https://docs.tigergraph.com/tigergraph-clo
 * ✅Secure and Isolated Network (VPC) for Each TigerGraph Cloud Account
 * ✅Fast Data Loading through S3 and Local Files
 * ✅13 TigerGraph Starter Kits with Sample Datasets and Queries
-* ✅Start/Stop/Terminate TigerGraph Solutions On Demand through Cloud Portal
+* ✅Start/Stop/Terminate TigerGraph Clusters On Demand through Cloud Portal
 * ✅Built-in Backup and Restore through TigerGraph Admin Portal
 * ✅Rich Metrics from System Monitoring Panel on Cloud Portal
 * ✅Convenient Application Development Through RESTful Endpoints

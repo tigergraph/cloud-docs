@@ -1,10 +1,10 @@
 = Manage Database Users
 :experimental:
 
-When you connect to a TigerGraph Cloud instance programmatically, such as from connectors like pyTigerGraph or the remote GSQL client, you often need to provide credentials that are created in the database of your solution.
-This is different from your TigerGraph Organization account which allows you to log in to solutions in your organization to which you have access.
+When you connect to a TigerGraph Cloud instance programmatically, such as from connectors like pyTigerGraph or the remote GSQL client, you often need to provide credentials that are created in the database of your cluster.
+This is different from your TigerGraph Organization account which allows you to log in to clusters in your organization to which you have access.
 
-NOTE: You can only create database users for solutions created after August 18th, 2022.
+NOTE: You can only create database users for clusters created after August 18th, 2022.
 
 == Create a database user
 
@@ -13,9 +13,9 @@ NOTE: You can only create database users for solutions created after August 18th
 
 === Procedure
 
-. From the Cloud portal, go to btn:[Solutions].
-. Find the solution you want to create users for, and select btn:[Access Management].
-. From the Solution Access Management page, click btn:[Database Access].
+. From the Cloud portal, go to btn:[Clusters].
+. Find the cluster you want to create users for, and select btn:[Access Management].
+. From the Cluster Access Management page, click btn:[Database Access].
 . Click btn:[Add new users] and specify the username and password.
 * Make sure to keep a record of the username and password when you create the user.
 The password is no longer visible once you leave the page.
@@ -29,7 +29,7 @@ For details on TigerGraph's role-based access control model, see xref:tigergraph
 
 === Procedure
 
-. From the Cloud portal, go to btn:[Solutions].
-. Find the solution you want to create users for, and select btn:[Access Management].
-. From the Solution Access Management page, click btn:[Database Access].
+. From the Cloud portal, go to btn:[Clusters].
+. Find the cluster you want to create users for, and select btn:[Access Management].
+. From the Cluster Access Management page, click btn:[Database Access].
 . Find the user you want to delete, and click btn:[Delete] in the Actions column.

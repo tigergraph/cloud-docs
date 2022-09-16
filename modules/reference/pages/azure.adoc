@@ -60,6 +60,6 @@ Disk storage is charged per GB per hour.
 
 == Backup storage
 
-Solutions deployed on Azure use https://azure.microsoft.com/en-us/services/storage/files/[Azure Files] for storage. By default, backups are encrypted and decrypted transparently using 256-bit https://en.wikipedia.org/wiki/Advanced_Encryption_Standard[AES encryption], one of the strongest block ciphers available, and is FIPS 140-2 compliant.
+Clusters deployed on Azure use https://azure.microsoft.com/en-us/services/storage/files/[Azure Files] for storage. By default, backups are encrypted and decrypted transparently using 256-bit https://en.wikipedia.org/wiki/Advanced_Encryption_Standard[AES encryption], one of the strongest block ciphers available, and is FIPS 140-2 compliant.
 
 Backup storage is charged per GB per hour.

@@ -2,14 +2,13 @@
 :sectnums:
 :experimental:
 
-TigerGraph provides support for TigerGraph Cloud for customers with non-free-tier solutions. For more information on TigerGraph's support policy, visit our https://www.tigergraph.com/support-policy/[support policy page].
+TigerGraph provides support for TigerGraph Cloud for customers with non-free-tier clusters. For more information on TigerGraph's support policy, visit our https://www.tigergraph.com/support-policy/[support policy page].
 
 You can submit a support ticket in the TigerGraph Cloud portal or by email.
 
 == Submit a support ticket
 
-Click on the support icon in the upper right corner of the screen: image:support-icon.png[]
-
+Click on the question mark icon in the upper right corner of the screen and select Support from the drop-down menu.
 
 This takes you to TigerGraph's support platform, where you can submit support tickets.
 

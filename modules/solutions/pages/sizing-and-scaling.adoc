@@ -23,4 +23,4 @@ Disk storage refers to the root disk attached to your instance that holds the fo
 
 When you choose the size of the disk, consider the size of the data for all the above installations and files.
 
-To ensure adequate disk storage, TigerGraph Cloud mandates that any disk size of a solution must be *at least 3 times* the size of its instance's RAM. For example, if your solution instance has 64 GB of RAM, then the disk size must be higher than 192 GB.
+To ensure adequate disk storage, TigerGraph Cloud mandates that any disk size of a cluster must be *at least 3 times* the size of its instance's RAM. For example, if your cluster instance has 64 GB of RAM, then the disk size must be higher than 192 GB.

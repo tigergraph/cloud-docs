@@ -1,8 +1,8 @@
 = Cloud Providers and Regions
 
 TigerGraph Cloud offers three cloud platform options: Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP).
-The choice of cloud providers and regions affects the pricing and network latency of your solutions.
-The region indicates the physical location of your solution.
+The choice of cloud providers and regions affects the pricing and network latency of your clusters.
+The region indicates the physical location of your cluster.
 
 Each cloud provider has different offerings for instance type, disk storage, and backup storage.
 TigerGraph Cloud supports free-tier clusters on AWS and GCP.

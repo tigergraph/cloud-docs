@@ -3,7 +3,7 @@
 
 == Creating an account
 
-Only an Organization Admin can create a new user account for someone else to use. Organization Members and Organization Solution Admins cannot create their own accounts; they need to be invited via email after their accounts are created for them.
+Only an Organization Admin can create a new user account for someone else to use. Organization Members and Organization Cluster Admins cannot create their own accounts; they need to be invited via email after their accounts are created for them.
 
 See xref:manage-org-users.adoc#_invite_new_users[Invite new users] for more detailed instructions.
 

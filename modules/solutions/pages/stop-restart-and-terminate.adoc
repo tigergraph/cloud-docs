@@ -1,39 +1,26 @@
-= Stop, Restart, and Terminate a Solution
+= Stop, Restart, and Terminate a Cluster
 
-The Solution Operations icon image:screen-shot-2021-02-24-at-5.26.45-pm.png[] in the Solutions list opens a menu with the options to stop, restart, and terminate a solution.
+The three-dot menu next to each cluster opens a menu with the options to stop, restart, and terminate a cluster.
 
-image::image (25).png[]
+image::cluster-actions-dropdown.png[]
 
-This list can be found under Solutions on the left side menu or on the main page. If you know that your organization account has running solutions but you are unable to see them, check to see that your account has the correct xref:security:manage-org-users.adoc[user access privileges].
+If you know that your organization account has running clusters but you are unable to see them, check to see that your account has the correct xref:security:manage-org-users.adoc[user access privileges].
 
-== Stop a solution
+== Pause a cluster
 
-When you stop a solution, you shut down the virtual machine instance.
+When you pause a cluster, you shut down the virtual machine instance.
 The TigerGraph database is frozen in its current state.
 Billing for that machine instance also stops.
 Scheduled backups also stop, but the backup copies are kept in EFS on AWS, Azure Files on Azure, and GCP Filestore on GCP.
 
-You will still incur charges for disk storage and backups when a solution is stopped.
+You will still incur charges for disk storage and backups when a cluster is stopped.
 
-== Restart a solution
+== Restart a cluster
 
-You can restart a stopped solution at any time. After a warm-up period, the solution will return to the state it was in when it was stopped.
+You can restart a stopped cluster at any time. After a warm-up period, the cluster will return to the state it was in when it was stopped.
 
-== Terminate a solution
+== Terminate a cluster
 
-By terminating a solution, you deprovision the virtual machine and the attached disk storage. The solution, as well as everything in the attached disk storage, is deleted according to the cloud platform's policies and cannot be recovered.
+By terminating a cluster, you deprovision the virtual machine and the attached disk storage.
+The cluster, as well as everything in the attached disk storage, is deleted according to the cloud platform's policies and cannot be recovered.
 
-
-=== Archive a solution
-
-After a solution has been terminated, it can be archived so that it no longer shows up on the default view in the list of solutions.
-
-To archive a solution, click on the solution row in My Solutions to expand it and click the *Archived* toggle.
-
-image::image (55).png[]
-
-=== Show archived solutions
-
-To view archived solutions, click the settings icon to the right of the *Actions* column and toggle on *Show Archived* in the *Display Settings*.
-
-image::image (64).png[]

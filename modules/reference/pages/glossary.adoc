@@ -2,11 +2,11 @@
 
 == backup
 
-A snapshot of the state of your solutions at a given point in time.
+A snapshot of the state of your clusters at a given point in time.
 
 == cluster
 
-A group of instances connected together. TigerGraph allows High Availability (HA) clusters that provide redundancy so that user instances are not interrupted in the case of a server outage.
+A fully-managed TigerGraph instance or a group of instances connected together. TigerGraph allows High Availability (HA) clusters that provide redundancy so that user instances are not interrupted in the case of a server outage.
 
 == credentials
 
@@ -52,12 +52,12 @@ A formal description of a graph's data model.
 
 == solution
 
-A fully-managed TigerGraph deployment.
+The previous name for a cluster, or a fully-managed TigerGraph deployment.
 
 
 == TigerGraph user
 
-A database user with its own roles and privileges for different graphs stored on a solution.
+A database user with its own roles and privileges for different graphs stored on a cluster.
 
 == vCPU
 
@@ -73,4 +73,4 @@ A network between two VPCs allowing instances to communicate as if they are on t
 
 == web shell
 
-A browser-accessible command line for running GSQL commands on a TigerGraph Cloud solution.
+A browser-accessible command line for running GSQL commands on a TigerGraph Cloud cluster.

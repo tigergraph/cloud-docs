@@ -35,7 +35,12 @@ The privileges granted to the various roles in a TigerGraph Cloud organization a
 |Can access GraphStudio| Only if assigned to the cluster |Only if assigned to the cluster |Only if assigned to the cluster
 |====
 
-=== TigerGraph cluster roles
+
+[NOTE]
+User management was redesigned with the release of TigerGraph v3.6.0 in July 2022. Clusters created before then are only visible to Organization Admins and Cluster Admins.
+These legacy clusters exist entirely outside of the User Management system and can still be accessed by ordinary users with the URL.
+
+=== TigerGraph solution roles
 
 A user in an organization on TigerGraph Cloud is separate from a user on a TigerGraph cluster.
 On TigerGraph Cloud, a single user in an organization may be assigned to several clusters and have various roles on those clusters.

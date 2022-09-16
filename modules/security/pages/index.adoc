@@ -24,6 +24,10 @@ Each cluster can have many TigerGraph Cloud users and each user can have differe
 
 For more information on how to manage users and roles in Admin Portal, see xref:gui:admin-portal:management/user-management.adoc[].
 
+[NOTE]
+User management was redesigned with the release of TigerGraph v3.6.0 in July 2022. Clusters created before then are only visible to Organization Admins and Cluster Admins.
+These legacy clusters exist entirely outside of the User Management system and can still be accessed by ordinary users with the URL.
+
 == Preconfigured security features
 
 === Encryption-at-rest

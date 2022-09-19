@@ -5,11 +5,8 @@ TigerGraph Cloud leverages the secured infrastructure of our cloud service provi
 This page provides an overview of the security features available on TigerGraph Cloud.
 
 
-[cols="a,a,a,a"]
-|===
-|Network Access |Authentication |Authorization |Encryption
-
-|* Secured & encrypted communication
+== Network access
+* All communication secured
 ** TLS 1.2 for client-server communication
 * Dedicated VPCs for each organization
 * xref:vpc-peering:readme.adoc[VPC peering]
@@ -20,46 +17,42 @@ This page provides an overview of the security features available on TigerGraph 
 * Secured external cloud
 data access
 ** xref:access-solution:rest-requests.adoc[RESTPP authentication]
-|
-* xref:user-management.adoc[Integrated Identity and Access Management (IAM)]
+
+== Authentication
+* Strong password requirement when xref:start:overview.adoc#_get_started_with_tigergraph_cloud[creating an account]
+* xref:user-management.adoc[Integrated identity and access management (IAM)]
 * xref:idp.adoc[SSO with SAML 2.0 federated auth]
-|* xref:user-management.adoc[Cloud organization role-based access control (RBAC)]
+
+== Authorization
+* xref:user-management.adoc[User management for a cloud organization]
 ** Predefined roles and privileges
-** xref:manage-db-users.adoc[Fine-grained RBAC through user-defined roles]
+* xref:manage-org-users.adoc#_access_management[Access management for clusters]
+* Audit logs for privileged user actions
 
-|
-* Data in-transit: TLS 1.2 for all endpoints
-* Data at-rest: native encryption options by cloud providers
-
-|===
+== Data encryption
+* Automatic data in-transit encryption: TLS 1.2 for all endpoints
+* Automatic data at-rest encryption: native encryption functionality through cloud providers
 
 == Operational compliance
 TigerGraph Server meets the following security compliance standards as certified by third-party audits:
 
 * https://www.tigergraph.com/soc-2/[SOC 2 Compliance]
-* https://www.tigergraph.com/compliance/[PCI-DSS]
+
 
 == Vulnerability scanning
 TigerGraph leverages best-of-breed tools to periodically and proactively scan source code, application runtime, infrastructure to identify security vulnerabilities:
 
 * Dynamic Application Security Testing (DAST)
-** Bi-weekly scanning of applications
 * Static Application Security Testing (SAST)
-** Bi-weekly scanning of the code base
-* Software Composition Analysis (SCA) (Third-Party Library/Dependency Check)
-**  Bi-weekly scanning as part of the application build process
+* Software Composition Analysis (SCA)
+* Penetration Testing
 * Operating System (OS) Level Vulnerability Scanning
-**  Bi-weekly scanning of servers
-* Network vulnerability scanning
-** Bi-weekly scanning of network devices
-* Penetration testing
-** Annual 3rd-Party testing
-** Weekly in-house testing
+* Network Vulnerability Scanning
 
 === Vulnerability remediation
 
-TigerGraph addresses identified vulnerabilities in source code, infrastructure with urgency, speed and rigor:
+TigerGraph commits to vulnerability remediation upon discovery by the following timelines:
 
-* Critical or high priority issues are addressed  within 30 Days.
-* Medium priority issues are addressed within 90 Days.
-* Low priority issues to be addressed within 180 Days.
+* Critical/high: 30 days
+* Medium: 90 days
+* Low: 180 days

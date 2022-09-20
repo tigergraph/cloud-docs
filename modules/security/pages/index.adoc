@@ -30,8 +30,8 @@ data access
 * Audit logs for privileged user actions
 
 == Data encryption
-* Automatic data in-transit encryption: TLS 1.2 for all endpoints
-* Automatic data at-rest encryption: native encryption functionality through cloud providers
+* Automatic xref:tigergraph-server:security:encrypting-connections.adoc[data in-transit encryption]: TLS 1.2 for all endpoints
+* Automatic xref:tigergraph-server:security:encrypting-data-at-rest.adoc[data at-rest encryption]: native encryption functionality through cloud providers
 
 == Operational compliance
 TigerGraph Server meets the following security compliance standards as certified by third-party audits:

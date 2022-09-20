@@ -1,43 +1,58 @@
-= User Management
+= Security
 :page-aliases: readme.adoc, README.adoc
 
-This section describes the way user accounts work at different access levels in TigerGraph Cloud.
+TigerGraph Cloud leverages the secured infrastructure of our cloud service providers and provides additional security features to ensure the security of your data and network.
+This page provides an overview of the security features available on TigerGraph Cloud.
 
-== TigerGraph Cloud user account
 
-Your TigerGraph Cloud user account serves as your credential on the platform level.
-Depending on your role, you have various levels of access to clusters, billing information and organization user information.
+== Network access
+* All communication secured
+** TLS 1.2 for client-server communication
+* Dedicated VPCs for each organization
+* xref:vpc-peering:readme.adoc[VPC peering]
+* Private Links
+** xref:private-access:aws.adoc[AWS]
+** xref:private-access:azure.adoc[Azure]
+** xref:private-access:gcp.adoc[GCP]
+* Secured external cloud
+data access
+** xref:access-solution:rest-requests.adoc[RESTPP authentication]
 
-See xref:manage-cloud-account.adoc[] for more information about making changes to your account.
+== Authentication
+* Strong password requirement when xref:start:overview.adoc#_get_started_with_tigergraph_cloud[creating an account]
+* xref:user-management.adoc[Integrated identity and access management (IAM)]
+* xref:idp.adoc[SSO with SAML 2.0 federated auth]
 
-== Single Sign-On (SSO)
+== Authorization
+* xref:user-management.adoc[User management for a cloud organization]
+** Predefined roles and privileges
+* xref:manage-org-users.adoc#_access_management[Access management for clusters]
+* Audit logs for privileged user actions
 
-Organization admins can link a TigerGraph Cloud Organization with an IDP such as Okta and Azure Active Directory (AAD).
-This allows for user management to be done entirely outside TigerGraph Cloud inside a preferred IDP.
+== Data encryption
+* Automatic xref:tigergraph-server:security:encrypting-connections.adoc[data in-transit encryption]: TLS 1.2 for all endpoints
+* Automatic xref:tigergraph-server:security:encrypting-data-at-rest.adoc[data at-rest encryption]: native encryption functionality through cloud providers
 
-See xref:idp.adoc[] for more information.
+== Operational compliance
+TigerGraph Server meets the following security compliance standards as certified by third-party audits:
 
-== TigerGraph user access levels
+* https://www.tigergraph.com/soc-2/[SOC 2 Compliance]
 
-On the individual cluster level, the same xref:gui:admin-portal:management/user-management.adoc[role-based access control] used by the on-premises version of TigerGraph also applies to TigerGraph Cloud.
-Each cluster can have many TigerGraph Cloud users and each user can have different roles for each graph with different privileges.
 
-For more information on how to manage users and roles in Admin Portal, see xref:gui:admin-portal:management/user-management.adoc[].
+== Vulnerability scanning
+TigerGraph leverages best-of-breed tools to periodically and proactively scan source code, application runtime and infrastructure to identify security vulnerabilities:
 
-[NOTE]
-User management was redesigned with the release of TigerGraph v3.6.0 in July 2022. Clusters created before then are only visible to Organization Admins and Cluster Admins.
-These legacy clusters exist entirely outside of the User Management system and can still be accessed by ordinary users with the URL.
+* Dynamic Application Security Testing (DAST)
+* Static Application Security Testing (SAST)
+* Software Composition Analysis (SCA)
+* Penetration Testing
+* Operating System (OS) Level Vulnerability Scanning
+* Network Vulnerability Scanning
 
-== Preconfigured security features
+=== Vulnerability remediation
 
-=== Encryption-at-rest
+TigerGraph commits to vulnerability remediation upon discovery by the following timelines:
 
-All data loaded into TigerGraph Cloud, including data in disk storage and backups, are automatically encrypted-at-rest using the cloud provider's native encryption protocol with platform-managed keys.
-
-=== Transport Layer Security (TLS)
-
-TigerGraph Cloud uses TLS to encrypt connections to your graph databases.
-
-=== RESTPP Authentication
-
-By default, all TigerGraph Cloud clusters have RESTPP authentication turned on. To make requests to the RESTPP server, you must generate a secret in the Admin Portal and use that secret to generate an authentication token.
+* Critical/high: 30 days
+* Medium: 90 days
+* Low: 180 days

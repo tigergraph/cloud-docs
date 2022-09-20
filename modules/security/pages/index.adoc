@@ -40,7 +40,7 @@ TigerGraph Server meets the following security compliance standards as certified
 
 
 == Vulnerability scanning
-TigerGraph leverages best-of-breed tools to periodically and proactively scan source code, application runtime, infrastructure to identify security vulnerabilities:
+TigerGraph leverages best-of-breed tools to periodically and proactively scan source code, application runtime and infrastructure to identify security vulnerabilities:
 
 * Dynamic Application Security Testing (DAST)
 * Static Application Security Testing (SAST)

@@ -23,6 +23,11 @@ Release date: September 15th, 2022
 * UI refinements with a focus on intuitive use
 * Shift in terminology from "Solution" to "Cluster"
 
+=== Known issues
+
+* In rare cases, leaving a browser window with a Cloud instance open and idle for several hours will raise a "Refused to connect" error.
+Log out and log in again to fix this error.
+
 == August 2022 Updates
 Release date: August 18th, 2022
 

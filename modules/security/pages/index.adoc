@@ -19,7 +19,7 @@ data access
 ** xref:access-solution:rest-requests.adoc[RESTPP authentication]
 
 == Authentication
-* Strong password requirement when xref:start:overview.adoc#_get_started_with_tigergraph_cloud[creating an account]
+* xref:password-policy.adoc[Strong password requirement] when xref:start:overview.adoc#_get_started_with_tigergraph_cloud[creating an account]
 * xref:user-management.adoc[Integrated identity and access management (IAM)]
 * xref:idp.adoc[SSO with SAML 2.0 federated auth]
 

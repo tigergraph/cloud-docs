@@ -1,4 +1,4 @@
-= FAQs
+= TigerGraph Cloud FAQs
 :pp: {plus}{plus}
 
 *Feedback for TigerGraph Cloud is welcome at* tgcloud-feedback@tigergraph.com

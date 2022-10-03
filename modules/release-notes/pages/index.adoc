@@ -13,9 +13,10 @@ For version upgrades for existing clusters, please contact TigerGraph Support.
 == October 2022 Updates
 Release date: October 5th, 2022
 
-This update was concerned with security fixes and enhancing the speed of new cluster creation.
+This update was mainly concerned with security fixes and enhancing the speed of new cluster creation.
 
 === Feature updates
+* Clarified in new user email that each new user invitation will only last seven days and must be resent if not accepted within that time
 * Backend improvements reducing cluster provisioning time
 * Security enhancements
 

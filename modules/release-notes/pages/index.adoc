@@ -24,14 +24,14 @@ This update was mainly concerned with security fixes and enhancing the speed of 
 
 * Fixed an issue where some clusters were created with attributes set as empty strings instead of null values, which could have caused API problems in rare cases.
 * Fixed an issue with the GCP filestore in cases where cluster provisioning failed.
-* Fixed an issue where leaving a browser window with a Cloud instance open and idle for several hours would raise a "Refused to connect" error.
+//* Fixed an issue where leaving a browser window with a Cloud instance open and idle for several hours would raise a "Refused to connect" error.
 
 
 == September 2022 Updates
 Release date: September 15th, 2022
 
 === New Features
-* TigerGraph Insights, an all-new data visualization platform, is now available in TigerGraph Cloud
+//* TigerGraph Insights, an all-new data visualization platform, is now available in TigerGraph Cloud
 * Enabled SSO with Okta and Azure Active Directory
 * Seamless UI redesign that integrates with the TigerGraph Suite of web applications
 * TigerGraph 3.7.0 is available when creating new clusters

@@ -19,22 +19,19 @@ On the home page, if you have no clusters and have the privileges to create a cl
 image::main-page-no-clusters.png[]
 
 
-=== Select TigerGraph version and starter kit
+=== Choose a name and version
+
+image::cluster-name-and-version.png[]
 
 Not all TigerGraph versions that are offered on-premises are offered on TigerGraph Cloud.
 In the dropdown list, choose the version of TigerGraph you want to run.
 
-TigerGraph Cloud Starter Kits are built with a sample graph data schema, dataset, and queries focused on a specific use case to help you get started quickly.
-Most of our starter kits have a link:https://www.tigergraph.com/starterkits/[demo video] that walks you through the schema and the queries built for its use case.
+Name your cluster to set it apart from others in your cluster view.
+You can also optionally give it a description to explain what you plan to use it for.
 
-Select a starter kit or select btn:[Blank] to proceed with your own schema and data.
+=== Select cloud provider and region
 
-image::select-version-and-starter-kit.png[]
-
-Scroll down to the bottom of the page and click btn:[Next].
-
-
-=== Select platform, region and endpoint type
+image:cloud-provider-and-region.png[]
 
 TigerGraph Cloud supports free-tier clusters on all three cloud providers.
 Different providers have different regions available.
@@ -43,36 +40,43 @@ Select your preferred cloud provider and the region closest to you for the best 
 
 See the Reference section for a full list of regions available for each cloud provider: xref:reference:index.adoc[Cloud Provider Reference]
 
-image::select-endpoint-region-access.png[]
-
-=== Select instance type
+=== Instance settings
 
 Select TG.Free to create a free-tier cluster for the purposes of this guide.
 More powerful virtual machines require you to use credits in your account or connect a payment method.
 
-image:select-instance-type.png[]
-
-=== Select disk size
+image:instance-settings.png[]
 
 Select *50 GB* for your disk size to stay within the free tier.
 
 On the free tier, partition and replication are limited to 1, meaning xref:tigergraph-server:ha:index.adoc[high availability (HA)] is disabled.
 
-image:select-disk-partition-replication.png[]
 
-Scroll down to the bottom of the page and click *Next*.
+=== Advanced settings
 
-=== Enter a name and a tag for your cluster
+image::advanced-settings.png[]
 
-On the Cluster Settings page, you can customize the name by which the cluster appears in the cluster list and give it a tag for reference.
+If you have set up a paid cluster, you can set up private access as long as your region supports it.
 
-You can also customize the cluster subdomain. If you leave this section blank, a random subdomain name will be automatically generated.
+See xref:private-access:index.adoc[] for details.
 
-image:name-tag-solution.png[]
+In this section, you can also add a custom subdomain to easily identify your cluster via URL.
+If you don't add a custom subdomain, a random alphanumeric subdomain will be automatically generated.
 
-Click btn:[Next] to go to a confirmation page, then create the cluster. You will be sent back to the main page, where you can see your cluster being created.
 
-image:sample-cluster-provisioning.png[]
+=== Choose a starter kit
+
+image:starter-kit-list.png[]
+
+TigerGraph Cloud Starter Kits are built with a sample graph data schema, dataset, and queries focused on a specific use case to help you get started quickly.
+Most of our starter kits have a link:https://www.tigergraph.com/starterkits/[demo video] that walks you through the schema and the queries built for its use case.
+
+Select a starter kit or select btn:[Blank] to create an empty cluster that you can load with your own schema and data using GraphStudio.
+
+=== Create cluster
+
+When you've finished making your choices, click btn:[Create Cluster] at the bottom of the screen to begin the creation process.
+It usually takes several minutes to make a cluster available.
 
 == Log in to GraphStudio
 

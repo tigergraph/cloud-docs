@@ -11,9 +11,17 @@ Cloud clusters are not automatically upgraded to a new TigerGraph version when a
 For version upgrades for existing clusters, please contact TigerGraph Support.
 
 == October 2022 Updates
-Release date: October 5th, 2022
 
-This update was mainly concerned with security fixes and enhancing the speed of new cluster creation.
+Release date: October 12th, 2022
+
+=== Feature updates
+
+* Overhauled Create Cluster workflow to greatly streamline the user experience.
+** Users can now create new clusters on a single page and apply default settings with one click.
+
+---
+
+Release date: October 5th, 2022
 
 === Feature updates
 * Clarified in new user email that each new user invitation will only last seven days and must be resent if not accepted within that time
@@ -25,7 +33,6 @@ This update was mainly concerned with security fixes and enhancing the speed of 
 * Fixed an issue where some clusters were created with attributes set as empty strings instead of null values, which could have caused API problems in rare cases.
 * Fixed an issue with the GCP filestore in cases where cluster provisioning failed.
 //* Fixed an issue where leaving a browser window with a Cloud instance open and idle for several hours would raise a "Refused to connect" error.
-
 
 == September 2022 Updates
 Release date: September 15th, 2022

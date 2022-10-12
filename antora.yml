@@ -1,7 +1,7 @@
 name: cloud
 title: TigerGraph Cloud
-version: 'create-cluster-rework-DOC-1403'
-display_version: 'create-cluster-rework-DOC-1403'
+version: master
+display_version: default
 start_page: start:overview.adoc
 
 nav:

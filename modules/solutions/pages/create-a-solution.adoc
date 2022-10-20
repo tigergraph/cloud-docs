@@ -1,4 +1,5 @@
 = Create a Cluster
+:page-aliases: create.adoc
 :experimental:
 
 TigerGraph Cloud clusters offer a full-scale analytics platform to store and query your graph data.

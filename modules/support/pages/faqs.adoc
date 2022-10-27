@@ -26,11 +26,9 @@ Please submit a support ticket for migration assistance.
 [#q-are-there-free-tier-instances-or-free-credits-for-the-system]
 === *Q: Are there Free Tier Instances or Free Credits for the System?*
 
-A: Yes,  in both instances.
+A: There are free-tier instances, but no free credits.
 
-*Free Credits:* A $25 credit is automatically granted to each new registered account. The free credits is valid for 30 days after initial use.
-
-*Free Tier Instance*: When you select an instance type, you will see that one instance type is designated as the Free Tier.
+When you select an instance type, you will see that one instance type is designated as the Free Tier.
 Each registered account may provision one cluster at a time from the Free Tier.
 Free Tier instances do not include backup and do not include support. If you want to start another Free Tier cluster, you will have to terminate your existing cluster.
 
@@ -187,18 +185,6 @@ A: We support AWS S3 import, Google Cloud Storage,  and local file upload throug
 In addition, for TigerGraph paid tier clusters, users can use the GSQL Web Shell to write GSQL Commands in an interactive command line shell. This GSQL Web Shell opens up more data loading options such as S3 Loader (parquet format), Kafka Loader and other complex loading jobs. Users can access GSQL Web Shell through the cluster panel from their Cloud Portal.
 
 For complex loading jobs through GSQL Web Shell for paid tier clusters, please submit a support ticket from your cloud portal for more information.
-
-[#q-if-i-dont-enter-a-valid-credit-card-in-the-account-and-use-the-initial-usd25-free-credit-will-the-data-in-the-provisioned-clusters-be-deleted-if-i-stop-the-clusters]
-=== *Q: If I don't enter a valid credit card in the account and use the initial $25 free credit, will the data in the provisioned clusters be deleted if I stop the clusters?*
-
-A: As long as there is remaining free credits in your account, the data of your clusters will be preserved by the provisioned disk after you stop the clusters even if you don't have a credit card in your account. The data will be available and accessible after you restart the clusters.  The free credit is valid for 30 days after initial use.
-
-Your clusters will be deleted automatically if there are no remaining valid free credits and there is no valid credit card in your account.
-
-**‌**To use "`backup and restore`" functionality, you need to enter a valid credit card in your account and choose non free tier instances. The non free tier clusters provisioned after the credit card is entered have backup and restore functionality through TigerGraph's Admin Portal. Note that any clusters provisioned before entering the credit card will not be upgraded with the backup and restore functionality.
-
-If you choose to terminate the instance, your clusters and the data will not be preserved. Please see "Provisioning, Backup and Restore" section for detailed explanation on the difference between stopping and terminating a cluster.
-
 
 === *Q: I can't find my registration activation email after registering for the first time. Where can I find it?*
 

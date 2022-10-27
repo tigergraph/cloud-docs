@@ -11,8 +11,6 @@ Click btn:[Billing] on the left side menu bar to get to the Billing page.
 
 image::billing-page.png[]
 
-Each new organization account has $25 in credits to use for paid-tier clusters.
-
 To connect a credit card to your account, click the btn:[Payment Methods] tab at the top and add a card.
 
 You can also remove cards or set them as default payment methods to avoid being prompted in the future.

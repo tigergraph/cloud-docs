@@ -10,15 +10,6 @@ These TigerGraph Cloud updates are separate from updates to the core TigerGraph 
 Cloud clusters are not automatically upgraded to a new TigerGraph version when a new version is released.
 For version upgrades for existing clusters, please contact TigerGraph Support.
 
-== November 2022 Updates
-Release date: November 2nd, 2022
-
-=== Feature updates
-
-* Overhauled Billing and Network page designs to greatly streamline the user experience.
-* Removed $25 free credit for new accounts. To purchase Cloud credits for an organization account
-* Contact TigerGraph Support to perform Backup and Restore from another cluster.
-
 == October 2022 Updates
 
 Release date: October 12th, 2022

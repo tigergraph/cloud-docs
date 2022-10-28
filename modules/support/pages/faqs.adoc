@@ -281,7 +281,7 @@ Please submit a support ticket from TigerGraph Cloud Portal for more help.
 
 === *Q: Can I migrate my database to a larger (or smaller) instance?*
 
-A: Contact TigerGraph Cloud Support for migrating between different instance types. Instance migration is not yet supported through one-click operation, however, migration can be achieved by using backup and restore for some cases.
+A: Contact TigerGraph Cloud Support for migrating between different instance types. Instance migration is not yet supported through one-click operation.
 
 
 === *Q: Can I deploy a distributed TigerGraph database across a cluster of instances?*
@@ -334,7 +334,6 @@ After a warmup period, the cluster will return to its previous state.
 
 When you terminate a cluster, you will deprovision the virtual machine and the attached disk space.
 The cluster is deleted according to the cloud platforms policies and cannot be recovered.
-A backup file, however, can be used to restore to a new cluster within 15 days.
 
 === *Q: Do you offer backup in TigerGraph Cloud?*
 
@@ -357,8 +356,7 @@ More options for longer retention policies are in development.
 
 === *Q: Can I restore from a backup from another cluster in my account?*
 
-A: Only single server clusters can be restored from the backup of another cluster in the same account within the same cloud platform.
-Distributed and replicated cluster cannot be restored from the backup of another cluster in the same account.
+A: Contact TigerGraph Support to restore from another cluster backup.
 
 
 === *Q: What password do I use for backup and restore?*

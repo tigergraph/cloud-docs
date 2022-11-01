@@ -10,6 +10,21 @@ These TigerGraph Cloud updates are separate from updates to the core TigerGraph 
 Cloud clusters are not automatically upgraded to a new TigerGraph version when a new version is released.
 For version upgrades for existing clusters, please contact TigerGraph Support.
 
+== November 2022 Updates
+
+Release date: November 9th, 2022
+
+=== Feature updates
+
+* Added Jakarta (Indonesia) AWS server location
+* Removed $25 free credit granted to all new organization accounts
+Users can still purchase Cloud credits at link:https://www.tigergraph.com/cloud-credits/[the Cloud Credits Program main page].
+* Rearranged starter kit layout
+
+=== Fixed issues
+
+* Fixed a rare issue where customers were blocked from creating free-tier clusters.
+
 == October 2022 Updates
 
 Release date: October 12th, 2022

@@ -10,6 +10,7 @@
 * AP-Northeast-1 (Tokyo, Japan)
 * AP-Southeast-1 (Singapore)
 * AP-Southeast-2 (Sydney, Australia)
+* AP-Southeast-3 (Jakarta, Indonesia)
 * SA-East-1 (São Paulo, Brazil)
 
 == Instance types
@@ -23,41 +24,45 @@ The table below shows the instance types available on AWS.
 | 4
 | 7.5
 
-
 | TG.C4.M16
 | 4
 | 16
-
 
 | TG.C8.M15
 | 8
 | 15
 
-
 | TG.C8.M32
 | 8
 | 32
-
 
 | TG.C16.M64
 | 16
 | 64
 
-
 | TG.C16.M122
 | 16
 | 122
 
+| TG.C16.M128
+| 16
+| 128
 
 | TG.C32.M244
 | 32
 | 244
 
+| TG.C32.M256
+| 32
+| 256
 
 | TG.C64.M488
 | 64
 | 488
 
+| TG.C64.M512
+| 64
+| 512
 
 | TG.C96.M768
 | 96

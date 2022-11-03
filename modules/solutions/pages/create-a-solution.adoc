@@ -41,6 +41,9 @@ Select your preferred cloud provider and the region closest to you for the best 
 
 See the Reference section for a full list of regions available for each cloud provider: xref:reference:index.adoc[Cloud Provider Reference]
 
+[NOTE]
+The xref:tigergraph-server:gsql-shell:web.adoc[GSQL Web Shell] is currently not supported on Azure-hosted clusters due to a limitation with Azure Application Gateway.
+
 === Instance settings
 
 Select TG.Free to create a free-tier cluster for the purposes of this guide.

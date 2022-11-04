@@ -1,7 +1,7 @@
 name: cloud
 title: TigerGraph Cloud
-version: master
-display_version: default
+version: 'nov-2022-update-staging'
+display_version: 'nov-2022-update-staging'
 start_page: start:overview.adoc
 
 nav:

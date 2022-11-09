@@ -1,5 +1,6 @@
 = Monitor Cluster Activity
 :page-aliases: view-activity-log.adoc, README.adoc
+:experimental:
 
 TigerGraph Cloud allows users to monitor activity at the organization and cluster level.
 
@@ -22,15 +23,11 @@ In the example screenshot shown previously, the search was filtered by the term 
 
 Each cluster also has an activity log, where you can view actions specific to that cluster.
 
-=== Navigate to My Clusters
-
-First find a cluster in the cluster list that you want to monitor.
-
-Click on the Access Management button.
+First find a cluster in the cluster list that you want to monitor and click the Access Management button.
 
 image::cluster-list-view.png[]
 
-=== Click Activities
+
 
 Click the *Activities* tab to view the activity log of that cluster.
 

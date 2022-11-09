@@ -1,17 +1,3 @@
-= View Activity Log
+= Single Cluster Activity Log
 
-TigerGraph Cloud clusters log their activities in an activity log, which you can view on TigerGraph Cloud.
 
-== 1. Navigate to My Clusters
-
-After https://tgcloud.io/[logging into TigerGraph Cloud], find a cluster in the cluster list that you want to monitor.
-
-Click on the Access Management button.
-
-image::cluster-list-view.png[]
-
-== 2. Click Activities
-
-Click the *Activities* tab to view the activity log of that cluster.
-
-image::cluster-activity-list.png[]

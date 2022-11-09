@@ -54,8 +54,7 @@ Once logged in, you can create clusters and add more users to your organization.
 
 == Billing
 
-* xref:billing:manage-payment-methods.adoc[Manage payment methods]
-* xref:billing:subscriptions.adoc[Cloud Marketplace subscriptions]
+* xref:billing:index.adoc[]
 
 == FAQs
 

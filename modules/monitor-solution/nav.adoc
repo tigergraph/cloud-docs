@@ -1,1 +1,1 @@
-* xref:README.adoc[Monitor Cluster Activity]
+* xref:index.adoc[Monitor Cluster Activity]

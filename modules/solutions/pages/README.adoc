@@ -2,7 +2,7 @@
 
 Clusters are fully-managed TigerGraph deployments. Here are some resources you can use to create, configure and manage your clusters:
 
-* xref:create-a-solution.adoc[Create a new solution]
+* xref:create-a-solution.adoc[Create a new cluster]
  ** A step-by-step guide to creating a new cluster
 * xref:cloud-providers-and-regions.adoc[Cloud Providers and Regions]
  ** Information on the different cloud providers and regions available on TigerGraph Cloud
@@ -10,3 +10,7 @@ Clusters are fully-managed TigerGraph deployments. Here are some resources you c
  ** Learn how to choose the appropriate instance type and disk size
 * xref:stop-restart-and-terminate.adoc[Stop, Restart and Terminate a Cluster]
  ** A step-by-step guide on how to stop, restart, and terminate a cluster
+* xref:monitor-solution:index.adoc[]
+** Information on the activity monitoring available on TigerGraph Cloud
+* xref:billing:index.adoc[]
+** Add a payment method and keep track of invoices

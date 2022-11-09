@@ -1,3 +1,1 @@
-* xref:README.adoc[]
-** xref:manage-payment-methods.adoc[]
-** xref:subscriptions.adoc[]
+* xref:index.adoc[]

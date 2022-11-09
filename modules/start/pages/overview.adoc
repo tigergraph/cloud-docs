@@ -5,8 +5,10 @@
 TigerGraph Cloud is a fully-managed cloud database built on the same TigerGraph Enterprise Server engine that delivers the fastest and most scalable graph database.
 TigerGraph Cloud handles all the complexity of deploying and managing your deployments on the cloud service provider of your choice (AWS, Azure, and GCP).
 
+image::cloud-dashboard.png[]
+
 TigerGraph Cloud is completely integrated with the full TigerGraph Suite.
-Everything including Admin Portal, GraphStudio, Insights, and more is available with a TigerGraph Cloud instance.
+Everything including Admin Portal, GraphStudio, Insights, Machine Learning Workbench, and more is available with a TigerGraph Cloud instance.
 
 == Get started with TigerGraph Cloud
 

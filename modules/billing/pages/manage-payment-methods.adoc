@@ -6,13 +6,3 @@ For standard hourly use of TigerGraph Cloud clusters, we currently support payme
 If you need to use ACH payment or purchase bulk cloud credits, please contact sales@tigergraph.com
 
 == Billing menu
-
-Click btn:[Billing] on the left side menu bar to get to the Billing page.
-
-image::billing-page.png[]
-
-To connect a credit card to your account, click the btn:[Payment Methods] tab at the top and add a card.
-
-You can also remove cards or set them as default payment methods to avoid being prompted in the future.
-
-The btn:[Marketplace] tab gives you an overview of your xref:subscriptions.adoc[] to cloud service providers that are linked to your account.

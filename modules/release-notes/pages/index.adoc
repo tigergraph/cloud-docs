@@ -10,6 +10,34 @@ These TigerGraph Cloud updates are separate from updates to the core TigerGraph 
 Cloud clusters are not automatically upgraded to a new TigerGraph version when a new version is released.
 For version upgrades for existing clusters, please contact TigerGraph Support.
 
+== November 2022 Updates
+
+Release date: November 15th, 2022
+
+=== Feature updates
+
+* xref:insights:intro:index.adoc[TigerGraph Insights,] an all-new data visualization platform, is now available in TigerGraph Cloud
+* Integrated a new starter kit fully optimized for xref:ml-workbench:on-cloud:on-tgcloud.adoc[Machine Learning Workbench]
+* Reworked Billing and Analytics pages for improved ease of use
+* TigerGraph 3.8.0 is now available when creating new clusters
+
+---
+
+Release date: November 9th, 2022
+
+=== Feature updates
+* Updates to service termination flow: Paid tier cluster will not be automatically terminated.
+* Removed $25 free credit for new users.
+* Added Jakarta (Indonesia) region to AWS.
+* Added Arizona (US) and Washington (US) region to Azure.
+* Re-organized starter-kits into new categories.
+* Added user and organization activity logging.
+
+=== Fixed issues
+
+* Fixed an issue where customers with outstanding balances were unable to create free-tier clusters.
+* Fixed an issue with creating a user named `tigergraph` as a database user.
+
 == October 2022 Updates
 
 Release date: October 12th, 2022
@@ -38,7 +66,6 @@ Release date: October 5th, 2022
 Release date: September 15th, 2022
 
 === New Features
-//* TigerGraph Insights, an all-new data visualization platform, is now available in TigerGraph Cloud
 * Enabled SSO with Okta and Azure Active Directory
 * Seamless UI redesign that integrates with the TigerGraph Suite of web applications
 * TigerGraph 3.7.0 is available when creating new clusters
@@ -56,7 +83,7 @@ Log out and log in again to fix this error.
 Release date: August 18th, 2022
 
 === New Features
-* Users with an invitation can provision xref:ml-workbench:on-cloud:index.adoc[ML Workbench (preview version)] instances on top of TigerGraph Cloud clusters.
+* Users with an invitation can provision xref:ml-workbench:on-cloud:mlwb-service.adoc[ML Workbench (preview version)] instances on top of TigerGraph Cloud clusters.
 ** If you are interested in experimenting with ML Workbench on TigerGraph Cloud, please contact sales@tigergraph.com
 * TigerGraph 3.6.2 is available when creating new clusters.
 

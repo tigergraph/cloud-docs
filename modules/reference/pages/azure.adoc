@@ -3,8 +3,10 @@
 == Regions
 
 * East US (Virginia)
-* East US (Virginia 2)
+* East US 2 (Virginia 2)
 * West US (California)
+* West US 2 (Washington)
+* West US 3 (Arizona)
 * West Europe (Amsterdam)
 * Central India (Pune)
 * South India (Chennai)

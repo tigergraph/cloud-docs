@@ -17,7 +17,8 @@ Release date: November 15th, 2022
 === Feature updates
 
 * xref:insights:intro:index.adoc[TigerGraph Insights,] an all-new data visualization platform, is now available in TigerGraph Cloud
-* Integrated a new starter kit fully optimized for xref:ml-workbench:on-cloud:on-tgcloud.adoc[Machine Learning Workbench]
+* xref:ml-workbench:on-cloud:on-tgcloud.adoc[Machine Learning Workbench] is now integrated seamlessly into TigerGraph Cloud
+* Added a dedicated starter kit for Machine Learning Workbench on TigerGraph Cloud
 * Reworked Billing and Analytics pages for improved ease of use
 * TigerGraph 3.8.0 is now available when creating new clusters
 
@@ -26,12 +27,12 @@ Release date: November 15th, 2022
 Release date: November 9th, 2022
 
 === Feature updates
-* Updates to service termination flow: Paid tier cluster will not be automatically terminated.
-* Removed $25 free credit for new users.
-* Added Jakarta (Indonesia) region to AWS.
-* Added Arizona (US) and Washington (US) region to Azure.
-* Re-organized starter-kits into new categories.
-* Added user and organization activity logging.
+* Updates to service termination flow: Paid tier cluster will not be automatically terminated
+* Removed $25 free credit for new users
+* Added Jakarta (Indonesia) region to AW.
+* Added Arizona (US) and Washington (US) regions to Azure
+* Re-organized starter kits into new categories
+* Added user and organization xref:monitor-solution:index.adoc[Activity Logging]
 
 === Fixed issues
 

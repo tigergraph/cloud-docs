@@ -9,7 +9,7 @@ NOTE: You can only create database users for clusters created after August 18th,
 == Create a database user
 
 === Prerequisite
-* Your TigerGraph Cloud cloud has role Organization Admin
+* Your TigerGraph Cloud account has role Organization Admin
 
 === Procedure
 
@@ -25,7 +25,7 @@ For details on TigerGraph's role-based access control model, see xref:tigergraph
 == Delete a database user
 
 === Prerequisite
-* Your TigerGraph Cloud cloud has role Organization Admin
+* Your TigerGraph Cloud account has role Organization Admin
 
 === Procedure
 

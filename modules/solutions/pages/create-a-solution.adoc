@@ -15,10 +15,9 @@ For more advanced testing and learning, consider adding a payment method and usi
 
 == Create a Cluster
 
-On the home page, if you have no clusters and have the privileges to create a cluster in your organization, you will see an option in the center to create a cluster.
+On the Clusters page, if you have no clusters and have the privileges to create a cluster in your organization, you will see an option in the center to create a cluster.
 
 image::main-page-no-clusters.png[]
-
 
 === Choose a name and version
 
@@ -41,6 +40,9 @@ Select your preferred cloud provider and the region closest to you for the best 
 
 See the Reference section for a full list of regions available for each cloud provider: xref:reference:index.adoc[Cloud Provider Reference]
 
+[NOTE]
+The xref:tigergraph-server:gsql-shell:web.adoc[GSQL Web Shell] is currently not supported on Azure-hosted clusters due to a limitation with Azure Application Gateway.
+
 === Instance settings
 
 Select TG.Free to create a free-tier cluster for the purposes of this guide.
@@ -55,7 +57,7 @@ On the free tier, partition and replication are limited to 1, meaning xref:tiger
 
 === Advanced settings
 
-image::advanced-settings.png[]
+image::advanced-settings-top.png[]
 
 If you have set up a paid cluster, you can set up private access as long as your region supports it.
 
@@ -63,7 +65,6 @@ See xref:private-access:index.adoc[] for details.
 
 In this section, you can also add a custom subdomain to easily identify your cluster via URL.
 If you don't add a custom subdomain, a random alphanumeric subdomain will be automatically generated.
-
 
 === Choose a starter kit
 
@@ -74,15 +75,25 @@ Most of our starter kits have a link:https://www.tigergraph.com/starterkits/[dem
 
 Select a starter kit or select btn:[Blank] to create an empty cluster that you can load with your own schema and data using GraphStudio.
 
+==== Graph Machine Learning Starter Kit
+
+image::advanced-settings-mlwb.png[]
+
+TigerGraph Cloud supports integration with xref:ml-workbench:intro:index.adoc[Machine Learning Workbench] and also provides a custom-built starter kit. Machine Learning Workbench is not available on other starter kits.
+
+[NOTE]
+
+Machine Learning Workbench is only available on single-machine clusters.
+
 === Create cluster
 
 When you've finished making your choices, click btn:[Create Cluster] at the bottom of the screen to begin the creation process.
 It usually takes several minutes to make a cluster available.
 
-== Log in to GraphStudio
+== Access your cluster
 
-After you have created your cluster, it may take a few minutes for it to be ready. Once you see the status of your cluster turn to "Ready", you can proceed to log into GraphStudio.
+After you have created your cluster, it may take a few minutes for it to be ready.
+Once you see the status of your cluster turn to "Ready", you can choose many ways to access your cluster.
 
-Go to the Clusters view. Find an active cluster that has finished provisioning, click btn:[Tools], and click btn:[GraphStudio].
+See xref:access-solution:index.adoc[] for more information.
 
-image::full-cluster-actions-dropdown.png[]

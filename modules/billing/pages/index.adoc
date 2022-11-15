@@ -1,0 +1,63 @@
+= Billing
+:page-aliases: README.adoc, manage-payment-methods.adoc, subscriptions.adoc
+:experimental:
+
+Click the btn:[Billing] button in the left side panel to see an overview of your current and historical billing by cluster.
+
+image::billing-page-overview.png[]
+
+Cluster instances and storage are billed hourly, which means that you are charged for each continuous period of operation, measured in seconds.
+
+_Instances_ incur charges from when they are started until they are stopped (or terminated). _Disk storage_ attached to instances and _backup storage_ incur charges from when an instance is first activated until the instance is terminated.
+Our billing system will total the charges at the end of each calendar month, generate an itemized xref:invoices[invoice], and charge your card.
+
+Data transfer costs from the cloud platforms are calculated according to the cloud platform charge and will be added to your invoice in the following month.
+
+[NOTE]
+====
+This section only applies to the standard hourly service of TigerGraph Cloud. If you have a committed long-term contract with TigerGraph, please contact link:mailto:sales@tigergraph.com[sales@tigergraph.com] for questions.
+====
+
+== Pricing Information
+
+View our https://www.tigergraph.com/tigergraph-cloud-pricing/[pricing table] for detailed rates for each type of charge.
+
+
+== Payment Methods
+
+image::payment-methods.png[]
+
+For standard hourly use of TigerGraph Cloud clusters, we currently support payment through cards.
+
+To connect a credit card to your account, click the btn:[Add Credit Card] button in the center of the page.
+You can add multiple cards and set one as the default payment method.
+Removing a card will not affect cluster activity.
+
+If you need to use ACH payment or purchase bulk cloud credits, please contact sales@tigergraph.com
+
+
+=== Subscriptions
+
+You can also pay for TigerGraph Cloud via marketplace subscriptions through a cloud provider:
+
+* https://aws.amazon.com/marketplace/pp/prodview-5rpjtqdqixmds[AWS Marketplace]: Pay for TigerGraph Cloud via AWS
+* https://azuremarketplace.microsoft.com/en-us/marketplace/apps/tigergraph.tigergraph-cloud?tab=Overview[Azure Marketplace]: Pay for TigerGraph Cloud via Azure
+* https://console.cloud.google.com/marketplace/product/tigergraph-public/tigergraph-cloud[GCP Marketplace]: Pay for TigerGraph Cloud via GCP
+
+== Invoices
+
+Invoices are generated automatically for free and paid cluster tiers as a way to track usage.
+
+In the Billing page, click on the Invoices tab for a list of invoices.
+
+Invoices are created from the first through the last day of the month.
+
+image::invoices.png[]
+
+=== Sample Invoice
+
+image::sample-invoice.png[]
+
+Each invoice has a list of charges broken down by cluster usage.
+In this sample invoice, the prices are $0.00 because the cluster was on the free tier.
+

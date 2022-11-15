@@ -1,2 +1,1 @@
-* xref:README.adoc[]
-** xref:view-activity-log.adoc[]
+* xref:index.adoc[Monitor Cluster Activity]

@@ -79,7 +79,8 @@ Select a starter kit or select btn:[Blank] to create an empty cluster that you c
 
 image::advanced-settings-mlwb.png[]
 
-TigerGraph Cloud supports integration with xref:ml-workbench:intro:index.adoc[Machine Learning Workbench] and also provides a custom-built starter kit. Machine Learning Workbench is not available on other starter kits.
+TigerGraph Cloud supports integration with xref:ml-workbench:intro:index.adoc[Machine Learning Workbench] and also provides a custom-built starter kit.
+Machine Learning Workbench is not available on other starter kits or on TigerGraph Cloud solutions older than version 3.8.0.
 
 [NOTE]
 

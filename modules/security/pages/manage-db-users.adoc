@@ -6,6 +6,8 @@ This is different from your TigerGraph Organization account which allows you to 
 
 NOTE: You can only create database users for clusters created after August 18th, 2022.
 
+image::database-access.png[]
+
 == Create a database user
 
 === Prerequisite
@@ -16,7 +18,7 @@ NOTE: You can only create database users for clusters created after August 18th,
 . From the Cloud portal, go to btn:[Clusters].
 . Find the cluster you want to create users for, and select btn:[Access Management].
 . From the Cluster Access Management page, click btn:[Database Access].
-. Click btn:[Add new users] and specify the username and password.
+. Click btn:[Add Database User] and specify the username and password.
 * Make sure to keep a record of the username and password when you create the user.
 The password is no longer visible once you leave the page.
 . Assign roles to the user as needed.
@@ -32,4 +34,4 @@ For details on TigerGraph's role-based access control model, see xref:tigergraph
 . From the Cloud portal, go to btn:[Clusters].
 . Find the cluster you want to create users for, and select btn:[Access Management].
 . From the Cluster Access Management page, click btn:[Database Access].
-. Find the user you want to delete, and click btn:[Delete] in the Actions column.
+. Find the user you want to delete, and click the trashcan btn:[Delete] button in the Actions column.

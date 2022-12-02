@@ -1,17 +1,21 @@
 = Send REST Requests to a Cluster
 :experimental:
 
-Besides GraphStudio, another way to interact with your TigerGraph database is through the REST API.
+Besides GraphStudio, another way to interact with your TigerGraph database is through the REST API, also known as RESTPP.
 
 On TigerGraph Cloud, RESTPP authentication is enabled by default, and only the requests made with a valid authorization token in the request header are accepted.
 
 == Generate an authorization token
 
+This process is handled through the Admin Portal, which can be accessed through the Tools menu in a cluster.
+
+image::access-solution:full-cluster-actions-dropdown.png[]
+
 Here is a step-by-step guide to generating and using an authorization token for RESTPP:
 
 === 1. Navigate to User Management
 
-From GraphStudio, go to menu:Admin Portal[User Management].
+In the Admin Portal, click btn:[User Management] in the left side panel.
 
 image::image (46).png[Click User Management]
 

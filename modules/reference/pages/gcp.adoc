@@ -5,6 +5,7 @@
 * US-West1 (Oregon)
 * Europe-West2 (London)
 * Asia-Southeast1 (Singapore)
+* Asia-Southeast2 (Jakarta)
 * Australia-Southeast1 (Sydney)
 
 == Instance types

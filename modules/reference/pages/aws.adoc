@@ -4,6 +4,7 @@
 
 * US-West-1 (Northern California, USA)
 * US-East-1 (Northern Virginia, USA)
+* US-East-2 (Ohio, USA)
 * EU-West-1 (Dublin, Ireland)
 * EU-West-2 (London, UK)
 * EU-Central-1 (Frankfurt, Germany)

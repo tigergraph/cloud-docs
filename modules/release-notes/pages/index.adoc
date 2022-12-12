@@ -32,7 +32,7 @@ Release date: November 9th, 2022
 * Added Jakarta (Indonesia) region to AW.
 * Added Arizona (US) and Washington (US) regions to Azure
 * Re-organized starter kits into new categories
-* Added user and organization xref:monitor-solution:index.adoc[Activity Logging]
+* Added user and organization xref:monitor-solution:monitor-cluster-activity.adoc[Activity Logging]
 
 === Fixed issues
 

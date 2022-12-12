@@ -1,5 +1,7 @@
 = Access a Cluster through GSQL Shell
 :experimental:
+:page-aliases: access-solution/graphstudio.adoc
+
 
 The GSQL Shell is a newly redesigned browser-based interface for running GSQL commands on a cluster.
 It includes useful developer tools such as keyboard shortcuts and customized autocomplete for commands.

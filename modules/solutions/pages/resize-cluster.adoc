@@ -1,5 +1,6 @@
 = Resize a Cluster
 :experimental:
+:page-aliases: resize-solution/index.adoc
 
 As your workload changes, you can resize your TigerGraph Cloud cluster to maximize the efficiency of your resources.
 You can resize the instance type (the CPU and RAM allocated to your instance) or upgrade the storage volume:

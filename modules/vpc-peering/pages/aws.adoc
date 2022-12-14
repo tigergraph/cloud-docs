@@ -15,32 +15,34 @@ TigerGraph Cloud VPC and another AWS VPC.
 [[initiate-vpc-peering]]
 === Initiate VPC peering
 
-Log into the cloud portal, and navigate to the Network tab. Click
-Initiate VPC peering.
+Log into the cloud portal and navigate to the Network tab on the left.
+Click btn:[Initiate VPC peering].
 
-image:cloud-network.png[Network tab]
+image:set-up.png[Network tab]
 
-In the TigerGraph VPC section, choose the TigerGraph VPC that you want
-to initiate the peering connection from.
+Choose AWS and enter a region such as `+us-west-1+`.
 
-In the Peered VPC section, fill in the information of the VPC that you
+image:aws-peering.png[]
+
+In the Peer VPC section, fill in the information of the VPC that you
 hope to peer with:
 
-* `+OwnerID+`
-** The ID of the VPC owner’s AWS account, ex: `+123456789012+`
+* AWS Account ID
+** The ID of the VPC owner’s AWS account.
 * `+Region+`
-** The region of the VPC you want to peer with, ex: `+us-west-1+`
+** The region of the VPC you want to peer with.
 * `+VPC ID+`
-** The ID of the VPC: `+vpc-123456789abcdef01+`
+** The ID of the VPC from the AWS dashboard.
 * `+CIDR+`
-** CIDR-block of the peered VPC, ex: `+10.0.0.0/16+`. You can also use a
+** CIDR-block of the peered VPC. You can also use a
 IPv6 CIDR here if your peered VPC has one.
+
+Click btn:[Initiate VPC Peering].
 
 [[accept-vpc-peering-request]]
 === Accept VPC peering request
 
-After you have completed the first step, a VPC peering connection will
-be sent to your VPC. Follow the steps below to accept the peering
+TigerGraph then sends a VPC peering connection to your VPC. Follow the steps below to accept the peering
 connection on your AWS VPC. See more in AWS's documentation on
 https://docs.aws.amazon.com/vpc/latest/peering/create-vpc-peering-connection.html#accept-vpc-peering-connection[Accepting
 VPC Peering Connections].

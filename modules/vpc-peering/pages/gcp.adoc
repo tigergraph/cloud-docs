@@ -15,25 +15,27 @@ TigerGraph Cloud VPC and another GCP VPC.
 [[initiate-vpc-peering]]
 === Initiate VPC Peering
 
-Log in to the Cloud portal and navigate to the Network tab, click
-btn:[Initiate VPC Peering]
+Log into the cloud portal and navigate to the Network tab on the left.
+Click btn:[Initiate VPC peering].
 
-image:cloud-network.png[Network tab]
+image:set-up.png[Network tab]
 
-In the TigerGraph VPC section, choose the TigerGraph VPC that you want
-to initiate the peering connection from.
+Select Google Cloud and a region, then click btn:[Next].
 
-In the Peered VPC section, fill in the information of the VPC that you
+image:gcp-peering.png[]
+
+In the Peer VPC section, fill in the information of the VPC that you
 hope to peer with:
 
-* VPC ID: `+projects/[projectID]/global/networks/[VPCName]+`, where
-`+projectID+` is the ID of your GCP project, and `+VPCName+` is the name
-of the VPC.
+* GCP Project ID
+* VPC Name
+
+Click btn:[Initiate VPC Peering].
 
 [[create-vpc-peering-connection-from-peered-vpc-to-host-vpc]]
 === Create VPC peering connection from peered VPC to host VPC
 
-After completing Step 1, your TigerGraph VPC will create a peering
+Your TigerGraph VPC then creates a peering
 configuration to the VPC you hope to peer with. At this time, the
 peering connection will appear as *Inactive*. To complete the peering
 connection, your still need to create a matching peering configuration

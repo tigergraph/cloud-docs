@@ -25,16 +25,16 @@ Choose AWS and enter a region such as `+us-west-1+`.
 image:aws-peering.png[]
 
 In the Peer VPC section, fill in the information of the VPC that you
-hope to peer with:
+want to peer with:
 
-* AWS Account ID
+* *AWS Account ID*
 ** The ID of the VPC owner’s AWS account.
-* `+Region+`
+* *Region*
 ** The region of the VPC you want to peer with.
-* `+VPC ID+`
+* *VPC ID*
 ** The ID of the VPC from the AWS dashboard.
-* `+CIDR+`
-** CIDR-block of the peered VPC. You can also use a
+* *CIDR*
+** CIDR-block of the peered VPC. You can also use an
 IPv6 CIDR here if your peered VPC has one.
 
 Click btn:[Initiate VPC Peering].

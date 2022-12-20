@@ -1,8 +1,8 @@
 = Access a Cluster
 :description: Methods to access a TigerGraph Cloud cluster.
-:page-aliases: readme.adoc, README.adoc, access-solution/index.adoc
+:page-aliases: access-solution/index.adoc
 
-Once a cluster has been provisioned, you access it and interact with the database in the following ways:
+Once a cluster has been provisioned, you can access it and interact with the database in any of the following ways:
 
 * xref:access-solution/graphstudio.adoc[GraphStudio]
 * xref:access-solution/rest-requests.adoc[REST endpoints]

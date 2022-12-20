@@ -1,6 +1,6 @@
 = Access a Cluster through GraphStudio
 :experimental:
-:page-aliases: access-solution/graphstudio.adoc
+:page-aliases:
 
 The TigerGraph GraphStudio™ UI (User Interface) provides an intuitive, browser-based interface that helps users get started quickly with graph-based application development tasks: designing a graph schema, creating a schema mapping, loading data, exploring the graph, and writing GSQL queries.
 

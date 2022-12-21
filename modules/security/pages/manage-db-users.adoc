@@ -1,5 +1,6 @@
 = Manage Database Users
 :experimental:
+:page-aliases: manage-database-users.adoc
 
 When you connect to a TigerGraph Cloud instance programmatically, such as from connectors like pyTigerGraph or the remote GSQL client, you often need to provide credentials that are created in the database of your cluster.
 This is different from your TigerGraph Organization account which allows you to log in to clusters in your organization to which you have access.

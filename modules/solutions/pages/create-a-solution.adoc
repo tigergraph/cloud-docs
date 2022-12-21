@@ -38,7 +38,12 @@ Different providers have different regions available.
 
 Select your preferred cloud provider and the region closest to you for the best performance.
 
-See the Reference section for a full list of regions available for each cloud provider: xref:reference:index.adoc[Cloud Provider Reference]
+Check out the Reference page for each cloud provider to get a full list of regions and cluster hardware available:
+
+* xref:reference:aws.adoc[]
+* xref:reference:azure.adoc[]
+* xref:reference:gcp.adoc[]
+
 
 [NOTE]
 The xref:tigergraph-server:gsql-shell:web.adoc[GSQL Web Shell] is currently not supported on Azure-hosted clusters due to a limitation with Azure Application Gateway.

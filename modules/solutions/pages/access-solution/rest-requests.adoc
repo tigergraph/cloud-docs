@@ -1,6 +1,6 @@
 = Send REST Requests to a Cluster
 :experimental:
-:page-aliases:
+:page-aliases: solutions/access-solution/rest-requests.adoc
 
 
 Besides GraphStudio, another way to interact with your TigerGraph database is through the REST API, also known as RESTPP.

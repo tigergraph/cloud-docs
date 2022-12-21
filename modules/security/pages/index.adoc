@@ -16,7 +16,7 @@ This page provides an overview of the security features available on TigerGraph 
 ** xref:private-access:gcp.adoc[GCP]
 * Secured external cloud
 data access
-** xref:access-solution:rest-requests.adoc[RESTPP authentication]
+** xref:solutions:access-solution/rest-requests.adoc[RESTPP authentication]
 
 == Authentication
 * xref:password-policy.adoc[Strong password requirement] when xref:start:overview.adoc#_get_started_with_tigergraph_cloud[creating an account]

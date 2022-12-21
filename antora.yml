@@ -6,11 +6,11 @@ start_page: start:overview.adoc
 
 nav:
 - modules/start/nav.adoc
+- modules/release-notes/nav.adoc
 - modules/solutions/nav.adoc
-- modules/private-access/nav.adoc
 - modules/security/nav.adoc
+- modules/private-access/nav.adoc
 - modules/vpc-peering/nav.adoc
 - modules/billing/nav.adoc
-- modules/release-notes/nav.adoc
 - modules/support/nav.adoc
 - modules/reference/nav.adoc

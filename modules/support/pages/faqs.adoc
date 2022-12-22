@@ -337,7 +337,7 @@ The cluster is deleted according to the cloud platforms policies and cannot be r
 
 === *Q: Do you offer backup in TigerGraph Cloud?*
 
-A: Yes. Please see our guide for using xref:backup-and-restore:index.adoc[] in the Admin Portal.
+A: Yes. Please see our guide for using xref:solutions:backup-and-restore.adoc[] in the Admin Portal.
 
 
 === *Q: What backup options are available?*

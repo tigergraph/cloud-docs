@@ -50,7 +50,7 @@ Once logged in, you can create clusters and add more users to your organization.
 == Manage TigerGraph Cloud clusters
 
 * xref:gui:admin-portal:management/user-management.adoc[Security and user management]
-* xref:backup-and-restore:index.adoc[Backup and restore]
+* xref:solutions:backup-and-restore.adoc[Backup and restore]
 
 == Billing
 

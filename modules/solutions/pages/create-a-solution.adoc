@@ -101,5 +101,5 @@ It usually takes several minutes to make a cluster available.
 After you have created your cluster, it may take a few minutes for it to be ready.
 Once you see the status of your cluster turn to "Ready", you can choose many ways to access your cluster.
 
-See xref:access-solution:cluster-access.adoc[] for more information.
+See xref:cluster-access.adoc[] for more information.
 

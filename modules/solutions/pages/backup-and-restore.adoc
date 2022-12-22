@@ -13,7 +13,7 @@ The backup feature is not supported on free-tier instances or instances provisio
 All tasks described on this page can be completed in the *Backup and Restore tab* in the *Admin Portal*.
 To get to the *Admin Portal*, open the Tools menu on any cluster in the My Clusters view.
 
-image::access-solution:full-cluster-actions-dropdown.png[]
+image::full-cluster-actions-dropdown.png[]
 
 Inside the Admin Portal, choose the Backup and Restore tab on the left. This section is not available in free-tier clusters.
 

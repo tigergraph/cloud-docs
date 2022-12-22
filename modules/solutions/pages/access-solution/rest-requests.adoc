@@ -11,7 +11,7 @@ On TigerGraph Cloud, RESTPP authentication is enabled by default, and only the r
 
 This process is handled through the Admin Portal, which can be accessed through the Tools menu in a cluster.
 
-image::access-solution:full-cluster-actions-dropdown.png[]
+image::full-cluster-actions-dropdown.png[]
 
 Here is a step-by-step guide to generating and using an authorization token for RESTPP:
 

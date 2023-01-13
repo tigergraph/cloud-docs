@@ -1,7 +1,7 @@
 name: cloud
 title: TigerGraph Cloud
 version: "nav-reorganize-DOC-1579"
-display_version: new-nav
+display_version: "nav-reorganize-DOC-1579"
 start_page: start:overview.adoc
 
 nav:

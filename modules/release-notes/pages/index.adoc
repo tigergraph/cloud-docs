@@ -10,6 +10,21 @@ These TigerGraph Cloud updates are separate from updates to the core TigerGraph 
 Cloud clusters are not automatically upgraded to a new TigerGraph version when a new version is released.
 For version upgrades for existing clusters, please contact TigerGraph Support.
 
+== January 2023 Updates
+Release date: January 18th, 2023
+
+=== Feature updates
+* Invoices are now sent in PDF format.
+* Disks on AWS can now be resized up to 2TB.
+
+=== Fixed issues
+
+* Disk resize limits now match the limits from each cloud service provider.
+
+=== Known issues
+* Subscriptions to TigerGraph Cloud from cloud service provider marketplaces occasionally encounter issues during setup.
+Please contact TigerGraph Support for assistance if your account is affected.
+
 == November 2022 Updates
 
 Release date: November 15th, 2022

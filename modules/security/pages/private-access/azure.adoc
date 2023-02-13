@@ -1,11 +1,13 @@
 = Azure Private Link
 :experimental:
 :description: Setting up Private Link on Azure
+:page-aliases: private-access/azure.adoc
+
 
 This page describes the setup process for Azure Private Link, a Microsoft service that securely connects a Virtual Network (VN) to Azure APIs without creating an external IP address.
 You need an Azure account to use this feature.
 
-video::Sv20Ugt_REk[youtube]
+link:https://youtu.be/Sv20Ugt_REk[Azure Private Link on TigerGraph - Video Tutorial]
 
 == Azure General Workflow
 

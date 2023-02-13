@@ -1,4 +1,0 @@
-* xref:index.adoc[]
-** xref:aws.adoc[]
-** xref:gcp.adoc[]
-** xref:azure.adoc[]

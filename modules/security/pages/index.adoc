@@ -9,7 +9,7 @@ This page provides an overview of the security features available on TigerGraph 
 * All communication secured
 ** TLS 1.2 for client-server communication
 * Dedicated VPCs for each organization
-* xref:vpc-peering:readme.adoc[VPC peering]
+* xref:vpc-peering/readme.adoc[VPC peering]
 * Private Links
 ** xref:private-access:aws.adoc[AWS]
 ** xref:private-access:azure.adoc[Azure]

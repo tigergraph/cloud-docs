@@ -1,4 +1,0 @@
-* xref:readme.adoc[]
-** xref:aws.adoc[VPC Peering on AWS]
-** xref:gcp.adoc[VPC Peering on GCP]
-** xref:azure.adoc[VPC Peering on Azure]

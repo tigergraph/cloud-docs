@@ -19,82 +19,58 @@ On the Clusters page, if you have no clusters and have the privileges to create 
 
 image::main-page-no-clusters.png[]
 
-=== Choose a name and version
+Click this button to go to the Create cluster page.
 
-image::cluster-name-and-version.png[]
+image::choose-cluster-type.png[]
 
-Not all TigerGraph versions that are offered on-premises are offered on TigerGraph Cloud.
-In the dropdown list, choose the version of TigerGraph you want to run.
 
-Name your cluster to set it apart from others in your cluster view.
-You can also optionally give it a description to explain what you plan to use it for.
+=== Free-tier clusters
 
-=== Select cloud provider and region
+Each organization can have one free-tier cluster created at a time.
 
-image:cloud-provider-and-region.png[]
+Select a use case to immediately create a cluster with a sample data set and graph schema.
+Many use cases come with pre-installed, customized queries for you to test out as well.
 
-TigerGraph Cloud supports free-tier clusters on all three cloud providers.
-Different providers have different regions available.
+TigerGraph is constantly expanding its selection of use cases available for all users.
+Click btn:[View all use cases] to reveal all of the potential sample data sets to explore.
 
-Select your preferred cloud provider and the region closest to you for the best performance.
+=== Professional-tier clusters
 
-Check out the Reference page for each cloud provider to get a full list of regions and cluster hardware available:
+image::create-cluster-professional.png[]
 
-* xref:reference:aws.adoc[]
-* xref:reference:azure.adoc[]
-* xref:reference:gcp.adoc[]
+In the Professional tier, you have the option to choose your cloud provider, region, instance type and size, and partition and replication factors.
+See the xref:reference:index.adoc[] section for more information.
 
+The default options are chosen for you automatically in the Free tier.
 
 [NOTE]
 The xref:tigergraph-server:gsql-shell:web.adoc[GSQL Web Shell] is currently not supported on Azure-hosted clusters due to a limitation with Azure Application Gateway.
 
-=== Instance settings
+Not all TigerGraph versions that are offered on-premises are offered on TigerGraph Cloud.
+In the dropdown list, choose the version of TigerGraph you want to run.
 
-Select TG.Free to create a free-tier cluster for the purposes of this guide.
-More powerful virtual machines require you to use credits in your account or connect a payment method.
+image:cluster-name-and-version.png[]
 
-image:instance-settings.png[]
-
-Select *50 GB* for your disk size to stay within the free tier.
-
-On the free tier, partition and replication are limited to 1, meaning xref:tigergraph-server:ha:index.adoc[high availability (HA)] is disabled.
-
-
-=== Advanced settings
-
-image::advanced-settings-top.png[]
-
-If you have set up a paid cluster, you can set up private access as long as your region supports it.
-
-See xref:private-access:index.adoc[] for details.
+Name your cluster to set it apart from others in your cluster view.
+You can also optionally give it a description to explain what you plan to use it for.
 
 In this section, you can also add a custom subdomain to easily identify your cluster via URL.
 If you don't add a custom subdomain, a random alphanumeric subdomain will be automatically generated.
 
-=== Choose a starter kit
+=== Enterprise-tier clusters
 
-image:starter-kit-list.png[]
+image::enterprise-tier-clusters.png[]
 
-TigerGraph Cloud Starter Kits are built with a sample graph data schema, dataset, and queries focused on a specific use case to help you get started quickly.
-Most of our starter kits have a link:https://www.tigergraph.com/starterkits/[demo video] that walks you through the schema and the queries built for its use case.
+TigerGraph Cloud offers enterprise-level hardware and support solutions for graph databases.
+Click btn:[Contact us] or send an email to sales@tigergraph.com for more information.
 
-Select a starter kit or select btn:[Blank] to create an empty cluster that you can load with your own schema and data using GraphStudio.
+=== ML Workbench
 
-==== Graph Machine Learning Starter Kit
-
-image::advanced-settings-mlwb.png[]
-
-TigerGraph Cloud supports integration with xref:ml-workbench:intro:index.adoc[Machine Learning Workbench] and also provides a custom-built starter kit.
-Machine Learning Workbench is not available on other starter kits or on TigerGraph Cloud solutions older than version 3.8.0.
+TigerGraph Cloud supports integration with xref:ml-workbench:intro:index.adoc[Machine Learning Workbench] and also provides a custom-built use case starter kit.
+Machine Learning Workbench is not available with other use case starter kits or on TigerGraph Cloud solutions older than version 3.8.0.
 
 [NOTE]
-
 Machine Learning Workbench is only available on single-machine clusters.
-
-=== Create cluster
-
-When you've finished making your choices, click btn:[Create Cluster] at the bottom of the screen to begin the creation process.
-It usually takes several minutes to make a cluster available.
 
 == Access your cluster
 

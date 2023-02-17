@@ -14,7 +14,11 @@ Click btn:[Sign Up] on the https://tgcloud.io/[TigerGraph Cloud landing page].
 
 When you register for a new TigerGraph Cloud account, you create an Organization Account to which you can later invite other users.
 
-Create a new account with a company name, personal name, email address, and password of your choice.
+image::create-organization.png[TigerGraph Cloud Create Organization page]
+
+Create a new account with a company name, personal name, and email address.
+
+If you are signing up for the first time, you will be prompted to enter a password.
 Please note the xref:security:password-policy.adoc[] that applies to TigerGraph Cloud.
 
 After completing the signup page, you will get a link to verify your email address.

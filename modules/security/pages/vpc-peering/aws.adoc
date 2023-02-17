@@ -2,6 +2,8 @@
 :sectnums:
 :experimental:
 :description: The steps to set up VPC peering between TigerGraph's AWS VPC and your AWS VPC.
+:page-aliases: cloud:vpc-peering/aws.adoc
+
 
 This is a guide for setting up a VPC peering connection between your
 TigerGraph Cloud VPC and another AWS VPC.

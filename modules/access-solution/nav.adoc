@@ -1,4 +1,0 @@
-* xref:index.adoc[]
-** xref:graphstudio.adoc[]
-** xref:rest-requests.adoc[]
-** xref:gsql-web-shell.adoc[]

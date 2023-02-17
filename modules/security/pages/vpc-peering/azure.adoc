@@ -2,7 +2,7 @@
 :description: The steps to set up VPC peering between the TigerGraph Cloud Azure VN and another Azure VN.
 :experimental:
 :sectnums:
-
+:page-aliases: cloud:vpc-peering/azure.adoc
 
 This is a guide for setting up a Virtual Network (VN) peering connection between the TigerGraph Cloud VN and another Azure VN.
 

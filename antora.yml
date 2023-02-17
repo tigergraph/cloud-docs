@@ -1,20 +1,14 @@
 name: cloud
 title: TigerGraph Cloud
-version: master
-display_version: default
+version: "nav-reorganize-DOC-1579"
+display_version: "nav-reorganize-DOC-1579"
 start_page: start:overview.adoc
 
 nav:
 - modules/start/nav.adoc
-- modules/solutions/nav.adoc
-- modules/access-solution/nav.adoc
-- modules/private-access/nav.adoc
-- modules/monitor-solution/nav.adoc
-- modules/resize-solution/nav.adoc
-- modules/security/nav.adoc
-- modules/backup-and-restore/nav.adoc
-- modules/vpc-peering/nav.adoc
-- modules/billing/nav.adoc
 - modules/release-notes/nav.adoc
+- modules/solutions/nav.adoc
+- modules/security/nav.adoc
+- modules/billing/nav.adoc
 - modules/support/nav.adoc
 - modules/reference/nav.adoc

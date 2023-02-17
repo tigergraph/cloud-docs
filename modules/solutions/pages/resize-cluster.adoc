@@ -1,8 +1,13 @@
-= Sizing and Scaling
+= Resize a Cluster
+:experimental:
+:page-aliases: resize-solution/index.adoc solutions/sizing-and-scaling.adoc
 
-TigerGraph Cloud offers different choices when it comes to instance types and disk sizes. This document helps you find the right instance type and disk size for your workload.
+As your workload changes, you can resize your TigerGraph Cloud cluster to maximize the efficiency of your resources.
+You can resize the instance type (the CPU and RAM allocated to your instance) or upgrade the storage volume.
 
 == Choose the right instance type
+
+If you choose to upgrade the instance type of a free-tier cluster, you must also upgrade the disk volume of the cluster.
 
 Larger graphs require more RAM. Higher performance calls for both more CPUs and more RAM.
 
@@ -24,3 +29,31 @@ Disk storage refers to the root disk attached to your instance that holds the fo
 When you choose the size of the disk, consider the size of the data for all the above installations and files.
 
 To ensure adequate disk storage, TigerGraph Cloud mandates that any disk size of a cluster must be *at least 3 times* the size of its instance's RAM. For example, if your cluster instance has 64 GB of RAM, then the disk size must be higher than 192 GB.
+
+[NOTE]
+Resizing instance types will result in a short period of downtime.
+
+== Procedure
+
+In the Clusters view, click the three-dot button to show the Actions menu column and select btn:[Resize cluster].
+
+image::cluster-actions-dropdown.png[]
+
+=== Resize instance size
+
+In the window that appears, by default, the *Resize instance size* panel is selected.
+*Resize disk size* is grayed out by default for free-tier clusters.
+
+image::sample-cluster-resizing.png[]
+
+Click btn:[Resize Instance] and choose the new instance type that you'd like to change to.
+
+=== Resize disk size
+
+If you decide that your cluster needs more disk storage space, TigerGraph Cloud allows you to upgrade your disk volume.
+
+image::screen-shot-2021-07-27-at-10.58.44-am.png[]
+
+[NOTE]
+You need a paid-tier cluster in order to upgrade disk volume.
+

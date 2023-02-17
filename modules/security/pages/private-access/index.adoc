@@ -11,15 +11,15 @@ Private access services are only available for paid clusters.
 
 == Setup overview
 
-. Create a new cluster on Tigergraph Cloud
+. Create a new cluster on Tigergraph Cloud.
 
-. Choose "Private" or "Public" for the "TigerGraph Endpoint Type"
+. Choose "Private" or "Public" for the "TigerGraph Endpoint Type".
 
-. Connect the new cluster to your account with the cloud provider
+. Connect the new cluster to your account with the cloud provider.
 
 See each cluster's main page for a detailed guide.
 
-* xref:gcp.adoc[]
+* xref:security
 
 * xref:aws.adoc[]
 

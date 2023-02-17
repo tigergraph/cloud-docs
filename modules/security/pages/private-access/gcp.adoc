@@ -1,11 +1,12 @@
 = GCP Private Service Connect
 :experimental:
 :description: Setting up Private Service Connect on Google Cloud Platform (GCP)
+:page-aliases: cloud:private-access/gcp.adoc
 
 This page describes the setup process for Private Service Connect, a Google service that securely connects a Virtual Private Cloud (VPC) to Google APIs without creating an external IP address.
 You need a GCP account to use this feature.
 
-video::NcZ2JQ5AKbw[youtube]
+link:https://youtu.be/NcZ2JQ5AKbw[GCP Private Service Connect on TigerGraph - Video Tutorial]
 
 == GCP General Workflow
 

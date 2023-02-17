@@ -1,5 +1,5 @@
 = Monitor Cluster Activity
-:page-aliases: view-activity-log.adoc, README.adoc
+:page-aliases: view-activity-log.adoc, monitor-solution/index.adoc
 :experimental:
 
 TigerGraph Cloud allows users to monitor activity at the organization and cluster level.

@@ -11,9 +11,9 @@ This page provides an overview of the security features available on TigerGraph 
 * Dedicated VPCs for each organization
 * xref:vpc-peering/readme.adoc[VPC peering]
 * Private Links
-** xref:private-access:aws.adoc[AWS]
-** xref:private-access:azure.adoc[Azure]
-** xref:private-access:gcp.adoc[GCP]
+** xref:private-access/aws.adoc[AWS]
+** xref:private-access/azure.adoc[Azure]
+** xref:private-access/gcp.adoc[GCP]
 * Secured external cloud
 data access
 ** xref:solutions:access-solution/rest-requests.adoc[RESTPP authentication]

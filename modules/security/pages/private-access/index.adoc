@@ -11,7 +11,7 @@ Private access services are only available for paid clusters.
 
 == Setup overview
 
-. Create a new cluster on Tigergraph Cloud.
+. Create a new cluster on TigerGraph Cloud.
 
 . Choose "Private" or "Public" for the "TigerGraph Endpoint Type".
 
@@ -19,8 +19,8 @@ Private access services are only available for paid clusters.
 
 See each cluster's main page for a detailed guide.
 
-* xref:security
+* xref:private-access/gcp.adoc[]
 
-* xref:aws.adoc[]
+* xref:private-access/aws.adoc[]
 
-* xref:azure.adoc[]
+* xref:private-access/azure.adoc[]

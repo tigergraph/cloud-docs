@@ -1,6 +1,6 @@
 * xref:README.adoc[]
 ** xref:create-a-solution.adoc[]
-** xref:cluster-access.adoc[]
+** Access a Cluster
 *** xref:access-solution/graphstudio.adoc[]
 *** xref:access-solution/gsql-web-shell.adoc[]
 *** xref:access-solution/rest-requests.adoc[]

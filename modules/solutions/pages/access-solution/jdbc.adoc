@@ -76,6 +76,9 @@ This key will be your password to access the TigerGraph database.
 
 Create a PySpark script file using the following template.
 In this example, the file is named `postgres_to_tg.py`.
+You must decide how you want to map your source data to the graph.
+The template example loads data into a graph vertex type called Account.
+For more details on how to use the TigerGraph JDBC Connector, see the documentation at https://github.com/tigergraph/ecosys/blob/master/tools/etl/tg-jdbc-driver/README.md.
 
 The last section of the file, the Loading to TigerGraph section, requires several parameters.
 Some are filled in already in the example, but others require your input.

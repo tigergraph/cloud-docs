@@ -1,6 +1,8 @@
 = JDBC Spark Connection
 
-This guide will show you how to set up a connection to read data from PostgreSQL through PySpark and write the data to TigerGraph.
+An open-source solution exists for loading data into TigerGraph using JDBC and Spark.  This guide will show you how to set up a connection to read data from PostgreSQL through PySpark and write the data to TigerGraph.
+
+NOTE: For large volumes of data with fault-tolerance, we recommend our Kafka-based streaming data connector.
 
 This guide is written for Ubuntu 18.04.
 

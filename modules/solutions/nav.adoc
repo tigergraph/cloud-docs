@@ -4,6 +4,7 @@
 *** xref:access-solution/graphstudio.adoc[]
 *** xref:access-solution/gsql-web-shell.adoc[]
 *** xref:access-solution/rest-requests.adoc[]
+*** xref:access-solution/jdbc.adoc[]
 ** xref:resize-cluster.adoc[]
 ** xref:stop-restart-and-terminate.adoc[]
 ** xref:backup-and-restore.adoc[]

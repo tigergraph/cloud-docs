@@ -8,7 +8,7 @@ This guide is written for Ubuntu 18.04.
 
 == Prerequisites
 
-First download Java, Python, and Spark.
+First make sure you have current versions of Java, Python, and Spark on the machine that will be the Spark server.
 [source, console]
 ----
 $ sudo apt update

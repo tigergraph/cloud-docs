@@ -429,7 +429,7 @@ TigerGraph v3.0.6+ supports configurations for a cluster with 1 partition and 3 
 
 A: Partition factor means the number of parts or components your graph data is split into, which also equals the number of instances that collectively store one copy of the full graph.
 For example, if you select a partition factor of 3, each instance will hold approximately 1/3 of your data.
-Please read the xref:tigergraph-server:ha:ha-cluster.adoc[] documentation for additional details about partitions and replications.
+Please read the xref:tigergraph-server:cluster-and-ha-management:ha-cluster.adoc[] documentation for additional details about partitions and replications.
 
 
 === *Q: How long do I need to wait for the cluster to be ready after provisioning process starts?*
@@ -587,4 +587,4 @@ Contact link:mailto:sales@tigergraph.com[sales@tigergraph.com] to discuss query 
 
 === *Q: What third-party software is used in TigerGraph Cloud?*
 
-A: A list of third-party software used in the TigerGraph engine and TigerGraph Cloud is available at xref:tigergraph-server:legal:patents-and-third-party-software.adoc[].
+A: A list of third-party software used in the TigerGraph engine and TigerGraph Cloud is available at xref:tigergraph-server:reference:patents-and-third-party-software.adoc[].

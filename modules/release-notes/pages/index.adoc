@@ -10,6 +10,21 @@ These TigerGraph Cloud updates are separate from updates to the core TigerGraph 
 Cloud clusters are not automatically upgraded to a new TigerGraph version when a new version is released.
 For version upgrades for existing clusters, please contact TigerGraph Support.
 
+== February 28, 2023 Update
+
+TigerGraph 3.9.0 available
+
+== February 17, 2023 Update
+
+=== Feature Updates
+
+* Redesigned Create Cluster page, making it much easier for users to see and choose what services they would like.
+* Introduction of Professional Tier and Enterprise Tier offerings.
+* Introduction of the ML Bundle, so users can select the TigerGraph DB plus the Machine Learning Workbench on a starter-size VM with just one click.
+* Faster cluster management operations for the Free Tier:
+** Creating a cluster is 5x faster than before, not only 2 minutes.
+** Pausing, resuming and terminating a cluster is 5x faster than before, now less than 1 minute.
+
 == January 2023 Updates
 Release date: January 18th, 2023
 

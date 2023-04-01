@@ -146,7 +146,7 @@ Release date: June 20, 2022
 === New features
 
 * TigerGraph Version 3.6.0 is now available for selection when creating new clusters.
-* xref:private-access:index.adoc[Private Link connections] can now be created for TigerGraph clusters for secure, private access.
+* xref:security/private-access:index.adoc[Private Link connections] can now be created for TigerGraph clusters for secure, private access.
 ** Private Links are supported across all cloud providers: AWS, Azure, and GCP.
 ** Clusters can have public or private access.
 

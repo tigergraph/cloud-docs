@@ -179,7 +179,7 @@ Release date: May 12, 2022
 
 === Feature updates
 
-* *Netdata deprecation*. Monitoring network I/O data through Netdata is no longer supported because of security vulnerabilities.
+* *Netdata support removed*. Monitoring network I/O data through Netdata is no longer supported because of security vulnerabilities.
 * Removed dependencies between credit card and backups when there are credits on account.
 * User interface improvements for quota outages
 * Improved observability with tags now on cluster information

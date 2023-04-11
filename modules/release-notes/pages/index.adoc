@@ -324,7 +324,7 @@ Release Date: January 08, 2020
 
 Release Date: September 25, 2019
 
-Deprecation Date: March 31, 2020
+Sunset Date: March 31, 2020
 
 === New features
 

@@ -10,6 +10,8 @@ These TigerGraph Cloud updates are separate from updates to the core TigerGraph 
 Cloud clusters are not automatically upgraded to a new TigerGraph version when a new version is released.
 For version upgrades for existing clusters, please contact TigerGraph Support.
 
+== April 19, 2023 Update
+
 == February 28, 2023 Update
 
 TigerGraph 3.9.0 available

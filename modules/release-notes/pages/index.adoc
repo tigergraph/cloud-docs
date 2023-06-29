@@ -10,6 +10,59 @@ These TigerGraph Cloud updates are separate from updates to the core TigerGraph 
 Cloud clusters are not automatically upgraded to a new TigerGraph version when a new version is released.
 For version upgrades for existing clusters, please contact TigerGraph Support.
 
+== June 7, 2023 Update
+
+=== New and Modified Features
+* Users can have multiple browser windows open to work with multiple clusters or tools.
+* [3.9.2+ clusters] New xref:3.9@gui:admin-portal:components/README.adoc[configuration options] in Admin Portal:
+** Set memory usage limits for the GPE.
+** Set the maximum number of concurrent Kafka loading jobs and tasks per CPU.
+
+=== Performance and Infrastructure Improvements
+* [3.9.2+ clusters] Limit the graph size of clusters with less than 200GB memory.
+* [3.9.2+ clusters] Prevent TGCloud agents from being killed due to Out Of Memory.
+* [3.9.2+ clusters] Use GCS as the filestore for GCP clusters.
+
+=== Fixed Issues
+* Fixed the "ready" state so that it reflects the state of the overall service.
+If ML Workbench is included, "ready" means that both the database and ML Workbencha re up and running.
+* A cluster's name now remains the same when a cluster's configuation is updated.
+* Fixed an incorrect link to the VPC setup guide.
+
+
+== April 25, 2023 Update
+
+=== New and Modified Features
+* Users can schedule cluster start and stop times.
+* ML Workbench now has Datadog monitoring.
+* Credit card accounts can see their invoices.
+
+=== Performance and Infrastructure Improvements
+* Added log rotation for daemon to reduce disk usage.
+* Clusters with more than one VM are now spread across all AZs.
+* Added AMD CPUs for TG.C2.M16 and TG.C192.M1536 VMs.
+* Some VM types have been retired.
+
+=== Fixed issues
+* Fixed a problem with accessing tools after resuming a free tier instance for the first time.
+
+
+== March 21, 2023 Update
+
+=== New and Modified Features
+* Users can upgrade a free tier cluster to paid tier on any CSP.
+* The South Africa North, Johannesburg region is now available for Azure CSP.
+* A user can cancel a pending invitation to another user.
+* The log history for free tier clusters has been shortened.
+
+=== Performance and Infrastructure Improvements
+* Improved the response time of Activities page.
+* Improved the response time of listing solutions on Dashboard page.
+
+=== Fixed Issues
+* Fixed AWS and Azure marketplace subscription.
+
+
 == February 28, 2023 Update
 
 TigerGraph 3.9.0 available

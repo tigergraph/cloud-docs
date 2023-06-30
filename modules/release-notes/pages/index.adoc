@@ -40,7 +40,7 @@ If ML Workbench is included, "ready" means that both the database and ML Workben
 
 === Performance and Infrastructure Improvements
 * Added log rotation for daemon to reduce disk usage.
-* Clusters with more than one VM are now spread across all AZs.
+* Clusters with more than one VM are now spread across all availability zones.
 * Added AMD CPUs for TG.C2.M16 and TG.C192.M1536 VMs.
 * Some VM types have been retired.
 

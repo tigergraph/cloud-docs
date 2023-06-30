@@ -19,7 +19,8 @@ For version upgrades for existing clusters, please contact TigerGraph Support.
 ** Set the maximum number of concurrent Kafka loading jobs and tasks per CPU.
 
 === Performance and Infrastructure Improvements
-* [3.9.2+ clusters] Limit the graph size of clusters with less than 200GB memory.
+* [3.9.2+ clusters] For clusters having less than 200GB of RAM, limit the maximum _topology size_ (amount of storage used to hold the graph data) to <RAM size>/2 - 2.5GB.
+This is to help to protect users from overloading a cluster.
 * [3.9.2+ clusters] Prevent TGCloud agents from being killed due to Out Of Memory.
 * [3.9.2+ clusters] Use GCS as the filestore for GCP clusters.
 

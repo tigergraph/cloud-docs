@@ -61,7 +61,7 @@ If ML Workbench is included, "ready" means that both the database and ML Workben
 * Improved the response time of listing solutions on Dashboard page.
 
 === Fixed Issues
-* Fixed AWS and Azure marketplace subscription.
+* Fixed the AWS and Azure marketplace subscription mechanisms.
 
 
 == February 28, 2023 Update

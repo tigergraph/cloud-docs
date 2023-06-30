@@ -51,7 +51,7 @@ If ML Workbench is included, "ready" means that both the database and ML Workben
 == March 21, 2023 Update
 
 === New and Modified Features
-* Users can upgrade a free tier cluster to paid tier on any CSP.
+* Users can upgrade a free tier cluster to a paid tier on any CSP.
 * The South Africa North, Johannesburg region is now available for Azure CSP.
 * A user can cancel a pending invitation to another user.
 * The log history for free tier clusters has been shortened.

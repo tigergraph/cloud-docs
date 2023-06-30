@@ -26,7 +26,7 @@ This is to help to protect users from overloading a cluster.
 
 === Fixed Issues
 * Fixed the "ready" state so that it reflects the state of the overall service.
-If ML Workbench is included, "ready" means that both the database and ML Workbencha re up and running.
+If ML Workbench is included, "ready" means that both the database and ML Workbench are up and running.
 * A cluster's name now remains the same when a cluster's configuation is updated.
 * Fixed an incorrect link to the VPC setup guide.
 

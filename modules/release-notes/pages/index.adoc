@@ -45,7 +45,7 @@ If ML Workbench is included, "ready" means that both the database and ML Workben
 * Some VM types have been retired.
 
 === Fixed issues
-* Fixed a problem with accessing tools after resuming a free tier instance for the first time.
+* Fixed a problem accessing tools after resuming a free tier instance for the first time.
 
 
 == March 21, 2023 Update

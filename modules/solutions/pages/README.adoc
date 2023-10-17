@@ -3,7 +3,7 @@
 Clusters are fully-managed TigerGraph deployments. Here are some resources you can use to create, configure and manage your clusters:
 
 * xref:create-a-solution.adoc[Create a new cluster]
- ** A step-by-step guide to creating a new cluster
+ ** A step-by-step guide to creating a new cluster.
 * xref:resize-cluster.adoc[Sizing and Scaling]
  ** Learn how to choose the appropriate instance type and disk size
 * xref:stop-restart-and-terminate.adoc[Stop, Restart and Terminate a Cluster]

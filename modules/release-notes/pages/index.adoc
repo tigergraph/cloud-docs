@@ -10,14 +10,39 @@ These TigerGraph Cloud updates are separate from updates to the core TigerGraph 
 Cloud clusters are not automatically upgraded to a new TigerGraph version when a new version is released.
 For version upgrades for existing clusters, please contact TigerGraph Support.
 
-== October [], 2023 Update
+== October 2023 Updates
+Release date: TBD
 
-=== New and Modified Features
+=== Feature updates
+* Show a banner to notify payment failure and next action.
 
-=== Performance and Infrastructure Improvements
+=== Fixed issues
+* Accepting an invitation when already logged-in doesn't work.
+* Add back missing sign-up form.
 
-=== Fixed Issues
+== September 2023 Updates
+Release date: September 13th, 2023
 
+=== Feature updates
+* Improve lobby sign-in experience by remembering the last logged-in organization.
+* Only show the organization corresponding to the current login method.
+
+=== Fixed issues
+* Give correct guidance when attempting to reset password through Google login.
+* Wrong organization name is displayed on login welcome page.
+* User is not found if logging in with mixed case email.
+
+== July 2023 Updates
+Release date: August 2nd, 2023
+
+=== Feature updates
+* Create multiple disks for data, logs and binaries to reduce the risk of running out of disk space affecting the system.
+* New lobby sign-in experience to streamline the login process.
+* Base machine image is updated to Ubuntu 20.04 LTS.
+
+=== Fixed issues
+* Add access control to billing details so only organization owner can view it.
+* Re-enable TG.C8.M32 and TG.C16.M64 in Jakarta region.
 
 == June 7, 2023 Update
 

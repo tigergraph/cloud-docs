@@ -10,6 +10,15 @@ These TigerGraph Cloud updates are separate from updates to the core TigerGraph 
 Cloud clusters are not automatically upgraded to a new TigerGraph version when a new version is released.
 For version upgrades for existing clusters, please contact TigerGraph Support.
 
+== October [], 2023 Update
+
+=== New and Modified Features
+
+=== Performance and Infrastructure Improvements
+
+=== Fixed Issues
+
+
 == June 7, 2023 Update
 
 === New and Modified Features

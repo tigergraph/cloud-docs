@@ -574,7 +574,8 @@ A: TigerGraph is a native parallel graph database built on C{pp}. It is not buil
 === *Q: How can I monitor the speed or throughput of queries and data loading?*
 
 A: The GraphStudio visual design tool provides several monitors.
-The xref:gui:graphstudio:load-data.adoc[]  page includes a real time monitor and statistics. Query performance and many other measures are available on the xref:tigergraph-server:intro:index.adoc[Administrator Portal].
+
+The xref:gui:graphstudio:load-data.txt[]  page includes a real time monitor and statistics. Query performance and many other measures are available on the xref:tigergraph-server:intro:index.adoc[Administrator Portal].
 
 
 === *Q: How can I improve the speed of my system?*

@@ -11,7 +11,7 @@ Cloud clusters are not automatically upgraded to a new TigerGraph version when a
 For version upgrades for existing clusters, please contact TigerGraph Support.
 
 == November 2023 Updates
-Release date: TBD
+Release date: November 7th, 2023
 
 === Feature updates
 * Show a banner to notify payment failure and next action.

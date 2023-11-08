@@ -10,6 +10,17 @@ These TigerGraph Cloud updates are separate from updates to the core TigerGraph 
 Cloud clusters are not automatically upgraded to a new TigerGraph version when a new version is released.
 For version upgrades for existing clusters, please contact TigerGraph Support.
 
+== November 2023 Updates
+Release date: November 7th, 2023
+
+=== Feature updates
+* Show a banner to notify payment failure and next action.
+* Now available in TigerGraph 3.9.3.
+
+=== Fixed issues
+* Accepting an invitation when already logged-in doesn't work.
+* Add back missing sign-up form.
+
 == September 2023 Updates
 Release date: September 13th, 2023
 

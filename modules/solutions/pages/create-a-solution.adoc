@@ -66,6 +66,8 @@ Click btn:[Contact us] or send an email to sales@tigergraph.com for more informa
 
 === ML Workbench
 
+IMPORTANT: ML Workbench is disabled by default for Free, Professional, and Enterprise instances. To get started with the ML Bundle, please contact support@tigergraph.com.
+
 TigerGraph Cloud supports integration with xref:ml-workbench:intro:index.adoc[Machine Learning Workbench] and also provides a custom-built use case starter kit.
 Machine Learning Workbench is not available with other use case starter kits or on TigerGraph Cloud solutions older than version 3.8.0.
 

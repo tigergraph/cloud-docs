@@ -3,10 +3,51 @@
 :page-aliases: getting-started.adoc
 
 TigerGraph Cloud is a fully-managed cloud database built on the same TigerGraph Enterprise Server engine that delivers the fastest and most scalable graph database.
-TigerGraph Cloud handles all the complexity of deploying and managing your deployments on the cloud service provider of your choice (AWS, Azure, and GCP).
+TigerGraph Cloud handles all the complexity of deploying and managing your deployments on the cloud service provider of your choice ( xref:cloud:reference:aws.adoc[], xref:cloud:reference:azure.adoc[], and xref:cloud:reference:gcp.adoc[] ).
 
+*Already familiar with TigerGraph Cloud?* Skip ahead to the xref:_get_started_with_tigergraph_cloud[] and see the xref:_comparison_with_tigergraph_enterprise_server[] section. Else get to know your TigerGraph Cloud instance below.
+
+== Get to Know Your TigerGraph Cloud
 TigerGraph Cloud is completely integrated with the full TigerGraph Suite.
-Everything including Admin Portal, GraphStudio, Insights, Machine Learning Workbench, and more is available with a TigerGraph Cloud instance.
+Everything including xref:3.9@gui:admin-portal:overview.adoc[Admin Portal], xref:3.9@gui:graphstudio:overview.adoc[GraphStudio], xref:3.9@insights:intro:index.adoc[Insights], xref:1.4@ml-workbench:intro:index.adoc[ML Workbench], and more is available with a TigerGraph Cloud instance.
+
+[.home-card,cols="3,3,3",grid=none,frame=none]
+|===
+a|
+*News and Release Notes*
+
+See xref:cloud:release-notes:index.adoc[] for the most up-to-date news on TigerGraph Cloud
+
+a|
+*Cluster Management*
+
+xref:cloud:solutions:README.adoc[] are resources to create, configure, utilize, and manage your clusters.
+
+a|
+*Security*
+
+TigerGraph Cloud leverages the secured infrastructure of our cloud service providers and provides additional security features to ensure the xref:cloud:security:index.adoc[] of your data and network.
+
+
+a|
+
+*Billing*
+
+Understand and track all TigerGraph Cloud xref:billing:index.adoc[] information within the portal.
+
+a|
+*Support*
+
+See the xref:support:faqs.adoc[TigerGraph Cloud FAQs] for answers to common questions. Or learn how to contact xref:cloud:support:support.adoc[] for all other queries.
+
+a|
+*Reference*
+
+See other xref:cloud:reference:index.adoc[] documents to help support your TigerGraph Cloud journey, like
+a xref:cloud:reference:glossary.adoc[] and xref:cloud:reference:service-limits.adoc[] page.
+
+a|
+|===
 
 == Get started with TigerGraph Cloud
 
@@ -49,18 +90,6 @@ Once logged in, you can create clusters and add more users to your organization.
 * xref:solutions:create-a-solution.adoc[]
 * xref:security:manage-org-users.adoc[]
 
-== Manage TigerGraph Cloud clusters
-
-* xref:gui:admin-portal:management/user-management.adoc[Security and user management]
-* xref:solutions:backup-and-restore.adoc[Backup and restore]
-
-== Billing
-
-* xref:billing:index.adoc[]
-
-== FAQs
-
-See the xref:support:faqs.adoc[TigerGraph Cloud FAQs] for answers to common questions.
 
 == Comparison with TigerGraph Enterprise Server
 

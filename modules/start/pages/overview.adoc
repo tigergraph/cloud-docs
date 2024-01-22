@@ -14,7 +14,7 @@ handling all the complexity of deploying and managing your deployments on the cl
 a|
 *Getting Started*
 
-See the xref:cloud:start:getting_started.adoc[] section to get started.
+See the xref:cloud:start:get_started.adoc[] section to get started.
 
 a|
 *Cluster Management*

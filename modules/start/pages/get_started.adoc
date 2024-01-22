@@ -1,6 +1,6 @@
-= Getting started with TigerGraph Cloud
+= Get started with TigerGraph Cloud
 :experimental:
-:page-aliases: getting-started.adoc
+:page-aliases: get-started.adoc
 
 Click btn:[Sign Up] on the https://tgcloud.io/[TigerGraph Cloud landing page].
 

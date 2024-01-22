@@ -1,2 +1,2 @@
 * xref:overview.adoc[Introduction]
-* Getting Started[]
+* xref:cloud:start:get_started.adoc[Get Started]

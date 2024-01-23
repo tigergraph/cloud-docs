@@ -12,39 +12,45 @@ handling all the complexity of deploying and managing your deployments on the cl
 [.home-card,cols="2",grid=none,frame=none]
 |===
 a|
+image:getstarted-homecard.png[alt=getstarted,width=74,height=74]
 *Getting Started*
 
-See the xref:cloud:start:get_started.adoc[] section to get started.
+A xref:cloud:start:get_started.adoc[Get Started ↗] guide to help you get up and running.
+
+
 
 a|
+image:systemmanagment-homecard.png[alt=cluster,width=74,height=74]
 *Cluster Management*
 
-xref:cloud:solutions:README.adoc[] are resources to create, configure, utilize, and manage your clusters.
+xref:cloud:solutions:README.adoc[Cluster Managment ↗] are resources to create, configure, utilize, and manage your clusters.
 
 a|
+image:security-homecard.png[alt=security,width=74,height=74]
 *Security*
 
-TigerGraph Cloud leverages the secured infrastructure of our cloud service providers and provides additional security features to ensure the xref:cloud:security:index.adoc[] of your data and network.
+Learn how TigerGraph Cloud can help ensure the xref:cloud:security:index.adoc[Security ↗] of your data and network.
 
 
 a|
-
+image:billing-homecard.png[alt=billing,width=74,height=74]
 *Billing*
 
-Understand and track all TigerGraph Cloud xref:billing:index.adoc[] information within the portal.
+Understand and track all TigerGraph Cloud xref:billing:index.adoc[Billing ↗] information within the portal.
 
 a|
+image:documentation-homecard.png[alt=support,width=74,height=74]
 *Release Notes and Support*
 
-See the xref:cloud:release-notes:index.adoc[] for the most up-to-date news on TigerGraph Cloud
-as well check out xref:support:faqs.adoc[TigerGraph Cloud FAQs] for answers to common questions. Or learn how to contact xref:cloud:support:support.adoc[] for all other queries.
+See the xref:cloud:release-notes:index.adoc[Release Notes alt=billing,width=74,height=74] for the most up-to-date news on TigerGraph Cloud
+as well check out xref:support:faqs.adoc[TigerGraph Cloud FAQs ↗] for answers to common questions or xref:cloud:support:support.adoc[Support ↗] for all other queries.
 
 a|
+image:referece-homecard.png[alt=ref,width=74,height=74]
 *Reference*
 
-See other xref:cloud:reference:index.adoc[] documents to help support your TigerGraph Cloud journey, like
-a xref:cloud:reference:glossary.adoc[] and xref:cloud:reference:service-limits.adoc[] page.
-
+See other xref:cloud:reference:index.adoc[Reference ↗] documents to help support your TigerGraph Cloud journey, like
+a xref:cloud:reference:glossary.adoc[Glossary ↗] and xref:cloud:reference:service-limits.adoc[Service Limits ↗] page.
 a|
 |===
 

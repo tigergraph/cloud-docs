@@ -2,6 +2,7 @@
 :experimental:
 :page-aliases: get-started.adoc
 
+== Sign up
 Click btn:[Sign Up] on the https://tgcloud.io/[TigerGraph Cloud landing page].
 
 When you register for a new TigerGraph Cloud account, you create an Organization Account to which you can later invite other users.
@@ -29,7 +30,7 @@ TigerGraph Cloud sends important email notifications to this address, including 
 * New cloud products
 ====
 
-=== Log in
+== Log in
 
 Click btn:[Log In] on the https://tgcloud.io/[TigerGraph Cloud landing page].
 

@@ -42,15 +42,21 @@ a|
 image:documentation-homecard.png[alt=support,width=74,height=74]
 *Release Notes and Support*
 
-See the xref:cloud:release-notes:index.adoc[Release Notes alt=billing,width=74,height=74] for the most up-to-date news on TigerGraph Cloud
-as well check out xref:support:faqs.adoc[TigerGraph Cloud FAQs ↗] for answers to common questions or xref:cloud:support:support.adoc[Support ↗] for all other queries.
+See the most up-to-date news on TigerGraph Cloud as well check out answers to common questions.
+
+xref:cloud:release-notes:index.adoc[Release Notes ↗]
+xref:support:faqs.adoc[TigerGraph Cloud FAQs ↗]
+xref:cloud:support:support.adoc[Support ↗]
 
 a|
 image:referece-homecard.png[alt=ref,width=74,height=74]
 *Reference*
 
-See other xref:cloud:reference:index.adoc[Reference ↗] documents to help support your TigerGraph Cloud journey, like
-a xref:cloud:reference:glossary.adoc[Glossary ↗] and xref:cloud:reference:service-limits.adoc[Service Limits ↗] page.
+See other documents to help support your TigerGraph Cloud journey.
+
+xref:cloud:reference:index.adoc[Reference ↗]
+xref:cloud:reference:glossary.adoc[Glossary ↗]
+xref:cloud:reference:service-limits.adoc[Service Limits ↗]
 a|
 |===
 

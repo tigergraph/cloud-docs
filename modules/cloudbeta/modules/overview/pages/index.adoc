@@ -1,0 +1,37 @@
+= TigerGraph Cloud (Beta)
+:experimental:
+:page-aliases: cloud-overview.adoc
+
+
+== Get to Know Your TigerGraph Cloud
+
+[.home-card,cols="2",grid=none,frame=none, separator=¦]
+|===
+¦
+image:getstarted-homecard.png[alt=getstarted,width=74,height=74]
+*Getting Started*
+
+xref:cloudBeta:get-started:index.adoc[Get Started]
+¦
+image:systemmanagment-homecard.png[alt=cluster,width=74,height=74]
+*Cluster Management*
+
+¦
+image:security-homecard.png[alt=security,width=74,height=74]
+*Security*
+
+
+¦
+image:billing-homecard.png[alt=billing,width=74,height=74]
+*Billing*
+
+¦
+image:documentation-homecard.png[alt=support,width=74,height=74]
+*Release Notes*
+
+¦
+image:referece-homecard.png[alt=ref,width=74,height=74]
+*Reference*
+
+¦
+|===

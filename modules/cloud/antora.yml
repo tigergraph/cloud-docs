@@ -5,10 +5,10 @@ display_version: default
 start_page: start:overview.adoc
 
 nav:
-- modules/start/nav.adoc
-- modules/release-notes/nav.adoc
-- modules/solutions/nav.adoc
-- modules/security/nav.adoc
-- modules/billing/nav.adoc
-- modules/support/nav.adoc
-- modules/reference/nav.adoc
+- start/nav.adoc
+- release-notes/nav.adoc
+- solutions/nav.adoc
+- security/nav.adoc
+- billing/nav.adoc
+- support/nav.adoc
+- reference/nav.adoc

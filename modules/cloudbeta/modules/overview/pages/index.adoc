@@ -9,29 +9,48 @@
 |===
 ¦
 image:getstarted-homecard.png[alt=getstarted,width=74,height=74]
-*Getting Started*
+*Get Started*
 
 xref:cloudBeta:get-started:index.adoc[Get Started]
 ¦
-image:systemmanagment-homecard.png[alt=cluster,width=74,height=74]
-*Cluster Management*
+image:insights.png[alt=workspace,width=74,height=74]
+*Workspace*
+
+xref:workspace:index.adoc[Overview]
+
+¦
+image:DataLoading-Homecard.png[alt=load data,width=74,height=74]
+*Load Data*
+
+xref:load-data:index.adoc[Overview]
+
+¦
+image:ArchtectureOverview-homecard.png[alt=integration,width=74,height=74]
+*Integration*
+
+xref:integrations:index.adoc[Overview]
+
+¦
+image:TG_Icon_Library-218.png[alt=exploreGraph,width=74,height=74]
+*Explore Graph*
+
+xref:explore-graph:index.adoc[Overview]
 
 ¦
 image:security-homecard.png[alt=security,width=74,height=74]
 *Security*
 
-
+xref:security:index.adoc[Overview]
 ¦
-image:billing-homecard.png[alt=billing,width=74,height=74]
-*Billing*
 
-¦
 image:documentation-homecard.png[alt=support,width=74,height=74]
 *Release Notes*
 
+xref:release-notes:index.adoc[]
 ¦
 image:referece-homecard.png[alt=ref,width=74,height=74]
-*Reference*
+*Resources*
 
+xref:resources:index.adoc[Resources]
 ¦
 |===

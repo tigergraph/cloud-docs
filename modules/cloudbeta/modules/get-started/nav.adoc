@@ -1,1 +1,3 @@
 * xref:index.adoc[]
+** xref:how2-signup.adoc[]
+** xref:organization-management.adoc[]

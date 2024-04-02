@@ -11,10 +11,16 @@
 image:getstarted-homecard.png[alt=getstarted,width=74,height=74]
 *Get Started*
 
-xref:cloudBeta:get-started:index.adoc[Get Started]
+xref:cloudBeta:get-started:index.adoc[Get Started] using TigerGraph Cloud with the V4.0 Beta.
+
+xref:get-started:how2-signup.adoc[How to Sign Up] |
+xref:get-started:organization-management.adoc[]
+
 ¦
 image:insights.png[alt=workspace,width=74,height=74]
 *Workspace*
+
+Learn our new Consumption-based compute resource that uses Kubernetes pods
 
 xref:workspace:index.adoc[Overview]
 
@@ -28,8 +34,8 @@ xref:load-data:index.adoc[Overview]
 image:ArchtectureOverview-homecard.png[alt=integration,width=74,height=74]
 *Integration*
 
-xref:integrations:index.adoc[Overview]
-
+xref:integrations:index.adoc[Overview] |
+xref:integrations:copilot.adoc[]
 ¦
 image:TG_Icon_Library-218.png[alt=exploreGraph,width=74,height=74]
 *Explore Graph*
@@ -40,9 +46,9 @@ xref:explore-graph:index.adoc[Overview]
 image:security-homecard.png[alt=security,width=74,height=74]
 *Security*
 
-xref:security:index.adoc[Overview]
-¦
+xref:security:index.adoc[Overview] |
 
+¦
 image:documentation-homecard.png[alt=support,width=74,height=74]
 *Release Notes*
 

@@ -2,7 +2,7 @@ name: cloudBeta
 title: TigerGraph Cloud (Beta)
 version: master
 display_version: default
-start_page: index.adoc
+start_page: get-started:index.adoc
 
 nav:
   - nav.adoc

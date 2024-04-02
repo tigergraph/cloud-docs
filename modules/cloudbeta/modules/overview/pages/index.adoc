@@ -20,15 +20,14 @@ xref:get-started:organization-management.adoc[]
 image:billing-homecard.png[alt=billing,width=74,height=74]
 *Billing*
 
-The xref:billing-manager:index.adoc[Billing Manager] introduces a more detailed model, allowing TigerGraph Cloud users to pay only for their specific usage of storage, data access, and compute resources.
+The xref:billing-manager:index.adoc[Billing Manager] allows users to pay only for their specific usage of storage, data access, and compute resources.
 
-xref:billing-manager:index.adoc[Overview]
+//xref:billing-manager:index.adoc[Overview]
 ¦
 image:insights.png[alt=workspace,width=74,height=74]
 *Resource Manager*
 
-
-Learn about the xref:resource-manager:index.adoc[Resource Manager] and how to use it's features to dynamically allocate compute and storage resources.
+Learn  how to dynamically allocate compute and storage resources.
 
 xref:resource-manager:index.adoc[Overview] |
 xref:resource-manager:workgroup.adoc[] |
@@ -45,11 +44,13 @@ xref:load-data:load-from-local.adoc[Local] |
 xref:load-data:load-from-cloud.adoc[Cloud] |
 xref:load-data:load-from-other-sources.adoc[Other Sources]
 ¦
-image:ArchtectureOverview-homecard.png[alt=integration,width=74,height=74]
-*Integration*
+image:schema-homecard.png[alt=gsqlEditor,width=74,height=74]
+*GSQL Editor*
 
-xref:integrations:index.adoc[Overview] |
-xref:integrations:copilot.adoc[]
+xref:gsql-editor:index.adoc[Overview] |
+xref:gsql-editor:how2-edit-gsql-query.adoc[]
+
+
 ¦
 image:TG_Icon_Library-218.png[alt=exploreGraph,width=74,height=74]
 *Explore Graph*
@@ -61,17 +62,27 @@ xref:explore-graph:pattern-search.adoc[]
 image:security-homecard.png[alt=security,width=74,height=74]
 *Security*
 
+Learn about access, privilege and role assignment and control.
+
 xref:security:index.adoc[Overview] |
 
+¦
+image:ArchtectureOverview-homecard.png[alt=integration,width=74,height=74]
+*Integration*
+
+xref:integrations:index.adoc[Overview] |
+xref:integrations:copilot.adoc[]
 ¦
 image:documentation-homecard.png[alt=support,width=74,height=74]
 *Release Notes*
 
-xref:release-notes:index.adoc[]
+View the xref:release-notes:index.adoc[] to get update information on features and releases.
+
 ¦
 image:referece-homecard.png[alt=ref,width=74,height=74]
 *Resources*
 
-xref:resources:index.adoc[Resources]
+Here you can find any additional xref:resources:index.adoc[Resources] for TigerGraph Cloud v4.0 (beta)
+
 ¦
 |===

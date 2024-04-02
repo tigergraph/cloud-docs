@@ -1,0 +1,7 @@
+= Workspace Privileges
+
+== Introduction
+
+== Prerequisites
+
+== Glossary

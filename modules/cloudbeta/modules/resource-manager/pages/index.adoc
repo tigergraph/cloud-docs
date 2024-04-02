@@ -1,6 +1,5 @@
-= Workspace
+= Resource Manager
 :experimental:
-
 
 == Introduction
 

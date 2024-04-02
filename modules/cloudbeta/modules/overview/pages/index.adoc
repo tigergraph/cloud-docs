@@ -18,11 +18,13 @@ xref:get-started:organization-management.adoc[]
 
 ¦
 image:insights.png[alt=workspace,width=74,height=74]
-*Workspace*
+*Resource Manager*
 
 Learn our new Consumption-based compute resource that uses Kubernetes pods
 
-xref:workspace:index.adoc[Overview]
+xref:resource-manager:index.adoc[Overview] |
+xref:resource-manager:workgroup.adoc[] |
+xref:resource-manager:workspace.adoc[]
 
 ¦
 image:DataLoading-Homecard.png[alt=load data,width=74,height=74]

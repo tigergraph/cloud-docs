@@ -1,0 +1,5 @@
+* xref:index.adoc[]
+** xref:workgroup.adoc[Workgroups]
+*** xref:resource-manager:how2-create-a-workgroup.adoc[Create Workgroup]
+*** xref:workspace.adoc[Workspace]
+**** xref:how2-create-a-workspace.adoc[Create Workspace]

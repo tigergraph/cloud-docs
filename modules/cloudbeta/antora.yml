@@ -12,5 +12,6 @@ nav:
   - modules/gsql-editor/nav.adoc
   - modules/integrations/nav.adoc
   - modules/explore-graph/nav.adoc
+  - modules/security/nav.adoc
   - modules/administration/nav.adoc
   - modules/resources/nav.adoc

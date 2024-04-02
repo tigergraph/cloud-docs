@@ -7,6 +7,7 @@ start_page: overview:index.adoc
 nav:
   - modules/overview/nav.adoc
   - modules/get-started/nav.adoc
+  - modules/billing-manager/nav.adoc
   - modules/resource-manager/nav.adoc
   - modules/load-data/nav.adoc
   - modules/gsql-editor/nav.adoc

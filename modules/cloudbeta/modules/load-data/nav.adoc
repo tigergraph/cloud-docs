@@ -1,1 +1,4 @@
 * xref:index.adoc[]
+** xref:load-data:load-from-local.adoc[]
+** xref:load-data:load-from-cloud.adoc[]
+** xref:load-data:load-from-other-sources.adoc[]

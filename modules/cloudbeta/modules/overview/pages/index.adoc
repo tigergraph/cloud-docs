@@ -11,16 +11,24 @@
 image:getstarted-homecard.png[alt=getstarted,width=74,height=74]
 *Get Started*
 
-xref:cloudBeta:get-started:index.adoc[Get Started] using TigerGraph Cloud with the V4.0 Beta.
+xref:cloudBeta:get-started:index.adoc[Get Started] using TigerGraph Cloud with the v4.0 Beta.
 
 xref:get-started:how2-signup.adoc[How to Sign Up] |
 xref:get-started:organization-management.adoc[]
 
 ¦
+image:billing-homecard.png[alt=billing,width=74,height=74]
+*Billing*
+
+The xref:billing-manager:index.adoc[Billing Manager] introduces a more detailed model, allowing TigerGraph Cloud users to pay only for their specific usage of storage, data access, and compute resources.
+
+xref:billing-manager:index.adoc[Overview]
+¦
 image:insights.png[alt=workspace,width=74,height=74]
 *Resource Manager*
 
-Learn our new Consumption-based compute resource that uses Kubernetes pods
+
+Learn about the xref:resource-manager:index.adoc[Resource Manager] and how to use it's features to dynamically allocate compute and storage resources.
 
 xref:resource-manager:index.adoc[Overview] |
 xref:resource-manager:workgroup.adoc[] |
@@ -30,8 +38,12 @@ xref:resource-manager:workspace.adoc[]
 image:DataLoading-Homecard.png[alt=load data,width=74,height=74]
 *Load Data*
 
-xref:load-data:index.adoc[Overview]
+Learn how to xref:load-data:index.adoc[Load Data] into TigerGraph Cloud.
 
+xref:load-data:index.adoc[Overview] |
+xref:load-data:load-from-local.adoc[Local] |
+xref:load-data:load-from-cloud.adoc[Cloud] |
+xref:load-data:load-from-other-sources.adoc[Other Sources]
 ¦
 image:ArchtectureOverview-homecard.png[alt=integration,width=74,height=74]
 *Integration*
@@ -42,7 +54,8 @@ xref:integrations:copilot.adoc[]
 image:TG_Icon_Library-218.png[alt=exploreGraph,width=74,height=74]
 *Explore Graph*
 
-xref:explore-graph:index.adoc[Overview]
+xref:explore-graph:index.adoc[Overview] |
+xref:explore-graph:pattern-search.adoc[]
 
 ¦
 image:security-homecard.png[alt=security,width=74,height=74]

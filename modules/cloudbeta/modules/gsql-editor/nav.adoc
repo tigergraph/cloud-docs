@@ -1,1 +1,2 @@
 * xref:index.adoc[]
+** xref:gsql-editor:how2-edit-gsql-query.adoc[Edit Query]

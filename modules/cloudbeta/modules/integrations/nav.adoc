@@ -1,2 +1,6 @@
 * xref:index.adoc[]
-** xref:integrations:copilot.adoc[Co-pilot]
+** xref:solutions.adoc[]
+** xref:add-ons.adoc[]
+*** xref:integrations:copilot.adoc[Co-pilot]
+
+

@@ -91,7 +91,7 @@ View the xref:release-notes:index.adoc[] to get update information on features a
 image:referece-homecard.png[alt=ref,width=74,height=74]
 *Resources*
 
-Here you can find any additional xref:resources:index.adoc[Resources] for TigerGraph Cloud v4.0 (beta).
+Here you can find any additional xref:resources:index.adoc[Resources] for TigerGraph Cloud 4.0 (beta).
 
 ¦
 |===

@@ -1,4 +1,4 @@
-= Workspace Privileges
+= Read/Write and Read only Workspaces
 
 == Introduction
 

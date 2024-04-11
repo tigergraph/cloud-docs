@@ -1,11 +1,41 @@
 = Resource Manager
 :experimental:
 
-== Introduction
+In TigerGraph Cloud, the concepts of workgroup, workspace, and database are used to organize and manage projects and data within the platform. Here's a breakdown of each term:
 
-== Prerequisites
+* Workgroup: A workgroup represents a project or a logical group within TigerGraph Cloud. It serves as a container that holds multiple workspaces and databases related to a specific use case, team, or application. Workgroups provide a way to organize and manage resources, access controls, and configurations for a particular project or initiative.
+* Workspace: A workspace is a compute unit within a TigerGraph database. It is where the graph processing and analytics take place. TigerGraph Cloud 4.0 supports two types of workspaces: read-write workspaces and read-only workspaces.
+** Read-write workspaces: These workspaces allow read and write operations on the graph data. They are typically used for data ingestion, data updates, and running queries that modify the graph structure or properties.
+** Read-only workspaces: These workspaces are optimized for read-intensive operations. They are used for executing queries and analytics on the graph data without modifying it. Read-only workspaces provide improved performance and scalability for read operations.
+* Database: The database in TigerGraph Cloud 4.0 refers to the actual data stored within the platform. It is separate from the workspaces and can be associated with one or more workspaces within a workgroup. It holds the persistent data that is loaded into TigerGraph and is accessible for graph analytics and visualization. We only support a maximum of one ready-write workspace to connect to a database.
 
-== Glossary
+By utilizing workgroups, workspaces, and databases, TigerGraph Cloud 4.0 provides a flexible and scalable environment for managing projects, allocating compute resources, and working with graph data effectively. The separation of compute and storage in workspaces allows for optimized performance and resource allocation, while the databases ensure the persistence and accessibility of the graph data.
 
-== v4.0 Changes
+== xref:resource-manager:workgroup.adoc[]
+
+xref:how2-create-a-workgroup.adoc[]
+
+== xref:resource-manager:workspace.adoc[]
+
+xref:how2-create-a-workspace.adoc[]
+
+== xref:resource-manager:writeread_readonly.adoc[]
+
+
+== xref:auto-start-stop.adoc[Auto-start and Auto-stop]
+
+Configure your workspace to automatically start and stop based on usage, optimizing resource utilization and cost.
+
+== xref:resource-manager:expansion_shrink.adoc[]
+
+== xref:resource-manager:backup-and-restore.adoc[]
+
+Discover how to create backup points and restore your workspace to a specific point in time.
+
+== xref:resource-manager:connect_via_api.adoc[]
+
+== xref:resource-manager:monitor_workspaces.adoc[]
+
+
+
 

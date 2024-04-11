@@ -1,11 +1,12 @@
 = Administration Overview
 :experimental:
 
-== Introduction
+Introduction
 
-== Prerequisites
+== xref:administration:invite_users.adoc[]
 
-== Glossary
+== xref:administration:access_mgnt.adoc[]
 
-== v4.0 Changes
+== xref:administration:organization-management.adoc[]
+
 

@@ -2,3 +2,7 @@
 ** xref:administration:invite_users.adoc[]
 ** xref:administration:access_mgnt.adoc[]
 ** xref:administration:organization-management.adoc[]
+
+** xref:cloudBeta:security:index.adoc[]
+*** xref:cloudBeta:security:password-policy.adoc[]
+*** xref:cloudBeta:security:idp.adoc[]

@@ -1,11 +1,13 @@
 = Billing Overview
 :experimental:
 
-== Introduction
+Introduction
 
-== Prerequisites
+== xref:cloudBeta:billing-manager:pricing.adoc[]
 
-== Glossary
+== xref:cloudBeta:billing-manager:compute_price.adoc[]
 
-== v4.0 Changes
+== xref:cloudBeta:billing-manager:storage_price.adoc[]
+
+
 

@@ -1,0 +1,28 @@
+= How to Log In
+:experimental:
+
+After first xref:get-started:how2-signup.adoc[signing up] users must  btn:[Login].
+
+This guide will walk you through the necessary steps.
+
+== Login
+Click btn:[Log In] on the https://tgcloud.io/[TigerGraph Cloud landing page].
+
+When you log in, you must first provide an organization name before entering your username and password.
+
+====
+If you were invited by a member of your organization and you do not know the name used for the organization account, contact your organization’s administrator.
+====
+
+[Placeholder for new cloud login page]
+
+Once logged in, you can create begin to create xref:resource-manager:workgroup.adoc[Workgroups] and xref:resource-manager:workspace.adoc[Workspaces], xref:administration:invite_users.adoc[] to your organization, and xref:administration:access_mgnt.adoc[manage access].
+
+////
+. xref:resource-manager:how2-create-a-workgroup.adoc[Create a Workgroup]
+. xref:resource-manager:how2-create-a-workspace.adoc[Create a Workspace]
+. xref:administration:invite_users.adoc[]
+. xref:administration:access_mgnt.adoc[]
+
+Once logged in, you can create begin to create xref:resource-manager:workgroup.adoc[Workgroups] and xref:resource-manager:workspace.adoc[Workspaces].
+////

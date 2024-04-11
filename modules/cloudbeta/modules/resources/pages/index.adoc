@@ -1,12 +1,25 @@
-= Resources Overview
+= Resources
 :experimental:
 
+Resources provide other documents to help support your TigerGraph Cloud 4.0 (beta) journey.
 
-== Introduction
+== xref:resources:glossary.adoc[]
 
-== Prerequisites
+Here you can refer terms used in TigerGraph Cloud and the 4.0 (beta).
 
-== Glossary
+== xref:resources:support.adoc[]
 
-== v4.0 Changes
+Here you can learn how to get support.
+
+== xref:resources:faqs.adoc[Cloud 4.0 FAQs]
+
+Here you can find Cloud 4.0 FAQs.
+
+== Policy Documents
+
+If you are a participating TigerGraph Cloud 4.0 (Beta) user, please review our policy documents:
+
+* xref:quota_policy.adoc[Beta Phase Quota Restriction Policy]
+* xref:terms_conditions.adoc[Beta Program Terms and Conditions]
+
 

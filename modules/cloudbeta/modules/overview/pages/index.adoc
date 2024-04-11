@@ -1,7 +1,14 @@
-= TigerGraph Cloud (Beta)
+= TigerGraph Cloud 4.0 (Beta)
 :experimental:
 :page-aliases: cloud-overview.adoc
 
+This documentation will guide you through the various features and functionalities of our brand new cloud-native graph as a service (GaaS) management platform.
+TigerGraph Cloud 4.0 offers a powerful and user-friendly environment for managing, analyzing, and exploring your graph data.
+
+[CAUTION]
+====
+TigerGraph Cloud 4.0 is still in beta release and the documentation is in progress.
+====
 
 == Get to Know Your TigerGraph Cloud
 
@@ -11,10 +18,10 @@
 image:getstarted-homecard.png[alt=getstarted,width=74,height=74]
 *Get Started*
 
-xref:cloudBeta:get-started:index.adoc[Get Started] using TigerGraph Cloud with the v4.0 Beta.
+xref:cloudBeta:get-started:index.adoc[Get Started] using TigerGraph Cloud with the 4.0 beta.
 
 xref:get-started:how2-signup.adoc[How to Sign Up] |
-xref:get-started:organization-management.adoc[]
+xref:administration:organization-management.adoc[Org Management]
 
 ¦
 image:billing-homecard.png[alt=billing,width=74,height=74]
@@ -30,14 +37,14 @@ image:insights.png[alt=workspace,width=74,height=74]
 Learn  how to dynamically allocate compute and storage resources.
 
 xref:resource-manager:index.adoc[Overview] |
-xref:resource-manager:workgroup.adoc[] |
-xref:resource-manager:workspace.adoc[]
+xref:resource-manager:workgroup.adoc[Workgroup] |
+xref:resource-manager:workspace.adoc[Workspace]
 
 ¦
 image:DataLoading-Homecard.png[alt=load data,width=74,height=74]
 *Load Data*
 
-Learn how to xref:load-data:index.adoc[Load Data] into TigerGraph Cloud.
+Learn how to xref:load-data:index.adoc[Load Data] into TigerGraph Cloud 4.0.
 
 xref:load-data:index.adoc[Overview] |
 xref:load-data:load-from-local.adoc[Local] |
@@ -70,6 +77,8 @@ xref:security:index.adoc[Overview] |
 image:ArchtectureOverview-homecard.png[alt=integration,width=74,height=74]
 *Integration*
 
+TigerGraph Cloud 4.0 offers several powerful integration tools.
+
 xref:integrations:index.adoc[Overview] |
 xref:integrations:copilot.adoc[]
 ¦
@@ -82,7 +91,87 @@ View the xref:release-notes:index.adoc[] to get update information on features a
 image:referece-homecard.png[alt=ref,width=74,height=74]
 *Resources*
 
-Here you can find any additional xref:resources:index.adoc[Resources] for TigerGraph Cloud v4.0 (beta)
+Here you can find any additional xref:resources:index.adoc[Resources] for TigerGraph Cloud v4.0 (beta).
 
 ¦
+|===
+
+== Comparison with TigerGraph Enterprise Server
+
+Most of the documentation for TigerGraph Enterprise Server also applies to TigerGraph Cloud.
+However, since TigerGraph Cloud does not have a command-line interface on the OS level, command-line features are not supported in the same way.
+In many cases, there is a GUI-based method for the same feature.
+For advanced OS-level commands, submit a support ticket for more information.
+
+
+|===
+| Topic | TigerGraph Enterprise Server | TigerGraph Cloud
+
+| GSQL Graph Algorithm Library
+| Yes
+| Yes
+
+| Release Notes
+| Yes
+| TigerGraph Cloud provides database versions kept up to date with TigerGraph Server releases.
+
+| GSQL 101
+| Yes
+| Basic concepts still apply, most CREATE, INSTALL, LOAD, and RUN commands are replaced with the GraphStudio GUI-based approach.
+
+| GSQL 102 Pattern Matching
+| Yes
+| The same patterns can be used in queries.
+
+| MultiGraph Overview
+| Yes
+| Yes
+
+| Hardware and Software Requirements
+| Yes
+| N/A
+
+| Installation and Configuration
+| Yes
+| N/A. There are a few simple steps to install a Starter Kit.  See the TigerGraph Cloud FAQs.
+
+| User Access Management
+| Yes
+| Yes
+
+| Data Encryption
+| Yes
+| N/A. TigerGraph Cloud is setup already for encrypted data at rest and at motion.
+
+| System Management
+| Yes
+| The Cloud Admin Portal is enhanced over the TigerGraph Server Admin Portal.  Backup and Restore is done through the Cloud Admin Portal.
+
+| GraphStudio UI Guide
+| Yes
+| Yes
+
+| GSQL Demo Examples
+| Yes
+| Yes
+
+| GSQL Language Reference, Part 1 Data Definition and Loading
+| Yes
+| Yes. GSQL Web Shell (Paid Tiers) supports Data Definition and Loading. Data files can be imported into the filesystem through GraphStudio, or submit support request to import into the filesystem. In addition, the operations can be performed through the GraphStudio user interface.
+
+| GSQL Language Reference, Part 2 Querying
+| Yes
+| Yes
+
+| RESTPP API User Guide
+| Yes
+| Yes. Note the URL assigned to your cluster.
+
+| Transaction Processing and ACID Support
+| Yes
+| Yes
+
+| Data Loader User Guides
+| Yes
+| S3 Loader can be used through the GraphStudio interface. In addition, S3 Loader and Kafka Loader can be used in GSQL Web Shell (Paid Tiers).
 |===

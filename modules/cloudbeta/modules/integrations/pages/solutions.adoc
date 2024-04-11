@@ -1,1 +1,17 @@
 = Solutions
+
+== Introduction
+
+An array of industry standard graph soultions.
+
+prebuld and fully production grade soultions.
+For diverase industryies and use cases
+
+Disgned for users to shiftly adobt graph techincalogy
+
+== Prerequisites
+
+== How to use Solutions
+
+Learn about how to get started with this how to guide on using soultions.
+In our transaction fraud case example

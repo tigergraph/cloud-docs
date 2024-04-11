@@ -1,1 +1,1 @@
-* xref:index.adoc[]
+* xref:index.adoc[Cloud 4.0 (Beta)]

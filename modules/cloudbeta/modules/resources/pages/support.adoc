@@ -2,7 +2,9 @@
 :sectnums:
 :experimental:
 
-TigerGraph provides support for TigerGraph Cloud for customers with non-free-tier clusters. For more information on TigerGraph's support policy, visit our https://www.tigergraph.com/support-policy/[support policy page].
+TigerGraph provides support for TigerGraph Cloud for customers with non-free-tier clusters.
+
+For more information on TigerGraph's support policy, visit our https://www.tigergraph.com/support-policy/[support policy page].
 
 You can submit a support ticket in the TigerGraph Cloud portal or by email.
 

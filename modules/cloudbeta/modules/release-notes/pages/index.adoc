@@ -10,8 +10,16 @@ TigerGraph Cloud v4.0.0 (Beta) was released on [release date]
 
 LTS versions are supported for 24 months from their initial release (X.X.0) and should be the choice for production deployments.
 
-== Key New Features
+== (Beta) Key Features
 === 4.0.0
+* xref:resource-manager:workgroup.adoc[Workgroups] and xref:resource-manager:workspace.adoc[Workspaces] give users control over resource management.
+
+* xref:gsql-editor:index.adoc[GSQL Editor] -
+
+* xref:explore-graph:index.adoc[] and xref:explore-graph:pattern-search.adoc[] -
+
+
+
 * Description and link - Detailed information.
 
 == Fixed issues

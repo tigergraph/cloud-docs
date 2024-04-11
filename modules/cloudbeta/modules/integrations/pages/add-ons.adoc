@@ -1,1 +1,8 @@
 = Add-Ons
+
+Introduction
+
+== xref:cloudBeta:integrations:copilot.adoc[]
+
+== xref:cloudBeta:integrations:insights.adoc[]
+== xref:cloudBeta:integrations:graphstudio.adoc[]

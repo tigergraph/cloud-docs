@@ -2,11 +2,5 @@
 :experimental:
 
 
-== Introduction
 
-== Prerequisites
-
-== Glossary
-
-== v4.0 Changes
 

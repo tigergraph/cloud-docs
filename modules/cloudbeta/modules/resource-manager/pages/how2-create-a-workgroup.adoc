@@ -1,8 +1,7 @@
-= How to create a Workgroup
+= How to Create a Workgroup
 :experimental:
 
 To learn more about workgroups see xref:cloudBeta:resource-manager:workgroup.adoc[].
-
 To create a workgroup in TigerGraph Cloud 4.0, follow the steps below.
 
 == Create a Workgroup
@@ -37,3 +36,5 @@ As of 2024-04-23, TigerGraph Cloud 4.0 only offers `AWS` on `US East(N. Virginia
 == Next Step
 
 Now, that you have a workgroup learn more about xref:cloudBeta:resource-manager:workspaces/workspace.adoc[Workspaces and Databases] or move on to xref:cloudBeta:resource-manager:workspaces/how2-create-a-workspace.adoc[].
+
+Return to the xref:cloudBeta:resource-manager:index.adoc[] page or xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.

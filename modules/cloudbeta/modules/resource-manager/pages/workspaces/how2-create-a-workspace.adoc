@@ -1,8 +1,7 @@
 = How to Create a Workspace
 :experimental:
 
-To learn more about workspaces see xref:workspaces/workspace.adoc[]
-
+To learn more about workspaces see xref:workspaces/workspace.adoc[].
 To create a workspace in TigerGraph Cloud 4.0, follow the steps below:
 
 == Create a Workspace

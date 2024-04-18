@@ -1,33 +1,50 @@
 = Expansion and Shrink
+:experimental:
 
 As your data grows or changes, you may need to adjust the capacity of your workspaces.
 Users can easily expand or shrink workspaces to accommodate the evolving needs of graph databases.
 
-You can scale up or down as required, ensuring optimal performance and cost-effectiveness.
+
+== Expand or Shrink a Workspace
+
+Scale up or down as required, ensuring optimal performance and cost-effectiveness.
 
 [NOTE]
 ====
 Before initiating a downsize operation, a data topology size check is performed to ensure that the workspace size can accommodate the data.
+
 If the size check fails, the downsize operation will not be allowed.
 ====
 
-image:expandandshrink.png[]
+[IMPORTANT]
+====
+Please be aware that resizing of workspaces is only allowed for Read-Write (RW) workspaces.
 
-You can select a size in the drop menu
+Resizing of Read-Only (RO) workspaces is strictly forbidden and not supported.
 
+Recreate a RO workspace if you need to resize it.
+====
+
+
+. Go to the btn:[ Edit ] section on a workspace.
++
+image:expandandshrink.png[width="250"]
+
+. Select a size in the drop menu.
++
 image:expand2.png[]
++
+Typically, resizing will take about 2 minutes depending on the data size and the workspace size.
 
-Note:
-Please be aware that resizing of workspaces is only allowed for Read-Write (RW) workspaces. Resizing of Read-Only (RO) workspaces is strictly forbidden and not supported. You can recreate a RO workspace if you need to resize it.
+=== Expansion and Shrink Limitations
 
-Resizing typically will take about 2 mins depending on the data size and the workspace size.
-
-Note:
-Please note that expansion/shrink is an offline operation.
-
+An expansion or shrink is an offline operation.
 If there are any other operations in progress on the workspace, they will be affected.
 
-It is recommended to schedule the expansion/shrink during a time when minimal or no operations are expected on the workspace to avoid any potential disruptions.
+[TIP]
+====
+It is recommended to schedule the expansion or shrink during a time when minimal or no operations are expected on the workspace to avoid any potential disruptions.
+====
 
 == Next Steps
 

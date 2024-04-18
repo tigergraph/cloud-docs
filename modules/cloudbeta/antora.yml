@@ -1,11 +1,12 @@
 name: cloudBeta
-title: TigerGraph 4.0 Cloud (Beta)
+title: TigerGraph 4.0 Cloud
 version: master
 display_version: default
 start_page: overview:index.adoc
 
 nav:
   - modules/overview/nav.adoc
+  - modules/release-notes/nav.adoc
   - modules/get-started/nav.adoc
   - modules/billing-manager/nav.adoc
   - modules/resource-manager/nav.adoc

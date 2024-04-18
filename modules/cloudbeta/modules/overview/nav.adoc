@@ -1,2 +1,2 @@
-* xref:index.adoc[Cloud 4.0 (Beta) Overview]
+* xref:index.adoc[Cloud 4.0 Overview]
 ** xref:cloudBeta:overview:comparison_table.adoc[Compare 4.0]

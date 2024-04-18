@@ -1,7 +1,7 @@
 = Load from Other Sources
 
-== Introduction
+TigerGraph Cloud supports various data sources for ingestion, providing flexibility in integrating with your existing data infrastructure. Please note that the
 
-== Prerequisites
+Please check in https://docs.tigergraph.com/tigergraph-server/current/data-loading/data-loading-overview to for comprehensive guid of load data into TigerGraph.
 
-== Steps
+In TigerGraph Cloud, we are providing a GSQL template for connectors that is not supported in the step-by-step loading guide.

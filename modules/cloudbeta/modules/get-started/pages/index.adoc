@@ -1,17 +1,17 @@
-= Get Started with TigerGraph Cloud 4.0 (Beta)
+= Get Started with TigerGraph 4.0 Cloud (Beta)
 :experimental:
 
-To get started with TigerGraph Cloud v4.0 (beta) users must first Sign Up and Login.
+To get started with TigerGraph 4.0 Cloud (beta) users must first Sign Up and Log In.
 
-These guide will walk you through the necessary steps.
+These guides will walk you through the necessary steps.
 
 == xref:how2-signup.adoc[]
 
-Learn how to create a TigerGraph Cloud 4.0 account and get access to the platform.
+Learn how to create a TigerGraph 4.0 Cloud account and get access to the platform.
 
 == xref:how2-login.adoc[]
 
-Learn how to login to your TigerGraph Cloud 4.0 account.
+Learn how to log in to your TigerGraph 4.0 Cloud account.
 
 
 

@@ -12,7 +12,7 @@ LTS versions are supported for 24 months from their initial release (X.X.0) and 
 
 == (Beta) Key Features
 === 4.0.0
-* xref:resource-manager:workgroup.adoc[Workgroups] and xref:resource-manager:workspace.adoc[Workspaces] give users control over resource management.
+* xref:resource-manager:workgroup.adoc[Workgroups] and xref:resource-manager:workspaces/workspace.adoc[Workspaces] give users control over resource management.
 
 * xref:gsql-editor:index.adoc[GSQL Editor] -
 

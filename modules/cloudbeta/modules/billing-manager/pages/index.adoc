@@ -1,13 +1,13 @@
 = Billing Overview
 :experimental:
 
-Introduction
+Understand the billing process and manage your subscription within TigerGraph Cloud. The billing section provides information about your usage, costs, and payment methods. You can view detailed billing reports, manage payment methods, and monitor resource consumption. This allows you to stay in control of your account, optimize resource usage, and manage costs effectively.
 
 == xref:cloudBeta:billing-manager:pricing.adoc[]
 
-== xref:cloudBeta:billing-manager:compute_price.adoc[]
+//== xref:cloudBeta:billing-manager:compute_price.adoc[]
 
-== xref:cloudBeta:billing-manager:storage_price.adoc[]
+//== xref:cloudBeta:billing-manager:storage_price.adoc[]
 
 
 

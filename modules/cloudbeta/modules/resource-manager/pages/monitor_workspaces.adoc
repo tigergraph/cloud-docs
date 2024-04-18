@@ -1,1 +1,22 @@
 = Monitor Workspaces
+
+Monitoring the performance and health of your workspaces is essential for efficient operations.
+TigerGraph Cloud offers comprehensive monitoring capabilities that allow you to track the status and resource usage of your workspaces.
+You can monitor metrics such as CPU utilization, memory usage, and storage consumption, enabling you to optimize performance, identify bottlenecks, and ensure the smooth operation of TigerGraph databases.
+
+image:Screenshot 2024-04-17 at 5.45.15 PM.png[]
+
+image:Screenshot 2024-04-17 at 5.45.39 PM.png[]
+
+You can click on the Button from the workspace menu to login to Grafana dashboard to monitor your workspace.
+
+[Placeholder for Grafana dashboard]
+
+== Next Steps
+
+Next, learn more about how to xref:cloudBeta:resource-manager:monitor_workspaces.adoc[] or how to xref:cloudBeta:resource-manager:expansion_shrink.adoc[Expand and Shrink] a workspace or about xref:workspaces/workspace-size.adoc[Workspace Sizes].
+
+Return to the xref:cloudBeta:resource-manager:index.adoc[] page or xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.
+
+
+

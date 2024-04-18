@@ -1,0 +1,23 @@
+= How to Manage Workgroup Access
+
+In TigerGraph Cloud, access management allows you to configure permissions at both the user level and the resource level.
+
+At the user level, you can define permissions that apply to individual users or groups of users. User-level permissions determine what actions a user can perform across the entire TigerGraph Cloud organization. These permissions are typically related to administrative tasks and access to workgroups and workspaces. You can go to Access Management to manage access at the user level.
+
+At the resource level, you can configure permissions that apply to specific workspaces within your TigerGraph Cloud organization. Resource-level permissions determine what actions a user can perform on a specific resource. These permissions allow you to control access to individual resources based on the needs and responsibilities of different users. In this section, you will be able to configure the permissions for the workgroup.
+
+[Placeholder for workgroup access management tab]
+
+In TigerGraph Cloud, you have the flexibility to configure permissions at both the workgroup and workspace levels to control access to your graph database.
+
+Workgroup Permissions: When you configure permissions for a workgroup, you can define the access rights for the entire workgroup. Users added to the workgroup will be granted the workgroup admin role, which provides administrative privileges for managing the workgroup. Workgroup admins have the authority to add users, assign roles, and configure permissions within the workgroup. For more information about workgroup admin please refer to the Permissions page.
+
+[Placeholder to configure workgroup permission]
+
+Workspace Permissions: When you configure permissions for a workspace, you can specify access rights for that specific workspace within a workgroup. The parent workgroup admins or organization admins automatically grant admin permissions for the workspace. For more information about workspace admin role and workspace member role please refer to the Permissions page.
+
+[Placeholder to configure workspace permission]
+
+For Organization Admins, Workgroup Admins, and Workspace Admins, the superuser database role is automatically granted. This role provides extensive privileges and permissions within the graph database. For more information about the superuser role and its capabilities, please refer to the TigerGraph documentation at https://docs.tigergraph.com/gui/current/graphstudio/user-access-management#_role_and_graph_based_access_control.
+
+By configuring permissions at both the workgroup and workspace levels, TigerGraph Cloud enables you to effectively manage access to your graph database, ensuring that users have the appropriate roles and privileges based on their responsibilities and organizational structure.

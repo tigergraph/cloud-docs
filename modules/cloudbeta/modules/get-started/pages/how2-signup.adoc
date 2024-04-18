@@ -21,8 +21,11 @@ When registering for a new TigerGraph Cloud account, we will ask to confirm your
 btn:[ Click ] the link in your email to verify, then log in using your username and password.
 
 [NOTE]
-We automatically create an new org for you.
+====
+We automatically create a new organization for you.
 
+You can update your organization on the xref:cloudBeta:administration:organization-management.adoc[] page.
+====
 The next step is to xref:how2-login.adoc[Log in].
 
 

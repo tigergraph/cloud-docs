@@ -6,4 +6,12 @@ An Organization Admin can manage multiple users in your organization and control
 This page explains the user access controls.
 
 [NOTE]
-For help with setting up workspaces, visit xref:resource-manager:how2-create-a-workspace.adoc[]
+For help with setting up workspaces, visit xref:resource-manager:workspaces/how2-create-a-workspace.adoc[]
+
+When you set up a TigerGraph Cloud account, you are granted the privileges of an Organization Admin for your company.
+
+TigerGraph Cloud allows an Organization Admin to manage multiple users in your organization and control their access to various resources.
+
+This page explains the user access controls. For help with setting up workspaces, visit Create a Workspace.
+
+[Placeholder to users list page]

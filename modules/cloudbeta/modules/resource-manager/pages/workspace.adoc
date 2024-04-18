@@ -1,5 +1,0 @@
-= Workspace Overview
-
-== Size Explanation
-=== Size suggestion
-== Options

@@ -1,0 +1,84 @@
+= Workspace Size
+
+When creating a workspace, you can specify the size based on your data and performance requirements.
+
+TigerGraph Cloud 4.0 offers multiple size options, allowing you to choose the appropriate capacity for your graph databases.
+
+[TIP]
+The size determines the number of instances and the allocated resources for your workspace.
+
+We provide the following workspace sizes on TigerGraph Cloud 4.0.
+[cols=5]
+|===
+| Size | VCPU | Memory (GB) | Pod Size | Partition
+
+|TG-00
+|2
+|16
+|C2M16
+|1
+
+|TG-0
+|4
+|32
+|C4M32
+|1
+
+|TG-1
+|8
+|64
+|C8M64
+|1
+
+|TG-2
+|16
+|128
+|C16M128
+|1
+
+|TG-4
+|32
+|256
+|C32M256
+|1
+
+|TG-6
+|48
+|384
+|C48M384
+|1
+
+|TG-8
+|64
+|512
+|C64M512
+|1
+
+|TG-12
+|96
+|768
+|C48M384
+|2
+
+|TG-16
+|128
+|1024
+|C64M512
+|2
+|===
+
+////
+TigerGraph Size Capacity Planner (TBD)
+
+To help you determine the ideal workspace size for your graph databases, TigerGraph provides the TigerGraph Size Capacity Planner. This tool helps estimate the required resources based on factors such as data volume, query complexity, and expected workload. By using the TigerGraph Size Capacity Planner, you can make informed decisions about the size of your workspace, ensuring optimal performance and cost-effectiveness.
+
+[User input of estimated data size]
+
+Choosing the right workspace size is crucial for achieving optimal performance and cost efficiency. The TigerGraph Size Capacity Planner empowers you to make informed decisions and effectively manage the resources for your graph databases within TigerGraph Cloud.
+////
+== Next Steps
+
+See xref:cloudBeta:resource-manager:expansion_shrink.adoc[] to learn how to change the size of a workspace or
+return to the xref:cloudBeta:resource-manager:index.adoc[] page or xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.
+
+

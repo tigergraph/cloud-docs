@@ -1,5 +1,0 @@
-= How to create a Workspace
-
-== Introduction
-
-== Steps

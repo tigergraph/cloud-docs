@@ -1,12 +1,26 @@
 = Load Data in v4 Beta
 :experimental:
 
+Efficiently loading data into your TigerGraph databases is crucial for successful graph analysis. TigerGraph Cloud offers multiple methods for data ingestion:
 
-== Introduction
+image:Screenshot 2024-04-17 at 5.47.58 PM.png[]
 
-== Prerequisites
+image:Screenshot 2024-04-17 at 5.48.20 PM.png[]
 
-== Glossary
+Click on  to load your data into TigerGraph.
 
-== v4.0 Changes
+TigerGraph Cloud provides various types of connectors that allow you to load data into your graph database. The data ingestion tool offers two different approaches to make it easier for users to load their data based on their specific needs and preferences.
+
+image:Screenshot 2024-04-17 at 5.49.07 PM.png[]
+
+Step-by-Step Guide: The data ingestion tool includes a user-friendly interface that guides you through the data loading process step by step. This approach is suitable for users who prefer a visual and interactive experience. The step-by-step guide helps you configure the data source, map the data to your graph schema, and customize import options.
+GSQL Template: For users who prefer a more programmatic approach or have complex data loading requirements, the data ingestion tool provides support for GSQL templates. The GSQL template option allows you to define custom data loading logic using GSQL scripts. With GSQL templates, you have more flexibility and control over the data ingestion process. You can leverage GSQL's powerful features to transform, validate, and load data from various sources into your graph database.
+
+== xref:cloudBeta:load-data:load-from-local.adoc[]
+
+== xref:cloudBeta:load-data:load-from-cloud.adoc[]
+
+== xref:cloudBeta:load-data:load-from-other-sources.adoc[]
+
+* xref:cloudBeta:load-data:jdbc.adoc[]
 

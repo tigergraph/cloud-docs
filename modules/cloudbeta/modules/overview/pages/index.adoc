@@ -55,7 +55,7 @@ Learn  how to dynamically allocate compute and storage resources.
 
 xref:resource-manager:index.adoc[Overview] |
 xref:resource-manager:workgroup.adoc[Workgroup] |
-xref:resource-manager:workspace.adoc[Workspace]
+xref:resource-manager:workspaces/workspace.adoc[Workspace]
 
 ¦
 image:DataLoading-Homecard.png[alt=load data,width=74,height=74]

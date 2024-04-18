@@ -2,5 +2,8 @@
 :experimental:
 
 
+TigerGraph Cloud seamlessly integrates with various tools and services to enhance your graph database workflow.
 
+Let's explore the integrations available:
 
+== Soultions

@@ -1,13 +1,17 @@
 = Organization Management
 :experimental:
 
+As an organization administrator, you have access to organization management features that allow you to configure organization settings.
 
-== Introduction
+image:Screenshot 2024-04-18 at 10.22.57 AM.png[]
 
-== Prerequisites
+Organization Name: The name of your organization within TigerGraph Cloud. This is a unique identifier for your organization and is used for administrative purposes.
 
-== Key Features or Components
+Display Name: The display name is the name that will be shown in the user interface and other user-facing areas. It can be a more user-friendly or descriptive name compared to the organization name. The display name helps users easily identify your organization within TigerGraph Cloud.
 
-== Glossary
+Organization Logo URL: The URL to the logo image file for your organization. This logo will be displayed in the TigerGraph Cloud navigation bar and can be used to represent your organization visually. Providing a logo adds a professional touch and helps users quickly recognize your organization within TigerGraph Cloud.
 
-== v4.0 Changes
+image:Screenshot 2024-04-18 at 10.23.26 AM.png[]
+
+
+

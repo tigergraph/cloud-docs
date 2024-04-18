@@ -9,9 +9,43 @@ For diverase industryies and use cases
 
 Disgned for users to shiftly adobt graph techincalogy
 
-== Prerequisites
-
-== How to use Solutions
 
 Learn about how to get started with this how to guide on using soultions.
 In our transaction fraud case example
+
+TigerGraph Cloud offers pre-built solution kits that address common use cases and industry-specific challenges. These solutions provide a starting point for your graph database projects, offering pre-configured schemas, sample data, and query templates. By leveraging these solutions, you can accelerate development, reduce time-to-insights, and focus on extracting value from your graph data. Explore the available solutions and learn how to implement them in your specific use cases.
+
+
+
+To start creating your first solution you will need to have a Read-Write workspace already created. For steps to create a Read-Write workspace, please go to Create a Workspace.
+
+[Screenshot for solution list]
+
+Simply click on the Add button of the selected solution kit to start the solution builder.
+
+image:Screenshot 2024-04-18 at 10.17.39 AM.png[]
+
+Then you can give your solution a name. And select the workspace you want your solution to be installed to.
+
+image:Screenshot 2024-04-18 at 10.18.19 AM.png[]
+
+Note:
+We only support install solutions on RW workspace
+
+
+For each solution kit, you are provided with three options to choose from regarding the data:
+
+image:Screenshot 2024-04-18 at 10.18.53 AM.png[]
+
+Sample Data: This option allows you to use pre-loaded sample data that comes with the solution kit. Sample data is designed to showcase the capabilities and features of the solution kit. It provides a ready-to-use dataset that you can explore and interact with immediately. This option is useful if you want to quickly evaluate the solution kit or understand its functionality without the need to load your own data.
+
+Load Your Own Data: With this option, you have the flexibility to load your own data into the solution kit. You can import your data from various sources, such as CSV files, databases, or other data formats supported by TigerGraph. For more details for data ingestion please go to Data Ingestion.
+
+No Data: If you choose the "No Data" option, the solution kit will be set up without any pre-loaded or user-provided data. This option is useful if you want to start with a clean slate and build your blank solution from scratch. It provides you with pre-defined graph schema and queries, where you can load your own data afterward using GSQL Editor or Data Ingestion.
+
+Once your created your solution, it will show up under the Solutions tab
+
+image:Screenshot 2024-04-18 at 10.19.26 AM.png[]
+
+
+

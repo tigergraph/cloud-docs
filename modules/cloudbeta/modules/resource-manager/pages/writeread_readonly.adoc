@@ -1,7 +1,0 @@
-= Read/Write and Read only Workspaces
-
-== Introduction
-
-== Prerequisites
-
-== Glossary

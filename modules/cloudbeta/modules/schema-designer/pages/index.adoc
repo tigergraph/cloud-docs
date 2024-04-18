@@ -1,0 +1,62 @@
+= Schema Designer Overview
+:experimental:
+
+The graph schema defines the structure of your graph database, influencing its performance and functionality.
+With the Schema Designer, you can easily modify and manage the schema of your graph databases.
+
+You can define vertex and edge types, specify properties and indexes, and establish relationships between elements. The Schema Designer provides a user-friendly interface for schema management, allowing you to adapt your graph database to changing requirements and optimize its performance.\
+
+image:Screenshot 2024-04-17 at 7.33.43 PM.png[]
+
+The Schema Designer is accessible from:
+Workspace General page
+GSQL Editor
+Data Ingestion
+Solution Builder
+
+image:Screenshot 2024-04-17 at 7.34.37 PM.png[]
+
+== Shortcuts
+The schema designer provides a comprehensive list of shortcuts that can make your schema design process more efficient and productive.
+
+image:Screenshot 2024-04-17 at 7.35.28 PM.png[]
+
+== Create a Graph
+Before creating vertices and edges, you need to create a graph in the Schema Designer. A graph represents the overall structure and framework of your graph database. When creating a graph, you define its name and any global settings or configurations that apply to the entire graph.
+
+You can skip creating a graph if you are defining the global graph schema.
+
+Please click on the Create New Graph button in the graph selector dropdown menu.
+
+image:Screenshot 2024-04-17 at 7.38.22 PM.png[]
+
+You can specify the graph name in the pop-up window.
+
+image:Screenshot 2024-04-17 at 7.38.43 PM.png[]
+
+Note:
+The initial creation of the first graph may require up to 2 minutes as the services warm up and the necessary environment is set up.
+
+== Create a Vertex
+In the Schema Designer, you can create vertices to define the entities or nodes in your graph database. Vertices represent distinct entities in your graph model, such as users, products, locations, or any other objects you want to represent in your graph. Creating vertices involves specifying the vertex name and any attributes associated with it.
+
+You can click on the button, or hold key V and left click on the graph to create a vertex.
+
+image:Screenshot 2024-04-17 at 7.39.38 PM.png[]
+
+Once a vertex is created, you can configure the name and its attributes in the properties panel.
+
+== Create a Edge
+The Schema Designer allows you to create edges to establish relationships between vertices in your graph database. Edges represent the connections or relationships between entities. When creating an edge, you define the edge name, the source vertex, the target vertex, and any attributes associated with the edge.
+
+You can use mouse drag from the border of a vertex and drop to a new position to create a new vertex and new edge or drop to an existing vertex to only create a new edge.
+
+image:unnamed.gif[]
+
+Once an edge is created, you can now configure the edge name, and its attributes in the properties panel.
+
+== Attributes
+Attributes play a crucial role in defining the properties or characteristics of vertices and edges in your graph database. In the Schema Designer, you can define attributes for vertices and edges to store additional information about them. Attributes can be of different data types, such as strings, integers, booleans, or dates, and they provide valuable context and details to your graph data.
+
+image:Screenshot 2024-04-17 at 7.43.30 PM.png[]
+

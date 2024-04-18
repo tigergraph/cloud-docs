@@ -1,9 +1,77 @@
 = Backup and Restore
 
-== Introduction
+Data protection and business continuity are critical considerations for any database system.
+TigerGraph Cloud provides built-in backup and restore capabilities, allowing you to create backups of your graph databases and restore them when needed.
+This ensures the safety and availability of your data, protecting against accidental data loss or system failures.
 
-== Prerequisites
+Discover how to create backup points and restore your workspace to a specific point in time.
 
-== Glossary
+image:backuprestore1.png[]
 
-== v4.0 Changes
+== Manual backup
+In this section, you can find information on how to manually initiate a backup of your data. It will include step-by-step instructions on performing a manual backup using the available tools or commands.
+
+Note:
+Backup functionality is currently available only for Read-Write (RW) workspaces. Make sure your workspace is in RW mode before attempting to perform a backup.
+
+
+
+To manually backup your data, follow these steps:
+
+Click on image:backupButton.png[width=75,height=75] button to start manual backup.
+Specify a backup tag for your manual backup. Backup tag is used to identify your graph database backup.
+
+image:backuprestore2.png[]
+
+Click on image:backupbutton2.png[width=75] button to start the backup process. You can see the backup logs displayed in the window.
+
+image:backuprestore3.png[]
+
+Once the backup is completed, you will see the newly created backup in the backup list.
+
+image:backuprestore4.png[]
+
+Note:
+In the beta release, only one manual backup for RW workspace will be allowed. You will need to delete the previous manual backup in order to make a new manual backup.
+
+== Scheduled auto backup
+This section will provide details on configuring and scheduling automatic backups for your data. You will learn how to set up recurring backup jobs at specified intervals to ensure regular data protection.
+
+To enable auto backup, simply toggle on the switch image:backupButton3.png[width=75].
+
+You can specify the auto backup schedule using cron schedule. You can test out your cron schedule in crontab.
+
+image:backuprestore5.png[]
+
+Click on Save button to save the schedule.
+
+Note:
+In the beta release, only one auto backup for RW workspace will be allowed. The latest backup will automatically overwrite the previous auto backup. Please make sure to plan your backup strategy accordingly.
+
+
+== Restore
+In the restore section, you will find guidance on how to restore your data from a backup. It will cover the steps involved in restoring data using the backups created, including any considerations or options available during the restoration process.
+
+To restore your backup to a workspace is straightforward.
+
+image:Screenshot 2024-04-17 at 5.38.09 PM.png[]
+
+image:Screenshot 2024-04-17 at 5.38.52 PM.png[]
+
+Click on the  button to open the Restore drawer.
+After reviewing the backup details, you can click on the Restore button to proceed.
+You will need to type in the backup name to confirm the restore.
+
+image:Screenshot 2024-04-17 at 5.39.34 PM.png[]
+
+After the restore is triggered, you can see the progress and detailed log in the window
+
+image:Screenshot 2024-04-17 at 5.40.16 PM.png[]
+
+Note:
+Please note that restoring an offline operation. If there are any other operations in progress on the workspace, they will be affected. It is recommended to schedule the restore during a time when minimal or no operations are expected on the workspace to avoid any potential disruptions.
+
+
+
+
+

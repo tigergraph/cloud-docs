@@ -1,0 +1,50 @@
+= Read/Write and Read Only Workspaces
+
+Read-Write and Read-Only Workspaces will connect to the same database allowing users to dynamically control OLTP (define) and OLAP (define) workloads for complete isolation of analytical and transactional traffic.
+
+== Read-Write (RW) workspace
+
+Read-Write (RW) workspaces allow read and write operations on the graph data.
+They are typically used for data ingestion, data updates, and running queries that modify the graph structure or properties.
+
+//[Placeholder for create a new database]
+
+//=== Create a Read-Write workspace
+
+== Read-Only (RO) workspace
+
+Read-Only (RO) workspaces are optimized for read-intensive operations.
+They are used for executing queries and analytics on the graph data without modifying it.
+Read-only workspaces provide improved performance and scalability for read operations.
+
+//[Placeholder for attach to an existing database]
+
+[NOTE]
+====
+Current RO workspace requires manual sync up with the RW workspace to catch up with the latest change.
+====
+
+=== Update Read-Only(RO) workspace
+
+Once a Read-Only (RO) workspace is created, it also creates a snapshot of the data.
+You can manually sync up the data with Read-Write(RW) workspace when needed.
+
+//[Placeholder for update read-only workspace]
+
+[NOTE]
+Updating a Read-Only (RO) workspace is an offline operation.
+
+If there are any other operations in progress on the RO workspace, they are likely to be affected during the update process.
+
+[TIP]
+====
+It is recommended to schedule the update during a time when minimal or no operations are expected on the RO workspace to avoid any potential disruptions.
+====
+
+== Next Steps
+
+Next, learn more about how to xref:cloudBeta:resource-manager:monitor_workspaces.adoc[] or how to xref:cloudBeta:resource-manager:expansion_shrink.adoc[Expand and Shrink] a workspace or about xref:workspaces/workspace-size.adoc[Workspace Sizes].
+
+Return to the xref:cloudBeta:resource-manager:index.adoc[] page or xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.
+
+

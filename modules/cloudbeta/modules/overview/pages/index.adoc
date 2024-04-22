@@ -7,6 +7,9 @@ TigerGraph Cloud 4.0 offers a powerful and user-friendly environment for managin
 
 pass:[<abbr title="Define User Friendly">ToolTip Practice</abbr>]
 
+:tooltip: pass:[<span class="tooltip" data-tooltip="This is a tooltip text">Hover over this text</span>]
+
+{tooltip}
 
 [CAUTION]
 ====

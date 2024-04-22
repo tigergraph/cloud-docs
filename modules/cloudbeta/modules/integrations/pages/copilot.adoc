@@ -1,8 +1,8 @@
-= Co-Pilot
+= CoPilot
 :experimental:
 
-== Introduction
+descriton abobt CoPlioit in Cloud 4.0
 
-== Prerequisites
+image
 
-== Glossary
+link to CoPilot docuementation

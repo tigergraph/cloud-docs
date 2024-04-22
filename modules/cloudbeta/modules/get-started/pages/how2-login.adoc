@@ -6,7 +6,7 @@ After first xref:get-started:how2-signup.adoc[signing up] users must  btn:[Log I
 This guide will walk you through the necessary steps.
 
 == Log In
-Click btn:[Log In] on the https://tgcloud.io/[TigerGraph Cloud landing page].
+Click btn:[Log In] on the https://portal.tgcloud.io[TigerGraph Cloud landing page].
 
 TigerGraph 4.0 Cloud supports users to log in via Google, LinkedIn, or via a username/password.
 
@@ -29,4 +29,7 @@ If you were invited by a member of your organization and you do not know the nam
 
 image::orgLogin.png[]
 
-Once logged in, you can create begin to create xref:resource-manager:workgroup.adoc[Workgroups] and xref:resource-manager:workspaces/workspace.adoc[Workspaces], xref:administration:invite_users.adoc[] to your organization, and xref:administration:access_mgnt.adoc[manage access].
+== Next Steps
+
+Once logged in, you can begin to create xref:resource-manager:workgroup.adoc[Workgroups] and xref:resource-manager:workspaces/workspace.adoc[Workspaces], xref:administration:invite_users.adoc[] to your organization, and xref:administration:access_mgnt.adoc[manage access].
+Or return to the xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.

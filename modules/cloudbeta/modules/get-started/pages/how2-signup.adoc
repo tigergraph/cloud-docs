@@ -6,7 +6,8 @@ In order to use TigerGraph Cloud v4.0 (beta) users must first btn:[Sign Up].
 This guide will walk you through the necessary steps.
 
 == Sign Up
-Click btn:[Sign Up] https://tgcloud.io[on the TigerGraph Cloud landing page].
+Click btn:[Sign Up] https://portal.tgcloud.io[on the TigerGraph Cloud landing page].
+
 
 {Placeholder for new cloud landing page}
 
@@ -16,7 +17,7 @@ If you are signing up for the first time, you will be prompted to enter a passwo
 [CAUTION]
 Please refer to out xref:security:password-policy.adoc[] that applies to TigerGraph Cloud.
 
-When registering for a new TigerGraph Cloud account, we will ask to confirm your email address.
+When registering for a new TigerGraph Cloud 4.0 account, we will ask to confirm your email address.
 
 btn:[ Click ] the link in your email to verify, then log in using your username and password.
 
@@ -26,7 +27,11 @@ We automatically create a new organization for you.
 
 You can update your organization on the xref:cloudBeta:administration:organization-management.adoc[] page.
 ====
-The next step is to xref:how2-login.adoc[Log in].
+
+== Next Steps
+
+The next step is to xref:how2-login.adoc[Log in] your new TigerGraph Cloud 4.0.
+Or return to the  xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.
 
 
 

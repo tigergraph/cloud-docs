@@ -1,1 +1,7 @@
 = GraphStudio
+
+descriton abobt insights in Cloud 4.0
+
+image
+
+link to Graph studio docuementation

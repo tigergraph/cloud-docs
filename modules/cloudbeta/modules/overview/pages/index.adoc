@@ -5,11 +5,11 @@
 This documentation will guide you through the various features and functionalities of our brand new cloud-native graph as a service (GaaS) management platform.
 TigerGraph Cloud 4.0 offers a powerful and user-friendly environment for managing, analyzing, and exploring your graph data.
 
-pass:[<abbr title="Define User Friendly">ToolTip Practice</abbr>]
+//pass:[<abbr title="Define User Friendly">ToolTip Practice</abbr>]
 
-:tooltip: pass:[<span class="tooltip" data-tooltip="This is a tooltip text">Hover over this text</span>]
+//:tooltip: pass:[<span class="tooltip" data-tooltip="This is a tooltip text">Hover over this text</span>]
 
-{tooltip}
+//{tooltip}
 
 [CAUTION]
 ====

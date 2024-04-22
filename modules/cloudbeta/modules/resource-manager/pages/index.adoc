@@ -32,13 +32,15 @@ Such as:
 
 === xref:cloudBeta:resource-manager:workspaces/advanced-settings/advanced-settings.adoc[]
 ---
+Learn how advanced settings in workspace allow users to customize and fine-tune various aspects of their workspace configuration.
 
 === xref:workspaces/writeread_readonly.adoc[]
 ---
+Learn how Read-Write (RW) and Read-Only (RO) Workspaces will connect to a database.
 
 === xref:workspaces/workspace-size.adoc[]
 ---
-
+Learn how to specify the size based on your data and performance requirements.
 
 === xref:expansion_shrink.adoc[]
 ---

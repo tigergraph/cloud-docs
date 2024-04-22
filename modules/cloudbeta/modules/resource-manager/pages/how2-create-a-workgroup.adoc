@@ -42,12 +42,13 @@ Return to the xref:cloudBeta:resource-manager:index.adoc[] page or xref:cloudBet
 xref:cloudBeta:resource-manager:workspaces/workspace.adoc[Workspaces and Databases, role=next-button]
 
 
-[.next-button]#xref:cloudBeta:resource-manager:workspaces/workspace.adoc[Link Text]#
+[.next-button]
+xref:cloudBeta:resource-manager:workspaces/workspace.adoc[Link Text]
 
 
-++++
-<span class="next-button">xref:cloudBeta:resource-manager:workspaces/workspace.adoc[Link Text]</span>
-++++
+
+:next-button: pass:[<span class="next-button">xref:cloudBeta:resource-manager:workspaces/workspace.adoc[Next]</span>]
+{next-button}
 
 ////
 ++++

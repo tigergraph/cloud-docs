@@ -41,6 +41,14 @@ Return to the xref:cloudBeta:resource-manager:index.adoc[] page or xref:cloudBet
 
 xref:cloudBeta:resource-manager:workspaces/workspace.adoc[Workspaces and Databases, role=next-button]
 
+
+[.next-button]#xref:cloudBeta:resource-manager:workspaces/workspace.adoc[Link Text]#
+
+
+++++
+<span class="next-button">xref:cloudBeta:resource-manager:workspaces/workspace.adoc[Link Text]</span>
+++++
+
 ////
 ++++
 <a href="cloudBeta:resource-manager:workspaces/workspace.adoc" class="next-button">Next</a>

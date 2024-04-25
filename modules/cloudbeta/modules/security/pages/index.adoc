@@ -1,16 +1,13 @@
 = Security
 :experimental:
 
+Introduction
 
-[CAUTION]
-====
-TigerGraph Cloud 4.0 is still in beta release and the documentation is in progress.
-====
+== xref:cloudBeta:security:password-policy.adoc[]
 
-[IMPORTANT]
-====
-TigerGraph Cloud 4.0 beta is  for personal or R&D use and not for production use.
+Learn and understand the password policy in TigerGraph Cloud 4.0.
 
-It is not covered by our xref:cloudBeta:resources:terms_conditions.adoc[].
-====
 
+== xref:cloudBeta:security:idp.adoc[]
+
+Learn and understand IDP intergration with SSO password policy in TigerGraph Cloud 4.0.

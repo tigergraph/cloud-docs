@@ -2,11 +2,11 @@
 :experimental:
 
 
-== Introduction
+Explore graph allow users to visually interact with their graph data.
 
-== Prerequisites
+== xref:cloudBeta:explore-graph:pattern-search.adoc[]
 
-== Glossary
 
-== v4.0 Changes
+== xref:copilot-enablement.adoc[]
+
 

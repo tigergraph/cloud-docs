@@ -20,7 +20,7 @@ TigerGraph Cloud 4.0 is still in beta release and the documentation is in progre
 ====
 TigerGraph Cloud 4.0 beta is  for personal or R&D use and not for production use.
 
-It is not covered by our xref:cloudBeta:resources:terms_conditions.adoc[].
+Please see xref:cloudBeta:resources:terms_conditions.adoc[].
 ====
 
 ////

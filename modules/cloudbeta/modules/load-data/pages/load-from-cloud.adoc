@@ -103,9 +103,8 @@ image::Screenshot 2024-04-17 at 5.59.16 PM.png[]
 
 == Next Steps
 
-Next, learn how to use the xref:gsql-editor:index.adoc[GSQL Editor] in TigerGraph Cloud 4.0.
+Next, learn how to use the xref:cloudBeta:schema-designer:index.adoc[Schema Designer] in TigerGraph Cloud 4.0.
 
 Or return to the xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.
-
 
 

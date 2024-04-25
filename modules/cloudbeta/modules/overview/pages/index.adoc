@@ -60,12 +60,20 @@ xref:resource-manager:workspaces/workspace.adoc[Workspace]
 image:DataLoading-Homecard.png[alt=load data,width=74,height=74]
 *Load Data*
 
-Learn how to xref:load-data:index.adoc[Load Data] into TigerGraph Cloud 4.0.
+Learn how to Load Data into TigerGraph Cloud 4.0.
+
+
 
 xref:load-data:index.adoc[Overview] |
 xref:load-data:load-from-local.adoc[Local] |
 xref:load-data:load-from-cloud.adoc[Cloud] |
 xref:load-data:load-from-other-sources.adoc[Other Sources]
+¦
+image:TG_Icon_Library-135.png[alt=schemadesigner,width=74,height=74]
+*Schema Designer*
+
+xref:cloudBeta:schema-designer:index.adoc[] teaches you how to you can easily modify and manage the schema of your graph databases using Schema Designer UI.
+
 ¦
 image:schema-homecard.png[alt=gsqlEditor,width=74,height=74]
 *GSQL Editor*
@@ -107,15 +115,8 @@ xref:cloudBeta:integrations:insights.adoc[] |
 xref:cloudBeta:integrations:graphstudio.adoc[]
 ¦
 image:documentation-homecard.png[alt=support,width=74,height=74]
-*Release Notes*
+*Release Notes and Resources*
 
 View the xref:release-notes:index.adoc[] to get update information on features and releases.
-
-¦
-image:referece-homecard.png[alt=ref,width=74,height=74]
-*Resources*
-
-Here you can find any additional xref:resources:index.adoc[Resources] for TigerGraph Cloud 4.0.
-
-¦
+Or find any additional xref:resources:index.adoc[Resources] for TigerGraph Cloud 4.0.
 |===

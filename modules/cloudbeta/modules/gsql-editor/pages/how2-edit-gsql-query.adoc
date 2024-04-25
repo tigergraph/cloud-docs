@@ -1,60 +1,118 @@
-= How to Edit a GSQL Query
+= How to Edit, Run, and Share a GSQL Query
+:experimental:
+
+The GSQL Editor provides a feature-rich environment for writing, modifying, and executing GSQL queries.
+With the GSQL Editor, you can leverage the syntax highlighting, auto-complete, and error checking features to write efficient and accurate GSQL queries.
+
+By executing queries in the GSQL Editor you can then visualize the results, making it easier to iterate and refine your analysis.
+
+[TIP]
+====
+GSQL is a powerful graph query language that enables you to express complex graph traversal and analysis operations.
+For more information about GSQL please visit xref:3.10.1@gsql-ref:querying:index.adoc[]
+====
 
 == Edit GSQL Query
 
-The GSQL Editor provides a feature-rich environment for writing, modifying, and executing GSQL queries. GSQL is a powerful graph query language that enables you to express complex graph traversal and analysis operations. For more information about GSQL please visit https://docs.tigergraph.com/gsql-ref/current/querying/.
-
-With the GSQL Editor, you can leverage the syntax highlighting, auto-complete, and error checking features to write efficient and accurate GSQL queries. You can also execute queries and visualize the results directly within the editor, making it easier to iterate and refine your analysis.
-
-To start writing your first GSQL query, just click on the GSQL Query from the + menu.
-
-image:Screenshot 2024-04-18 at 10.12.15 AM.png[]
-
+.To start writing your first GSQL query:
+. Click on the btn:[ GSQL Query ] from the btn:[ + ] menu.
++
+image::Screenshot 2024-04-18 at 10.12.15 AM.png[]
++
 The opened files will be listed on the top tabs on the code edit folder
++
+image::Screenshot 2024-04-18 at 10.12.40 AM.png[width=300]
++
+[NOTE]
+====
+Schema based GSQL autocomplete is not yet supported.
+====
 
-image:Screenshot 2024-04-18 at 10.12.40 AM.png[]
+== Run GSQL Query
 
-Note:
-Schema based GSQL autocomplete is not supported yet.
+.To run a GSQL Query, start by:
+. Select an active workspace to run the GSQL Query.
++
+image::Screenshot 2024-04-18 at 10.13.20 AM.png[]
 
+. To run a query, there are two options available: btn:[Run All]  and btn:[Run Selected].
++
+image::Screenshot 2024-04-18 at 10.13.47 AM.png[]
 
-== Execute GSQL Query
+* *Run All*: The btn:[Run All] option executes the entire GSQL script or query that is currently open in the GSQL Editor.
+When you click the btn:[Run All] button, it triggers all the GSQL statements in the script from top to bottom.
++
+[TIP]
+====
+This is useful when you want to run the entire GSQL script or when you have multiple queries in the script that need to be run together.
+====
++
+** *Shortcut*: You can also use the shortcut to btn:[RUN All]: btn:[ Command + Enter/ Control + Enter].
 
-image:Screenshot 2024-04-18 at 10.13.20 AM.png[]
-
-Select an active workspace to run the GSQL Query.
-
-To execute GSQL queries, there are two options available: "Run All" and "Run Selected." Here's an explanation of each option:
-
-image:Screenshot 2024-04-18 at 10.13.47 AM.png[]
-
-Run All: The "Run All'' option executes the entire GSQL script or query that is currently open in the GSQL Editor. When you click the "Run All'' button, it triggers the execution of all the GSQL statements in the script from top to bottom. This is useful when you want to execute the entire GSQL script or when you have multiple queries in the script that need to be executed together.
-
-	You can also use the shortcut to RUN All: Command + Enter/ Control + Enter
-
-Run Selected: The "Run Selected" option allows you to execute only a specific portion of the GSQL query. To use this option, you need to select the desired portion of the GSQL code within the Query Editor. Once you've made the selection, clicking the "Run Selected" button will execute only the selected portion of the code. This is helpful when you want to execute a specific query or a subset of queries within a larger script.
-
-You can also use the shortcut to RUN Selected: Command + Shift + Enter/ Control + Shift + Enter
-
+* *Run Selected*: The btn:[Run Selected] option allows you to run only a specific portion of the GSQL query.
+To use this option, you need to select the desired portion of the GSQL code within the GSQL Query Editor.
+Once you've made the selection, clicking the btn:[Run Selected] button will run only the selected portion of the code.
++
+[TIP]
+====
+This is helpful when you want to run a specific query or a subset of queries within a larger script.
+====
++
+** *Shortcut*: You can also use the shortcut to btn:[Run Selected]: btn:[ Command + Shift + Enter/ Control + Shift + Enter ]
 
 == Share GSQL Files
-Collaboration is essential for efficient graph analysis. The GSQL Editor in TigerGraph Cloud allows you to share GSQL files with your colleagues, enabling seamless collaboration on query development and analysis. You can easily share GSQL files within your organization, allowing team members to access, review, and modify the queries. This promotes knowledge sharing, accelerates development, and ensures consistency in query execution across the team.
 
-You can select the Share button from the file menu.
+You can share GSQL files with your colleagues, enabling seamless collaboration on query development and analysis.
 
-image:Screenshot 2024-04-18 at 10.14.24 AM.png[]
+[TIP]
+====
+Collaboration is essential for efficient graph analysis.
+====
 
-Note:
+This promotes knowledge sharing, accelerates development, and ensures consistency in query execution across the team.
+
+You can select the btn:[Share] button from the file menu.
+
+image::Screenshot 2024-04-18 at 10.14.24 AM.png[width=200]
+
+[NOTE]
+====
 You can only share a GSQL file if you are the file owner.
+====
 
-image:Screenshot 2024-04-18 at 10.14.54 AM.png[]
+image::Screenshot 2024-04-18 at 10.14.54 AM.png[width=300]
 
-In TigerGraph Cloud, GSQL files have Viewer and Editor permissions that can be assigned to individual users or shared with the entire organization. Here's an explanation of these permissions:
+In TigerGraph Cloud, GSQL files have btn:[Viewer] and btn:[Editor] permissions that can be assigned to individual users or shared with the entire organization.
 
-Viewer Permission: The Viewer permission allows users to view the content of a GSQL file. Users with Viewer permission can open the file in the GSQL Editor, read the GSQL code, and review the query logic, and execute the GSQL file. However, they cannot make any changes or modifications to the file. Viewer permission is suitable for users who need to review and understand the GSQL code but do not require editing capabilities.
+image::Screenshot 2024-04-18 at 10.15.25 AM.png[width=300]
 
-Editor Permission: The Editor permission grants users the ability to view and edit the content of a GSQL file. Users with Editor permission can open the file in the GSQL Editor, make changes to the GSQL code, and save those modifications. They have full control over the file and can update query logic, add new queries, or remove existing ones. Editor permission is typically given to users who need to actively modify and maintain the GSQL code.
+* *Viewer Permission*: The btn:[Viewer] permission allows users to view the content of a GSQL file.
+Users with btn:[Viewer] permission can open the file in the GSQL Editor, read the GSQL code, and review the query logic, and run the GSQL file.
+However, they cannot make any changes or modifications to the file.
++
+[TIP]
+====
+btn:[Viewer]  permission is suitable for users who need to review and understand the GSQL code but do not require editing capabilities.
+====
 
-image:Screenshot 2024-04-18 at 10.15.25 AM.png[]
+* *Editor Permission*: The btn:[Editor] permission grants users the ability to view and edit the content of a GSQL file.
+Users with btn:[Editor] permission can open the file in the GSQL Editor, make changes to the GSQL code, and save those modifications.
+They have full control over the file and can update query logic, add new queries, or remove existing ones.
++
+[TIP]
+====
+btn:[Editor] permission is typically given to users who need to actively modify and maintain the GSQL code.
+====
 
-When assigning permissions to GSQL files, you can specify individual users within your organization or share the file with the entire organization. This allows you to control access and collaborate effectively. By assigning Viewer or Editor permissions to specific users, you can ensure that only authorized individuals can view or edit the GSQL files. Sharing with the entire organization can be useful when you want to provide broad access to GSQL files for collaboration and knowledge sharing within your organization.
+When assigning permissions to GSQL files, you can specify individual users within your organization or share the file with the entire organization.
+This allows you to control access and collaborate effectively.
+By assigning Viewer or Editor permissions to specific users, you can ensure that only authorized individuals can view or edit the GSQL files.
+
+Sharing with the entire organization can be useful when you want to provide broad access to GSQL files for collaboration and knowledge sharing within your organization.
+
+== Next Steps
+
+Next, learn to xref:cloudBeta:explore-graph:index.adoc[].
+
+Or return to the xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.
+

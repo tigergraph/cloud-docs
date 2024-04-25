@@ -42,7 +42,7 @@ You can leverage GSQL's powerful features to transform, validate, and load data 
 When selecting a data source a step-by-step guide might not always be available.
 When this is the case users will see btn:[Open in GSQL Editor] on the bottom right of the panel.
 
-image::load-data:Screenshot 2024-04-25 at 12.31.39 (1).png[]
+image::load-data:Screenshot 2024-04-25 at 12.31.39 (1).png[width=300]
 
 [NOTE]
 ====

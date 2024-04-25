@@ -4,7 +4,7 @@
 The advanced settings in workspace allow users to customize and fine-tune various aspects of their workspace configuration.
 These settings include options like *auto-suspend* and *auto-resume*, which automate the suspension and resumption of the workspace based on activity levels.
 
-image::advnaced-settings.png[role="cloud-image"]
+image::advnaced-settings.png[]
 
 Users can choose the desired time intervals for auto-suspend and enable auto-resume to optimize resource usage and ensure a smooth user experience.
 
@@ -19,7 +19,7 @@ This helps optimize resource utilization and cost when the workspace is not acti
 
 Choose an appropriate time interval for auto-suspend based on your typical usage patterns.
 
-image::autoSuspend.png[role="cloud-image"]
+image::autoSuspend.png[]
 
 For example, if your workspace is usually inactive for long periods, you can set a shorter interval for auto-suspend to conserve resources.
 
@@ -43,7 +43,7 @@ Auto-resume will automatically resume your workspace when activity is detected.
 ====
 This ensures a seamless user experience without the need for manual intervention.
 ====
-image::auto-resume.png[role="cloud-image"]
+image::auto-resume.png[]
 
 When the Auto Resume is enabled, the workspace will become “Idle” state instead of “Stopped”.
 Auto-resume will kick-in when users access tools and rest APIs.

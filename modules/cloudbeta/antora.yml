@@ -8,7 +8,6 @@ nav:
   - modules/overview/nav.adoc
   - modules/release-notes/nav.adoc
   - modules/get-started/nav.adoc
-  - modules/billing-manager/nav.adoc
   - modules/resource-manager/nav.adoc
   - modules/load-data/nav.adoc
   - modules/schema-designer/nav.adoc
@@ -17,4 +16,5 @@ nav:
   - modules/explore-graph/nav.adoc
   - modules/administration/nav.adoc
   - modules/security/nav.adoc
+  - modules/billing-manager/nav.adoc
   - modules/resources/nav.adoc

@@ -3,7 +3,7 @@
 
 The GSQL Editor is a powerful tool for developing and executing GSQL queries, allowing you to unlock insights from your graph databases.
 
-== 1) Get Started with the GSQL Editor UI
+== Get Started with the GSQL Editor UI
 
 The GSQL Editor contains 4 work areas:
 
@@ -21,12 +21,14 @@ For more details please see xref:cloudBeta:schema-designer:index.adoc[].
 
 [TIP]
 ====
-Additionally, you can use shortcuts to execute a GSQL query.
+Additionally, you can use shortcuts to run a GSQL query.
 
 image::Screenshot 2024-04-18 at 10.07.17 AM.png[]
+
+See xref:gsql-editor:how2-edit-gsql-query.adoc[] for more details.
 ====
 
-=== File List
+== File List
 
 The GSQL File List in the GSQL Editor provides an overview of the GSQL files in your workspace.
 It helps you organize and manage your GSQL queries effectively with a list of GSQL files and folders present in your organization.

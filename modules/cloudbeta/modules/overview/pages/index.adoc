@@ -91,21 +91,8 @@ xref:explore-graph:index.adoc[Overview] |
 xref:explore-graph:pattern-search.adoc[]
 
 ¦
-image:billing-homecard.png[alt=billing,width=74,height=74]
-*Billing*
-
-The xref:billing-manager:index.adoc[Billing Manager] allows users to pay only for their specific usage of storage, data access, and compute resources.
-
-//xref:billing-manager:index.adoc[Overview]
-¦
-image:security-homecard.png[alt=security,width=74,height=74]
-*Security*
-
-Learn about xref:security:index.adoc[] in TigerGraph Cloud 4.0.
-
-¦
 image:ArchtectureOverview-homecard.png[alt=integration,width=74,height=74]
-*Integration*
+*Marketplace*
 
 TigerGraph Cloud 4.0 offers several powerful integration tools.
 
@@ -113,6 +100,19 @@ xref:integrations:index.adoc[Overview] |
 xref:integrations:copilot.adoc[] |
 xref:cloudBeta:integrations:insights.adoc[] |
 xref:cloudBeta:integrations:graphstudio.adoc[]
+¦
+image:security-homecard.png[alt=security,width=74,height=74]
+*Security*
+
+Learn about xref:security:index.adoc[] in TigerGraph Cloud 4.0.
+
+¦
+image:billing-homecard.png[alt=billing,width=74,height=74]
+*Billing*
+
+The xref:billing-manager:index.adoc[Billing Manager] allows users to pay only for their specific usage of storage, data access, and compute resources.
+
+//xref:billing-manager:index.adoc[Overview]
 ¦
 image:documentation-homecard.png[alt=support,width=74,height=74]
 *Release Notes and Resources*

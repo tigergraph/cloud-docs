@@ -10,7 +10,7 @@ You can monitor metrics such as CPU utilization, memory usage, and storage consu
 .To start monitoring, follow these steps:
 . Go to the workspace menu.
 +
-image::Screenshot 2024-04-17 at 5.45.15 PM.png[width="250", role="cloud-image"]
+image::Screenshot 2024-04-17 at 5.45.15 PM.png[width="250"]
 
 . Click the image:Screenshot 2024-04-17 at 5.45.39 PM.png[width="50"] button from the workspace menu to login to Grafana dashboard to monitor your workspace.
 

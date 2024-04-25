@@ -24,11 +24,11 @@ Recreate a RO workspace if you need to resize it.
 
 . Go to the btn:[ Edit ] section on a workspace.
 +
-image::expandandshrink.png[width="250", role="cloud-image"]
+image::expandandshrink.png[width="250"]
 
 . Select a size in the drop menu.
 +
-image::expand2.png[role="cloud-image"]
+image::expand2.png[]
 +
 [TIP]
 ====

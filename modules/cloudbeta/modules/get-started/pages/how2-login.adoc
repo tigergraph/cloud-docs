@@ -19,7 +19,7 @@ You will be logged into the last active organization.
 You can switch to another organization via the user btn:[settings] menu.
 ====
 
-image::loginPage.png[role="cloud-image"]
+image::loginPage.png[]
 
 === 2) Your Organization
 
@@ -31,7 +31,7 @@ You must provide an organization name before entering your username and password
 If you were invited by a member of your organization and you do not know the name used for the organization account, contact your organization’s administrator.
 ====
 
-image::orgLogin.png[role="cloud-image"]
+image::orgLogin.png[]
 
 == Next Steps
 

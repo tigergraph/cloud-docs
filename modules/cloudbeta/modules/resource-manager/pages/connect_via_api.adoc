@@ -23,7 +23,7 @@ These code snippets are available in JavaScript, cURL, and Python.
 You can go to the xref:cloudBeta:schema-designer:index.adoc[Schema Designer] to btn:[Create a Graph] if you do not have a graph.
 ====
 +
-image::Screenshot 2024-04-17 at 5.41.55 PM.png[width="250", role="cloud-image"]
+image::Screenshot 2024-04-17 at 5.41.55 PM.png[width="250"]
 +
 . In the btn:[Connect From API] UI, you can browse through the available APIs, including built-in queries and user-installed queries.
 +
@@ -32,7 +32,7 @@ image::Screenshot 2024-04-17 at 5.41.55 PM.png[width="250", role="cloud-image"
 These APIs represent different operations that you can perform on your graph database, such as querying data, adding vertices and edges, updating properties, and more.
 ====
 +
-image::Screenshot 2024-04-17 at 5.42.36 PM.png[width="500", role="cloud-image"]
+image::Screenshot 2024-04-17 at 5.42.36 PM.png[width="500"]
 
 . Go to btn:[Edit GSQL Query] to write and install a new GSQL query.
 For GSQL syntax, please refer to xref:3.10.1@gsql-ref:intro:index.adoc[].
@@ -46,7 +46,7 @@ The API details provide information about how to construct the API request and i
 +
 . Enter the required parameters and click on the btn:[Test] button to test the request. This allows you to verify the functionality of the API and see the response returned by the database.
 +
-image::Screenshot 2024-04-17 at 5.43.22 PM.png[width="350",role="cloud-image"]
+image::Screenshot 2024-04-17 at 5.43.22 PM.png[width="350"]
 
 . Once you have tested the API and verified its functionality, you can copy the generated code snippets in JavaScript, cURL, and Python.
 +

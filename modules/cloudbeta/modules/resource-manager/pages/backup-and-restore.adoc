@@ -17,7 +17,7 @@ Discover how to create backup points and restore your workspace to a specific po
 Backup functionality is currently available only for xref:cloudBeta:resource-manager:workspaces/writeread_readonly.adoc#_read_write_rw_workspace[Read-Write (RW) workspaces].
 Make sure your workspace is in RW mode before attempting to perform a backup.
 ====
-image::backuprestore1.png[role="cloud-image"]
+image::backuprestore1.png[]
 
 === How to Create a Manual Backup
 In this section, you can find information on how to manually initiate a backup of your data.
@@ -31,16 +31,16 @@ In this section, you can find information on how to manually initiate a backup o
 [TIP]
 Backup tag is used to identify your graph database backup.
 +
-image::backuprestore2.png[width=250, role="cloud-image"]
+image::backuprestore2.png[width=250]
 
 . Click on image:backupbutton2.png[width=75] button to start the backup process.
 You can see the backup logs displayed in the window.
 +
-image::backuprestore3.png[width=250, role="cloud-image"]
+image::backuprestore3.png[width=250]
 
 . Once the backup is completed, you will see the newly created backup in the backup list.
 +
-image::backuprestore4.png[role="cloud-image"]
+image::backuprestore4.png[]
 
 [NOTE]
 ====
@@ -63,7 +63,7 @@ Recurring backup jobs at specified intervals can help ensure regular data protec
 . You can specify the auto backup schedule using cron schedule.
 You can test out your Cron schedule in Crontab.
 +
-image::backuprestore5.png[role="cloud-image"]
+image::backuprestore5.png[]
 
 . Click on btn:[ Save ] button to save the schedule.
 
@@ -99,11 +99,11 @@ image:Screenshot 2024-04-17 at 5.38.09 PM.png[]
 You will need to type in the backup name to confirm the restore.
 ====
 +
-image::Screenshot 2024-04-17 at 5.39.34 PM.png[role="cloud-image"]
+image::Screenshot 2024-04-17 at 5.39.34 PM.png[]
 
 . After the restore is triggered, you can see the progress and detailed log in the window.
 +
-image::Screenshot 2024-04-17 at 5.40.16 PM.png[role="cloud-image"]
+image::Screenshot 2024-04-17 at 5.40.16 PM.png[]
 
 == Next Steps
 

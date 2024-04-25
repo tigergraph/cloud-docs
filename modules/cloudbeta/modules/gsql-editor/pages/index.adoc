@@ -3,34 +3,36 @@
 
 The GSQL Editor is a powerful tool for developing and executing GSQL queries, allowing you to unlock insights from your graph databases.
 
-image:Screenshot 2024-04-18 at 10.04.32 AM.png[]
+== Manage Editor UI
+image::Screenshot 2024-04-18 at 10.04.32 AM.png[]
 
-The GSQL Editor contains 4 work areas
-Left  - GSQL File List Panel
-Bottom  - GSQL Result Panel
-Right  - Schema Designer Panel, for more details please see Schema Designer
-Center  - Main GSQL Editing Panel
+.The GSQL Editor contains 4 work areas:
 
-You can use the following shortcuts to execute GSQL query in different manners.
+* Left  image:Screenshot 2024-04-18 at 10.05.54 AM.png[width=50] - GSQL xref:gsql-editor:index.adoc#_file_list[File List ] Panel.
 
-image:Screenshot 2024-04-18 at 10.05.54 AM.png[]
+* Bottom image:Screenshot 2024-04-18 at 10.06.17 AM.png[width=50] - GSQL Result Panel.
 
-image:Screenshot 2024-04-18 at 10.06.17 AM.png[]
+* Right image:Screenshot 2024-04-18 at 10.06.37 AM.png[width=50] Schema Designer Panel.
++
+[NOTE]
+====
+For more details please see xref:cloudBeta:schema-designer:index.adoc[Schema Designer].
+====
 
-image:Screenshot 2024-04-18 at 10.06.37 AM.png[]
+* Center image:Screenshot 2024-04-23 at 10.05.36 PM.png[width=50] Main GSQL Editing Panel.
 
-image:Screenshot 2024-04-18 at 10.06.37 AM.png[]
+Additionally, you can use the following shortcuts to execute a GSQL query.
 
 image:Screenshot 2024-04-18 at 10.07.17 AM.png[]
 
-== File List
+=== File List
 The GSQL File List in the GSQL Editor provides an overview of the GSQL files in your workspace. It helps you organize and manage your GSQL queries effectively.
 
 The GSQL File List displays a list of GSQL files and folders present in your organizatiobn. You can navigate through the files and folders by clicking on their names in the list.
 
 image:Screenshot 2024-04-18 at 10.07.50 AM.png[]
 
-== Search bar
+=== Search bar
 The GSQL File List includes a search bar that allows you to search for specific files by their names. This feature helps you quickly locate the desired GSQL file, especially when you have a large number of files in your workspace.
 
 image:Screenshot 2024-04-18 at 10.08.25 AM.png[]
@@ -45,20 +47,24 @@ image:Screenshot 2024-04-18 at 10.09.33 AM.png[]
 
 == Folders
 The GSQL Editor in TigerGraph Cloud has two types of folders presented in the list:
-User-defined Folders:
-These are folders created by individual users to organize their GSQL files within their personal workspace. User-defined folders allow you to group related queries or scripts together based on your own preferences. You can create, rename, and delete these folders as needed to manage your GSQL files effectively.
 
-To create your first folder, just click on the Folder from the + menu.
+* *User-defined Folders*:
+These are folders created by individual users to organize their GSQL files within their personal workspace.
+User-defined folders allow you to group related queries or scripts together based on your own preferences.
+You can `create`, `rename`, and/or `delete` these folders as needed to manage your GSQL files effectively.
 
-image:Screenshot 2024-04-18 at 10.10.18 AM.png[]
+==== Create a Folder
+To create your first folder, just click on the btn:[ Folder] from the btn:[ + ] menu.
+
+image::Screenshot 2024-04-18 at 10.10.18 AM.png[]
 
 You can name the folder. Once the folder is created, you can add a new file to the folder by clicking on the + button.
 
-image:Screenshot 2024-04-18 at 10.10.47 AM.png[]
+image::Screenshot 2024-04-18 at 10.10.47 AM.png[]
 
 You can also rename or delete the folder via the … menu.
 
-image:Screenshot 2024-04-18 at 10.11.14 AM.png[]
+image::Screenshot 2024-04-18 at 10.11.14 AM.png[]
 
 == Shared Folder
 The Shared Folder is a special type of folder that facilitates collaboration and sharing of GSQL files. The folder contains all GSQL files that are shared with you from other users with in the organization.
@@ -70,64 +76,6 @@ The schema defines the structure of your graph database, influencing its perform
 
 Please refer to Schema Designer for more information.
 
-== Edit GSQL Query
-
-The GSQL Editor provides a feature-rich environment for writing, modifying, and executing GSQL queries. GSQL is a powerful graph query language that enables you to express complex graph traversal and analysis operations. For more information about GSQL please visit https://docs.tigergraph.com/gsql-ref/current/querying/.
-
-With the GSQL Editor, you can leverage the syntax highlighting, auto-complete, and error checking features to write efficient and accurate GSQL queries. You can also execute queries and visualize the results directly within the editor, making it easier to iterate and refine your analysis.
-
-To start writing your first GSQL query, just click on the GSQL Query from the + menu.
-
-image:Screenshot 2024-04-18 at 10.12.15 AM.png[]
-
-The opened files will be listed on the top tabs on the code edit folder
-
-image:Screenshot 2024-04-18 at 10.12.40 AM.png[]
-
-Note:
-Schema based GSQL autocomplete is not supported yet.
-
-
-== Execute GSQL Query
-
-image:Screenshot 2024-04-18 at 10.13.20 AM.png[]
-
-Select an active workspace to run the GSQL Query.
-
-To execute GSQL queries, there are two options available: "Run All" and "Run Selected." Here's an explanation of each option:
-
-image:Screenshot 2024-04-18 at 10.13.47 AM.png[]
-
-Run All: The "Run All'' option executes the entire GSQL script or query that is currently open in the GSQL Editor. When you click the "Run All'' button, it triggers the execution of all the GSQL statements in the script from top to bottom. This is useful when you want to execute the entire GSQL script or when you have multiple queries in the script that need to be executed together.
-
-	You can also use the shortcut to RUN All: Command + Enter/ Control + Enter
-
-Run Selected: The "Run Selected" option allows you to execute only a specific portion of the GSQL query. To use this option, you need to select the desired portion of the GSQL code within the Query Editor. Once you've made the selection, clicking the "Run Selected" button will execute only the selected portion of the code. This is helpful when you want to execute a specific query or a subset of queries within a larger script.
-
-You can also use the shortcut to RUN Selected: Command + Shift + Enter/ Control + Shift + Enter
-
-
-== Share GSQL Files
-Collaboration is essential for efficient graph analysis. The GSQL Editor in TigerGraph Cloud allows you to share GSQL files with your colleagues, enabling seamless collaboration on query development and analysis. You can easily share GSQL files within your organization, allowing team members to access, review, and modify the queries. This promotes knowledge sharing, accelerates development, and ensures consistency in query execution across the team.
-
-You can select the Share button from the file menu.
-
-image:Screenshot 2024-04-18 at 10.14.24 AM.png[]
-
-Note:
-You can only share a GSQL file if you are the file owner.
-
-image:Screenshot 2024-04-18 at 10.14.54 AM.png[]
-
-In TigerGraph Cloud, GSQL files have Viewer and Editor permissions that can be assigned to individual users or shared with the entire organization. Here's an explanation of these permissions:
-
-Viewer Permission: The Viewer permission allows users to view the content of a GSQL file. Users with Viewer permission can open the file in the GSQL Editor, read the GSQL code, and review the query logic, and execute the GSQL file. However, they cannot make any changes or modifications to the file. Viewer permission is suitable for users who need to review and understand the GSQL code but do not require editing capabilities.
-
-Editor Permission: The Editor permission grants users the ability to view and edit the content of a GSQL file. Users with Editor permission can open the file in the GSQL Editor, make changes to the GSQL code, and save those modifications. They have full control over the file and can update query logic, add new queries, or remove existing ones. Editor permission is typically given to users who need to actively modify and maintain the GSQL code.
-
-image:Screenshot 2024-04-18 at 10.15.25 AM.png[]
-
-When assigning permissions to GSQL files, you can specify individual users within your organization or share the file with the entire organization. This allows you to control access and collaborate effectively. By assigning Viewer or Editor permissions to specific users, you can ensure that only authorized individuals can view or edit the GSQL files. Sharing with the entire organization can be useful when you want to provide broad access to GSQL files for collaboration and knowledge sharing within your organization.
 
 
 

@@ -41,18 +41,11 @@ Thank you for your interest and support!
 image:getstarted-homecard.png[alt=getstarted,width=74,height=74]
 *Get Started*
 
-xref:cloudBeta:get-started:index.adoc[Get Started] using TigerGraph Cloud with the 4.0 beta.
+xref:cloudBeta:get-started:index.adoc[Get Started] using TigerGraph Cloud with the 4.0.
 
 xref:get-started:how2-signup.adoc[How to Sign Up] |
 xref:administration:organization-management.adoc[Org Management]
 
-¦
-image:billing-homecard.png[alt=billing,width=74,height=74]
-*Billing*
-
-The xref:billing-manager:index.adoc[Billing Manager] allows users to pay only for their specific usage of storage, data access, and compute resources.
-
-//xref:billing-manager:index.adoc[Overview]
 ¦
 image:insights.png[alt=workspace,width=74,height=74]
 *Resource Manager*
@@ -77,24 +70,30 @@ xref:load-data:load-from-other-sources.adoc[Other Sources]
 image:schema-homecard.png[alt=gsqlEditor,width=74,height=74]
 *GSQL Editor*
 
-xref:gsql-editor:index.adoc[Overview] |
-xref:gsql-editor:how2-edit-gsql-query.adoc[]
+The GSQL Editor is a powerful tool for developing and executing GSQL queries, allowing you to unlock insights from your graph databases.
 
-
+xref:gsql-editor:index.adoc[Overview] | xref:gsql-editor:how2-edit-gsql-query.adoc[]
 ¦
 image:TG_Icon_Library-218.png[alt=exploreGraph,width=74,height=74]
 *Explore Graph*
+
+[TODO]
 
 xref:explore-graph:index.adoc[Overview] |
 xref:explore-graph:pattern-search.adoc[]
 
 ¦
+image:billing-homecard.png[alt=billing,width=74,height=74]
+*Billing*
+
+The xref:billing-manager:index.adoc[Billing Manager] allows users to pay only for their specific usage of storage, data access, and compute resources.
+
+//xref:billing-manager:index.adoc[Overview]
+¦
 image:security-homecard.png[alt=security,width=74,height=74]
 *Security*
 
-Learn about access, privilege and role assignment and control.
-
-xref:security:index.adoc[Overview] |
+Learn about xref:security:index.adoc[] in TigerGraph Cloud 4.0.
 
 ¦
 image:ArchtectureOverview-homecard.png[alt=integration,width=74,height=74]
@@ -103,7 +102,9 @@ image:ArchtectureOverview-homecard.png[alt=integration,width=74,height=74]
 TigerGraph Cloud 4.0 offers several powerful integration tools.
 
 xref:integrations:index.adoc[Overview] |
-xref:integrations:copilot.adoc[]
+xref:integrations:copilot.adoc[] |
+xref:cloudBeta:integrations:insights.adoc[] |
+xref:cloudBeta:integrations:graphstudio.adoc[]
 ¦
 image:documentation-homecard.png[alt=support,width=74,height=74]
 *Release Notes*
@@ -114,7 +115,7 @@ View the xref:release-notes:index.adoc[] to get update information on features a
 image:referece-homecard.png[alt=ref,width=74,height=74]
 *Resources*
 
-Here you can find any additional xref:resources:index.adoc[Resources] for TigerGraph Cloud 4.0 (beta).
+Here you can find any additional xref:resources:index.adoc[Resources] for TigerGraph Cloud 4.0.
 
 ¦
 |===

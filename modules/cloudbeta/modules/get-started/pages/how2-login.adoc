@@ -1,25 +1,30 @@
 = How to Log In
 :experimental:
 
-After first xref:get-started:how2-signup.adoc[signing up] users must  btn:[Log In].
-
+After first xref:get-started:how2-signup.adoc[signing up] or being xref:cloudBeta:administration:invite_users.adoc[invited by your organization] users must  btn:[Log In].
 This guide will walk you through the necessary steps.
 
 == Log In
-Click btn:[Log In] on the https://portal.tgcloud.io[TigerGraph Cloud landing page].
 
-TigerGraph 4.0 Cloud supports users to log in via Google, LinkedIn, or via a username/password.
+.There are two ways to log in, through your account you created through signing up or
+though your organization
 
-[NOTE]
+=== 1) Your Account
+
+If you click btn:[Log In] on the https://portal.tgcloud.io[TigerGraph Cloud landing page].
+TigerGraph Cloud 4.0 supports users to log in via Google, LinkedIn, or via a username/password.
+
+[TIP]
 ====
 You will be logged into the last active organization.
-Users can switch to another organization via the user btn:[settings] menu.
+You can switch to another organization via the user btn:[settings] menu.
 ====
 
-image::loginPage.png[]
+image::loginPage.png[role="cloud-image"]
+
+=== 2) Your Organization
 
 For organizations specific logging methods (rather than through Google and Microsoft), please click the btn:[Login with organization] button.
-
 You must provide an organization name before entering your username and password.
 
 [NOTE]
@@ -27,9 +32,10 @@ You must provide an organization name before entering your username and password
 If you were invited by a member of your organization and you do not know the name used for the organization account, contact your organization’s administrator.
 ====
 
-image::orgLogin.png[]
+image::orgLogin.png[role="cloud-image"]
 
 == Next Steps
 
 Once logged in, you can begin to create xref:resource-manager:workgroup.adoc[Workgroups] and xref:resource-manager:workspaces/workspace.adoc[Workspaces], xref:administration:invite_users.adoc[] to your organization, and xref:administration:access_mgnt.adoc[manage access].
+
 Or return to the xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.

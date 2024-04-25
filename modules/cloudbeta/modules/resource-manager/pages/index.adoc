@@ -21,43 +21,48 @@ It is not covered by our xref:cloudBeta:resources:terms_conditions.adoc[].
 
 == xref:resource-manager:workgroup.adoc[]
 
-Here you can learn xref:how2-create-a-workgroup.adoc[] the first step before creating a xref:workspaces/workspace.adoc[Workspace]
+Learn xref:how2-create-a-workgroup.adoc[] the first step before creating a xref:workspaces/workspace.adoc[Workspace]
 and learning xref:how2-workgroup-access.adoc[].
 
 
 == xref:cloudBeta:resource-manager:workspaces/workspace.adoc[Workspace and Database Overview]
-Here you can learn xref:workspaces/how2-create-a-workspace.adoc[] and unlock its many features.
+Learn xref:workspaces/how2-create-a-workspace.adoc[] and unlock its many features.
 
 Such as:
 
-=== xref:cloudBeta:resource-manager:workspaces/advanced-settings/advanced-settings.adoc[]
----
+* xref:cloudBeta:resource-manager:workspaces/advanced-settings/advanced-settings.adoc[]
+-
 Learn how advanced settings in workspace allow users to customize and fine-tune various aspects of their workspace configuration.
 
-=== xref:workspaces/writeread_readonly.adoc[]
----
+* xref:workspaces/writeread_readonly.adoc[]
+-
 Learn how Read-Write (RW) and Read-Only (RO) Workspaces will connect to a database.
 
-=== xref:workspaces/workspace-size.adoc[]
----
+* xref:workspaces/workspace-size.adoc[]
+-
 Learn how to specify the size based on your data and performance requirements.
 
-=== xref:expansion_shrink.adoc[]
----
+* xref:expansion_shrink.adoc[]
+-
 Learn how to adjust the capacity of  your workspaces as your data grows or changes.
 
-=== xref:backup-and-restore.adoc[]
----
+* xref:backup-and-restore.adoc[]
+-
 Learn how to create backup points and restore your workspace to a specific point in time.
 
-=== xref:resource-manager:connect_via_api.adoc[]
----
+* xref:resource-manager:connect_via_api.adoc[]
+-
 Learn how to connect to your graph database using REST APIs.
 
-=== xref:resource-manager:monitor_workspaces.adoc[]
----
+* xref:resource-manager:monitor_workspaces.adoc[]
+-
 Learn how TigerGraph Cloud 4.0 offers comprehensive monitoring capabilities that allow you to track the status and resource usage of your workspaces.
 
+== Next Steps
+
+Next, Learn how to xref:load-data:index.adoc[Load Data] into TigerGraph Cloud 4.0.
+
+Or return to the xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.
 
 
 

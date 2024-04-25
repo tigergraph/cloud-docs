@@ -4,37 +4,36 @@
 As your data grows or changes, you may need to adjust the capacity of your workspaces.
 Users can easily expand or shrink workspaces to accommodate the evolving needs of graph databases.
 
-
 == Expand or Shrink a Workspace
 
-Scale up or down as required, ensuring optimal performance and cost-effectiveness.
+Scale up (exapnd) or down (shrink) as required, ensuring optimal performance and cost-effectiveness.
 
 [NOTE]
 ====
 Before initiating a downsize operation, a data topology size check is performed to ensure that the workspace size can accommodate the data.
-
 If the size check fails, the downsize operation will not be allowed.
 ====
 
 [IMPORTANT]
 ====
 Please be aware that resizing of workspaces is only allowed for Read-Write (RW) workspaces.
-
 Resizing of Read-Only (RO) workspaces is strictly forbidden and not supported.
-
 Recreate a RO workspace if you need to resize it.
 ====
 
 
 . Go to the btn:[ Edit ] section on a workspace.
 +
-image:expandandshrink.png[width="250"]
+image::expandandshrink.png[width="250", role="cloud-image"]
 
 . Select a size in the drop menu.
 +
-image:expand2.png[]
+image::expand2.png[role="cloud-image"]
 +
+[TIP]
+====
 Typically, resizing will take about 2 minutes depending on the data size and the workspace size.
+====
 
 === Expansion and Shrink Limitations
 

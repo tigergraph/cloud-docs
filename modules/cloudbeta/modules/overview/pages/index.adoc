@@ -2,7 +2,7 @@
 :experimental:
 :page-aliases: cloud-overview.adoc
 
-This documentation will guide you through the various features and functionalities of our brand new cloud-native graph as a service (GaaS) management platform.
+This documentation will guide you through the various features and functionalities of our brand new cloud-native Graph-as-a-Service (GaaS) management platform.
 TigerGraph Cloud 4.0 offers a powerful and user-friendly environment for managing, analyzing, and exploring your graph data.
 
 //pass:[<abbr title="Define User Friendly">ToolTip Practice</abbr>]

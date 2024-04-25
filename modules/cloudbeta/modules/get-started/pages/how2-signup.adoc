@@ -2,7 +2,6 @@
 :experimental:
 
 In order to use TigerGraph Cloud v4.0 users must first btn:[Sign Up].
-
 This guide will walk you through the necessary steps.
 
 == Sign Up

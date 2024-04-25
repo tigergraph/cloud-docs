@@ -9,6 +9,7 @@ A built-in backup and restore system, allows users to create backups of graph da
 This ensures the safety and availability of your data, protecting against accidental data loss or system failures.
 ====
 
+== Setup Backup Points
 Discover how to create backup points and restore your workspace to a specific point in time.
 
 [IMPORTANT]
@@ -16,12 +17,12 @@ Discover how to create backup points and restore your workspace to a specific po
 Backup functionality is currently available only for xref:cloudBeta:resource-manager:workspaces/writeread_readonly.adoc#_read_write_rw_workspace[Read-Write (RW) workspaces].
 Make sure your workspace is in RW mode before attempting to perform a backup.
 ====
-image:backuprestore1.png[]
+image::backuprestore1.png[role="cloud-image"]
 
-== How to Create a Manual backup
+=== How to Create a Manual Backup
 In this section, you can find information on how to manually initiate a backup of your data.
 
-.To manually back-up your data, follow these steps:
+.To manually back up your data, follow these steps:
 
 . Click on image:backupButton.png[width=75,height=75] button to start manual backup.
 
@@ -30,16 +31,16 @@ In this section, you can find information on how to manually initiate a backup o
 [TIP]
 Backup tag is used to identify your graph database backup.
 +
-image:backuprestore2.png[width=250]
+image::backuprestore2.png[width=250, role="cloud-image"]
 
 . Click on image:backupbutton2.png[width=75] button to start the backup process.
 You can see the backup logs displayed in the window.
 +
-image:backuprestore3.png[width=250]
+image::backuprestore3.png[width=250, role="cloud-image"]
 
 . Once the backup is completed, you will see the newly created backup in the backup list.
 +
-image:backuprestore4.png[]
+image::backuprestore4.png[role="cloud-image"]
 
 [NOTE]
 ====
@@ -47,7 +48,7 @@ In the beta release, only one manual backup for RW workspace will be allowed.
 You will need to delete the previous manual backup in order to make a new manual backup.
 ====
 
-== How to Setup Scheduled Auto-Backup
+=== How to Setup Scheduled Auto-Backup
 
 Schedule a recurring automatic backup for your data.
 
@@ -62,7 +63,7 @@ Recurring backup jobs at specified intervals can help ensure regular data protec
 . You can specify the auto backup schedule using cron schedule.
 You can test out your Cron schedule in Crontab.
 +
-image:backuprestore5.png[]
+image::backuprestore5.png[role="cloud-image"]
 
 . Click on btn:[ Save ] button to save the schedule.
 
@@ -73,8 +74,8 @@ The latest backup will automatically overwrite the previous auto backup.
 Please make sure to plan your backup strategy accordingly.
 ====
 
-== How to Restore a Backup
-To restore your backup to a workspace is straightforward.
+=== How to Restore a Backup
+To restore your backup to a workspace is a straightforward process.
 
 [IMPORTANT]
 Restoring is an offline operation. If there are any other operations in progress on the workspace, they will be affected.
@@ -98,11 +99,11 @@ image:Screenshot 2024-04-17 at 5.38.09 PM.png[]
 You will need to type in the backup name to confirm the restore.
 ====
 +
-image:Screenshot 2024-04-17 at 5.39.34 PM.png[]
+image::Screenshot 2024-04-17 at 5.39.34 PM.png[role="cloud-image"]
 
 . After the restore is triggered, you can see the progress and detailed log in the window.
 +
-image:Screenshot 2024-04-17 at 5.40.16 PM.png[]
+image::Screenshot 2024-04-17 at 5.40.16 PM.png[role="cloud-image"]
 
 == Next Steps
 

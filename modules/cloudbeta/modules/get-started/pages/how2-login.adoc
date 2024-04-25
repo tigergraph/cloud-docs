@@ -6,8 +6,7 @@ This guide will walk you through the necessary steps.
 
 == Log In
 
-.There are two ways to log in, through your account you created through signing up or
-though your organization
+There are two ways to log in, through your account you created through signing up or though your organization
 
 === 1) Your Account
 

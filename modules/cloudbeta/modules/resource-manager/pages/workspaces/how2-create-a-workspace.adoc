@@ -2,31 +2,31 @@
 :experimental:
 
 To learn more about workspaces see xref:workspaces/workspace.adoc[].
-To create a workspace in TigerGraph Cloud 4.0, follow the steps below:
+To create a workspace in TigerGraph Cloud 4.0 follow the steps below:
 
 == Create a Workspace
 
 . Log in to your TigerGraph Cloud account.
 +
-image:loginPage.png[]
+image::loginPage.png[role="cloud-image"]
 +
 . From the dashboard, navigate to the btn:[Workgroups] section
 Click on the btn:[ Create Workspace ] button.
 +
-image:workspacecreate.png[]
+image::workspacecreate.png[role="cloud-image"]
 
 . Provide a name for the workspace.
 [NOTE]
 Choose a name that reflects the purpose of your workspace.
 +
-image:workspaceinfo.png[]
+image::workspaceinfo.png[role="cloud-image"]
 +
 . Select a TigerGraph workspace runtime.
 +
 //Please review the release notes in https://docs.tigergraph.com/tigergraph-server/current/release-notes/.
 . Specify workspace size and advanced settings.
 +
-image:workspaceDetails.png[]
+image::workspaceDetails.png[role="cloud-image"]
 +
 . For supported workspace sizes, please go to the Workspace Size page.
 
@@ -40,7 +40,7 @@ For more details, please refer to xref:cloudBeta:resource-manager:workspaces/wri
 . Specify Add-ons to your workspace, for more details please visit xref:cloudBeta:integrations:add-ons.adoc[] page.
 . Specify Solutions for your workspace, for more details please visit xref:cloudBeta:integrations:solutions.adoc[] page.
 +
-image:Add-onsimage.png[]
+image::Add-onsimage.png[role="cloud-image"]
 . Click on the btn:[ Create ] button to create the workspace.
 
 [NOTE]

@@ -1,13 +1,7 @@
-= Comparison with Other TigerGraph Offerings
+= Compare with Other TigerGraph Offering
 
 Most of the documentation for TigerGraph Enterprise Server also applies to TigerGraph Cloud 4.0.
-
-However, since TigerGraph Cloud 4.0 does not have a command-line interface on the OS level, command-line features are not supported in the same way.
-
-In many cases, there is a GUI-based method for the same feature.
-
-For advanced OS-level commands, submit a support ticket for more information.
-
+Here are some differences between the different TigerGraph offerings.
 |===
 | Topic | TigerGraph Enterprise Server | TigerGraph Cloud Classic | TigerGraph Cloud 4.0
 

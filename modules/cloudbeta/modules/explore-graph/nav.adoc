@@ -1,2 +1,3 @@
 * xref:index.adoc[]
 ** xref:explore-graph:pattern-search.adoc[]
+** xref:cloudBeta:explore-graph:copilot-enablement.adoc[]

@@ -1,0 +1,5 @@
+= Using CoPliot
+
+information on copliot enablement
+
+proably link to copilot docs...

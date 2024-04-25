@@ -60,7 +60,7 @@ Learn how TigerGraph Cloud 4.0 offers comprehensive monitoring capabilities that
 
 == Next Steps
 
-Next, Learn how to xref:load-data:index.adoc[Load Data] into TigerGraph Cloud 4.0.
+Next, learn how to xref:load-data:index.adoc[Load Data] into TigerGraph Cloud 4.0.
 
 Or return to the xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.
 

@@ -1,4 +1,4 @@
-= Resource Manager
+= Workgroups and Workspaces
 :experimental:
 
 In TigerGraph Cloud 4.0, the concepts of workgroup, workspace, and database are used to organize and manage projects and data within the platform.

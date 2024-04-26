@@ -48,7 +48,7 @@ xref:administration:organization-management.adoc[Org Management]
 
 ¦
 image:insights.png[alt=workspace,width=74,height=74]
-*Resource Manager*
+*Workgroups and Workspaces*
 
 Learn  how to dynamically allocate compute and storage resources.
 

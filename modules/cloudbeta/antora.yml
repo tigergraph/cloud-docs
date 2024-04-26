@@ -12,8 +12,8 @@ nav:
   - modules/load-data/nav.adoc
   - modules/schema-designer/nav.adoc
   - modules/gsql-editor/nav.adoc
-  - modules/integrations/nav.adoc
   - modules/explore-graph/nav.adoc
+  - modules/integrations/nav.adoc
   - modules/administration/nav.adoc
   - modules/security/nav.adoc
   - modules/billing-manager/nav.adoc

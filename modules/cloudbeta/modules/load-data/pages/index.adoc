@@ -5,9 +5,9 @@ Efficiently loading data into your TigerGraph databases is crucial for successfu
 
 == Load Data Overview
 .TigerGraph Cloud offers multiple methods for loading data:
-. Select an active workspace from the drop down menu.:
+. Select an active workspace from the dropdown menu.:
 +
-image::Screenshot 2024-04-17 at 5.47.58 PM.png[width="500",role="cloud-image"]
+image::Screenshot 2024-04-17 at 5.47.58 PM.png[width="500"]
 
 
 . Click on image:Screenshot 2024-04-17 at 5.48.20 PM.png[width="75"] to load your data into TigerGraph.
@@ -15,7 +15,7 @@ image::Screenshot 2024-04-17 at 5.47.58 PM.png[width="500",role="cloud-image"]
 . Chose one of TigerGraph Cloud various types of connectors that allow you to load data into your graph database.
 +
 
-image::Screenshot 2024-04-17 at 5.49.07 PM.png[width="500",role="cloud-image"]
+image::Screenshot 2024-04-17 at 5.49.07 PM.png[width="500"]
 
 . The data loading tool offers two different approaches to make it easier for users to load their data based on their specific needs and preferences.
 +
@@ -64,7 +64,7 @@ Here you can check out the status of loading data form other sources in TigerGra
 Or check out our xref:cloudBeta:load-data:jdbc.adoc[].
 
 == Next Steps
-Next, learn more about how to xref:cloudBeta:resource-manager:monitor_workspaces.adoc[].
+Next, learn more about how to xref:cloudBeta:schema-designer:index.adoc[].
 
 Or return to the xref:cloudBeta:resource-manager:index.adoc[] page or xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.
 

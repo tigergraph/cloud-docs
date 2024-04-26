@@ -16,3 +16,9 @@ Extend the capabilities of TigerGraph Cloud with add-ons tailored to your needs.
 * xref:cloudBeta:integrations:graphstudio.adoc[]
 
 == xref:cloudBeta:integrations:solutions.adoc[]
+
+Here you can learn about out array of industry standard prebuilt solutions for diverse industries and use cases.
+Designed for users to swiftly adopt graph technology.
+
+== Next Steps
+

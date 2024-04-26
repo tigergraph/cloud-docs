@@ -1,6 +1,6 @@
 = Access Management
 
-Manage access to workspaces and resources within TigerGraph Cloud. As an organization administrator, you can define permissions for users, controlling their level of access to workspaces, workgroup and features. This allows you to ensure data security and enforce access control policies within your organization.
+As an organization administrator, you can define permissions for users, controlling their level of access to workspaces, workgroup and features. This allows you to ensure data security and enforce access control policies within your organization.
 Click on a user you will be able to see the permission details of the selected user
 
 image:Screenshot 2024-04-18 at 10.21.16 AM.png[]

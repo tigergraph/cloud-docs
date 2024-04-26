@@ -26,7 +26,7 @@ image::workspaceinfo.png[]
 //Please review the release notes in https://docs.tigergraph.com/tigergraph-server/current/release-notes/.
 . Specify workspace size and advanced settings.
 +
-image::workspaceDetails.png[role="cloud-image"]
+image::workspaceDetails.png[]
 +
 . For supported workspace sizes, please go to the Workspace Size page.
 

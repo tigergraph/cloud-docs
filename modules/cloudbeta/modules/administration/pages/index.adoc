@@ -1,12 +1,16 @@
 = Administration Overview
 :experimental:
 
-Introduction
+Here you can learn about the tools available for organizational administrators.
 
 == xref:administration:invite_users.adoc[]
 
+Learn how to invite new users to your organizations.
+
 == xref:administration:access_mgnt.adoc[]
+
+Learn how to manage access to workspaces and resources within TigerGraph Cloud 4.0.
 
 == xref:administration:organization-management.adoc[]
 
-
+Learn about the organization management features that allow you to configure organization settings.

@@ -1,3 +1,7 @@
 = Pattern Search
 
-== Introduction
+Patterns search involves looking for specific patterns or sequences within a dataset or system. It can be used to identify recurring trends, anomalies, or correlations in data. By analyzing patterns, developers can gain insights and make informed decisions.
+
+image::cloudBeta:explore-graph:Screenshot 2024-04-25 at 7.29.08 PM.png[]
+
+image::Screenshot 2024-04-25 at 7.30.16 PM.png[]

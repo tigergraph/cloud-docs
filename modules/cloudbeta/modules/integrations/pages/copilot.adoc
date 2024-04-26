@@ -1,8 +1,18 @@
 = CoPilot
 :experimental:
 
-descriton abobt CoPlioit in Cloud 4.0
+CoPilot empowers business analysts, data scientists, and developers to use natural language to run real-time queries against up-to-date data at scale.
+The insights can then be presented as natural language, graph visualizations, and other perspectives.
 
-image
+image::Screenshot 2024-04-26 at 8.22.55 AM.png[]
 
-link to CoPilot docuementation
+[TIP]
+====
+With CoPilot, organizations can unlock the full potential of their data and drive informed decision-making in TigerGraph Cloud 4.0 like never before.
+====
+
+== Next Steps
+
+Learn xref:beta@tg-copilot:using-copilot:how2-use-on-cloud.adoc[] on our new TigerGraph CoPliot documentation.
+
+Or return to xref:cloudBeta:integrations:index.adoc[Marketplace] or the xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.

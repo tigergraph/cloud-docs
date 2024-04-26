@@ -1,5 +1,18 @@
 = Using CoPliot
 
-information on copliot enablement
+Insights gain from CoPilot can be presented as natural language, graph visualizations, and other perspectives.
 
-proably link to copilot docs...
+== Prerequisites
+
+To Get Started with TigerGraph CoPilot you must first enable the TigerGraph CoPilot add-on.
+
+image::Screenshot 2024-04-26 at 8.22.55 AM.png[]
+
+See the xref:beta@tg-copilot:getstarted:index.adoc[] and the xref:beta@tg-copilot:getstarted:oncloud.adoc[] documentations for more details.
+
+== Next Steps
+
+Learn once enabled learn xref:beta@tg-copilot:using-copilot:how2-use-on-cloud.adoc[] on our new TigerGraph CoPliot documentation.
+
+Or return to xref:cloudBeta:integrations:index.adoc[Marketplace] or the xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.
+

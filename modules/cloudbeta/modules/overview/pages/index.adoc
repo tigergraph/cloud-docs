@@ -85,7 +85,7 @@ xref:gsql-editor:index.adoc[Overview] | xref:gsql-editor:how2-edit-gsql-query.ad
 image:TG_Icon_Library-218.png[alt=exploreGraph,width=74,height=74]
 *Explore Graph*
 
-[TODO]
+Visualize your data and navigate to understand complex connections and dependencies.
 
 xref:explore-graph:index.adoc[Overview] |
 xref:explore-graph:pattern-search.adoc[]

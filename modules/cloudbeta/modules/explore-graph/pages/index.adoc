@@ -4,8 +4,12 @@
 
 Explore graph allow users to visually interact with their graph data.
 
+Explore Graph: In the context of data exploration or analysis, an explore graph refers to a visual representation of the relationships between different data points or entities. It helps users navigate and understand complex data structures by displaying connections and dependencies.
+
+
 == xref:cloudBeta:explore-graph:pattern-search.adoc[]
 
+Learn how look for specific patterns or sequences within a dataset or system.
 
 == xref:copilot-enablement.adoc[]
 

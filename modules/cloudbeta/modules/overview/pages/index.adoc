@@ -87,9 +87,10 @@ TigerGraph Cloud 4.0 offers several powerful integration tools.
 xref:integrations:index.adoc[Overview] |
 xref:cloudBeta:explore-graph:copilot-enablement.adoc[] |
 xref:cloudBeta:integrations:insights.adoc[] |
-xref:cloudBeta:integrations:graphstudio.adoc[]
+xref:cloudBeta:integrations:graphstudio.adoc[] |
+xref:cloudBeta:integrations:graphql.adoc[]
 ¦
-image:billing-homecard.png[alt=billing,width=74,height=74]
+image:edtions-homecard.png[alt=billing,width=74,height=74]
 *Administration*
 
 Here you can learn about the tools available for organizational administrators.
@@ -116,7 +117,7 @@ xref:cloudBeta:billing-manager:payment-methods.adoc[] |
 xref:cloudBeta:billing-manager:invoices.adoc[] |
 xref:cloudBeta:billing-manager:pricing.adoc[]
 ¦
-image:documentation-homecard.png[alt=support,width=74,height=74]
+image:referece-homecard.png[alt=support,width=74,height=74]
 *Release Notes*
 
 View the xref:release-notes:index.adoc[] to get update information on features and releases.

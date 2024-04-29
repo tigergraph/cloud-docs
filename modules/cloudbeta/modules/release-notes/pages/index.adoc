@@ -1,26 +1,55 @@
 = Release Notes
 :experimental:
-:description: Release notes for TigerGraph {page-component-version} LTS.
 //:page-aliases: change-log.adoc, release-notes.adoc
-:fn-preview: footnote:preview[Features in the preview stage should not be used for production purposes. General Availability (GA) versions of the feature will be available in a later release.]
 :toc:
 :toclevels:2
 
-TigerGraph Cloud 4.0 (Beta) was released on [release date]
-
-//LTS versions are supported for 24 months from their initial release (X.X.0) and should be the choice for production deployments.
+TigerGraph Cloud 4.0 (Beta) was released on Monday, April 29th, 2024.
 
 == (Beta) Key Features
 === 4.0.0
+
+* xref:cloudBeta:get-started:index.adoc[Get Started] using TigerGraph Cloud with the 4.0.
+** xref:get-started:how2-signup.adoc[How to Sign Up]
+** xref:cloudBeta:get-started:how2-login.adoc[]
+
 * xref:resource-manager:workgroup.adoc[Workgroups] and xref:resource-manager:workspaces/workspace.adoc[Workspaces] give users control over resource management.
 
-* xref:gsql-editor:index.adoc[GSQL Editor] -
+* xref:load-data:index.adoc[] - Learn how to Load Data into TigerGraph Cloud 4.0.
+** xref:load-data:load-from-local.adoc[Local]
+** xref:load-data:load-from-cloud.adoc[Cloud]
+** xref:load-data:load-from-other-sources.adoc[Other Sources]
 
-* xref:explore-graph:index.adoc[] and xref:explore-graph:how2-use-pattern-search.adoc[] -
+* xref:cloudBeta:schema-designer:index.adoc[] - Teaches you how to you can easily modify and manage the schema of your graph databases using Schema Designer UI.
+
+* xref:gsql-editor:index.adoc[GSQL Editor] - The GSQL Editor is a powerful tool for developing and executing GSQL queries, allowing you to unlock insights from your graph databases.
+** As well, learn xref:gsql-editor:how2-edit-gsql-query.adoc[].
 
 
+* xref:explore-graph:index.adoc[] and xref:explore-graph:how2-use-pattern-search.adoc[] - Visualize your data and navigate to understand complex connections and dependencies.
 
-* Description and link - Detailed information.
+* xref:integrations:index.adoc[] - TigerGraph Cloud 4.0 offers several powerful integration tools in our marketplace.
+** xref:cloudBeta:integrations:solutions.adoc[]
+** xref:cloudBeta:integrations:add-ons.adoc[]
+*** xref:cloudBeta:explore-graph:copilot-enablement.adoc[]
+*** xref:cloudBeta:integrations:insights.adoc[]
+*** xref:cloudBeta:integrations:graphstudio.adoc[]
+*** xref:cloudBeta:integrations:graphql.adoc[]
+
+* xref:cloudBeta:administration:index.adoc[] - Here you can learn about the tools available for organizational administrators.
+** xref:cloudBeta:administration:how2-invite-users.adoc[]
+** xref:cloudBeta:administration:how2-access-mgnt.adoc[]
+** xref:cloudBeta:administration:how2-use-organization-mgnt.adoc[]
+
+* xref:billing-manager:index.adoc[] - The billing window allows users to pay only for their specific usage of storage, data access, and compute resources.
+** xref:cloudBeta:billing-manager:payment-methods.adoc[]
+** xref:cloudBeta:billing-manager:invoices.adoc[]
+** xref:cloudBeta:billing-manager:pricing.adoc[]
+
+* View any additional xref:resources:index.adoc[Resources] for TigerGraph Cloud 4.0.
+** xref:cloudBeta:resources:glossary.adoc[]
+** xref:cloudBeta:resources:terms_conditions.adoc[ Beta Terms and Conditions]
+** xref:cloudBeta:resources:support.adoc[]
 
 ////
 == Fixed issues

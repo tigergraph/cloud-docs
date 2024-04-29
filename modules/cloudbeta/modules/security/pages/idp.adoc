@@ -1,8 +1,10 @@
 = IDP integration with SSO
 
+////
 By default, user management in a TigerGraph Cloud organization happens in the xref:manage-org-users.adoc[] section of the TigerGraph Cloud interface.
 
 If you have another preferred identity provider (IDP), you can integrate with it instead using SAML 2.0 to handle your user management needs outside of TigerGraph Cloud.
+////
 
 IDP integration is currently available at the Organization level, so one IDP will handle user management for all clusters in that organization.
 Only one IDP can be connected to a single Organization.
@@ -17,5 +19,5 @@ Only one IDP can be connected to a single Organization.
 == Setup
 
 This process is currently done through TigerGraph support.
-Please contact support@tigergraph.com to reach out to a technical support engineer who will guide you through the process.
+Please contact beta-support@tigergraph.com to reach out to a technical support engineer who will guide you through the process.
 

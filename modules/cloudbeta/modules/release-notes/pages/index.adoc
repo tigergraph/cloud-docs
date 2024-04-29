@@ -17,7 +17,7 @@ TigerGraph Cloud 4.0 (Beta) was released on Monday, April 29th, 2024.
 
 * xref:cloudBeta:schema-designer:index.adoc[Schema Designer] - Easily modify and manage the schema of your graph databases using Schema Designer UI.
 
-* xref:gsql-editor:index.adoc[GSQL Editor] - The GSQL Editor is a powerful tool for developing and executing GSQL queries, allowing you to unlock insights from your graph databases by xref:gsql-editor:how2-edit-gsql-query.adoc[Editing, Runing, and Sharing a GSQL Query.].
+* xref:gsql-editor:index.adoc[GSQL Editor] - The GSQL Editor is a powerful tool for developing and executing GSQL queries, allowing you to unlock insights from your graph databases by xref:gsql-editor:how2-edit-gsql-query.adoc[Editing, Running, and Sharing a GSQL Query.].
 
 * xref:explore-graph:index.adoc[] and xref:explore-graph:how2-use-pattern-search.adoc[] - Visualize your data and navigate to understand complex connections and dependencies.
 
@@ -33,7 +33,7 @@ TigerGraph Cloud 4.0 (Beta) was released on Monday, April 29th, 2024.
 , xref:cloudBeta:administration:how2-access-mgnt.adoc[Mange Access], xref:cloudBeta:administration:how2-use-organization-mgnt.adoc[Manage Organization].
 
 * xref:billing-manager:index.adoc[Billing UI Window] - The billing window allows users to check and pay only for their specific usage of storage, data access, and compute resources
-with an xref:cloudBeta:billing-manager:payment-methods.adoc[easy-to-use Payment Method manager], and the xref:cloudBeta:billing-manager:invoices.adoc[ablity to check and export invoces].
+with an xref:cloudBeta:billing-manager:payment-methods.adoc[easy-to-use Payment Method manager], and the xref:cloudBeta:billing-manager:invoices.adoc[ability to check and export invoices].
 
 ////
 == Fixed issues

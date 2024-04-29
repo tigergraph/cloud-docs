@@ -75,12 +75,12 @@ A network between two VPCs allowing instances to communicate as if they are on t
 
 A browser-accessible command line for running GSQL commands on a TigerGraph Cloud cluster.
 
-== data topology size
+//== data topology size
 
-data topology size check
+//data topology size check
 
-Workgroup
+//Workgroup
 
-Workspace
+//Workspace
 
 

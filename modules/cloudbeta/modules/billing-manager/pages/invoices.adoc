@@ -5,7 +5,7 @@ Here TigerGraph Cloud 4.0 users can check, reference, and export their invoice i
 
 == View and Export an Invoice
 
-.To get started with btn:[Billing] follow the steps below:
+.To get started with btn:[Invoices] follow the steps below:
 . Navigate to the btn:[Billing] tab in the left navigation.
 +
 image::billing-nav.png[width=300]

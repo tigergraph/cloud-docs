@@ -11,9 +11,9 @@ Here you can refer terms used in TigerGraph Cloud and the 4.0 (beta).
 
 Here you can learn how to get support.
 
-== xref:resources:faqs.adoc[Cloud 4.0 FAQs]
+//== xref:resources:faqs.adoc[Cloud 4.0 FAQs]
 
-Here you can find Cloud 4.0 FAQs.
+//Here you can find Cloud 4.0 FAQs.
 
 == Policy Documents
 

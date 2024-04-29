@@ -14,7 +14,7 @@ A visual representation of a graph and its data can help identify and explain th
 
 Before you can utilize the Explore Graph features you need to xref:cloudBeta:resource-manager:how2-create-a-workgroup.adoc[Create a Workspace] and xref:cloudBeta:load-data:index.adoc[Load Data].
 
-== xref:cloudBeta:explore-graph:pattern-search.adoc[]
+== xref:cloudBeta:explore-graph:how2-use-pattern-search.adoc[]
 
 Learn how look for specific patterns or sequences within a dataset or system.
 

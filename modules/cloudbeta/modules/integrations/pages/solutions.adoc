@@ -27,7 +27,7 @@ image::Screenshot 2024-04-27 at 2.34.48 PM.png[]
 
 . Click on the btn:[Add] button of the selected solution kit to start the solution builder.
 +
-image:Screenshot 2024-04-18 at 10.17.39 AM.png[width=300]
+image::Screenshot 2024-04-18 at 10.17.39 AM.png[width=300]
 
 . You can give your solution a name. And select the workspace you want your solution to be installed to.
 +
@@ -36,11 +36,11 @@ image:Screenshot 2024-04-18 at 10.17.39 AM.png[width=300]
 Currently, you can only install solutions on RW workspaces.
 ====
 +
-image:Screenshot 2024-04-18 at 10.18.19 AM.png[width=300]
+image::Screenshot 2024-04-18 at 10.18.19 AM.png[width=300]
 
 . For each solution kit, you are provided with three options to choose from regarding the data:
 +
-image:Screenshot 2024-04-18 at 10.18.53 AM.png[]
+image::Screenshot 2024-04-18 at 10.18.53 AM.png[]
 +
 * *Sample Data*: This option allows you to use pre-loaded sample data that comes with the solution kit.
 Sample data is designed to showcase the capabilities and features of the solution kit.
@@ -69,7 +69,7 @@ This option is useful if you want to start with a clean slate and build your bla
 
 . Once your created your solution, it will show up under the btn:[ Solutions ] tab
 +
-image:Screenshot 2024-04-18 at 10.19.26 AM.png[]
+image::Screenshot 2024-04-18 at 10.19.26 AM.png[]
 
 == Next Steps
 

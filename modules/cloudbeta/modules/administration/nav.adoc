@@ -1,7 +1,7 @@
 * xref:index.adoc[Administration]
-** xref:administration:invite_users.adoc[]
-** xref:administration:access_mgnt.adoc[]
-** xref:administration:organization-management.adoc[]
+** xref:administration:how2-invite-users.adoc[]
+** xref:administration:how2-access-mgnt.adoc[]
+** xref:administration:how2-use-organization-mgnt.adoc[]
 
 ////
 ** xref:cloudBeta:security:index.adoc[]

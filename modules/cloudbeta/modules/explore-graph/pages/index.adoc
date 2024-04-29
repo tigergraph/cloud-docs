@@ -3,9 +3,16 @@
 
 
 Explore graph allow users to visually interact with their graph data.
+Use it to help navigate and understand complex data structures by displaying connections and dependencies.
 
-Explore Graph: In the context of data exploration or analysis, an explore graph refers to a visual representation of the relationships between different data points or entities. It helps users navigate and understand complex data structures by displaying connections and dependencies.
+[TIP]
+====
+A visual representation of a graph and its data can help identify and explain the relationships between different data points or entities.
+====
 
+== Prerequisites
+
+Before you can utilize the Explore Graph features you need to xref:cloudBeta:resource-manager:how2-create-a-workgroup.adoc[Create a Workspace] and xref:cloudBeta:load-data:index.adoc[Load Data].
 
 == xref:cloudBeta:explore-graph:pattern-search.adoc[]
 
@@ -13,4 +20,10 @@ Learn how look for specific patterns or sequences within a dataset or system.
 
 == xref:copilot-enablement.adoc[]
 
+Learn how to unlock the full potential of your data by learning how to enable and use TigerGraph Copilot.
 
+== Next Steps
+
+Next, checkout the xref:cloudBeta:integrations:index.adoc[].
+
+Or return to the  xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.

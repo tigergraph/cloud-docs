@@ -1,67 +1,84 @@
 = Beta Program Terms and Conditions for TigerGraph Cloud 4.0
 
-== Effective Date: Apr 5, 2024
 
-[CAUTION]
-Please read these terms and conditions of use carefully before accessing, using or obtaining any materials, information, products or services.
 
-By accessing the TigerGraph website or any other feature or other TigerGraph platform (collectively "Our Website"), you agree to be bound by these terms and conditions ("Terms") and our Privacy Policy.
-In these terms, “we”, “us”, “our” and TigerGraph refers to TigerGraph Inc. and “you” and “your” refers to you, the user of Our Product.
+== Effective Date: Apr 23, 2024
+
+These Terms and Conditions of the Beta Program for TigerGraph Cloud 4.0 ("Terms") constitute a legal agreement between *You* or the entity You are authorized to represent and bind to these terms (“You” or “Your”) and TigerGraph, Inc. ("TigerGraph", "We") and govern Your participation in the Beta Program for TigerGraph Cloud 4.0 ("Beta Program").
 
 [IMPORTANT]
-Please read these Terms carefully before participating.
+====
+Please read these Terms carefully.
+====
 
-=== Acceptance of Terms
-By accessing or using our beta program, you confirm that you have read, understood, and agree to be bound by these Terms.
-If you do not agree with these Terms, you must not access or use our beta program.
+=== 1) Beta Offering
+The Beta Program provides You access to the TigerGraph Cloud 4.0 Beta software service ("Beta Offering"), a pre-production release, for testing and providing feedback to TigerGraph.
+The Beta Offering is provided on an "as is" and "as available" basis for a limited time.
+You may access the Beta Offering via a designated portal which is separate from TigerGraph's production and general commercial offerings.
+You may not use the Beta Offering in production or for commercial purposes.
 
-== Beta Program Description
-The beta program provides you access to TigerGraph Cloud 4.0 in its beta version for testing and giving feedback.
-The beta version is provided on an *"as is"* and *"as available"* basis for a limited time.
+=== 2) Acceptance of Terms
+By accessing or using the Beta Offering, You confirm that You have read, understood, and agree to be bound by these Terms.
+You also agree to use the Beta Offering in accordance with the TigerGraph Cloud Subscription Terms, which are available on our website at https://www.tigergraph.com/tigergraph-cloud-subscription-terms/ and are incorporated by reference.
+The Terms control over any inconsistent provisions with the TigerGraph Cloud Subscription Terms.
 
-== Participation
-* *Eligibility:* Participation in the beta program is voluntary and is open only to selected participants who agree to these Terms.
+If You do not agree with these Terms or the TigerGraph Cloud Subscription Terms, You are not permitted to access or use the Beta Offering.
 
-* *Registration:* You may be required to register for an account and provide accurate and complete information. You are responsible for maintaining the confidentiality of your account credentials.
+=== 3) Participation
 
-== Use of the Beta Version
+* *Eligibility*: Participation in the Beta Program is voluntary and is open only to selected participants who agree to these Terms.
+At our sole discretion, we reserve the right to reject access or revoke access for any participant at any time.
 
-* *License:* We grant you a limited, non-exclusive, non-transferable license to use the beta version solely for testing and evaluation.
+* *Registration*: You may be required to register for an account and provide accurate and complete information.
+You agree to keep Your account credentials confidential and not to share them with other parties.
+The active use of computational resources for the use of the Beta Offering in TigerGraph Cloud 4 consumes TigerGraph Cloud credits.
+TigerGraph will grant Your Beta Program account a number of no-charge credits.
+If You use all the credits, contact TigerGraph, and You may receive more.
 
-* *Restrictions:* You shall not reverse engineer, decompile, or disassemble the beta version or attempt to gain unauthorized access to its underlying code or infrastructure.
+=== 4) License and Restrictions
+We grant You a limited, non-exclusive, non-transferable, sublicensable, or assignable license to use the Beta Offering solely for internal testing and evaluation.
+You, directly or through any third party, agree not to disclose the Beta Offering to any third party,  reverse engineer, reveal Your benchmarking, decompile, or disassemble the Beta Offering.
+You agree You will not attempt to gain unauthorized access to the Beta Offering’s underlying code or infrastructure.
 
-== Feedback and Communications
-You agree to provide feedback regarding your experience with the beta version, including but not limited to usability, bugs, and performance issues.
-All feedback will be considered non-confidential and non-proprietary to you.
+=== 5) Feedback and Communications
+You agree to provide feedback regarding Your experience with the Beta Offering, including but not limited to usability, bugs, improvements, suggestions, and performance issues (“Feedback”).
+All Feedback will be considered non-proprietary to You. You acknowledge that TigerGraph owns all Feedback provided.
+If we choose to publish Your Feedback, we will either do so in a way that does not identify You or obtain Your consent to identify You.
+You acknowledge the importance of communication and feedback between You and TigerGraph during Your use of the Beta Offering and agree to receive related correspondence and updates from us with regard to the Beta Offering.
 
-== Data Protection
+=== 6) Data Collection and Protection
 
-* *Personal Data:* We may collect and use your data per our Privacy Policy, which is available on our website.
+* *Personal Data*: We may collect and use Your data on a limited basis under our Privacy Policy, which is available on our website at  https://www.tigergraph.com/privacy-policy/.
+We may also monitor how You use the Beta Offering and use that information, without limitation, to improve our products and services.
 
-* *Data Security:* We will use reasonable efforts to protect data collected through the beta program. However, you acknowledge that using the beta version may involve transmitting data over networks not owned or controlled by us.
 
-== No Warranty
-The beta version is provided *"as is"* without any warranties, express or implied.
+=== 7) No Warranty
+The Beta Offering is provided "as is" without any warranties, express or implied.
 We do not warrant that it will be error-free or uninterrupted.
+We are not obligated to provide maintenance, technical, or other support for the Beta Offering.
+You must separately backup all data used on the Beta Offering to avoid loss of data.
 
-== Limitation of Liability
-We shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data, use, goodwill, or other intangible losses resulting from your access to, use of, or inability to access or use the beta version.
+=== 8) Limitation of Liability
+We shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, data, use, goodwill, or other intangible losses resulting from Your access to, use of, or inability to access or use the Beta Offering.
 
-== Changes to Terms
-[IMPORTANT]
+=== 9) Changes to Terms
 We reserve the right to modify these Terms at any time.
-
 We will provide notice of these changes by posting the revised Terms and updating the "Effective Date" above.
-Your continued participation in the beta program after you have been notified of such changes will constitute your consent to those changes.
+Your continued participation in the Beta Program will constitute Your consent to those changes.
 
-== Termination
-We may terminate or suspend your access to the beta program at any time, without prior notice or liability, for any reason whatsoever, including without limitation if you breach these Terms.
+=== 10) Termination
+We reserve the right to terminate the Beta Program or suspend Your access to the Beta Offering at any time, without prior notice or liability, for any reason whatsoever, including without limitation if You breach these Terms.
+You may terminate Your participation in the Beta Program by canceling Your access to the Beta Program portal.
 
-[CAUTION]
-This program will end on July 20, 2024, after which all your resources will be deleted.
+We anticipate ending the Beta Program on July 20, 2024.
+We intend to send a notice to the email address of Your Beta Program registration at least 48 hours before we end the Beta Program.
+After the Beta Program ends, Your Beta Offering services and the data contained therein will be deleted.
+We may retain Your registration information, feedback, and system monitoring data.
+The restrictions in section 4 survive any termination in perpetuity.
 
-== Governing Law
-These Terms shall be governed by and construed per the laws of the State of California, without regard to its conflict of law provisions.
+=== 11) Governing Law
+These Terms shall be governed by and construed in accordance with the internal laws of the State of California without regard to its conflict of laws principles.
+Each party hereby consents to the jurisdiction of the federal or state courts of San Mateo County, California, USA. Each party hereby waives any right to a jury trial in any litigation arising out of or related to this Agreement.
 
 == Contact Us
 If you have any questions about these Terms, please contact us at support@tigergraph.com.

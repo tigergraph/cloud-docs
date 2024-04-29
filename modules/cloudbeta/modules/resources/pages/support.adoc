@@ -1,11 +1,12 @@
 = Support
-:sectnums:
 :experimental:
 
+== Contact Us
+If you have any questions, please contact us at support@tigergraph.com.
 
-Look to the terms and conditions
-Email the address
-Create a ticket
+//Look to the terms and conditions
+//Email the address
+//Create a ticket
 
 
 ////

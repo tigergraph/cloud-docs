@@ -1,18 +1,25 @@
-= Using CoPliot
+= CoPliot
 
-Insights gain from CoPilot can be presented as natural language, graph visualizations, and other perspectives.
 
-== Prerequisites
+CoPilot is meticulously designed to enhance productivity across various business functions, including analytics, development, and administration tasks.
+The insights can then be presented as natural language, graph visualizations, and other perspectives.
 
-To Get Started with TigerGraph CoPilot you must first enable the TigerGraph CoPilot add-on.
+Its benefits are invaluable across a spectrum of domains, including customer service, marketing, sales, data science, DevOps, and engineering.
 
-image::Screenshot 2024-04-26 at 8.22.55 AM.png[]
 
-See the xref:beta@tg-copilot:getstarted:index.adoc[] and the xref:beta@tg-copilot:getstarted:oncloud.adoc[] documentations for more details.
+[TIP]
+====
+With CoPilot, organizations can unlock the full potential of their data and drive informed decision-making like never before.
+It empowers business analysts, data scientists, and developers to use natural language to run real-time queries against up-to-date data at scale.
+====
+
+See the xref:beta@tg-copilot:getstarted:index.adoc[] and the TigerGraph CoPilot xref:beta@tg-copilot:getstarted:oncloud.adoc[] documentations for more details.
 
 == Next Steps
 
-Learn once enabled learn xref:beta@tg-copilot:using-copilot:how2-use-on-cloud.adoc[] on our new TigerGraph CoPliot documentation.
+Once enabled, learn xref:beta@tg-copilot:using-copilot:how2-use-on-cloud.adoc[] on our new TigerGraph CoPliot documentation.
 
-Or return to xref:cloudBeta:integrations:index.adoc[Marketplace] or the xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.
+Or explore additional add-ons on the xref:integrations:index.adoc[] page or continue on to learn about the xref:administration:index.adoc[Administration] features or xref:security:index.adoc[] in TigerGraph Cloud 4.0.
+
+Return to xref:cloudBeta:integrations:index.adoc[Marketplace] or the xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.
 

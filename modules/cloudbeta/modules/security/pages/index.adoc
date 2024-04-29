@@ -1,7 +1,16 @@
 = Security
 :experimental:
 
-Introduction
+
+Here you can learn different security practices and policies in TigerGraph Cloud 4.0.
+
+[IMPORTANT]
+====
+TigerGraph Cloud 4.0 beta is  for personal or R&D use and not for production use.
+
+Please see xref:cloudBeta:resources:terms_conditions.adoc[].
+====
+
 
 == xref:cloudBeta:security:password-policy.adoc[]
 

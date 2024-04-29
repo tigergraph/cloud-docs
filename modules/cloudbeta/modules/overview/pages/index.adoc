@@ -1,4 +1,4 @@
-= TigerGraph Cloud 4.0 (Beta)
+= TigerGraph Cloud 4.0 (beta version)
 :experimental:
 :page-aliases: cloud-overview.adoc
 
@@ -19,19 +19,8 @@ TigerGraph Cloud 4.0 is still in beta release and the documentation is in progre
 [IMPORTANT]
 ====
 TigerGraph Cloud 4.0 beta is  for personal or R&D use and not for production use.
-
 Please see xref:cloudBeta:resources:terms_conditions.adoc[].
 ====
-
-////
-3/18/2024: CoPilot is available now in Alpha (v0.0.1).
-It uses a Large Language Model (LLM) to convert your question into a function call, which is then executed on the graph in TigerGraph.
-We would love to hear your feedback to keep improving it so that it could bring more value to you.
-If you are trying it out, it would be helpful if you could fill out this sign up form so we can keep track of it (no spam, promised).
-And if you would just like to provide the feedback, please feel free to fill out this short survey after you have played with CoPilot.
-
-Thank you for your interest and support!
-////
 
 == Get to Know Your TigerGraph Cloud
 
@@ -44,8 +33,7 @@ image:getstarted-homecard.png[alt=getstarted,width=74,height=74]
 xref:cloudBeta:get-started:index.adoc[Get Started] using TigerGraph Cloud with the 4.0.
 
 xref:get-started:how2-signup.adoc[How to Sign Up] |
-xref:administration:organization-management.adoc[Org Management]
-
+xref:cloudBeta:get-started:how2-login.adoc[]
 ¦
 image:insights.png[alt=workspace,width=74,height=74]
 *Workgroups and Workspaces*
@@ -88,7 +76,7 @@ image:TG_Icon_Library-218.png[alt=exploreGraph,width=74,height=74]
 Visualize your data and navigate to understand complex connections and dependencies.
 
 xref:explore-graph:index.adoc[Overview] |
-xref:explore-graph:pattern-search.adoc[]
+xref:explore-graph:how2-use-pattern-search.adoc[]
 
 ¦
 image:ArchtectureOverview-homecard.png[alt=integration,width=74,height=74]
@@ -97,26 +85,49 @@ image:ArchtectureOverview-homecard.png[alt=integration,width=74,height=74]
 TigerGraph Cloud 4.0 offers several powerful integration tools.
 
 xref:integrations:index.adoc[Overview] |
-xref:integrations:copilot.adoc[] |
+xref:cloudBeta:explore-graph:copilot-enablement.adoc[] |
 xref:cloudBeta:integrations:insights.adoc[] |
 xref:cloudBeta:integrations:graphstudio.adoc[]
+¦
+image:billing-homecard.png[alt=billing,width=74,height=74]
+*Administration*
+
+Here you can learn about the tools available for organizational administrators.
+
+xref:cloudBeta:administration:index.adoc[Overview] |
+xref:cloudBeta:administration:how2-invite-users.adoc[] |
+xref:cloudBeta:administration:how2-access-mgnt.adoc[] |
+xref:cloudBeta:administration:how2-use-organization-mgnt.adoc[Org Management]
 ¦
 image:security-homecard.png[alt=security,width=74,height=74]
 *Security*
 
 Learn about xref:security:index.adoc[] in TigerGraph Cloud 4.0.
 
+xref:cloudBeta:security:password-policy.adoc[] |
+xref:cloudBeta:security:idp.adoc[]
 ¦
 image:billing-homecard.png[alt=billing,width=74,height=74]
 *Billing*
 
-The xref:billing-manager:index.adoc[Billing Manager] allows users to pay only for their specific usage of storage, data access, and compute resources.
+The xref:billing-manager:index.adoc[Billing] window allows users to pay only for their specific usage of storage, data access, and compute resources.
 
-//xref:billing-manager:index.adoc[Overview]
+xref:cloudBeta:billing-manager:payment-methods.adoc[] |
+xref:cloudBeta:billing-manager:invoices.adoc[] |
+xref:cloudBeta:billing-manager:pricing.adoc[]
 ¦
 image:documentation-homecard.png[alt=support,width=74,height=74]
-*Release Notes and Resources*
+*Release Notes*
 
 View the xref:release-notes:index.adoc[] to get update information on features and releases.
-Or find any additional xref:resources:index.adoc[Resources] for TigerGraph Cloud 4.0.
+¦
+image:documentation-homecard.png[alt=support,width=74,height=74]
+*Resources*
+
+View any additional xref:resources:index.adoc[Resources] for TigerGraph Cloud 4.0.
+
+xref:cloudBeta:resources:glossary.adoc[] |
+xref:cloudBeta:resources:terms_conditions.adoc[ Beta Terms and Conditions] |
+xref:cloudBeta:resources:support.adoc[]
+¦
 |===

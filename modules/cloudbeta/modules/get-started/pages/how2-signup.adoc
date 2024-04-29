@@ -21,7 +21,7 @@ btn:[ Click ] the link in your email to verify, then log in using your username 
 ====
 We automatically create a new organization for you.
 
-You can update your organization on the xref:cloudBeta:administration:organization-management.adoc[] page.
+You can update your organization on the xref:cloudBeta:administration:how2-use-organization-mgnt.adoc[] page.
 ====
 
 == Next Steps

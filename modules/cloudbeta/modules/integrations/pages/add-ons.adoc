@@ -6,4 +6,5 @@ Extend the capabilities of TigerGraph Cloud with add-ons tailored to your needs.
 == xref:cloudBeta:integrations:copilot.adoc[]
 
 == xref:cloudBeta:integrations:insights.adoc[]
+
 == xref:cloudBeta:integrations:graphstudio.adoc[]

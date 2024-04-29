@@ -9,47 +9,31 @@ TigerGraph Cloud 4.0 (Beta) was released on Monday, April 29th, 2024.
 == (Beta) Key Features
 === 4.0.0
 
-* xref:cloudBeta:get-started:index.adoc[Get Started] using TigerGraph Cloud with the 4.0.
-** xref:get-started:how2-signup.adoc[How to Sign Up]
-** xref:cloudBeta:get-started:how2-login.adoc[]
+//* xref:cloudBeta:get-started:index.adoc[Get Started] using TigerGraph Cloud with the 4.0.
 
 * xref:resource-manager:workgroup.adoc[Workgroups] and xref:resource-manager:workspaces/workspace.adoc[Workspaces] give users control over resource management.
 
-* xref:load-data:index.adoc[] - Learn how to Load Data into TigerGraph Cloud 4.0.
-** xref:load-data:load-from-local.adoc[Local]
-** xref:load-data:load-from-cloud.adoc[Cloud]
-** xref:load-data:load-from-other-sources.adoc[Other Sources]
+* xref:load-data:index.adoc[] - Load Data into TigerGraph Cloud 4.0 and unlock its potential.
 
-* xref:cloudBeta:schema-designer:index.adoc[] - Teaches you how to you can easily modify and manage the schema of your graph databases using Schema Designer UI.
+* xref:cloudBeta:schema-designer:index.adoc[Schema Designer] - Easily modify and manage the schema of your graph databases using Schema Designer UI.
 
-* xref:gsql-editor:index.adoc[GSQL Editor] - The GSQL Editor is a powerful tool for developing and executing GSQL queries, allowing you to unlock insights from your graph databases.
-** As well, learn xref:gsql-editor:how2-edit-gsql-query.adoc[].
-
+* xref:gsql-editor:index.adoc[GSQL Editor] - The GSQL Editor is a powerful tool for developing and executing GSQL queries, allowing you to unlock insights from your graph databases by xref:gsql-editor:how2-edit-gsql-query.adoc[Editing, Runing, and Sharing a GSQL Query.].
 
 * xref:explore-graph:index.adoc[] and xref:explore-graph:how2-use-pattern-search.adoc[] - Visualize your data and navigate to understand complex connections and dependencies.
 
 * xref:integrations:index.adoc[] - TigerGraph Cloud 4.0 offers several powerful integration tools in our marketplace.
-** xref:cloudBeta:integrations:solutions.adoc[]
-** xref:cloudBeta:integrations:add-ons.adoc[]
-*** xref:cloudBeta:explore-graph:copilot-enablement.adoc[]
-*** xref:cloudBeta:integrations:insights.adoc[]
-*** xref:cloudBeta:integrations:graphstudio.adoc[]
-*** xref:cloudBeta:integrations:graphql.adoc[]
+** xref:cloudBeta:integrations:solutions.adoc[] -  Pre-built solution kits that address common use cases and industry-specific challenges.
+** xref:cloudBeta:integrations:add-ons.adoc[] - Extend the capabilities of TigerGraph Cloud 4.0 with add-ons tailored to your needs. Add-ons provide additional functionalities and integrations that enhance your graph database workflow.
+*** xref:cloudBeta:explore-graph:copilot-enablement.adoc[CoPilot Add-On] - CoPilot empowers business analysts, data scientists, and developers to use natural language to run real-time queries against up-to-date data at scale.
+*** xref:cloudBeta:integrations:insights.adoc[Insights Add-On] - TigerGraph Insights is a no-code visual graph analyzer that makes building data analytics dashboards intuitive.
+*** xref:cloudBeta:integrations:graphstudio.adoc[GraphStudio Add-On] - GraphStudio offers a range of features and tools to simplify the graph development process.
+*** xref:cloudBeta:integrations:graphql.adoc[GraphQL Add-On] - TigerGraph GraphQL enables users to access and modify graph data in TigerGraph using GraphQL queries.
 
-* xref:cloudBeta:administration:index.adoc[] - Here you can learn about the tools available for organizational administrators.
-** xref:cloudBeta:administration:how2-invite-users.adoc[]
-** xref:cloudBeta:administration:how2-access-mgnt.adoc[]
-** xref:cloudBeta:administration:how2-use-organization-mgnt.adoc[]
+* xref:cloudBeta:administration:index.adoc[] - The tools for organizational administrators to xref:cloudBeta:administration:how2-invite-users.adoc[]
+, xref:cloudBeta:administration:how2-access-mgnt.adoc[Mange Access], xref:cloudBeta:administration:how2-use-organization-mgnt.adoc[Manage Organization].
 
-* xref:billing-manager:index.adoc[] - The billing window allows users to pay only for their specific usage of storage, data access, and compute resources.
-** xref:cloudBeta:billing-manager:payment-methods.adoc[]
-** xref:cloudBeta:billing-manager:invoices.adoc[]
-** xref:cloudBeta:billing-manager:pricing.adoc[]
-
-* View any additional xref:resources:index.adoc[Resources] for TigerGraph Cloud 4.0.
-** xref:cloudBeta:resources:glossary.adoc[]
-** xref:cloudBeta:resources:terms_conditions.adoc[ Beta Terms and Conditions]
-** xref:cloudBeta:resources:support.adoc[]
+* xref:billing-manager:index.adoc[Billing UI Window] - The billing window allows users to check and pay only for their specific usage of storage, data access, and compute resources
+with an xref:cloudBeta:billing-manager:payment-methods.adoc[easy-to-use Payment Method manager], and the xref:cloudBeta:billing-manager:invoices.adoc[ablity to check and export invoces].
 
 ////
 == Fixed issues

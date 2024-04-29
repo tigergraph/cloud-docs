@@ -81,4 +81,4 @@ These Terms shall be governed by and construed in accordance with the internal l
 Each party hereby consents to the jurisdiction of the federal or state courts of San Mateo County, California, USA. Each party hereby waives any right to a jury trial in any litigation arising out of or related to this Agreement.
 
 == Contact Us
-If you have any questions about these Terms, please contact us at support@tigergraph.com.
+If you have any questions about these Terms, please contact us at beta-support@tigergraph.com.

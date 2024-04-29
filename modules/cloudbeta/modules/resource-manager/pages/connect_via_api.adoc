@@ -18,13 +18,15 @@ These code snippets are available in JavaScript, cURL, and Python.
 .To connect via APIs and interact with your graph database, follow these steps:
 . Click on btn:[Connect From API] option in the btn:[Connect] menu in a workspace.
 +
+image::Screenshot 2024-04-28 at 9.36.29 PM.png[]
++
 [NOTE]
 ====
 You can go to the xref:cloudBeta:schema-designer:index.adoc[Schema Designer] to btn:[Create a Graph] if you do not have a graph.
 ====
 +
-image::Screenshot 2024-04-17 at 5.41.55 PM.png[width="250"]
-+
+//image::Screenshot 2024-04-17 at 5.41.55 PM.png[width="250"]
+//+
 . In the btn:[Connect From API] UI, you can browse through the available APIs, including built-in queries and user-installed queries.
 +
 [TIP]

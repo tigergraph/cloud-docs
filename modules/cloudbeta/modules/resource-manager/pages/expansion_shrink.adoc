@@ -6,7 +6,7 @@ Users can easily expand or shrink workspaces to accommodate the evolving needs o
 
 == Expand or Shrink a Workspace
 
-Scale up (exapnd) or down (shrink) as required, ensuring optimal performance and cost-effectiveness.
+Scale up (expand) or down (shrink) as required, ensuring optimal performance and cost-effectiveness.
 
 [NOTE]
 ====
@@ -21,8 +21,11 @@ Resizing of Read-Only (RO) workspaces is strictly forbidden and not supported.
 Recreate a RO workspace if you need to resize it.
 ====
 
+. Click on the btn:[ ... ] on your workspace next to the btn:[Connect] button.
++
+image::workspace-general-tab.png[]
 
-. Go to the btn:[ Edit ] section on a workspace.
+. Go to btn:[ Edit ].
 +
 image::expandandshrink.png[width="250"]
 
@@ -47,7 +50,7 @@ It is recommended to schedule the expansion or shrink during a time when minimal
 
 == Next Steps
 
-Next, learn more about how to xref:cloudBeta:resource-manager:backup-and-restore.adoc[], xref:cloudBeta:resource-manager:connect_via_api.adoc[] a workspace, or xref:cloudBeta:resource-manager:monitor_workspaces.adoc[].
+Next, learn more about how to xref:cloudBeta:resource-manager:backup-and-restore.adoc[], xref:cloudBeta:resource-manager:connect_via_api.adoc[], or xref:cloudBeta:resource-manager:monitor_workspaces.adoc[].
 
 Return to the xref:cloudBeta:resource-manager:index.adoc[] page or xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.
 

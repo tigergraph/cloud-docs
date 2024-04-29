@@ -8,6 +8,7 @@ Workgroups provide a way to organize and manage resources, access controls, and 
 
 == Next Step
 
-See xref:how2-create-a-workgroup.adoc[] to get started or
-return to the xref:cloudBeta:resource-manager:index.adoc[] page or xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.
+See xref:how2-create-a-workgroup.adoc[] to get started.
+
+Return to the xref:cloudBeta:resource-manager:index.adoc[] page or xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.
 

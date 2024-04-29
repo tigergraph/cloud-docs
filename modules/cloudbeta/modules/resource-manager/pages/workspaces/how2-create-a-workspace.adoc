@@ -42,17 +42,29 @@ For more details, please refer to xref:cloudBeta:resource-manager:workspaces/wri
 +
 image::Add-onsimage.png[]
 . Click on the btn:[ Create ] button to create the workspace.
-
++
 [NOTE]
 ====
 Currently, only one Read-Write workspace can be created for any given database.
 This means that multiple simultaneous Read-Write workspaces cannot be created, potentially limiting certain collaborative or concurrent development scenarios.
 ====
-
++
 [IMPORTANT]
 ====
 Users cannot re-create the Read-Write workspace once it has been terminated.
 ====
+
+. The workspace will then start to build.
+This progress can be monitored on the btn:[General Tab].
++
+image::workspace-general-tab.png[]
+
+. Once built you can view details about your workspace on the workspace tab.
+And you can view information about your database on the database tab.
++
+image::workspace-info-tab.png[]
++
+image::workspace-database-tab.png[]
 
 == Next Steps
 

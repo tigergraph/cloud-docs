@@ -23,7 +23,7 @@ image::loginPage.png[]
 
 === 2) Your Organization
 
-For organizations specific logging methods (rather than through Google and Microsoft), please click the btn:[Login with organization] button.
+For organizations specific logging methods, click the btn:[Login with organization] button.
 You must provide an organization name before entering your username and password.
 
 [NOTE]
@@ -35,6 +35,6 @@ image::orgLogin.png[]
 
 == Next Steps
 
-Once logged in, you can begin to create xref:resource-manager:workgroup.adoc[Workgroups] and xref:resource-manager:workspaces/workspace.adoc[Workspaces], xref:administration:how2-invite-users.adoc[] to your organization, and xref:administration:how2-access-mgnt.adoc[manage access].
+Once logged in, learn more about xref:cloudBeta:resource-manager:index.adoc[] or jump right into creating a xref:resource-manager:workgroup.adoc[Workgroup] and xref:resource-manager:workspaces/workspace.adoc[Workspaces].
 
-Or return to the xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.
+Return to the xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.

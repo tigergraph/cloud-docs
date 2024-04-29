@@ -4,11 +4,11 @@
 The advanced settings in workspace allow users to customize and fine-tune various aspects of their workspace configuration.
 These settings include options like *auto-suspend* and *auto-resume*, which automate the suspension and resumption of the workspace based on activity levels.
 
-Find them by clicking on the btn:[ ... ] buttong on your workspace next to the btn:[Connect] button.
+Find them by clicking on the btn:[ ... ] button on your workspace next to the btn:[Connect] button.
 
 image::workspace-general-tab.png[]
 
-A Workspace configuration panel will appear on the right of your screen.
+A workspace configuration panel will appear on the right of your screen.
 
 image::advnaced-settings.png[]
 

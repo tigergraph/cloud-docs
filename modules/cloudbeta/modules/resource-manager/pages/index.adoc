@@ -2,7 +2,6 @@
 :experimental:
 
 In TigerGraph Cloud 4.0, the concepts of workgroup, workspace, and database are used to organize and manage projects and data within the platform.
-
 By utilizing xref:cloudBeta:resource-manager:workgroup.adoc[workgroups], xref:cloudBeta:resource-manager:workspaces/workspace.adoc[workspaces and databases], TigerGraph Cloud 4.0 provides a flexible and scalable environment for managing projects, allocating compute resources, and working with graph data effectively.
 
 ////

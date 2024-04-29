@@ -37,12 +37,8 @@ Here are some differences between the different TigerGraph offerings.
 
 | Installation and Configuration
 | Yes
-| N/A.
-
-There are a few simple steps to install a Starter Kit.  See the xref:cloud:support:faqs.adoc[].
-| N/A.
-
-Users can install solutions at any time.
+| There are a few simple steps to install a Starter Kit.  See the xref:cloud:support:faqs.adoc[].
+| Users can install solutions at any time.
 
 | User Access Management
 | Yes
@@ -51,12 +47,8 @@ Users can install solutions at any time.
 
 | Data Encryption
 | Yes
-| N/A.
-
-TigerGraph Cloud is set up already for encrypted data at rest and at motion.
-| N/A.
-
-TigerGraph Cloud is set up already for encrypted data at rest and at motion.
+| TigerGraph Cloud is set up already for encrypted data at rest and at motion.
+| TigerGraph Cloud is set up already for encrypted data at rest and at motion.
 
 | System Management
 | Yes

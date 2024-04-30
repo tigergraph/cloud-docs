@@ -20,7 +20,7 @@ TigerGraph Cloud 4.0 is still in beta release and the documentation is in progre
 
 [IMPORTANT]
 ====
-TigerGraph Cloud 4.0 beta is  for personal or R&D use and not for production use.
+TigerGraph Cloud 4.0 beta is for personal or R&D use and not for production use.
 Please see xref:cloudBeta:resources:terms_conditions.adoc[].
 ====
 
@@ -32,7 +32,7 @@ Please see xref:cloudBeta:resources:terms_conditions.adoc[].
 image:getstarted-homecard.png[alt=getstarted,width=74,height=74]
 *Get Started*
 
-xref:cloudBeta:get-started:index.adoc[Get Started] using TigerGraph Cloud with the 4.0 or explore key features in our xref:overview:overview.adoc[].
+xref:cloudBeta:get-started:index.adoc[Get Started] using TigerGraph Cloud 4.0 or explore key features in our xref:overview:overview.adoc[].
 
 xref:get-started:how2-signup.adoc[How to Sign Up] |
 xref:cloudBeta:get-started:how2-login.adoc[]

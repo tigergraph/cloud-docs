@@ -1,0 +1,54 @@
+= How to Create a Workgroup
+:experimental:
+
+To learn more about workgroups see xref:cloudBeta:resource-manager:workgroup.adoc[].
+To create a workgroup in TigerGraph Cloud 4.0, follow the steps below.
+
+== Create a Workgroup
+
+[Placeholder for create workgroup screenshot]
+
+. Log in to your TigerGraph Cloud account.
++
+image::loginPage.png[width=250]
+
+. From the dashboard, navigate to the btn:[Workgroups] section and click on the btn:[Create Workspace] or you can click on the image:plusbutton.png[width=50,height=50] button next to btn:[Workgroups].
++
+image::createWorkGroup.png[]
+
+. Provide a name for the workgroup.
++
+[NOTE]
+====
+Choose a name that reflects the purpose of your project or initiative.
+====
++
+image::Screenshot 2024-04-24 at 8.18.30 PM.png[]
+. Choose the cloud provider and the region
++
+[NOTE]
+====
+As of 2024-04-23, TigerGraph Cloud 4.0 only offers `AWS` on `US East(N. Virginia)`.
+====
+
+. Finally, click on the btn:[Next] button to create the workgroup.
+
+== Next Step
+
+Now, learn xref:cloudBeta:resource-manager:how2-workgroup-access.adoc[] or learn more about xref:cloudBeta:resource-manager:workspaces/workspace.adoc[Workspaces and Databases].
+
+Return to the xref:cloudBeta:resource-manager:index.adoc[] page or xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.
+
+////
+xref:cloudBeta:resource-manager:workspaces/workspace.adoc[Workspaces and Databases, role=next-button]
+
+[.next-button]
+xref:cloudBeta:resource-manager:workspaces/workspace.adoc[Link Text]
+
+:next-button: pass:[<span class="next-button">xref:cloudBeta:resource-manager:workspaces/workspace.adoc[Next]</span>]
+{next-button}
+
+++++
+<a href="cloudBeta:resource-manager:workspaces/workspace.adoc" class="next-button">Next</a>
+++++
+////

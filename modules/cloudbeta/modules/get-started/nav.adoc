@@ -1,0 +1,3 @@
+* xref:index.adoc[Get Started]
+** xref:how2-signup.adoc[Sign Up]
+** xref:how2-login.adoc[Log In]

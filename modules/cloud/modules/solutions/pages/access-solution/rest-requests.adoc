@@ -1,0 +1,174 @@
+= Send REST Requests to a Cluster
+:experimental:
+:page-aliases: solutions/access-solution/rest-requests.adoc
+
+
+Besides GraphStudio, another way to interact with your TigerGraph database is through the REST API, also known as RESTPP.
+
+On TigerGraph Cloud, RESTPP authentication is enabled by default, and only the requests made with a valid authorization token in the request header are accepted.
+
+== Generate an authorization token
+
+This process is handled through the Admin Portal, which can be accessed through the Tools menu in a cluster.
+
+image::full-cluster-actions-dropdown.png[]
+
+Here is a step-by-step guide to generating and using an authorization token for RESTPP:
+
+=== 1. Navigate to User Management
+
+In the Admin Portal, click btn:[User Management] in the left side panel.
+
+image::image (46).png[Click User Management]
+
+=== 2. Generate a secret
+
+In the *My Profile* tab, find the graph you want to generate the secret for, enter an alias for your secret and click the btn:[*] symbol on the right side of the row.
+
+Remember to copy and save the secret to a safe location. *This is the only time the secret will be fully visible in Admin Portal. You will not be able to see it again*.
+
+
+image::image (49).png[]
+
+=== 3. Generate a token
+
+Use the `POST /requesttoken` endpoint to generate an authorization token for your cluster.
+
+==== 1. Find the domain name of your cluster
+
+If you did not enter a subdomain when setting up your cluster, a random subdomain is automatically generated for you.
+Go to *My Clusters*, and click the cluster you are trying to access.
+You will find the cluster's domain name in the expanded view.
+Use this domain name as the server address when making REST requests.
+
+image::image (35).png[]
+
+==== 2. Send the request to `POST /requesttoken`
+
+The endpoint takes two parameters, `secret` and `lifetime`, and the latter is optional.
+Put the parameters in the query string and send the request using your favorite REST client.
+The below example uses curl to request the authentication token:
+
+[tabs]
+====
+Request::
++
+--
+[source.wrap,console]
+----
+$ curl -X POST https://example.i.tgcloud.io:443/restpp/requesttoken -d '{"secret": "n35lsqofc1if62fld2rmnb9hocqbh8ia", "lifetime": "100000"}'
+----
+
+[NOTE]
+For TigerGraph Cloud clusters created before June 20, 2022, replace "443/restpp" with "9000". See the xref:release-notes:index.adoc[] for details.
+
+--
+Response::
++
+--
+This is a sample response, where the string in the response with the key `token` is your authorization token:
+
+[source,javascript]
+----
+{
+  "code": "REST-0000",
+  "expiration": 1616042814,
+  "error": false,
+  "message": "Generate new token successfully.\nWarning: Tigergraph Support cannot restore access to secrets/tokens for security reasons. Please save your secret/token and keep it safe and accessible.",
+  "token": "tohvf6khjqju8jf0r0l1cohhlm8gi5fq"
+}
+----
+--
+====
+
+=== 4. Send a request using your token or secret
+
+Now that you have an authorization token, you can proceed to make requests to your cluster.
+
+==== Token Request
+To use the authorization token, include it in the request header as a bearer token.
+
+The following example makes a request to the xref:tigergraph-server:API:built-in-endpoints.adoc#_list_vertices[List vertices] endpoint on a cluster with the https://www.youtube.com/watch?v=s6-QapCEz1M&feature=youtu.be&ab_channel=TigerGraph[COVID-19 starter kit].
+
+The request lists 5 patients and their ages.
+
+[tabs]
+====
+Request::
++
+--
+[source.wrap,console]
+----
+$ curl -H "Authorization: Bearer fc6p0i2ijjt031n0sja6m9ci70p232h7" \
+"https://aa768d833bbf47fea6db80a7972a9477.i.tgcloud.io:443/restpp/graph/MyGraph/vertices/Patient?limit=5&select=birth_year"
+----
+
+[NOTE]
+For TigerGraph Cloud clusters created before June 20, 2022, replace "443/restpp" with "9000". See the xref:release-notes:index.adoc[] for details.
+--
+Response::
++
+--
+[source,console]
+----
+{
+  "version": {
+    "edition": "enterprise",
+    "api": "v2",
+    "schema": 0
+  },
+  "error": false,
+  "message": "",
+  "results": [
+    {
+      "v_id": "6100000100",
+      "v_type": "Patient",
+      "attributes": {
+        "birth_year": 1959
+      }
+    },
+    {
+      "v_id": "6023000024",
+      "v_type": "Patient",
+      "attributes": {
+        "birth_year": 0
+      }
+    },
+    {
+      "v_id": "6022000024",
+      "v_type": "Patient",
+      "attributes": {
+        "birth_year": 1978
+      }
+    },
+    {
+      "v_id": "6020000020",
+      "v_type": "Patient",
+      "attributes": {
+        "birth_year": 0
+      }
+    },
+    {
+      "v_id": "6015000008",
+      "v_type": "Patient",
+      "attributes": {
+        "birth_year": 0
+      }
+    }
+  ]
+}
+----
+--
+====
+
+==== Secret Request
+
+To use the authorization secret, include it in the request header as a GSQL-Secret.
+
+[source,console]
+----
+curl -H "Authorization: GSQL-Secret fc6p0i2ijjt031n0sja6m9ci70p232h7" \
+"https://aa768d833bbf47fea6db80a7972a9477.i.tgcloud.io:443/restpp/graph/MyGraph/vertices/Patient?limit=5&select=birth_year"
+----
+
+See xref:tigergraph-server:API:built-in-endpoints.adoc[] to learn about all the endpoints available.

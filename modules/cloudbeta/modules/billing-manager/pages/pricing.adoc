@@ -1,0 +1,105 @@
+= Pricing
+
+== Compute price
+
+[cols="6", separator=¦ ]
+|===
+¦Size ¦VCPU ¦Memory (GB) ¦Pod Size ¦Partition ¦Price (TCR/hour) Price
+
+¦ TG-00
+¦ 2
+¦ 16
+¦ C2M16
+¦ 1
+¦ 0.25
+
+¦ TG-0
+¦ 4
+¦ 32
+¦ C4M32
+¦ 1
+¦ 0.5
+
+¦ TG-1
+¦ 8
+¦ 64
+¦ C8M64
+¦ 1
+¦ 1
+
+¦ TG-2
+¦ 16
+¦ 128
+¦ C16M128
+¦ 1
+¦ 2
+
+¦ TG-4
+¦ 32
+¦ 256
+¦ C32M256
+¦ 1
+¦ 4
+
+¦ TG-6
+¦ 48
+¦ 384
+¦ C48M384
+¦ 1
+¦ 6
+
+¦ TG-8
+¦ 64
+¦ 512
+¦ C64M512
+¦ 1
+¦ 8
+
+¦ TG-12
+¦ 96
+¦ 768
+¦ C48M384
+¦ 2
+¦ 12
+
+¦ TG-16
+¦ 128
+¦ 1024
+¦ C64M512
+¦ 2
+¦ 16
+
+|===
+
+== Add-on Prices
+
+[cols="3", separator=¦ ]
+|===
+¦Add-On ¦Scope ¦Price
+
+
+¦ CoPilot
+¦ Workspace
+¦ 30% of the workspace usage.
+
+¦ Insights
+¦ Workspace
+¦ 10% of the workspace usage.
+
+¦ GraphStudio
+¦ Workspace
+¦ Free
+
+¦ GraphQL
+¦ Workspace
+¦ Free
+
+|===
+
+== Next Steps
+
+Next, learn about other billing topics on the xref:billing-manager:index.adoc[] page or check out the xref:resources:index.adoc[] section.
+
+Return to the  page to xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.
+
+

@@ -1,0 +1,10 @@
+* xref:index.adoc[Administration]
+** xref:administration:how2-invite-users.adoc[]
+** xref:administration:how2-access-mgnt.adoc[]
+** xref:administration:how2-use-organization-mgnt.adoc[]
+
+////
+** xref:cloudBeta:security:index.adoc[]
+*** xref:cloudBeta:security:password-policy.adoc[]
+*** xref:cloudBeta:security:idp.adoc[]
+////

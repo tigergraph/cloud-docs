@@ -1,0 +1,6 @@
+* xref:index.adoc[Resources]
+** xref:resources:glossary.adoc[]
+** xref:resources:support.adoc[]
+** xref:resources:quota_policy.adoc[Restriction Policy]
+** xref:resources:terms_conditions.adoc[Terms and Conditions]
+// ** xref:resources:faqs.adoc[FAQs]

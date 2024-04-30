@@ -1,0 +1,136 @@
+= TigerGraph Cloud 4.0 (beta version)
+:experimental:
+:page-aliases: cloud-overview.adoc
+
+This documentation will guide you through the various features and functionalities of our brand new cloud-native Graph-as-a-Service (GaaS) management platform.
+
+TigerGraph Cloud 4.0 offers a powerful and user-friendly environment for managing, analyzing, and exploring your graph data.
+It revolutionizes graph analytics by introducing a groundbreaking separation of compute and storage in its cloud-based graph database platform.
+
+//pass:[<abbr title="Define User Friendly">ToolTip Practice</abbr>]
+
+//:tooltip: pass:[<span class="tooltip" data-tooltip="This is a tooltip text">Hover over this text</span>]
+
+//{tooltip}
+
+[CAUTION]
+====
+TigerGraph Cloud 4.0 is still in beta release and the documentation is in progress.
+====
+
+[IMPORTANT]
+====
+TigerGraph Cloud 4.0 beta is for personal or R&D use and not for production use.
+Please see xref:cloudBeta:resources:terms_conditions.adoc[].
+====
+
+== Get to Know Your TigerGraph Cloud
+
+[.home-card,cols="2",grid=none,frame=none, separator=¦]
+|===
+¦
+image:getstarted-homecard.png[alt=getstarted,width=74,height=74]
+*Get Started*
+
+xref:cloudBeta:get-started:index.adoc[Get Started] using TigerGraph Cloud 4.0 or explore key features in our xref:overview:overview.adoc[].
+
+xref:get-started:how2-signup.adoc[How to Sign Up] |
+xref:cloudBeta:get-started:how2-login.adoc[]
+¦
+image:insights.png[alt=workspace,width=74,height=74]
+*Workgroups and Workspaces*
+
+Learn  how to dynamically allocate compute and storage resources.
+
+xref:resource-manager:index.adoc[Overview] |
+xref:resource-manager:workgroup.adoc[Workgroup] |
+xref:resource-manager:workspaces/workspace.adoc[Workspace]
+
+¦
+image:DataLoading-Homecard.png[alt=load data,width=74,height=74]
+*Load Data*
+
+Learn how to Load Data into TigerGraph Cloud 4.0.
+
+
+
+xref:load-data:index.adoc[Overview] |
+xref:load-data:load-from-local.adoc[Local] |
+xref:load-data:load-from-cloud.adoc[Cloud] |
+xref:load-data:load-from-other-sources.adoc[Other Sources]
+¦
+image:TG_Icon_Library-135.png[alt=schemadesigner,width=74,height=74]
+*Schema Designer*
+
+xref:cloudBeta:schema-designer:index.adoc[] teaches you how to you can easily modify and manage the schema of your graph databases using Schema Designer UI.
+
+¦
+image:schema-homecard.png[alt=gsqlEditor,width=74,height=74]
+*GSQL Editor*
+
+The GSQL Editor is a powerful tool for developing and executing GSQL queries, allowing you to unlock insights from your graph databases.
+
+xref:gsql-editor:index.adoc[Overview] | xref:gsql-editor:how2-edit-gsql-query.adoc[]
+¦
+image:TG_Icon_Library-218.png[alt=exploreGraph,width=74,height=74]
+*Explore Graph*
+
+Visualize your data and navigate to understand complex connections and dependencies.
+
+xref:explore-graph:index.adoc[Overview] |
+xref:explore-graph:how2-use-pattern-search.adoc[]
+
+¦
+image:ArchtectureOverview-homecard.png[alt=integration,width=74,height=74]
+*Marketplace*
+
+TigerGraph Cloud 4.0 offers several powerful integration tools.
+
+xref:integrations:index.adoc[Overview] |
+xref:cloudBeta:explore-graph:copilot-enablement.adoc[] |
+xref:cloudBeta:integrations:insights.adoc[] |
+xref:cloudBeta:integrations:graphstudio.adoc[] |
+xref:cloudBeta:integrations:graphql.adoc[]
+¦
+image:edtions-homecard.png[alt=billing,width=74,height=74]
+*Administration*
+
+Here you can learn about the tools available for organizational administrators.
+
+xref:cloudBeta:administration:index.adoc[Overview] |
+xref:cloudBeta:administration:how2-invite-users.adoc[] |
+xref:cloudBeta:administration:how2-access-mgnt.adoc[] |
+xref:cloudBeta:administration:how2-use-organization-mgnt.adoc[Org Management]
+¦
+image:security-homecard.png[alt=security,width=74,height=74]
+*Security*
+
+Learn about xref:security:index.adoc[] in TigerGraph Cloud 4.0.
+
+xref:cloudBeta:security:password-policy.adoc[] |
+xref:cloudBeta:security:idp.adoc[]
+¦
+image:billing-homecard.png[alt=billing,width=74,height=74]
+*Billing*
+
+The xref:billing-manager:index.adoc[Billing] window allows users to pay only for their specific usage of storage, data access, and compute resources.
+
+xref:cloudBeta:billing-manager:payment-methods.adoc[] |
+xref:cloudBeta:billing-manager:invoices.adoc[] |
+xref:cloudBeta:billing-manager:pricing.adoc[]
+¦
+image:referece-homecard.png[alt=support,width=74,height=74]
+*Release Notes*
+
+View the xref:release-notes:index.adoc[] to get update information on features and releases.
+¦
+image:documentation-homecard.png[alt=support,width=74,height=74]
+*Resources*
+
+View any additional xref:resources:index.adoc[Resources] for TigerGraph Cloud 4.0.
+
+xref:cloudBeta:resources:glossary.adoc[] |
+xref:cloudBeta:resources:terms_conditions.adoc[ Beta Terms and Conditions] |
+xref:cloudBeta:resources:support.adoc[]
+¦
+|===

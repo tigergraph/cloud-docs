@@ -1,0 +1,31 @@
+= Support
+:experimental:
+
+== Contact Us
+If you have any questions, please contact us at beta-support@tigergraph.com.
+
+//Look to the terms and conditions
+//Email the address
+//Create a ticket
+
+
+////
+TigerGraph provides support for TigerGraph Cloud for customers with non-free-tier clusters.
+
+For more information on TigerGraph's support policy, visit our https://www.tigergraph.com/support-policy/[support policy page].
+
+You can submit a support ticket in the TigerGraph Cloud portal or by email.
+
+== Submit a support ticket
+
+Click on the question mark icon in the upper right corner of the screen and select Support from the drop-down menu.
+
+This takes you to TigerGraph's support platform, where you can submit support tickets.
+
+If you don't already have an account, you can create one following the instructions on the page.
+if you already have an account, log in and click btn:[Submit a request] to submit a support ticket.
+
+== Follow up on your ticket
+
+If you have a paid subscription with TigerGraph, a support representative will be reviewing your request and will send you a personal response (usually within 24 hours). You can follow up on your ticket on the Zendesk platform.
+////

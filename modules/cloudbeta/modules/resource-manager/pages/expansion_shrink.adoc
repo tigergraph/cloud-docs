@@ -1,0 +1,58 @@
+= Expansion and Shrink
+:experimental:
+
+As your data grows or changes, you may need to adjust the capacity of your workspaces.
+Users can easily expand or shrink workspaces to accommodate the evolving needs of graph databases.
+
+== Expand or Shrink a Workspace
+
+Scale up (expand) or down (shrink) as required, ensuring optimal performance and cost-effectiveness.
+
+[NOTE]
+====
+Before initiating a downsize operation, a data topology size check is performed to ensure that the workspace size can accommodate the data.
+If the size check fails, the downsize operation will not be allowed.
+====
+
+[IMPORTANT]
+====
+Please be aware that resizing of workspaces is only allowed for Read-Write (RW) workspaces.
+Resizing of Read-Only (RO) workspaces is strictly forbidden and not supported.
+Recreate a RO workspace if you need to resize it.
+====
+
+. Click on the btn:[ ... ] on your workspace next to the btn:[Connect] button.
++
+image::workspace-general-tab.png[]
+
+. Go to btn:[ Edit ].
++
+image::expandandshrink.png[width="250"]
+
+. Select a size in the drop menu.
++
+image::expand2.png[]
++
+[TIP]
+====
+Typically, resizing will take about 2 minutes depending on the data size and the workspace size.
+====
+
+=== Expansion and Shrink Limitations
+
+An expansion or shrink is an offline operation.
+If there are any other operations in progress on the workspace, they will be affected.
+
+[TIP]
+====
+It is recommended to schedule the expansion or shrink during a time when minimal or no operations are expected on the workspace to avoid any potential disruptions.
+====
+
+== Next Steps
+
+Next, learn more about how to xref:cloudBeta:resource-manager:backup-and-restore.adoc[], xref:cloudBeta:resource-manager:connect_via_api.adoc[], or xref:cloudBeta:resource-manager:monitor_workspaces.adoc[].
+
+Return to the xref:cloudBeta:resource-manager:index.adoc[] page or xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.
+
+
+

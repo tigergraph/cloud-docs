@@ -1,0 +1,31 @@
+= Invoices
+:experimental:
+
+Here TigerGraph Cloud 4.0 users can check, reference, and export their invoice information.
+
+== View and Export an Invoice
+
+.To get started with btn:[Invoices] follow the steps below:
+. Navigate to the btn:[Billing] tab in the left navigation.
++
+image::billing-nav.png[width=300]
+
+. Select the btn:[Invoices] tab to view the invoices list.
++
+image::invoice-list.png[]
++
+.Here you can view general information on invoices, such as:
+* *Invoice Date*: The date the invoice was issued.
+* *Invoice Status*: The status of the invoice.
+* *Invoice Period*: The period that the invoice was issued in.
+* *Total (Credits)*: Total credits used during that invoice period.
+* *Total*: Total charge during that invoiced period.
+
+. To export a specific invoice as a `.pdf` select the btn:[PDF] button under btn:[Export As].
+
+== Next Steps
+
+Next, learn about other billing topics on the xref:billing-manager:index.adoc[] page or check out the xref:resources:index.adoc[] section.
+
+Return to the  page to xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.
+

@@ -1,0 +1,24 @@
+= Marketplace Overview
+:experimental:
+
+TigerGraph Cloud seamlessly integrates with various tools and services to enhance your graph database workflow.
+
+== xref:cloudBeta:integrations:add-ons.adoc[]
+
+Learn how to extend the capabilities of TigerGraph Cloud 4.0 with add-ons tailored to your needs.
+
+* xref:cloudBeta:explore-graph:copilot-enablement.adoc[]
+* xref:cloudBeta:integrations:insights.adoc[]
+* xref:cloudBeta:integrations:graphstudio.adoc[]
+* xref:cloudBeta:integrations:graphql.adoc[]
+
+== xref:cloudBeta:integrations:solutions.adoc[]
+
+Here you can learn about our array of industry standard prebuilt solutions for diverse industries and use cases.
+Designed for users to swiftly adopt graph technology.
+
+== Next Steps
+
+Now learn about xref:administration:index.adoc[Administration] features or xref:security:index.adoc[] in TigerGraph Cloud 4.0.
+
+Or return to the xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.

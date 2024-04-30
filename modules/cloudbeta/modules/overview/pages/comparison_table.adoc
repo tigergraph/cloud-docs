@@ -95,3 +95,9 @@ Here are some differences between the different TigerGraph offerings.
 | Yes, GraphStudio.
 | Yes, Schema Designer & GraphStudio.
 |===
+
+== Next Steps
+
+Next, see xref:cloudBeta:get-started:index.adoc[] to unlock its full potential.
+
+Return to xref:cloudBeta:overview:index.adoc[TigerGraph Cloud 4.0] for another topic.

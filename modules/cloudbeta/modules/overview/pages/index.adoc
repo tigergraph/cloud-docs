@@ -3,7 +3,9 @@
 :page-aliases: cloud-overview.adoc
 
 This documentation will guide you through the various features and functionalities of our brand new cloud-native Graph-as-a-Service (GaaS) management platform.
+
 TigerGraph Cloud 4.0 offers a powerful and user-friendly environment for managing, analyzing, and exploring your graph data.
+It revolutionizes graph analytics by introducing a groundbreaking separation of compute and storage in its cloud-based graph database platform.
 
 //pass:[<abbr title="Define User Friendly">ToolTip Practice</abbr>]
 
@@ -30,7 +32,7 @@ Please see xref:cloudBeta:resources:terms_conditions.adoc[].
 image:getstarted-homecard.png[alt=getstarted,width=74,height=74]
 *Get Started*
 
-xref:cloudBeta:get-started:index.adoc[Get Started] using TigerGraph Cloud with the 4.0.
+xref:cloudBeta:get-started:index.adoc[Get Started] using TigerGraph Cloud with the 4.0 or explore key features in our xref:overview:overview.adoc[].
 
 xref:get-started:how2-signup.adoc[How to Sign Up] |
 xref:cloudBeta:get-started:how2-login.adoc[]

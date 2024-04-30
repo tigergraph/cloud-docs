@@ -10,6 +10,7 @@ TigerGraph Cloud 4.0 (Beta) was released on Monday, April 29th, 2024.
 === 4.0.0
 
 //* xref:cloudBeta:get-started:index.adoc[Get Started] using TigerGraph Cloud with the 4.0.
+* xref:cloudBeta:overview:overview.adoc#_separation_of_storage_and_compute[Separation of Storage and Compute] - Introduction of a unique architecture that separates storage and compute, allowing users to scale resources independently.
 
 * xref:resource-manager:workgroup.adoc[Workgroups] and xref:resource-manager:workspaces/workspace.adoc[Workspaces] give users control over resource management.
 
@@ -32,7 +33,7 @@ TigerGraph Cloud 4.0 (Beta) was released on Monday, April 29th, 2024.
 * xref:cloudBeta:administration:index.adoc[] - The tools for organizational administrators to xref:cloudBeta:administration:how2-invite-users.adoc[]
 , xref:cloudBeta:administration:how2-access-mgnt.adoc[Mange Access], xref:cloudBeta:administration:how2-use-organization-mgnt.adoc[Manage Organization].
 
-* xref:billing-manager:index.adoc[Billing UI Window] - The billing window allows users to check and pay only for their specific usage of storage, data access, and compute resources
+* xref:billing-manager:index.adoc[Billing UI] - The new billing UI allows users to check and pay only for their specific usage of storage, data access, and compute resources
 with an xref:cloudBeta:billing-manager:payment-methods.adoc[easy-to-use Payment Method manager], and the xref:cloudBeta:billing-manager:invoices.adoc[ability to check and export invoices].
 
 ////

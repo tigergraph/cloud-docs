@@ -14,22 +14,22 @@ With the Schema Designer, you can easily modify and manage the schema of your gr
 * Specifying properties and indexes.
 * Establish relationships between elements.
 
-image::Screenshot 2024-04-17 at 7.33.43 PM.png[width=250]
+image::Screenshot 2024-04-17 at 7.33.43 PM.png[width=400]
 == 1) Get Started
 
 .Navigate to the Schema Designer. It is accessible from:
-* A Workspace page
-* GSQL Editor page
-* Load Data pages
-* Solution Builder page
+* A Workspace page.
+* GSQL Editor page.
+* Load Data pages.
+* Solution Builder page.
 
-image::Screenshot 2024-04-17 at 7.34.37 PM.png[width=250]
+image::Screenshot 2024-04-17 at 7.34.37 PM.png[width=300]
 
 [TIP]
 ====
 The comprehensive list of shortcuts can make your schema design process more efficient and productive.
 
-image::Screenshot 2024-04-17 at 7.35.28 PM.png[width=250]
+image::Screenshot 2024-04-17 at 7.35.28 PM.png[]
 ====
 
 == 2) Create a Graph

@@ -10,6 +10,13 @@ These TigerGraph Cloud updates are separate from updates to the core TigerGraph 
 Cloud clusters are not automatically upgraded to a new TigerGraph version when a new version is released.
 For version upgrades for existing clusters, please contact TigerGraph Support.
 
+== May 2024 Updates
+Release date: May 7th, 2024
+
+=== Feature updates
+* Now available in TigerGraph 3.10.1.
+For more details see xref:tigergraph-server:release-notes:index.adoc[].
+
 == March 2024 Updates
 Release date: March 13th, 2024
 

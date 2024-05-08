@@ -1,7 +1,11 @@
 = Workgroup Overview
 
 A workgroup represents a project or a logical group within TigerGraph Cloud 4.0.
-It serves as a container that holds multiple xref:workspaces/workspace.adoc[workspaces] and databases related to a specific use case, team, or application.
+It serves as a container that holds multiple xref:cloudBeta:resource-manager:workspaces/workspace.adoc[Workspaces and Databases] related to a specific use case, team, or application.
+
+//image::defineworkgroupvsworkspace2.png[]
+
+image::defineworkgroupvsworkspace.png[width=500]
 
 [TIP]
 Workgroups provide a way to organize and manage resources, access controls, and configurations for a particular project or initiative.

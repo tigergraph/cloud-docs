@@ -1,4 +1,4 @@
-= Release Notes
+= Cloud Release Notes
 :page-toclevels: 1
 :page-aliases: release-notes.adoc
 

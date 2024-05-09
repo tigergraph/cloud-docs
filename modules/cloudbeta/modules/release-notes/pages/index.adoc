@@ -1,4 +1,4 @@
-= Release Notes
+= Cloud 4.0 (beta) Release Notes
 :experimental:
 //:page-aliases: change-log.adoc, release-notes.adoc
 :toc:

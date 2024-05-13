@@ -7,6 +7,11 @@ TigerGraph Cloud is a fully-managed cloud database built on the Enterprise Serve
 Everything including xref:3.9@gui:admin-portal:overview.adoc[Admin Portal], xref:3.9@gui:graphstudio:overview.adoc[GraphStudio], xref:3.9@insights:intro:index.adoc[Insights], xref:1.4@ml-workbench:intro:index.adoc[ML Workbench], as well as,
 handling all the complexity of deploying and managing your deployments on the cloud service provider of your choice ( xref:cloud:reference:aws.adoc[], xref:cloud:reference:azure.adoc[], and xref:cloud:reference:gcp.adoc[] ).
 
+[NOTE]
+====
+TigerGraph Cloud 4.0 (beta version) was released on Apr. 29th, 2024. Click xref:cloudBeta:overview:index.adoc[Here] for more details.
+====
+
 == Get to Know Your TigerGraph Cloud
 
 [.home-card,cols="2",grid=none,frame=none, separator=¦]

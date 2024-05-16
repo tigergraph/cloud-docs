@@ -4,6 +4,11 @@
 :toc:
 :toclevels:2
 
+[IMPORTANT]
+====
+This branch is to test automatic populating of the release notes, Using Jira and Github Actions.
+====
+
 TigerGraph Cloud 4.0 (Beta) was released on Monday, April 29th, 2024.
 
 == (Beta) Key Features

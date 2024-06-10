@@ -7,7 +7,13 @@ TigerGraph Cloud seamlessly integrates with various tools and services to enhanc
 
 Learn how to extend the capabilities of TigerGraph Cloud 4.0 with add-ons tailored to your needs.
 
-* xref:cloudBeta:explore-graph:copilot-enablement.adoc[]
+* xref:cloudBeta:explore-graph:copilot-enablement.adoc[CoPilot (Beta)]
++
+[NOTE]
+====
+TigerGraph CoPilot (beta) is disabled by default in the Marketplace menu.
+Contact beta-support@tigergraph.com to enable TigerGraph CoPilot as an option in the Marketplace.
+====
 * xref:cloudBeta:integrations:insights.adoc[]
 * xref:cloudBeta:integrations:graphstudio.adoc[]
 * xref:cloudBeta:integrations:graphql.adoc[]

@@ -11,7 +11,7 @@ Learn how to extend the capabilities of TigerGraph Cloud 4.0 with add-ons tailor
 +
 [NOTE]
 ====
-TigerGraph CoPilot (beta) is hidden by default in the Marketplace menu.
+TigerGraph CoPilot (beta) is disabled by default in the Marketplace menu.
 Contact beta-support@tigergraph.com to enable TigerGraph CoPilot as an option in the Marketplace.
 ====
 * xref:cloudBeta:integrations:insights.adoc[]

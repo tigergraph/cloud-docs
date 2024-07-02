@@ -1,0 +1,70 @@
+= Secure Connection Option for Cloud Providers
+
+When creating a Cloud Provider in TigerGraph BYOC, you have the option to enable Secure Connection. This feature enhances the security of your TigerGraph deployments by restricting public internet access and requiring private connections.
+
+== What is the Secure Connection Option?
+
+The Secure Connection option is a security feature that, when enabled, disables public internet access for all workspaces within the created Cloud Provider. Instead, it requires the use of AWS PrivateLink to establish secure, private connections to your TigerGraph resources.
+
+== Key Features of Secure Connection
+
+1. **Disabled Public Access**: All workspaces in the Cloud Provider will not have public IP addresses or be directly accessible from the internet.
+2. **Private Connectivity**: Access to TigerGraph resources is only possible through private network connections.
+3. **Enhanced Security**: Reduces the attack surface by eliminating direct exposure to the public internet.
+
+== Enabling Secure Connection
+
+To enable Secure Connection when creating a Cloud Provider:
+
+1. Follow the standard Cloud Provider creation process (as described in Section 4.2).
+2. Look for the "Secure Connection" or "Network Access" section in the creation wizard.
+3. Enable the "Secure Connection" option.
+4. Confirm your choice and proceed with the Cloud Provider creation.
+
+== Implications of Enabling Secure Connection
+
+When you enable Secure Connection:
+
+1. **No Public IP Addresses**: Workspaces will not be assigned public IP addresses.
+2. **Private Access Only**: You'll need to set up AWS PrivateLink to access your TigerGraph resources.
+3. **Additional Setup Required**: You must create and configure PrivateLink endpoints in your VPC to connect to the Cloud Provider.
+
+== Setting Up PrivateLink for Secure Connection
+
+After enabling Secure Connection and creating your Cloud Provider, follow these steps to set up PrivateLink:
+
+1. **Create VPC Endpoints**:
+   - In your AWS console, navigate to VPC > Endpoints.
+   - Create new Interface Endpoints for the TigerGraph services.
+   - Select the VPC and subnets where you want to create the endpoints.
+
+2. **Configure Security Groups**:
+   - Ensure your security groups allow traffic to and from the VPC endpoints.
+
+3. **DNS Configuration**:
+   - Update your DNS settings to resolve TigerGraph service hostnames to the private IP addresses of your VPC endpoints.
+
+4. **Test Connectivity**:
+   - Verify that you can connect to your TigerGraph resources through the private endpoints.
+
+== Considerations When Using Secure Connection
+
+1. **Access Restrictions**: Only resources within your VPC or connected to it via VPN or Direct Connect can access the TigerGraph services.
+2. **Additional AWS Costs**: Using PrivateLink incurs additional AWS charges.
+3. **Setup Complexity**: Implementing PrivateLink requires additional network configuration and expertise.
+4. **Maintenance**: You'll need to manage and maintain the PrivateLink endpoints.
+
+== Best Practices for Secure Connection
+
+1. **Plan Ahead**: Carefully plan your network architecture before enabling Secure Connection.
+2. **Use VPC Peering or Transit Gateway**: If you need to access TigerGraph resources from multiple VPCs, consider using VPC peering or AWS Transit Gateway.
+3. **Implement Least Privilege**: Configure security groups and network ACLs to allow only necessary traffic.
+4. **Monitor and Audit**: Regularly review access logs and perform security audits.
+
+By leveraging the Secure Connection option, you can significantly enhance the security posture of your TigerGraph deployments in AWS, ensuring that your graph database resources are accessible only through private, secure connections.
+
+== Next Steps
+
+Now learn about xref:byoc:index.adoc[BYOC] feature in TigerGraph Cloud 4.0.
+
+Or return to the xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.

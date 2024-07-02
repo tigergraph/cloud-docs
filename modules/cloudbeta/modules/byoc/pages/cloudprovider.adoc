@@ -1,0 +1,191 @@
+= Cloud Provider
+:experimental:
+
+== Overview
+In TigerGraph's xref:byoc:index.adoc[BYOC] context, a "Cloud Provider" represents resources in customer cloud account in a cloud vendor and a specific region. It serves as a bridge between TigerGraph's main control plane and your cloud infrastructure, enabling you to manage multiple TigerGraph workspaces within your own cloud environment.
+
+This page provides an overview of Cloud Providers in TigerGraph BYOC, explains their significance, and outlines the process of creating and managing them.
+
+== Creating a Cloud Provider
+
+Creating a Cloud Provider is a crucial step in setting up BYOC. Here's the process:
+
+1. **Prepare AWS Account**:
+   - Ensure you have the necessary permissions in your AWS account.
+   - Create an IAM role with the required policy permissions. This step is your responsibility and must be completed in the AWS console before proceeding.
+
+[source, json]
+----
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+				"ec2:AllocateAddress",
+				"ec2:AssociateRouteTable",
+				"ec2:AttachInternetGateway",
+				"ec2:AuthorizeSecurityGroupEgress",
+				"ec2:AuthorizeSecurityGroupIngress",
+				"ec2:CreateInternetGateway",
+				"ec2:CreateNatGateway",
+				"ec2:CreateNetworkAclEntry",
+				"ec2:CreateRoute",
+				"ec2:CreateRouteTable",
+				"ec2:CreateSecurityGroup",
+				"ec2:CreateSubnet",
+				"ec2:CreateTags",
+				"ec2:CreateVpc",
+				"ec2:DeleteInternetGateway",
+				"ec2:DeleteNatGateway",
+				"ec2:DeleteNetworkAclEntry",
+				"ec2:DeleteRoute",
+				"ec2:DeleteRouteTable",
+				"ec2:DeleteSecurityGroup",
+				"ec2:DeleteSubnet",
+				"ec2:DeleteVpc",
+				"ec2:DescribeAddresses",
+				"ec2:DescribeAvailabilityZones",
+				"ec2:DescribeInternetGateways",
+				"ec2:DescribeNatGateways",
+				"ec2:DescribeNetworkAcls",
+				"ec2:DescribeNetworkInterfaces",
+				"ec2:DescribeRouteTables",
+				"ec2:DescribeSecurityGroupRules",
+				"ec2:DescribeSecurityGroups",
+				"ec2:DescribeSubnets",
+				"ec2:DescribeVpcAttribute",
+				"ec2:DescribeVpcs",
+				"ec2:DetachInternetGateway",
+				"ec2:DisassociateAddress",
+				"ec2:DisassociateRouteTable",
+				"ec2:ModifyVpcAttribute",
+				"ec2:ReleaseAddress",
+				"ec2:RevokeSecurityGroupEgress",
+				"ec2:RevokeSecurityGroupIngress",
+				"eks:AssociateAccessPolicy",
+				"eks:CreateAccessEntry",
+				"eks:CreateAddon",
+				"eks:CreateCluster",
+				"eks:CreateNodegroup",
+				"eks:DeleteAccessEntry",
+				"eks:DeleteAddon",
+				"eks:DeleteCluster",
+				"eks:DeleteNodegroup",
+				"eks:DescribeAccessEntry",
+				"eks:DescribeAddon",
+				"eks:DescribeCluster",
+				"eks:DescribeNodegroup",
+				"eks:DisassociateAccessPolicy",
+				"eks:ListAssociatedAccessPolicies",
+				"eks:TagResource",
+				"elasticfilesystem:CreateFileSystem",
+				"elasticfilesystem:CreateMountTarget",
+				"elasticfilesystem:DeleteFileSystem",
+				"elasticfilesystem:DeleteMountTarget",
+				"elasticfilesystem:DescribeBackupPolicy",
+				"elasticfilesystem:DescribeFileSystems",
+				"elasticfilesystem:DescribeLifecycleConfiguration",
+				"elasticfilesystem:DescribeMountTargets",
+				"elasticfilesystem:DescribeMountTargetSecurityGroups",
+				"elasticfilesystem:PutBackupPolicy",
+				"elasticfilesystem:PutLifecycleConfiguration",
+				"elasticfilesystem:TagResource",
+				"iam:AttachRolePolicy",
+				"iam:CreateOpenIDConnectProvider",
+				"iam:CreatePolicy",
+				"iam:CreateRole",
+				"iam:DeleteOpenIDConnectProvider",
+				"iam:DeletePolicy",
+				"iam:DeleteRole",
+				"iam:DeleteRolePolicy",
+				"iam:DetachRolePolicy",
+				"iam:GetOpenIDConnectProvider",
+				"iam:GetPolicy",
+				"iam:GetPolicyVersion",
+				"iam:GetRole",
+				"iam:GetRolePolicy",
+				"iam:ListAttachedRolePolicies",
+				"iam:ListInstanceProfilesForRole",
+				"iam:ListPolicyVersions",
+				"iam:ListRolePolicies",
+				"iam:PassRole",
+				"iam:PutRolePolicy",
+				"iam:SimulatePrincipalPolicy",
+				"iam:TagOpenIDConnectProvider",
+				"logs:CreateLogGroup",
+				"logs:DeleteLogGroup",
+				"logs:DescribeLogGroups",
+				"logs:ListTagsLogGroup",
+				"logs:PutRetentionPolicy",
+				"logs:TagResource"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+----
+
+2. **Access TigerGraph Cloud**:
+   - Log in to your TigerGraph Cloud account.
+   - Navigate to the "Cloud Providers" section.
+
+3. **Initiate Cloud Provider Creation**:
+   - Click on "Add New Cloud Provider".
+   - Select AWS as the cloud platform.
+
+   CAUTION:: You can only create AWS Cloud Providers in the current version of TigerGraph Cloud.
+
+4. **Provide AWS Details**:
+   - Enter a name for your Cloud Provider.
+   - Input the ARN of the IAM role you created in step 1.
+   - Specify the VPC ID where you want TigerGraph resources to be deployed.
+   - Enter the Subnet ID(s) for TigerGraph resources.
+
+5. **Configure Network Settings**:
+   - Optionally, you may select the "Secure Connection" option to enable additional security measures for communication between TigerGraph compute plane and your browser. Please check the xref:security:secure-connection.adoc[Secure Connection] page for more details.
+   - Optionally, you may select the "BYO VPC" option in advanced settings to make the cloud provider use existing VPC configurations. Please check the xref:byoc:byo-vpc.adoc[BYO VPC] page for more details. 
+
+6. **Review and Create**:
+   - Review all the information you've entered.
+   - Click "Create Cloud Provider" to initiate the process.
+
+7. **Validation and Deployment**:
+   - TigerGraph Cloud will validate the provided information.
+   - If validation is successful, it will deploy the necessary components in your AWS account.
+
+8. **Confirmation**:
+   - Your new Cloud Provider will appear in the Cloud Providers list in TigerGraph Cloud.
+   - It will be in a "Provisioning" state initially. Once the deployment is complete, the status will change to "Active". This process may take a few minutes.
+   - You can leave the page and return later to check the status.
+
+
+== Managing Cloud Providers
+
+After creation, you can:
+- View details of your Cloud Provider
+- Update certain configurations
+- Monitor the status of the Cloud Provider
+- Create and manage workspaces associated with this Cloud Provider
+
+Remember, a single Cloud Provider can host multiple workspaces, allowing you to efficiently manage your TigerGraph deployments within your own cloud infrastructure.
+
+[Diagram: Cloud Provider Architecture]
+
+Description: This diagram illustrates the relationship between TigerGraph Cloud, your AWS account, and the Cloud Provider:
+- TigerGraph Cloud (Control Plane) at the top
+- Customer AWS Account in the middle, containing:
+  - Cloud Provider (mini control plane)
+  - VPC with associated subnets
+  - IAM Role connected to the Cloud Provider
+- Multiple Workspaces within the VPC, managed by the Cloud Provider
+- Secure connections between TigerGraph Cloud and the Cloud Provider, and between the Cloud Provider and Workspaces
+
+This section provides a comprehensive overview of the Cloud Provider concept in TigerGraph BYOC, its significance, and the process of creating one, emphasizing the customer's role in preparing the AWS environment.
+
+
+== Next Steps
+
+Now learn about xref:byoc:index.adoc[BYOC] feature in TigerGraph Cloud 4.0.
+
+Or return to the xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.

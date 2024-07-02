@@ -1,0 +1,49 @@
+= Working with Workspaces in BYOC with TigerGraph
+:experimental:
+
+== Overview
+
+When using TigerGraph's BYOC feature, the process of creating and managing workgroups and workspaces differs slightly from the standard TigerGraph Cloud experience. This section outlines these differences and provides guidance on how to effectively use BYOC for your TigerGraph deployments.
+
+== Key Differences with BYOC
+
+1. **Cloud Provider Requirement**: BYOC users must create a xref:byoc:cloudprovider.adoc[Cloud Provider] before creating workgroups or workspaces.
+2. **Cloud Provider Selection**: When creating a workgroup, you must select the specific Cloud Provider you want to use. This choice is permanent and cannot be changed later. All the workspaces created within that workgroup will be associated with the selected Cloud Provider automatically.
+
+
+== Creating Workgroups
+
+=== Prerequisites
+- Ensure you have created at least one xref:byoc:cloudprovider.adoc[Cloud Provider].
+- Verify that your Cloud Provider is active and properly configured.
+
+=== Workgroup Creation Process
+1. Log in to your TigerGraph Cloud account.
+2. Navigate to the Workgroups section.
+3. Click "Create New Workgroup".
+4. Fill in the basic workgroup details (name, description, etc.).
+5. In the "Cloud Provider" section, choose the desired Cloud Provider from the list.
+6. Click "Next" after review and confirm your selections.
+7. Follow steps to create workspace from this workgroup.
+
+== Creating Workspaces
+=== Workspace Creation Within a BYOC Workgroup
+1. Select the workgroup where you want to create the workspace.
+2. Click "Create" button.
+3. Choose the workspace name and configuration options.
+4. Complete the workspace creation process as usual.
+5. The newly created workspace will be associated with the Cloud Provider assigned to the workgroup.
+
+== Important Considerations
+
+- **Cloud Provider Lock-in**: Remember that once a workgroup is associated with a Cloud Provider, this association cannot be changed. Plan your Cloud Provider setup carefully.
+- **Resource Management**: Be aware of the resources available in your cloud environment when creating and scaling workspaces.
+- **Cost Tracking**: While using BYOC, some costs will be reflected in your account billing rather than TigerGraph's. Ensure you have a system in place to track and manage these costs.
+
+By understanding these processes and considerations, you can effectively leverage the BYOC feature to create and manage TigerGraph workgroups and workspaces within your own cloud environment, combining the power of TigerGraph with the control and flexibility of your cloud infrastructure.
+
+== Next Steps
+
+Now learn about xref:byoc:index.adoc[BYOC] feature in TigerGraph Cloud 4.0.
+
+Or return to the xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.

@@ -1,0 +1,46 @@
+= Bring Your Own Cloud (BYOC) with TigerGraph
+:experimental:
+
+Bring Your Own Cloud (BYOC) is an advanced deployment option that allows you to run TigerGraph's powerful graph database services within your own cloud account. This feature combines the robustness of TigerGraph's technology with the flexibility and control of your preferred cloud environment.
+
+
+== Why Use BYOC?
+- **Enhanced Data Sovereignty**: Maintain complete control over your data's location and access.
+- **Improved Security**: Integrate TigerGraph with your existing security measures and protocols.
+- **Regulatory Compliance**: Easily adhere to industry-specific regulations and data residency requirements.
+- **Infrastructure Integration**: Seamlessly incorporate TigerGraph into your current cloud ecosystem.
+- **Cost Management**: Using your own cloud resources can provide more predictable and potentially lower costs, as you can take advantage of your existing cloud agreements and discounts.
+
+== When to Use BYOC?
+- **Regulatory Constraints**: When compliance requirements mandate that data must reside within your own cloud environment.
+- **Existing Cloud Investments**: If you have significant investments in cloud infrastructure and wish to leverage those resources.
+- **Specific Performance Needs**: When you need to fine-tune infrastructure for specific performance requirements that a managed service cannot accommodate.
+
+== How It Works
+BYOC involves several key components and steps to integrate your cloud provider with TigerGraph. This section explains the architecture and workflow of BYOC.
+
+=== Architecture
+
+The BYOC architecture consists of the following components:
+
+- **TigerGraph Control Plane**: The centralized management system hosted by TigerGraph that handles orchestration, monitoring, and management of customer deployments.
+- **Customer Cloud Account**: Shows a VPC containing Kubernetes clusters, TigerGraph workspaces, and a Cluster Agent. It is called in the BYOC documentation as the customer’s cloud provider.
+- **Data Plane**: Workgroups and workspaces created in customer account. They host .
+- **Workspaces**: Kubernetes namespaces that contain TigerGraph services and resources.
+- ** Cluster Agent**: A Kubernetes deployment within the customer’s cloud provider that communicates with the TigerGraph control plane to execute commands and send heartbeats.
+- TG Operator: Manages TigerGraph services within the Kubernetes cluster.
+
+image::images/byoc-architecture.png[BYOC Architecture]
+
+=== Workflow
+1.	Account Setup: Customer creates an account in the TigerGraph Cloud portal and navigates to the BYOC setup.
+2.	Cloud Provider Configuration: Customer configures their cloud provider by entering metadata such as provider name, region, and IAM roles.
+3.	Initialization: TigerGraph control plane initializes the cloud provider by provisioning the necessary infrastructure, such as Kubernetes clusters and network configurations.
+4.	Workspace Creation: Customer creates workspaces within their cloud provider, which are managed by the TG Operator.
+5.	Monitoring and Management: The cluster agent sends heartbeats and status updates to the TigerGraph control plane, ensuring continuous monitoring and management.
+
+== Next Steps
+
+Now learn about xref:byoc:cloudprovider.adoc[Cloud Provider] in TigerGraph Cloud 4.0.
+
+Or return to the xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.

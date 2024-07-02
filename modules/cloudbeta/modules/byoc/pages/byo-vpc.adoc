@@ -1,0 +1,63 @@
+= Bring Your Own VPC (BYO VPC) with TigerGraph
+:experimental:
+
+When creating a Cloud Provider in TigerGraph BYOC, you have the option to use an existing VPC from your AWS account instead of having TigerGraph create a new one. This option is called Bring Your Own VPC (BYO VPC).
+
+== What is BYO VPC?
+
+BYO VPC allows you to specify an existing Virtual Private Cloud (VPC) in your AWS account for TigerGraph to use when deploying resources. This gives you more control over your network configuration and allows for better integration with your existing AWS infrastructure.
+
+=== Benefits of BYO VPC
+
+1. **Integration with Existing Resources**: Use the same VPC as your other AWS services for easier data transfer and communication.
+2. **Custom Network Configuration**: Leverage your custom-designed network architecture.
+3. **Enhanced Security**: Maintain your existing security groups and network ACLs.
+4. **Compliance**: Ensure TigerGraph deployments adhere to your organization's networking policies and compliance requirements.
+
+== Using BYO VPC When Creating a Cloud Provider
+
+When creating a new Cloud Provider, follow these steps to use your own VPC:
+
+1. Start the Cloud Provider creation process as described xref:byoc:cloudprovider.adoc[here].
+2. In the "Advanced Settings" section, you'll see an option to "Use Existing VPC".
+3. Select this option to enable BYO VPC.
+4. Provide the following information:
+   - VPC ID: The ID of your existing VPC
+   - Subnet IDs: Select one or more subnets within your VPC for TigerGraph resources
+   - Security Group IDs: Specify existing security groups or create new ones
+
+5. TigerGraph will validate that the provided VPC and associated resources meet the necessary requirements. Please check the section below for these requirements.
+
+
+== Requirements for BYO VPC
+
+To use your own VPC with TigerGraph BYOC, ensure it meets these requirements:
+
+1. **VPC Size**: The VPC should have a sufficiently large CIDR block to accommodate TigerGraph resources.
+2. **Subnets**: Provide at least two subnets in different Availability Zones for high availability.
+3. **Internet Connectivity**: The VPC must have internet access (via Internet Gateway or NAT Gateway) for TigerGraph to function properly.
+4. **DNS Settings**: Ensure DNS hostnames and DNS resolution are enabled in the VPC.
+5. **Security Groups**: The specified security groups must allow necessary inbound and outbound traffic for TigerGraph services.
+
+== Considerations When Using BYO VPC
+
+1. **Responsibility**: You are responsible for managing and maintaining the VPC, including any changes to its configuration.
+2. **Compatibility**: Ensure your VPC settings are compatible with TigerGraph's requirements. Incompatibilities may cause deployment issues.
+3. **Resource Limits**: Be aware of AWS service limits within your VPC, such as the number of ENIs (Elastic Network Interfaces) or IP addresses.
+4. **Networking Costs**: Understand that data transfer between TigerGraph resources and other services in your VPC may incur AWS networking costs.
+
+== Modifying VPC Settings
+
+After creating a Cloud Provider with BYO VPC:
+
+- You can modify certain VPC settings through your AWS console, but exercise caution to avoid disrupting TigerGraph services.
+- Some changes, like adding new subnets for TigerGraph use, may require coordination with TigerGraph support.
+
+By leveraging the BYO VPC option, you can maintain greater control over your network environment while benefiting from TigerGraph's powerful graph database capabilities in your own cloud infrastructure.
+
+== Next Steps
+
+Now learn about xref:byoc:index.adoc[BYOC] feature in TigerGraph Cloud 4.0.
+
+Or return to the xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.
+

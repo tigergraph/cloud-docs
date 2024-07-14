@@ -132,5 +132,5 @@ View any additional xref:resources:index.adoc[Resources] for TigerGraph Cloud 4.
 xref:cloudBeta:resources:glossary.adoc[] |
 xref:cloudBeta:resources:terms_conditions.adoc[ Beta Terms and Conditions] |
 xref:cloudBeta:resources:support.adoc[]
-¦
+
 |===

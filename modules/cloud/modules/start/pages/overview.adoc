@@ -36,7 +36,6 @@ image:security-homecard.png[alt=security,width=74,height=74]
 
 Learn how TigerGraph Cloud can help ensure the xref:cloud:security:index.adoc[Security] of your data and network.
 
-
 ¦
 image:billing-homecard.png[alt=billing,width=74,height=74]
 *Billing*
@@ -62,6 +61,6 @@ See other documents to help support your TigerGraph Cloud journey.
 xref:cloud:reference:index.adoc[Reference |]
 xref:cloud:reference:glossary.adoc[Glossary |]
 xref:cloud:reference:service-limits.adoc[Service Limits]
-¦
+
 |===
 

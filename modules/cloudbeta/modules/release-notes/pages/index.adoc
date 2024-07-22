@@ -7,6 +7,9 @@
 TigerGraph Cloud 4.0 (Beta) was released on Monday, April 29th, 2024.
 
 == (Beta) Key Features
+=== 4.1.0
+* xref:resource-manager:workgroup.adoc[Workgroups] and xref:resource-manager:workspaces/workspace.adoc[Workspaces] give users control over resource management.
+
 === 4.0.0
 
 //* xref:cloudBeta:get-started:index.adoc[Get Started] using TigerGraph Cloud with the 4.0.

@@ -2,7 +2,6 @@
 :experimental:
 :page-aliases: cloud-overview.adoc
 
-== Victor-Test
 
 TigerGraph Cloud is a fully-managed cloud database built on the Enterprise Server engine and completely integrated with the full TigerGraph Suite.
 

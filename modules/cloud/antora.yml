@@ -1,6 +1,6 @@
 name: cloud
 title: TigerGraph Cloud
-version: master
+version: main
 display_version: default
 start_page: start:overview.adoc
 

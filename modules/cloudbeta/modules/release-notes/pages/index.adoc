@@ -7,6 +7,68 @@
 TigerGraph Cloud 4.0 (Beta) was released on Monday, April 29th, 2024.
 
 == (Beta) Key Features
+=== 2024-07-23
+The objective of this epic is to enhance TigerGraph Cloud by introducing HA with cross-zone resiliency. This will ensure that TigerGraph Cloud services remain available and operational even in the event of a zone failure, thereby improving fault tolerance and service reliability.
+
+*Objectives*:
+
+# *Research & Design*:
+#* Conduct a feasibility study on implementing cross-zone HA.
+#* Design the architecture for cross-zone resiliency, including data replication and failover mechanisms.
+#* Define the requirements for network configurations and inter-zone communication.
+# *Implementation*:
+#* Develop the backend infrastructure to support data replication across zones.
+#* Implement failover mechanisms to automatically switch to a secondary zone in case of a primary zone failure.
+#* Integrate cross-zone resiliency into the existing TigerGraph Cloud platform.
+# *Testing & Validation*:
+#* Perform unit and integration testing to ensure the correct functionality of cross-zone HA.
+#* Conduct failover testing to validate the automatic switch-over process.
+#* Test the performance and latency of inter-zone communication and data replication.
+# *Documentation & Training*:
+#* Create comprehensive documentation detailing the HA setup and cross-zone resiliency features.
+#* Develop training materials and conduct sessions for internal teams and end-users.
+#* Provide guidelines on best practices for configuring and managing HA with cross-zone resiliency.
+
+*Acceptance Criteria*:
+
+* Cross-zone data replication is functional and reliable.
+* Automatic failover to a secondary zone occurs seamlessly in the event of a primary zone failure.
+* The system maintains performance and low latency during cross-zone operations.
+* Documentation and training materials are complete and accessible.This epic aims to streamline the process of setting up new workspaces on TigerGraph Cloud by automatically restoring solution kits during the workspace creation process. This will save users time and effort, as they will no longer need to alter graph schema, install GSQL queries, and load data after the workspace is created.
+
+*Objectives*:
+
+# *Research & Design*:
+#* Analyze the current process of workspace creation and solution kit restoration.
+#* Design an automated workflow for integrating solution kits during workspace creation.
+#* Define user interface changes required for selecting solution kits during workspace setup.
+# *Implementation*:
+#* Develop backend services to automate the restoration of solution kits when a new workspace is created.
+#* Modify the workspace creation process to include the selection and restoration of solution kits.
+#* Update the user interface to allow users to choose solution kits during workspace creation.
+# *Testing & Validation*:
+#* Conduct unit and integration testing to ensure the new functionality works as expected.
+#* Perform user acceptance testing (UAT) with a select group of users.
+#* Validate the feature in various scenarios to ensure robustness and reliability.
+# *Documentation & Training*:
+#* Update existing documentation to reflect the new workspace creation process.
+#* Create new guides and tutorials for users on how to use the updated feature.
+#* Conduct training sessions for internal teams and end-users.
+
+*Acceptance Criteria*:
+
+* Users can select solution kits during the workspace creation process.
+* Solution kits are automatically restored to the new workspace upon creation.
+* The feature passes all testing and validation phases.
+* Documentation and training materials are updated and accessible to users.Project: [https://graphsql.atlassian.net/browse/GLE-3008|https://graphsql.atlassian.net/browse/GLE-3008|smart-link]
+
+Design: [https://graphsql.atlassian.net/wiki/spaces/TGDesignDocs/pages/3241607276|https://graphsql.atlassian.net/wiki/spaces/TGDesignDocs/pages/3241607276|smart-link]
+
+New APIs: [https://docs.google.com/spreadsheets/d/1DsDKZlARGwmaoSqV-s1zYtTBhYnxtBhkpZoyzU1UCa4/edit#gid=0|https://docs.google.com/spreadsheets/d/1DsDKZlARGwmaoSqV-s1zYtTBhYnxtBhkpZoyzU1UCa4/edit#gid=0|smart-link]Support Json format
+
+Support GCP and Azure dataThis Top-level Epic will track all the tasks for TG Cloud GA.
+
+* [https://docs.google.com/document/d/1H4hFvn5KdiRg2QgjumSH-sJngoWZIaiZEJK5ie_UpuU/edit#heading=h.fssv8x7qznqn|https://docs.google.com/document/d/1H4hFvn5KdiRg2QgjumSH-sJngoWZIaiZEJK5ie_UpuU/edit#heading=h.fssv8x7qznqn|smart-link] Milestone 1 for BYOC feature.
 === 4.0.0
 
 //* xref:cloudBeta:get-started:index.adoc[Get Started] using TigerGraph Cloud with the 4.0.

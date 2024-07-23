@@ -1,6 +1,6 @@
 name: cloudBeta
 title: TigerGraph Cloud 4.0
-version: master
+version: main
 display_version: default
 start_page: overview:index.adoc
 

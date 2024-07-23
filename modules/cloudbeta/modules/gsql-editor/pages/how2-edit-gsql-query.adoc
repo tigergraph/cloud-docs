@@ -9,7 +9,7 @@ By executing queries in the GSQL Editor you can then visualize the results, maki
 [TIP]
 ====
 GSQL is a powerful graph query language that enables you to express complex graph traversal and analysis operations.
-For more information about GSQL please visit xref:3.10.1@gsql-ref:querying:index.adoc[]
+For more information about GSQL please visit xref:gsql-ref:querying:index.adoc[]
 ====
 
 == Edit GSQL Query

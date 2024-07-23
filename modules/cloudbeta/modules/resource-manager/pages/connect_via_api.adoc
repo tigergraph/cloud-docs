@@ -37,7 +37,7 @@ These APIs represent different operations that you can perform on your graph dat
 image::Screenshot 2024-04-17 at 5.42.36 PM.png[width="500"]
 
 . Go to btn:[Edit GSQL Query] to write and install a new GSQL query.
-For GSQL syntax, please refer to xref:3.10.1@gsql-ref:intro:index.adoc[].
+For GSQL syntax, please refer to xref:gsql-ref:intro:index.adoc[].
 
 . Click on an API to view its details, including the endpoint URL, HTTP method, input parameters, and expected output.
 +

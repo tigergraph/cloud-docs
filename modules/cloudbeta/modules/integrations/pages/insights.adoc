@@ -7,7 +7,7 @@ Non-technical users can easily and quickly obtain meaningful visual insights tha
 
 [TIP]
 ====
-To learn more about Insights read our xref:3.10.1@insights:intro:index.adoc[Insights Documentation]
+To learn more about Insights read our xref:insights:intro:index.adoc[Insights Documentation]
 ====
 
 == Get Started with the Insights Add-on

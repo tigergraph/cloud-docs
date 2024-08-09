@@ -22,11 +22,8 @@ Read-only workspaces provide improved performance and scalability for read opera
 [NOTE]
 ====
 Current RO workspace requires manual sync up with the RW workspace to catch up with the latest change.
-====
 
-=== Block write operations in RO cluster
-
-In RO cluster, the following operations are forbidden:
+In RO workspace, the following operations are forbidden:
 
 1. run write queries
 2. create/drop graph
@@ -41,6 +38,7 @@ In RO cluster, the following operations are forbidden:
 11. create/delete/run loading job
 12. create/update datasource 
 13. create/delete/pause/restart/resume connector
+====
 
 === Update Read-Only(RO) Workspace
 

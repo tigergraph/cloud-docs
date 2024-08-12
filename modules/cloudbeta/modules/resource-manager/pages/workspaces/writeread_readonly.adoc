@@ -32,10 +32,6 @@ In a Read-Only (RO) workspace within TigerGraph Cloud, the following operations 
 - Executing the DROP ALL command.
 
 [.prohibited]
-.System Administration Commands
-- Running gadmin commands.
-
-[.prohibited]
 .Schema Management
 - Updating schemas, including adding, updating, or dropping schema elements.
 - Creating, dropping, or running schema change jobs.

@@ -27,34 +27,39 @@ In a Read-Only (RO) workspace within TigerGraph Cloud, the following operations 
 
 [.prohibited]
 .Database Operations
-- gsql reset
-- clear graph store
-- drop all
+- Running "gsql --reset" command.
+- Clearing the graph store.
+- Executing the DROP ALL command.
+
+[.prohibited]
+.System Administration Commands
+- Running gadmin commands.
 
 [.prohibited]
 .Schema Management
-- update schema (add/update/drop), create/drop/run schema change job
-- rebuild
+- Updating schemas, including adding, updating, or dropping schema elements.
+- Creating, dropping, or running schema change jobs.
 
 [.prohibited]
 .Graph Management
-- create/drop graph
-- export/import
+- Creating or dropping graphs.
+- Exporting or importing database data.
 
 [.prohibited]
 .Data Modification
-- run write queries
-- update data (insert/update/delete)
+- Running any queries that modify the database data.
+- Inserting, updating, or deleting data.
+- Committing the data(such as new vertices or edges) in memory to disk. for example: rebuildnow operation
 
 [.prohibited]
 .Loading Jobs
-- create/delete/run loading job
-- create/delete/pause/restart/resume connector
-- create/update datasource
+- Creating, deleting, or running loading jobs.
+- Creating, deleting, pausing, restarting, or resuming connectors.
+- Creating or updating data sources.
 
 [.prohibited]
 .Backup and Restore
-- backup/restore
+- Performing backup or restore operations.
 
 ====
 

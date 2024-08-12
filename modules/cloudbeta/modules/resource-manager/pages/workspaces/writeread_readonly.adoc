@@ -21,23 +21,41 @@ Read-only workspaces provide improved performance and scalability for read opera
 
 [NOTE]
 ====
-Current RO workspace requires manual sync up with the RW workspace to catch up with the latest change.
+Current Read-Only (RO) workspace requires manual sync up with the RW workspace to catch up with the latest change.
 
-In RO workspace, the following operations are forbidden:
+In a Read-Only (RO) workspace within TigerGraph Cloud, the following operations are strictly prohibited:
 
-1. run write queries
-2. create/drop graph
-3. update schema (add/update/drop), create/drop/run schema change job
-4. update data (insert/update/delete)
-5. backup/restore
-6. export/import
-7. drop all
-8. clear graph store
-9. rebuild
-10. gadmin/gsql reset
-11. create/delete/run loading job
-12. create/update datasource 
-13. create/delete/pause/restart/resume connector
+[.prohibited]
+.Database Operations
+- gsql reset
+- clear graph store
+- drop all
+
+[.prohibited]
+.Schema Management
+- update schema (add/update/drop), create/drop/run schema change job
+- rebuild
+
+[.prohibited]
+.Graph Management
+- create/drop graph
+- export/import
+
+[.prohibited]
+.Data Modification
+- run write queries
+- update data (insert/update/delete)
+
+[.prohibited]
+.Loading Jobs
+- create/delete/run loading job
+- create/delete/pause/restart/resume connector
+- create/update datasource
+
+[.prohibited]
+.Backup and Restore
+- backup/restore
+
 ====
 
 === Update Read-Only(RO) Workspace

@@ -13,6 +13,6 @@ With CoPilot, organizations can unlock the full potential of their data and driv
 
 == Next Steps
 
-Learn xref:beta@tg-copilot:using-copilot:how2-use-on-cloud.adoc[] on our new TigerGraph CoPliot documentation.
+Learn xref:tg-copilot:using-copilot:how2-use-on-cloud.adoc[] on our new TigerGraph CoPliot documentation.
 
 Or return to xref:cloudBeta:integrations:index.adoc[Marketplace] or the xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.

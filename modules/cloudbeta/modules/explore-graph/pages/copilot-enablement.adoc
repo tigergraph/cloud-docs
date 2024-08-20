@@ -13,11 +13,11 @@ With CoPilot, organizations can unlock the full potential of their data and driv
 It empowers business analysts, data scientists, and developers to use natural language to run real-time queries against up-to-date data at scale.
 ====
 
-See the xref:beta@tg-copilot:getstarted:index.adoc[] and the TigerGraph CoPilot xref:beta@tg-copilot:getstarted:oncloud.adoc[] documentations for more details.
+See the xref:tg-copilot:getstarted:index.adoc[] and the TigerGraph CoPilot xref:tg-copilot:getstarted:oncloud.adoc[] documentations for more details.
 
 == Next Steps
 
-Once enabled, learn xref:beta@tg-copilot:using-copilot:how2-use-on-cloud.adoc[] on our new TigerGraph CoPliot documentation.
+Once enabled, learn xref:tg-copilot:using-copilot:how2-use-on-cloud.adoc[] on our new TigerGraph CoPliot documentation.
 
 Or explore additional add-ons on the xref:integrations:index.adoc[] page or continue on to learn about the xref:administration:index.adoc[Administration] features or xref:security:index.adoc[] in TigerGraph Cloud 4.0.
 

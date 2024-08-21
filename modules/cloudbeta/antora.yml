@@ -9,6 +9,7 @@ nav:
   - modules/release-notes/nav.adoc
   - modules/get-started/nav.adoc
   - modules/resource-manager/nav.adoc
+  - modules/byoc/nav.adoc
   - modules/load-data/nav.adoc
   - modules/schema-designer/nav.adoc
   - modules/gsql-editor/nav.adoc

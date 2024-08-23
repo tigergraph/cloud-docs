@@ -1,4 +1,4 @@
-= Cloud 4.0 (beta) Release Notes
+= Cloud 4.0 Release Notes
 :experimental:
 //:page-aliases: change-log.adoc, release-notes.adoc
 :toc:
@@ -6,7 +6,7 @@
 
 TigerGraph Cloud 4.0 (Beta) was released on Monday, April 29th, 2024.
 
-== (Beta) Key Features
+== Key Features
 === 4.0.0
 
 //* xref:cloudBeta:get-started:index.adoc[Get Started] using TigerGraph Cloud with the 4.0.

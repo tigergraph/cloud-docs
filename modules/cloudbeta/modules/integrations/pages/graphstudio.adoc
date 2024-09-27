@@ -32,7 +32,7 @@ image::disable-graphstudio-addon.png[width=350]
 
 == Next Steps
 
-Now, learn about additional add-ons on the xref:integrations:index.adoc[] page or continue on to learn about the xref:administration:index.adoc[Administration] features or xref:security:index.adoc[] in TigerGraph Cloud 4.0.
+Now, learn about additional add-ons on the xref:integrations:index.adoc[] page or continue on to learn about the xref:administration:index.adoc[Administration] features or xref:security:index.adoc[] in TigerGraph Cloud 4.
 
 Return to the  page to xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.
 

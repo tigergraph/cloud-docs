@@ -5,7 +5,7 @@ In TigerGraph Cloud, access management allows you to configure permissions at bo
 
 == User Level Permission
 At the user level, you can define permissions that apply to individual users or groups of users.
-User level permissions determine what actions a user can perform across the entire TigerGraph Cloud 4.0 organization.
+User level permissions determine what actions a user can perform across the entire TigerGraph Cloud 4 organization.
 
 
 [TIP]

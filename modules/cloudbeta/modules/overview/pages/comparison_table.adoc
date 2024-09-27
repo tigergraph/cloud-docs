@@ -1,9 +1,9 @@
 = Compare with Other TigerGraph Offering
 
-Most of the documentation for TigerGraph Enterprise Server also applies to TigerGraph Cloud 4.0.
+Most of the documentation for TigerGraph Enterprise Server also applies to TigerGraph Cloud 4.
 Here are some differences between the different TigerGraph offerings.
 |===
-| Topic | TigerGraph Enterprise Server | TigerGraph Cloud Classic | TigerGraph Cloud 4.0
+| Topic | TigerGraph Enterprise Server | TigerGraph Cloud Classic | TigerGraph Cloud 4
 
 | GSQL Graph Algorithm Library
 | Yes
@@ -13,7 +13,7 @@ Here are some differences between the different TigerGraph offerings.
 | Release Notes
 | Yes
 | TigerGraph Cloud provides database versions kept up to date with TigerGraph Server releases.
-| TigerGraph Cloud 4.0 provides the latest TigerGraph Server 4.0.
+| TigerGraph Cloud 4 provides the latest TigerGraph Server 4.x.
 
 | GSQL 101
 | Yes
@@ -100,4 +100,4 @@ Here are some differences between the different TigerGraph offerings.
 
 Next, see xref:cloudBeta:get-started:index.adoc[] to unlock its full potential.
 
-Return to xref:cloudBeta:overview:index.adoc[TigerGraph Cloud 4.0] for another topic.
+Return to xref:cloudBeta:overview:index.adoc[TigerGraph Cloud 4] for another topic.

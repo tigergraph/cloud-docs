@@ -59,11 +59,6 @@
 |===
 ¦Add-On ¦Scope ¦Price
 
-
-¦ CoPilot
-¦ Workspace
-¦ 30% of the workspace usage.
-
 ¦ Insights
 ¦ Workspace
 ¦ 10% of the workspace usage.

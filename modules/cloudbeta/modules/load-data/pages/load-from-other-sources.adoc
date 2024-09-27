@@ -1,6 +1,6 @@
 = Load from Other Sources
 
-TigerGraph Cloud 4.0 supports various data sources for ingestion, providing flexibility in integrating with your existing data infrastructure.
+TigerGraph Cloud 4 supports various data sources for ingestion, providing flexibility in integrating with your existing data infrastructure.
 GSQL templates can be used for connectors that are not yet supported in the step-by-step loading guide.
 See xref:tigergraph-server:data-loading:index.adoc[Data Loading in TigerGraph DB] for guides to loading data into TigerGraph.
 
@@ -8,7 +8,7 @@ Additionally, data can also be loaded from a JDBC Connection as well, See xref:c
 
 == Next Steps
 
-Next, learn how to use the xref:cloudBeta:schema-designer:index.adoc[Schema Designer] in TigerGraph Cloud 4.0.
+Next, learn how to use the xref:cloudBeta:schema-designer:index.adoc[Schema Designer] in TigerGraph Cloud 4.
 
 Or return to the xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.
 

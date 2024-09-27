@@ -65,7 +65,5 @@ image::graph.png[width=300]
 
 == Next Steps
 
-Next, learn about TigerGraph xref:copilot-enablement.adoc[] or checkout the xref:cloudBeta:integrations:index.adoc[].
-
 Return to the  xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.
 

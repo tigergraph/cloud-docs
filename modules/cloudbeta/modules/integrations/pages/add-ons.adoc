@@ -1,15 +1,11 @@
 = Add-Ons
 
 
-Extend the capabilities of TigerGraph Cloud 4.0 with add-ons tailored to your needs.
+Extend the capabilities of TigerGraph Cloud 4 with add-ons tailored to your needs.
 Add-ons provide additional functionalities and integrations that enhance your graph database workflow.
 Whether you need advanced analytics, machine learning integration, or data visualization tools, TigerGraph Cloud offers a range of add-ons to choose from.
 
 Explore the available add-ons and learn how to incorporate them into your graph database workflow, enabling you to unlock even more value from your graph data.
-
-== xref:cloudBeta:integrations:copilot.adoc[]
-
-CoPilot empowers business analysts, data scientists, and developers to use natural language to run real-time queries against up-to-date data at scale.
 
 == xref:cloudBeta:integrations:insights.adoc[]
 

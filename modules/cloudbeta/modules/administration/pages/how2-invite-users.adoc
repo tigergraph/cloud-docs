@@ -1,7 +1,7 @@
 = Invite Users
 :experimental:
 
-When you set up a TigerGraph Cloud 4.0 account, you are granted the privileges of an Organization Admin for your company.
+When you set up a TigerGraph Cloud 4 account, you are granted the privileges of an Organization Admin for your company.
 An Organization Admin can manage multiple users in your organization and control their access to various resources.
 
 [NOTE]
@@ -78,6 +78,6 @@ Select btn:[Cancel] or btn:[OK] to confirm.
 == Next Steps
 
 Next, learn about xref:cloudBeta:administration:how2-access-mgnt.adoc[]
-or continue on to learn about xref:security:index.adoc[] or additional xref:cloudBeta:resources:index.adoc[] in TigerGraph Cloud 4.0.
+or continue on to learn about xref:security:index.adoc[] or additional xref:cloudBeta:resources:index.adoc[] in TigerGraph Cloud 4.
 
 Return to the xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.

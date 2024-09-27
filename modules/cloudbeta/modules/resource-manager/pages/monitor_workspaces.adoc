@@ -18,7 +18,7 @@ image::workspace-monitor-tab.png[]
 
 == Next Steps
 
-Next, Learn how to xref:load-data:index.adoc[Load Data] into TigerGraph Cloud 4.0.
+Next, Learn how to xref:load-data:index.adoc[Load Data] into TigerGraph Cloud 4.
 
 Return to the xref:cloudBeta:resource-manager:index.adoc[] page or xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.
 

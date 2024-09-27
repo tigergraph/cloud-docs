@@ -14,7 +14,7 @@ image::loginPage.png[]
 [CAUTION]
 Please refer to out xref:security:password-policy.adoc[] that applies to TigerGraph Cloud.
 
-. When registering for a new TigerGraph Cloud 4.0 account, we will ask to confirm your email address.
+. When registering for a new TigerGraph Cloud 4 account, we will ask to confirm your email address.
 btn:[ Click ] the link in your email to verify, then log in using your username and password.
 +
 [NOTE]
@@ -25,7 +25,7 @@ You can update your organization on the xref:cloudBeta:administration:how2-use-o
 
 == Next Steps
 
-The next step is to xref:how2-login.adoc[Log in] your new TigerGraph Cloud 4.0.
+The next step is to xref:how2-login.adoc[Log in] your new TigerGraph Cloud 4.
 
 Or return to the  xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.
 

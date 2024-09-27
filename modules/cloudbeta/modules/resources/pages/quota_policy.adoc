@@ -1,12 +1,12 @@
 = 4.0 Beta Phase Quota Restriction Policy
 
 == Objective
-To establish a fair-use policy that ensures equitable access to resources during the beta phase of TigerGraph Cloud 4.0 (Beta), while preventing abuse and over-utilization of shared infrastructure.
+To establish a fair-use policy that ensures equitable access to resources during the beta phase of TigerGraph Cloud 4, while preventing abuse and over-utilization of shared infrastructure.
 
 [IMPORTANT]
 This policy is subject to review and adjustment at the discretion of TigerGraph's management based on feedback from the user community and evolving business needs.
 
-This policy applies to all users participating in the beta phase of TigerGraph Cloud 4.0 (beta).
+This policy applies to all users participating in the beta phase of TigerGraph Cloud 4.
 
 
 == Policy Details
@@ -36,7 +36,7 @@ Max supported will be TG-16.
 
 === Feedback and Adjustment Mechanism:
 * Users are encouraged to provide feedback on resource limitations and usage experience.
-* TigerGraph Cloud 4.0 reserves the right to adjust quota limits based on user feedback and observed usage patterns to serve the community's needs better.
+* TigerGraph Cloud 4 reserves the right to adjust quota limits based on user feedback and observed usage patterns to serve the community's needs better.
 
 === Communication:
 * All participants will be informed of the quota restrictions and any subsequent adjustments via email and in-product notifications.

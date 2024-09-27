@@ -1,10 +1,10 @@
-= Beta Program Terms and Conditions for TigerGraph Cloud 4.0
+= Beta Program Terms and Conditions for TigerGraph Cloud 4
 
 
 
 == Effective Date: Apr 23, 2024
 
-These Terms and Conditions of the Beta Program for TigerGraph Cloud 4.0 ("Terms") constitute a legal agreement between *You* or the entity You are authorized to represent and bind to these terms (“You” or “Your”) and TigerGraph, Inc. ("TigerGraph", "We") and govern Your participation in the Beta Program for TigerGraph Cloud 4.0 ("Beta Program").
+These Terms and Conditions of the Beta Program for TigerGraph Cloud 4 ("Terms") constitute a legal agreement between *You* or the entity You are authorized to represent and bind to these terms (“You” or “Your”) and TigerGraph, Inc. ("TigerGraph", "We") and govern Your participation in the Beta Program for TigerGraph Cloud 4 ("Beta Program").
 
 [IMPORTANT]
 ====
@@ -12,7 +12,7 @@ Please read these Terms carefully.
 ====
 
 === 1) Beta Offering
-The Beta Program provides You access to the TigerGraph Cloud 4.0 Beta software service ("Beta Offering"), a pre-production release, for testing and providing feedback to TigerGraph.
+The Beta Program provides You access to the TigerGraph Cloud 4 Beta software service ("Beta Offering"), a pre-production release, for testing and providing feedback to TigerGraph.
 The Beta Offering is provided on an "as is" and "as available" basis for a limited time.
 You may access the Beta Offering via a designated portal which is separate from TigerGraph's production and general commercial offerings.
 You may not use the Beta Offering in production or for commercial purposes.

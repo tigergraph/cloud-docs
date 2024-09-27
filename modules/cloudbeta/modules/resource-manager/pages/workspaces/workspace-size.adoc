@@ -1,14 +1,14 @@
 = Workspace Size
 
 When creating a workspace, you can specify the size based on your data and performance requirements.
-TigerGraph Cloud 4.0 offers multiple size options, allowing you to choose the appropriate capacity for your graph databases.
+TigerGraph Cloud 4 offers multiple size options, allowing you to choose the appropriate capacity for your graph databases.
 
 [TIP]
 The size determines the number of instances and the allocated resources for your workspace.
 
 == Workspace Size Table
 
-We provide the following workspace sizes on TigerGraph Cloud 4.0.
+We provide the following workspace sizes on TigerGraph Cloud 4.
 
 [cols=5]
 |===

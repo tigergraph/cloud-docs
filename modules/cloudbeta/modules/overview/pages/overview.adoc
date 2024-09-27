@@ -1,12 +1,12 @@
-= Cloud 4.0 Overview
+= Cloud 4 Overview
 
 Purpose-built for graph analytics, this approach empowers users to independently scale compute and storage resources, optimizing performance and cost-efficiency according to their specific requirements.
 
 The platform also comes with intuitive interfaces, designed to reduce the learning curve and enable users to quickly leverage the benefits of graph analytics.
 
-== Key Features of TigerGraph Cloud 4.0
+== Key Features of TigerGraph Cloud 4
 
-These key features of TigerGraph Cloud 4.0 collectively provide a powerful and user-friendly environment for organizations to perform advanced graph analytics, gain valuable insights from interconnected data, and drive data-driven decision-making and innovation.
+These key features of TigerGraph Cloud 4 collectively provide a powerful and user-friendly environment for organizations to perform advanced graph analytics, gain valuable insights from interconnected data, and drive data-driven decision-making and innovation.
 
 === Separation of Storage and Compute
 We introduce a unique architecture that separates storage and compute, allowing users to scale resources independently.
@@ -22,11 +22,6 @@ The platform simplifies the process of importing and transforming data into a gr
 With support for various data connectors such as Local File, AWS S3, Azure Blob Storage, GCP Cloud Storage, Spark, Snowflake, Postgres, Kafka, and BigQuery, the platform offers seamless integration with diverse data sources.
 It provides step-by-step data loading for select connectors, automatically detecting formats, schemas, and mappings. This streamlines the data loading process and enables auto schema and mapping generation, making it convenient to leverage existing data assets for graph analytics.
 
-=== CoPilot
-CoPilot is an AI assistant for your TigerGraph-powered solutions and tools that will boost your productivity and simplify many of your business analytics, development and administration tasks.
-TigerGraph CoPilot enables you to ask questions in natural language about your data, and analyze the results delivered to you in natural language, graph visualizations, and other views.
-Whether you are a business analyst, data scientist, or developer, CoPilot has you covered.
-
 === Integrations with Solution Kits
 TigerGraph Solution Kits are comprehensive, ready-to-use solutions that package TigerGraph's industry-leading graph database and AI technology with domain-specific schema, workflows, and dashboards.
 They provide everything users need to get started with graph analytics and AI-driven insights in their respective fields.
@@ -37,12 +32,12 @@ Designed with user convenience in mind, the GSQL Editor offers a user-friendly i
 With syntax highlighting, code completion, query execution, and debugging capabilities, users can easily develop and fine-tune their graph queries. Additionally, the GSQL Editor enables seamless collaboration within organizations by allowing users to share GSQL files, fostering teamwork and facilitating efficient collaboration among colleagues.
 
 === Graph Explorer
-TigerGraph Cloud 4.0 features a Graph Explorer, a visual interface that allows users to interactively explore and analyze the graph data.
+TigerGraph Cloud 4 features a Graph Explorer, a visual interface that allows users to interactively explore and analyze the graph data.
 The Graph Explorer provides a rich set of visualization tools, including graph visualizations, charts, and tables, enabling users to gain insights and discover patterns in their data.
 It offers intuitive navigation, filtering, and querying capabilities, making it easier for users to explore and understand the relationships and connections within their graph data.
 
-=== Auto Data Insights
-TigerGraph Cloud 4.0 incorporates auto data insights capabilities that automatically find data insights for users without prior knowledge of their schema and query.
+=== Auto Data Profiles
+TigerGraph Cloud 4 incorporates auto data profile capabilities that automatically find data insights for users without prior knowledge of their schema and query.
 This feature leverages advanced algorithms and machine learning techniques to analyze the graph data and identify meaningful patterns, relationships, and insights.
 It helps users discover valuable information within their data even if they are not familiar with the underlying data structure or query language.
 
@@ -51,4 +46,4 @@ It helps users discover valuable information within their data even if they are 
 
 Next, to understand how TigerGraph cloud differs from other TigerGraph offerings see xref:overview:comparison_table.adoc[] or see xref:cloudBeta:get-started:index.adoc[] to unlock its full potential.
 
-Return to xref:cloudBeta:overview:index.adoc[TigerGraph Cloud 4.0] for another topic.
+Return to xref:cloudBeta:overview:index.adoc[TigerGraph Cloud 4] for another topic.

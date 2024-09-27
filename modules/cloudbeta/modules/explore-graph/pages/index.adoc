@@ -18,10 +18,6 @@ Before you can utilize the Explore Graph features you need to xref:cloudBeta:res
 
 Learn how look for specific patterns or sequences within a dataset or system.
 
-== xref:copilot-enablement.adoc[]
-
-Learn how to unlock the full potential of your data by learning how to enable and use TigerGraph Copilot.
-
 == Next Steps
 
 Next, checkout the xref:cloudBeta:integrations:index.adoc[].

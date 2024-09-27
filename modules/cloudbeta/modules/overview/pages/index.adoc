@@ -1,10 +1,10 @@
-= TigerGraph Cloud 4.0 (beta version) [Dev branch]
+= TigerGraph Cloud 4 [Dev branch]
 :experimental:
 :page-aliases: cloud-overview.adoc
 
 This documentation will guide you through the various features and functionalities of our brand new cloud-native Graph-as-a-Service (GaaS) management platform.
 
-TigerGraph Cloud 4.0 (https://beta.tgcloud.io) offers a powerful and user-friendly environment for managing, analyzing, and exploring your graph data.
+TigerGraph Cloud 4 (https://beta.tgcloud.io) offers a powerful and user-friendly environment for managing, analyzing, and exploring your graph data.
 It revolutionizes graph analytics by introducing a groundbreaking separation of compute and storage in its cloud-based graph database platform.
 
 //pass:[<abbr title="Define User Friendly">ToolTip Practice</abbr>]
@@ -15,12 +15,12 @@ It revolutionizes graph analytics by introducing a groundbreaking separation of 
 
 [CAUTION]
 ====
-TigerGraph Cloud 4.0 is still in beta release and the documentation is in progress.
+TigerGraph Cloud 4 is still in beta release and the documentation is in progress.
 ====
 
 [IMPORTANT]
 ====
-TigerGraph Cloud 4.0 beta is for personal or R&D use and not for production use.
+TigerGraph Cloud 4 beta is for personal or R&D use and not for production use.
 Please see xref:cloudBeta:resources:terms_conditions.adoc[].
 ====
 
@@ -32,7 +32,7 @@ Please see xref:cloudBeta:resources:terms_conditions.adoc[].
 image:getstarted-homecard.png[alt=getstarted,width=74,height=74]
 *Get Started*
 
-xref:cloudBeta:get-started:index.adoc[Get Started] using TigerGraph Cloud 4.0 or explore key features in our xref:overview:overview.adoc[].
+xref:cloudBeta:get-started:index.adoc[Get Started] using TigerGraph Cloud 4 or explore key features in our xref:overview:overview.adoc[].
 
 xref:get-started:how2-signup.adoc[How to Sign Up] |
 xref:cloudBeta:get-started:how2-login.adoc[]
@@ -50,7 +50,7 @@ xref:resource-manager:workspaces/workspace.adoc[Workspace]
 image:DataLoading-Homecard.png[alt=load data,width=74,height=74]
 *Load Data*
 
-Learn how to Load Data into TigerGraph Cloud 4.0.
+Learn how to Load Data into TigerGraph Cloud 4.
 
 
 
@@ -84,10 +84,9 @@ xref:explore-graph:how2-use-pattern-search.adoc[]
 image:ArchtectureOverview-homecard.png[alt=integration,width=74,height=74]
 *Marketplace*
 
-TigerGraph Cloud 4.0 offers several powerful integration tools.
+TigerGraph Cloud 4 offers several powerful integration tools.
 
 xref:integrations:index.adoc[Overview] |
-xref:cloudBeta:explore-graph:copilot-enablement.adoc[] |
 xref:cloudBeta:integrations:insights.adoc[] |
 xref:cloudBeta:integrations:graphstudio.adoc[] |
 xref:cloudBeta:integrations:graphql.adoc[]
@@ -105,7 +104,7 @@ xref:cloudBeta:administration:how2-use-organization-mgnt.adoc[Org Management]
 image:security-homecard.png[alt=security,width=74,height=74]
 *Security*
 
-Learn about xref:security:index.adoc[] in TigerGraph Cloud 4.0.
+Learn about xref:security:index.adoc[] in TigerGraph Cloud 4.
 
 xref:cloudBeta:security:password-policy.adoc[] |
 xref:cloudBeta:security:idp.adoc[]
@@ -127,7 +126,7 @@ View the xref:release-notes:index.adoc[] to get update information on features a
 image:documentation-homecard.png[alt=support,width=74,height=74]
 *Resources*
 
-View any additional xref:resources:index.adoc[Resources] for TigerGraph Cloud 4.0.
+View any additional xref:resources:index.adoc[Resources] for TigerGraph Cloud 4.
 
 xref:cloudBeta:resources:glossary.adoc[] |
 xref:cloudBeta:resources:terms_conditions.adoc[ Beta Terms and Conditions] |

@@ -1,4 +1,4 @@
-= Load Data in TigerGraph Cloud 4.0
+= Load Data in TigerGraph Cloud 4
 :experimental:
 
 Efficiently loading data into your TigerGraph databases is crucial for successful graph analysis.
@@ -58,7 +58,7 @@ Check out our step-by-step guide on loading data from a AWS s3.
 
 == xref:cloudBeta:load-data:load-from-other-sources.adoc[]
 
-Here you can check out the status of loading data form other sources in TigerGraph Cloud 4.0.
+Here you can check out the status of loading data form other sources in TigerGraph Cloud 4.
 Or check out our xref:cloudBeta:load-data:jdbc.adoc[].
 
 == Next Steps

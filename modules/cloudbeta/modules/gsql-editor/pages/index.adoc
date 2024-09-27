@@ -56,7 +56,7 @@ image:Screenshot 2024-04-18 at 10.09.33 AM.png[]
 
 == Folders
 
-The GSQL Editor in TigerGraph Cloud 4.0 has two types of folders presented in the list:
+The GSQL Editor in TigerGraph Cloud 4 has two types of folders presented in the list:
 
 === Shared Folder
 The Shared Folder is a special type of folder that facilitates collaboration and sharing of GSQL files. The folder contains all GSQL files that are shared with you from other users with in the organization.

@@ -2,7 +2,7 @@
 :experimental:
 
 To learn more about workgroups see xref:cloudBeta:resource-manager:workgroup.adoc[].
-To create a workgroup in TigerGraph Cloud 4.0, follow the steps below.
+To create a workgroup in TigerGraph Cloud 4, follow the steps below.
 
 == Create a Workgroup
 
@@ -28,7 +28,7 @@ image::Screenshot 2024-04-24 at 8.18.30 PM.png[]
 +
 [NOTE]
 ====
-As of 2024-04-23, TigerGraph Cloud 4.0 only offers `AWS` on `US East(N. Virginia)`.
+As of 2024-04-23, TigerGraph Cloud 4 only offers `AWS` on `US East(N. Virginia)`.
 ====
 
 . Finally, click on the btn:[Next] button to create the workgroup.

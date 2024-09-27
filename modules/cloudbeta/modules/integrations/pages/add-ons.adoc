@@ -7,14 +7,14 @@ Whether you need advanced analytics, machine learning integration, or data visua
 
 Explore the available add-ons and learn how to incorporate them into your graph database workflow, enabling you to unlock even more value from your graph data.
 
-== xref:cloudBeta:integrations:insights.adoc[]
+== xref:cloud4:integrations:insights.adoc[]
 
 TigerGraph Insights is a no-code visual graph analyzer that makes building data analytics dashboards intuitive.
 
-== xref:cloudBeta:integrations:graphstudio.adoc[]
+== xref:cloud4:integrations:graphstudio.adoc[]
 
 GraphStudio offers a range of features and tools to simplify the graph development process.
 
-== xref:cloudBeta:integrations:graphql.adoc[]
+== xref:cloud4:integrations:graphql.adoc[]
 
 TigerGraph GraphQL enables users to access and modify graph data in TigerGraph using GraphQL queries.

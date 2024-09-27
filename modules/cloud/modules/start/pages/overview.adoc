@@ -12,7 +12,7 @@ handling all the complexity of deploying and managing your deployments on the cl
 ====
 TigerGraph Cloud 4 (beta version) was released on Apr. 29th, 2024.
 
-Check out the new Cloud 4 beta at https://beta.tgcloud.io or have a look at the xref:cloudBeta:overview:index.adoc[Documentation] for more details.
+Check out the new Cloud 4 beta at https://beta.tgcloud.io or have a look at the xref:cloud4:overview:index.adoc[Documentation] for more details.
 ====
 
 == Get to Know Your TigerGraph Cloud

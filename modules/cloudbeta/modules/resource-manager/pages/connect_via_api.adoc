@@ -22,7 +22,7 @@ image::Screenshot 2024-04-28 at 9.36.29 PM.png[]
 +
 [NOTE]
 ====
-You can go to the xref:cloudBeta:schema-designer:index.adoc[Schema Designer] to btn:[Create a Graph] if you do not have a graph.
+You can go to the xref:cloud4:schema-designer:index.adoc[Schema Designer] to btn:[Create a Graph] if you do not have a graph.
 ====
 +
 //image::Screenshot 2024-04-17 at 5.41.55 PM.png[width="250"]
@@ -64,6 +64,6 @@ If you need to connect using the database secret, please refer to xref:tigergrap
 
 == Next Steps
 
-Next, learn more about how to xref:cloudBeta:resource-manager:monitor_workspaces.adoc[].
+Next, learn more about how to xref:cloud4:resource-manager:monitor_workspaces.adoc[].
 
-Return to the xref:cloudBeta:resource-manager:index.adoc[] page or xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.
+Return to the xref:cloud4:resource-manager:index.adoc[] page or xref:cloud4:overview:index.adoc[Overview] page for a different topic.

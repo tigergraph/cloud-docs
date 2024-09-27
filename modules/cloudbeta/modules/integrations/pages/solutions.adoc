@@ -12,7 +12,7 @@ By leveraging solutions, you can accelerate development, reduce time-to-insights
 Explore the available solutions and experiment with them in your own specific use cases.
 
 == Prerequisites
-To start creating your first solution you will need to have a xref:cloudBeta:resource-manager:workspaces/writeread_readonly.adoc#_read_write_rw_workspace[Read-Write Workspace]  already created.
+To start creating your first solution you will need to have a xref:cloud4:resource-manager:workspaces/writeread_readonly.adoc#_read_write_rw_workspace[Read-Write Workspace]  already created.
 
 == Get Started with Solutions
 
@@ -56,7 +56,7 @@ You can import your data from various sources, such as CSV files, databases, or 
 +
 [TIP]
 ====
-For more details on loading data see xref:cloudBeta:load-data:index.adoc[].
+For more details on loading data see xref:cloud4:load-data:index.adoc[].
 ====
 
 * *No Data*: If you choose the btn:[No Data] option, the solution kit will be set up without any pre-loaded or user-provided data.
@@ -75,5 +75,5 @@ image::Screenshot 2024-04-18 at 10.19.26 AM.png[]
 
 Now, learn about additional add-ons on the xref:integrations:index.adoc[] page or continue on to learn more about xref:security:index.adoc[] in TigerGraph Cloud 4.
 
-Or return to the  page to xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.
+Or return to the  page to xref:cloud4:overview:index.adoc[Overview] page for a different topic.
 

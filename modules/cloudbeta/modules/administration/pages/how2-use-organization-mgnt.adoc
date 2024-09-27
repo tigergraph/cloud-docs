@@ -34,8 +34,8 @@ Providing a logo adds a professional touch and helps users quickly recognize you
 
 == Next Steps
 
-Next, continue on to learn about xref:security:index.adoc[] or additional xref:cloudBeta:resources:index.adoc[] in TigerGraph Cloud 4.
+Next, continue on to learn about xref:security:index.adoc[] or additional xref:cloud4:resources:index.adoc[] in TigerGraph Cloud 4.
 
-Return to the xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.
+Return to the xref:cloud4:overview:index.adoc[Overview] page for a different topic.
 
 

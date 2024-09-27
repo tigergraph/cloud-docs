@@ -1,7 +1,7 @@
 = How to Log In
 :experimental:
 
-After first xref:get-started:how2-signup.adoc[signing up] or being xref:cloudBeta:administration:how2-invite-users.adoc[invited by your organization] users must  btn:[Log In].
+After first xref:get-started:how2-signup.adoc[signing up] or being xref:cloud4:administration:how2-invite-users.adoc[invited by your organization] users must  btn:[Log In].
 This guide will walk you through the necessary steps.
 
 == Log In
@@ -35,6 +35,6 @@ image::orgLogin.png[]
 
 == Next Steps
 
-Once logged in, learn more about xref:cloudBeta:resource-manager:index.adoc[] or jump right into creating a xref:resource-manager:workgroup.adoc[Workgroup] and xref:resource-manager:workspaces/workspace.adoc[Workspaces].
+Once logged in, learn more about xref:cloud4:resource-manager:index.adoc[] or jump right into creating a xref:resource-manager:workgroup.adoc[Workgroup] and xref:resource-manager:workspaces/workspace.adoc[Workspaces].
 
-Return to the xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.
+Return to the xref:cloud4:overview:index.adoc[Overview] page for a different topic.

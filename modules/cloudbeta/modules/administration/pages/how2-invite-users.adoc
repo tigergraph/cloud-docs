@@ -77,7 +77,7 @@ Select btn:[Cancel] or btn:[OK] to confirm.
 
 == Next Steps
 
-Next, learn about xref:cloudBeta:administration:how2-access-mgnt.adoc[]
-or continue on to learn about xref:security:index.adoc[] or additional xref:cloudBeta:resources:index.adoc[] in TigerGraph Cloud 4.
+Next, learn about xref:cloud4:administration:how2-access-mgnt.adoc[]
+or continue on to learn about xref:security:index.adoc[] or additional xref:cloud4:resources:index.adoc[] in TigerGraph Cloud 4.
 
-Return to the xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.
+Return to the xref:cloud4:overview:index.adoc[Overview] page for a different topic.

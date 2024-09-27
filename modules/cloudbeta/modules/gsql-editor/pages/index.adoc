@@ -14,7 +14,7 @@ image::Screenshot 2024-04-18 at 10.04.32 AM.png[]
 +
 [NOTE]
 ====
-For more details please see xref:cloudBeta:schema-designer:index.adoc[].
+For more details please see xref:cloud4:schema-designer:index.adoc[].
 ====
 
 * Center image:Screenshot 2024-04-23 at 10.05.36 PM.png[width=50] Main GSQL Editing Panel.
@@ -93,12 +93,12 @@ You can easily open the Schema Designer in GSQL Editor by clicking on the image:
 
 [NOTE]
 ====
-For more details please see xref:cloudBeta:schema-designer:index.adoc[].
+For more details please see xref:cloud4:schema-designer:index.adoc[].
 ====
 
 == Next Steps
 Next, learn more about how to xref:gsql-editor:how2-edit-gsql-query.adoc[].
 
-Or return to the xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.
+Or return to the xref:cloud4:overview:index.adoc[Overview] page for a different topic.
 
 

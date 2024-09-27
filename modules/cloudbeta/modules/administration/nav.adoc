@@ -4,7 +4,7 @@
 ** xref:administration:how2-use-organization-mgnt.adoc[]
 
 ////
-** xref:cloudBeta:security:index.adoc[]
-*** xref:cloudBeta:security:password-policy.adoc[]
-*** xref:cloudBeta:security:idp.adoc[]
+** xref:cloud4:security:index.adoc[]
+*** xref:cloud4:security:password-policy.adoc[]
+*** xref:cloud4:security:idp.adoc[]
 ////

@@ -80,7 +80,7 @@ Choosing the right workspace size is crucial for achieving optimal performance a
 ////
 == Next Steps
 
-See xref:cloudBeta:resource-manager:expansion_shrink.adoc[] to learn how to change the size of a workspace or
-return to the xref:cloudBeta:resource-manager:index.adoc[] page or xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.
+See xref:cloud4:resource-manager:expansion_shrink.adoc[] to learn how to change the size of a workspace or
+return to the xref:cloud4:resource-manager:index.adoc[] page or xref:cloud4:overview:index.adoc[Overview] page for a different topic.
 
 

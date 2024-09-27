@@ -14,7 +14,7 @@ Resource-level permissions determine what actions a user can perform on a specif
 These permissions allow you to control access to individual resources based on the needs and responsibilities of different users.
 ====
 
-You can go to xref:cloudBeta:resource-manager:how2-workgroup-access.adoc[] to manage access at the resource level.
+You can go to xref:cloud4:resource-manager:how2-workgroup-access.adoc[] to manage access at the resource level.
 
 == User Level Permission
 At the user level, you can define permissions that apply to individual users or groups of users.
@@ -238,7 +238,7 @@ Please refer to the following tables of the roles and permissions for the organi
 
 == Next Steps
 
-Next, learn about xref:cloudBeta:administration:how2-use-organization-mgnt.adoc[]
-or continue on to learn about xref:security:index.adoc[] or additional xref:cloudBeta:resources:index.adoc[] in TigerGraph Cloud 4.
+Next, learn about xref:cloud4:administration:how2-use-organization-mgnt.adoc[]
+or continue on to learn about xref:security:index.adoc[] or additional xref:cloud4:resources:index.adoc[] in TigerGraph Cloud 4.
 
-Return to the xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.
+Return to the xref:cloud4:overview:index.adoc[Overview] page for a different topic.

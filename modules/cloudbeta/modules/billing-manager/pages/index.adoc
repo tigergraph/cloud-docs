@@ -8,7 +8,7 @@ image::Screenshot 2024-04-28 at 12.11.56 PM.png[]
 
 Check out the links below to explore more billing information to utilize.
 
-== xref:cloudBeta:billing-manager:payment-methods.adoc[]
+== xref:cloud4:billing-manager:payment-methods.adoc[]
 
 Learn how you can manage payment methods.
 
@@ -16,13 +16,13 @@ Learn how you can manage payment methods.
 
 Learn how to view and export invoices.
 
-== xref:cloudBeta:billing-manager:pricing.adoc[]
+== xref:cloud4:billing-manager:pricing.adoc[]
 
 Here you can review pricing information in TigerGraph Cloud 4.
 
-//== xref:cloudBeta:billing-manager:compute_price.adoc[]
+//== xref:cloud4:billing-manager:compute_price.adoc[]
 
-//== xref:cloudBeta:billing-manager:storage_price.adoc[]
+//== xref:cloud4:billing-manager:storage_price.adoc[]
 
 
 

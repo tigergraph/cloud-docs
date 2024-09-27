@@ -2,7 +2,7 @@
 :experimental:
 
 In TigerGraph Cloud 4, the concepts of workgroup, workspace, and database are used to organize and manage projects and data within the platform.
-By utilizing xref:cloudBeta:resource-manager:workgroup.adoc[workgroups], xref:cloudBeta:resource-manager:workspaces/workspace.adoc[workspaces and databases], TigerGraph Cloud 4 provides a flexible and scalable environment for managing projects, allocating compute resources, and working with graph data effectively.
+By utilizing xref:cloud4:resource-manager:workgroup.adoc[workgroups], xref:cloud4:resource-manager:workspaces/workspace.adoc[workspaces and databases], TigerGraph Cloud 4 provides a flexible and scalable environment for managing projects, allocating compute resources, and working with graph data effectively.
 
 ////
 [CAUTION]
@@ -14,7 +14,7 @@ TigerGraph Cloud 4 is still in beta release and the documentation is in progress
 ====
 TigerGraph Cloud 4 beta is  for personal or R&D use and not for production use.
 
-It is not covered by our xref:cloudBeta:resources:terms_conditions.adoc[].
+It is not covered by our xref:cloud4:resources:terms_conditions.adoc[].
 ====
 ////
 
@@ -24,12 +24,12 @@ Learn xref:how2-create-a-workgroup.adoc[] the first step before creating a xref:
 and learning xref:how2-workgroup-access.adoc[].
 
 
-== xref:cloudBeta:resource-manager:workspaces/workspace.adoc[Workspace and Database Overview]
+== xref:cloud4:resource-manager:workspaces/workspace.adoc[Workspace and Database Overview]
 Learn xref:workspaces/how2-create-a-workspace.adoc[] and unlock its many features.
 
 Such as:
 
-* xref:cloudBeta:resource-manager:workspaces/advanced-settings/advanced-settings.adoc[]
+* xref:cloud4:resource-manager:workspaces/advanced-settings/advanced-settings.adoc[]
 -
 Learn how advanced settings in workspace allow users to customize and fine-tune various aspects of their workspace configuration.
 
@@ -61,7 +61,7 @@ Learn how TigerGraph Cloud 4 offers comprehensive monitoring capabilities that a
 
 Next, learn how to xref:load-data:index.adoc[Load Data] into TigerGraph Cloud 4.
 
-Or return to the xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.
+Or return to the xref:cloud4:overview:index.adoc[Overview] page for a different topic.
 
 
 

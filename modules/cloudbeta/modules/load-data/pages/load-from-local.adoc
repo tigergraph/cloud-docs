@@ -54,7 +54,7 @@ The header name is ignored during data loading.
 
 == 3) Configure Map
 
-.If you are loading data into a brand new graph, you will be prompted to let our engine generate a schema and mapping for you. Or you can start from scratch. For more details of schema design please refer to xref:cloudBeta:schema-designer:index.adoc[Schema Designer].
+.If you are loading data into a brand new graph, you will be prompted to let our engine generate a schema and mapping for you. Or you can start from scratch. For more details of schema design please refer to xref:cloud4:schema-designer:index.adoc[Schema Designer].
 . Select `Generate the schema only` or `Generate the schema and data mapping`.
 +
 image::Screenshot 2024-04-17 at 5.55.35 PM.png[]
@@ -100,8 +100,8 @@ image::Screenshot 2024-04-17 at 5.59.16 PM.png[]
 
 == Next Steps
 
-Next, learn how to use the xref:cloudBeta:schema-designer:index.adoc[Schema Designer] in TigerGraph Cloud 4.
+Next, learn how to use the xref:cloud4:schema-designer:index.adoc[Schema Designer] in TigerGraph Cloud 4.
 
-Or return to the xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.
+Or return to the xref:cloud4:overview:index.adoc[Overview] page for a different topic.
 
 

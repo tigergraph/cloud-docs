@@ -4,38 +4,39 @@
 :toc:
 :toclevels:2
 
-== 2024-98-29
-=== GA Release
+== 2024-09-29
+=== 4.1.0
+
 
 
 == TigerGraph Cloud 4.0.0 (Beta) was released on Monday, April 29th, 2024.
 === 4.0.0
 
-//* xref:cloudBeta:get-started:index.adoc[Get Started] using TigerGraph Cloud with the 4.0.
-* xref:cloudBeta:overview:overview.adoc#_separation_of_storage_and_compute[Separation of Storage and Compute] - Introduction of a unique architecture that separates storage and compute, allowing users to scale resources independently.
+//* xref:cloud4:get-started:index.adoc[Get Started] using TigerGraph Cloud with the 4.0.
+* xref:cloud4:overview:overview.adoc#_separation_of_storage_and_compute[Separation of Storage and Compute] - Introduction of a unique architecture that separates storage and compute, allowing users to scale resources independently.
 
 * xref:resource-manager:workgroup.adoc[Workgroups] and xref:resource-manager:workspaces/workspace.adoc[Workspaces] give users control over resource management.
 
 * xref:load-data:index.adoc[] - Load Data into TigerGraph Cloud 4 and unlock its potential.
 
-* xref:cloudBeta:schema-designer:index.adoc[Schema Designer] - Easily modify and manage the schema of your graph databases using Schema Designer UI.
+* xref:cloud4:schema-designer:index.adoc[Schema Designer] - Easily modify and manage the schema of your graph databases using Schema Designer UI.
 
 * xref:gsql-editor:index.adoc[GSQL Editor] - The GSQL Editor is a powerful tool for developing and executing GSQL queries, allowing you to unlock insights from your graph databases by xref:gsql-editor:how2-edit-gsql-query.adoc[Editing, Running, and Sharing a GSQL Query.].
 
 * xref:explore-graph:index.adoc[] and xref:explore-graph:how2-use-pattern-search.adoc[] - Visualize your data and navigate to understand complex connections and dependencies.
 
 * xref:integrations:index.adoc[] - TigerGraph Cloud 4 offers several powerful integration tools in our marketplace.
-** xref:cloudBeta:integrations:solutions.adoc[] -  Pre-built solution kits that address common use cases and industry-specific challenges.
-** xref:cloudBeta:integrations:add-ons.adoc[] - Extend the capabilities of TigerGraph Cloud 4 with add-ons tailored to your needs. Add-ons provide additional functionalities and integrations that enhance your graph database workflow.
-*** xref:cloudBeta:integrations:insights.adoc[Insights Add-On] - TigerGraph Insights is a no-code visual graph analyzer that makes building data analytics dashboards intuitive.
-*** xref:cloudBeta:integrations:graphstudio.adoc[GraphStudio Add-On] - GraphStudio offers a range of features and tools to simplify the graph development process.
-*** xref:cloudBeta:integrations:graphql.adoc[GraphQL Add-On] - TigerGraph GraphQL enables users to access and modify graph data in TigerGraph using GraphQL queries.
+** xref:cloud4:integrations:solutions.adoc[] -  Pre-built solution kits that address common use cases and industry-specific challenges.
+** xref:cloud4:integrations:add-ons.adoc[] - Extend the capabilities of TigerGraph Cloud 4 with add-ons tailored to your needs. Add-ons provide additional functionalities and integrations that enhance your graph database workflow.
+*** xref:cloud4:integrations:insights.adoc[Insights Add-On] - TigerGraph Insights is a no-code visual graph analyzer that makes building data analytics dashboards intuitive.
+*** xref:cloud4:integrations:graphstudio.adoc[GraphStudio Add-On] - GraphStudio offers a range of features and tools to simplify the graph development process.
+*** xref:cloud4:integrations:graphql.adoc[GraphQL Add-On] - TigerGraph GraphQL enables users to access and modify graph data in TigerGraph using GraphQL queries.
 
-* xref:cloudBeta:administration:index.adoc[] - The tools for organizational administrators to xref:cloudBeta:administration:how2-invite-users.adoc[]
-, xref:cloudBeta:administration:how2-access-mgnt.adoc[Mange Access], xref:cloudBeta:administration:how2-use-organization-mgnt.adoc[Manage Organization].
+* xref:cloud4:administration:index.adoc[] - The tools for organizational administrators to xref:cloud4:administration:how2-invite-users.adoc[]
+, xref:cloud4:administration:how2-access-mgnt.adoc[Mange Access], xref:cloud4:administration:how2-use-organization-mgnt.adoc[Manage Organization].
 
 * xref:billing-manager:index.adoc[Billing UI] - The new billing UI allows users to check and pay only for their specific usage of storage, data access, and compute resources
-with an xref:cloudBeta:billing-manager:payment-methods.adoc[easy-to-use Payment Method manager], and the xref:cloudBeta:billing-manager:invoices.adoc[ability to check and export invoices].
+with an xref:cloud4:billing-manager:payment-methods.adoc[easy-to-use Payment Method manager], and the xref:cloud4:billing-manager:invoices.adoc[ability to check and export invoices].
 
 ////
 == Fixed issues

@@ -61,9 +61,9 @@ Auto-resume will kick-in when users access tools and rest APIs.
 
 == Next Steps
 
-Next, learn about  xref:cloudBeta:resource-manager:workspaces/writeread_readonly.adoc[] or learn more about xref:cloudBeta:resource-manager:workspaces/workspace-size.adoc[].
+Next, learn about  xref:cloud4:resource-manager:workspaces/writeread_readonly.adoc[] or learn more about xref:cloud4:resource-manager:workspaces/workspace-size.adoc[].
 
-Return to the xref:cloudBeta:resource-manager:index.adoc[] page or xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.
+Return to the xref:cloud4:resource-manager:index.adoc[] page or xref:cloud4:overview:index.adoc[Overview] page for a different topic.
 
 
 

@@ -65,5 +65,5 @@ image::graph.png[width=300]
 
 == Next Steps
 
-Return to the  xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.
+Return to the  xref:cloud4:overview:index.adoc[Overview] page for a different topic.
 

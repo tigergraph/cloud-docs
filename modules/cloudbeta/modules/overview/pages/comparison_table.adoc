@@ -98,6 +98,6 @@ Here are some differences between the different TigerGraph offerings.
 
 == Next Steps
 
-Next, see xref:cloudBeta:get-started:index.adoc[] to unlock its full potential.
+Next, see xref:cloud4:get-started:index.adoc[] to unlock its full potential.
 
-Return to xref:cloudBeta:overview:index.adoc[TigerGraph Cloud 4] for another topic.
+Return to xref:cloud4:overview:index.adoc[TigerGraph Cloud 4] for another topic.

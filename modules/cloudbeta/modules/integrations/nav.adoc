@@ -3,6 +3,6 @@
 ** xref:add-ons.adoc[]
 *** xref:graphstudio.adoc[]
 *** xref:insights.adoc[]
-*** xref:cloudBeta:integrations:graphql.adoc[]
+*** xref:cloud4:integrations:graphql.adoc[]
 
 

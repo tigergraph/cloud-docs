@@ -2,7 +2,7 @@
 :experimental:
 
 == Contact Us
-If you have any questions, please contact us at beta-support@tigergraph.com.
+If you have any questions, please contact us at support@tigergraph.com.
 
 //Look to the terms and conditions
 //Email the address

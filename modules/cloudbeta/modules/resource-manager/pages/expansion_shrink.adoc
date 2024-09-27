@@ -50,9 +50,9 @@ It is recommended to schedule the expansion or shrink during a time when minimal
 
 == Next Steps
 
-Next, learn more about how to xref:cloudBeta:resource-manager:backup-and-restore.adoc[], xref:cloudBeta:resource-manager:connect_via_api.adoc[], or xref:cloudBeta:resource-manager:monitor_workspaces.adoc[].
+Next, learn more about how to xref:cloud4:resource-manager:backup-and-restore.adoc[], xref:cloud4:resource-manager:connect_via_api.adoc[], or xref:cloud4:resource-manager:monitor_workspaces.adoc[].
 
-Return to the xref:cloudBeta:resource-manager:index.adoc[] page or xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.
+Return to the xref:cloud4:resource-manager:index.adoc[] page or xref:cloud4:overview:index.adoc[Overview] page for a different topic.
 
 
 

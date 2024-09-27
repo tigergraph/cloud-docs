@@ -12,14 +12,14 @@ A visual representation of a graph and its data can help identify and explain th
 
 == Prerequisites
 
-Before you can utilize the Explore Graph features you need to xref:cloudBeta:resource-manager:how2-create-a-workgroup.adoc[Create a Workspace] and xref:cloudBeta:load-data:index.adoc[Load Data].
+Before you can utilize the Explore Graph features you need to xref:cloud4:resource-manager:how2-create-a-workgroup.adoc[Create a Workspace] and xref:cloud4:load-data:index.adoc[Load Data].
 
-== xref:cloudBeta:explore-graph:how2-use-pattern-search.adoc[]
+== xref:cloud4:explore-graph:how2-use-pattern-search.adoc[]
 
 Learn how look for specific patterns or sequences within a dataset or system.
 
 == Next Steps
 
-Next, checkout the xref:cloudBeta:integrations:index.adoc[].
+Next, checkout the xref:cloud4:integrations:index.adoc[].
 
-Or return to the  xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.
+Or return to the  xref:cloud4:overview:index.adoc[Overview] page for a different topic.

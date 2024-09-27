@@ -21,7 +21,7 @@ TigerGraph Cloud 4 is still in beta release and the documentation is in progress
 [IMPORTANT]
 ====
 TigerGraph Cloud 4 beta is for personal or R&D use and not for production use.
-Please see xref:cloudBeta:resources:terms_conditions.adoc[].
+Please see xref:cloud4:resources:terms_conditions.adoc[].
 ====
 
 == Get to Know Your TigerGraph Cloud
@@ -32,10 +32,10 @@ Please see xref:cloudBeta:resources:terms_conditions.adoc[].
 image:getstarted-homecard.png[alt=getstarted,width=74,height=74]
 *Get Started*
 
-xref:cloudBeta:get-started:index.adoc[Get Started] using TigerGraph Cloud 4 or explore key features in our xref:overview:overview.adoc[].
+xref:cloud4:get-started:index.adoc[Get Started] using TigerGraph Cloud 4 or explore key features in our xref:overview:overview.adoc[].
 
 xref:get-started:how2-signup.adoc[How to Sign Up] |
-xref:cloudBeta:get-started:how2-login.adoc[]
+xref:cloud4:get-started:how2-login.adoc[]
 ¦
 image:insights.png[alt=workspace,width=74,height=74]
 *Workgroups and Workspaces*
@@ -62,7 +62,7 @@ xref:load-data:load-from-other-sources.adoc[Other Sources]
 image:TG_Icon_Library-135.png[alt=schemadesigner,width=74,height=74]
 *Schema Designer*
 
-xref:cloudBeta:schema-designer:index.adoc[] teaches you how to you can easily modify and manage the schema of your graph databases using Schema Designer UI.
+xref:cloud4:schema-designer:index.adoc[] teaches you how to you can easily modify and manage the schema of your graph databases using Schema Designer UI.
 
 ¦
 image:schema-homecard.png[alt=gsqlEditor,width=74,height=74]
@@ -87,36 +87,36 @@ image:ArchtectureOverview-homecard.png[alt=integration,width=74,height=74]
 TigerGraph Cloud 4 offers several powerful integration tools.
 
 xref:integrations:index.adoc[Overview] |
-xref:cloudBeta:integrations:insights.adoc[] |
-xref:cloudBeta:integrations:graphstudio.adoc[] |
-xref:cloudBeta:integrations:graphql.adoc[]
+xref:cloud4:integrations:insights.adoc[] |
+xref:cloud4:integrations:graphstudio.adoc[] |
+xref:cloud4:integrations:graphql.adoc[]
 ¦
 image:edtions-homecard.png[alt=billing,width=74,height=74]
 *Administration*
 
 Here you can learn about the tools available for organizational administrators.
 
-xref:cloudBeta:administration:index.adoc[Overview] |
-xref:cloudBeta:administration:how2-invite-users.adoc[] |
-xref:cloudBeta:administration:how2-access-mgnt.adoc[] |
-xref:cloudBeta:administration:how2-use-organization-mgnt.adoc[Org Management]
+xref:cloud4:administration:index.adoc[Overview] |
+xref:cloud4:administration:how2-invite-users.adoc[] |
+xref:cloud4:administration:how2-access-mgnt.adoc[] |
+xref:cloud4:administration:how2-use-organization-mgnt.adoc[Org Management]
 ¦
 image:security-homecard.png[alt=security,width=74,height=74]
 *Security*
 
 Learn about xref:security:index.adoc[] in TigerGraph Cloud 4.
 
-xref:cloudBeta:security:password-policy.adoc[] |
-xref:cloudBeta:security:idp.adoc[]
+xref:cloud4:security:password-policy.adoc[] |
+xref:cloud4:security:idp.adoc[]
 ¦
 image:billing-homecard.png[alt=billing,width=74,height=74]
 *Billing*
 
 The xref:billing-manager:index.adoc[Billing] window allows users to pay only for their specific usage of storage, data access, and compute resources.
 
-xref:cloudBeta:billing-manager:payment-methods.adoc[] |
-xref:cloudBeta:billing-manager:invoices.adoc[] |
-xref:cloudBeta:billing-manager:pricing.adoc[]
+xref:cloud4:billing-manager:payment-methods.adoc[] |
+xref:cloud4:billing-manager:invoices.adoc[] |
+xref:cloud4:billing-manager:pricing.adoc[]
 ¦
 image:referece-homecard.png[alt=support,width=74,height=74]
 *Release Notes*
@@ -128,8 +128,8 @@ image:documentation-homecard.png[alt=support,width=74,height=74]
 
 View any additional xref:resources:index.adoc[Resources] for TigerGraph Cloud 4.
 
-xref:cloudBeta:resources:glossary.adoc[] |
-xref:cloudBeta:resources:terms_conditions.adoc[ Beta Terms and Conditions] |
-xref:cloudBeta:resources:support.adoc[]
+xref:cloud4:resources:glossary.adoc[] |
+xref:cloud4:resources:terms_conditions.adoc[ Beta Terms and Conditions] |
+xref:cloud4:resources:support.adoc[]
 
 |===

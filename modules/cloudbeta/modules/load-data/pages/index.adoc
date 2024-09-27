@@ -47,22 +47,22 @@ image::load-data:Screenshot 2024-04-25 at 12.31.39 (1).png[width=300]
 Step-by step-support will be added for all sources, but during the beta release only btn:[Local File] and btn:[AWS S3] is supported with step-by-step.
 ====
 
-== xref:cloudBeta:load-data:load-from-local.adoc[]
+== xref:cloud4:load-data:load-from-local.adoc[]
 
 Check out our step-by-step guide on loading data from a local file.
 
-== xref:cloudBeta:load-data:load-from-cloud.adoc[]
+== xref:cloud4:load-data:load-from-cloud.adoc[]
 
 Check out our step-by-step guide on loading data from a AWS s3.
 
 
-== xref:cloudBeta:load-data:load-from-other-sources.adoc[]
+== xref:cloud4:load-data:load-from-other-sources.adoc[]
 
 Here you can check out the status of loading data form other sources in TigerGraph Cloud 4.
-Or check out our xref:cloudBeta:load-data:jdbc.adoc[].
+Or check out our xref:cloud4:load-data:jdbc.adoc[].
 
 == Next Steps
-Next, learn more about how to xref:cloudBeta:schema-designer:index.adoc[].
+Next, learn more about how to xref:cloud4:schema-designer:index.adoc[].
 
-Or return to the xref:cloudBeta:resource-manager:index.adoc[] page or xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.
+Or return to the xref:cloud4:resource-manager:index.adoc[] page or xref:cloud4:overview:index.adoc[Overview] page for a different topic.
 

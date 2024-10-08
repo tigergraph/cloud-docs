@@ -8,7 +8,7 @@
 === 2024-09-29
 ==== General
 
-* Release xref:tigergraph-server:4.1:release-notes.adoc[TigerGraph DB 4.1.0] on TigerGraph Cloud 4.
+* Release xref:4.1@tigergraph-server:release-notes:index.adoc[TigerGraph Server 4.1 Preview] on TigerGraph Cloud 4.
 
 ==== Workspace Enhancements
 

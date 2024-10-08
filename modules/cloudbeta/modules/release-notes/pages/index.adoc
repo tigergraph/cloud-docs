@@ -4,13 +4,44 @@
 :toc:
 :toclevels:2
 
-== 2024-09-29
-=== 4.1.0
+== Sep 2024
+=== 2024-09-29
+==== General
 
+* Release xref:tigergraph-server:4.1:release-notes.adoc[TigerGraph DB 4.1.0] on TigerGraph Cloud 4.
 
+==== Workspace Enhancements
 
-== TigerGraph Cloud 4.0.0 (Beta) was released on Monday, April 29th, 2024.
-=== 4.0.0
+* Read-only and Read-write Workspaces: Introducing the flexibility of read-only and read-write workspaces, allowing for better collaboration and control over workspace access permissions.
+** Syncing Read-only Data with Read-write: Enable synchronization of read-only data with read-write workspaces, ensuring consistency across different workspace types.
+** Built-in Read-only Algorithms: Run built-in read-only algorithms on read-only workspaces, empowering users to leverage algorithmic capabilities for analysis and insights.
+* Capacity Planning: Benefit from capacity planning features that help you estimate and plan your workspace size and cost more efficiently.
+// * Scheduled Workspace Expansion and Shrink: Schedule workspace expansion and shrink operations to align with your usage patterns and optimize resource allocation.
+* Support HA with Cross-Zone Resiliency: Ensure business continuity and minimize downtime with the introduction of cross-zone high availability support, allowing you to deploy and manage resilient graph database clusters across multiple availability zones for enhanced fault tolerance and disaster recovery capabilities.
+* Output to AWS S3: Benefit from integration with AWS S3 for data output, enabling you to store and retrieve data from Amazon S3 buckets directly from your TigerGraph Cloud environment.
+
+==== GSQL Editor Enhancements
+
+* Improved User Interface: The GSQL Editor has undergone a significant facelift, providing a more intuitive and user-friendly interface for writing and executing GSQL queries.
+* Syntax Highlighting: Enjoy enhanced code readability with syntax highlighting for GSQL queries, making it easier to identify keywords, variables, and functions.
+* Auto-Completion: Boost your productivity with auto-completion suggestions that help you write GSQL queries faster and with fewer errors.
+
+==== Data Loading and Solution Kits
+
+* Enhanced Data Loading Capabilities: Experience faster and more efficient data loading processes with optimized performance and reliability.
+* Solution Kits: Explore an expanded collection of solution kits tailored to specific use cases, providing pre-built templates and workflows for accelerated graph database development.
+* Customizable UDF: Customize user-defined functions (UDFs) to extend the functionality of your graph database workspaces, enabling you to implement custom logic and algorithms for advanced analytics and insights.
+
+==== Observability Improvements
+
+* Enhanced Monitoring Tools: Gain deeper insights into your TigerGraph Cloud environment with improved monitoring tools, allowing you to track performance metrics and diagnose issues effectively.
+* Alerting System: Stay informed about critical events and performance anomalies through the new alerting system, enabling proactive management of your graph database workspaces.
+
+==== Other Enhancements
+* Network Configuration:  Set up IP allow lists to protect your workspaces, allowing you to control access and enhance the security of your graph database workspaces.
+* API Key Support: Enable APIs to operate on TigerGraph Cloud workspaces by providing support for API keys, enhancing the flexibility and security of interacting with your graph database through APIs. 
+
+== TigerGraph Cloud 4 (Beta) was released on Monday, April 29th, 2024.
 
 //* xref:cloud4:get-started:index.adoc[Get Started] using TigerGraph Cloud with the 4.0.
 * xref:cloud4:overview:overview.adoc#_separation_of_storage_and_compute[Separation of Storage and Compute] - Introduction of a unique architecture that separates storage and compute, allowing users to scale resources independently.

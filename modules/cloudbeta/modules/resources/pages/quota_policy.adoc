@@ -1,4 +1,4 @@
-= 4.0 Beta Phase Quota Restriction Policy
+= TigerGraph Cloud 4 Beta Phase Quota Restriction Policy
 
 == Objective
 To establish a fair-use policy that ensures equitable access to resources during the beta phase of TigerGraph Cloud 4, while preventing abuse and over-utilization of shared infrastructure.

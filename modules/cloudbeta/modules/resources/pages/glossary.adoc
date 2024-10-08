@@ -29,6 +29,13 @@ One virtual machine or virtual server.
 
 An internal TigerGraph characteristic of a TigerGraph cluster that determines how the data in the database will be distributed
 
+== read-only workspace
+
+A workspace where only read operations are allowed. It is optimized for read-intensive operations.
+
+== read-write workspace
+
+A workspace that allows read and write operations on the graph data.
 
 == replication factor
 
@@ -74,6 +81,14 @@ A network between two VPCs allowing instances to communicate as if they are on t
 == web shell
 
 A browser-accessible command line for running GSQL commands on a TigerGraph Cloud cluster.
+
+== workgroup
+
+A workgroup represents a project or a logical group within TigerGraph Cloud. It serves as a container that holds multiple workspaces and databases related to a specific use case, team, or application.
+
+== workspace
+
+A workspace is a compute unit within a TigerGraph database.
 
 //== data topology size
 

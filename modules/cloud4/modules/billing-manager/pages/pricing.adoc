@@ -4,21 +4,56 @@
 
 :provider: AWS
 :region: US-East
-
 .Provider
+[role="provider-selection"]
+++++
+
 <select id="provider" onchange="updatePricing()">
   <option value="AWS">AWS</option>
   <option value="GCP">GCP</option>
   <option value="Azure">Azure</option>
 </select>
 
-.Region
+
 <select id="region" onchange="updatePricing()">
   <option value="US-East">US-East</option>
   <option value="US-West">US-West</option>
   <option value="Europe">Europe</option>
   <option value="Asia-Pacific">Asia-Pacific</option>
 </select>
+
+<div id="pricing-table">
+  <table>
+    <thead>
+      <tr>
+        <th>Size</th>
+        <th>vCPUs</th>
+        <th>Memory (GiB)</th>
+        <th>Price (per hour)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>m5.large</td>
+        <td>2</td>
+        <td>8</td>
+        <td>\$0.096</td>
+      </tr>
+      <tr>
+        <td>m5.xlarge</td>
+        <td>4</td>
+        <td>16</td>
+        <td>\$0.192</td>
+      </tr>
+      <tr>
+        <td>m5.2xlarge</td>
+        <td>8</td>
+        <td>32</td>
+        <td>\$0.384</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 <script>
   const pricingData = {
@@ -61,41 +96,9 @@
     });
   }
 </script>
+++++
 
 == Compute Pricing
-
-<div id="pricing-table">
-  <table>
-    <thead>
-      <tr>
-        <th>Instance Type</th>
-        <th>vCPUs</th>
-        <th>Memory (GiB)</th>
-        <th>Price (per hour)</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>m5.large</td>
-        <td>2</td>
-        <td>8</td>
-        <td>\$0.096</td>
-      </tr>
-      <tr>
-        <td>m5.xlarge</td>
-        <td>4</td>
-        <td>16</td>
-        <td>\$0.192</td>
-      </tr>
-      <tr>
-        <td>m5.2xlarge</td>
-        <td>8</td>
-        <td>32</td>
-        <td>\$0.384</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
 
 [role="pricing-table", cols="4", separator=¦ ]
 |===

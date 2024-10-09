@@ -1,75 +1,61 @@
 = Pricing
 
-== Compute price
+== Select Provider and Region
 
-[cols="4", separator=¦ ]
+[role="selection"]
+.Provider
+[role="provider-selection"]
+* AWS
+* GCP
+* Azure
+
+[role="selection"]
+.Region
+[role="region-selection"]
+* US-East
+* US-West
+* Europe
+* Asia-Pacific
+
+== Compute Pricing
+
+[role="pricing-table", cols="4", separator=¦ ]
 |===
-¦Size ¦VCPU ¦Memory (GB) ¦Price (TCR/hour) Price
+¦Size ¦vCPUs ¦Memory (GiB) ¦Price (TCR/hour) \
 
-¦ TG-00
-¦ 2
-¦ 16
-¦ 0.25
-
-¦ TG-0
-¦ 4
-¦ 32
-¦ 0.5
-
-¦ TG-1
-¦ 8
-¦ 64
-¦ 1
-
-¦ TG-2
-¦ 16
-¦ 128
-¦ 2
-
-¦ TG-4
-¦ 32
-¦ 256
-¦ 4
-
-¦ TG-6
-¦ 48
-¦ 384
-¦ 6
-
-¦ TG-8
-¦ 64
-¦ 512
-¦ 8
-
-¦ TG-12
-¦ 96
-¦ 768
-¦ 12
-
-¦ TG-16
-¦ 128
-¦ 1024
-¦ 16
+¦ TG-00 ¦ 2   ¦ 16    ¦ 0.25
+¦ TG-0  ¦ 4   ¦ 32    ¦ 0.5
+¦ TG-1  ¦ 8   ¦ 64    ¦ 1
+¦ TG-2  ¦ 16  ¦ 128   ¦ 2
+¦ TG-4  ¦ 32  ¦ 256   ¦ 4
+¦ TG-6  ¦ 48  ¦ 384   ¦ 6
+¦ TG-8  ¦ 64  ¦ 512   ¦ 8
+¦ TG-12 ¦ 96  ¦ 768   ¦ 12
+¦ TG-16 ¦ 128 ¦ 1024  ¦ 16
 
 |===
 
-== Add-on Prices
+== Storage Pricing
 
 [cols="3", separator=¦ ]
 |===
 ¦Add-On ¦Scope ¦Price
 
-¦ Insights
-¦ Workspace
-¦ 10% of the workspace usage.
+¦ Insights ¦ Workspace ¦ 10% of the workspace usage.
+¦ GraphStudio ¦ Workspace ¦ Free
+¦ GraphQL ¦ Workspace ¦ Free
 
-¦ GraphStudio
-¦ Workspace
-¦ Free
+|===
 
-¦ GraphQL
-¦ Workspace
-¦ Free
+== Add-on Pricing
+
+[cols="3", separator=¦ ]
+|===
+¦Add-On ¦Scope ¦Price
+
+¦ Insights ¦ Workspace ¦ 10% of the workspace usage.
+¦ GraphStudio ¦ Workspace ¦ Free
+¦ GraphQL ¦ Workspace ¦ Free
 
 |===
 

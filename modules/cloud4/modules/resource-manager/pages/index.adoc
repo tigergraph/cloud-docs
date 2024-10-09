@@ -29,7 +29,7 @@ Learn xref:workspaces/how2-create-a-workspace.adoc[] and unlock its many feature
 
 Such as:
 
-* xref:cloud4:resource-manager:workspaces/advanced-settings/advanced-settings.adoc[]
+* xref:cloud4:resource-manager:workspaces/workspace-settings/workspace-settings.adoc[]
 -
 Learn how advanced settings in workspace allow users to customize and fine-tune various aspects of their workspace configuration.
 

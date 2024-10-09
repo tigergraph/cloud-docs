@@ -4,7 +4,7 @@
 *** xref:how2-workgroup-access.adoc[Workgroup Access]
 ** xref:workspaces/workspace.adoc[Workspaces]
 *** xref:workspaces/how2-create-a-workspace.adoc[Create Workspace]
-*** xref:workspaces/advanced-settings/advanced-settings.adoc[Advanced Settings]
+*** xref:workspaces/workspace-settings/workspace-settings.adoc[Workspace Settings]
 *** xref:workspaces/writeread_readonly.adoc[RW/RO Workspaces]
 *** xref:cloud4:resource-manager:workspaces/workspace-size.adoc[]
 *** xref:expansion_shrink.adoc[Expand and Shrink]

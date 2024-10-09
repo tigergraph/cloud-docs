@@ -30,7 +30,7 @@ image::workspaceDetails.png[]
 +
 . For supported workspace sizes, please go to the Workspace Size page.
 
-. For advanced settings please refer to xref:cloud4:resource-manager:workspaces/advanced-settings/advanced-settings.adoc[] page.
+. For advanced settings please refer to xref:cloud4:resource-manager:workspaces/workspace-settings/workspace-settings.adoc[] page.
 
 . Specify database name or attach to an existing database.
 
@@ -68,6 +68,6 @@ image::workspace-database-tab.png[]
 
 == Next Steps
 
-Now, that you have a workspace created see xref:cloud4:resource-manager:workspaces/advanced-settings/advanced-settings.adoc[] or learn more about xref:cloud4:resource-manager:workspaces/writeread_readonly.adoc[].
+Now, that you have a workspace created see xref:cloud4:resource-manager:workspaces/workspace-settings/workspace-settings.adoc[] or learn more about xref:cloud4:resource-manager:workspaces/writeread_readonly.adoc[].
 
 Return to the xref:cloud4:resource-manager:index.adoc[] page or xref:cloud4:overview:index.adoc[Overview] page for a different topic.

@@ -1,5 +1,7 @@
 = Pricing
 
+TigerGraph Cloud 4 offers a flexible and transparent pricing model designed to accommodate a wide range of usage scenarios, from small-scale projects to large enterprise deployments. Our pricing structure is crafted to provide you with the best value while ensuring your graph database solutions are scalable, reliable, and high-performing.
+
 == Select Platform and Region
 :provider: AWS
 :region: us-east-1
@@ -38,8 +40,17 @@ Platform
 
 == Compute Pricing
 
-Compute resources on TigerGraph Cloud consume a fixed number of TigerGraph Credits (TCR) per hour and can be scaled up or down to adjust performance levels. These compute costs are distinct from the storage fees listed here and are metered based on actual usage. For inquiries about pricing, volume discounts, or deploying in other regions, please contact us.
+=== TigerGraph Credits
+Compute resources on TigerGraph Cloud 4 consume a fixed number of TigerGraph Credits (TCR) per hour and can be scaled up or down to adjust performance levels. 
+[cols="2", separator=¦ ]
+|===
+¦ 1 TCR = ¦ $4.00
 
+|===
+
+=== Compute Pricing Table
+
+The compute costs are distinct from the storage fees listed below and are metered based on actual usage. For inquiries about pricing, volume discounts, or deploying in other regions, please contact us at sales@tigergraph.com.
 
 ++++
 
@@ -59,62 +70,37 @@ Compute resources on TigerGraph Cloud consume a fixed number of TigerGraph Credi
 <th class="tableblock halign-left valign-top">Price (TCR/hour) </th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">TG-00</p></td>
+<tbody><tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-00</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">16</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0.25</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">TG-0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.25</p></td></tr><tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-0</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">32</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0.5</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">TG-1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.50</p></td></tr><tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-1</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">64</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">TG-2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">16</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">128</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">TG-4</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">32</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">256</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">TG-6</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">48</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">384</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">6</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">TG-8</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">64</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">512</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.00</p></td></tr><tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-2</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">TG-12</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">96</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">768</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">12</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">TG-16</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">128</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1024</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">16</p></td>
-</tr>
-</tbody>
+<td class="tableblock halign-left valign-top"><p class="tableblock">64</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.00</p></td></tr><tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">64</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4.00</p></td></tr><tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">64</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6.00</p></td></tr><tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">64</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8.00</p></td></tr><tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">64</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16.00</p></td></tr><tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-24</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">64</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24.00</p></td></tr><tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-32</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">64</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">32.00</p></td></tr></tbody>
 </table>
 </div>
 
@@ -180,9 +166,23 @@ Compute resources on TigerGraph Cloud consume a fixed number of TigerGraph Credi
 </script>
 ++++
 
+
+
+=== High Availability (HA)
+
+High Availability (HA) on TigerGraph Cloud 4 ensures your graph database remains operational even during disruptions. When HA is enabled, the price is calculated using a multiplier. This multiplier is based on the size of your TigerGraph compute resource.
+
+[cols="2", separator=¦ ]
+|===
+¦ Compute Resource Size ¦ Mutiplier
+¦ Sizes equals or below TG-8 ¦ 2.8x
+¦ Sizes above TG-8 ¦ 1.95x 
+
+|===
+
 == Storage Pricing
 
-Storage on TigerGraph Cloud is billed separately from compute resources. Storage fees are calculated based on the amount of data stored and are metered with fine-grained precision to ensure you only pay for what you use. This includes the storage of your graph data, backups, and any associated metadata. Our storage pricing is designed to be transparent and flexible, allowing you to scale your storage needs up or down as required.
+Storage on TigerGraph Cloud 4 is billed separately from compute resources. Storage fees are calculated based on the amount of data stored and are metered with fine-grained precision to ensure you only pay for what you use. This includes the storage of your graph data, backups, and any associated metadata. Our storage pricing is designed to be transparent and flexible, allowing you to scale your storage needs up or down as required.
 
 [cols="2", separator=¦ ]
 |===
@@ -197,7 +197,7 @@ Storage on TigerGraph Cloud is billed separately from compute resources. Storage
 |===
 
 == Add-on Pricing
-
+TigerGraph Cloud 4 offers a variety of add-ons to enhance your graph database experience. Each add-on is priced individually, allowing you to customize your TigerGraph Cloud environment to fit your specific needs and budget. Add-ons are billed monthly and can be added or removed at any time to provide maximum flexibility. Learn more about the available add-ons at xref:integrations:add-ons.adoc[here].
 [cols="3", separator=¦ ]
 |===
 ¦Add-On ¦Scope ¦Price

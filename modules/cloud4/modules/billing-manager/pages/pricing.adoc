@@ -1,73 +1,151 @@
 = Pricing
 
-== Select Provider and Region
-
+== Select Platform and Region
 :provider: AWS
-:region: US-East
-.Provider
-[role="provider-selection"]
+:region: us-east-1
 ++++
-
+Platform
 <select id="provider" onchange="updatePricing()">
   <option value="AWS">AWS</option>
-  <option value="GCP">GCP</option>
-  <option value="Azure">Azure</option>
+  <option value="GCP" disabled>GCP (Coming soon)</option>
+  <option value="Azure" disabled>Azure (Coming soon)</option>
 </select>
 
-
+Region
 <select id="region" onchange="updatePricing()">
-  <option value="US-East">US-East</option>
-  <option value="US-West">US-West</option>
-  <option value="Europe">Europe</option>
-  <option value="Asia-Pacific">Asia-Pacific</option>
+  <option value="us-east-1">US East (N. Virginia) - Tier 1</option>
+  <option value="us-east-2">US East (Ohio) - Tier 1</option>
+  <option value="us-west-2">US West (Oregon) - Tier 1</option>
+  <option value="eu-central-1">Europe (Frankfurt) - Tier 3</option>
+  <option value="eu-west-1">Europe (Ireland) - Tier 2</option>
+  <option value="eu-west-2">Europe (London) - Tier 2</option>
+  <option value="eu-west-3">Europe (Paris) - Tier 2</option>
+  <option value="eu-north-1">Europe (Stockholm) - Tier 2</option>
+  <option value="sa-east-1">South America (Sao Paulo) - Tier 4</option>
+  <option value="ca-central-1">Canada (Central) - Tier 2</option>
+  <option value="ap-southeast-3">Asia Pacific (Jakarta) - Tier 3</option>
+  <option value="ap-south-1">Asia Pacific (Mumbai) - Tier 2</option>
+  <option value="ap-northeast-2">Asia Pacific (Seoul) - Tier 3</option>
+  <option value="ap-southeast-1">Asia Pacific (Singapore) - Tier 3</option>
+  <option value="ap-southeast-2">Asia Pacific (Sydney) - Tier 3</option>
+  <option value="ap-northeast-1">Asia Pacific (Tokyo) - Tier 3</option>
 </select>
 
-<div id="pricing-table">
-  <table>
-    <thead>
-      <tr>
-        <th>Size</th>
-        <th>vCPUs</th>
-        <th>Memory (GiB)</th>
-        <th>Price (per hour)</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>m5.large</td>
-        <td>2</td>
-        <td>8</td>
-        <td>\$0.096</td>
-      </tr>
-      <tr>
-        <td>m5.xlarge</td>
-        <td>4</td>
-        <td>16</td>
-        <td>\$0.192</td>
-      </tr>
-      <tr>
-        <td>m5.2xlarge</td>
-        <td>8</td>
-        <td>32</td>
-        <td>\$0.384</td>
-      </tr>
-    </tbody>
-  </table>
+++++
+
+== Compute Pricing
+
+Compute resources on TigerGraph Cloud consume a fixed number of TigerGraph Credits (TCR) per hour and can be scaled up or down to adjust performance levels. These compute costs are distinct from the storage fees listed here and are metered based on actual usage. For inquiries about pricing, volume discounts, or deploying in other regions, please contact us.
+
+
+++++
+
+<div id="pricing-table" class="sectionbody">
+<table class="tableblock frame-all grid-all stretch pricing-table">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Size</th>
+<th class="tableblock halign-left valign-top">vCPUs</th>
+<th class="tableblock halign-left valign-top">Memory (GB)</th>
+<th class="tableblock halign-left valign-top">Price (TCR/hour) </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TG-00</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.25</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TG-0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">32</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.5</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TG-1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">64</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TG-2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">128</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TG-4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">32</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">256</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TG-6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">48</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">384</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TG-8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">64</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">512</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TG-12</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">96</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">768</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TG-16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">128</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1024</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 
 <script>
+  const basePrices = [
+            { size: 'TG-00', vcpus: 2, memory: 16, price: 0.25 },
+            { size: 'TG-0', vcpus: 4, memory: 32, price: 0.5 },
+            { size: 'TG-1', vcpus: 8, memory: 64, price: 1 },
+            { size: 'TG-2', vcpus: 8, memory: 64, price: 2 },
+            { size: 'TG-4', vcpus: 8, memory: 64, price: 4 },
+            { size: 'TG-6', vcpus: 8, memory: 64, price: 6 },
+            { size: 'TG-8', vcpus: 8, memory: 64, price: 8 },
+            { size: 'TG-16', vcpus: 8, memory: 64, price: 16 },
+            { size: 'TG-24', vcpus: 8, memory: 64, price: 24 },
+            { size: 'TG-32', vcpus: 8, memory: 64, price: 32 },
+        ];
   const pricingData = {
     'AWS': {
-      'US-East': [
-        { type: 'm5.large', vcpus: 2, memory: 8, price: '\$0.096' },
-        { type: 'm5.xlarge', vcpus: 4, memory: 16, price: '\$0.192' },
-        { type: 'm5.2xlarge', vcpus: 8, memory: 32, price: '\$0.384' }
-      ],
-      'US-West': [
-        { type: 'm5.large', vcpus: 2, memory: 8, price: '\$0.098' },
-        { type: 'm5.xlarge', vcpus: 4, memory: 16, price: '\$0.194' },
-        { type: 'm5.2xlarge', vcpus: 8, memory: 32, price: '\$0.386' }
-      ]
+      'us-east-1': { 'tier': 1, 'multiplier': 1, },
+      'us-east-2': { 'tier': 1, 'multiplier': 1, },
+      'us-west-2': { 'tier': 1, 'multiplier': 1, },
+      'eu-central-1': { 'tier': 3, 'multiplier': 1.250, },
+      'eu-west-1': { 'tier': 2, 'multiplier': 1.125, },
+      'eu-west-2': { 'tier': 2, 'multiplier': 1.125, },
+      'eu-west-3': { 'tier': 2, 'multiplier': 1.125, },
+      'eu-north-1': { 'tier': 2, 'multiplier': 1.125, },
+      'sa-east-1': { 'tier': 4, 'multiplier': 1.375, },
+      'ca-central-1': { 'tier': 2, 'multiplier': 1.125, },
+      'ap-southeast-3': { 'tier': 3, 'multiplier': 1.250, },
+      'ap-south-1': { 'tier': 2, 'multiplier': 1.125, },
+      'ap-northeast-2': { 'tier': 3, 'multiplier': 1.250, },
+      'ap-southeast-1': { 'tier': 3, 'multiplier': 1.250, },
+      'ap-southeast-2': { 'tier': 3, 'multiplier': 1.250, },
+      'ap-northeast-1': { 'tier': 3, 'multiplier': 1.250, },
     },
     'GCP': {
       // Add GCP pricing data here
@@ -86,45 +164,32 @@
     pricingTable.innerHTML = '';
 
     // Populate new rows based on selection
-    const prices = pricingData[provider][region];
-    prices.forEach(price => {
+    const tier = pricingData[provider][region]['tier'];
+    const multiplier = pricingData[provider][region]['multiplier'];
+    basePrices.forEach(price => {
       const row = pricingTable.insertRow();
-      row.insertCell(0).innerText = price.type;
-      row.insertCell(1).innerText = price.vcpus;
-      row.insertCell(2).innerText = price.memory;
-      row.insertCell(3).innerText = price.price;
+      row.innerHTML = `<td class="tableblock halign-left valign-top"><p class="tableblock">`+price.type+`</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">`+price.vcpus+`</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">`+price.memory+`</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">`+price.price * multiplier+`</p></td>`;
     });
   }
 </script>
 ++++
 
-== Compute Pricing
-
-[role="pricing-table", cols="4", separator=¦ ]
-|===
-¦Size ¦vCPUs ¦Memory (GiB) ¦Price (TCR/hour) \
-
-¦ TG-00 ¦ 2   ¦ 16    ¦ 0.25
-¦ TG-0  ¦ 4   ¦ 32    ¦ 0.5
-¦ TG-1  ¦ 8   ¦ 64    ¦ 1
-¦ TG-2  ¦ 16  ¦ 128   ¦ 2
-¦ TG-4  ¦ 32  ¦ 256   ¦ 4
-¦ TG-6  ¦ 48  ¦ 384   ¦ 6
-¦ TG-8  ¦ 64  ¦ 512   ¦ 8
-¦ TG-12 ¦ 96  ¦ 768   ¦ 12
-¦ TG-16 ¦ 128 ¦ 1024  ¦ 16
-
-|===
-
 == Storage Pricing
 
-[cols="3", separator=¦ ]
-|===
-¦Add-On ¦Scope ¦Price
+Storage on TigerGraph Cloud is billed separately from compute resources. Storage fees are calculated based on the amount of data stored and are metered with fine-grained precision to ensure you only pay for what you use. This includes the storage of your graph data, backups, and any associated metadata. Our storage pricing is designed to be transparent and flexible, allowing you to scale your storage needs up or down as required.
 
-¦ Insights ¦ Workspace ¦ 10% of the workspace usage.
-¦ GraphStudio ¦ Workspace ¦ Free
-¦ GraphQL ¦ Workspace ¦ Free
+[cols="2", separator=¦ ]
+|===
+¦ Tier ¦ Price per TB per Month
+
+¦ Tier 1 ¦ $25.00 
+¦ Tier 2 ¦ $27.13 
+¦ Tier 3 ¦ $28.25 
+¦ Tier 4 ¦ $43.75 
+¦ BYOC ¦ Billed From Your Cloud Provider
 
 |===
 

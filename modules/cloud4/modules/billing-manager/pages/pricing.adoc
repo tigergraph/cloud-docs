@@ -4,15 +4,18 @@
 :provider: AWS
 :region: us-east-1
 ++++
+
+<div class="paragraph">
+<span>
 Platform
-<select id="provider" onchange="updatePricing()">
+<select id="provider" style="height:30px; width: 200px" onchange="updatePricing()">
   <option value="AWS">AWS</option>
   <option value="GCP" disabled>GCP (Coming soon)</option>
   <option value="Azure" disabled>Azure (Coming soon)</option>
-</select>
+</select></span>
 
-Region
-<select id="region" onchange="updatePricing()">
+<span style="margin-left:20px;">Region
+<select id="region" style="height:30px; width: 200px" onchange="updatePricing()">
   <option value="us-east-1">US East (N. Virginia) - Tier 1</option>
   <option value="us-east-2">US East (Ohio) - Tier 1</option>
   <option value="us-west-2">US West (Oregon) - Tier 1</option>
@@ -29,8 +32,8 @@ Region
   <option value="ap-southeast-1">Asia Pacific (Singapore) - Tier 3</option>
   <option value="ap-southeast-2">Asia Pacific (Sydney) - Tier 3</option>
   <option value="ap-northeast-1">Asia Pacific (Tokyo) - Tier 3</option>
-</select>
-
+</select></span>
+</div>
 ++++
 
 == Compute Pricing
@@ -168,10 +171,10 @@ Compute resources on TigerGraph Cloud consume a fixed number of TigerGraph Credi
     const multiplier = pricingData[provider][region]['multiplier'];
     basePrices.forEach(price => {
       const row = pricingTable.insertRow();
-      row.innerHTML = `<td class="tableblock halign-left valign-top"><p class="tableblock">`+price.type+`</p></td>
+      row.innerHTML = `<td class="tableblock halign-left valign-top"><p class="tableblock">`+price.size+`</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">`+price.vcpus+`</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">`+price.memory+`</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">`+price.price * multiplier+`</p></td>`;
+<td class="tableblock halign-left valign-top"><p class="tableblock">`+ (price.price * multiplier).toFixed(2) +`</p></td>`;
     });
   }
 </script>

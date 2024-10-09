@@ -2,22 +2,100 @@
 
 == Select Provider and Region
 
-[role="selection"]
-.Provider
-[role="provider-selection"]
-* AWS
-* GCP
-* Azure
+:provider: AWS
+:region: US-East
 
-[role="selection"]
+.Provider
+<select id="provider" onchange="updatePricing()">
+  <option value="AWS">AWS</option>
+  <option value="GCP">GCP</option>
+  <option value="Azure">Azure</option>
+</select>
+
 .Region
-[role="region-selection"]
-* US-East
-* US-West
-* Europe
-* Asia-Pacific
+<select id="region" onchange="updatePricing()">
+  <option value="US-East">US-East</option>
+  <option value="US-West">US-West</option>
+  <option value="Europe">Europe</option>
+  <option value="Asia-Pacific">Asia-Pacific</option>
+</select>
+
+<script>
+  const pricingData = {
+    'AWS': {
+      'US-East': [
+        { type: 'm5.large', vcpus: 2, memory: 8, price: '\$0.096' },
+        { type: 'm5.xlarge', vcpus: 4, memory: 16, price: '\$0.192' },
+        { type: 'm5.2xlarge', vcpus: 8, memory: 32, price: '\$0.384' }
+      ],
+      'US-West': [
+        { type: 'm5.large', vcpus: 2, memory: 8, price: '\$0.098' },
+        { type: 'm5.xlarge', vcpus: 4, memory: 16, price: '\$0.194' },
+        { type: 'm5.2xlarge', vcpus: 8, memory: 32, price: '\$0.386' }
+      ]
+    },
+    'GCP': {
+      // Add GCP pricing data here
+    },
+    'Azure': {
+      // Add Azure pricing data here
+    }
+  };
+
+  function updatePricing() {
+    const provider = document.getElementById('provider').value;
+    const region = document.getElementById('region').value;
+    const pricingTable = document.getElementById('pricing-table').getElementsByTagName('tbody')[0];
+
+    // Clear existing rows
+    pricingTable.innerHTML = '';
+
+    // Populate new rows based on selection
+    const prices = pricingData[provider][region];
+    prices.forEach(price => {
+      const row = pricingTable.insertRow();
+      row.insertCell(0).innerText = price.type;
+      row.insertCell(1).innerText = price.vcpus;
+      row.insertCell(2).innerText = price.memory;
+      row.insertCell(3).innerText = price.price;
+    });
+  }
+</script>
 
 == Compute Pricing
+
+<div id="pricing-table">
+  <table>
+    <thead>
+      <tr>
+        <th>Instance Type</th>
+        <th>vCPUs</th>
+        <th>Memory (GiB)</th>
+        <th>Price (per hour)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>m5.large</td>
+        <td>2</td>
+        <td>8</td>
+        <td>\$0.096</td>
+      </tr>
+      <tr>
+        <td>m5.xlarge</td>
+        <td>4</td>
+        <td>16</td>
+        <td>\$0.192</td>
+      </tr>
+      <tr>
+        <td>m5.2xlarge</td>
+        <td>8</td>
+        <td>32</td>
+        <td>\$0.384</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 [role="pricing-table", cols="4", separator=¦ ]
 |===

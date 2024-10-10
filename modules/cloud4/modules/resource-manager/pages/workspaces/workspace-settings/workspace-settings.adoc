@@ -8,13 +8,19 @@ Find them by clicking on the btn:[ ... ] button on your workspace next to the bt
 
 image::workspace-general-tab.png[]
 
-A workspace configuration panel will appear on the right of your screen.
+A configuration panel will appear on the right side of your screen.
 
-image::advnaced-settings.png[]
+== General Settings
+
+In the *General* tab, users can configure basic workspace options such as workspace size.
+
+image::general-settings.png[]
 
 == Advanced Settings
 
-Users can choose the desired time intervals for auto-suspend and enable auto-resume to optimize resource usage and ensure a smooth user experience.
+In the *Advanced Settings* tab, users can set the desired time intervals for auto-suspend and enable auto-resume to optimize resource usage and ensure a smooth user experience.
+
+image::advanced-settings-new.png[]
 
 === Auto-Suspend
 
@@ -37,11 +43,10 @@ Adjust the auto-suspend interval accordingly to avoid interrupting critical proc
 
 ==== Auto-Suspend Limitations
 
-.The following operations will not trigger an auto suspend:
-* Any UI tools access.
-* Running any GSQL query.
-* Running loading job.
+.The following operations are not treated as "active" and will not prevent the workspace from being auto-suspended:
 * Configuring the workspace.
+* Monitoring the workspace.
+* Backuping/Restoring the workspace.
 
 === Auto-Resume
 Auto-resume will automatically resume your workspace when activity is detected.

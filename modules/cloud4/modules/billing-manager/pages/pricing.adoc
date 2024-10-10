@@ -39,17 +39,22 @@ Platform
 ++++
 
 == Compute Pricing
+Compute resources on TigerGraph Cloud 4 are billed based on the number of TCRs consumed per hour. 
 
 === TigerGraph Credits
-Compute resources on TigerGraph Cloud 4 consume a fixed number of TigerGraph Credits (TCR) per hour and can be scaled up or down to adjust performance levels. 
-[cols="2", separator=¦ ]
-|===
-¦ 1 TCR = ¦ $4.00
 
-|===
+A TigerGraph Credit (TCR) is a unit that represents the cost of using compute resources on TigerGraph Cloud. By using TCRs, you can easily scale your compute resources up or down to meet your performance needs without worrying about complex pricing structures.
+
+The exchange rate for TigerGraph Credits is straightforward:
+
+.1 TCR = $4.00
+
+
+This means that for every TigerGraph Credit you consume, you will be billed $4.00.
 
 === Compute Pricing Table
 
+The following table outlines the cost in TCRs for different sizes of compute resources.
 The compute costs are distinct from the storage fees listed below and are metered based on actual usage. For inquiries about pricing, volume discounts, or deploying in other regions, please contact us at sales@tigergraph.com.
 
 ++++
@@ -170,13 +175,13 @@ The compute costs are distinct from the storage fees listed below and are metere
 
 === High Availability (HA)
 
-High Availability (HA) on TigerGraph Cloud 4 ensures your graph database remains operational even during disruptions. When HA is enabled, the price is calculated using a multiplier. This multiplier is based on the size of your TigerGraph compute resource.
+High Availability (HA) on TigerGraph Cloud 4 ensures your graph database remains operational even during disruptions. When HA is enabled, the price is calculated using a multiplier based on the size of your TigerGraph compute resource.
 
-[cols="2", separator=¦ ]
+[cols="3", separator=¦ ]
 |===
-¦ Compute Resource Size ¦ Mutiplier
-¦ Sizes equals or below TG-8 ¦ 2.8x
-¦ Sizes above TG-8 ¦ 1.95x 
+¦ Compute Size ¦ Replica Factor ¦ Cost Mutiplier
+¦ Sizes equal or below TG-8 ¦ 3 ¦ 2.8x
+¦ Sizes above TG-8 ¦ 2 ¦ 1.95x 
 
 |===
 
@@ -186,27 +191,28 @@ Storage on TigerGraph Cloud 4 is billed separately from compute resources. Stora
 
 [cols="2", separator=¦ ]
 |===
-¦ Tier ¦ Price per TB per Month
+¦ Tier ¦ Price per average GB per Month
 
-¦ Tier 1 ¦ $25.00 
-¦ Tier 2 ¦ $27.13 
-¦ Tier 3 ¦ $28.25 
-¦ Tier 4 ¦ $43.75 
-¦ BYOC ¦ Billed From Your Cloud Provider
+¦ Tier 1 ¦ $0.025 
+¦ Tier 2 ¦ $0.027 
+¦ Tier 3 ¦ $0.028 
+¦ Tier 4 ¦ $0.044 
+// ¦ BYOC ¦ Billed From Your Cloud Provider
 
 |===
 
 == Add-on Pricing
-TigerGraph Cloud 4 offers a variety of add-ons to enhance your graph database experience. Each add-on is priced individually, allowing you to customize your TigerGraph Cloud environment to fit your specific needs and budget. Add-ons are billed monthly and can be added or removed at any time to provide maximum flexibility. Learn more about the available add-ons at xref:integrations:add-ons.adoc[here].
+TigerGraph Cloud 4 offers a variety of add-ons to enhance your graph database experience. Each add-on is priced individually, allowing you to customize your TigerGraph Cloud environment to fit your specific needs and budget. Add-ons are billed monthly and can be added or removed at any time to provide maximum flexibility. 
 [cols="3", separator=¦ ]
 |===
 ¦Add-On ¦Scope ¦Price
 
-¦ Insights ¦ Workspace ¦ 10% of the workspace usage.
+¦ Insights ¦ Workspace ¦ 10% of the compute usage
 ¦ GraphStudio ¦ Workspace ¦ Free
 ¦ GraphQL ¦ Workspace ¦ Free
 
 |===
+Learn more about the available add-ons xref:integrations:add-ons.adoc[here].
 
 == Next Steps
 

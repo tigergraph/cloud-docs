@@ -16,6 +16,25 @@ In the *General* tab, users can configure basic workspace options such as worksp
 
 image::general-settings.png[]
 
+=== Workspace Size Suggestion
+
+The *Size Suggestion* feature helps users select the appropriate workspace size by specifying the raw data size, compression ratio, and whether High Availability (HA) is enabled.
+
+image::capacity-planning.png[]
+
+How to Use Size Suggestion:
+
+* Raw Data Size: Enter the total size of your raw data in gigabytes (GB).
+* Compression Ratio: Specify the expected compression ratio. This ratio helps estimate the actual memory required after data compression.
+* Enable High Availability (HA): Indicate whether you want to enable High Availability for your workspace. Enabling HA ensures redundancy and improves fault tolerance.
+
+Based on these inputs, the we will recommend an optimal workspace size that balances performance and cost efficiency.
+
+[NOTE]
+====
+The size suggestion is for guidance only. Actual requirements may vary based on specific use cases and data characteristics.
+====
+
 == Advanced Settings
 
 In the *Advanced Settings* tab, users can set the desired time intervals for auto-suspend and enable auto-resume to optimize resource usage and ensure a smooth user experience.
@@ -33,7 +52,7 @@ This helps optimize resource utilization and cost when the workspace is not acti
 
 Choose an appropriate time interval for auto-suspend based on your typical usage patterns.
 
-image::autoSuspend.png[]
+image::auto-suspend.png[]
 
 For example, if your workspace is usually inactive for long periods, you can set a shorter interval for auto-suspend to conserve resources.
 
@@ -44,6 +63,7 @@ Adjust the auto-suspend interval accordingly to avoid interrupting critical proc
 ==== Auto-Suspend Limitations
 
 .The following operations are not treated as "active" and will not prevent the workspace from being auto-suspended:
+* Consuming TigerGraph Cloud Controller APIs
 * Configuring the workspace.
 * Monitoring the workspace.
 * Backuping/Restoring the workspace.
@@ -63,15 +83,32 @@ Auto-resume will kick-in when users access tools and rest APIs.
 ==== Auto-Resume Limitations
 
 .The following endpoints will not trigger auto-resume:
-* TigerGraph Cloud Controller APIs
+* Consuming TigerGraph Cloud Controller APIs
 
 == Add-ons
 
+The *Add-ons* section allows users to enable and disable additional features and integrations based on their needs. This flexibility helps tailor the workspace to specific requirements and enhances functionality.
+
+image::add-on.png[]
+
+For the list of available add-ons and their capabilities, please refer to xref:cloud4:integrations:add-ons.adoc[].
+
+[NOTE]
+====
+Some add-ons may require additional configuration or incur extra costs. Review the documentation for each add-on to understand its capabilities and requirements.
+====
+
 == Alerts
+
+The *Alerts* section allows users to set up notifications for various workspace events. Alerts help monitor the health and performance of your workspace and ensure timely responses to critical events.
+
+image::alerts.png[]
 
 == Graph Admin
 
+The *Graph Admin* section provides access to advanced administrative settings for your graph database. These settings allow you to manage TigerGraph Server settings.
 
+image::graph-admin.png[]
 
 == Next Steps
 

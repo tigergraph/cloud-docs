@@ -74,17 +74,17 @@ You can `create`, `rename`, and/or `delete` these folders as needed to manage yo
 .To create your first folder:
 . Click on the btn:[ Folder] from the btn:[ + ] menu.
 +
-image::Screenshot 2024-04-18 at 10.10.18 AM.png[width=250]
+image::Screenshot 2024-04-18 at 10.10.18 AM.png
 
 . Name the folder.
 +
-image::Screenshot 2024-04-18 at 10.10.47 AM.png[width=250]
+image::Screenshot 2024-04-18 at 10.10.47 AM.png
 
 . You can add a new file to the folder by clicking on the btn:[+] button.
 
 . You can also rename or delete the folder via the btn:[ … ] menu.
 +
-image::Screenshot 2024-04-18 at 10.11.14 AM.png[width=250]
+image::Screenshot 2024-04-18 at 10.11.14 AM.png
 
 == Query List
 
@@ -116,7 +116,7 @@ image::install-query.png[]
 == Edit Schema
 
 The schema defines the structure of your graph database, influencing its performance and functionality.
-You can easily open the Schema Designer in GSQL Editor by clicking on the image:Screenshot 2024-04-18 at 10.06.37 AM.png[width=50]  button.
+You can easily open the Schema Designer in GSQL Editor by clicking on the image:right.png[width=50]  button.
 
 [NOTE]
 ====

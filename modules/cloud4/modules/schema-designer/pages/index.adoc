@@ -105,7 +105,30 @@ You can define attributes for vertices and edges to store additional information
 Attributes can be of different data types, such as strings, integers, booleans, or dates, and they provide valuable context and details to your graph data.
 ====
 
-image::Screenshot 2024-04-17 at 7.43.30 PM.png[]
+image::attributes.png[]
+
+== 6) Advanced Settings For Vertex
+
+The Advanced Settings section allows you to fine-tune the vertex of your graph database by configuring additional settings for vertices.
+
+You can click on the btn:[ Advanced Settings ] button on a vertex to configure the following settings:
+
+image::advanced-settings.png[]
+
+1. Enable *As Attribute* for primary key. For details, please refer to xref:current:gsql-ref:ddl-and-loading:defining-a-graph-schema.adoc#_with_primary_id_as_attribute[WITH primary_id_as_attribute] documentation.
+2. Enable index for non-primary key attributes. Indexes improve the speed of data retrieval operations by providing quick access paths to the data. For details, please refer to xref:current:gsql-ref:ddl-and-loading:defining-a-graph-schema.adoc#_alter_index[Alter Index] documentation.
+
+== 7) Advanced Settings For Edge
+
+The Advanced Settings section allows you to fine-tune the edge of your graph database by configuring additional settings for edges.
+
+You can click on the btn:[ Advanced Settings ] button on an edge to configure the following settings:
+
+image::advanced-settings-2.png[]
+
+1. Specify other vertex pairs. You can define additional vertex pairs for an edge to establish more complex relationships between different types of vertices.
+2. Specify edge discriminators. Discriminators allow you to distinguish between different types of edges or relationships, providing more granularity in your graph schema. For details, please refer to the xref:current:gsql-ref:ddl-and-loading:defining-a-graph-schema.adoc#_discriminator[DISCRIMINATOR] documentation.
+3. For directed edges, you can specify a reverse edge to create a bidirectional relationship. This can be useful for queries that need to traverse edges in both directions. For details, please refer to xref:current:gsql-ref:ddl-and-loading:defining-a-graph-schema.adoc#_with_reverse_edge[WITH REVERSE_EDGE] documentation.
 
 == Next Steps
 

@@ -1,50 +1,49 @@
-= TigerGraph Cloud 4 Beta Phase Quota Restriction Policy
+= TigerGraph Cloud 4 Subscription Plans and Quota Policy
 
 == Objective
-To establish a fair-use policy that ensures equitable access to resources during the beta phase of TigerGraph Cloud 4, while preventing abuse and over-utilization of shared infrastructure.
+This document aims to provide customers with a clear understanding of the various subscription plans available, along with their associated resource allocations and limitations. It ensures customers can make informed decisions about their usage and upgrade options, enabling them to manage their resources and costs effectively while leveraging the full potential of TigerGraph Cloud.
 
 [IMPORTANT]
 This policy is subject to review and adjustment at the discretion of TigerGraph's management based on feedback from the user community and evolving business needs.
 
-This policy applies to all users participating in the beta phase of TigerGraph Cloud 4.
+== Subscription Plans
+TigerGraph Cloud offers four distinct subscription plans to cater to various customer needs:
 
+- **Free**
+- **Paid**
+- **Premium**
+- **Enterprise**
 
 == Policy Details
-=== Workspace Creation Limits:
-Each user account is limited to creating a maximum of 3 workspace(s) during the beta phase.
+The following table outlines the quotas and limits associated with each subscription plan:
 
-1. R/W Workspace.
-2. R/O Workspaces.
-3. Total 3 Workspaces allowed.
+[cols="5", separator=| ]
+|===
+| **Subscription Plan**        | **Free**                         | **Paid**                         | **Premium**                      | **Enterprise**                         
+| **Monthly Usage Limit**     | $0                               | $500                             | $5,000                           | Customizable                           
+| **Maximum Supported TGSize** | TG-4                             | TG-16                            | TG-32                            | Customizable                           
+| **RW Workspace Quota (Per Account)** | 1                                | 2                                | 3                                | Customizable                           
+| **RO Workspace Quota (Per Account)** | 2                                | 3                                | 5                                | Customizable                           
+| **Maximum Memory Size (MB)** | 768                              | 5120                             | 16384                            | Customizable                           
+| **Manual Backup Quota (Per RW)** | 1                                | 1                                | 3                                | Customizable                           
+| **Auto Backup Quota (Per RW)** | N/A                              | 3                                | 7                                | Customizable                           
+| **Suspend Grace Period (Days)** | 0                                | 1                                | 3                                | 7                                      
+| **Terminate Grace Period (Days)** | 7                                | 7                                | 14                               | 28                                     
+| **Support**                  | Business hour email support      | Business hour email support      | Premium support                  | Dedicated account manager, 24/7 premium support 
+|===
 
-The size of each workspace (in terms of allocated resources) will be capped to ensure equitable distribution among participants.
+=== Explanation of Terms
+
+- **Monthly Usage Limit**: The maximum amount a customer can be charged for service usage within a month before additional actions are required.
+- **Maximum Supported TGSize**: The largest TigerGraph workpace size supported.
+- **RW Workspace Quota (Per Account)**: The number of Read-Write workspaces allowed per account.
+- **RO Workspace Quota (Per Account)**: The number of Read-Only workspaces allowed per account.
+- **Maximum Memory Size (MB)**: The total memory allocation per subscription/orgnization.
+- **Manual Backup Quota (Per RW)**: The number of manual backups allowed per Read-Write workspace.
+- **Auto Backup Quota (Per RW)**: The number of automated backups allowed per Read-Write workspace.
+- **Suspend Grace Period (Days)**: The number of days a workspace can be suspended before termination.
+- **Terminate Grace Period (Days)**: The number of days before a suspended workspace is terminated.
+- **Support**: The type of customer support provided.
 
 [NOTE]
-Max supported will be TG-16.
-
-=== Resource Allocation Quotas:
-* A total number of 50 credits will be provided.
-* Users requiring additional resources can apply for an exception by providing a valid justification. Requests will be reviewed on a case-by-case basis.
-* Storage Quota: 100GB
-* Backup Quota: Only 1 Backup is allowed.
-
-=== Monitoring and Enforcement:
-
-* Continuous monitoring will be implemented to detect and mitigate abusive behavior or anomalous usage patterns.
-
-* Users found to be violating the quota restrictions may face temporary suspension or reduction in allocated resources.
-
-=== Feedback and Adjustment Mechanism:
-* Users are encouraged to provide feedback on resource limitations and usage experience.
-* TigerGraph Cloud 4 reserves the right to adjust quota limits based on user feedback and observed usage patterns to serve the community's needs better.
-
-=== Communication:
-* All participants will be informed of the quota restrictions and any subsequent adjustments via email and in-product notifications.
-
-=== End of Beta Phase:
-* Upon conclusion of the beta phase, users will be transitioned to the standard pricing tier with revised quota restrictions.
-Details will be communicated in advance.
-
-=== Exception Handling
-* Users who legitimately need additional resources beyond the allocated quotas can submit a request through the Product Support/Feedback channel.
-Each request will be evaluated based on its merits, considering the user's contribution to the beta testing process and the potential impact on the product's development.
+Please contact us at sales@tigergraph.com if you have questions about the plan or need a custom plan.

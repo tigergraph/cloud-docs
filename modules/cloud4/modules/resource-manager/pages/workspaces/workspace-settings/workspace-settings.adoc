@@ -4,7 +4,12 @@
 The settings in workspace allow users to customize and fine-tune various aspects of their workspace configuration.
 These settings include options like *auto-suspend* and *auto-resume*, which automate the suspension and resumption of the workspace based on activity levels.
 
-Find them by clicking on the btn:[ ... ] button on your workspace next to the btn:[Connect] button.
+[NOTE]
+====
+Only users with the roles of *Workspace Admin*, *Workgroup Admin*, or *Org Admin* can access the workspace settings menu.
+====
+
+To access the workspace settings, click on the btn:[ ... ] button next to the btn:[Connect] button on your workspace, then select the *Edit* option from the dropdown menu
 
 image::workspace-general-tab.png[]
 
@@ -109,6 +114,11 @@ image::alerts.png[]
 The *Graph Admin* section provides access to advanced administrative settings for your graph database. These settings allow you to manage TigerGraph Server settings.
 
 image::graph-admin.png[]
+
+[NOTE]
+====
+Updating Graph Admin settings might result in the restart of certain TigerGraph services, which can cause temporary interruptions.
+====
 
 == Next Steps
 

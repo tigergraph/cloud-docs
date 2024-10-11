@@ -7,17 +7,17 @@ The GSQL Editor is a powerful tool for developing and executing GSQL queries, al
 
 The GSQL Editor contains 4 work areas:
 
-image::Screenshot 2024-04-18 at 10.04.32 AM.png[]
-* Left  image:Screenshot 2024-04-18 at 10.05.54 AM.png[width=50] - GSQL xref:gsql-editor:index.adoc#_file_list[File List ] Panel.
-* Bottom image:Screenshot 2024-04-18 at 10.06.17 AM.png[width=50] - GSQL Result Panel.
-* Right image:Screenshot 2024-04-18 at 10.06.37 AM.png[width=50] Schema Designer Panel.
+image::Screenshot 2024-10-11 at 11.39.23.png[]
+* Left  image:left.png - GSQL xref:gsql-editor:index.adoc#_file_list[File List ] Panel.
+* Bottom image:bottom.png - GSQL Result Panel.
+* Right image:right.png Schema Designer Panel.
 +
 [NOTE]
 ====
 For more details please see xref:cloud4:schema-designer:index.adoc[].
 ====
 
-* Center image:Screenshot 2024-04-23 at 10.05.36 PM.png[width=50] Main GSQL Editing Panel.
+* Main area image:main.png Main GSQL Editing Panel.
 
 [TIP]
 ====
@@ -35,7 +35,7 @@ It helps you organize and manage your GSQL queries effectively with a list of GS
 
 * Navigate through the files and folders by clicking on their names in the list.
 +
-image:Screenshot 2024-04-18 at 10.07.50 AM.png[]
+image:Screenshot 2024-10-11 at 10.59.49.png[]
 +
 * It also includes a search bar that allows you to search for specific files by their names.
 +
@@ -85,6 +85,33 @@ image::Screenshot 2024-04-18 at 10.10.47 AM.png[width=250]
 . You can also rename or delete the folder via the btn:[ … ] menu.
 +
 image::Screenshot 2024-04-18 at 10.11.14 AM.png[width=250]
+
+== Query List
+
+The Query List in the GSQL Editor provides an overview of all custom queries for each graph. It helps you manage your queries efficiently, allowing you to create, edit, delete, and install queries.
+
+* View all custom queries for the current graph.
+
+image::queries.png
+
+* Create a query by clicking on the btn:[ + ] button on the side of the target graph.
+
+image::add-query.png
+
+[TIP]
+====
+This feature helps you quickly view and edit custom queries on your graph.
+====
+
+image::query-details.png
+
+* Edit existing queries by selecting the query and clicking the btn:[ Edit ] button.
+
+* Delete queries that are no longer needed by selecting the query and clicking the btn:[ Delete ] button.
+
+* If the query is not installed, you can install the query by selecting the query and clicking the btn:[ Install ] button.
+
+image::install-query.png
 
 == Edit Schema
 

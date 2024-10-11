@@ -1,16 +1,23 @@
-= Load from Local File
+= Load from Google Cloud Storage (GCS)
 :experimental:
 
-With TigerGraph Cloud, you can easily load data from local files into your graph databases. Whether you have data in CSV, JSON, or other formats, you can use the intuitive data ingestion process to import your data. Simply upload your files, specify the schema mapping, and let TigerGraph Cloud handle the rest. This allows you to quickly populate your graph databases with the necessary data for analysis.
+If you store your data in AWS S3, TigerGraph Cloud provides seamless integration for data ingestion.
+You can directly load data from your S3 buckets into your graph databases, eliminating the need for manual data transfers.
+This simplifies the process of importing large datasets and enables you to leverage the scalability and durability of AWS S3 for your graph analysis.
 
 == 1) Select Source
 
-.Once you’ve selected btn:[ Local File ],
-. Click on image:Screenshot 2024-04-17 at 5.52.21 PM.png[width=50] to upload your files or directly drag and drop your files in the btn:[File Details] window.
+.Once you’ve selected AWS S3, you will be asked to configure the AWS S3 data source.
+. Click on image:Screenshot 2024-04-17 at 9.36.58 PM.png[width=50] to add a new AWS S3 data source.
 +
-image::Screenshot 2024-04-17 at 5.53.05 PM.png[]
+image:Screenshot 2024-04-17 at 9.36.27 PM.png[]
 
-. Click btn:[ Next ] to process the file.
+. You will need to provide your S3 `AWS access key id` and S3 `AWS secret access key`.
++
+image:Screenshot 2024-04-17 at 9.37.32 PM.png[]
+. Once you have those configured, you can add one or multiple `S3 URI` within the same S3 bucket.
+
+. Click btn:[ Next ] to process the file(s).
 +
 [NOTE]
 ====
@@ -18,7 +25,6 @@ The current data loading tool only supports CSV files. Other formats will be ava
 ====
 
 == 2) Configure File
-
 .This step lets you configure the source file details.
 . The data loading tool will automatically detect the `.csv` separators and line breaks.
 The parser automatically splits each line into a series of tokens.
@@ -77,13 +83,10 @@ image::Screenshot 2024-04-17 at 5.57.07 PM.png[]
 image::Screenshot 2024-04-17 at 5.57.52 PM.png[]
 . Click btn:[Next] to proceed.
 
-////
-== Configure mappings:
-. You can configure the attributes and mappings here.
-Configure attributes: https://docs.google.com/document/d/1kB2zyJgSZWZy0RWhTRJHT7rcxkFs4MiHvpx0LHnI6Ck/edit#heading=h.4tb91cptojyw
-////
+
 
 == 4) Confirm
+
 .This step will let you confirm the changes made to the schema and the data mapping you created to load the data.
 . Simply review the `Schema to be change` and `Data to be loaded` lists.
 +

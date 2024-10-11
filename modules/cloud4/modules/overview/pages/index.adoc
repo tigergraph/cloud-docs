@@ -56,7 +56,9 @@ Learn how to Load Data into TigerGraph Cloud 4.
 
 xref:load-data:index.adoc[Overview] |
 xref:load-data:load-from-local.adoc[Local] |
-xref:load-data:load-from-cloud.adoc[Cloud] |
+xref:load-data:load-from-s3.adoc[AWS S3] |
+xref:load-data:load-from-gcs.adoc[Google Cloud Storage] |
+xref:load-data:load-from-blob.adoc[Azure Blob Storage] |
 xref:load-data:load-from-other-sources.adoc[Other Sources]
 ¦
 image:TG_Icon_Library-135.png[alt=schemadesigner,width=74,height=74]

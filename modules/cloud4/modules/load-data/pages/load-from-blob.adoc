@@ -1,4 +1,4 @@
-= Load from the AWS S3
+= Load from Azure Blob Storage
 :experimental:
 
 If you store your data in AWS S3, TigerGraph Cloud provides seamless integration for data ingestion.
@@ -67,8 +67,7 @@ image::Screenshot 2024-04-17 at 5.55.35 PM.png[]
 +
 [CAUTION]
 ====
-TigerGraph Cloud 4 is still in beta release and the schema generation feature is still a preview feature.
-The correctness and efficiency of the resulting graph schema and mapping could vary.
+The schema generation feature is still a preview feature. The correctness and efficiency of the resulting graph schema and mapping could vary.
 ====
 
 . In the `Source` column, you can choose the specific column from the data source that you want to map with the attribute.

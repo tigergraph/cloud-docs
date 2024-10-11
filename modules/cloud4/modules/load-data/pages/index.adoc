@@ -51,9 +51,17 @@ Step-by step-support will be added for all sources, but during the beta release 
 
 Check out our step-by-step guide on loading data from a local file.
 
-== xref:cloud4:load-data:load-from-cloud.adoc[]
+== xref:cloud4:load-data:load-from-s3.adoc[]
 
-Check out our step-by-step guide on loading data from a AWS s3.
+Check out our step-by-step guide on loading data from a AWS S3.
+
+== xref:cloud4:load-data:load-from-gcs.adoc[]
+
+Check out our step-by-step guide on loading data from a Google Cloud Storage.
+
+== xref:cloud4:load-data:load-from-blob.adoc[]
+
+Check out our step-by-step guide on loading data from a Azure Blob Storage.
 
 
 == xref:cloud4:load-data:load-from-other-sources.adoc[]

@@ -1,15 +1,7 @@
-= Administration Overview
+= Administrative Settings Overview
 :experimental:
 
-Here you can learn about the tools available for organizational administrators.
-
-== xref:cloud4:administration:how2-invite-users.adoc[]
-
-Learn how to invite new users to your organizations.
-
-== xref:cloud4:administration:how2-access-mgnt.adoc[]
-
-Learn how to manage access to workspaces and resources within TigerGraph Cloud 4.
+Here you can learn about the configurations for an organization.
 
 == xref:cloud4:administration:settings:how2-use-organization-mgnt.adoc[]
 

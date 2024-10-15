@@ -1,4 +1,4 @@
-= Password Policy
+= REST API Resources
 :experimental:
 
 TigerGraph Cloud user accounts have their own password requirements separate from the xref:tigergraph-server:security:password-policy.adoc[TigerGraph Server password policy].

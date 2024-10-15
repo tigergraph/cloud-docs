@@ -1,4 +1,4 @@
-= IDP integration with SSO
+= REST API Authentication
 
 ////
 By default, user management in a TigerGraph Cloud organization happens in the xref:manage-org-users.adoc[] section of the TigerGraph Cloud interface.

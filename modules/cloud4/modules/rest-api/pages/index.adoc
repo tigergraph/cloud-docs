@@ -1,4 +1,4 @@
-= Security
+= TigerGraph Cloud Rest API
 :experimental:
 
 

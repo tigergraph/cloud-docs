@@ -1,9 +1,9 @@
 * xref:index.adoc[Administration]
 ** xref:administration:how2-invite-users.adoc[]
 ** xref:administration:how2-access-mgnt.adoc[]
-** xref:administration:settings:index.adoc[Settings]
-*** xref:administration:settings:settings:how2-use-organization-mgnt.adoc[]
-*** xref:administration:settings:settings:how2-create-api-key.adoc[]
+** xref:administration:settings/index.adoc[Settings]
+*** xref:administration:settings/how2-use-organization-mgnt.adoc[]
+*** xref:administration:settings/how2-create-api-key.adoc[]
 
 ////
 ** xref:cloud4:security:index.adoc[]

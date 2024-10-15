@@ -3,11 +3,11 @@
 
 Here you can learn about the configurations for an organization.
 
-== xref:cloud4:administration:settings:how2-use-organization-mgnt.adoc[]
+== xref:cloud4:administration:settings/how2-use-organization-mgnt.adoc[]
 
 Learn about the organization management features that allow you to configure organization settings.
 
-== xref:cloud4:administration:settings:how2-create-api-key.adoc[]
+== xref:cloud4:administration:settings/how2-create-api-key.adoc[]
 
 Learn how to create API keys for your organization.
 

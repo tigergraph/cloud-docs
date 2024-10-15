@@ -11,11 +11,11 @@ Learn how to invite new users to your organizations.
 
 Learn how to manage access to workspaces and resources within TigerGraph Cloud 4.
 
-== xref:cloud4:administration:settings:how2-use-organization-mgnt.adoc[]
+== xref:cloud4:administration:settings/how2-use-organization-mgnt.adoc[]
 
 Learn about the organization management features that allow you to configure organization settings.
 
-== xref:cloud4:administration:settings:how2-create-api-key.adoc[]
+== xref:cloud4:administration:settings/how2-create-api-key.adoc[]
 
 Learn how to create API keys for your organization.
 

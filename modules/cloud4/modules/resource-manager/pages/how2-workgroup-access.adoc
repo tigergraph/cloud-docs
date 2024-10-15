@@ -1,4 +1,4 @@
-= How to Manage Workgroup Access
+= How to Manage Workgroup and Workspace Permissions
 :experimental:
 
 In TigerGraph Cloud, access management allows you to configure permissions at both the user level and the resource level.

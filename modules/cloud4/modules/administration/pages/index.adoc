@@ -15,6 +15,10 @@ Learn how to manage access to workspaces and resources within TigerGraph Cloud 4
 
 Learn about the organization management features that allow you to configure organization settings.
 
+== xref:cloud4:administration:how2-create-api-key.adoc[]
+
+Learn how to create API keys for your organization.
+
 == Next Steps
 
 Next, learn about xref:security:index.adoc[] or additional xref:cloud4:resources:index.adoc[] in TigerGraph Cloud 4.

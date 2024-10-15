@@ -2,6 +2,7 @@
 ** xref:administration:how2-invite-users.adoc[]
 ** xref:administration:how2-access-mgnt.adoc[]
 ** xref:administration:how2-use-organization-mgnt.adoc[]
+** xref:administration:how2-create-api-key.adoc[]
 
 ////
 ** xref:cloud4:security:index.adoc[]

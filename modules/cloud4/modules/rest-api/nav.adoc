@@ -1,0 +1,3 @@
+* xref:index.adoc[]
+** xref:rest-api:authentication.adoc[]
+** xref:rest-api:deprecations.adoc[]

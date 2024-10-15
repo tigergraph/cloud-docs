@@ -1,63 +1,22 @@
 = TigerGraph Cloud Rest API
 :experimental:
 
-This document provides a comprehensive reference for interacting with the TigerGraph Cloud services programmatically. You can manage workspaces, users, and other resources through these APIs.
 
-:toc: 
+Here you can learn different security practices and policies in TigerGraph Cloud 4.
 
-== Workspace Management
+[IMPORTANT]
+====
+TigerGraph Cloud 4 beta is  for personal or R&D use and not for production use.
 
-The Workspace Management API allows you to create and manage workspaces within your TigerGraph Cloud instance.
+Please see xref:cloud4:resources:terms_conditions.adoc[].
+====
 
-=== Create Workspace
 
-**Description:** This endpoint is used to create a new workspace.
+== xref:cloud4:security:password-policy.adoc[]
 
-**Endpoint:**
+Learn and understand the password policy in TigerGraph Cloud 4.
 
-```
-POST /api/workspaces
-```
 
-**Description:**
+== xref:cloud4:security:idp.adoc[]
 
-Create a new workspace.
-
-**Request:**
-
-```json
-{
-  "name": "NewWorkspace",
-  "description": "Description of the new workspace"
-}
-```
-
-**Response:**
-
-```json
-{
-  "error": false,
-  "message": "Workspace created successfully",
-  "workspaceId": "workspace123"
-}
-```
-
-=== List Workspaces
-
-**Description:** This endpoint lists all the workspaces the API have access to.
-
-**Endpoint:**
-
-```
-GET /api/workspaces
-```
-
-**Description:**
-
-List all workspaces.
-
-**Request:**
-
-```bash
-curl -X GET "https://<your-tigergraph-cloud-instance>/api/workspaces" \
-     -H "Authorization: Bearer <your-api-key>"
+Learn and understand IDP intergration with SSO password policy in TigerGraph Cloud 4.

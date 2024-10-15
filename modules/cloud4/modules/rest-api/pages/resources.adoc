@@ -1,17 +1,63 @@
 = REST API Resources
 :experimental:
 
-TigerGraph Cloud user accounts have their own password requirements separate from the xref:tigergraph-server:security:password-policy.adoc[TigerGraph Server password policy].
+This document provides a comprehensive reference for interacting with the TigerGraph Cloud services programmatically. You can manage workspaces, users, and other resources through these APIs.
 
-No empty passwords are permitted. Each password must be at least 12 characters long and include at least one of the following:
+:toc: 
 
-* A special character from the set `!@#$%^&*`
-* A lower case character `a-z`
-* An upper case character `A-Z`
-* A digit `0-9`
+== Workspace Management
 
-[NOTE]
-This TigerGraph Cloud password policy cannot be changed by users.
+The Workspace Management API allows you to create and manage workspaces within your TigerGraph Cloud instance.
 
-Organization Admins do not have access to change or reset user passwords in an Organization account.
-If you forget your password, click the btn:[Forgot Password?] button during login, or contact support@tigergraph.com for assistance.
+=== Create Workspace
+
+**Description:** This endpoint is used to create a new workspace.
+
+**Endpoint:**
+
+```
+POST /api/workspaces
+```
+
+**Description:**
+
+Create a new workspace.
+
+**Request:**
+
+```json
+{
+  "name": "NewWorkspace",
+  "description": "Description of the new workspace"
+}
+```
+
+**Response:**
+
+```json
+{
+  "error": false,
+  "message": "Workspace created successfully",
+  "workspaceId": "workspace123"
+}
+```
+
+=== List Workspaces
+
+**Description:** This endpoint lists all the workspaces the API have access to.
+
+**Endpoint:**
+
+```
+GET /api/workspaces
+```
+
+**Description:**
+
+List all workspaces.
+
+**Request:**
+
+```bash
+curl -X GET "https://<your-tigergraph-cloud-instance>/api/workspaces" \
+     -H "Authorization: Bearer <your-api-key>"

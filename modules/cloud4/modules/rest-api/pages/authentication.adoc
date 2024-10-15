@@ -1,23 +1,17 @@
 = REST API Authentication
 
-////
-By default, user management in a TigerGraph Cloud organization happens in the xref:manage-org-users.adoc[] section of the TigerGraph Cloud interface.
+To use the TigerGraph Cloud REST APIs, you need to authenticate your requests. Authentication is typically done using API keys.
 
-If you have another preferred identity provider (IDP), you can integrate with it instead using SAML 2.0 to handle your user management needs outside of TigerGraph Cloud.
-////
+== Setup API Keys
 
-IDP integration is currently available at the Organization level, so one IDP will handle user management for all clusters in that organization.
-Only one IDP can be connected to a single Organization.
+Before you can authenticate your API requests, you need to set up your API keys. Please refer to the API Key Setup page for detailed instructions on how to generate and manage your API keys.
 
-== Process Outline
+== Example Request
 
-. Have IDP enabled on your TigerGraph Cloud Organization account.
-. Create an app integration on the IDP side to configure it to link with TigerGraph Cloud.
-. Users log in to the TigerGraph Cloud portal using credentials from your IDP.
-. Organization Admins assign roles to the users being created in the cloud organization via successful login from the IDP.
+Here’s an example of how to consume the APIs using your API key:
 
-== Setup
-
-This process is currently done through TigerGraph support.
-Please contact support@tigergraph.com to reach out to a technical support engineer who will guide you through the process.
+```bash
+curl -X GET "https://<your-tigergraph-cloud-instance>/api/endpoint" \
+     -H "Authorization: Bearer <your-api-key>"
+```
 

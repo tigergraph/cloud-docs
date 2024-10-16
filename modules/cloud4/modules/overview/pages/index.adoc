@@ -136,10 +136,24 @@ xref:cloud4:resources:support.adoc[]
 
 |===
 
-## Cost Estimation
-
 ++++
 
-<iframe src="https://beta.tgcloud.io/maintenance.html" width="100%" height="1000px" frameborder="0"></iframe>
+<iframe
+	src="https://portal.tgcloud-dev.com/price.html"
+	width="100%"
+	height="628px"
+	frameborder="0"
+	sandbox="allow-scripts allow-top-navigation allow-same-origin allow-popups"
+>
+</iframe>
+<script>
+	window.addEventListener("message", function (event) {
+	const data = event.data;
+	if (data && data.type === "resize") {
+		const iframe = document.querySelector("iframe");
+		iframe.style.height = `${data.height}px`;
+	}
+	});
+</script>
 
 ++++

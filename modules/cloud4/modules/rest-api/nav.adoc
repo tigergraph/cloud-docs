@@ -1,0 +1,3 @@
+* xref:index.adoc[Cloud 4 REST API]
+** xref:rest-api:resources.adoc[REST API Resources]
+** xref:rest-api:authentication.adoc[Authentication]

@@ -1,0 +1,17 @@
+= REST API Authentication
+
+To use the TigerGraph Cloud REST APIs, you need to authenticate your requests. Authentication is typically done using API keys.
+
+== Setup API Keys
+
+Before you can authenticate your API requests, you need to set up your API keys. Please refer to the API Key Setup page for detailed instructions on how to generate and manage your API keys.
+
+== Example Request
+
+Here’s an example of how to consume the APIs using your API key:
+
+```bash
+curl -X GET "https://<your-tigergraph-cloud-instance>/api/endpoint" \
+     -H "Authorization: Bearer <your-api-key>"
+```
+

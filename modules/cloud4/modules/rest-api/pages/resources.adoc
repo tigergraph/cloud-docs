@@ -1,9 +1,8 @@
 = REST API Resources
 :experimental:
-
 This document provides a comprehensive reference for interacting with the TigerGraph Cloud services programmatically. You can manage workspaces, users, and other resources through these APIs.
-
-:toc: 
+:toc:
+:toclevels:2
 
 == Workspace Management
 
@@ -61,3 +60,4 @@ List all workspaces.
 ```bash
 curl -X GET "https://<your-tigergraph-cloud-instance>/api/workspaces" \
      -H "Authorization: Bearer <your-api-key>"
+```

@@ -1,4 +1,4 @@
-= Organization Management
+= TigerGraph Cloud 4 API Key
 :experimental:
 
 As an organization administrator, you have access to organization management features that allow you to configure organization settings.

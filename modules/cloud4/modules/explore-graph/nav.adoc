@@ -1,0 +1,2 @@
+* xref:index.adoc[]
+** xref:explore-graph:how2-use-pattern-search.adoc[]

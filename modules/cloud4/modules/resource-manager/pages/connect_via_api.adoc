@@ -22,7 +22,7 @@ image::Screenshot 2024-04-28 at 9.36.29 PM.png[]
 +
 [NOTE]
 ====
-You can go to the xref:cloud4:schema-designer:index.adoc[Schema Designer] to btn:[Create a Graph] if you do not have a graph.
+You can go to xref:cloud4:graph-development:schema-designer/index.adoc[Design Schema] to btn:[Create a Graph] if you do not have a graph.
 ====
 +
 //image::Screenshot 2024-04-17 at 5.41.55 PM.png[width="250"]

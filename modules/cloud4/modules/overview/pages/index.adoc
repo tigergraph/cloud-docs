@@ -62,9 +62,9 @@ xref:load-data:load-from-blob.adoc[Azure Blob Storage] |
 xref:load-data:load-from-other-sources.adoc[Other Sources]
 ¦
 image:TG_Icon_Library-135.png[alt=schemadesigner,width=74,height=74]
-*Schema Designer*
+*Design Schema*
 
-xref:cloud4:schema-designer:index.adoc[] teaches you how to you can easily modify and manage the schema of your graph databases using Schema Designer UI.
+xref:cloud4:graph-development:schema-designer/index.adoc[Design Schema] teaches you how to you can easily modify and manage the schema of your graph databases using Schema Designer UI.
 
 ¦
 image:schema-homecard.png[alt=gsqlEditor,width=74,height=74]
@@ -135,25 +135,3 @@ xref:cloud4:resources:terms_conditions.adoc[ Beta Terms and Conditions] |
 xref:cloud4:resources:support.adoc[]
 
 |===
-
-++++
-
-<iframe
-	src="https://portal.tgcloud-dev.com/price.html"
-	width="100%"
-	height="628px"
-	frameborder="0"
-	sandbox="allow-scripts allow-top-navigation allow-same-origin allow-popups"
->
-</iframe>
-<script>
-	window.addEventListener("message", function (event) {
-	const data = event.data;
-	if (data && data.type === "resize") {
-		const iframe = document.querySelector("iframe");
-		iframe.style.height = `${data.height}px`;
-	}
-	});
-</script>
-
-++++

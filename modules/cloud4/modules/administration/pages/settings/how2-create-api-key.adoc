@@ -1,40 +1,47 @@
-= TigerGraph Cloud 4 API Key
-:experimental:
+= API Keys
+:experimental:  
 
 As an organization administrator, you have access to organization management features that allow you to configure organization settings.
 
-== Manage Organization Setting
+[IMPORTANT]
+====
+The TigerGraph Cloud 4 REST API is currently in preview version. Features and endpoints may change as the API evolves.
+====
 
-.To make organization settings changes:
-. Navigate to the btn:[Setting] tag
-+
-image::Screenshot 2024-04-18 at 10.23.26 AM.png[width=300]
+== Overview
 
-. Once clicked, the btn:[Organization Setting] panel will display the btn:[Basic Information] used with each organization.
-+
-image::Screenshot 2024-04-18 at 10.22.57 AM.png[]
-+
-.Here you will find the basic information to set up a new organization.
-* *Organization Name*: The name of your organization within TigerGraph Cloud.
-This is a unique identifier for your organization and is used for administrative purposes.
-* *Display Name*: The display name is the name that will be shown in the user interface and other user-facing areas.
-It can be a more user-friendly or descriptive name compared to the organization name.
-+
-[TIP]
+API keys are essential for authenticating and securing access to the TigerGraph Cloud REST API. This guide will walk you through the steps to create, configure, and manage your API keys.
+
+== Creating an API Key
+
+To create an API key, follow these steps:
+
+.1. **Navigate to Orgnization Settings:**
+   - Select the `Admin` → `Settings` menu on the navigation bar.
+   - If you cannot see the menu, please ask your organization administrator for access.
+
+.2. **Access the API Keys Section:**
+   - In the settings dashboard, find and click on the `API Keys` tab at the top.
+
+.3. **Create a New API Key:**
+   - Click on the btn:[ Create API Keys] button.
+   - Provide a name or description for the API key to help you identify its purpose later.
+   - Select the permissions you want to grant to the API key.
+   - Optionally, set an expiration date for the API key for added security.
+
+image::create-api-key.png[]
+
+.4. **Save the API Key:**
+   - Once the API key is generated, copy it and store it in a secure location. You will not be able to view this key again after you leave the page.
+
+[NOTE]
 ====
-The display name helps users easily identify your organization within TigerGraph Cloud.
-====
-* *Organization Logo URL*: The URL to the logo image file for your organization.
-This logo will be displayed in the TigerGraph Cloud navigation bar and can be used to represent your organization visually.
-+
-[TIP]
-====
-Providing a logo adds a professional touch and helps users quickly recognize your organization within TigerGraph Cloud.
+Treat your API key like a password. Do not share it or expose it in your code or public repositories.
 ====
 
 == Next Steps
 
-Next, continue on to learn about xref:security:index.adoc[] or additional xref:cloud4:resources:index.adoc[] in TigerGraph Cloud 4.
+Next, continue on to learn about xref:cloud4:rest-api:authentication.adoc[] or xref:cloud4:rest-api:endpoints.adoc[] in TigerGraph Cloud 4.
 
 Return to the xref:cloud4:overview:index.adoc[Overview] page for a different topic.
 

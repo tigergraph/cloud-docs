@@ -1,22 +1,19 @@
-= TigerGraph Cloud Rest API
+= REST API (Preview)
 :experimental:
 
-
-Here you can learn different security practices and policies in TigerGraph Cloud 4.
+TigerGraph Cloud 4 REST API provides a set of endpoints that allow developers to interact programmatically with TigerGraph Cloud 4 services. This API enables you to manage your graph databases, run queries, and perform various administrative tasks.
 
 [IMPORTANT]
 ====
-TigerGraph Cloud 4 beta is  for personal or R&D use and not for production use.
-
-Please see xref:cloud4:resources:terms_conditions.adoc[].
+The TigerGraph Cloud 4 REST API is currently in preview version. Features and endpoints may change as the API evolves.
 ====
 
 
-== xref:cloud4:security:password-policy.adoc[]
+== xref:cloud4:rest-api:authentication.adoc[]
 
-Learn and understand the password policy in TigerGraph Cloud 4.
+Learn how to authenticate with the TigerGraph Cloud 4 REST API.
 
 
-== xref:cloud4:security:idp.adoc[]
+== xref:cloud4:rest-api:endpoints.adoc[]
 
-Learn and understand IDP intergration with SSO password policy in TigerGraph Cloud 4.
+Explore the REST API endpoints available in TigerGraph Cloud 4.

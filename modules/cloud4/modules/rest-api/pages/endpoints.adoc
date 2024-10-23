@@ -1,0 +1,69 @@
+= Endpoints
+:experimental:
+:toc:
+:toclevels:2
+
+This document provides a comprehensive reference for interacting with the TigerGraph Cloud services programmatically. You can manage workspaces, users, and other resources through these APIs.
+
+[IMPORTANT]
+====
+The TigerGraph Cloud 4 REST API is currently in preview version. Features and endpoints may change as the API evolves.
+====
+
+== Workspace Management
+
+The Workspace Management API allows you to create and manage workspaces within your TigerGraph Cloud instance.
+
+=== Create Workspace
+
+**Description:** This endpoint is used to create a new workspace.
+
+**Endpoint:**
+
+```
+POST /api/workspaces
+```
+
+**Description:**
+
+Create a new workspace.
+
+**Request:**
+
+```json
+{
+  "name": "NewWorkspace",
+  "description": "Description of the new workspace"
+}
+```
+
+**Response:**
+
+```json
+{
+  "error": false,
+  "message": "Workspace created successfully",
+  "workspaceId": "workspace123"
+}
+```
+
+=== List Workspaces
+
+**Description:** This endpoint lists all the workspaces the API have access to.
+
+**Endpoint:**
+
+```
+GET /api/workspaces
+```
+
+**Description:**
+
+List all workspaces.
+
+**Request:**
+
+```bash
+curl -X GET "https://<your-tigergraph-cloud-instance>/api/workspaces" \
+     -H "Authorization: Bearer <your-api-key>"
+```

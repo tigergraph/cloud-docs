@@ -1,4 +1,7 @@
 * xref:index.adoc[Introduction]
 ** xref:overview:overview.adoc[Overview]
 ** xref:cloud4:overview:comparison_table.adoc[Compare Different Offerings]
+** xref:cloud4:overview:release-notes.adoc[Release Notes]
+** xref:cloud4:overview:pricing.adoc[]
+** xref:cloud4:overview:cost-estimation.adoc[]
 

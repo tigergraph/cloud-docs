@@ -1,6 +1,7 @@
 = TigerGraph Cloud FAQs
 :pp: {plus}{plus}
 
+////
 *Feedback for TigerGraph Cloud is welcome at* tgcloud-feedback@tigergraph.com
 
 == Top FAQs
@@ -589,3 +590,4 @@ Contact link:mailto:sales@tigergraph.com[sales@tigergraph.com] to discuss query 
 === *Q: What third-party software is used in TigerGraph Cloud?*
 
 A: A list of third-party software used in the TigerGraph engine and TigerGraph Cloud is available at xref:tigergraph-server:reference:patents-and-third-party-software.adoc[].
+////

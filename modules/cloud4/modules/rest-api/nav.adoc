@@ -1,0 +1,3 @@
+* xref:index.adoc[REST API (Preview)]
+** xref:rest-api:authentication.adoc[Authentication]
+** xref:rest-api:endpoints.adoc[Endpoints]

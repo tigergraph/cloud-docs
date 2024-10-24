@@ -14,7 +14,7 @@ Resource-level permissions determine what actions a user can perform on a specif
 These permissions allow you to control access to individual resources based on the needs and responsibilities of different users.
 ====
 
-You can go to xref:cloud4:resource-manager:how2-workgroup-access.adoc[] to manage access at the resource level.
+You can go to xref:cloud4:workgroup-workspace:how2-workgroup-access.adoc[] to manage access at the resource level.
 
 == User Level Permission
 At the user level, you can define permissions that apply to individual users or groups of users.

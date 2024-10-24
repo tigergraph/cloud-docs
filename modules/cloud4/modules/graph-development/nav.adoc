@@ -6,7 +6,7 @@
 *** xref:load-data/load-from-blob.adoc[]
 *** xref:load-data/load-from-other-sources.adoc[]
 **** xref:load-data/jdbc.adoc[]
-** xref:schema-designer/index.adoc[Design Schema]
+** xref:design-schema/index.adoc[Design Schema]
 ** xref:gsql-editor/index.adoc[GSQL Editor]
 *** xref:gsql-editor/how2-edit-gsql-query.adoc[Edit Query]
 ** xref:explore-graph/index.adoc[Explore Graph]

@@ -30,12 +30,12 @@ image::workspaceDetails.png[]
 +
 . For supported workspace sizes, please go to the Workspace Size page.
 
-. For advanced settings please refer to xref:cloud4:resource-manager:workspaces/workspace-settings/workspace-settings.adoc[] page.
+. For advanced settings please refer to xref:cloud4:workgroup-workspace:workspaces/workspace-settings/workspace-settings.adoc[] page.
 
 . Specify database name or attach to an existing database.
 
 .. This allows you to create Read-Write (RW) workspace or Read-Only (RO) workspace.
-For more details, please refer to xref:cloud4:resource-manager:workspaces/writeread_readonly.adoc[].
+For more details, please refer to xref:cloud4:workgroup-workspace:workspaces/writeread_readonly.adoc[].
 +
 . Specify Solutions for your workspace, for more details please visit xref:cloud4:integrations:solutions.adoc[] page.
 +
@@ -69,6 +69,6 @@ image::workspace-database-tab.png[]
 
 == Next Steps
 
-Now, that you have a workspace created see xref:cloud4:resource-manager:workspaces/workspace-settings/workspace-settings.adoc[] or learn more about xref:cloud4:resource-manager:workspaces/writeread_readonly.adoc[].
+Now, that you have a workspace created see xref:cloud4:workgroup-workspace:workspaces/settings.adoc[] or learn more about xref:cloud4:workgroup-workspace:workspaces/readwrite-readonly.adoc[].
 
-Return to the xref:cloud4:resource-manager:index.adoc[] page or xref:cloud4:overview:index.adoc[Overview] page for a different topic.
+Return to the xref:cloud4:workgroup-workspace:index.adoc[] page or xref:cloud4:overview:index.adoc[Overview] page for a different topic.

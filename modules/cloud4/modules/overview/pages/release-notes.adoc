@@ -46,11 +46,11 @@
 //* xref:cloud4:get-started:index.adoc[Get Started] using TigerGraph Cloud with the 4.0.
 * xref:cloud4:overview:overview.adoc#_separation_of_storage_and_compute[Separation of Storage and Compute] - Introduction of a unique architecture that separates storage and compute, allowing users to scale resources independently.
 
-* xref:resource-manager:workgroup.adoc[Workgroups] and xref:resource-manager:workspaces/workspace.adoc[Workspaces] give users control over resource management.
+* xref:workgroup-workspace:workgroup.adoc[Workgroups] and xref:workgroup-workspace:workspaces/workspace.adoc[Workspaces] give users control over resource management.
 
 * xref:load-data:index.adoc[] - Load Data into TigerGraph Cloud 4 and unlock its potential.
 
-* xref:cloud4:graph-development:schema-designer/index.adoc[Design Schema] - Easily modify and manage the schema of your graph databases using Schema Designer UI.
+* xref:cloud4:graph-development:design-schema/index.adoc[Design Schema] - Easily modify and manage the schema of your graph databases using Schema Designer UI.
 
 * xref:gsql-editor:index.adoc[GSQL Editor] - The GSQL Editor is a powerful tool for developing and executing GSQL queries, allowing you to unlock insights from your graph databases by xref:gsql-editor:how2-edit-gsql-query.adoc[Editing, Running, and Sharing a GSQL Query.].
 

@@ -28,4 +28,4 @@ We only support a maximum of one Read-Write workspace to connect to a database.
 == Next Steps
 See xref:workspaces/how2-create-a-workspace.adoc[] to get started.
 
-Return to the xref:cloud4:resource-manager:index.adoc[] page or xref:cloud4:overview:index.adoc[Overview] page for a different topic.
+Return to the xref:cloud4:workgroup-workspace:index.adoc[] page or xref:cloud4:overview:index.adoc[Overview] page for a different topic.

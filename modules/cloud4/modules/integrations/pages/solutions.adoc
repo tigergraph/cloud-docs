@@ -12,7 +12,7 @@ By leveraging solutions, you can accelerate development, reduce time-to-insights
 Explore the available solutions and experiment with them in your own specific use cases.
 
 == Prerequisites
-To start creating your first solution you will need to have a xref:cloud4:resource-manager:workspaces/writeread_readonly.adoc#_read_write_rw_workspace[Read-Write Workspace]  already created.
+To start creating your first solution you will need to have a xref:cloud4:workgroup-workspace:workspaces/writeread_readonly.adoc#_read_write_rw_workspace[Read-Write Workspace]  already created.
 
 == Get Started with Solutions
 

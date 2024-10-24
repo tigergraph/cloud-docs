@@ -8,7 +8,7 @@ start_page: overview:index.adoc
 nav:
   - modules/overview/nav.adoc
   - modules/get-started/nav.adoc
-  - modules/resource-manager/nav.adoc
+  - modules/workgroup-workspace/nav.adoc
   - modules/graph-development/nav.adoc
   # - modules/load-data/nav.adoc
   # - modules/schema-designer/nav.adoc

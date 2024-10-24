@@ -42,9 +42,9 @@ image:insights.png[alt=workspace,width=74,height=74]
 
 Learn  how to dynamically allocate compute and storage resources.
 
-xref:resource-manager:index.adoc[Overview] |
-xref:resource-manager:workgroup.adoc[Workgroup] |
-xref:resource-manager:workspaces/workspace.adoc[Workspace]
+xref:workgroup-workspace:index.adoc[Overview] |
+xref:workgroup-workspace:workgroup.adoc[Workgroup] |
+xref:workgroup-workspace:workspaces/workspace.adoc[Workspace]
 
 ¦
 image:DataLoading-Homecard.png[alt=load data,width=74,height=74]
@@ -64,7 +64,7 @@ xref:load-data:load-from-other-sources.adoc[Other Sources]
 image:TG_Icon_Library-135.png[alt=schemadesigner,width=74,height=74]
 *Design Schema*
 
-xref:cloud4:graph-development:schema-designer/index.adoc[Design Schema] teaches you how to you can easily modify and manage the schema of your graph databases using Schema Designer UI.
+xref:cloud4:graph-development:design-schema/index.adoc[Design Schema] teaches you how to you can easily modify and manage the schema of your graph databases using Schema Designer UI.
 
 ¦
 image:schema-homecard.png[alt=gsqlEditor,width=74,height=74]

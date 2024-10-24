@@ -35,6 +35,6 @@ image::orgLogin.png[]
 
 == Next Steps
 
-Once logged in, learn more about xref:cloud4:resource-manager:index.adoc[] or jump right into creating a xref:resource-manager:workgroup.adoc[Workgroup] and xref:resource-manager:workspaces/workspace.adoc[Workspaces].
+Once logged in, learn more about xref:cloud4:workgroup-workspace:index.adoc[] or jump right into creating a xref:workgroup-workspace:workgroup.adoc[Workgroup] and xref:workgroup-workspace:workspaces/workspace.adoc[Workspaces].
 
 Return to the xref:cloud4:overview:index.adoc[Overview] page for a different topic.

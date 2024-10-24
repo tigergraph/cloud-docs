@@ -14,7 +14,7 @@ Discover how to create backup points and restore your workspace to a specific po
 
 [IMPORTANT]
 ====
-Backup functionality is currently available only for xref:cloud4:resource-manager:workspaces/writeread_readonly.adoc#_read_write_rw_workspace[Read-Write (RW) workspaces].
+Backup functionality is currently available only for xref:cloud4:workgroup-workspace:workspaces/writeread_readonly.adoc#_read_write_rw_workspace[Read-Write (RW) workspaces].
 Make sure your workspace is in RW mode before attempting to perform a backup.
 ====
 image::backuprestore1.png[]
@@ -107,9 +107,9 @@ image::Screenshot 2024-04-17 at 5.40.16 PM.png[]
 
 == Next Steps
 
-Next, learn more about how to xref:cloud4:resource-manager:connect_via_api.adoc[] a workspace, or xref:cloud4:resource-manager:monitor_workspaces.adoc[].
+Next, learn more about how to xref:cloud4:workgroup-workspace:workspaces/connect-via-api.adoc[] a workspace, or xref:cloud4:workgroup-workspace:workgroups/monitor-workspaces.adoc[].
 
-Return to the xref:cloud4:resource-manager:index.adoc[] page or xref:cloud4:overview:index.adoc[Overview] page for a different topic.
+Return to the xref:cloud4:workgroup-workspace:index.adoc[] page or xref:cloud4:overview:index.adoc[Overview] page for a different topic.
 
 
 

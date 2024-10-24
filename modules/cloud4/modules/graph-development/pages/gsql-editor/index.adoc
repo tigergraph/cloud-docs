@@ -14,7 +14,7 @@ image::Screenshot 2024-10-11 at 11.39.23.png[]
 +
 [NOTE]
 ====
-For more details please see xref:cloud4:graph-development:schema-designer/index.adoc[].
+For more details please see xref:cloud4:graph-development:design-schema/index.adoc[].
 ====
 
 * Main area image:main.png[] Main GSQL Editing Panel.
@@ -25,7 +25,7 @@ Additionally, you can use shortcuts to run a GSQL query.
 
 image::Screenshot 2024-04-18 at 10.07.17 AM.png[]
 
-See xref:gsql-editor:how2-edit-gsql-query.adoc[] for more details.
+See xref:cloud4:graph-development:gsql-editor/how2-edit-gsql-query.adoc[] for more details.
 ====
 
 == File List
@@ -61,7 +61,7 @@ The GSQL Editor in TigerGraph Cloud 4 has two types of folders presented in the 
 === Shared Folder
 The Shared Folder is a special type of folder that facilitates collaboration and sharing of GSQL files. The folder contains all GSQL files that are shared with you from other users with in the organization.
 
-For more information about sharing GSQL files, please refer to xref:how2-edit-gsql-query.adoc#_share_gsql_files[Share GSQL Files].
+For more information about sharing GSQL files, please refer to xref:cloud4:graph-development:gsql-editor/how2-edit-gsql-query.adoc#_share_gsql_files[Share GSQL Files].
 
 === User-defined Folders
 
@@ -120,11 +120,11 @@ You can easily open the Schema Designer in GSQL Editor by clicking on the image:
 
 [NOTE]
 ====
-For more details please see xref:cloud4:graph-development:schema-designer/index.adoc[].
+For more details please see xref:cloud4:graph-development:design-schema/index.adoc[].
 ====
 
 == Next Steps
-Next, learn more about how to xref:gsql-editor:how2-edit-gsql-query.adoc[].
+Next, learn more about how to xref:cloud4:graph-development:gsql-editor/how2-edit-gsql-query.adoc[].
 
 Or return to the xref:cloud4:overview:index.adoc[Overview] page for a different topic.
 

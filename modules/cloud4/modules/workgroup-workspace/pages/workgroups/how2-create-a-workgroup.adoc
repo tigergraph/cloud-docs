@@ -1,7 +1,7 @@
-= How to Configure Network Access
+= How to Create a Workgroup
 :experimental:
 
-To learn more about workgroups see xref:cloud4:resource-manager:workgroup.adoc[].
+To learn more about workgroups see xref:cloud4:workgroup-workspace:workgroups/workgroup.adoc[].
 To create a workgroup in TigerGraph Cloud 4, follow the steps below.
 
 == Create a Workgroup
@@ -35,20 +35,20 @@ As of 2024-04-23, TigerGraph Cloud 4 only offers `AWS` on `US East(N. Virginia)`
 
 == Next Step
 
-Now, learn xref:cloud4:resource-manager:how2-workgroup-access.adoc[] or learn more about xref:cloud4:resource-manager:workspaces/workspace.adoc[Workspaces and Databases].
+Now, learn xref:cloud4:workgroup-workspace:workgroups/how2-workgroup-access.adoc[] or learn more about xref:cloud4:workgroup-workspace:workspaces/workspace.adoc[Workspaces and Databases].
 
-Return to the xref:cloud4:resource-manager:index.adoc[] page or xref:cloud4:overview:index.adoc[Overview] page for a different topic.
+Return to the xref:cloud4:workgroup-workspace:index.adoc[] page or xref:cloud4:overview:index.adoc[Overview] page for a different topic.
 
 ////
-xref:cloud4:resource-manager:workspaces/workspace.adoc[Workspaces and Databases, role=next-button]
+xref:cloud4:workgroup-workspace:workspaces/workspace.adoc[Workspaces and Databases, role=next-button]
 
 [.next-button]
-xref:cloud4:resource-manager:workspaces/workspace.adoc[Link Text]
+xref:cloud4:workgroup-workspace:workspaces/workspace.adoc[Link Text]
 
-:next-button: pass:[<span class="next-button">xref:cloud4:resource-manager:workspaces/workspace.adoc[Next]</span>]
+:next-button: pass:[<span class="next-button">xref:cloud4:workgroup-workspace:workspaces/workspace.adoc[Next]</span>]
 {next-button}
 
 ++++
-<a href="cloud4:resource-manager:workspaces/workspace.adoc" class="next-button">Next</a>
+<a href="cloud4:workgroup-workspace:workspaces/workspace.adoc" class="next-button">Next</a>
 ++++
 ////

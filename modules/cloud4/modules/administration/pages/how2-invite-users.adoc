@@ -5,7 +5,7 @@ When you set up a TigerGraph Cloud 4 account, you are granted the privileges of 
 An Organization Admin can manage multiple users in your organization and control their access to various resources.
 
 [NOTE]
-For help with setting up workspaces, visit xref:resource-manager:workspaces/how2-create-a-workspace.adoc[]
+For help with setting up workspaces, visit xref:workgroup-workspace:workspaces/how2-create-a-workspace.adoc[]
 
 == How to Invite and Delete Users
 

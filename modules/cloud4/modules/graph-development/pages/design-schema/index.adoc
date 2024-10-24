@@ -14,7 +14,7 @@ With the Schema Designer, you can easily modify and manage the schema of your gr
 * Specifying properties and indexes.
 * Establish relationships between elements.
 
-image::Screenshot 2024-04-17 at 7.33.43 PM.png[width=400]
+image::design-schema.png[width=1200]
 == 1) Get Started
 
 .Navigate to the Schema Designer. It is accessible from:

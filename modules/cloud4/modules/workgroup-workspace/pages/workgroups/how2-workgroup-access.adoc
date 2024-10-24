@@ -59,6 +59,6 @@ For more information about the superuser role and its capabilities, please refer
 
 == Next steps
 
-Now, learn more about xref:cloud4:resource-manager:workspaces/workspace.adoc[Workspaces and Databases].
+Now, learn more about xref:cloud4:workgroup-workspace:workspaces/workspace.adoc[Workspaces and Databases].
 
-Return to the xref:cloud4:resource-manager:index.adoc[] page or xref:cloud4:overview:index.adoc[Overview] page for a different topic.
+Return to the xref:cloud4:workgroup-workspace:index.adoc[] page or xref:cloud4:overview:index.adoc[Overview] page for a different topic.

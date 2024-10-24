@@ -8,7 +8,7 @@ Additionally, data can also be loaded from a JDBC Connection as well, See xref:c
 
 == Next Steps
 
-Next, learn how to use xref:cloud4:graph-development:schema-designer/index.adoc[Design Schema] in TigerGraph Cloud 4.
+Next, learn how to use xref:cloud4:graph-development:design-schema/index.adoc[Design Schema] in TigerGraph Cloud 4.
 
 Or return to the xref:cloud4:overview:index.adoc[Overview] page for a different topic.
 

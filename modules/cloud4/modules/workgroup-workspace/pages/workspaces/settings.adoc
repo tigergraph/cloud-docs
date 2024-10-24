@@ -122,9 +122,9 @@ Updating Graph Admin settings might result in the restart of certain TigerGraph 
 
 == Next Steps
 
-Next, learn about  xref:cloud4:resource-manager:workspaces/writeread_readonly.adoc[] or learn more about xref:cloud4:resource-manager:workspaces/workspace-size.adoc[].
+Next, learn about  xref:cloud4:workgroup-workspace:workspaces/readwrite-readonly.adoc[] or learn more about xref:cloud4:workgroup-workspace:workspaces/workspace-size.adoc[].
 
-Return to the xref:cloud4:resource-manager:index.adoc[] page or xref:cloud4:overview:index.adoc[Overview] page for a different topic.
+Return to the xref:cloud4:workgroup-workspace:index.adoc[] page or xref:cloud4:overview:index.adoc[Overview] page for a different topic.
 
 
 

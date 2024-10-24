@@ -4,7 +4,7 @@ TigerGraph Cloud 4 supports various data sources for ingestion, providing flexib
 GSQL templates can be used for connectors that are not yet supported in the step-by-step loading guide.
 See xref:tigergraph-server:data-loading:index.adoc[Data Loading in TigerGraph DB] for guides to loading data into TigerGraph.
 
-Additionally, data can also be loaded from a JDBC Connection as well, See xref:cloud4:load-data:jdbc.adoc[] for more details.
+Additionally, data can also be loaded from a JDBC Connection as well, See xref:cloud4:graph-development:load-data/jdbc.adoc[] for more details.
 
 == Next Steps
 

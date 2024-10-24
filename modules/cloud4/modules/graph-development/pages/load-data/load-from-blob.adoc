@@ -1,27 +1,25 @@
 = Load from Azure Blob Storage
 :experimental:
 
-If you store your data in AWS S3, TigerGraph Cloud provides seamless integration for data ingestion.
-You can directly load data from your S3 buckets into your graph databases, eliminating the need for manual data transfers.
-This simplifies the process of importing large datasets and enables you to leverage the scalability and durability of AWS S3 for your graph analysis.
+TigerGraph Cloud 4 allows you to load data directly from Azure Blob Storage. This guide will walk you through the steps to configure and load data from Azure Blob Storage into your TigerGraph workspace.
 
 == 1) Select Source
 
-.Once you’ve selected AWS S3, you will be asked to configure the AWS S3 data source.
-. Click on image:Screenshot 2024-04-17 at 9.36.58 PM.png[width=50] to add a new AWS S3 data source.
+.Once you’ve selected btn:[Azure Blob Storage], you will be asked to configure the Azure Blob Storage data source.
+. Click on image:Screenshot 2024-04-17 at 9.36.58 PM.png[width=50] to add a new Azure Blob Storage data source.
 +
-image:Screenshot 2024-04-17 at 9.36.27 PM.png[]
+image:gcs-empty-data-source.png[]
 
-. You will need to provide your S3 `AWS access key id` and S3 `AWS secret access key`.
+. You will need to provide your `ABS Connection String`.
 +
-image:Screenshot 2024-04-17 at 9.37.32 PM.png[]
-. Once you have those configured, you can add one or multiple `S3 URI` within the same S3 bucket.
+image:abs-connection-details.png[]
+. Once you have those configured, you can add one or multiple `ABS URI` within the same blob storage account.
 
 . Click btn:[ Next ] to process the file(s).
 +
 [NOTE]
 ====
-The current data loading tool only supports CSV files. Other formats will be available in later releases.
+The current data loading tool only supports CSV,TSV and JSON files. Other formats will be available in later releases.
 ====
 
 == 2) Configure File
@@ -29,7 +27,7 @@ The current data loading tool only supports CSV files. Other formats will be ava
 . The data loading tool will automatically detect the `.csv` separators and line breaks.
 The parser automatically splits each line into a series of tokens.
 +
-image::Screenshot 2024-04-17 at 5.53.45 PM.png[]
+image::config-file.png[]
 +
 [TIP]
 ====
@@ -72,25 +70,30 @@ The schema generation feature is still a preview feature. The correctness and ef
 
 . In the `Source` column, you can choose the specific column from the data source that you want to map with the attribute.
 +
-image::Screenshot 2024-04-17 at 5.56.15 PM.png[]
+image::config-mapping-1.png[]
 +
 . Use the `+` button to create a new attribute of the target vertex or edge.
 +
-image::Screenshot 2024-04-17 at 5.57.07 PM.png[]
+image::config-mapping-2.png[width=400]
 
-. The `Map all to target` button aligns existing attribute names with the corresponding data source headers to establish mappings and also introduces new attributes based on unmatched data source headers.
+. Click the btn:[Token Function] button to configure token functions for the selected source. For more details of configuring token functions, please refer to xref:cloud4:graph-development:load-data/token-function.adoc[Token Function].
+
+. Click the btn:[Quick Map] button to quickly map the data source headers to the existing schema attributes.
 +
-image::Screenshot 2024-04-17 at 5.57.52 PM.png[]
+image::quick-map.png[]
++
+    .. The btn:[Map all to target] button aligns existing attribute names with the corresponding data source headers, it won't introduce new attributes.
+    .. The btn:[Map all from source] button not only aligns existing attribute names with the corresponding dat asource headers, but also introduces new attributes based on unmatched data source headers.
+    .. The following list shows the mapping status of each attribute, you can manually adjust the mapping by checking the box next to the attribute name.
+
 . Click btn:[Next] to proceed.
-
-
 
 == 4) Confirm
 
 .This step will let you confirm the changes made to the schema and the data mapping you created to load the data.
-. Simply review the `Schema to be change` and `Data to be loaded` lists.
+. Simply review the `Schema to be changed` and `Data to be loaded` lists.
 +
-image::Screenshot 2024-04-17 at 5.58.36 PM.png[]
+image::confirm.png[]
 +
 [CAUTION]
 ====
@@ -102,7 +105,7 @@ image::Screenshot 2024-04-17 at 5.59.16 PM.png[]
 
 == Next Steps
 
-Next, learn how to use xref:cloud4:graph-development:design-schema/index.adoc[Design Schema] in TigerGraph Cloud 4.
+Next, learn how to use xref:cloud4:graph-development:design-schema/index.adoc[Design Schema], xref:cloud4:graph-development:gsql-editor/index.adoc[GSQL Editor] and xref:cloud4:graph-development:explore-graph/index.adoc[Explore Graph] in TigerGraph Cloud 4.
 
 Or return to the xref:cloud4:overview:index.adoc[Overview] page for a different topic.
 

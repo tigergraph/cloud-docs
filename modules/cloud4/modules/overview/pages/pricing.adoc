@@ -47,7 +47,7 @@ A TigerGraph Credit (TCR) is a unit that represents the cost of using compute re
 
 The exchange rate for TigerGraph Credits is straightforward:
 
-**1 TCR = $4.00
+*1 TCR = $4.00*
 
 
 This means that for every TigerGraph Credit you consume, you will be billed $4.00.
@@ -75,52 +75,43 @@ The compute costs are distinct from the storage fees listed below and are metere
 <th class="tableblock halign-left valign-top">Price (TCR/hour) </th>
 </tr>
 </thead>
-<tbody><tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-00</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">16</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0.25</p></td></tr><tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">32</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0.50</p></td></tr><tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">64</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1.00</p></td></tr><tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">64</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.00</p></td></tr><tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-4</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">64</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">4.00</p></td></tr><tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-6</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">64</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">6.00</p></td></tr><tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-8</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">64</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">8.00</p></td></tr><tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-16</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">64</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">16.00</p></td></tr><tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-24</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">64</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">24.00</p></td></tr><tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-32</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">64</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">32.00</p></td></tr></tbody>
+<tbody>
+<tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-00</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">16</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">0.25</p></td></tr>
+<tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-0</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">32</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">0.50</p></td></tr>
+<tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-1</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">64</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">1.00</p></td></tr>
+<tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-2</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">16</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">128</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">2.00</p></td></tr>
+<tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-4</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">32</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">256</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">4.00</p></td></tr>
+<tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-6</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">48</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">384</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">6.00</p></td></tr>
+<tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-8</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">64</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">512</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">8.00</p></td></tr>
+<tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-16</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">128</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">1,024</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">16.00</p></td></tr>
+<tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-24</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">192</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">1,536</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">24.00</p></td></tr>
+<tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-32</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">256</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">2,048</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">32.00</p></td></tr>
+<tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-40</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">320</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">2,560</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">40.00</p></td></tr>
+<tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-48</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">384</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">3,072</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">48.00</p></td></tr>
+<tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-56</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">448</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">3,584</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">56.00</p></td></tr>
+<tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-64</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">512</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">4,096</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">64.00</p></td></tr>
+<tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-128</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">1024</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">8,192</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">128.00</p></td></tr>
+</tbody>
 </table>
 </div>
 
 <script>
   const basePrices = [
-            { size: 'TG-00', vcpus: 2, memory: 16, price: 0.25 },
-            { size: 'TG-0', vcpus: 4, memory: 32, price: 0.5 },
-            { size: 'TG-1', vcpus: 8, memory: 64, price: 1 },
-            { size: 'TG-2', vcpus: 8, memory: 64, price: 2 },
-            { size: 'TG-4', vcpus: 8, memory: 64, price: 4 },
-            { size: 'TG-6', vcpus: 8, memory: 64, price: 6 },
-            { size: 'TG-8', vcpus: 8, memory: 64, price: 8 },
-            { size: 'TG-16', vcpus: 8, memory: 64, price: 16 },
-            { size: 'TG-24', vcpus: 8, memory: 64, price: 24 },
-            { size: 'TG-32', vcpus: 8, memory: 64, price: 32 },
+            { size: 'TG-00', vcpus: 2, memory: '16', price: 0.25 },
+            { size: 'TG-0', vcpus: 4, memory: '32', price: 0.5 },
+            { size: 'TG-1', vcpus: 8, memory: '64', price: 1 },
+            { size: 'TG-2', vcpus: 16, memory: '128', price: 2 },
+            { size: 'TG-4', vcpus: 32, memory: '256', price: 4 },
+            { size: 'TG-6', vcpus: 48, memory: '384', price: 6 },
+            { size: 'TG-8', vcpus: 64, memory: '512', price: 8 },
+            { size: 'TG-16', vcpus: 128, memory: '1,024', price: 16 },
+            { size: 'TG-24', vcpus: 192, memory: '1,536', price: 24 },
+            { size: 'TG-32', vcpus: 256, memory: '2,048', price: 32 },
+            { size: 'TG-40', vcpus: 320, memory: '2,560', price: 40 },
+            { size: 'TG-48', vcpus: 384, memory: '3,072', price: 48 },
+            { size: 'TG-56', vcpus: 448, memory: '3,584', price: 56 },
+            { size: 'TG-64', vcpus: 512, memory: '4,096', price: 64 },
+            { size: 'TG-128', vcpus: 1024, memory: '8,192', price: 128 }
         ];
   const pricingData = {
     'AWS': {

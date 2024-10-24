@@ -25,7 +25,7 @@ image::invoice-list.png[]
 
 == Next Steps
 
-Next, learn about other billing topics on the xref:billing-manager:index.adoc[] page or check out the xref:resources:index.adoc[] section.
+Next, learn about other billing topics on the xref:cloud4:administration:billing/index.adoc[] page or check out the xref:resources:index.adoc[] section.
 
 Return to the  page to xref:cloud4:overview:index.adoc[Overview] page for a different topic.
 

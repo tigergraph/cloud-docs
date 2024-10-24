@@ -13,6 +13,6 @@ Learn how to create API keys for your organization.
 
 == Next Steps
 
-Next, learn about xref:security:index.adoc[] or additional xref:cloud4:resources:index.adoc[] in TigerGraph Cloud 4.
+Next, learn about xref:cloud4:administration:security/index.adoc[] or additional xref:cloud4:resources:index.adoc[] in TigerGraph Cloud 4.
 
 Return to the xref:cloud4:overview:index.adoc[Overview] page for a different topic.

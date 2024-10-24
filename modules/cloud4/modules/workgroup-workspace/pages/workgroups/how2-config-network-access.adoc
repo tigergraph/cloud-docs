@@ -28,7 +28,7 @@ The IP Allowlist table displays the current IP addresses and ranges that are all
 * Note: A description or note for the IP address or range.
 * Actions: Options to edit or remove the IP address or range.
 
-image::ip-allowlist.png[width:1200]
+image::ip-allowlist.png[width=1200]
 
 === Adding an IP Address or Range
 

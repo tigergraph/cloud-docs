@@ -1,6 +1,5 @@
 name: cloud4
 title: TigerGraph Cloud 4
-
 version: main
 display_version: default
 start_page: overview:index.adoc
@@ -10,13 +9,7 @@ nav:
   - modules/get-started/nav.adoc
   - modules/workgroup-workspace/nav.adoc
   - modules/graph-development/nav.adoc
-  # - modules/load-data/nav.adoc
-  # - modules/schema-designer/nav.adoc
-  # - modules/gsql-editor/nav.adoc
-  # - modules/explore-graph/nav.adoc
+  - modules/rest-api/nav.adoc
   - modules/integrations/nav.adoc
   - modules/administration/nav.adoc
-  - modules/rest-api/nav.adoc
-  - modules/security/nav.adoc
-  # - modules/billing-manager/nav.adoc
   - modules/resources/nav.adoc

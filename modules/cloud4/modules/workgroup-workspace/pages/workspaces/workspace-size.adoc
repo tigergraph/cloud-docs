@@ -14,60 +14,39 @@ We provide the following workspace sizes on TigerGraph Cloud 4.
 |===
 | Size | VCPU | Memory (GB) | Pod Size | Partition
 
-|TG-00
-|2
-|16
-|C2M16
-|1
+|TG-00|2|16|C2M16|1
 
-|TG-0
-|4
-|32
-|C4M32
-|1
+|TG-0|4|32|C4M32|1
 
-|TG-1
-|8
-|64
-|C8M64
-|1
+|TG-1|8|64|C8M64|1
 
-|TG-2
-|16
-|128
-|C16M128
-|1
+|TG-2|16|128|C16M128|1
 
-|TG-4
-|32
-|256
-|C32M256
-|1
+|TG-4|32|256|C32M256|1
 
-|TG-6
-|48
-|384
-|C48M384
-|1
+|TG-6|48|384|C48M384|1
 
-|TG-8
-|64
-|512
-|C64M512
-|1
+|TG-8|64|512|C64M512|1
 
-|TG-12
-|96
-|768
-|C48M384
-|2
+|TG-16|128|1024|C64M512|2
 
-|TG-16
-|128
-|1024
-|C64M512
-|2
+|TG-24|192|1536|C64M512|3
+
+|TG-32|256|2048|C64M512|4
+
+|TG-40|320|2560|C64M512|5
+
+|TG-48|384|3072|C64M512|6
+
+|TG-56|448|3584|C64M512|7
+
+|TG-64|512|4096|C64M512|8
+
+|TG-128|1024|8192|C64M512|16
+
 |===
+
+Please contact support@tigergraph.com if you need a workspace size that is not listed in the table.
 
 ////
 TigerGraph Size Capacity Planner (TBD)

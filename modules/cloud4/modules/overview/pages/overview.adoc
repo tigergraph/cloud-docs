@@ -19,7 +19,7 @@ We introduce Read-Write and Read-Only Workspaces to connect to the same database
 
 === Streamlined Data Loading Pipeline
 The platform simplifies the process of importing and transforming data into a graph database.
-With support for various data connectors such as Local File, AWS S3, Azure Blob Storage, GCP Cloud Storage, Spark, Snowflake, Postgres, Kafka, and BigQuery, the platform offers seamless integration with diverse data sources.
+With support for various data connectors such as Local File, Amazon S3, Azure Blob Storage, GCP Cloud Storage, Spark, Snowflake, Postgres, Kafka, and BigQuery, the platform offers seamless integration with diverse data sources.
 It provides step-by-step data loading for select connectors, automatically detecting formats, schemas, and mappings. This streamlines the data loading process and enables auto schema and mapping generation, making it convenient to leverage existing data assets for graph analytics.
 
 === Integrations with Solution Kits

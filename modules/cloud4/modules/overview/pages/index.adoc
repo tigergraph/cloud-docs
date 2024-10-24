@@ -43,7 +43,7 @@ image:insights.png[alt=workspace,width=74,height=74]
 Learn  how to dynamically allocate compute and storage resources.
 
 xref:workgroup-workspace:index.adoc[Overview] |
-xref:workgroup-workspace:workgroup.adoc[Workgroup] |
+xref:workgroup-workspace:workgroups/workgroup.adoc[Workgroup] |
 xref:workgroup-workspace:workspaces/workspace.adoc[Workspace]
 
 ¦
@@ -54,12 +54,12 @@ Learn how to Load Data into TigerGraph Cloud 4.
 
 
 
-xref:load-data:index.adoc[Overview] |
-xref:load-data:load-from-local.adoc[Local] |
-xref:load-data:load-from-s3.adoc[AWS S3] |
-xref:load-data:load-from-gcs.adoc[Google Cloud Storage] |
-xref:load-data:load-from-blob.adoc[Azure Blob Storage] |
-xref:load-data:load-from-other-sources.adoc[Other Sources]
+xref:cloud4:graph-development:load-data/index.adoc[Overview] |
+xref:cloud4:graph-development:load-data/load-from-local.adoc[Local] |
+xref:cloud4:graph-development:load-data/load-from-s3.adoc[Amazon S3] |
+xref:cloud4:graph-development:load-data/load-from-gcs.adoc[Google Cloud Storage] |
+xref:cloud4:graph-development:load-data/load-from-blob.adoc[Azure Blob Storage] |
+xref:cloud4:graph-development:load-data/load-from-other-sources.adoc[Other Sources]
 ¦
 image:TG_Icon_Library-135.png[alt=schemadesigner,width=74,height=74]
 *Design Schema*
@@ -72,15 +72,15 @@ image:schema-homecard.png[alt=gsqlEditor,width=74,height=74]
 
 The GSQL Editor is a powerful tool for developing and executing GSQL queries, allowing you to unlock insights from your graph databases.
 
-xref:gsql-editor:index.adoc[Overview] | xref:gsql-editor:how2-edit-gsql-query.adoc[]
+xref:cloud4:graph-development:gsql-editor/index.adoc[Overview] | xref:cloud4:graph-development:gsql-editor/how2-edit-gsql-query.adoc[]
 ¦
 image:TG_Icon_Library-218.png[alt=exploreGraph,width=74,height=74]
 *Explore Graph*
 
 Visualize your data and navigate to understand complex connections and dependencies.
 
-xref:explore-graph:index.adoc[Overview] |
-xref:explore-graph:how2-use-pattern-search.adoc[]
+xref:cloud4:graph-development:explore-graph/index.adoc[Overview] |
+xref:cloud4:graph-development:explore-graph/how2-use-pattern-search.adoc[]
 
 ¦
 image:ArchtectureOverview-homecard.png[alt=integration,width=74,height=74]
@@ -88,7 +88,7 @@ image:ArchtectureOverview-homecard.png[alt=integration,width=74,height=74]
 
 TigerGraph Cloud 4 offers several powerful integration tools.
 
-xref:integrations:index.adoc[Overview] |
+xref:cloud4:integrations:index.adoc[Overview] |
 xref:cloud4:integrations:insights.adoc[] |
 xref:cloud4:integrations:graphstudio.adoc[] |
 xref:cloud4:integrations:graphql.adoc[]
@@ -101,24 +101,24 @@ Here you can learn about the tools available for organizational administrators.
 xref:cloud4:administration:index.adoc[Overview] |
 xref:cloud4:administration:how2-invite-users.adoc[] |
 xref:cloud4:administration:how2-access-mgnt.adoc[] |
-xref:cloud4:administration:how2-use-organization-mgnt.adoc[Org Management]
+xref:cloud4:administration:settings/how2-use-organization-mgnt.adoc[Org Management]
 ¦
 image:security-homecard.png[alt=security,width=74,height=74]
 *Security*
 
-Learn about xref:security:index.adoc[] in TigerGraph Cloud 4.
+Learn about xref:cloud4:administration:security/index.adoc[] in TigerGraph Cloud 4.
 
-xref:cloud4:security:password-policy.adoc[] |
-xref:cloud4:security:idp.adoc[]
+xref:cloud4:administration:security/password-policy.adoc[] |
+xref:cloud4:administration:security/idp.adoc[]
 ¦
 image:billing-homecard.png[alt=billing,width=74,height=74]
 *Billing*
 
-The xref:billing-manager:index.adoc[Billing] window allows users to pay only for their specific usage of storage, data access, and compute resources.
+The xref:cloud4:administration:billing/index.adoc[Billing] window allows users to pay only for their specific usage of storage, data access, and compute resources.
 
-xref:cloud4:billing-manager:payment-methods.adoc[] |
-xref:cloud4:billing-manager:invoices.adoc[] |
-xref:cloud4:billing-manager:pricing.adoc[]
+xref:cloud4:administration:billing/payment-methods.adoc[] |
+xref:cloud4:administration:billing/invoices.adoc[] |
+xref:cloud4:overview:pricing.adoc[]
 ¦
 image:referece-homecard.png[alt=support,width=74,height=74]
 *Release Notes*

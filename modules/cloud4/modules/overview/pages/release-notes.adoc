@@ -18,7 +18,7 @@
 * Capacity Planning: Benefit from capacity planning features that help you estimate and plan your workspace size and cost more efficiently.
 // * Scheduled Workspace Expansion and Shrink: Schedule workspace expansion and shrink operations to align with your usage patterns and optimize resource allocation.
 * Support HA with Cross-Zone Resiliency: Ensure business continuity and minimize downtime with the introduction of cross-zone high availability support, allowing you to deploy and manage resilient graph database clusters across multiple availability zones for enhanced fault tolerance and disaster recovery capabilities.
-* Output to AWS S3: Benefit from integration with AWS S3 for data output, enabling you to store and retrieve data from Amazon S3 buckets directly from your TigerGraph Cloud environment.
+* Output to Amazon S3: Benefit from integration with Amazon S3 for data output, enabling you to store and retrieve data from Amazon S3 buckets directly from your TigerGraph Cloud environment.
 
 ==== GSQL Editor Enhancements
 
@@ -46,15 +46,15 @@
 //* xref:cloud4:get-started:index.adoc[Get Started] using TigerGraph Cloud with the 4.0.
 * xref:cloud4:overview:overview.adoc#_separation_of_storage_and_compute[Separation of Storage and Compute] - Introduction of a unique architecture that separates storage and compute, allowing users to scale resources independently.
 
-* xref:workgroup-workspace:workgroup.adoc[Workgroups] and xref:workgroup-workspace:workspaces/workspace.adoc[Workspaces] give users control over resource management.
+* xref:workgroup-workspace:workgroups/workgroup.adoc[Workgroups] and xref:workgroup-workspace:workspaces/workspace.adoc[Workspaces] give users control over resource management.
 
-* xref:load-data:index.adoc[] - Load Data into TigerGraph Cloud 4 and unlock its potential.
+* xref:cloud4:graph-development:load-data/index.adoc[] - Load Data into TigerGraph Cloud 4 and unlock its potential.
 
 * xref:cloud4:graph-development:design-schema/index.adoc[Design Schema] - Easily modify and manage the schema of your graph databases using Schema Designer UI.
 
-* xref:gsql-editor:index.adoc[GSQL Editor] - The GSQL Editor is a powerful tool for developing and executing GSQL queries, allowing you to unlock insights from your graph databases by xref:gsql-editor:how2-edit-gsql-query.adoc[Editing, Running, and Sharing a GSQL Query.].
+* xref:cloud4:graph-development:gsql-editor/index.adoc[GSQL Editor] - The GSQL Editor is a powerful tool for developing and executing GSQL queries, allowing you to unlock insights from your graph databases by xref:cloud4:graph-development:gsql-editor/how2-edit-gsql-query.adoc[Editing, Running, and Sharing a GSQL Query.].
 
-* xref:explore-graph:index.adoc[] and xref:explore-graph:how2-use-pattern-search.adoc[] - Visualize your data and navigate to understand complex connections and dependencies.
+* xref:cloud4:graph-development:explore-graph/index.adoc[] and xref:cloud4:graph-development:explore-graph/how2-use-pattern-search.adoc[] - Visualize your data and navigate to understand complex connections and dependencies.
 
 * xref:integrations:index.adoc[] - TigerGraph Cloud 4 offers several powerful integration tools in our marketplace.
 ** xref:cloud4:integrations:solutions.adoc[] -  Pre-built solution kits that address common use cases and industry-specific challenges.
@@ -64,10 +64,10 @@
 *** xref:cloud4:integrations:graphql.adoc[GraphQL Add-On] - TigerGraph GraphQL enables users to access and modify graph data in TigerGraph using GraphQL queries.
 
 * xref:cloud4:administration:index.adoc[] - The tools for organizational administrators to xref:cloud4:administration:how2-invite-users.adoc[]
-, xref:cloud4:administration:how2-access-mgnt.adoc[Mange Access], xref:cloud4:administration:how2-use-organization-mgnt.adoc[Manage Organization].
+, xref:cloud4:administration:how2-access-mgnt.adoc[Mange Access], xref:cloud4:administration:settings/how2-use-organization-mgnt.adoc[Manage Organization].
 
-* xref:billing-manager:index.adoc[Billing UI] - The new billing UI allows users to check and pay only for their specific usage of storage, data access, and compute resources
-with an xref:cloud4:billing-manager:payment-methods.adoc[easy-to-use Payment Method manager], and the xref:cloud4:billing-manager:invoices.adoc[ability to check and export invoices].
+* xref:cloud4:administration:billing/index.adoc[Billing UI] - The new billing UI allows users to check and pay only for their specific usage of storage, data access, and compute resources
+with an xref:cloud4:administration:billing/payment-methods.adoc[easy-to-use Payment Method manager], and the xref:cloud4:administration:billing/invoices.adoc[ability to check and export invoices].
 
 ////
 == Fixed issues

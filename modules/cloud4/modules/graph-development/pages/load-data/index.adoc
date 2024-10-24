@@ -40,11 +40,12 @@ You can leverage GSQL's powerful features to transform, validate, and load data 
 When selecting a data source a step-by-step guide might not always be available.
 When this is the case users will see btn:[Open in GSQL Editor] on the bottom right of the panel.
 
-image::load-data:Screenshot 2024-04-25 at 12.31.39 (1).png[width=300]
+image::open-in-gsql-editor.png[width=200]
 
 [NOTE]
 ====
-Step-by step-support will be added for all sources, but during the beta release only btn:[Local File] and btn:[AWS S3] is supported with step-by-step.
+As of 2024-10-31, Step-by-step guide support load from xref:cloud4:graph-development:load-data/load-from-local.adoc[Local File], xref:cloud4:graph-development:load-data/load-from-s3.adoc[Amazon S3], xref:cloud4:graph-development:load-data/load-from-gcs.adoc[Google Cloud Storage] and xref:cloud4:graph-development:load-data/load-from-blob.adoc[Azure Blob Storage]. We are actively working on adding support for more data sources.
+
 ====
 
 == xref:cloud4:graph-development:load-data/load-from-local.adoc[]
@@ -53,7 +54,7 @@ Check out our step-by-step guide on loading data from a local file.
 
 == xref:cloud4:graph-development:load-data/load-from-s3.adoc[]
 
-Check out our step-by-step guide on loading data from a AWS S3.
+Check out our step-by-step guide on loading data from a Amazon S3.
 
 == xref:cloud4:graph-development:load-data/load-from-gcs.adoc[]
 

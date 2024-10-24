@@ -112,7 +112,7 @@ Sharing with the entire organization can be useful when you want to provide broa
 
 == Next Steps
 
-Next, learn to xref:cloud4:explore-graph:index.adoc[].
+Next, learn to xref:cloud4:graph-development:explore-graph/index.adoc[].
 
 Or return to the xref:cloud4:overview:index.adoc[Overview] page for a different topic.
 

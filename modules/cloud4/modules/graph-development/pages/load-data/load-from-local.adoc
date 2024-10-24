@@ -14,16 +14,15 @@ image::Screenshot 2024-04-17 at 5.53.05 PM.png[]
 +
 [NOTE]
 ====
-The current data loading tool only supports CSV files. Other formats will be available in later releases.
+The current data loading tool only supports CSV,TSV and JSON files. Other formats will be available in later releases.
 ====
 
 == 2) Configure File
-
 .This step lets you configure the source file details.
 . The data loading tool will automatically detect the `.csv` separators and line breaks.
 The parser automatically splits each line into a series of tokens.
 +
-image::Screenshot 2024-04-17 at 5.53.45 PM.png[]
+image::config-file.png[]
 +
 [TIP]
 ====
@@ -66,28 +65,30 @@ The schema generation feature is still a preview feature. The correctness and ef
 
 . In the `Source` column, you can choose the specific column from the data source that you want to map with the attribute.
 +
-image::Screenshot 2024-04-17 at 5.56.15 PM.png[]
+image::config-mapping-1.png[]
 +
 . Use the `+` button to create a new attribute of the target vertex or edge.
 +
-image::Screenshot 2024-04-17 at 5.57.07 PM.png[]
+image::config-mapping-2.png[width=400]
 
-. The `Map all to target` button aligns existing attribute names with the corresponding data source headers to establish mappings and also introduces new attributes based on unmatched data source headers.
+. Click the btn:[Token Function] button to configure token functions for the selected source. For more details of configuring token functions, please refer to xref:cloud4:graph-development:load-data/token-function.adoc[Token Function].
+
+. Click the btn:[Quick Map] button to quickly map the data source headers to the existing schema attributes.
 +
-image::Screenshot 2024-04-17 at 5.57.52 PM.png[]
+image::quick-map.png[]
++
+    .. The btn:[Map all to target] button aligns existing attribute names with the corresponding data source headers, it won't introduce new attributes.
+    .. The btn:[Map all from source] button not only aligns existing attribute names with the corresponding dat asource headers, but also introduces new attributes based on unmatched data source headers.
+    .. The following list shows the mapping status of each attribute, you can manually adjust the mapping by checking the box next to the attribute name.
+
 . Click btn:[Next] to proceed.
 
-////
-== Configure mappings:
-. You can configure the attributes and mappings here.
-Configure attributes: https://docs.google.com/document/d/1kB2zyJgSZWZy0RWhTRJHT7rcxkFs4MiHvpx0LHnI6Ck/edit#heading=h.4tb91cptojyw
-////
-
 == 4) Confirm
+
 .This step will let you confirm the changes made to the schema and the data mapping you created to load the data.
-. Simply review the `Schema to be change` and `Data to be loaded` lists.
+. Simply review the `Schema to be changed` and `Data to be loaded` lists.
 +
-image::Screenshot 2024-04-17 at 5.58.36 PM.png[]
+image::confirm.png[]
 +
 [CAUTION]
 ====
@@ -99,7 +100,7 @@ image::Screenshot 2024-04-17 at 5.59.16 PM.png[]
 
 == Next Steps
 
-Next, learn how to use xref:cloud4:graph-development:design-schema/index.adoc[Design Schema] in TigerGraph Cloud 4.
+Next, learn how to use xref:cloud4:graph-development:design-schema/index.adoc[Design Schema], xref:cloud4:graph-development:gsql-editor/index.adoc[GSQL Editor] and xref:cloud4:graph-development:explore-graph/index.adoc[Explore Graph] in TigerGraph Cloud 4.
 
 Or return to the xref:cloud4:overview:index.adoc[Overview] page for a different topic.
 

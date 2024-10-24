@@ -18,6 +18,6 @@ Designed for users to swiftly adopt graph technology.
 
 == Next Steps
 
-Now learn about xref:administration:index.adoc[Administration] features or xref:security:index.adoc[] in TigerGraph Cloud 4.
+Now learn about xref:administration:index.adoc[Administration] features or xref:cloud4:administration:security/index.adoc[] in TigerGraph Cloud 4.
 
 Or return to the xref:cloud4:overview:index.adoc[Overview] page for a different topic.

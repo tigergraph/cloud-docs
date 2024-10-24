@@ -8,7 +8,7 @@ The GSQL Editor is a powerful tool for developing and executing GSQL queries, al
 The GSQL Editor contains 4 work areas:
 
 image::Screenshot 2024-10-11 at 11.39.23.png[]
-* Left  image:left.png[] - GSQL xref:gsql-editor:index.adoc#_file_list[File List ] Panel.
+* Left  image:left.png[] - GSQL xref:cloud4:graph-development:gsql-editor/index.adoc#_file_list[File List ] Panel.
 * Bottom image:bottom.png[] - GSQL Result Panel.
 * Right image:right.png[] Schema Designer Panel.
 +

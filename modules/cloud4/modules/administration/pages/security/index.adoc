@@ -4,19 +4,12 @@
 
 Here you can learn different security practices and policies in TigerGraph Cloud 4.
 
-[IMPORTANT]
-====
-TigerGraph Cloud 4 beta is  for personal or R&D use and not for production use.
 
-Please see xref:cloud4:resources:terms_conditions.adoc[].
-====
-
-
-== xref:cloud4:security:password-policy.adoc[]
+== xref:cloud4:administration:security/password-policy.adoc[]
 
 Learn and understand the password policy in TigerGraph Cloud 4.
 
 
-== xref:cloud4:security:idp.adoc[]
+== xref:cloud4:administration:security/idp.adoc[]
 
 Learn and understand IDP intergration with SSO password policy in TigerGraph Cloud 4.

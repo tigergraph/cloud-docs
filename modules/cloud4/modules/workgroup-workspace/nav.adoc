@@ -11,5 +11,6 @@
 *** xref:cloud4:workgroup-workspace:workspaces/settings.adoc[Workspace Settings]
 *** xref:cloud4:workgroup-workspace:workspaces/readwrite-readonly.adoc[RW/RO Workspaces]
 *** xref:cloud4:workgroup-workspace:workspaces/expansion-shrink.adoc[Expand and Shrink]
+*** xref:cloud4:workgroup-workspace:workspaces/schedule.adoc[Schedule]
 *** xref:cloud4:workgroup-workspace:workspaces/connect-via-api.adoc[]
 

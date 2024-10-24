@@ -16,13 +16,9 @@ Learn how you can manage payment methods.
 
 Learn how to view and export invoices.
 
-== xref:cloud4:administration:billing/pricing.adoc[]
+== xref:cloud4:overview:pricing.adoc[]
 
 Here you can review pricing information in TigerGraph Cloud 4.
-
-//== xref:cloud4:billing-manager:compute_price.adoc[]
-
-//== xref:cloud4:billing-manager:storage_price.adoc[]
 
 
 

@@ -9,7 +9,6 @@ nav:
 - modules/release-notes/nav.adoc
 - modules/solutions/nav.adoc
 - modules/security/nav.adoc
-- modules/rest-api/nav.adoc
 - modules/billing/nav.adoc
 - modules/support/nav.adoc
 - modules/reference/nav.adoc

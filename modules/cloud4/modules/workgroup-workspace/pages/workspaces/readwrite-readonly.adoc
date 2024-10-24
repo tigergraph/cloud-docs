@@ -43,7 +43,7 @@ It is recommended to schedule the update during a time when minimal or no operat
 
 == Next Steps
 
-Next, about xref:workspaces/workspace-size.adoc[Workspace Sizes] or learn how to xref:cloud4:workgroup-workspace:expansion_shrink.adoc[Expand and Shrink] a workspace.
+Next, about xref:cloud4:workgroup-workspace:workspaces/workspace-size.adoc[Workspace Sizes] or learn how to xref:cloud4:workgroup-workspace:workspaces/expansion-shrink.adoc[Expand and Shrink] a workspace.
 
 Return to the xref:cloud4:workgroup-workspace:index.adoc[] page or xref:cloud4:overview:index.adoc[Overview] page for a different topic.
 

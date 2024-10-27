@@ -1,14 +1,14 @@
-= TigerGraph Cloud FAQs
+= TigerGraph Cloud 4 FAQs
 :pp: {plus}{plus}
 
-////
-*Feedback for TigerGraph Cloud is welcome at* tgcloud-feedback@tigergraph.com
+//
+*Feedback for TigerGraph Cloud 4 is welcome at* tgcloud-feedback@tigergraph.com
 
 == Top FAQs
 
-=== Why don't I see a password reset email?
+=== *Q: Why don't I see a password reset email?*
 
-If you clicked "forgot password" during sign in to Cloud and never received an email, there could be a few explanations.
+A: If you clicked "forgot password" during sign in to Cloud and never received an email, there could be a few explanations.
 
 * If you requested a password reset from an organization login screen, you won't get an email if you don't belong to that organization. Try resetting your password from the main login page at link:tgcloud.io[].
 * If you signed up through Google authentication, you cannot use a password to log in to the same account. Try logging in with your Google account.
@@ -26,9 +26,9 @@ And our starter kits for popular use cases mean you can have an example graph ap
 Since it requires far fewer machines to achieve high performance, TigerGraph's price performance sets a new bar for the graph database industry.
 
 
-=== *Q: How do I migrate to the new December 2020 pricing to lower my bill?*
+=== *Q: How do I migrate to the TigerGraph Cloud 4 to lower my bill?*
 
-A: New December 2020 pricing applies to new paid tier clusters provisioned after December 16th, 2020.
+A: New November 2024 pricing applies to new paid tier clusters provisioned after December 16th, 2020.
 You can keep the old pricing if you keep your paid tier instances provisioned before December 16th, 2020 and keep its state (running or stopped).
 If you want to take advantage of the new pricing to lower your cost, you can migrate your workload to a newly provisioned instance, or simply start and stop the old instance.
 Note that only TigerGraph Cloud accounts with valid credit cards are eligible for the paid tier migration.
@@ -51,22 +51,9 @@ For additional information, see link:https://www.tigergraph.com/tigergraph-cloud
 TIP: If you need to save your work from a Free Tier instance, export the cluster (which saves your graph and queries) and write queries which print all your data to files.
 
 
-=== *Q: I cannot start my free tier instances. Why is there a capacity error in "My Activities"?*
+=== *Q: In what cloud platforms and regions does TigerGraph Cloud 4 operate?*
 
-A: *Known Capacity Issues:* Free Tier instances are provisioned on a common instance type in a data center region of the cloud provider. During surge cloud usage periods, such as the current global lockdown due to COVID-19, cloud providers across the globe experience capacity issues.
-
-It is possible that when you provision a free tier instance, it will not provision successfully on the first try because of the peak usage in a certain region in the backend cloud platform.
-Please be patient and try to provision in another region, or at a later time when there is enough capacity in the region.
-Some free tier instances, when stopped, cannot be restarted at certain times due to cloud provider capacity issues.
-If this happens to you, try to restart the cluster at a later time when there are more machines available in the region of the cloud provider.
-In both scenarios, you can look at the log in "My Activities" and see that the capacity issue is logged. Submit a support ticket if the capacity issue persists.
-
-To reserve an instance for guaranteed capacity, please submit a support ticket and contact link:mailto:sales@tigergraph.com[sales@tigergraph.com] to arrange a long-term contract for reserved TigerGraph instances.
-
-
-=== *Q: In what cloud platforms and regions does TigerGraph operate?*
-
-A: TigerGraph Cloud offers three cloud platform options: xref:reference:aws.adoc[Amazon Web Services (AWS)], xref:reference:azure.adoc[Azure] and xref:reference:gcp.adoc[Google Cloud Platform (GCP)].
+A: TigerGraph Cloud 4 offers three cloud platform options: xref:reference:aws.adoc[Amazon Web Services (AWS)], xref:reference:azure.adoc[Azure] and xref:reference:gcp.adoc[Google Cloud Platform (GCP)].
 
 Visit each platform's reference page to learn more about the available regions.
 
@@ -590,4 +577,4 @@ Contact link:mailto:sales@tigergraph.com[sales@tigergraph.com] to discuss query 
 === *Q: What third-party software is used in TigerGraph Cloud?*
 
 A: A list of third-party software used in the TigerGraph engine and TigerGraph Cloud is available at xref:tigergraph-server:reference:patents-and-third-party-software.adoc[].
-////
+//

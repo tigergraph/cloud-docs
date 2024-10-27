@@ -5,7 +5,7 @@ In order to use TigerGraph Cloud 4 users must first btn:[Sign Up].
 This guide will walk you through the necessary steps.
 
 == Sign Up
-. Click btn:[Sign Up] https://beta.tgcloud.io[on the TigerGraph Cloud landing page].
+. Click btn:[Sign Up] https://portal.tgcloud.io[on the TigerGraph Cloud 4 landing page].
 +
 image::loginPage.png[]
 

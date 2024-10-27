@@ -5,7 +5,7 @@ Resources provide other documents to help support your TigerGraph Cloud 4 journe
 
 == xref:resources:glossary.adoc[]
 
-Here you can refer terms used in TigerGraph Cloud and the 4.0 (beta).
+Here you can refer terms used in TigerGraph Cloud 4.
 
 == xref:resources:support.adoc[]
 

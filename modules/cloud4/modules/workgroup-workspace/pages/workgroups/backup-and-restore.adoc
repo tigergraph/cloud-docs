@@ -44,8 +44,7 @@ image::backuprestore4.png[]
 
 [NOTE]
 ====
-In the beta release, only one manual backup for RW workspace will be allowed.
-You will need to delete the previous manual backup in order to make a new manual backup.
+We have quotas for the number of backups that can be stored. Please make sure to manage your backups accordingly. For details about the backup quota, please refer to xref:cloud4:resources:quota_policy.adoc[Quata Policy].
 ====
 
 === How to Setup Scheduled Auto-Backup
@@ -67,11 +66,10 @@ image::backuprestore5.png[]
 
 . Click on btn:[ Save ] button to save the schedule.
 
+
 [NOTE]
 ====
-In the beta release, only one auto backup for RW workspace will be allowed.
-The latest backup will automatically overwrite the previous auto backup.
-Please make sure to plan your backup strategy accordingly.
+We have quotas for the number of backups that can be stored. Please make sure to manage your backups accordingly. For details about the backup quota, please refer to xref:cloud4:resources:quota_policy.adoc[Quata Policy].
 ====
 
 === How to Restore a Backup

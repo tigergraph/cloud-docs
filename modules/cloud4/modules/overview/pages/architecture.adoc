@@ -1,41 +1,13 @@
-= TigerGraph Cloud 4 Overview
+= TigerGraph Cloud 4 Architecture
 :experimental:
-:toc: left
-:toclevels: 3
+:toc:
+:toclevels:2
 
-Purpose-built for graph analytics, this approach empowers users to independently scale compute and storage resources, optimizing performance and cost-efficiency according to their specific requirements.
-
-The platform also comes with intuitive interfaces, designed to reduce the learning curve and enable users to quickly leverage the benefits of graph analytics.
-
-== TigerGraph Cloud 4 Architecture
-
-TigerGraph Cloud 4 is designed to provide a robust, scalable, and secure environment for deploying graph databases in the cloud. The architecture leverages cloud-native technologies to deliver high performance and reliability, ensuring that your graph database can handle complex queries and large datasets efficiently.
-
-image::cloud4-architecture.png[Architecture Overview, 800, 600]
-
-=== Components
-
-==== *Data Plane - Storage Layer*
-
-The graph storage layer is responsible for persisting graph data in a highly optimized format. Involved storing data in a distributed manner across multiple nodes to ensure high availability and fault tolerance.
-
-==== *Data Plane - Compute Layer*
-
-The copute layer is the heart of TigerGraph Cloud 4, providing the capability to execute complex graph queries with high performance
-
-==== *Control Plane*
-
-The control plane provides UI and APIs for managing and monitoring graph databases in TigerGraph Cloud 4. Key components include:
-
-- **Resource Management:** Resource management in TigerGraph Cloud 4 ensures efficient utilization and allocation of cloud resources to meet the demands of your graph database applications.
-- **Infrastructure Management:** Infrastructure management involves the deployment, configuration, and maintenance of the underlying cloud infrastructure that supports TigerGraph Cloud 4.
-- **Billing Management:** Billing management in TigerGraph Cloud 4 provides transparency and control over your cloud spending, ensuring you can manage costs effectively.
-- **Organization/User Management:** Organization and user management features in TigerGraph Cloud 4 enable you to control access and permissions for different users within your organization.
-- **Application Management:** Application management tools in TigerGraph Cloud 4 help you to manage the add-ons and integrations that enhance the functionality of your graph database applications.
-- **Monitoring, Auditing and Alerting:** Monitoring, auditing, and alerting features in TigerGraph Cloud 4 provide visibility into system activities and ensure timely notification of critical events.
+Welcome to the TigerGraph Cloud 4 Architecture documentation. This guide provides an in-depth look at the architecture of TigerGraph Cloud 4, detailing its components, design principles, and how it ensures performance, scalability, and reliability for your graph database applications.
 
 
-== Key Features of TigerGraph Cloud 4
+
+== Overview
 
 These key features of TigerGraph Cloud 4 collectively provide a powerful and user-friendly environment for organizations to perform advanced graph analytics, gain valuable insights from interconnected data, and drive data-driven decision-making and innovation.
 

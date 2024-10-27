@@ -10,7 +10,7 @@ There are two ways to log in, through your account you created through signing u
 
 === 1) Your Account
 
-If you click btn:[Log In] on the https://beta.tgcloud.io[TigerGraph Cloud landing page].
+If you click btn:[Log In] on the https://portal.tgcloud.io[TigerGraph Cloud 4 landing page].
 TigerGraph Cloud 4 supports users to log in via Google, LinkedIn, or via a username/password.
 
 [TIP]

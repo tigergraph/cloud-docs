@@ -15,7 +15,7 @@ A: Please check your spam folder. If you can't find it in the spam folder, and s
 
 A: If you clicked "forgot password" during sign in to Cloud and never received an email, there could be a few explanations.
 
-* If you requested a password reset from an organization login screen, you won't get an email if you don't belong to that organization. Try resetting your password from the main login page at link:tgcloud.io[].
+* If you requested a password reset from an organization login screen, you won't get an email if you don't belong to that organization. Try resetting your password from the main login page at link:portal.tgcloud.io[].
 * If you signed up through Google authentication, you cannot use a password to log in to the same account. Try logging in with your Google account.
 * Check your junk/spam email folder or run a search for "TigerGraph" in case the email automatically got filtered to another inbox.
 * Double-check the email address you entered to make sure it matches the one you signed up with.
@@ -163,6 +163,12 @@ A: TigerGraph Cloud 4 only support TigerGraph database version 4.0.0 and above. 
 == Pricing
 
 See xref:cloud4:overview:pricing.adoc[Pricing] for detailed information.
+
+=== *Q: What billing models are available?*
+A: TigerGraph Cloud 4.0 offers different billing models and pricing options to accommodate various usage scenarios and customer needs. Here are the available billing models:
+
+* Pay-as-you-go: This model allows you to pay for the resources you consume on an hourly basis. You are charged based on the number and type of workspaces you use, the storage capacity you require, and the additional services you purchased. Pay-as-you-go provides flexibility as you can scale resources up or down based on your usage patterns.
+* Prepaid: The prepaid model allows you to purchase TigerGraph Credits (TCRs) in advance, which can be used to cover the costs of your TigerGraph Cloud usage. With prepaid credits, you have the advantage of predictable costs and the ability to allocate resources as needed within the prepaid budget.
 
 
 === *Q:  Do you offer a discount for annual contracts/commitments?*
@@ -392,9 +398,9 @@ A: Yes, TigerGraph Cloud encrypts all data in transit and at rest.
 
 A: You are not sharing storage with other customers. Each TigerGraph cluster is provisioned as one or more virtual machine instances of the TigerGraph engine, used only for your account, and provisioned with its own disk space. No two accounts are sharing the same TigerGraph database.
 
-=== *Q: How do I access my TigerGraph Cloud account (e.g., username and password)?*
+=== *Q: How do I access my TigerGraph Cloud 4 account (e.g., username and password)?*
 
-A: When you register your account, you will select a username and password. You can then log in anytime at link:http://www.tgcloud.io/[www.tgcloud.io]. You will also be given a URL using a subdomain name that you select.
+A: When you register your account, you will select a username and password. You can then log in anytime at link:http://portal.tgcloud.io/[portal.tgcloud.io]. You will also be given a URL using a subdomain name that you select.
 
 === *Q: How do I access my TigerGraph database and POST to TigerGraph?*
 

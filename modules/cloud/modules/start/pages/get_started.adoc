@@ -3,7 +3,7 @@
 :page-aliases: get-started.adoc
 
 == Sign up
-Click btn:[Sign Up] on the https://tgcloud.io/[TigerGraph Cloud landing page].
+Click btn:[Sign Up] on the https://portal.tgcloud.io/[TigerGraph Cloud landing page].
 
 When you register for a new TigerGraph Cloud account, you create an Organization Account to which you can later invite other users.
 
@@ -32,7 +32,7 @@ TigerGraph Cloud sends important email notifications to this address, including 
 
 == Log in
 
-Click btn:[Log In] on the https://tgcloud.io/[TigerGraph Cloud landing page].
+Click btn:[Log In] on the https://portal.tgcloud.io/[TigerGraph Cloud landing page].
 
 When you log in, you must first provide an organization name before entering your username and password.
 If you were invited by a member of your organization and you do not know the name used for the organization account, contact your organization's administrator.

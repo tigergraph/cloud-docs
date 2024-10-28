@@ -23,7 +23,7 @@ For more details please see xref:cloud4:graph-development:design-schema/index.ad
 ====
 Additionally, you can use shortcuts to run a GSQL query.
 
-image::Screenshot 2024-04-18 at 10.07.17 AM.png[]
+image::gsql-editor-shorcuts.png[]
 
 See xref:cloud4:graph-development:gsql-editor/how2-edit-gsql-query.adoc[] for more details.
 ====

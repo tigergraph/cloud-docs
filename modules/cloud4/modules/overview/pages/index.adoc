@@ -112,7 +112,7 @@ xref:cloud4:overview:pricing.adoc[]
 image:referece-homecard.png[alt=support,width=74,height=74]
 *Release Notes*
 
-View the xref:release-notes:index.adoc[] to get update information on features and releases.
+View the xref:cloud4:overview:release-notes.adoc[Release Notes] to get update information on features and releases.
 ¦
 image:documentation-homecard.png[alt=support,width=74,height=74]
 *Resources*

@@ -53,7 +53,7 @@ TIP: If you need to save your work from a Free Tier instance, export the cluster
 
 === *Q: In what cloud platforms and regions does TigerGraph Cloud 4 operate?*
 
-A: TigerGraph Cloud 4 offers three cloud platform options: xref:reference:aws.adoc[Amazon Web Services (AWS)], xref:reference:azure.adoc[Azure] and xref:reference:gcp.adoc[Google Cloud Platform (GCP)].
+A: TigerGraph Cloud 4 currently only operates on Amazon Web Services (AWS), GCP and Azure are not supported yet.
 
 Visit each platform's reference page to learn more about the available regions.
 
@@ -88,42 +88,12 @@ As a cloud service, many of the administrative and operational tasks - for monit
 In addition to operations and management for your TigerGraph databases, TigerGraph Cloud also offers Starter Kits to provide instant experience to various graph analytics use cases.
 The list of Starter Kits can be found here: link:https://www.tigergraph.com/starterkits/[TigerGraph Cloud Starter Kits]
 
-[#q-is-there-a-quota-for-the-number-of-clusters-i-can-provision-in-a-single-account]
-=== *Q: Is there a quota for the number of clusters I can provision in a single account?*
+[#q-is-there-a-quota-for-the-number-of-workspaces-i-can-create-in-a-single-account]
+=== *Q: Is there a quota for the number of workspaces I can create in a single account?*
 
-A: Yes.
-For basic accounts with credit card billing, there is a limit of 160 vCPUs and 20 instances.
-A cluster is one logical database, which may include several instances due to a distribution database configuration and replication.
-For accounts running exclusively on Free Credit and that have not yet entered a valid credit card, there is a limit of 16 vCPUs and two clusters.
-For each registered account (with or without a valid credit card), you may only provision one cluster from the Free Tier.
-To allow more vCPUs and clusters, please contact TigerGraph at link:mailto:sales@tigergraph.com[sales@tigergraph.com].
+A: Yes. For details, please refer to xref:cloud4:resources:quota_policy.adoc[].
 
-Total number of instances in a cluster = replication factor x partitioning factor
-
-[width="100%",cols="1,1,1",options="header",]
-|===
-|Service |*Account With a Valid Credit Card* |*Account Without a Valid Credit
-Card*
-|*Free Tier Cluster Quota* |1 |1
-
-|*Total Instance Quota* |20 |2
-
-|*Total vCPU Quota* |160 |16
-
-|*Cluster Size Limit* |10 instances |1 (distributed data is not
-enabled)
-
-|*Replication Factor Limit* |2 |1 (HA is not enabled)
-
-|*Request Quota/Limit Increase* |Yes, Please contact
-mailto:sales@tigergraph.com[]. a|
-N/A
-
-Please upgrade your account by entering a valid credit card.
-
-
-|===
-
+To allow more workspace, please contact TigerGraph at link:mailto:sales@tigergraph.com[sales@tigergraph.com].
 
 === *Q: Can I run queries directly after sample starter kits are provisioned?*
 
@@ -252,7 +222,7 @@ A:  With TigerGraph Cloud, you only pay for what you use.  For long term contrac
 
 === *Q: How do I determine the instance needed for my workload?*
 
-Check the individual pages under xref:reference:index.adoc[] to see what instance types are offered by each cloud provider in each region.
+Check the individual pages under xref:index.adoc[] to see what instance types are offered by each cloud provider in each region.
 Larger graphs require more RAM. Higher performance calls for both more CPUs and more RAM.
 
 Our link:https://www.tigergraph.com/tigergraph-cloud-pricing/[pricing table] gives initial recommendations for which instance to start with, if you know how much data you will be loading into the graph.
@@ -342,7 +312,7 @@ The cluster is deleted according to the cloud platform's policies and cannot be 
 
 === *Q: Do you offer backup in TigerGraph Cloud?*
 
-A: Yes. Please see our guide for using xref:solutions:backup-and-restore.adoc[] in the Admin Portal.
+A: Yes. Please see our guide for using xref:cloud4:workgroup-workspace:workgroups/backup-and-restore.adoc[] in the Admin Portal.
 
 
 === *Q: What backup options are available?*
@@ -453,8 +423,6 @@ A: You can access the database through TigerGraph's GraphStudio visual interface
 
 TigerGraph cloud enables xref:tigergraph-server:API:authentication.adoc[REST{pp} Authentication] to securely connect TigerGraph Cloud clusters with your application through an endpoint on port 443 at `443/restpp/<endpoint>`.
 
-[NOTE]
-TigerGraph Cloud clusters created before June 20, 2022 used port 9000 and 14240 for endpoints. See the xref:release-notes:index.adoc[] for details.
 
 *Step 1:* (First time only) Navigate to the TigerGraph cluster's Admin Portal, and generate a secret from User Management.
 
@@ -540,7 +508,7 @@ It is recommended to create a new blank cluster, import your data and copy the G
 
 === *Q: How do I submit a support ticket?*
 
-A: In your cloud portal, on the top bar,  you can submit the support ticket by clicking on the support icon: image:support-icon.png[]
+A: In your cloud portal, on the top bar,  you can submit the support ticket by clicking on the btn:[Support] on the lower left corner.
 
 This will generate a support ticket in TigerGraph's Zendesk support system.
 You can track the ticket status in Zendesk.

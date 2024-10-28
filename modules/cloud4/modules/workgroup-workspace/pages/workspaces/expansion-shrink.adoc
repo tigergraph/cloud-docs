@@ -50,7 +50,7 @@ It is recommended to schedule the expansion or shrink during a time when minimal
 
 == Next Steps
 
-Next, setup xref:cloud4:workgroup-workspace:workgroups/schedule.adoc[Schedule] or learn more about how to xref:cloud4:workgroup-workspace:workgroups/backup-and-restore.adoc[], xref:cloud4:workgroup-workspace:workspaces/connect-via-api.adoc[], or xref:cloud4:workgroup-workspace:workgroups/monitor-workspaces.adoc[].
+Next, setup xref:cloud4:workgroup-workspace:workspaces/schedule.adoc[Schedule] or learn more about how to xref:cloud4:workgroup-workspace:workgroups/backup-and-restore.adoc[], xref:cloud4:workgroup-workspace:workspaces/connect-via-api.adoc[], or xref:cloud4:workgroup-workspace:workgroups/monitor-workspaces.adoc[].
 
 Return to the xref:cloud4:workgroup-workspace:index.adoc[] page or xref:cloud4:overview:index.adoc[Overview] page for a different topic.
 

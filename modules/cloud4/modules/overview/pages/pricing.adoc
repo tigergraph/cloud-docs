@@ -199,7 +199,7 @@ TigerGraph Cloud 4 offers a variety of add-ons to enhance your graph database ex
 ¦Add-On ¦Scope ¦Price
 
 ¦ Insights ¦ Workspace ¦ 10% of the compute usage
-¦ GraphStudio ¦ Workspace ¦ Free
+¦ GraphStudio™ ¦ Workspace ¦ Free
 ¦ GraphQL ¦ Workspace ¦ Free
 
 |===

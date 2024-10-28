@@ -11,9 +11,9 @@ Explore the available add-ons and learn how to incorporate them into your graph 
 
 TigerGraph Insights is a no-code visual graph analyzer that makes building data analytics dashboards intuitive.
 
-== xref:cloud4:integrations:graphstudio.adoc[]
+== xref:cloud4:integrations:graphstudio.adoc[GraphStudio™]
 
-GraphStudio offers a range of features and tools to simplify the graph development process.
+GraphStudio™ offers a range of features and tools to simplify the graph development process.
 
 == xref:cloud4:integrations:graphql.adoc[]
 

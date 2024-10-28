@@ -235,7 +235,7 @@ Release date: July 6, 2022
 
 * Multiple users can now share access to the same organization account.
 * Role based access control (RBAC) to control and manage access to specific clusters and capabilities.
-* TigerGraph Cloud Console and GraphStudio user authentication are now integrated to eliminate repeated logins.
+* TigerGraph Cloud Console and GraphStudio™ user authentication are now integrated to eliminate repeated logins.
 * All-new clean and unified user interface.
 
 === Feature Updates

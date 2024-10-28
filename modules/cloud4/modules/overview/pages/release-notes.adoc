@@ -60,7 +60,7 @@
 ** xref:cloud4:integrations:solutions.adoc[] -  Pre-built solution kits that address common use cases and industry-specific challenges.
 ** xref:cloud4:integrations:add-ons.adoc[] - Extend the capabilities of TigerGraph Cloud 4 with add-ons tailored to your needs. Add-ons provide additional functionalities and integrations that enhance your graph database workflow.
 *** xref:cloud4:integrations:insights.adoc[Insights Add-On] - TigerGraph Insights is a no-code visual graph analyzer that makes building data analytics dashboards intuitive.
-*** xref:cloud4:integrations:graphstudio.adoc[GraphStudio Add-On] - GraphStudio offers a range of features and tools to simplify the graph development process.
+*** xref:cloud4:integrations:graphstudio.adoc[GraphStudio™ Add-On] - TigerGraph GraphStudio™ offers a range of features and tools to simplify the graph development process.
 *** xref:cloud4:integrations:graphql.adoc[GraphQL Add-On] - TigerGraph GraphQL enables users to access and modify graph data in TigerGraph using GraphQL queries.
 
 * xref:cloud4:administration:index.adoc[] - The tools for organizational administrators to xref:cloud4:administration:how2-invite-users.adoc[]

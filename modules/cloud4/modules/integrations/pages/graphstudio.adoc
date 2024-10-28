@@ -1,14 +1,14 @@
 = GraphStudio
 :experimental:
 
-GraphStudio offers a range of features and tools to simplify the graph development process.
+GraphStudio™ offers a range of features and tools to simplify the graph development process.
 It allows users to visually design and model their graph schema, define the structure of vertices and edges, and set up various graph algorithms and analytics.
 
 The platform supports a wide range of data types and allows users to import data from various sources, including CSV files, databases, and cloud storage.
 
 [TIP]
 ====
-To learn more about GraphStudio read our xref:gui:graphstudio:overview.adoc[GraphStudio Documentation]
+To learn more about GraphStudio™ read our xref:gui:graphstudio:overview.adoc[GraphStudio™ Documentation]
 ====
 
 == Get Started GraphStudio Add-on

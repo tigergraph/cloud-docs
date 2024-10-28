@@ -31,7 +31,7 @@ TigerGraph Cloud 4 stands out among Database-as-a-Service (DBaaS) offerings due 
 * Real-Time Analytics: TigerGraph Cloud 4 supports real-time graph analytics, allowing you to derive insights from your data as it changes.
 * Solution Kits Support: TigerGraph Cloud 4 offers a variety of solution kits tailored for specific use cases such as fraud detection, recommendation engines, and supply chain optimization. These kits come with pre-configured schemas, data, and queries to help you get started quickly.
 * Add-Ons and Features
-** GraphStudio: An intuitive visual interface for designing, querying, and exploring your graph data. GraphStudio simplifies the process of building and managing your graph database.
+** GraphStudio™: An intuitive visual interface for designing, querying, and exploring your graph data. GraphStudio™ simplifies the process of building and managing your graph database.
 ** Insights: Advanced analytics tools that provide deeper insights into your graph data. Insights help you visualize patterns, trends, and anomalies within your data.
 * Monitoring and Alerting
 ** Built-In Monitoring Tools: TigerGraph Cloud 4 includes comprehensive monitoring tools that provide real-time insights into the performance, usage, and health of your graph database.
@@ -143,7 +143,7 @@ Start learning GSQL and become a TigerGraph Certified Associate today with our l
 
 === *Q: Can I have multiple graphs in one TigerGraph Cloud instance?*
 
-A: Yes. If you use V3.0.5+ in TigerGraph Cloud, MultiGraph is supported through GraphStudio. Please refer to our xref:gui:graphstudio:design-schema.adoc[] page for the new MultiGraph Support through GraphStudio.
+A: Yes. If you use V3.0.5+ in TigerGraph Cloud, MultiGraph is supported through GraphStudio™. Please refer to our xref:gui:graphstudio:design-schema.adoc[] page for the new MultiGraph Support through GraphStudio™.
 
 === *Q: What methods do you support for importing data?*
 
@@ -398,7 +398,7 @@ A: When you register your account, you will select a username and password. You 
 
 === *Q: How do I access my TigerGraph database and POST to TigerGraph?*
 
-A: You can access the database through TigerGraph's GraphStudio visual interface and through RESTful endpoints. Use RESTful endpoints to POST to TigerGraph clusters and develop applications. Please refer to the xref:tigergraph-server:API:index.adoc[RESTful API User Guide] for more information. To find the RESTful endpoints for queries created in GraphStudio, please read our documentation on xref:gui:graphstudio:write-queries.adoc[showing query endpoints]. There is also a recorded webinar which demos the process in detail: link:https://info.tigergraph.com/graph-gurus-24[Graph Gurus Episode 24]
+A: You can access the database through the TigerGraph Cloud 4 portal, TigerGraph GraphStudio™ visual interface and through RESTful endpoints. Use RESTful endpoints to POST to TigerGraph clusters and develop applications. Please refer to the xref:tigergraph-server:API:index.adoc[RESTful API User Guide] for more information. To find the RESTful endpoints for queries created in GraphStudio™, please read our documentation on xref:gui:graphstudio:write-queries.adoc[showing query endpoints]. There is also a recorded webinar which demos the process in detail: link:https://info.tigergraph.com/graph-gurus-24[Graph Gurus Episode 24]
 
 *Here is the step-by-step instructions:*
 

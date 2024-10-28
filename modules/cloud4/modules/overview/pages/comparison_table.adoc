@@ -55,7 +55,7 @@ Here are some differences between the different TigerGraph offerings.
 | The Cloud Admin Portal is enhanced over the TigerGraph Server Admin Portal.  Backup and Restore is done through the Cloud Admin Portal.
 | The Cloud Admin Portal is enhanced over the TigerGraph Server Admin Portal. Backup and Restore is done through the Cloud Admin Portal.
 
-| GraphStudio UI Guide
+| GraphStudio™ UI Guide
 | Yes
 | Yes
 | Yes
@@ -67,7 +67,7 @@ Here are some differences between the different TigerGraph offerings.
 
 | GSQL Language Reference, Part 1 Data Definition and Loading
 | Yes
-| Yes. GSQL Web Shell (Paid Tiers) supports Data Definition and Loading. Data files can be imported into the filesystem through GraphStudio, or submit support request to import into the filesystem. In addition, the operations can be performed through the GraphStudio user interface.
+| Yes. GSQL Web Shell (Paid Tiers) supports Data Definition and Loading. Data files can be imported into the filesystem through GraphStudio™, or submit support request to import into the filesystem. In addition, the operations can be performed through the GraphStudio™ user interface.
 | Yes, GSQL Editor.
 
 | GSQL Language Reference, Part 2 Querying
@@ -87,13 +87,13 @@ Here are some differences between the different TigerGraph offerings.
 
 | Data Loader User Guides
 | Yes
-| S3 Loader can be used through the GraphStudio interface. In addition, S3 Loader and Kafka Loader can be used in GSQL Web Shell (Paid Tiers).
+| S3 Loader can be used through the GraphStudio™ interface. In addition, S3 Loader and Kafka Loader can be used in GSQL Web Shell (Paid Tiers).
 | Yes. Step-by-step guide to load local and S3 files. Provide a GSQL template for all other connectors.
 
 | Schema Designer
-| Yes, GraphStudio interface.
-| Yes, GraphStudio.
-| Yes, Schema Designer & GraphStudio.
+| Yes, GraphStudio™ interface.
+| Yes, GraphStudio™.
+| Yes, Cloud Portal & GraphStudio™.
 |===
 
 == Next Steps

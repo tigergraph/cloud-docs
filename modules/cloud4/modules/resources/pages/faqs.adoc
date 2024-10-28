@@ -1,10 +1,15 @@
 = TigerGraph Cloud 4 FAQs
+:experimental:
 :pp: {plus}{plus}
 
 //
 *Feedback for TigerGraph Cloud 4 is welcome at* tgcloud-feedback@tigergraph.com
 
 == Top FAQs
+
+=== *Q: I can't find my registration activation email after registering for the first time. Where can I find it?*
+
+A: Please check your spam folder. If you can't find it in the spam folder, and still cannot receive the verification email in your mailbox after resending the verification email, please https://tigergraph.zendesk.com/hc/en-us/[open a support ticket] so that we can assist you with manual email verification process.
 
 === *Q: Why don't I see a password reset email?*
 
@@ -17,121 +22,115 @@ A: If you clicked "forgot password" during sign in to Cloud and never received a
 
 If you're still unable to log in or reset your password, contact TigerGraph Support at support@tigergraph.com for individualized help with your issue.
 
-=== *Q:  How does TigerGraph Cloud compare with other DBaaS offerings?*
+=== *Q:  How does TigerGraph Cloud 4 compare with other DBaaS offerings?*
 
-A:  TigerGraph Cloud gets you up and running with the fastest and best price-performance graph platform in just minutes.
-TigerGraph's native parallel graph and deep link analytics give you both speed and scale, even on the most complex tasks.
-The GraphStudio visual design interface enables everyone on your team to be a guru in graph.
-And our starter kits for popular use cases mean you can have an example graph application working in minutes.
-Since it requires far fewer machines to achieve high performance, TigerGraph's price performance sets a new bar for the graph database industry.
+A: TigerGraph Cloud 4 offers unique advantages such as a graph-native architecture, high performance for complex queries, and features like separation of storage and compute, which are optimized for graph analytics.
+TigerGraph Cloud 4 stands out among Database-as-a-Service (DBaaS) offerings due to its unique features and capabilities tailored specifically for graph analytics. Here are some key aspects where TigerGraph Cloud 4 excels:
 
+* Graph-Native Architecture: Unlike traditional DBaaS offerings that are built on relational or NoSQL databases, TigerGraph Cloud 4 is designed from the ground up for graph analytics. This ensures high performance and efficiency for complex graph queries.
+* Real-Time Analytics: TigerGraph Cloud 4 supports real-time graph analytics, allowing you to derive insights from your data as it changes.
+* Solution Kits Support: TigerGraph Cloud 4 offers a variety of solution kits tailored for specific use cases such as fraud detection, recommendation engines, and supply chain optimization. These kits come with pre-configured schemas, data, and queries to help you get started quickly.
+* Add-Ons and Features
+** GraphStudio: An intuitive visual interface for designing, querying, and exploring your graph data. GraphStudio simplifies the process of building and managing your graph database.
+** Insights: Advanced analytics tools that provide deeper insights into your graph data. Insights help you visualize patterns, trends, and anomalies within your data.
+* Monitoring and Alerting
+** Built-In Monitoring Tools: TigerGraph Cloud 4 includes comprehensive monitoring tools that provide real-time insights into the performance, usage, and health of your graph database.
+** Alerting: Set up custom alerts to notify you of important events such as performance degradation, resource utilization thresholds, and system errors.
+* Expansion and Shrink
+** Scalability: Easily scale your TigerGraph Cloud 4 instances up or down based on your workload requirements. This includes adding or removing nodes and adjusting disk sizes.
+** Elasticity: TigerGraph Cloud 4 supports schduled scaling, allowing you to automatically adjust resources by pre-defined schdule.
+* User Management
+** Role-Based Access Control (RBAC): Manage user permissions and access with fine-grained control. Assign roles to users based on their responsibilities and ensure secure access to your graph database.
+** Single Sign-On (SSO) Integration: Integrate TigerGraph Cloud 4 with your existing SSO system for streamlined user authentication and management.
+* Read-Write and Read-Only Workspaces
+** Workspace Management: Create and manage multiple workspaces within a single TigerGraph Cloud 4 account. Assign read-write or read-only permissions to users based on their roles.
+** Isolation: Ensure data isolation and security by managing access at the workspace level.
+* Additional Features
+** Automated Backups: Schedule automated backups to ensure data protection and recovery.
+** High Availability: Deploy your graph database across multiple nodes to ensure high availability and reliability.
+** Data Encryption: Support for encryption of data in transit and at rest to ensure data security.
+** Integration with Cloud Storage: Import and export data using popular cloud storage solutions like Amazon S3, Azure Blob Storage, and Google Cloud Storage.
+** RESTful API: Access and interact with your graph database using a comprehensive RESTful API.
+* Competitive Edge
+** Performance: TigerGraph Cloud 4 is optimized for high performance, handling complex queries and large datasets efficiently.
+** Flexibility: Support for various deployment options and cloud platforms including AWS, Azure, and GCP.
+** Community and Support: Access to a vibrant community of users and dedicated support from TigerGraph experts.
+
+In summary, TigerGraph Cloud 4 offers a robust, scalable, and high-performance graph database solution with a wide range of features and tools that set it apart from other DBaaS offerings. Whether you are looking for advanced analytics, ease of use, or scalability, TigerGraph Cloud provides the capabilities you need to succeed.
 
 === *Q: How do I migrate to the TigerGraph Cloud 4 to lower my bill?*
 
-A: New November 2024 pricing applies to new paid tier clusters provisioned after December 16th, 2020.
-You can keep the old pricing if you keep your paid tier instances provisioned before December 16th, 2020 and keep its state (running or stopped).
-If you want to take advantage of the new pricing to lower your cost, you can migrate your workload to a newly provisioned instance, or simply start and stop the old instance.
-Note that only TigerGraph Cloud accounts with valid credit cards are eligible for the paid tier migration.
-Please submit a support ticket for migration assistance.
+A: New November 2024 pricing applies to new workspaces provisioned on TigerGraph Cloud 4. The clusters provisioned in TigerGraph Cloud Classic will continue to be billed at the old pricing. If you want to take advantage of the new pricing to lower your cost, you can migrate your workload to TigerGraph Cloud 4. Note that only TigerGraph Cloud accounts with valid credit cards are eligible for the paid tier migration. Please submit a support ticket for migration assistance.
 
 [#q-are-there-free-tier-instances-or-free-credits-for-the-system]
 === *Q: Are there Free Tier Instances or Free Credits for the System?*
 
-A: There are free-tier instances, but no free credits.
-
-When you select an instance type, you will see that one instance type is designated as the Free Tier.
-Each registered account may provision one cluster at a time from the Free Tier.
-Free Tier instances do not include backup and do not include support. If you want to start another Free Tier cluster, you will have to terminate your existing cluster.
-
-If no user activity is detected for more than one hour, TigerGraph may automatically stop a Free Tier instance.
-Users can manually restart the Free Tier instances from their cloud portal.
-TigerGraph may terminate Free Tier instances after 7 consecutive days of inactivity.
-For additional information, see link:https://www.tigergraph.com/tigergraph-cloud-subscription-terms/[TigerGraph Cloud Terms].
-
-TIP: If you need to save your work from a Free Tier instance, export the cluster (which saves your graph and queries) and write queries which print all your data to files.
+A: There are free credits but no free instances at TigerGraph Cloud 4. You can complete the onboarding tasks to get free credits to get started without paying anything.
 
 
 === *Q: In what cloud platforms and regions does TigerGraph Cloud 4 operate?*
 
-A: TigerGraph Cloud 4 currently only operates on Amazon Web Services (AWS), GCP and Azure are not supported yet.
+A: TigerGraph Cloud 4 currently only operates on Amazon Web Services (AWS), GCP and Azure are not supported yet. Visit each platform's reference page to learn more about the available regions.
 
-Visit each platform's reference page to learn more about the available regions.
+=== *Q: Can I choose different versions of TigerGraph on TigerGraph Cloud 4?*
 
-=== *Q: Can I choose different versions of TigerGraph on TigerGraph Cloud?*
-
-A: Yes. When you create a cluster, you can choose the database version you would like to use.
+A: Yes, TigerGraph Cloud 4 allows you to choose from different versions of TigerGraph during the workspace setup process.
 For security and stability reasons, only some legacy versions are available.
 There is no difference in cost for using different versions of TigerGraph.
 
 === *Q: Does TigerGraph Cloud support distributed databases?*
 
-A: Yes.
-In the latest version of TigerGraph Cloud, you can provision a highly available TigerGraph cluster by entering 2 or 3 for the replication factor during the provisioning process.
-Replication factors of 2 and 3 are supported for TigerGraph V3.0+.
-For TigerGraph V2.6, only a replication factor of 2 is supported.
-The configuration is active-active, meaning that all copies of the data are available to answer queries.
-
-NOTE: HA systems must have a minimum of 3 instances.
-This means that the smallest supported cluster configuration for a replicated system for TigerGraph V3.0+  is one-way partitioning X three-way replication = three instances.
-In comparison, the smallest supported cluster configuration for a replicated system for TigerGraph V2.6 is two-way partitioning X two-way replication = four instances.
-
+A: Yes, TigerGraph Cloud supports distributed databases, allowing you to scale your graph database across multiple nodes for improved performance and reliability. The partition factor is automatically defined based on your data size. You can also set up High Availability (HA), which adds a replication factor of 2 or 3 during the workspace setup process. For workspaces TG-8 and below, the replication factor is set to 3 if HA is enabled. For TG-16 and above, the replication factor is set to 2 if HA is enabled.
 
 === *Q:  What type of server should I use for my data size and workload?*
 
-A:  Please see the section on pricing on our website at our link:https://www.tigergraph.com/cloud/[TigerGraph Cloud main page]. For further assistance, contact TigerGraph at link:mailto:sales@tigergraph.com[sales@tigergraph.com]
+A: The type of server you need depends on your data size and workload requirements. Please see the section on pricing on our website at our link:https://www.tigergraph.com/cloud/[TigerGraph Cloud main page]. For further assistance, contact TigerGraph at link:mailto:sales@tigergraph.com[sales@tigergraph.com]
 
 
 === *Q: What kind of services do I get?*
 
-A: TigerGraph Cloud includes automatic scheduled backup, built-in encryption and other security features, patching, replication and distributed database option.  In addition, you can now provision a distributed database as well as a replica cluster for high availability.
+A: TigerGraph Cloud 4 includes automatic scheduled backup, built-in encryption and other security features, patching, replication and distributed database option.  In addition, you can now provision a distributed database as well as a replica cluster for high availability.
 As a cloud service, many of the administrative and operational tasks - for monitoring, restoring, upgrading, for example - are just a click away.
-In addition to operations and management for your TigerGraph databases, TigerGraph Cloud also offers Starter Kits to provide instant experience to various graph analytics use cases.
-The list of Starter Kits can be found here: link:https://www.tigergraph.com/starterkits/[TigerGraph Cloud Starter Kits]
+In addition to operations and management for your TigerGraph databases, TigerGraph Cloud 4 also offers Solution Kits to provide instant experience to various graph analytics use cases.
+The list of Solution Kits can be found here: link:https://www.tigergraph.com/solutions/[TigerGraph Cloud Solutions]
 
 [#q-is-there-a-quota-for-the-number-of-workspaces-i-can-create-in-a-single-account]
 === *Q: Is there a quota for the number of workspaces I can create in a single account?*
 
-A: Yes. For details, please refer to xref:cloud4:resources:quota_policy.adoc[].
+A: Yes. For details, please refer to the xref:cloud4:resources:quota_policy.adoc[].
 
-To allow more workspace, please contact TigerGraph at link:mailto:sales@tigergraph.com[sales@tigergraph.com].
+To allow more workspaces, please contact TigerGraph at link:mailto:sales@tigergraph.com[sales@tigergraph.com].
 
-=== *Q: Can I run queries directly after sample starter kits are provisioned?*
+=== *Q: Can I run queries directly after sample solution kits are installed/provisioned?*
 
-A: Data must be loaded and queries must be installed first. Please perform the following steps after the cluster is provisioned:
+A: Yes, you can run queries directly after provisioning sample solution kits. These kits come pre-configured with sample data and queries to help you get started quickly. Some of the solutions also come with one or two Insights applications. 
 
-. Connect to GraphStudio through "`Open Cluster Via Domain`" from the cloud portal.
-. On the Load Data tab, click the Load button to load the sample dataset.
-. On the Write Query tab, click the Install button to install the sample queries.
-
-Now you can run queries on the starter kit's sample data. Please visit our link:http://tigergraph.com/starterkits[TigerGraph Cloud Starter Kits] page to watch the overview video for each starter kit.
+Please visit our link:http://tigergraph.com/solutiions/[TigerGraph Cloud Solutions] page to watch the overview video for each solution.
 
 
 === *Q:  How can I monitor my TigerGraph Cloud service?*
 
-A: TigerGraph Cloud is instance-based and offers an administrator portal to monitor the performance and health of each machine instance.
+A: You can monitor your TigerGraph Cloud service using the built-in monitoring tools provided in the TigerGraph Cloud portal. These tools offer insights into performance, usage, and system health.
 
-See TigerGraph's xref:gui:admin-portal:overview.adoc[Admin Portal Documentation] for more detailed information.
+See TigerGraph's xref:cloud4:workgroup-workspace:workgroups/monitor.adoc[Monitor Workspace] for more detailed information.
 
 
 === *Q:  Is TigerGraph Cloud cloud-agnostic?*
 
-A:  TigerGraph Cloud will provide teams with the flexibility to use the cloud vendor of their choice, so there will be no vendor lock-in. For the current version, TigerGraph Cloud offers instances on AWS, Azure and GCP platforms. If you require immediate assistance to manage TigerGraph on another cloud provider, please contact link:mailto:sales@tigergraph.com[sales@tigergraph.com].
+A: While TigerGraph Cloud 4 currently operates on AWS only, we are actively developing support for Azure and GCP. It is not entirely cloud-agnostic as it leverages specific services and integrations from these cloud providers. If you require immediate assistance managing TigerGraph on another cloud provider, please contact link:mailto:sales@tigergraph.com[sales@tigergraph.com].
 
 
 === *Q:  Is the support for TigerGraph Cloud the same as the support for TigerGraph Enterprise?*
 
-A: Yes, TigerGraph supports TigerGraph cloud users using paid tiers. See the Support Policy terms at link:https://www.tigergraph.com/support-policy/[www.tigergraph.com/support-policy].
-Support is not included for free tier instances; therefore, support tickets for free tier clusters are answered when support staff bandwidth allows.
+A: Yes, TigerGraph supports TigerGraph cloud 4 users using paid/premium/enterprise tiers. See the Support Policy terms at link:https://www.tigergraph.com/support-policy/[www.tigergraph.com/support-policy].
+Support is not included for free tier users; therefore, support tickets for free tier users are answered when support staff bandwidth allows.
 See Section 1.4 in link:https://www.tigergraph.com/tigergraph-cloud-subscription-terms/[www.tigergraph.com/tigergraph-cloud-subscription-terms].
 For additional developer resources for free tier users, join the TigerGraph developer community at link:https://community.tigergraph.com[community.tigergraph.com].
 
 
-=== *Q: What is the user interface for the TigerGraph Cloud instance?*
+=== *Q: What is the user interface for the TigerGraph Cloud 4?*
 
-A: The TigerGraph xref:gui:graphstudio:overview.adoc[GraphStudio™ UI (User Interface)] provides an intuitive, browser-based interface that helps users get started quickly with graph-based application development tasks: designing a graph schema, creating a schema mapping, loading data, exploring the graph, and writing GSQL queries.
-
-In addition, for TigerGraph paid tier clusters, users can use GSQL Web Shell to write GSQL commands in an interactive command line shell. Users can access GSQL Web Shell through the cluster panel from their Cloud Portal. This GSQL Web Shell opens up more data loading options such as S3 Loader (parquet format) and Kafka Loader.
-
+A: The TigerGraph Cloud 4 portal provides a browser-based interface that makes it easy to manage, monitor, and operate your graph database. Through this portal, you can load data, design schemas, write queries, and explore your graph. Additionally, you have access to a suite of add-ons, including the TigerGraph xref:gui:graphstudio:overview.adoc[GraphStudio™ UI (User Interface)] and  TigerGraph xref:insights:overview.adoc[Insights].
 
 === *Q: What graph query language does TigerGraph support?*
 
@@ -148,52 +147,39 @@ A: Yes. If you use V3.0.5+ in TigerGraph Cloud, MultiGraph is supported through 
 
 === *Q: What methods do you support for importing data?*
 
-A: We support Amazon S3 import, Google Cloud Storage,  and local file upload through GraphStudio. Spark loading is available through our open source JDBC Driver. See https://github.com/tigergraph/ecosys/tree/master/tools/etl[https://github.com/tigergraph/ecosys/tree/master/etl]
+A: We support Amazon S3 import, Google Cloud Storage,  local file upload and many more data sources. Please refer to xref:cloud4:graph-development:load-data/index.adoc[]. 
 
-In addition, for TigerGraph paid tier clusters, users can use the GSQL Web Shell to write GSQL Commands in an interactive command line shell. This GSQL Web Shell opens up more data loading options such as S3 Loader (parquet format), Kafka Loader and other complex loading jobs. Users can access GSQL Web Shell through the cluster panel from their Cloud Portal.
+For complex loading jobs through GSQL Editor for paid tier clusters, please submit a support ticket from your cloud portal for more information.
 
-For complex loading jobs through GSQL Web Shell for paid tier clusters, please submit a support ticket from your cloud portal for more information.
-
-=== *Q: I can't find my registration activation email after registering for the first time. Where can I find it?*
-
-A: Please check your spam folder. If you can't find it in the spam folder, and still cannot receive the verification email in your mailbox after resending the verification email, please https://tigergraph.zendesk.com/hc/en-us/[open a support ticket] so that we can assist you with manual email verification process.
-
-*Q: How do I develop a customized application on top of TigerGraph Cloud?*
+=== *Q: How do I develop a customized application on top of TigerGraph Cloud?*
 
 A: Please see https://info.tigergraph.com/graph-gurus-24[Graph Gurus episode 24], where we presented "How to Build Innovative Applications with a Native Graph Database".
 
 
-=== *Q: Can I upgrade from V2.6.x, V3.0.5, V3.0.6 to V3.1.1?*
+=== *Q: Can I upgrade from V2.x, V3.x to V4.x?*
 
-A: For free tier clusters, the upgrade is not supported unless you are migrating to paid tier clusters. If you want to change the database version in your free tier, you can terminate the existing free tier cluster, and create a new free tier with the new version. In each TigerGraph Cloud account, you can have one free tier. If you want to migrate to paid tier clusters, please send a support ticket through your cloud portal.
-
-For paid tier clusters, please submit a support ticket for upgrade assistance. Downtime is expected during this upgrade. It is recommended to create a new blank V3.1.1 cluster, import your data and copy the GSQL queries to test and experiment before upgrading your production instance from V2.6.x, V3.0.5, V3.0.6 to V3.1.1.
+A: TigerGraph Cloud 4 only support TigerGraph database version 4.0.0 and above. If you are using an older version, you can migrate your data to a new workspace with the latest version. Please submit a support ticket from your cloud portal for more information.
 
 == Pricing
 
-See https://www.tigergraph.com/cloud[the TigerGraph Cloud main page] for pricing information.
-
-
-=== *Q: How do I migrate to the new December 2020 pricing to lower my bill?*
-
-A: New December 2020 pricing applies to new paid tier clusters provisioned after December 16th 2020. You can keep the old pricing if you keep your paid tier instances provisioned before December 16th, 2020 and keep its state (running or stopped). If you want to take advantage of the new pricing to lower your cost, you can migrate your workload to a newly provisioned instance, or simply start and stop the old instance. Note that TigerGraph Cloud accounts with valid credit cards are eligible for the paid tier migration. Please submit a support ticket for migration assistance.
+See xref:cloud4:overview:pricing.adoc[Pricing] for detailed information.
 
 
 === *Q:  Do you offer a discount for annual contracts/commitments?*
 
 A: Yes, there is a discount for contracting with TigerGraph for a one-year term.  Please contact link:mailto:sales@tigergraph.com[sales@tigergraph.com] to request your discount.
 
-=== *Q: Can I purchase TigerGraph Cloud Credits?*
+=== *Q: Can I purchase TigerGraph Credits (TCRs)?*
 
-A: Yes. You can purchase cloud credits applied to TigerGraph Cloud usage. Please refer to https://www.tigergraph.com/cloud-credits/
+A: Yes. You can purchase TigerGraph credits applied to TigerGraph Cloud usage. Please refer to https://www.tigergraph.com/cloud-credits/
 
 
-=== *Q:  If I delete my instance before the end of the month, what will I have to pay?*
+=== *Q:  If I delete my workspace before the end of the month, what will I have to pay?*
 
 A: If you are subscribed to our standard hourly service, you will be charged only for your hours of use.
 
 
-=== *Q: If I add an instance mid-month, when do I start paying for it?*
+=== *Q: If I add an workspace mid-month, when do I start paying for it?*
 
 A:  We bill you and charge your credit card at the end of each calendar month.
 
@@ -221,98 +207,120 @@ A:  With TigerGraph Cloud, you only pay for what you use.  For long term contrac
 
 
 === *Q: How do I determine the instance needed for my workload?*
+A: To determine the appropriate instance for your workload, follow these guidelines:
 
-Check the individual pages under xref:index.adoc[] to see what instance types are offered by each cloud provider in each region.
-Larger graphs require more RAM. Higher performance calls for both more CPUs and more RAM.
+* **Check Available Instance Types:** Refer to xref:index.adoc[] to see the instance types offered by each cloud provider in each region. Larger graphs require more RAM, while higher performance necessitates both more CPUs and more RAM.
+* **Use the Pricing Table:** Our xref:cloud4:overview:pricing.adoc[pricing table] provides initial recommendations for which instance to start with based on the amount of data you plan to load into the graph. This input data is referred to as your "raw data." TigerGraph reorganizes your data into a graph, encoding and compressing it. Typically, the stored graph will be about 70% of the size of your raw data, although this is a conservative estimate and it’s often smaller.
+* **Consider RAM Requirements:** In addition to storage, you need sufficient RAM for graph querying and computation. Different applications of TigerGraph can require varying amounts of RAM. We recommend that your total RAM be about 1.5 times the maximum amount of raw data you expect to load.
+* **Scale as Needed:** If you find you need more space or compute power, you can easily scale up your instance.
+* **Use Tools for Assistance:**
+** xref:cloud4:workgroup-workspace:workspaces/settings.adoc#_workspace_size_suggestion[Workspace Size Suggestion]: This tool helps you determine the appropriate instance size for your workload.
+** xref:cloud4:overview:cost-estimation.adoc[Cost Estimation]: This tool helps you estimate the cost of your TigerGraph Cloud environment.
 
-Our link:https://www.tigergraph.com/tigergraph-cloud-pricing/[pricing table] gives initial recommendations for which instance to start with, if you know how much data you will be loading into the graph.
-We call the input data your "raw data".
-TigerGraph reorganizes your data into a graph, encoding and compressing it.
-We have assumed that your stored graph will be about 70% of the size of your raw data.
-This is a conservative estimate; it's often smaller.
-
-You also need RAM for your graph querying and computation.
-Different applications of TigerGraph can require very different amounts of RAM.
-In the pricing table, we recommend that your total RAM be about 1.5 times the maximum amount of raw data you think you will load.
-
-If you see you need more space or more compute power, then just scale up.
-
-Please submit a support ticket from TigerGraph Cloud Portal or https://tigergraph.zendesk.com/hc/en-us/[from Zendesk] for more help.
-
+For additional assistance, you can submit a support ticket through the TigerGraph Cloud Portal or https://tigergraph.zendesk.com/hc/en-us/[from Zendesk].
 
 === *Q: How do I expand the disk size?*
 
-Please submit a support ticket from TigerGraph Cloud Portal for more help.
+There is no need to expand the disk size on TigerGraph Cloud 4, since the graph data is stored separately from the instance. You can scale up your instance to a larger size if you need more RAM or CPU power.
 
 
-=== *Q: Can I migrate my database to a larger (or smaller) instance?*
+=== *Q: Can I migrate my database to a larger (or smaller) workpace?*
 
-A: Contact TigerGraph Cloud Support for migrating between different instance types. Instance migration is not yet supported through one-click operation.
-
+A: Yes, you can just expand or shrink your existing workspace. To do this, simply edit your workspace settings as described in the xref:cloud4:workgroup-workspace:workspaces/settings.adoc[] documentation. Alternatively, you can set up an expand/shrink operation on a predefined schedule by following the instructions in the xref:cloud4:workgroup-workspace:workspaces/schedule.adoc[] documentation.
 
 === *Q: Can I deploy a distributed TigerGraph database across a cluster of instances?*
 
-A: Yes, you can provision a distributed database in TigerGraph Cloud. Simply provide the partition number and replication number you would like to have.
-Please see the sections below on <<_provisioning_backup_and_restore>>.
+A: Yes, you can provision a distributed database in TigerGraph Cloud 4. Please refer to the xref:cloud4:workgroup-workspace:workspaces/workspace-size.adoc[] documentation for more information.
 
 == Hardware
 
 
 === *Q: What type of disks are attached to the provisioned TigerGraph Instances?*
 
-A: A Root Disk (EBS based) is attached to TigerGraph Instances.
+A: The provisioned TigerGraph instances have the following disk configurations:
 
-
-=== *Q: What does the provisioned disk include, and how should I approach disk sizing?*
-
-A: If you choose AWS as the backend, TigerGraph Cloud provisions persistent EBS volume as the disk attached to the EC2 machines to hold installation files and data files.
-The disk holds the following:
-
-* OS installation
-* TigerGraph database installation
-* TigerGraph Graph storage
-* Other data files uploaded to the instance
-* Output files generated by querying the database
-* System logs generated by the instance
-
-Hence, when you consider the size of the disk, please consider the size of the data for all the above installations and files.
-
+Root Disk: An EBS (Elastic Block Store) based root disk is attached to the TigerGraph workspace.
+Graph Data Storage: The graph data is stored in EFS (Elastic File System) and S3 (Simple Storage Service).
 
 === *Q: What browsers are supported?*
 
-A: TigerGraph Cloud has been designed and tested for Chrome using React with the latest component libraries. Other browsers are not officially tested but are expected to work.
+A: As of Oct 2024, TigerGraph Cloud 4 is certified on the following browsers:
+
+|===
+|Chrome |Safari |Firefox |Edge
+
+|Version 107.0.5304.107 (Official Build) (arm64)
+|Version 15.4 (17613.1.17.1.13)
+|Version 106.0.3
+|Version 107.0.1418.42 (Official build) (arm64)
+|===
+
+
+Not all features are guaranteed to work on other browsers.
+Please make sure to enable JavaScript and cookies in your browser settings.
+
+
 
 == Provisioning, Backup and Restore
 
 
-=== *Q: What is a Cluster?*
+=== *Q: What is a workgroup, workspace, database?*
 
-A: A TigerGraph Cluster, formerly known as a Solution, is a graph database image which can be deployed on a virtual machine instance.  Most clusters also come with a starter kit, a sample graph schema, sample data, and sample queries for a common use case, such as Recommendation Engine, Anti-Fraud, and Healthcare Analytics.
+A: In TigerGraph Cloud 4, the concepts of workgroup, workspace, and database are used to organize and manage projects and data within the platform. Here's a breakdown of each term:
 
-In a newly provisioned cluster, the data files are ready to be loaded, and the queries are ready to be installed.
+* Workgroup: A workgroup represents a project or a logical group within TigerGraph Cloud. It serves as a container that holds multiple workspaces and databases related to a specific use case, team, or application. Workgroups provide a way to organize and manage resources, access controls, and configurations for a particular project or initiative.
+* Workspace: A workspace is a compute unit within a TigerGraph database. It is where the graph processing and analytics take place. TigerGraph Cloud 4 supports two types of workspaces: read-write workspaces and read-only workspaces.
+** Read-write workspaces: These workspaces allow read and write operations on the graph data. They are typically used for data ingestion, data updates, and running queries that modify the graph structure or properties.
+** Read-only workspaces: These workspaces are optimized for read-intensive operations. They are used for executing queries and analytics on the graph data without modifying it. Read-only workspaces provide improved performance and scalability for read operations.
+* Database: The database in TigerGraph Cloud 4 refers to the actual data stored within the platform. It is separate from the workspaces and can be associated with one or more workspaces within a workgroup. It holds the persistent data that is loaded into TigerGraph and is accessible for graph analytics and visualization. We only support a maximum of one ready-write workspace to connect to a database.
+
+By utilizing workgroups, workspaces, and databases, TigerGraph Cloud 4 provides a flexible and scalable environment for managing projects, allocating compute resources, and working with graph data effectively. The separation of compute and storage in workspaces allows for optimized performance and resource allocation, while the databases ensure the persistence and accessibility of the graph data.
 
 
-=== *Q: Is there a warm-up period for TigerGraph instances and clusters?*
 
-A: When you provision or restart a cluster, there will be a warm-up period for the machine instances and the disk attached to the instances.
-The larger the data size and the greater the number of instances, the longer the warm-up period will be.
+=== *Q: Is there a warm-up period for TigerGraph workspaces?*
+
+A: When you provision or restart a workspace, there will be a warm-up period for the workspace and the disk attached to the workspace.
+The larger the data size and the greater the size of workspace, the longer the warm-up period will be.
 
 
-=== *Q: What is the difference between stopping and terminating a cluster?*
+=== *Q: What is the difference between stopping, pausing, and terminating a workspace?*
 
-A: When you stop a cluster, you shut down the virtual machine instance.
-The TigerGraph database is frozen in its current state.
-Billing for that machine instance also stops.
-Scheduled backups also stop, but the backup copies are kept in EFS in AWS, Azure Files in Azure, and GCP Filestores in GCP.
-You will still incur charges for disk storage and backups when a cluster is stopped. You can start the cluster again.
-After a warmup period, the cluster will return to its previous state.
+A: 
 
-When you terminate a cluster, you will deprovision the virtual machine and the attached disk space.
-The cluster is deleted according to the cloud platform's policies and cannot be recovered.
+Stopping a Workspace:
+
+* **Action**: Shuts down the workspace without listening to incoming requests.
+* **State**: The TigerGraph database is frozen in its current state.
+* **Billing**: Billing for the machine instance stops, but you will still incur charges for disk storage and backups.
+* **Backups**: Scheduled backups stop, but existing backup copies are kept in storage.
+* **Recovery**: You can start the workspace again, and after a warmup period, it will return to its previous state.
+
+Pausing a Workspace:
+
+* **Action**: Suspends the workspace but listening to incoming requests.
+* **State**: The TigerGraph database is frozen in its current state.
+* **Billing**: Billing for the machine instance stops, but you will still incur charges for disk storage and backups.
+* **Backups**: Scheduled backups stop, but existing backup copies are kept in storage.
+* **Recovery**: The workspace will resume automatically if incoming requests are detected or can be manually started. After a warmup period, it will return to its previous state.
+
+Terminating a Workspace:
+
+* **Action**: Deprovisions the workspace and the attached disk space.
+* **State**: The workspace and all its data are deleted according to the cloud platform's policies.
+* **Billing**: All associated billing stops, including for the virtual machine instance, disk storage, and backups.
+* **Backups**: All backup copies are deleted.
+* **Recovery**: The workspace cannot be recovered once terminated.
+
+In summary:
+
+* **Stopping**: Shuts down the workspace but keeps data and backups; can be restarted.
+* **Pausing**: Suspends the workspace while still listening for requests.
+* **Terminating**: Completely deletes the workspace and its data; cannot be recovered.
 
 === *Q: Do you offer backup in TigerGraph Cloud?*
 
-A: Yes. Please see our guide for using xref:cloud4:workgroup-workspace:workgroups/backup-and-restore.adoc[] in the Admin Portal.
+A: Yes. Please see our guide for using xref:cloud4:workgroup-workspace:workgroups/backup-and-restore.adoc[] in the TigeGraph Cloud 4 Portal.
 
 
 === *Q: What backup options are available?*
@@ -320,31 +328,16 @@ A: Yes. Please see our guide for using xref:cloud4:workgroup-workspace:workgroup
 A: TigerGraph Cloud offers full backups on a scheduled or on-demand basis.
 By default, backup is turned on when instances are running and will be done daily.
 There are four backup schedules you can choose from: daily, weekly, monthly, and ad hoc.
+Please refer to the xref:cloud4:workgroup-workspace:workgroups/backup-and-restore.adoc[] documentation for more information. You can also check the quota policy for the backup in the xref:cloud4:resources:quota_policy.adoc[Quota Policy] documentation.
 
-The default retention policy is to retain up to seven backups.
-Therefore, daily backups are retained for a week, weekly backups for seven weeks, and monthly backups for seven months.
-If you want to perform an ad hoc manual backup when there are already seven existing backups, you need to delete an older backup in order to save the most recent ad hoc copy.
-The maximum number of manual backups is six, as the platform always reserves one spot for a scheduled backup.
-When a cluster is stopped, backups in EFS, Azure Files and GCP Filestores will be charged for the time you have the clusters.
-Please see pricing for backup costs while your instance is stopped.
+=== *Q: Can I restore from a backup from another workspace in my account?*
 
-More options for longer retention policies are in development.
-
-=== *Q: Can I restore from a backup from another cluster in my account?*
-
-A: Contact TigerGraph Support to restore from another cluster backup.
+A: Cross workspace restore is not supported yet. Contact TigerGraph Support to restore from another workspace backup.
 
 
-=== *Q: What password do I use for backup and restore?*
+=== *Q: What happens to my automated backups if I terminate my workspace?*
 
-A: To perform an ad hoc backup, use the password of the `tigergraph` user of your cluster.
-To restore from a previous backup, use the same password that was used to create the backup.
-This rule applies to restoring from a different cluster in your account. All the backups of different clusters in your account can be found through the Admin Portal.
-
-
-=== *Q: What happens to my automated backups if I terminate my cluster?*
-
-A: We will keep the latest backup for 15 days and then delete.
+A: Please refer to We will keep the latest backup for 15 days and then delete.
 Within that 15 days, you may use your backup to restore into another similar cluster if it is a single server cluster.
 To restore a cluster within 15 days, please submit a support ticket through the cloud portal.
 
@@ -372,35 +365,23 @@ TigerGraph HA service provides loading balancing when all components are operati
 === *Q: What is the replication factor?*
 
 A: Replication factor means how many copies of data are stored, each on a separate machine.
-The default HA configuration has a replication factor of two, meaning that a fully-functioning system maintains two copies of the data, stored on separate machines.
-TigerGraph Distributed Cloud currently supports your choice of replication factor of one (only one copy of the data, not recommended for critical systems), two, or three if you choose TigerGraph v3.0.6+.
-If you choose TigerGraph v2.6.x, only replication factors of one or two are supported.
-
-*Limitation for TigerGraph v2.6.x:* In TigerGraph Distributed Cloud, if replication is used, the total number of instances must be at least 3.
-For TigerGraph v2.6.x, if the replication factor is 2, then the partition factor must be at least 2, for a total of 2x2 = 4 instances.
-TigerGraph v3.0.6+ supports configurations for a cluster with 1 partition and 3 replicas.
-
-*Limitation for TigerGraph v3.1.1:* This version only supports single server configuration.
+You can enable HA, which adds a replication factor of 2 or 3 for your workspace. For workspaces TG-8 and below, the replication factor is set to 3 if HA is enabled. For TG-16 and above, the replication factor is set to 2 if HA is enabled.
 
 [#q-what-is-the-partition-factor]
 === *Q: What is the partition factor?*
 
 A: Partition factor means the number of parts or components your graph data is split into, which also equals the number of instances that collectively store one copy of the full graph.
 For example, if you select a partition factor of 3, each instance will hold approximately 1/3 of your data.
-Please read the xref:tigergraph-server:cluster-and-ha-management:ha-cluster.adoc[] documentation for additional details about partitions and replications.
+Please read the xref:tigergraph-server:cluster-and-ha-management:ha-cluster.adoc[] documentation for additional details about partitions and replications. For the partition factor for each workspace size, please refer to the xref:cloud4:workgroup-workspace:workspaces/workspace-size.adoc[] documentation.
+
+[#q-what-is-the-difference-between-replication-and-partition]
 
 
 === *Q: How long do I need to wait for the cluster to be ready after provisioning process starts?*
 
-A: It currently takes about 4 minutes to provision a single instance. If you configure a 2x2 replicated and distributed graph database, it will take about 15 minutes.
+A: It currently takes about 4 minutes to provision a workspace. It might take longer for Read-Only workspaces or Read-Write workspaces with a solution kit selected.
 
 == Network, Security and User Management
-
-
-=== *Q: Can I use TigerGraph in Amazon Virtual Private Cloud (Amazon VPC)?*
-
-A: By default, you will be given your own VPC(s) for your TigerGraph Cloud account resources in AWS and GCP, and your own Azure Virtual Networks for your TigerGraph Cloud account resources in Azure. Your instances are separated from other accounts by different VPCs or Virtual Networks. Within your own account, you have different VPCs or Virtual Networks for different regions.
-
 
 === *Q: Does TigerGraph Cloud support encrypting my data in transit and at rest?*
 
@@ -463,11 +444,6 @@ curl -X GET -H "Authorization: Bearer xyz789" 'https://SOLUTIONID.i.tgcloud.io:4
 ----
 
 
-=== *Q: Do free tier instances expose RESTful endpoints?*
-
-A: Yes. Free tier instances expose RESTful endpoints on port 443 to allow access to TigerGraph database, similar to paid tier instances. Clusters created before June 20, 2022 use port 9000.
-
-
 === *Q: Does TigerGraph Cloud offer Role Based Access Control?*
 
 A: TigerGraph's role-based access control with MultiGraph and User Management is available if you use TigerGraph V3.0.5+.
@@ -486,29 +462,29 @@ A: TigerGraph Cloud encrypts data at rest and in transit, and SSL is enabled for
 === *Q: Can I integrate TigerGraph Cloud into my single sign on system?*
 
 A: The ability to use cloud portal to integrate TigerGraph Cloud into an SSO system will be provided at a future date.
-If you are using a paid tier instance, please submit a support ticket to request advanced service to integrate into an SSO system TigerGraph supports.
+If you are a paid tier customer, please submit a support ticket to request advanced service to integrate into an SSO system TigerGraph supports.
 Please see more detailed pages on the xref:tigergraph-server:user-access:sso.adoc[Single Sign On (Server)] and xref:gui:admin-portal:security/sso.adoc[Single Sign On (GUI)] features.
 
-== Upgrade
+// == Upgrade
 
 
-=== Q: Can I upgrade TigerGraph version on my cluster?
+// === Q: Can I upgrade TigerGraph version on my cluster?
 
-A: For free tier clusters, upgrading is not supported unless you are migrating to paid tier clusters.
-If you want to change the database version in your free tier, you can terminate the existing free tier cluster, and create a new free tier with the new version.
-In each TigerGraph Cloud account, you can have one free tier cluster.
-If you want to migrate to paid tier clusters, please send a support ticket through your cloud portal.
+// A: For free tier clusters, upgrading is not supported unless you are migrating to paid tier clusters.
+// If you want to change the database version in your free tier, you can terminate the existing free tier cluster, and create a new free tier with the new version.
+// In each TigerGraph Cloud account, you can have one free tier cluster.
+// If you want to migrate to paid tier clusters, please send a support ticket through your cloud portal.
 
-For paid tier clusters, please submit a support ticket for upgrade assistance.
-Downtime is expected during this upgrade.
-It is recommended to create a new blank cluster, import your data and copy the GSQL queries to test and experiment before upgrading your production instance.
+// For paid tier clusters, please submit a support ticket for upgrade assistance.
+// Downtime is expected during this upgrade.
+// It is recommended to create a new blank cluster, import your data and copy the GSQL queries to test and experiment before upgrading your production instance.
 
 == TigerGraph Cloud Support
 
 
 === *Q: How do I submit a support ticket?*
 
-A: In your cloud portal, on the top bar,  you can submit the support ticket by clicking on the btn:[Support] on the lower left corner.
+A: In your cloud portal, on the navigation menu, you can submit the support ticket by clicking on the btn:[ Support ] on the lower left corner.
 
 This will generate a support ticket in TigerGraph's Zendesk support system.
 You can track the ticket status in Zendesk.
@@ -529,10 +505,7 @@ A: TigerGraph is a native parallel graph database built on C{pp}. It is not buil
 
 === *Q: How can I monitor the speed or throughput of queries and data loading?*
 
-A: The GraphStudio visual design tool provides several monitors.
-
-The xref:gui:graphstudio:load-data.adoc[]  page includes a real time monitor and statistics. Query performance and many other measures are available on the xref:tigergraph-server:intro:index.adoc[Administrator Portal].
-
+A: You can monitor the loading speed on the xref:cloud4:graph-development:load-data/index.adoc[] page. For query perormance, you can use the monitoring tools in the xref:cloud4:workgroup-workspace:workgroups/monitor-workspaces.adoc[] page.
 
 === *Q: How can I improve the speed of my system?*
 

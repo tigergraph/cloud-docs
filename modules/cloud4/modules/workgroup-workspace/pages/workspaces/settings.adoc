@@ -109,6 +109,11 @@ The *Alerts* section allows users to set up notifications for various workspace 
 
 image::alerts.png[]
 
+[NOTE]
+====
+Alerts will be sent to the workspace creator email address.
+====
+
 == Graph Admin
 
 The *Graph Admin* section provides access to advanced administrative settings for your graph database. These settings allow you to manage TigerGraph Server settings.

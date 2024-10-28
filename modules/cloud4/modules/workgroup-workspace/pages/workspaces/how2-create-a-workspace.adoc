@@ -28,7 +28,7 @@ image::workspaceinfo.png[]
 +
 image::workspaceDetails.png[]
 +
-. For supported workspace sizes, please go to the Workspace Size page.
+. For supported workspace sizes, please go to the xref:cloud4:workgroup-workspace:workspaces/workspace-size.adoc[] page.
 
 . For advanced settings please refer to xref:cloud4:workgroup-workspace:workspaces/settings.adoc[] page.
 

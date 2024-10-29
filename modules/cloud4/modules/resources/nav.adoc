@@ -1,4 +1,7 @@
 * xref:cloud4:resources:index.adoc[Resources]
+** xref:cloud4:resources:aws.adoc[]
+** xref:cloud4:resources:gcp.adoc[]
+** xref:cloud4:resources:azure.adoc[]
 ** xref:cloud4:resources:glossary.adoc[]
 ** xref:cloud4:resources:support.adoc[]
 ** xref:cloud4:resources:faqs.adoc[]

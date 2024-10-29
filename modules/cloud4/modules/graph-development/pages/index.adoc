@@ -1,58 +1,80 @@
 = Graph Managment
 
 Here, you will find comprehensive guides and resources to help you design, load, query, and explore your graph database.
+Welcome to the Graph Development Landing Page! This guide provides an overview of the essential tools and processes for managing and developing your graph databases. Click on the sections below to learn more about each area.
 
-== Design Schema
+== [Load Data](#load-data)
 
-Designing an effective schema is the foundation of a performant graph database. This section covers:
+Efficiently loading data into your TigerGraph databases is crucial for successful graph analysis.
 
-- **Schema Basics:** Learn the fundamental concepts of graph schema design.
-- **Nodes and Edges:** Understand how to define nodes (vertices) and edges in your schema.
-- **Attributes and Types:** Learn how to assign attributes and data types to your nodes and edges.
-- **Schema Best Practices:** Tips and best practices for designing a scalable and efficient graph schema.
+### Key Features:
+- Select an active workspace.
+- Use various connectors to load data.
+- Choose between a Step-by-Step Guide or GSQL Template for data loading.
 
-[Learn more about Schema Design](#)
+### Learn More:
+- [Load Data from Local File](#)
+- [Load Data from Amazon S3](#)
+- [Load Data from Google Cloud Storage](#)
+- [Load Data from Azure Blob Storage](#)
+- [Load Data from Other Sources](#)
+
+== [Design Schema](#design-schema)
+
+The Schema Designer provides a user-friendly interface for managing your graph database schema.
+
+### Key Features:
+- Define vertex and edge types.
+- Specify properties and indexes.
+- Establish relationships between elements.
+
+### Learn More:
+- [Edit GSQL Query](#)
+- [Schema Designer](#)
+
+== [GSQL Editor](#gsql-editor)
+
+The GSQL Editor is a powerful tool for developing and executing GSQL queries.
+
+### Key Features:
+- Four work areas: File List Panel, Result Panel, Schema Designer Panel, and Main GSQL Editing Panel.
+- Shortcuts for efficient query execution.
+- File List for organizing and managing GSQL queries.
+- Query List for managing custom queries.
+
+### Steps to Get Started:
+1. **File List**: Navigate through files and folders, search for specific files, and create new files or folders.
+   ![File List](Screenshot 2024-10-11 at 10.59.49.png)
+   
+2. **Folders**: Manage shared and user-defined folders.
+   ![Create Folder](Screenshot 2024-04-18 at 10.10.18 AM.png)
+   
+3. **Query List**: View, create, edit, delete, and install custom queries.
+   ![Query List](queries.png)
+
+### Learn More:
+- [Edit GSQL Query](#)
+- [Schema Designer](#)
+
+== [Explore Graph](#explore-graph)
+
+Explore Graph allows users to visually interact with their graph data, helping to navigate and understand complex data structures.
+
+### Key Features:
+- Visual representation of graph data.
+- Identify and explain relationships between data points or entities.
+
+### Prerequisites:
+- [Create a Workspace](#)
+- [Load Data](#)
+
+### Learn More:
+- [Use Pattern Search](#)
 
 ---
 
-== Load Data
+For detailed information on each topic, please refer to the respective documentation pages linked above. Happy graph developing!
 
-Loading data into your graph database is a crucial step. This section provides:
-
-- **Data Formats:** Supported data formats for importing into the graph database.
-- **Data Import Methods:** Various methods to load data, including bulk loading and streaming.
-- **Data Mapping:** How to map your data to the defined schema.
-- **Error Handling:** Troubleshooting common issues during data loading.
-
-[Learn more about Loading Data](#)
-
----
-
-== GSQL Editor
-
-The GSQL (Graph SQL) Editor is your primary tool for writing and executing queries. This section includes:
-
-- **Introduction to GSQL:** Basics of the GSQL language and its syntax.
-- **Writing Queries:** How to write and execute queries to retrieve and manipulate data.
-- **Advanced GSQL Features:** Explore advanced features like user-defined functions and stored procedures.
-- **Performance Tuning:** Tips for optimizing your GSQL queries for better performance.
-
-[Learn more about GSQL Editor](#)
-
----
-
-== Explore Graph
-
-Exploring your graph data helps you gain insights and uncover patterns. This section covers:
-
-- **Graph Visualization:** Tools and techniques for visualizing your graph data.
-- **Exploration Techniques:** Methods for traversing and analyzing your graph.
-- **Use Cases:** Real-world examples and use cases of graph exploration.
-- **Integration:** Integrating graph exploration with other tools and platforms.
-
-[Learn more about Exploring Graph](#)
-
----
 
 == Additional Resources
 

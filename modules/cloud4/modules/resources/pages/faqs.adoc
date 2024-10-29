@@ -53,7 +53,7 @@ TigerGraph Cloud 4 stands out among Database-as-a-Service (DBaaS) offerings due 
 ** RESTful API: Access and interact with your graph database using a comprehensive RESTful API.
 * Competitive Edge
 ** Performance: TigerGraph Cloud 4 is optimized for high performance, handling complex queries and large datasets efficiently.
-** Flexibility: Support for various deployment options and cloud platforms including AWS, Azure, and GCP.
+** Flexibility: Support for various deployment options.
 ** Community and Support: Access to a vibrant community of users and dedicated support from TigerGraph experts.
 
 In summary, TigerGraph Cloud 4 offers a robust, scalable, and high-performance graph database solution with a wide range of features and tools that set it apart from other DBaaS offerings. Whether you are looking for advanced analytics, ease of use, or scalability, TigerGraph Cloud provides the capabilities you need to succeed.
@@ -70,7 +70,7 @@ A: There are free credits but no free instances at TigerGraph Cloud 4. You can c
 
 === *Q: In what cloud platforms and regions does TigerGraph Cloud 4 operate?*
 
-A: TigerGraph Cloud 4 currently only operates on Amazon Web Services (AWS), GCP and Azure are not supported yet. Visit each platform's reference page to learn more about the available regions.
+A: TigerGraph Cloud 4 currently only operates on xref:cloud4:resources:aws.adoc[], xref:cloud4:resources:gcp.adoc[] and xref:cloud4:resources:azure.adoc[] are not supported yet. Visit each platform's reference page to learn more about the available regions.
 
 === *Q: Can I choose different versions of TigerGraph on TigerGraph Cloud 4?*
 
@@ -117,7 +117,7 @@ See TigerGraph's xref:cloud4:workgroup-workspace:workgroups/monitor.adoc[Monitor
 
 === *Q:  Is TigerGraph Cloud cloud-agnostic?*
 
-A: While TigerGraph Cloud 4 currently operates on AWS only, we are actively developing support for Azure and GCP. It is not entirely cloud-agnostic as it leverages specific services and integrations from these cloud providers. If you require immediate assistance managing TigerGraph on another cloud provider, please contact link:mailto:sales@tigergraph.com[sales@tigergraph.com].
+A: While TigerGraph Cloud 4 currently operates on xref:cloud4:resources:aws.adoc[] only, we are actively developing support for xref:cloud4:resources:gcp.adoc[] and xref:cloud4:resources:azure.adoc[]. It is not entirely cloud-agnostic as it leverages specific services and integrations from these cloud providers. If you require immediate assistance managing TigerGraph on another cloud provider, please contact link:mailto:sales@tigergraph.com[sales@tigergraph.com].
 
 
 === *Q:  Is the support for TigerGraph Cloud the same as the support for TigerGraph Enterprise?*

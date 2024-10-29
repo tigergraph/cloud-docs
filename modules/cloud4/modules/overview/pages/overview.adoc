@@ -15,15 +15,15 @@ image::cloud4-architecture.png[Architecture Overview, 800, 600]
 
 === Components
 
-==== *Data Plane - Storage Layer*
+==== Data Plane - Storage Layer
 
 The graph storage layer is responsible for persisting graph data in a highly optimized format. Involved storing data in a distributed manner across multiple nodes to ensure high availability and fault tolerance.
 
-==== *Data Plane - Compute Layer*
+==== Data Plane - Compute Layer
 
-The copute layer is the heart of TigerGraph Cloud 4, providing the capability to execute complex graph queries with high performance
+The compute layer is the heart of TigerGraph Cloud 4, providing the capability to execute complex graph queries with high performance
 
-==== *Control Plane*
+==== Control Plane
 
 The control plane provides UI and APIs for managing and monitoring graph databases in TigerGraph Cloud 4. Key components include:
 

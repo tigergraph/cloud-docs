@@ -17,13 +17,15 @@ With the Schema Designer, you can easily modify and manage the schema of your gr
 image::design-schema.png[width=1200]
 == 1) Get Started
 
-.Navigate to the Schema Designer. It is accessible from:
-* A Workspace page.
+Navigate to the Design Schema Page. It is accessible from:
+
+* Navigation Menu > Design Schema.
+* Workspace general page.
 * GSQL Editor page.
-* Load Data pages.
+* Load Data page.
 * Solution Builder page.
 
-image::Screenshot 2024-04-17 at 7.34.37 PM.png[width=300]
+image::workspace-connect-menu-1.png[width=300]
 
 [TIP]
 ====

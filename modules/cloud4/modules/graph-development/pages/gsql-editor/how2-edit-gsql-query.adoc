@@ -33,32 +33,33 @@ Schema based GSQL autocomplete is not yet supported.
 .To run a GSQL Query, start by:
 . Select an active workspace to run the GSQL Query.
 +
-image::Screenshot 2024-04-18 at 10.13.20 AM.png[]
 
-. To run a query, there are two options available: btn:[Run All]  and btn:[Run Selected].
+image::gsql-editor-1.png[]
+
+. To run a query, there are two options available: btn:[Run]  and btn:[Run All].
 +
-image::Screenshot 2024-04-18 at 10.13.47 AM.png[]
+image::gsql-editor-2.png[]
 
 * *Run All*: The btn:[Run All] option executes the entire GSQL script or query that is currently open in the GSQL Editor.
 When you click the btn:[Run All] button, it triggers all the GSQL statements in the script from top to bottom.
+** *Shortcut*: You can also use the shortcut to btn:[RUN All]: btn:[ Command + Shift + Enter/ Control + Shift + Enter ].
 +
 [TIP]
 ====
 This is useful when you want to run the entire GSQL script or when you have multiple queries in the script that need to be run together.
 ====
 +
-** *Shortcut*: You can also use the shortcut to btn:[RUN All]: btn:[ Command + Enter/ Control + Enter].
 
-* *Run Selected*: The btn:[Run Selected] option allows you to run only a specific portion of the GSQL query.
+* *Run*: The btn:[Run] option allows you to run only a specific portion of the GSQL query.
 To use this option, you need to select the desired portion of the GSQL code within the GSQL Query Editor.
-Once you've made the selection, clicking the btn:[Run Selected] button will run only the selected portion of the code.
+Once you've made the selection, clicking the btn:[Run] button will run only the selected portion of the code.
+** *Shortcut*: You can also use the shortcut to btn:[Run]: btn:[ Command + Enter/ Control + Enter ]
 +
 [TIP]
 ====
-This is helpful when you want to run a specific query or a subset of queries within a larger script.
+* This is helpful when you want to run a specific query or a subset of queries within a larger script.
+* If no GSQL code is selected, the btn:[Run] button will execute the entire GSQL script.
 ====
-+
-** *Shortcut*: You can also use the shortcut to btn:[Run Selected]: btn:[ Command + Shift + Enter/ Control + Shift + Enter ]
 
 == Share GSQL Files
 

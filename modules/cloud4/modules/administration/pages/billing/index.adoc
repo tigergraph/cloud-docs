@@ -4,7 +4,7 @@
 Billing allows you to stay in control of your account, optimize resource usage, and manage costs effectively.
 Understand the billing process and manage your subscription within TigerGraph Cloud 4 with the billing manager UI.
 
-image::Screenshot 2024-04-28 at 12.11.56 PM.png[]
+image::billing-manager.png[]
 
 Check out the links below to explore more billing information to utilize.
 

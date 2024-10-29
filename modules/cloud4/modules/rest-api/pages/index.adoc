@@ -1,7 +1,7 @@
 = REST API (Preview)
 :experimental:
 
-TigerGraph Cloud 4 REST API provides a set of endpoints that allow developers to interact programmatically with TigerGraph Cloud 4 services. This API enables you to manage your graph databases, run queries, and perform various administrative tasks.
+TigerGraph Cloud 4 REST API provides a set of endpoints that allow developers to interact programmatically with TigerGraph Cloud 4 services. Those APIs enable you to manage your graph databases and perform various administrative tasks.
 
 [IMPORTANT]
 ====

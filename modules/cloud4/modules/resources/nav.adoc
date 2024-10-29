@@ -6,5 +6,5 @@
 ** xref:cloud4:resources:support.adoc[]
 ** xref:cloud4:resources:faqs.adoc[]
 ** xref:cloud4:resources:quota_policy.adoc[Subscription Plans and Quota Policy]
-** xref:cloud4:resources:terms_conditions.adoc[Terms and Conditions]
+// ** xref:cloud4:resources:terms_conditions.adoc[Terms and Conditions]
 // ** xref:resources:faqs.adoc[FAQs]

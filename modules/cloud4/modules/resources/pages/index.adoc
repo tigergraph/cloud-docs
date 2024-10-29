@@ -11,11 +11,26 @@ Here you can refer terms used in TigerGraph Cloud 4.
 
 Here you can learn how to get support.
 
+== xref:resources:faqs.adoc[]
+
+Here you can find answers to frequently asked questions.
+
+== xref:resources:aws.adoc[]
+
+Here you can learn about Amazon Web Services (AWS).
+
+== xref:resources:gcp.adoc[]
+
+Here you can learn about Google Cloud Platform (GCP).
+
+== xref:resources:azure.adoc[]
+
+Here you can learn about Microsoft Azure.
+
 == Policy Documents
 
 If you are a participating TigerGraph Cloud 4 user, please review our policy documents:
 
-* xref:quota_policy.adoc[Beta Phase Quota Restriction Policy]
-* xref:terms_conditions.adoc[Beta Program Terms and Conditions]
+* xref:quota_policy.adoc[TigerGraph Cloud 4 Subscription Plans and Quota Policy]
 
 

@@ -85,6 +85,11 @@ image::auto-resume.png[]
 When the Auto Resume is enabled, the workspace will become “Idle” state instead of “Stopped”.
 Auto-resume will kick-in when users access tools and rest APIs.
 
+[NOTE]
+====
+The first request that hits the Workspace when it is idle will trigger a start workspace request. The request itself is not buffered so you should keep retrying until it is successful.
+====
+
 ==== Auto-Resume Limitations
 
 .The following endpoints will not trigger auto-resume:

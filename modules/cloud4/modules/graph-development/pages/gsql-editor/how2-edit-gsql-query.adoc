@@ -21,12 +21,8 @@ image::Screenshot 2024-04-18 at 10.12.15 AM.png[]
 +
 The opened files will be listed on the top tabs on the code edit folder
 +
-image::Screenshot 2024-04-18 at 10.12.40 AM.png[width=300]
+image::query-editor.png[]
 +
-[NOTE]
-====
-Schema based GSQL autocomplete is not yet supported.
-====
 
 == Run GSQL Query
 

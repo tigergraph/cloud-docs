@@ -9,7 +9,7 @@ The TigerGraph Cloud 4 REST API is currently in preview version. Features and en
 
 == Setup API Keys
 
-Before you can authenticate your API requests, you need to set up your API keys. Please refer to the API Key Setup page for detailed instructions on how to generate and manage your API keys.
+Before you can authenticate your API requests, you need to set up your API keys. Please refer to the xref:cloud4:administration:settings/how2-create-api-key.adoc[API Key Setup] page for detailed instructions on how to generate and manage your API keys.
 
 == Example Request
 

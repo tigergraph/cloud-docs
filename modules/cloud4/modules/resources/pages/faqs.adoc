@@ -58,10 +58,6 @@ TigerGraph Cloud 4 stands out among Database-as-a-Service (DBaaS) offerings due 
 
 In summary, TigerGraph Cloud 4 offers a robust, scalable, and high-performance graph database solution with a wide range of features and tools that set it apart from other DBaaS offerings. Whether you are looking for advanced analytics, ease of use, or scalability, TigerGraph Cloud provides the capabilities you need to succeed.
 
-=== *Q: How do I migrate to the TigerGraph Cloud 4 to lower my bill?*
-
-A: New November 2024 pricing applies to new workspaces provisioned on TigerGraph Cloud 4. The clusters provisioned in TigerGraph Cloud Classic will continue to be billed at the old pricing. If you want to take advantage of the new pricing to lower your cost, you can migrate your workload to TigerGraph Cloud 4. Note that only TigerGraph Cloud accounts with valid credit cards are eligible for the paid tier migration. Please submit a support ticket for migration assistance.
-
 [#q-are-there-free-tier-instances-or-free-credits-for-the-system]
 === *Q: Are there Free Tier Instances or Free Credits for the System?*
 
@@ -70,7 +66,7 @@ A: There are free credits but no free instances at TigerGraph Cloud 4. You can c
 
 === *Q: In what cloud platforms and regions does TigerGraph Cloud 4 operate?*
 
-A: TigerGraph Cloud 4 currently only operates on xref:cloud4:resources:aws.adoc[], xref:cloud4:resources:gcp.adoc[] and xref:cloud4:resources:azure.adoc[] are not supported yet. Visit each platform's reference page to learn more about the available regions.
+A: TigerGraph Cloud 4 currently only operates on xref:cloud4:resources:aws.adoc[]. We are actively working on expanding to xref:cloud4:resources:gcp.adoc[] and xref:cloud4:resources:azure.adoc[]. Visit each platform's reference page to learn more about the available regions.
 
 === *Q: Can I choose different versions of TigerGraph on TigerGraph Cloud 4?*
 
@@ -165,11 +161,12 @@ A: TigerGraph Cloud 4 only support TigerGraph database version 4.0.0 and above. 
 See xref:cloud4:overview:pricing.adoc[Pricing] for detailed information.
 
 === *Q: What billing models are available?*
-A: TigerGraph Cloud 4.0 offers different billing models and pricing options to accommodate various usage scenarios and customer needs. Here are the available billing models:
+A: TigerGraph Cloud 4.0 offers different billing models and pricing options to accommodate various usage scenarios and customer needs. The available billing models include:
 
 * Pay-as-you-go: This model allows you to pay for the resources you consume on an hourly basis. You are charged based on the number and type of workspaces you use, the storage capacity you require, and the additional services you purchased. Pay-as-you-go provides flexibility as you can scale resources up or down based on your usage patterns.
-* Prepaid: The prepaid model allows you to purchase TigerGraph Credits (TCRs) in advance, which can be used to cover the costs of your TigerGraph Cloud usage. With prepaid credits, you have the advantage of predictable costs and the ability to allocate resources as needed within the prepaid budget.
+* Prepaid: The prepaid model allows you to purchase TigerGraph Credits (TCRs) in advance, which can be used to cover the costs of your TigerGraph Cloud compute usage. With prepaid credits, you have the advantage of predictable costs and the ability to allocate resources as needed within the prepaid budget.
 
+Note that storage is billed separately from compute resources using dollars, and the pricing for storage is based on the amount of data stored in your graph database.
 
 === *Q:  Do you offer a discount for annual contracts/commitments?*
 
@@ -185,7 +182,7 @@ A: Yes. You can purchase TigerGraph credits applied to TigerGraph Cloud usage. P
 A: If you are subscribed to our standard hourly service, you will be charged only for your hours of use.
 
 
-=== *Q: If I add an workspace mid-month, when do I start paying for it?*
+=== *Q: If I add a workspace mid-month, when do I start paying for it?*
 
 A:  We bill you and charge your credit card at the end of each calendar month.
 
@@ -245,7 +242,7 @@ A: Yes, you can provision a distributed database in TigerGraph Cloud 4. Please r
 
 A: The provisioned TigerGraph instances have the following disk configurations:
 
-Root Disk: An EBS (Elastic Block Store) based root disk is attached to the TigerGraph workspace.
+Root Disk: EBS (Elastic Block Store) based root disks is attached to the TigerGraph workspace.
 Graph Data Storage: The graph data is stored in EFS (Elastic File System) and S3 (Simple Storage Service).
 
 === *Q: What browsers are supported?*
@@ -286,7 +283,7 @@ By utilizing workgroups, workspaces, and databases, TigerGraph Cloud 4 provides 
 
 === *Q: Is there a warm-up period for TigerGraph workspaces?*
 
-A: When you provision or restart a workspace, there will be a warm-up period for the workspace and the disk attached to the workspace.
+A: When you provision or restart a workspace, there will be a warm-up period for the workspace.
 The larger the data size and the greater the size of workspace, the longer the warm-up period will be.
 
 
@@ -315,7 +312,7 @@ Terminating a Workspace:
 * **Action**: Deprovisions the workspace and the attached disk space.
 * **State**: The workspace and all its data are deleted according to the cloud platform's policies.
 * **Billing**: All associated billing stops, including for the virtual machine instance, disk storage, and backups.
-* **Backups**: All backup copies are deleted.
+* **Backups**: We will keep the latest backup in storage for 15 days and then delete.
 * **Recovery**: The workspace cannot be recovered once terminated.
 
 In summary:
@@ -343,7 +340,7 @@ A: Cross workspace restore is not supported yet. Contact TigerGraph Support to r
 
 === *Q: What happens to my automated backups if I terminate my workspace?*
 
-A: Please refer to We will keep the latest backup for 15 days and then delete.
+A: We will keep the latest backup for 15 days and then delete.
 Within that 15 days, you may use your backup to restore into another similar cluster if it is a single server cluster.
 To restore a cluster within 15 days, please submit a support ticket through the cloud portal.
 
@@ -396,11 +393,18 @@ A: Yes, TigerGraph Cloud encrypts all data in transit and at rest.
 
 === *Q: Am I sharing data storage with other customers? Is TigerGraph a multi-tenant cluster?*
 
-A: You are not sharing storage with other customers. Each TigerGraph cluster is provisioned as one or more virtual machine instances of the TigerGraph engine, used only for your account, and provisioned with its own disk space. No two accounts are sharing the same TigerGraph database.
+A: You are not sharing storage with other customers. For compute resources:
+
+* TG-4 and below: You share the virtual machine with other customers, but the TigerGraph database runs as containers, which are completely isolated from each other. Your data storage remains secure and isolated.
+* TG-8 and above: Each TigerGraph workspace is provisioned as one or more dedicated virtual machine instances of the TigerGraph engine, used exclusively for your account. These instances come with their own dedicated disk space, ensuring that no two accounts share the same TigerGraph database.
+
+Additionally, the network is completely isolated per workgroup, providing an extra layer of security and ensuring that your network traffic is segregated from that of other customers.
+
+This approach guarantees that your data and network remain private and secure, regardless of the compute resource tier you are using.
 
 === *Q: How do I access my TigerGraph Cloud 4 account (e.g., username and password)?*
 
-A: When you register your account, you will select a username and password. You can then log in anytime at link:http://portal.tgcloud.io/[portal.tgcloud.io]. You will also be given a URL using a subdomain name that you select.
+A: When you register your account, you can select either a username and password or Google SSO for authentication. You can then log in anytime at link:http://portal.tgcloud.io/[portal.tgcloud.io]. We also support Okta and AAD integration. If you are a paid tier customer, please submit a support ticket to request advanced service to integrate into an SSO system TigerGraph supports.
 
 === *Q: How do I access my TigerGraph database and POST to TigerGraph?*
 
@@ -469,7 +473,6 @@ A: TigerGraph Cloud encrypts data at rest and in transit, and SSL is enabled for
 
 A: The ability to use cloud portal to integrate TigerGraph Cloud into an SSO system will be provided at a future date.
 If you are a paid tier customer, please submit a support ticket to request advanced service to integrate into an SSO system TigerGraph supports.
-Please see more detailed pages on the xref:tigergraph-server:user-access:sso.adoc[Single Sign On (Server)] and xref:gui:admin-portal:security/sso.adoc[Single Sign On (GUI)] features.
 
 // == Upgrade
 

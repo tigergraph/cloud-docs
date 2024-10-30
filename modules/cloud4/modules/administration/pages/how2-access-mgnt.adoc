@@ -52,9 +52,7 @@ Please refer to the following tables of the roles and permissions for the organi
 .Org Level
 [cols="7", separator=¦]
 |===
-¦Feature Flags ¦Org Admin (Owner) ¦Billing Admin ¦Billing Viewer ¦Workgroup Admin ¦Workspace Admin¦Workspace Member
-
-¦Org Level Permission Scope ¦Organization ¦Organization ¦Organization ¦Workgroup ¦Workspace ¦Workspace
+¦Permission ¦Org Admin ¦Billing Admin ¦Billing Viewer ¦Workgroup Admin ¦Workspace Admin¦Workspace Member
 
 ¦Manage Organization
 ¦Yes
@@ -134,8 +132,7 @@ Please refer to the following tables of the roles and permissions for the organi
 .Workgroup Level
 [cols="7", separator=¦]
 |===
-¦Feature Flags ¦Org Admin (Owner) ¦Billing Admin ¦Billing Viewer ¦Workgroup Admin ¦Workspace Admin¦Workspace Member
-¦Workgroup Level Permission Scope ¦Organization ¦Organization ¦Organization ¦Workgroup ¦Workspace ¦Workspace
+¦Permission ¦Org Admin ¦Billing Admin ¦Billing Viewer ¦Workgroup Admin ¦Workspace Admin¦Workspace Member
 
 ¦Edit workgroup
 ¦Yes
@@ -175,8 +172,7 @@ Please refer to the following tables of the roles and permissions for the organi
 .Workspace Level
 [cols="7", separator=¦]
 |===
-¦Feature Flags ¦Org Admin (Owner) ¦Billing Admin ¦Billing Viewer ¦Workgroup Admin ¦Workspace Admin¦Workspace Member
-¦Workspace Level Permission Scope ¦Organization ¦Organization ¦Organization ¦Workgroup ¦Workspace ¦Workspace
+¦Permission ¦Org Admin ¦Billing Admin ¦Billing Viewer ¦Workgroup Admin ¦Workspace Admin¦Workspace Member
 
 ¦Edit workspace
 ¦Yes
@@ -235,6 +231,11 @@ Please refer to the following tables of the roles and permissions for the organi
 ¦Yes *
 
 |===
+
+[NOTE]
+====
+`*` Additional database role/permission may need to be assigned to the user for certain actions.
+====
 
 == Next Steps
 

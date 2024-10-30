@@ -42,7 +42,7 @@ image::inviteusers.png[width=500]
 +
 image::permissionschanges.png[]
 +
-.You will see five coulmn items.
+.You will see five column items.
 * *User Name*: This will be the username for the user.
 +
 [TIP]

@@ -12,7 +12,7 @@ We provide the following workspace sizes on TigerGraph Cloud 4.
 
 [cols=5]
 |===
-| Size | VCPU | Memory (GB) | Pod Size | Partition
+| Size | VCPU | Memory (GiB) | Pod Size | Partition
 
 |TG-00|2|16|C2M16|1
 

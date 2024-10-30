@@ -17,20 +17,20 @@ Platform
 </select></span>
 
 <span style="margin-left:20px;">Region
-<select id="region" style="height:30px; width: 200px" onchange="updatePricing()">
+<select id="region" style="height:30px; width: 250px" onchange="updatePricing()">
   <option value="us-east-1">US East (N. Virginia) - Tier 1</option>
   <option value="us-east-2">US East (Ohio) - Tier 1</option>
   <option value="us-west-2">US West (Oregon) - Tier 1</option>
   <option value="eu-central-1">Europe (Frankfurt) - Tier 3</option>
   <option value="eu-west-1">Europe (Ireland) - Tier 2</option>
   <option value="eu-west-2">Europe (London) - Tier 2</option>
-  <option value="eu-west-3">Europe (Paris) - Tier 2</option>
-  <option value="eu-north-1">Europe (Stockholm) - Tier 2</option>
+  <!-- <option value="eu-west-3">Europe (Paris) - Tier 2</option> -->
+  <!-- <option value="eu-north-1">Europe (Stockholm) - Tier 2</option>  -->
   <option value="sa-east-1">South America (Sao Paulo) - Tier 4</option>
-  <option value="ca-central-1">Canada (Central) - Tier 2</option>
-  <option value="ap-southeast-3">Asia Pacific (Jakarta) - Tier 3</option>
-  <option value="ap-south-1">Asia Pacific (Mumbai) - Tier 2</option>
-  <option value="ap-northeast-2">Asia Pacific (Seoul) - Tier 3</option>
+  <!--  <option value="ca-central-1">Canada (Central) - Tier 2</option> -->
+  <!--  <option value="ap-southeast-3">Asia Pacific (Jakarta) - Tier 3</option> -->
+  <!--  <option value="ap-south-1">Asia Pacific (Mumbai) - Tier 2</option> -->
+  <!--  <option value="ap-northeast-2">Asia Pacific (Seoul) - Tier 3</option> -->
   <option value="ap-southeast-1">Asia Pacific (Singapore) - Tier 3</option>
   <option value="ap-southeast-2">Asia Pacific (Sydney) - Tier 3</option>
   <option value="ap-northeast-1">Asia Pacific (Tokyo) - Tier 3</option>
@@ -90,7 +90,6 @@ The compute costs are distinct from the storage fees listed below and are metere
 <tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-48</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">384</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">3,072</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">48.00</p></td></tr>
 <tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-56</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">448</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">3,584</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">56.00</p></td></tr>
 <tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-64</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">512</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">4,096</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">64.00</p></td></tr>
-<tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-128</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">1024</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">8,192</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">128.00</p></td></tr>
 </tbody>
 </table>
 </div>
@@ -110,8 +109,7 @@ The compute costs are distinct from the storage fees listed below and are metere
             { size: 'TG-40', vcpus: 320, memory: '2,560', price: 40 },
             { size: 'TG-48', vcpus: 384, memory: '3,072', price: 48 },
             { size: 'TG-56', vcpus: 448, memory: '3,584', price: 56 },
-            { size: 'TG-64', vcpus: 512, memory: '4,096', price: 64 },
-            { size: 'TG-128', vcpus: 1024, memory: '8,192', price: 128 }
+            { size: 'TG-64', vcpus: 512, memory: '4,096', price: 64 }
         ];
   const pricingData = {
     'AWS': {

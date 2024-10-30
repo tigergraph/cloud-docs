@@ -10,6 +10,12 @@ This document provides a comprehensive reference for interacting with the TigerG
 The TigerGraph Cloud 4 REST API is currently in preview version. Features and endpoints may change as the API evolves.
 ====
 
+[NOTE]
+====
+* Before you can authenticate your API requests, you need to set up your API keys. Please refer to the xref:cloud4:administration:settings/how2-create-api-key.adoc[API Key Setup] page for detailed instructions on how to generate and manage your API keys.
+* To use the TigerGraph Cloud 4 REST APIs, you need to authenticate your requests. Please refer to the xref:cloud4:rest-api:authentication.adoc[Authentication] page for detailed instructions on how to authenticate your API requests.
+====
+
 == Workspace Management
 
 The Workspace Management API allows you to create and manage workspaces within your TigerGraph Cloud instance.

@@ -10,11 +10,16 @@ To create a workgroup in TigerGraph Cloud 4, follow the steps below.
 
 . Log in to your TigerGraph Cloud account.
 +
-image::loginPage.png[width=250]
+image::signup.png[width=450]
 
-. From the dashboard, navigate to the btn:[Workgroups] section and click on the btn:[Create Workspace] or you can click on the image:plusbutton.png[width=50,height=50] button next to btn:[Workgroups].
+. Click on the btn:[Create Workspace] button on your landing page.
 +
-image::createWorkGroup.png[]
+image::landing-page.png[]
+
+. Alternatively, from the dashboard, navigate to the btn:[Workgroups] section and click on the btn:[Create Workgroup] or you can click on the image:plusbutton.png[width=50,height=50] button next to btn:[Workgroups].
++
+image::no-workgroup.png[]
+
 
 . Provide a name for the workgroup.
 +
@@ -23,12 +28,12 @@ image::createWorkGroup.png[]
 Choose a name that reflects the purpose of your project or initiative.
 ====
 +
-image::Screenshot 2024-04-24 at 8.18.30 PM.png[]
+image::create-workgroup.png[]
 . Choose the cloud provider and the region
 +
 [NOTE]
 ====
-As of 2024-04-23, TigerGraph Cloud 4 only offers `AWS` on `US East(N. Virginia)`.
+TigerGraph Cloud 4 currently only operates on xref:cloud4:resources:aws.adoc[]. We are actively working on expanding to xref:cloud4:resources:gcp.adoc[] and xref:cloud4:resources:azure.adoc[]. Visit each platform's reference page to learn more about the available regions.
 ====
 
 . Finally, click on the btn:[Next] button to create the workgroup.

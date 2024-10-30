@@ -74,17 +74,17 @@ You can `create`, `rename`, and/or `delete` these folders as needed to manage yo
 .To create your first folder:
 . Click on the btn:[ Folder] from the btn:[ + ] menu.
 +
-image::Screenshot 2024-04-18 at 10.10.18 AM.png
+image::gsql-editor-folder-1.png[]
 
 . Name the folder.
 +
-image::Screenshot 2024-04-18 at 10.10.47 AM.png
+image::gsql-editor-folder-2.png[]
 
 . You can add a new file to the folder by clicking on the btn:[+] button.
 
 . You can also rename or delete the folder via the btn:[ … ] menu.
 +
-image::Screenshot 2024-04-18 at 10.11.14 AM.png
+image::gsql-editor-folder-3.png[]
 
 == Query List
 

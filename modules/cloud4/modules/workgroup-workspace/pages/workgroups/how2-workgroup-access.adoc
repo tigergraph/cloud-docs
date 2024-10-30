@@ -52,9 +52,9 @@ For more information about workspace admin role and workspace member role please
 
 [NOTE]
 ====
-For Organization Admins, Workgroup Admins, and Workspace Admins, the superuser database role is automatically granted.
-This role provides extensive privileges and permissions within the graph database.
-For more information about the superuser role and its capabilities, please refer to the TigerGraph documentation xref:gui:graphstudio:user-access-management.adoc#_role_and_graph_based_access_control[Role and Graph Based Access Control].
+* For Organization Admins, Workgroup Admins, and Workspace Admins, the Superuser database role is automatically granted. This role provides extensive privileges and permissions within the graph database.
+* For Workspace Member, the Global Observer database role is automatically granted. This role provides minimum access to the graph database.
+* For more information about the database roles and their capabilities, please refer to the TigerGraph documentation xref:gui:graphstudio:user-access-management.adoc#_role_and_graph_based_access_control[Role and Graph Based Access Control].
 ====
 
 == Next steps

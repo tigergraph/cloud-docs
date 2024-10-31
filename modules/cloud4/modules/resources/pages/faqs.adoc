@@ -395,8 +395,8 @@ A: Yes, TigerGraph Cloud encrypts all data in transit and at rest.
 
 A: You are not sharing storage with other customers. For compute resources:
 
-* TG-4 and below: You share the virtual machine with other customers, but the TigerGraph database runs as containers, which are completely isolated from each other. Your data storage remains secure and isolated.
-* TG-8 and above: Each TigerGraph workspace is provisioned as one or more dedicated virtual machine instances of the TigerGraph engine, used exclusively for your account. These instances come with their own dedicated disk space, ensuring that no two accounts share the same TigerGraph database.
+* TG-2 and below: You share the virtual machine with other customers, but the TigerGraph database runs as containers, which are completely isolated from each other. Your data storage remains secure and isolated.
+* TG-4 and above: Each TigerGraph workspace is provisioned as one or more dedicated virtual machine instances of the TigerGraph engine, used exclusively for your account. These instances come with their own dedicated disk space, ensuring that no two accounts share the same TigerGraph database.
 
 Additionally, the network is completely isolated per workgroup, providing an extra layer of security and ensuring that your network traffic is segregated from that of other customers.
 

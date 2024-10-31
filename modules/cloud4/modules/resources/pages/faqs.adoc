@@ -126,7 +126,7 @@ For additional developer resources for free tier users, join the TigerGraph deve
 
 === *Q: What is the user interface for the TigerGraph Cloud 4?*
 
-A: The TigerGraph Cloud 4 portal provides a browser-based interface that makes it easy to manage, monitor, and operate your graph database. Through this portal, you can load data, design schemas, write queries, and explore your graph. Additionally, you have access to a suite of add-ons, including the TigerGraph xref:gui:graphstudio:overview.adoc[GraphStudio™ UI (User Interface)] and  TigerGraph xref:insights:overview.adoc[Insights].
+A: The TigerGraph Cloud 4 portal provides a browser-based interface that makes it easy to manage, monitor, and operate your graph database. Through this portal, you can load data, design schemas, write queries, and explore your graph. Additionally, you have access to a suite of add-ons, including the TigerGraph xref:gui:graphstudio:overview.adoc[GraphStudio™ UI (User Interface)] and  TigerGraph xref:insights:intro:index.adoc[Insights].
 
 === *Q: What graph query language does TigerGraph support?*
 
@@ -161,20 +161,20 @@ A: TigerGraph Cloud 4 only support TigerGraph database version 4.0.0 and above. 
 See xref:cloud4:overview:pricing.adoc[Pricing] for detailed information.
 
 === *Q: What billing models are available?*
-A: TigerGraph Cloud 4.0 offers different billing models and pricing options to accommodate various usage scenarios and customer needs. The available billing models include:
+A: TigerGraph Cloud 4 offers different billing models and pricing options to accommodate various usage scenarios and customer needs. The available billing models include:
 
 * Pay-as-you-go: This model allows you to pay for the resources you consume on an hourly basis. You are charged based on the number and type of workspaces you use, the storage capacity you require, and the additional services you purchased. Pay-as-you-go provides flexibility as you can scale resources up or down based on your usage patterns.
-* Prepaid: The prepaid model allows you to purchase TigerGraph Credits (TCRs) in advance, which can be used to cover the costs of your TigerGraph Cloud compute usage. With prepaid credits, you have the advantage of predictable costs and the ability to allocate resources as needed within the prepaid budget.
+* Prepaid: The prepaid model allows you to purchase credits in advance, which can be used to cover the costs of your TigerGraph Cloud usage. With prepaid credits, you have the advantage of predictable costs and the ability to allocate resources as needed within the prepaid budget. Please contact sales@tigergraph.com for more information on prepaid credits.
 
-Note that storage is billed separately from compute resources using dollars, and the pricing for storage is based on the amount of data stored in your graph database.
+For more information on pricing and billing models, please refer to the xref:cloud4:overview:pricing.adoc[Pricing] page.
 
 === *Q:  Do you offer a discount for annual contracts/commitments?*
 
 A: Yes, there is a discount for contracting with TigerGraph for a one-year term.  Please contact link:mailto:sales@tigergraph.com[sales@tigergraph.com] to request your discount.
 
-=== *Q: Can I purchase TigerGraph Credits (TCRs)?*
+=== *Q: Can I purchase credits?*
 
-A: Yes. You can purchase TigerGraph credits applied to TigerGraph Cloud usage. Please refer to https://www.tigergraph.com/cloud-credits/
+A: Yes. You can purchase credits applied to TigerGraph Cloud usage. Please refer to https://www.tigergraph.com/cloud-credits/
 
 
 === *Q:  If I delete my workspace before the end of the month, what will I have to pay?*

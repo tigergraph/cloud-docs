@@ -26,6 +26,9 @@ Here are some differences between the different TigerGraph offerings.
 | HA and DR | Yes | Yes | Yes
 | Monitoring | Yes, requires custom setup using Informant APIs | TigerGraph Server Admin Portal | Build-in Grafana dashboard & TigerGraph Server Admin Portal
 | Alerting | Yes, requires custom setup | No | Yes
+| Amazon Web Service (AWS) | Yes, TigerGraph Lite on marketplace or custom deployment  | Yes | Yes
+| Google Cloud Platform (GCP) | Yes, TigerGraph Lite on marketplace or custom deployment  | Yes | No, we are activly working on it.
+| Microsoft Azure | Yes, TigerGraph Lite on marketplace or custom deployment | Yes | No, we are activly working on it.
 |===
 
 == Next Steps

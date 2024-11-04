@@ -56,7 +56,7 @@ For advanced OS-level commands, submit a support ticket for more information.
 
 | GSQL Graph Algorithm Library | Yes | Yes
 | Release Notes | Yes | TigerGraph Cloud keeps its database instances up to date with the latest TigerGraph Server releases.
-| GSQL 101 | Yes | Basic concepts still apply, most CREATE, INSTALL, LOAD, and RUN commands are replaced with the GraphStudio GUI-based approach.
+| GSQL 101 | Yes | Basic concepts still apply. Most CREATE, INSTALL, LOAD, and RUN commands are replaced with the GraphStudio GUI-based approach.
 | GSQL 102 Pattern Matching | Yes | The same patterns can be used in queries.
 | MultiGraph Overview | Yes | Yes
 | Hardware and Software Requirements | Yes | N/A

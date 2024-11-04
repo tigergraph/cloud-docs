@@ -10,9 +10,3 @@
 ** xref:administration:settings/index.adoc[Settings]
 *** xref:administration:settings/how2-use-organization-mgnt.adoc[]
 *** xref:administration:settings/how2-create-api-key.adoc[]
-
-////
-** xref:cloud4:security:index.adoc[]
-*** xref:cloud4:security:password-policy.adoc[]
-*** xref:cloud4:security:idp.adoc[]
-////

@@ -17,7 +17,7 @@ Such as:
 
 * xref:cloud4:workgroup-workspace:workspaces/settings.adoc[]
 -
-Learn how advanced settings in workspace allow users to customize and fine-tune various aspects of their workspace configuration.
+Learn how advanced settings in workspace allow users to customize and fine tune various aspects of their workspace configuration.
 
 * xref:cloud4:workgroup-workspace:workspaces/readwrite-readonly.adoc[]
 -

@@ -190,7 +190,7 @@ A: Yes. If you use V3.0.5+ in TigerGraph Cloud, MultiGraph is supported through 
 
 === *Q: What methods do you support for importing data?*
 
-A: We support Amazon S3 import, Google Cloud Storage,  and local file upload through GraphStudio. Spark loading is available through our open source JDBC Driver. See https://github.com/tigergraph/ecosys/tree/master/tools/etl[https://github.com/tigergraph/ecosys/tree/master/etl]
+A: We support loading data from Amazon S3, Google Cloud Storage, and local files through GraphStudio. Spark loading is available through our open-source JDBC Driver. See https://github.com/tigergraph/ecosys/tree/master/tools/etl[https://github.com/tigergraph/ecosys/tree/master/etl]
 
 In addition, for TigerGraph paid tier clusters, users can use the GSQL Web Shell to write GSQL Commands in an interactive command line shell. This GSQL Web Shell opens up more data loading options such as S3 Loader (parquet format), Kafka Loader and other complex loading jobs. Users can access GSQL Web Shell through the cluster panel from their Cloud Portal.
 

@@ -60,7 +60,7 @@ They provide everything users need to get started with graph analytics and AI-dr
 === GSQL Editor
 The platform features a dedicated GSQL Editor—an integrated development environment (IDE) tailored for working with GSQL, the query language of TigerGraph.
 Designed with user convenience in mind, the GSQL Editor offers a user-friendly interface that simplifies the process of writing, testing, and optimizing GSQL queries.
-With syntax highlighting, code completion, query execution, and debugging capabilities, users can easily develop and fine-tune their graph queries. Additionally, the GSQL Editor enables seamless collaboration within organizations by allowing users to share GSQL files, fostering teamwork and facilitating efficient collaboration among colleagues.
+With syntax highlighting, code completion, query execution, and debugging capabilities, users can easily develop and fine tune their graph queries. Additionally, the GSQL Editor enables seamless collaboration within organizations by allowing users to share GSQL files, fostering teamwork and facilitating efficient collaboration among colleagues.
 
 === Graph Explorer
 TigerGraph Cloud 4 features a Graph Explorer, a visual interface that allows users to interactively explore and analyze the graph data.

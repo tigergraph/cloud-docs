@@ -1,7 +1,7 @@
 = Workspace Settings
 :experimental:
 
-The settings in workspace allow users to customize and fine-tune various aspects of their workspace configuration.
+The settings in workspace allow users to customize and fine tune various aspects of their workspace configuration.
 These settings include options like *auto-suspend* and *auto-resume*, which automate the suspension and resumption of the workspace based on activity levels.
 
 [NOTE]

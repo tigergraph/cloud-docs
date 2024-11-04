@@ -111,7 +111,7 @@ image::attributes.png[]
 
 == 6) Advanced Settings For Vertex
 
-The Advanced Settings section allows you to fine-tune the vertex of your graph database by configuring additional settings for vertices.
+The Advanced Settings section allows you to fine tune the vertex of your graph database by configuring additional settings for vertices.
 
 You can click on the btn:[ Advanced Settings ] button on a vertex to configure the following settings:
 
@@ -122,7 +122,7 @@ image::advanced-settings.png[]
 
 == 7) Advanced Settings For Edge
 
-The Advanced Settings section allows you to fine-tune the edge of your graph database by configuring additional settings for edges.
+The Advanced Settings section allows you to fine tune the edge of your graph database by configuring additional settings for edges.
 
 You can click on the btn:[ Advanced Settings ] button on an edge to configure the following settings:
 

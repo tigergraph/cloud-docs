@@ -108,7 +108,7 @@ Please visit our link:http://tigergraph.com/solutiions/[TigerGraph Cloud Solutio
 
 A: You can monitor your TigerGraph Cloud service using the built-in monitoring tools provided in the TigerGraph Cloud portal. These tools offer insights into performance, usage, and system health.
 
-See TigerGraph's xref:cloud4:workgroup-workspace:workgroups/monitor.adoc[Monitor Workspace] for more detailed information.
+See TigerGraph's xref:cloud4:workgroup-workspace:workgroups/monitor-workspaces.adoc[Monitor Workspace] for more detailed information.
 
 
 === *Q:  Is TigerGraph Cloud cloud-agnostic?*

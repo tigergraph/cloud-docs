@@ -12,3 +12,6 @@
 *** xref:gsql-editor/how2-edit-gsql-query.adoc[Edit Query]
 ** xref:explore-graph/index.adoc[Explore Graph]
 *** xref:explore-graph/how2-use-pattern-search.adoc[Pattern Search]
+** xref:advanced-features/index.adoc[Advanced Features]
+*** xref:advanced-features/write2-s3.adoc[Export Data to S3]
+*** xref:advanced-features/configure-udf.adoc[Configure UDF]

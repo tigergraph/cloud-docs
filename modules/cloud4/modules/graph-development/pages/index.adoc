@@ -2,10 +2,7 @@
 
 Welcome! This guide provides an overview of the essential tools and processes for managing and developing your graph databases. Here, you will find comprehensive guides and resources to help you design, load, query, and explore your graph database. Click on the sections below to learn more about each area.
 
-
-
-
-== [Load Data](#load-data)
+== xref:load-data/index.adoc[Load Data]
 
 Efficiently loading data into your TigerGraph databases is crucial for successful graph analysis.
 
@@ -15,13 +12,15 @@ Efficiently loading data into your TigerGraph databases is crucial for successfu
 - Choose between a Step-by-Step Guide or GSQL Template for data loading.
 
 ### Learn More:
-- [Load Data from Local File](#)
-- [Load Data from Amazon S3](#)
-- [Load Data from Google Cloud Storage](#)
-- [Load Data from Azure Blob Storage](#)
-- [Load Data from Other Sources](#)
+- xref:load-data/load-from-local.adoc[]
+- xref:load-data/load-from-s3.adoc[Load from AWS S3]
+- xref:load-data/load-from-gcs.adoc[Load from GCS]
+- xref:load-data/load-from-blob.adoc[Load from Blob]
+- xref:load-data/token-function.adoc[Token Function]
+- xref:load-data/load-from-other-sources.adoc[]
+- xref:load-data/jdbc.adoc[]
 
-== [Design Schema](#design-schema)
+== xref:design-schema/index.adoc[Design Schema]
 
 The Schema Designer provides a user-friendly interface for managing your graph database schema.
 
@@ -30,11 +29,8 @@ The Schema Designer provides a user-friendly interface for managing your graph d
 - Specify properties and indexes.
 - Establish relationships between elements.
 
-### Learn More:
-- [Edit GSQL Query](#)
-- [Schema Designer](#)
 
-== [GSQL Editor](#gsql-editor)
+== xref:gsql-editor/index.adoc[GSQL Editor]
 
 The GSQL Editor is a powerful tool for developing and executing GSQL queries.
 
@@ -44,21 +40,10 @@ The GSQL Editor is a powerful tool for developing and executing GSQL queries.
 - File List for organizing and managing GSQL queries.
 - Query List for managing custom queries.
 
-### Steps to Get Started:
-1. **File List**: Navigate through files and folders, search for specific files, and create new files or folders.
-   ![File List](Screenshot 2024-10-11 at 10.59.49.png)
-   
-2. **Folders**: Manage shared and user-defined folders.
-   ![Create Folder](Screenshot 2024-04-18 at 10.10.18 AM.png)
-   
-3. **Query List**: View, create, edit, delete, and install custom queries.
-   ![Query List](queries.png)
-
 ### Learn More:
-- [Edit GSQL Query](#)
-- [Schema Designer](#)
+- xref:gsql-editor/how2-edit-gsql-query.adoc[Edit Query]
 
-== [Explore Graph](#explore-graph)
+== xref:explore-graph/index.adoc[Explore Graph]
 
 Explore Graph allows users to visually interact with their graph data, helping to navigate and understand complex data structures.
 
@@ -67,19 +52,27 @@ Explore Graph allows users to visually interact with their graph data, helping t
 - Identify and explain relationships between data points or entities.
 
 ### Prerequisites:
-- [Create a Workspace](#)
-- [Load Data](#)
+- Active workspace with loaded data.
+- xref:load-data/index.adoc[Load Data] completed.
 
 ### Learn More:
-- [Use Pattern Search](#)
+- xref:explore-graph/how2-use-pattern-search.adoc[Pattern Search]
+
+== xref:advanced-features/index.adoc[Advanced Features]
+
+This section covers the powerful and sophisticated functionalities that allow you to leverage TigerGraph Cloud to its fullest potential. Here, you will find detailed guides on:
+
+### Key Features:
+- Export data to Amazon S3.
+- Configure User Defined Functions (UDF).
+
+### Learn More:
+- xref:advanced-features/write2-s3.adoc[Export Data to S3]
+- xref:advanced-features/configure-udf.adoc[Configure UDF]
 
 ---
 
-For detailed information on each topic, please refer to the respective documentation pages linked above. Happy graph developing!
 
+== Next Steps
 
-== Additional Resources
-
-- **API Documentation:** Detailed reference for the graph database API.
-- **Tutorials and Examples:** Step-by-step tutorials and example projects.
-- **Community and Support:** Join the community and find support for your graph development needs.
+Learn how to manage your workgroups and workspaces in xref:cloud4:workgroup-workspace:index.adoc[Workgroup and Workspace Management].

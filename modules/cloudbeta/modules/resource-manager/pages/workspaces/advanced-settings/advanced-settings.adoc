@@ -10,7 +10,7 @@ image::workspace-general-tab.png[]
 
 A workspace configuration panel will appear on the right of your screen.
 
-image::advnaced-settings.png[]
+image::advanced-settings.png[]
 
 Users can choose the desired time intervals for auto-suspend and enable auto-resume to optimize resource usage and ensure a smooth user experience.
 

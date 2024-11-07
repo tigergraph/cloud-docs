@@ -14,7 +14,7 @@ image::loginPage.png[width=250]
 
 . From the dashboard, navigate to the btn:[Workgroups] section and click on the btn:[Create Workspace] or you can click on the image:plusbutton.png[width=50,height=50] button next to btn:[Workgroups].
 +
-image::createWorkGroup.png[]
+image::createWorkspace.png[]
 
 . Provide a name for the workgroup.
 +
@@ -23,7 +23,8 @@ image::createWorkGroup.png[]
 Choose a name that reflects the purpose of your project or initiative.
 ====
 +
-image::Screenshot 2024-04-24 at 8.18.30 PM.png[]
+//image::Screenshot 2024-04-24 at 8.18.30 PM.png[]
+image::create-workgroup.png[]
 . Choose the cloud provider and the region
 +
 [NOTE]

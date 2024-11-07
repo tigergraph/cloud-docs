@@ -38,12 +38,15 @@ image::workspaceDetails.png[]
 
 .. This allows you to create Read-Write (RW) workspace or Read-Only (RO) workspace.
 For more details, please refer to xref:cloud4:workgroup-workspace:workspaces/readwrite-readonly.adoc[].
-+
+
 . Specify Solutions for your workspace, for more details please visit xref:cloud4:integrations:solutions.adoc[] page.
 +
 image::solution-add-on.png[]
-+
+
 . Specify Add-ons to your workspace, for more details please visit xref:cloud4:integrations:add-ons.adoc[] page.
++
+image::Add-onsimage.png[]
+
 . Click on the btn:[ Create ] button to create the workspace.
 +
 [NOTE]

@@ -2,8 +2,9 @@
 
 Most of the documentation for TigerGraph Enterprise Server also applies to TigerGraph Cloud 4.
 Here are some differences between the different TigerGraph offerings.
+
 |===
-| Topic | TigerGraph Enterprise Server | TigerGraph Cloud Classic | TigerGraph Cloud 4
+| Topic | TigerGraph Enterprise Server | TigerGraph Cloud Classic | TigerGraph Cloud 4 Beta
 
 | GSQL Graph Algorithm Library | Yes| Yes| Yes
 | Release Notes| Yes| TigerGraph Cloud provides database versions kept up to date with TigerGraph Server 3.x releases | TigerGraph Cloud 4 provides the latest TigerGraph Server 4.x

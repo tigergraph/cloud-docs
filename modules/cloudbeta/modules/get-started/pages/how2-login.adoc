@@ -19,7 +19,7 @@ You will be logged into the last active organization.
 You can switch to another organization via the user btn:[settings] menu.
 ====
 
-image::loginPage.png[]
+image::loginPage.png[width=450]
 
 === 2) Your Organization
 

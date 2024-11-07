@@ -7,7 +7,7 @@ This guide will walk you through the necessary steps.
 == Sign Up
 . Click btn:[Sign Up] https://beta.tgcloud.io[on the TigerGraph Cloud landing page].
 +
-image::loginPage.png[]
+image::loginPage.png[width=450]
 
 . If you are signing up for the first time, you will be prompted to enter a password.
 +

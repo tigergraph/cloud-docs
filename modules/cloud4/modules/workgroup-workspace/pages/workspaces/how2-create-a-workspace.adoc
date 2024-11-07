@@ -19,9 +19,11 @@ image::workspacecreate.png[]
 [NOTE]
 Choose a name that reflects the purpose of your workspace.
 +
-image::workspaceinfo.png[]
+image::create-workgroup.png[]
 +
 . Select a TigerGraph workspace runtime.
++
+image::workspaceinfo.png[]
 +
 //Please review the release notes in https://docs.tigergraph.com/tigergraph-server/current/release-notes/.
 . Specify workspace size and advanced settings.

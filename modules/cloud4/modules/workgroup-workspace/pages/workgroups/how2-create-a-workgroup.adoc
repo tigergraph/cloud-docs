@@ -28,7 +28,7 @@ image::no-workgroup.png[]
 Choose a name that reflects the purpose of your project or initiative.
 ====
 +
-image::create-workgroup.png[]
+image::create-workgroup.png[width=1500]
 . Choose the cloud provider and the region
 +
 [NOTE]

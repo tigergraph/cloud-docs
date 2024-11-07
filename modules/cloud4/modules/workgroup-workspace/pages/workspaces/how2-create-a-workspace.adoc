@@ -14,18 +14,20 @@ image::signup.png[width=450]
 Click on the btn:[ Create Workspace ] button.
 +
 image::workspacecreate.png[]
++
 
 . Provide a name for the workspace.
++
 [NOTE]
+====
 Choose a name that reflects the purpose of your workspace.
-+
-image::create-workgroup.png[]
-+
-. Select a TigerGraph workspace runtime.
+====
 +
 image::workspaceinfo.png[]
+
+. Select a TigerGraph workspace runtime.
+
 +
-//Please review the release notes in https://docs.tigergraph.com/tigergraph-server/current/release-notes/.
 . Specify workspace size and advanced settings.
 +
 image::workspaceDetails.png[]

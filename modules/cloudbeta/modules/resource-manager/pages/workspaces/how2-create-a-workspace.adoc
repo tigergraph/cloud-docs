@@ -38,9 +38,12 @@ image::workspaceDetails.png[]
 For more details, please refer to xref:cloudBeta:resource-manager:workspaces/writeread_readonly.adoc[].
 +
 . Specify Add-ons to your workspace, for more details please visit xref:cloudBeta:integrations:add-ons.adoc[] page.
-. Specify Solutions for your workspace, for more details please visit xref:cloudBeta:integrations:solutions.adoc[] page.
 +
 image::Add-onsimage.png[]
+
+. Specify Solutions for your workspace, for more details please visit xref:cloudBeta:integrations:solutions.adoc[] page.
++
+image::choose-solution.png[]
 . Click on the btn:[ Create ] button to create the workspace.
 +
 [NOTE]

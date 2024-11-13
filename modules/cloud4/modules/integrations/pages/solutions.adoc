@@ -9,6 +9,11 @@ These solutions provide a starting point for your graph database projects, offer
 By leveraging solutions, you can accelerate development, reduce time-to-insights, and focus on extracting value from your graph data.
 ====
 
+[NOTE]
+====
+We limit the number of solutions that can be installed in a workspace to one to ensure that the workspace is not overloaded with unnecessary data and queries.
+====
+
 Explore the available solutions and experiment with them in your own specific use cases.
 
 == Prerequisites

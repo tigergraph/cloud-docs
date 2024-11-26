@@ -64,7 +64,7 @@ xref:cloud4:graph-development:load-data/load-from-other-sources.adoc[Other Sourc
 image:TG_Icon_Library-135.png[alt=schemadesigner,width=74,height=74]
 *Design Schema*
 
-xref:cloud4:graph-development:design-schema/index.adoc[Design Schema] teaches you how to you can easily modify and manage the schema of your graph databases using Schema Designer UI.
+xref:cloud4:graph-development:design-schema/index.adoc[Design Schema] teaches you how you can easily modify and manage the schema of your graph databases using Schema Designer UI.
 
 ¦
 image:schema-homecard.png[alt=gsqlEditor,width=74,height=74]

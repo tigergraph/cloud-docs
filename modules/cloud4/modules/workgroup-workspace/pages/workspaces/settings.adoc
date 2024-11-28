@@ -1,0 +1,140 @@
+= Workspace Settings
+:experimental:
+
+The settings in workspace allow users to customize and fine tune various aspects of their workspace configuration.
+These settings include options like *auto-suspend* and *auto-resume*, which automate the suspension and resumption of the workspace based on activity levels.
+
+[NOTE]
+====
+Only users with the roles of *Workspace Admin*, *Workgroup Admin*, or *Org Admin* can access the workspace settings menu.
+====
+
+To access the workspace settings, click on the btn:[ ... ] button next to the btn:[Connect] button on your workspace, then select the *Edit* option from the dropdown menu
+
+image::workspace-general-tab.png[]
+
+A configuration panel will appear on the right side of your screen.
+
+== General Settings
+
+In the *General* tab, users can configure basic workspace options such as workspace size.
+
+image::general-settings.png[]
+
+=== Workspace Size Suggestion
+
+The *Size Suggestion* feature helps users select the appropriate workspace size by specifying the raw data size, compression ratio, and whether High Availability (HA) is enabled.
+
+image::capacity-planning.png[]
+
+How to Use Size Suggestion:
+
+* Raw Data Size: Enter the total size of your raw data in gigabytes (GB).
+* Compression Ratio: Specify the expected compression ratio. This ratio helps estimate the actual memory required after data compression.
+* Enable High Availability (HA): Indicate whether you want to enable High Availability for your workspace. Enabling HA ensures redundancy and improves fault tolerance.
+
+Based on these inputs, the we will recommend an optimal workspace size that balances performance and cost efficiency.
+
+[NOTE]
+====
+The size suggestion is for guidance only. Actual requirements may vary based on specific use cases and data characteristics.
+====
+
+== Advanced Settings
+
+In the *Advanced Settings* tab, users can set the desired time intervals for auto-suspend and enable auto-resume to optimize resource usage and ensure a smooth user experience.
+
+image::advanced-settings-new.png[]
+
+=== Auto-Suspend
+
+Auto-suspend will automatically suspend your workspace after a specified period of inactivity.
+
+[TIP]
+====
+This helps optimize resource utilization and cost when the workspace is not actively being used.
+====
+
+Choose an appropriate time interval for auto-suspend based on your typical usage patterns.
+
+image::auto-suspend.png[]
+
+For example, if your workspace is usually inactive for long periods, you can set a shorter interval for auto-suspend to conserve resources.
+
+[CAUTION]
+Be mindful of any background processes or scheduled tasks that may require the workspace to remain active.
+Adjust the auto-suspend interval accordingly to avoid interrupting critical processes.
+
+==== Auto-Suspend Limitations
+
+.The following operations are not treated as "active" and will not prevent the workspace from being auto-suspended:
+* Consuming TigerGraph Cloud Controller APIs
+* Configuring the workspace.
+* Monitoring the workspace.
+* Backuping/Restoring the workspace.
+
+=== Auto-Resume
+Auto-resume will automatically resume your workspace when activity is detected.
+
+[TIP]
+====
+This ensures a seamless user experience without the need for manual intervention.
+====
+image::auto-resume.png[]
+
+When the Auto Resume is enabled, the workspace will become “Idle” state instead of “Stopped”.
+Auto-resume will kick-in when users access tools and rest APIs.
+
+[NOTE]
+====
+The first request that hits the Workspace when it is idle will trigger a start workspace request. The request itself is not buffered so you should keep retrying until it is successful.
+====
+
+==== Auto-Resume Limitations
+
+.The following endpoints will not trigger auto-resume:
+* Consuming TigerGraph Cloud Controller APIs
+
+== Add-ons
+
+The *Add-ons* section allows users to enable and disable additional features and integrations based on their needs. This flexibility helps tailor the workspace to specific requirements and enhances functionality.
+
+image::add-on.png[]
+
+For the list of available add-ons and their capabilities, please refer to xref:cloud4:integrations:add-ons.adoc[].
+
+[NOTE]
+====
+Some add-ons may require additional configuration or incur extra costs. Review the documentation for each add-on to understand its capabilities and requirements.
+====
+
+== Alerts
+
+The *Alerts* section allows users to set up notifications for various workspace events. Alerts help monitor the health and performance of your workspace and ensure timely responses to critical events.
+
+image::alerts.png[]
+
+[NOTE]
+====
+Alerts will be sent to the workspace creator email address.
+====
+
+== Graph Admin
+
+The *Graph Admin* section provides access to advanced administrative settings for your graph database. These settings allow you to manage TigerGraph Server settings.
+
+image::graph-admin.png[]
+
+[NOTE]
+====
+Updating Graph Admin settings might result in the restart of certain TigerGraph services, which can cause temporary interruptions.
+====
+
+== Next Steps
+
+Next, learn about  xref:cloud4:workgroup-workspace:workspaces/readwrite-readonly.adoc[] or learn more about xref:cloud4:workgroup-workspace:workspaces/workspace-size.adoc[].
+
+Return to the xref:cloud4:workgroup-workspace:index.adoc[] page or xref:cloud4:overview:index.adoc[Overview] page for a different topic.
+
+
+

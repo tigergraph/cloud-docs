@@ -17,3 +17,8 @@ Learn how to authenticate with the TigerGraph Cloud 4 REST API.
 == xref:cloud4:rest-api:endpoints.adoc[]
 
 Explore the REST API endpoints available in TigerGraph Cloud 4.
+
+== xref:cloud4:rest-api:definitions.adoc[]
+
+Explore the REST API data model definitions in TigerGraph Cloud 4.
+

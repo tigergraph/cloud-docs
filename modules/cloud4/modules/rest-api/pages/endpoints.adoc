@@ -1,75 +1,2496 @@
-= Endpoints
-:experimental:
-:toc:
-:toclevels:2
 
-This document provides a comprehensive reference for interacting with the TigerGraph Cloud services programmatically. You can manage workspaces, users, and other resources through these APIs.
+[[_paths]]
+== Paths
 
-[IMPORTANT]
-====
-The TigerGraph Cloud 4 REST API is currently in preview version. Features and endpoints may change as the API evolves.
-====
+[[_https_api_tgcloud_io_controller_v4_v2_users_get]]
+=== List of users in the org
+....
+GET https://api.tgcloud.io/controller/v4/v2/users
+....
 
-[NOTE]
-====
-* Before you can authenticate your API requests, you need to set up your API keys. Please refer to the xref:cloud4:administration:settings/how2-create-api-key.adoc[API Key Setup] page for detailed instructions on how to generate and manage your API keys.
-* To use the TigerGraph Cloud 4 REST APIs, you need to authenticate your requests. Please refer to the xref:cloud4:rest-api:authentication.adoc[Authentication] page for detailed instructions on how to authenticate your API requests.
-====
 
-== Workspace Management
+==== Description
+List of users in the org. Note: this endpoint is not APIKEY compatible
 
-The Workspace Management API allows you to create and manage workspaces within your TigerGraph Cloud instance.
 
-=== Create Workspace
+==== Responses
 
-**Description:** This endpoint is used to create a new workspace.
+[options="header", cols=".^2a,.^14a,.^4a"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<definitions.adoc#_org_handler_orglistuserresponse,org_handler.OrgListUserResponse>>
+|===
 
-**Endpoint:**
 
-```
-POST /api/workspaces
-```
+==== Consumes
 
-**Description:**
+* `application/json`
 
-Create a new workspace.
 
-**Request:**
+==== Produces
 
-```json
-{
-  "name": "NewWorkspace",
-  "description": "Description of the new workspace"
-}
-```
+* `application/json`
 
-**Response:**
 
-```json
-{
-  "error": false,
-  "message": "Workspace created successfully",
-  "workspaceId": "workspace123"
-}
-```
+==== Tags
 
-=== List Workspaces
+* Org
 
-**Description:** This endpoint lists all the workspaces the API have access to.
 
-**Endpoint:**
+[[_https_api_tgcloud_io_controller_v4_v2_users_userid_roles_put]]
+=== Update the role of an org user
+....
+PUT https://api.tgcloud.io/controller/v4/v2/users/{userId}/roles
+....
 
-```
-GET /api/workspaces
-```
 
-**Description:**
+==== Description
+Updates the role of an org user. Note: this endpoint is not APIKEY compatible
 
-List all workspaces.
 
-**Request:**
+==== Parameters
 
-```bash
-curl -X GET "https://<your-tigergraph-cloud-instance>/api/workspaces" \
-     -H "Authorization: Bearer <your-api-key>"
-```
+[options="header", cols=".^2a,.^3a,.^9a,.^4a"]
+|===
+|Type|Name|Description|Schema
+|**Path**|**userId** +
+__required__|Id of the user|string
+|**Body**|**body** +
+__required__|Roles of the user|<<definitions.adoc#_org_handler_putorgusersroles,org_handler.PutOrgUsersRoles>>
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2a,.^14a,.^4a"]
+|===
+|HTTP Code|Description|Schema
+|**204**|No Content|No Content
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `application/json`
+
+
+==== Tags
+
+* Org
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_post]]
+=== Create workgroups in your org
+....
+POST https://api.tgcloud.io/controller/v4/v2/workgroups
+....
+
+
+==== Description
+Create workgroups in your org
+
+
+==== Parameters
+
+[options="header", cols=".^2a,.^3a,.^9a,.^4a"]
+|===
+|Type|Name|Description|Schema
+|**Body**|**request** +
+__required__|Create workgroup request|<<definitions.adoc#_createworkgrouprequest,CreateWorkgroupRequest>>
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2a,.^14a,.^4a"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_https_api_tgcloud_io_controller_v4_v2_workgroups_post_response_200,Response 200>>
+|===
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_post_response_200]]
+**Response 200**
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**Error** +
+__optional__|boolean
+|**ErrorDetails** +
+__optional__|< <<definitions.adoc#_middleware_error,middleware.Error>> > array
+|**Message** +
+__optional__|string
+|**RequestID** +
+__optional__|string
+|**Result** +
+__optional__|<<definitions.adoc#_workgroup,Workgroup>>
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `application/json`
+
+
+==== Tags
+
+* Workgroup
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_get]]
+=== Get workgroups for your org
+....
+GET https://api.tgcloud.io/controller/v4/v2/workgroups
+....
+
+
+==== Description
+Get workgroups for your org
+
+
+==== Responses
+
+[options="header", cols=".^2a,.^14a,.^4a"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_https_api_tgcloud_io_controller_v4_v2_workgroups_get_response_200,Response 200>>
+|===
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_get_response_200]]
+**Response 200**
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**Error** +
+__optional__|boolean
+|**ErrorDetails** +
+__optional__|< <<definitions.adoc#_middleware_error,middleware.Error>> > array
+|**Message** +
+__optional__|string
+|**RequestID** +
+__optional__|string
+|**Result** +
+__optional__|< <<definitions.adoc#_workgroup,Workgroup>> > array
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `application/json`
+
+
+==== Tags
+
+* Workgroup
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_get]]
+=== Get workgroup detail in your org
+....
+GET https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}
+....
+
+
+==== Description
+Get workgroup detail in your org
+
+
+==== Parameters
+
+[options="header", cols=".^2a,.^3a,.^9a,.^4a"]
+|===
+|Type|Name|Description|Schema
+|**Path**|**workgroupID** +
+__required__|Workgroup ID|string
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2a,.^14a,.^4a"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_get_response_200,Response 200>>
+|===
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_get_response_200]]
+**Response 200**
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**Error** +
+__optional__|boolean
+|**ErrorDetails** +
+__optional__|< <<definitions.adoc#_middleware_error,middleware.Error>> > array
+|**Message** +
+__optional__|string
+|**RequestID** +
+__optional__|string
+|**Result** +
+__optional__|<<definitions.adoc#_workgroup,Workgroup>>
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `application/json`
+
+
+==== Tags
+
+* Workgroup
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_put]]
+=== Update workgroups in your org
+....
+PUT https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}
+....
+
+
+==== Description
+Update workgroups in your org
+
+
+==== Parameters
+
+[options="header", cols=".^2a,.^3a,.^9a,.^4a"]
+|===
+|Type|Name|Description|Schema
+|**Path**|**workgroupID** +
+__required__|Workgroup ID|string
+|**Body**|**request** +
+__required__|Update workgroup request|<<definitions.adoc#_updateworkgrouprequest,UpdateWorkgroupRequest>>
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2a,.^14a,.^4a"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_put_response_200,Response 200>>
+|===
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_put_response_200]]
+**Response 200**
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**Error** +
+__optional__|boolean
+|**ErrorDetails** +
+__optional__|< <<definitions.adoc#_middleware_error,middleware.Error>> > array
+|**Message** +
+__optional__|string
+|**RequestID** +
+__optional__|string
+|**Result** +
+__optional__|<<definitions.adoc#_workgroup,Workgroup>>
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `application/json`
+
+
+==== Tags
+
+* Workgroup
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_delete]]
+=== Delete workgroup detail in your org
+....
+DELETE https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}
+....
+
+
+==== Description
+Delete workgroup detail in your org
+
+
+==== Parameters
+
+[options="header", cols=".^2a,.^3a,.^9a,.^4a"]
+|===
+|Type|Name|Description|Schema
+|**Path**|**workgroupID** +
+__required__|Workgroup ID|string
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2a,.^14a,.^4a"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_delete_response_200,Response 200>>
+|===
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_delete_response_200]]
+**Response 200**
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**Error** +
+__optional__|boolean
+|**ErrorDetails** +
+__optional__|< <<definitions.adoc#_middleware_error,middleware.Error>> > array
+|**Message** +
+__optional__|string
+|**RequestID** +
+__optional__|string
+|**Result** +
+__optional__|string
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `application/json`
+
+
+==== Tags
+
+* Workgroup
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_allowed_ips_post]]
+=== Add Allowed IP
+....
+POST https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/allowed_ips
+....
+
+
+==== Description
+Add a new allowed IP to the workgroup
+
+
+==== Parameters
+
+[options="header", cols=".^2a,.^3a,.^9a,.^4a"]
+|===
+|Type|Name|Description|Schema
+|**Path**|**workgroupID** +
+__required__|Workgroup ID|string
+|**Body**|**request** +
+__required__|Allowed IP request|<<definitions.adoc#_allowedip,AllowedIP>>
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2a,.^14a,.^4a"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_allowed_ips_post_response_200,Response 200>>
+|**400**|Bad Request|<<_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_allowed_ips_post_response_400,Response 400>>
+|**500**|Internal Server Error|<<_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_allowed_ips_post_response_500,Response 500>>
+|===
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_allowed_ips_post_response_200]]
+**Response 200**
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**Error** +
+__optional__|boolean
+|**ErrorDetails** +
+__optional__|< <<definitions.adoc#_middleware_error,middleware.Error>> > array
+|**Message** +
+__optional__|string
+|**RequestID** +
+__optional__|string
+|**Result** +
+__optional__|<<definitions.adoc#_allowedip,AllowedIP>>
+|===
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_allowed_ips_post_response_400]]
+**Response 400**
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**Error** +
+__optional__|boolean
+|**ErrorDetails** +
+__optional__|< <<definitions.adoc#_middleware_error,middleware.Error>> > array
+|**Message** +
+__optional__|string
+|**RequestID** +
+__optional__|string
+|**Result** +
+__optional__|string
+|===
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_allowed_ips_post_response_500]]
+**Response 500**
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**Error** +
+__optional__|boolean
+|**ErrorDetails** +
+__optional__|< <<definitions.adoc#_middleware_error,middleware.Error>> > array
+|**Message** +
+__optional__|string
+|**RequestID** +
+__optional__|string
+|**Result** +
+__optional__|string
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `application/json`
+
+
+==== Tags
+
+* AllowedIP
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_allowed_ips_get]]
+=== List Allowed IPs
+....
+GET https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/allowed_ips
+....
+
+
+==== Description
+List all allowed IPs in the workgroup
+
+
+==== Parameters
+
+[options="header", cols=".^2a,.^3a,.^9a,.^4a"]
+|===
+|Type|Name|Description|Schema
+|**Path**|**workgroupID** +
+__required__|Workgroup ID|string
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2a,.^14a,.^4a"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_allowed_ips_get_response_200,Response 200>>
+|**500**|Internal Server Error|<<_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_allowed_ips_get_response_500,Response 500>>
+|===
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_allowed_ips_get_response_200]]
+**Response 200**
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**Error** +
+__optional__|boolean
+|**ErrorDetails** +
+__optional__|< <<definitions.adoc#_middleware_error,middleware.Error>> > array
+|**Message** +
+__optional__|string
+|**RequestID** +
+__optional__|string
+|**Result** +
+__optional__|< <<definitions.adoc#_allowedip,AllowedIP>> > array
+|===
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_allowed_ips_get_response_500]]
+**Response 500**
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**Error** +
+__optional__|boolean
+|**ErrorDetails** +
+__optional__|< <<definitions.adoc#_middleware_error,middleware.Error>> > array
+|**Message** +
+__optional__|string
+|**RequestID** +
+__optional__|string
+|**Result** +
+__optional__|string
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `application/json`
+
+
+==== Tags
+
+* AllowedIP
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_allowed_ips_current_get]]
+=== Get Current IP
+....
+GET https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/allowed_ips/current
+....
+
+
+==== Description
+Get the current IP and check if it is allowed in the workgroup
+
+
+==== Parameters
+
+[options="header", cols=".^2a,.^3a,.^9a,.^4a"]
+|===
+|Type|Name|Description|Schema
+|**Path**|**workgroupID** +
+__required__|Workgroup ID|string
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2a,.^14a,.^4a"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_allowed_ips_current_get_response_200,Response 200>>
+|**500**|Internal Server Error|<<_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_allowed_ips_current_get_response_500,Response 500>>
+|===
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_allowed_ips_current_get_response_200]]
+**Response 200**
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**Error** +
+__optional__|boolean
+|**ErrorDetails** +
+__optional__|< <<definitions.adoc#_middleware_error,middleware.Error>> > array
+|**Message** +
+__optional__|string
+|**RequestID** +
+__optional__|string
+|**Result** +
+__optional__|<<_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_allowed_ips_current_get_result,Result>>
+|===
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_allowed_ips_current_get_result]]
+**Result**
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|** IsAllowed** +
+__optional__|boolean
+|**CurrentIP** +
+__optional__|string
+|===
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_allowed_ips_current_get_response_500]]
+**Response 500**
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**Error** +
+__optional__|boolean
+|**ErrorDetails** +
+__optional__|< <<definitions.adoc#_middleware_error,middleware.Error>> > array
+|**Message** +
+__optional__|string
+|**RequestID** +
+__optional__|string
+|**Result** +
+__optional__|string
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `application/json`
+
+
+==== Tags
+
+* AllowedIP
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_allowed_ips_disable_post]]
+=== Disable Allow List
+....
+POST https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/allowed_ips/disable
+....
+
+
+==== Description
+Disable the allow list for the workgroup
+
+
+==== Parameters
+
+[options="header", cols=".^2a,.^3a,.^9a,.^4a"]
+|===
+|Type|Name|Description|Schema
+|**Path**|**workgroupID** +
+__required__|Workgroup ID|string
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2a,.^14a,.^4a"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_allowed_ips_disable_post_response_200,Response 200>>
+|**500**|Internal Server Error|<<_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_allowed_ips_disable_post_response_500,Response 500>>
+|===
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_allowed_ips_disable_post_response_200]]
+**Response 200**
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**Error** +
+__optional__|boolean
+|**ErrorDetails** +
+__optional__|< <<definitions.adoc#_middleware_error,middleware.Error>> > array
+|**Message** +
+__optional__|string
+|**RequestID** +
+__optional__|string
+|**Result** +
+__optional__|string
+|===
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_allowed_ips_disable_post_response_500]]
+**Response 500**
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**Error** +
+__optional__|boolean
+|**ErrorDetails** +
+__optional__|< <<definitions.adoc#_middleware_error,middleware.Error>> > array
+|**Message** +
+__optional__|string
+|**RequestID** +
+__optional__|string
+|**Result** +
+__optional__|string
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `application/json`
+
+
+==== Tags
+
+* AllowedIP
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_allowed_ips_enable_post]]
+=== Enable Allow List
+....
+POST https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/allowed_ips/enable
+....
+
+
+==== Description
+Enable the allow list for the workgroup
+
+
+==== Parameters
+
+[options="header", cols=".^2a,.^3a,.^9a,.^4a"]
+|===
+|Type|Name|Description|Schema
+|**Path**|**workgroupID** +
+__required__|Workgroup ID|string
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2a,.^14a,.^4a"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_allowed_ips_enable_post_response_200,Response 200>>
+|**500**|Internal Server Error|<<_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_allowed_ips_enable_post_response_500,Response 500>>
+|===
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_allowed_ips_enable_post_response_200]]
+**Response 200**
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**Error** +
+__optional__|boolean
+|**ErrorDetails** +
+__optional__|< <<definitions.adoc#_middleware_error,middleware.Error>> > array
+|**Message** +
+__optional__|string
+|**RequestID** +
+__optional__|string
+|**Result** +
+__optional__|string
+|===
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_allowed_ips_enable_post_response_500]]
+**Response 500**
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**Error** +
+__optional__|boolean
+|**ErrorDetails** +
+__optional__|< <<definitions.adoc#_middleware_error,middleware.Error>> > array
+|**Message** +
+__optional__|string
+|**RequestID** +
+__optional__|string
+|**Result** +
+__optional__|string
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `application/json`
+
+
+==== Tags
+
+* AllowedIP
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_allowed_ips_id_put]]
+=== Update Allowed IP
+....
+PUT https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/allowed_ips/{id}
+....
+
+
+==== Description
+Update an existing allowed IP in the workgroup
+
+
+==== Parameters
+
+[options="header", cols=".^2a,.^3a,.^9a,.^4a"]
+|===
+|Type|Name|Description|Schema
+|**Path**|**id** +
+__required__|Allowed IP ID|string
+|**Path**|**workgroupID** +
+__required__|Workgroup ID|string
+|**Body**|**request** +
+__required__|Allowed IP request|<<definitions.adoc#_allowedip,AllowedIP>>
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2a,.^14a,.^4a"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_allowed_ips_id_put_response_200,Response 200>>
+|**400**|Bad Request|<<_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_allowed_ips_id_put_response_400,Response 400>>
+|**500**|Internal Server Error|<<_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_allowed_ips_id_put_response_500,Response 500>>
+|===
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_allowed_ips_id_put_response_200]]
+**Response 200**
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**Error** +
+__optional__|boolean
+|**ErrorDetails** +
+__optional__|< <<definitions.adoc#_middleware_error,middleware.Error>> > array
+|**Message** +
+__optional__|string
+|**RequestID** +
+__optional__|string
+|**Result** +
+__optional__|<<definitions.adoc#_allowedip,AllowedIP>>
+|===
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_allowed_ips_id_put_response_400]]
+**Response 400**
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**Error** +
+__optional__|boolean
+|**ErrorDetails** +
+__optional__|< <<definitions.adoc#_middleware_error,middleware.Error>> > array
+|**Message** +
+__optional__|string
+|**RequestID** +
+__optional__|string
+|**Result** +
+__optional__|string
+|===
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_allowed_ips_id_put_response_500]]
+**Response 500**
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**Error** +
+__optional__|boolean
+|**ErrorDetails** +
+__optional__|< <<definitions.adoc#_middleware_error,middleware.Error>> > array
+|**Message** +
+__optional__|string
+|**RequestID** +
+__optional__|string
+|**Result** +
+__optional__|string
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `application/json`
+
+
+==== Tags
+
+* AllowedIP
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_allowed_ips_id_delete]]
+=== Delete Allowed IP
+....
+DELETE https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/allowed_ips/{id}
+....
+
+
+==== Description
+Delete an existing allowed IP from the workgroup
+
+
+==== Parameters
+
+[options="header", cols=".^2a,.^3a,.^9a,.^4a"]
+|===
+|Type|Name|Description|Schema
+|**Path**|**id** +
+__required__|Allowed IP ID|string
+|**Path**|**workgroupID** +
+__required__|Workgroup ID|string
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2a,.^14a,.^4a"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_allowed_ips_id_delete_response_200,Response 200>>
+|**500**|Internal Server Error|<<_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_allowed_ips_id_delete_response_500,Response 500>>
+|===
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_allowed_ips_id_delete_response_200]]
+**Response 200**
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**Error** +
+__optional__|boolean
+|**ErrorDetails** +
+__optional__|< <<definitions.adoc#_middleware_error,middleware.Error>> > array
+|**Message** +
+__optional__|string
+|**RequestID** +
+__optional__|string
+|**Result** +
+__optional__|string
+|===
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_allowed_ips_id_delete_response_500]]
+**Response 500**
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**Error** +
+__optional__|boolean
+|**ErrorDetails** +
+__optional__|< <<definitions.adoc#_middleware_error,middleware.Error>> > array
+|**Message** +
+__optional__|string
+|**RequestID** +
+__optional__|string
+|**Result** +
+__optional__|string
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `application/json`
+
+
+==== Tags
+
+* AllowedIP
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_databases_databaseid_post]]
+=== Update database in workgroup
+....
+POST https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/databases/{databaseID}
+....
+
+
+==== Description
+Update database in workgroup
+
+
+==== Parameters
+
+[options="header", cols=".^2a,.^3a,.^9a,.^4a"]
+|===
+|Type|Name|Description|Schema
+|**Path**|**databaseID** +
+__required__|Database ID|string
+|**Path**|**workgroupID** +
+__required__|Workgroup ID|string
+|**Body**|**request** +
+__required__|Update database request|<<definitions.adoc#_updatetgdatabaserequest,UpdateTGDatabaseRequest>>
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2a,.^14a,.^4a"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_databases_databaseid_post_response_200,Response 200>>
+|===
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_databases_databaseid_post_response_200]]
+**Response 200**
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**Error** +
+__optional__|boolean
+|**ErrorDetails** +
+__optional__|< <<definitions.adoc#_middleware_error,middleware.Error>> > array
+|**Message** +
+__optional__|string
+|**RequestID** +
+__optional__|string
+|**Result** +
+__optional__|<<definitions.adoc#_tgdatabase,TGDatabase>>
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `application/json`
+
+
+==== Tags
+
+* Database
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_databases_databaseid_get]]
+=== Get database in workgroup
+....
+GET https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/databases/{databaseID}
+....
+
+
+==== Description
+Get database in workgroup
+
+
+==== Parameters
+
+[options="header", cols=".^2a,.^3a,.^9a,.^4a"]
+|===
+|Type|Name|Description|Schema
+|**Path**|**databaseID** +
+__required__|Database ID|string
+|**Path**|**workgroupID** +
+__required__|Workgroup ID|string
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2a,.^14a,.^4a"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_databases_databaseid_get_response_200,Response 200>>
+|===
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_databases_databaseid_get_response_200]]
+**Response 200**
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**Error** +
+__optional__|boolean
+|**ErrorDetails** +
+__optional__|< <<definitions.adoc#_middleware_error,middleware.Error>> > array
+|**Message** +
+__optional__|string
+|**RequestID** +
+__optional__|string
+|**Result** +
+__optional__|<<definitions.adoc#_tgdatabase,TGDatabase>>
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `application/json`
+
+
+==== Tags
+
+* Database
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_databases_databaseid_delete]]
+=== Delete database in workgroup
+....
+DELETE https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/databases/{databaseID}
+....
+
+
+==== Description
+Delete database in workgroup
+
+
+==== Parameters
+
+[options="header", cols=".^2a,.^3a,.^9a,.^4a"]
+|===
+|Type|Name|Description|Schema
+|**Path**|**databaseID** +
+__required__|Database ID|string
+|**Path**|**workgroupID** +
+__required__|Workgroup ID|string
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2a,.^14a,.^4a"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<definitions.adoc#_middleware_response,middleware.Response>>
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `application/json`
+
+
+==== Tags
+
+* Database
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_workspaces_post]]
+=== Create workspace in workgroup
+....
+POST https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/workspaces
+....
+
+
+==== Description
+Create workspace in workgroup
+
+
+==== Parameters
+
+[options="header", cols=".^2a,.^3a,.^9a,.^4a"]
+|===
+|Type|Name|Description|Schema
+|**Path**|**workgroupID** +
+__required__|Workgroup ID|string
+|**Body**|**request** +
+__required__|Create workspace request|<<definitions.adoc#_createworkspacerequest,CreateWorkspaceRequest>>
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2a,.^14a,.^4a"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_workspaces_post_response_200,Response 200>>
+|===
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_workspaces_post_response_200]]
+**Response 200**
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**Error** +
+__optional__|boolean
+|**ErrorDetails** +
+__optional__|< <<definitions.adoc#_middleware_error,middleware.Error>> > array
+|**Message** +
+__optional__|string
+|**RequestID** +
+__optional__|string
+|**Result** +
+__optional__|<<definitions.adoc#_workspace,Workspace>>
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `application/json`
+
+
+==== Tags
+
+* Workspace
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_workspaces_workspaceid_get]]
+=== Get workspace in workgroup
+....
+GET https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}
+....
+
+
+==== Description
+Get workspace in workgroup
+
+
+==== Parameters
+
+[options="header", cols=".^2a,.^3a,.^9a,.^4a"]
+|===
+|Type|Name|Description|Schema
+|**Path**|**workgroupID** +
+__required__|Workgroup ID|string
+|**Path**|**workspaceID** +
+__required__|Workspace ID|string
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2a,.^14a,.^4a"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_workspaces_workspaceid_get_response_200,Response 200>>
+|===
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_workspaces_workspaceid_get_response_200]]
+**Response 200**
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**Error** +
+__optional__|boolean
+|**ErrorDetails** +
+__optional__|< <<definitions.adoc#_middleware_error,middleware.Error>> > array
+|**Message** +
+__optional__|string
+|**RequestID** +
+__optional__|string
+|**Result** +
+__optional__|<<definitions.adoc#_workspace,Workspace>>
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `application/json`
+
+
+==== Tags
+
+* Workspace
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_workspaces_workspaceid_put]]
+=== Update workspace in workgroup
+....
+PUT https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}
+....
+
+
+==== Description
+Update workspace in workgroup
+
+
+==== Parameters
+
+[options="header", cols=".^2a,.^3a,.^9a,.^4a"]
+|===
+|Type|Name|Description|Schema
+|**Path**|**workgroupID** +
+__required__|Workgroup ID|string
+|**Path**|**workspaceID** +
+__required__|Workspace ID|string
+|**Body**|**request** +
+__required__|Update workspace request|<<definitions.adoc#_updateworkspacerequest,UpdateWorkspaceRequest>>
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2a,.^14a,.^4a"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_workspaces_workspaceid_put_response_200,Response 200>>
+|===
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_workspaces_workspaceid_put_response_200]]
+**Response 200**
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**Error** +
+__optional__|boolean
+|**ErrorDetails** +
+__optional__|< <<definitions.adoc#_middleware_error,middleware.Error>> > array
+|**Message** +
+__optional__|string
+|**RequestID** +
+__optional__|string
+|**Result** +
+__optional__|<<definitions.adoc#_workspace,Workspace>>
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `application/json`
+
+
+==== Tags
+
+* Workspace
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_workspaces_workspaceid_delete]]
+=== Delete workspace in workgroup
+....
+DELETE https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}
+....
+
+
+==== Description
+Delete workspace in workgroup
+
+
+==== Parameters
+
+[options="header", cols=".^2a,.^3a,.^9a,.^4a"]
+|===
+|Type|Name|Description|Schema
+|**Path**|**workgroupID** +
+__required__|Workgroup ID|string
+|**Path**|**workspaceID** +
+__required__|Workspace ID|string
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2a,.^14a,.^4a"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<definitions.adoc#_middleware_response,middleware.Response>>
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `application/json`
+
+
+==== Tags
+
+* Workspace
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_workspaces_workspaceid_database-users_post]]
+=== Create in-database GSQL user
+....
+POST https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/database-users
+....
+
+
+==== Description
+Create a new in-database GSQL user in the specified workspace and workgroup.
+
+
+==== Parameters
+
+[options="header", cols=".^2a,.^3a,.^9a,.^4a"]
+|===
+|Type|Name|Description|Schema
+|**Path**|**workgroupID** +
+__required__|Workgroup ID|string
+|**Path**|**workspaceID** +
+__required__|Workspace ID|string
+|**Body**|**request** +
+__required__|In-database user request|<<definitions.adoc#_indatabaseuserrequest,InDatabaseUserRequest>>
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2a,.^14a,.^4a"]
+|===
+|HTTP Code|Description|Schema
+|**200**|Successfully created the in-database GSQL user.|<<_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_workspaces_workspaceid_database-users_post_response_200,Response 200>>
+|**400**|Bad request|<<definitions.adoc#_middleware_response,middleware.Response>>
+|**500**|Internal server error|<<definitions.adoc#_middleware_response,middleware.Response>>
+|===
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_workspaces_workspaceid_database-users_post_response_200]]
+**Response 200**
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**Error** +
+__optional__|boolean
+|**ErrorDetails** +
+__optional__|< <<definitions.adoc#_middleware_error,middleware.Error>> > array
+|**Message** +
+__optional__|string
+|**RequestID** +
+__optional__|string
+|**Result** +
+__optional__|<<definitions.adoc#_tgiam_iamuser,tgIAM.IAMUser>>
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `application/json`
+
+
+==== Tags
+
+* DatabaseUser
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_workspaces_workspaceid_database-users_get]]
+=== List in-database GSQL users
+....
+GET https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/database-users
+....
+
+
+==== Description
+List all in-database GSQL users in the specified workspace and workgroup.
+
+
+==== Parameters
+
+[options="header", cols=".^2a,.^3a,.^9a,.^4a"]
+|===
+|Type|Name|Description|Schema
+|**Path**|**workgroupID** +
+__required__|Workgroup ID|string
+|**Path**|**workspaceID** +
+__required__|Workspace ID|string
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2a,.^14a,.^4a"]
+|===
+|HTTP Code|Description|Schema
+|**200**|Successfully listed the in-database GSQL users.|<<_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_workspaces_workspaceid_database-users_get_response_200,Response 200>>
+|**500**|Internal server error|<<definitions.adoc#_middleware_response,middleware.Response>>
+|===
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_workspaces_workspaceid_database-users_get_response_200]]
+**Response 200**
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**Error** +
+__optional__|boolean
+|**ErrorDetails** +
+__optional__|< <<definitions.adoc#_middleware_error,middleware.Error>> > array
+|**Message** +
+__optional__|string
+|**RequestID** +
+__optional__|string
+|**Result** +
+__optional__|< <<definitions.adoc#_tgiam_iamuser,tgIAM.IAMUser>> > array
+|===
+
+
+==== Produces
+
+* `application/json`
+
+
+==== Tags
+
+* DatabaseUser
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_workspaces_workspaceid_database-users_delete]]
+=== Delete in-database GSQL user
+....
+DELETE https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/database-users
+....
+
+
+==== Description
+Delete an in-database GSQL user in the specified workspace and workgroup.
+
+
+==== Parameters
+
+[options="header", cols=".^2a,.^3a,.^9a,.^4a"]
+|===
+|Type|Name|Description|Schema
+|**Path**|**workgroupID** +
+__required__|Workgroup ID|string
+|**Path**|**workspaceID** +
+__required__|Workspace ID|string
+|**Body**|**request** +
+__required__|In-database user request|<<definitions.adoc#_indatabaseuserrequest,InDatabaseUserRequest>>
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2a,.^14a,.^4a"]
+|===
+|HTTP Code|Description|Schema
+|**200**|Successfully deleted the in-database GSQL user.|<<definitions.adoc#_middleware_response,middleware.Response>>
+|**400**|Bad request|<<definitions.adoc#_middleware_response,middleware.Response>>
+|**500**|Internal server error|<<definitions.adoc#_middleware_response,middleware.Response>>
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `application/json`
+
+
+==== Tags
+
+* DatabaseUser
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_workspaces_workspaceid_database-users_password_put]]
+=== Update in-database GSQL user password
+....
+PUT https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/database-users/password
+....
+
+
+==== Description
+Update the password of an in-database GSQL user in the specified workspace and workgroup.
+
+
+==== Parameters
+
+[options="header", cols=".^2a,.^3a,.^9a,.^4a"]
+|===
+|Type|Name|Description|Schema
+|**Path**|**workgroupID** +
+__required__|Workgroup ID|string
+|**Path**|**workspaceID** +
+__required__|Workspace ID|string
+|**Body**|**request** +
+__required__|In-database user request|<<definitions.adoc#_indatabaseuserrequest,InDatabaseUserRequest>>
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2a,.^14a,.^4a"]
+|===
+|HTTP Code|Description|Schema
+|**200**|Successfully updated the in-database GSQL password.|<<definitions.adoc#_middleware_response,middleware.Response>>
+|**400**|Bad request|<<definitions.adoc#_middleware_response,middleware.Response>>
+|**500**|Internal server error|<<definitions.adoc#_middleware_response,middleware.Response>>
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `application/json`
+
+
+==== Tags
+
+* DatabaseUser
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_workspaces_workspaceid_pause_post]]
+=== Pause workspace in workgroup
+....
+POST https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/pause
+....
+
+
+==== Description
+Pause workspace in workgroup
+
+
+==== Parameters
+
+[options="header", cols=".^2a,.^3a,.^9a,.^4a"]
+|===
+|Type|Name|Description|Schema
+|**Path**|**workgroupID** +
+__required__|Workgroup ID|string
+|**Path**|**workspaceID** +
+__required__|Workspace ID|string
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2a,.^14a,.^4a"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<definitions.adoc#_middleware_response,middleware.Response>>
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `application/json`
+
+
+==== Tags
+
+* Workspace
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_workspaces_workspaceid_refresh_post]]
+=== Refresh workspace in workgroup
+....
+POST https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/refresh
+....
+
+
+==== Description
+Refresh workspace in workgroup
+
+
+==== Parameters
+
+[options="header", cols=".^2a,.^3a,.^9a,.^4a"]
+|===
+|Type|Name|Description|Schema
+|**Path**|**workgroupID** +
+__required__|Workgroup ID|string
+|**Path**|**workspaceID** +
+__required__|Workspace ID|string
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2a,.^14a,.^4a"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<definitions.adoc#_middleware_response,middleware.Response>>
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `application/json`
+
+
+==== Tags
+
+* Workspace
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_workgroups_workgroupid_workspaces_workspaceid_resume_post]]
+=== Resume workspace in workgroup
+....
+POST https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/resume
+....
+
+
+==== Description
+Resume workspace in workgroup
+
+
+==== Parameters
+
+[options="header", cols=".^2a,.^3a,.^9a,.^4a"]
+|===
+|Type|Name|Description|Schema
+|**Path**|**workgroupID** +
+__required__|Workgroup ID|string
+|**Path**|**workspaceID** +
+__required__|Workspace ID|string
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2a,.^14a,.^4a"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<definitions.adoc#_middleware_response,middleware.Response>>
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `application/json`
+
+
+==== Tags
+
+* Workspace
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_workspaces_meta_get]]
+=== Get an metadata for your org
+....
+GET https://api.tgcloud.io/controller/v4/v2/workspaces/meta
+....
+
+
+==== Description
+Get regions/tgVersions/workspaceTypes supported for your org
+
+
+==== Responses
+
+[options="header", cols=".^2a,.^14a,.^4a"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_https_api_tgcloud_io_controller_v4_v2_workspaces_meta_get_response_200,Response 200>>
+|===
+
+[[_https_api_tgcloud_io_controller_v4_v2_workspaces_meta_get_response_200]]
+**Response 200**
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**Error** +
+__optional__|boolean
+|**ErrorDetails** +
+__optional__|< <<definitions.adoc#_middleware_error,middleware.Error>> > array
+|**Message** +
+__optional__|string
+|**RequestID** +
+__optional__|string
+|**Result** +
+__optional__|<<definitions.adoc#_resource_manager_handler_getmetadata_metadata,resource_manager_handler.GetMetadata.metadata>>
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `application/json`
+
+
+==== Tags
+
+* Org
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_workspaces_workspaceid_backups_get]]
+=== List backups
+....
+GET https://api.tgcloud.io/controller/v4/v2/workspaces/{workspaceID}/backups
+....
+
+
+==== Description
+List all backups for a workspace
+
+
+==== Parameters
+
+[options="header", cols=".^2a,.^3a,.^9a,.^4a"]
+|===
+|Type|Name|Description|Schema
+|**Path**|**workspaceID** +
+__required__|Workspace ID|string
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2a,.^14a,.^4a"]
+|===
+|HTTP Code|Description|Schema
+|**200**|Successfully listed the backups.|<<_https_api_tgcloud_io_controller_v4_v2_workspaces_workspaceid_backups_get_response_200,Response 200>>
+|**500**|Internal server error|<<definitions.adoc#_middleware_response,middleware.Response>>
+|===
+
+[[_https_api_tgcloud_io_controller_v4_v2_workspaces_workspaceid_backups_get_response_200]]
+**Response 200**
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**Error** +
+__optional__|boolean
+|**ErrorDetails** +
+__optional__|< <<definitions.adoc#_middleware_error,middleware.Error>> > array
+|**Message** +
+__optional__|string
+|**RequestID** +
+__optional__|string
+|**Result** +
+__optional__|< <<definitions.adoc#_backup,Backup>> > array
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `application/json`
+
+
+==== Tags
+
+* Backup
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_workspaces_workspaceid_backups_restore_job_get]]
+=== Get backup restore status
+....
+GET https://api.tgcloud.io/controller/v4/v2/workspaces/{workspaceID}/backups/restore/{job}
+....
+
+
+==== Description
+Get the status of a backup restore job
+
+
+==== Parameters
+
+[options="header", cols=".^2a,.^3a,.^9a,.^4a"]
+|===
+|Type|Name|Description|Schema
+|**Path**|**job** +
+__required__|Job ID|string
+|**Path**|**workspaceID** +
+__required__|Workspace ID|string
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2a,.^14a,.^4a"]
+|===
+|HTTP Code|Description|Schema
+|**200**|Successfully got the backup restore status.|<<_https_api_tgcloud_io_controller_v4_v2_workspaces_workspaceid_backups_restore_job_get_response_200,Response 200>>
+|**500**|Internal server error|<<definitions.adoc#_middleware_response,middleware.Response>>
+|===
+
+[[_https_api_tgcloud_io_controller_v4_v2_workspaces_workspaceid_backups_restore_job_get_response_200]]
+**Response 200**
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**Error** +
+__optional__|boolean
+|**ErrorDetails** +
+__optional__|< <<definitions.adoc#_middleware_error,middleware.Error>> > array
+|**Message** +
+__optional__|string
+|**RequestID** +
+__optional__|string
+|**Result** +
+__optional__|<<definitions.adoc#_backuprestorestatus,BackupRestoreStatus>>
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `application/json`
+
+
+==== Tags
+
+* Backup
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_workspaces_workspaceid_backups_schedule_get]]
+=== Get backup schedule
+....
+GET https://api.tgcloud.io/controller/v4/v2/workspaces/{workspaceID}/backups/schedule
+....
+
+
+==== Description
+Get the backup schedule for a workspace
+
+
+==== Parameters
+
+[options="header", cols=".^2a,.^3a,.^9a,.^4a"]
+|===
+|Type|Name|Description|Schema
+|**Path**|**workspaceID** +
+__required__|Workspace ID|string
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2a,.^14a,.^4a"]
+|===
+|HTTP Code|Description|Schema
+|**200**|Successfully got the backup schedule.|<<_https_api_tgcloud_io_controller_v4_v2_workspaces_workspaceid_backups_schedule_get_response_200,Response 200>>
+|**500**|Internal server error|<<definitions.adoc#_middleware_response,middleware.Response>>
+|===
+
+[[_https_api_tgcloud_io_controller_v4_v2_workspaces_workspaceid_backups_schedule_get_response_200]]
+**Response 200**
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**Error** +
+__optional__|boolean
+|**ErrorDetails** +
+__optional__|< <<definitions.adoc#_middleware_error,middleware.Error>> > array
+|**Message** +
+__optional__|string
+|**RequestID** +
+__optional__|string
+|**Result** +
+__optional__|<<definitions.adoc#_backupschedule,BackupSchedule>>
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `application/json`
+
+
+==== Tags
+
+* Backup
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_workspaces_workspaceid_schedules_post]]
+=== Create a new workspace schedule
+....
+POST https://api.tgcloud.io/controller/v4/v2/workspaces/{workspaceID}/schedules
+....
+
+
+==== Description
+Create a new workspace schedule for a given workspace
+
+
+==== Parameters
+
+[options="header", cols=".^2a,.^3a,.^9a,.^4a"]
+|===
+|Type|Name|Description|Schema
+|**Path**|**workspaceID** +
+__required__|Workspace ID|string
+|**Body**|**body** +
+__required__|Workspace Schedule|<<definitions.adoc#_workspaceschedule,WorkspaceSchedule>>
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2a,.^14a,.^4a"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_https_api_tgcloud_io_controller_v4_v2_workspaces_workspaceid_schedules_post_response_200,Response 200>>
+|**400**|Bad Request|<<definitions.adoc#_middleware_response,middleware.Response>>
+|**500**|Internal Server Error|<<definitions.adoc#_middleware_response,middleware.Response>>
+|===
+
+[[_https_api_tgcloud_io_controller_v4_v2_workspaces_workspaceid_schedules_post_response_200]]
+**Response 200**
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**Error** +
+__optional__|boolean
+|**ErrorDetails** +
+__optional__|< <<definitions.adoc#_middleware_error,middleware.Error>> > array
+|**Message** +
+__optional__|string
+|**RequestID** +
+__optional__|string
+|**Result** +
+__optional__|<<definitions.adoc#_workspaceschedule,WorkspaceSchedule>>
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `application/json`
+
+
+==== Tags
+
+* WorkspaceSchedule
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_workspaces_workspaceid_schedules_get]]
+=== Retrieve workspace schedule
+....
+GET https://api.tgcloud.io/controller/v4/v2/workspaces/{workspaceID}/schedules
+....
+
+
+==== Description
+Retrieve the schedule for a given workspace
+
+
+==== Parameters
+
+[options="header", cols=".^2a,.^3a,.^9a,.^4a"]
+|===
+|Type|Name|Description|Schema
+|**Path**|**workspaceID** +
+__required__|Workspace ID|string
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2a,.^14a,.^4a"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_https_api_tgcloud_io_controller_v4_v2_workspaces_workspaceid_schedules_get_response_200,Response 200>>
+|**500**|Internal Server Error|<<definitions.adoc#_middleware_response,middleware.Response>>
+|===
+
+[[_https_api_tgcloud_io_controller_v4_v2_workspaces_workspaceid_schedules_get_response_200]]
+**Response 200**
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**Error** +
+__optional__|boolean
+|**ErrorDetails** +
+__optional__|< <<definitions.adoc#_middleware_error,middleware.Error>> > array
+|**Message** +
+__optional__|string
+|**RequestID** +
+__optional__|string
+|**Result** +
+__optional__|< <<definitions.adoc#_workspaceschedule,WorkspaceSchedule>> > array
+|===
+
+
+==== Produces
+
+* `application/json`
+
+
+==== Tags
+
+* WorkspaceSchedule
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_workspaces_workspaceid_schedules_schedule_id_put]]
+=== Update an existing workspace schedule
+....
+PUT https://api.tgcloud.io/controller/v4/v2/workspaces/{workspaceID}/schedules/{schedule_id}
+....
+
+
+==== Description
+Update an existing workspace schedule for a given workspace
+
+
+==== Parameters
+
+[options="header", cols=".^2a,.^3a,.^9a,.^4a"]
+|===
+|Type|Name|Description|Schema
+|**Path**|**schedule_id** +
+__required__|Schedule ID|string
+|**Path**|**workspaceID** +
+__required__|Workspace ID|string
+|**Body**|**body** +
+__required__|Workspace Schedule|<<definitions.adoc#_workspaceschedule,WorkspaceSchedule>>
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2a,.^14a,.^4a"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_https_api_tgcloud_io_controller_v4_v2_workspaces_workspaceid_schedules_schedule_id_put_response_200,Response 200>>
+|**400**|Bad Request|<<definitions.adoc#_middleware_response,middleware.Response>>
+|**500**|Internal Server Error|<<definitions.adoc#_middleware_response,middleware.Response>>
+|===
+
+[[_https_api_tgcloud_io_controller_v4_v2_workspaces_workspaceid_schedules_schedule_id_put_response_200]]
+**Response 200**
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**Error** +
+__optional__|boolean
+|**ErrorDetails** +
+__optional__|< <<definitions.adoc#_middleware_error,middleware.Error>> > array
+|**Message** +
+__optional__|string
+|**RequestID** +
+__optional__|string
+|**Result** +
+__optional__|string
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `application/json`
+
+
+==== Tags
+
+* WorkspaceSchedule
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_workspaces_workspaceid_schedules_schedule_id_delete]]
+=== Delete an existing workspace schedule
+....
+DELETE https://api.tgcloud.io/controller/v4/v2/workspaces/{workspaceID}/schedules/{schedule_id}
+....
+
+
+==== Description
+Delete an existing workspace schedule for a given workspace
+
+
+==== Parameters
+
+[options="header", cols=".^2a,.^3a,.^9a,.^4a"]
+|===
+|Type|Name|Description|Schema
+|**Path**|**schedule_id** +
+__required__|Schedule ID|string
+|**Path**|**workspaceID** +
+__required__|Workspace ID|string
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2a,.^14a,.^4a"]
+|===
+|HTTP Code|Description|Schema
+|**200**|OK|<<_https_api_tgcloud_io_controller_v4_v2_workspaces_workspaceid_schedules_schedule_id_delete_response_200,Response 200>>
+|**500**|Internal Server Error|<<definitions.adoc#_middleware_response,middleware.Response>>
+|===
+
+[[_https_api_tgcloud_io_controller_v4_v2_workspaces_workspaceid_schedules_schedule_id_delete_response_200]]
+**Response 200**
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**Error** +
+__optional__|boolean
+|**ErrorDetails** +
+__optional__|< <<definitions.adoc#_middleware_error,middleware.Error>> > array
+|**Message** +
+__optional__|string
+|**RequestID** +
+__optional__|string
+|**Result** +
+__optional__|string
+|===
+
+
+==== Produces
+
+* `application/json`
+
+
+==== Tags
+
+* WorkspaceSchedule
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_workspaces_workspaceid_workgroups_workgroupid_backups_delete]]
+=== Delete a backup
+....
+DELETE https://api.tgcloud.io/controller/v4/v2/workspaces/{workspaceID}/workgroups/{workgroupID}/backups
+....
+
+
+==== Description
+Delete a backup for a workspace
+
+
+==== Parameters
+
+[options="header", cols=".^2a,.^3a,.^9a,.^4a"]
+|===
+|Type|Name|Description|Schema
+|**Path**|**workgroupID** +
+__required__|Workgroup ID|string
+|**Path**|**workspaceID** +
+__required__|Workspace ID|string
+|**Body**|**request** +
+__required__|Delete Backup Request|<<definitions.adoc#_deletebackuprequest,DeleteBackupRequest>>
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2a,.^14a,.^4a"]
+|===
+|HTTP Code|Description|Schema
+|**200**|Successfully deleted the backup.|<<definitions.adoc#_middleware_response,middleware.Response>>
+|**400**|Bad request|<<definitions.adoc#_middleware_response,middleware.Response>>
+|**500**|Internal server error|<<definitions.adoc#_middleware_response,middleware.Response>>
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `application/json`
+
+
+==== Tags
+
+* Backup
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_workspaces_workspaceid_workgroups_workgroupid_backups_restore_post]]
+=== Restore a backup
+....
+POST https://api.tgcloud.io/controller/v4/v2/workspaces/{workspaceID}/workgroups/{workgroupID}/backups/restore
+....
+
+
+==== Description
+Restore a backup for a workspace
+
+
+==== Parameters
+
+[options="header", cols=".^2a,.^3a,.^9a,.^4a"]
+|===
+|Type|Name|Description|Schema
+|**Path**|**workgroupID** +
+__required__|Workgroup ID|string
+|**Path**|**workspaceID** +
+__required__|Workspace ID|string
+|**Body**|**request** +
+__required__|Restore Backup Request|<<definitions.adoc#_restorebackuprequest,RestoreBackupRequest>>
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2a,.^14a,.^4a"]
+|===
+|HTTP Code|Description|Schema
+|**200**|Successfully restored the backup.|<<_https_api_tgcloud_io_controller_v4_v2_workspaces_workspaceid_workgroups_workgroupid_backups_restore_post_response_200,Response 200>>
+|**400**|Bad request|<<definitions.adoc#_middleware_response,middleware.Response>>
+|**500**|Internal server error|<<definitions.adoc#_middleware_response,middleware.Response>>
+|===
+
+[[_https_api_tgcloud_io_controller_v4_v2_workspaces_workspaceid_workgroups_workgroupid_backups_restore_post_response_200]]
+**Response 200**
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**Error** +
+__optional__|boolean
+|**ErrorDetails** +
+__optional__|< <<definitions.adoc#_middleware_error,middleware.Error>> > array
+|**Message** +
+__optional__|string
+|**RequestID** +
+__optional__|string
+|**Result** +
+__optional__|string
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `application/json`
+
+
+==== Tags
+
+* Backup
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_workspaces_workspaceid_workgroups_workgroupid_backups_schedule_post]]
+=== Set backup schedule
+....
+POST https://api.tgcloud.io/controller/v4/v2/workspaces/{workspaceID}/workgroups/{workgroupID}/backups/schedule
+....
+
+
+==== Description
+Set a backup schedule for a workspace
+
+
+==== Parameters
+
+[options="header", cols=".^2a,.^3a,.^9a,.^4a"]
+|===
+|Type|Name|Description|Schema
+|**Path**|**workgroupID** +
+__required__|Workgroup ID|string
+|**Path**|**workspaceID** +
+__required__|Workspace ID|string
+|**Body**|**request** +
+__required__|Backup Schedule|<<definitions.adoc#_backupschedule,BackupSchedule>>
+|===
+
+
+==== Responses
+
+[options="header", cols=".^2a,.^14a,.^4a"]
+|===
+|HTTP Code|Description|Schema
+|**200**|Successfully set the backup schedule.|<<definitions.adoc#_middleware_response,middleware.Response>>
+|**400**|Bad request|<<definitions.adoc#_middleware_response,middleware.Response>>
+|**500**|Internal server error|<<definitions.adoc#_middleware_response,middleware.Response>>
+|===
+
+
+==== Consumes
+
+* `application/json`
+
+
+==== Produces
+
+* `application/json`
+
+
+==== Tags
+
+* Backup
+
+
+

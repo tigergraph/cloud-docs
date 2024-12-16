@@ -1,0 +1,885 @@
+
+[[_definitions]]
+== Definitions
+
+[[_agentconfig]]
+=== AgentConfig
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**catalog_activity_update_interval_seconds** +
+__optional__|integer
+|**enable_topology_force_update** +
+__optional__|boolean
+|**heartbeat_interval_seconds** +
+__optional__|integer
+|**query_activity_update_interval_seconds** +
+__optional__|integer
+|**topology_update_interval_seconds** +
+__optional__|integer
+|===
+
+
+[[_allowedip]]
+=== AllowedIP
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**cidr** +
+__required__|string
+|**id** +
+__optional__|string
+|**note** +
+__optional__|string
+|===
+
+
+[[_backup]]
+=== Backup
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**id** +
+__optional__|string
+|**is_automatic** +
+__optional__|boolean
+|**size_bytes** +
+__optional__|string
+|**status** +
+__optional__|string
+|**tag** +
+__optional__|string
+|**time** +
+__optional__|string
+|**type** +
+__optional__|string
+|**version** +
+__optional__|string
+|===
+
+
+[[_backuprestorestatus]]
+=== BackupRestoreStatus
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**created_at** +
+__optional__|string
+|**name** +
+__optional__|string
+|**output** +
+__optional__|string
+|**status** +
+__optional__|string
+|===
+
+
+[[_backupschedule]]
+=== BackupSchedule
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**max_backup_files** +
+__optional__|integer
+|**max_reserved_days** +
+__optional__|integer
+|**max_retry** +
+__optional__|integer
+|**pause** +
+__optional__|boolean
+|**schedule** +
+__required__|string
+|===
+
+
+[[_createworkgrouprequest]]
+=== CreateWorkgroupRequest
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**cloud_provider_id** +
+__required__|string
+|**name** +
+__optional__|string
+|**platform** +
+__optional__|<<definitions.adoc#_constants_platform,constants.Platform>>
+|**region** +
+__optional__|string
+|===
+
+
+[[_createworkspacerequest]]
+=== CreateWorkspaceRequest
+Create Workspace Request
+
+
+[options="header", cols=".^3a,.^11a,.^4a"]
+|===
+|Name|Description|Schema
+|**addons** +
+__optional__||< <<definitions.adoc#_workspaceaddonsrequest,WorkspaceAddonsRequest>> > array
+|**auto_stop_minutes** +
+__optional__||integer
+|**enable_auto_start** +
+__optional__||boolean
+|**enable_ha** +
+__optional__||boolean
+|**is_rw** +
+__optional__||boolean
+|**name** +
+__optional__||string
+|**solution_install_request** +
+__optional__||<<definitions.adoc#_solutioninstallrequest,SolutionInstallRequest>>
+|**tg_database_id** +
+__optional__||string
+|**tg_version** +
+__optional__||string
+|**workspace_type_name** +
+__optional__|Workspace Type Name TG-0/TG-2|string
+|===
+
+
+[[_deletebackuprequest]]
+=== DeleteBackupRequest
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**backup_id** +
+__required__|string
+|===
+
+
+[[_folderstatistics]]
+=== FolderStatistics
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**backup_size** +
+__optional__|integer
+|**billed_size** +
+__optional__|integer
+|**log_size** +
+__optional__|integer
+|**milvus_size** +
+__optional__|integer
+|**total_size** +
+__optional__|integer
+|**workspaces** +
+__optional__|< <<definitions.adoc#_workspacesize,WorkspaceSize>> > array
+|===
+
+
+[[_indatabaseuserrequest]]
+=== InDatabaseUserRequest
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**password** +
+__optional__|string
+|**username** +
+__optional__|string
+|===
+
+
+[[_region]]
+=== Region
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**description** +
+__optional__|string
+|**name** +
+__optional__|string
+|===
+
+
+[[_restorebackuprequest]]
+=== RestoreBackupRequest
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**backup_id** +
+__required__|string
+|===
+
+
+[[_solutioninstallrequest]]
+=== SolutionInstallRequest
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**addons** +
+__optional__|< <<definitions.adoc#_workspaceaddonsrequest,WorkspaceAddonsRequest>> > array
+|**data_source_origin** +
+__optional__|string
+|**name** +
+__optional__|string
+|**solution_catalog_id** +
+__optional__|string
+|===
+
+
+[[_tgdatabase]]
+=== TGDatabase
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**create_time** +
+__optional__|string
+|**database_id** +
+__optional__|string
+|**folder_statistics** +
+__optional__|<<definitions.adoc#_folderstatistics,FolderStatistics>>
+|**name** +
+__optional__|string
+|**org_id** +
+__optional__|string
+|**org_name** +
+__optional__|string
+|**region** +
+__optional__|string
+|**tg_version** +
+__optional__|string
+|**workgroup_id** +
+__optional__|string
+|**workspaces** +
+__optional__|< <<definitions.adoc#_workspace,Workspace>> > array
+|===
+
+
+[[_tgversion]]
+=== TGVersion
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**image** +
+__optional__|string
+|**name** +
+__optional__|string
+|===
+
+
+[[_updatetgdatabaserequest]]
+=== UpdateTGDatabaseRequest
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**tg_database_name** +
+__required__|string
+|===
+
+
+[[_updateworkgrouprequest]]
+=== UpdateWorkgroupRequest
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**workgroup_name** +
+__optional__|string
+|===
+
+
+[[_updateworkspacerequest]]
+=== UpdateWorkspaceRequest
+
+[options="header", cols=".^3a,.^11a,.^4a"]
+|===
+|Name|Description|Schema
+|**addons** +
+__optional__||< <<definitions.adoc#_workspaceaddonsrequest,WorkspaceAddonsRequest>> > array
+|**agent_config** +
+__optional__||<<definitions.adoc#_agentconfig,AgentConfig>>
+|**auto_stop_minutes** +
+__optional__|**Minimum value** : `0`|integer
+|**enable_auto_start** +
+__optional__||boolean
+|**enable_ha** +
+__optional__||boolean
+|**pause** +
+__optional__||boolean
+|**workspace_name** +
+__optional__||string
+|**workspace_type_name** +
+__optional__||string
+|===
+
+
+[[_workgroup]]
+=== Workgroup
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**cloud_provider_id** +
+__optional__|string
+|**creator** +
+__optional__|string
+|**enable_allow_list** +
+__optional__|boolean
+|**name** +
+__optional__|string
+|**org_id** +
+__optional__|string
+|**org_name** +
+__optional__|string
+|**platform** +
+__optional__|<<definitions.adoc#_constants_platform,constants.Platform>>
+|**region** +
+__optional__|string
+|**tg_databases** +
+__optional__|< <<definitions.adoc#_tgdatabase,TGDatabase>> > array
+|**workgroup_id** +
+__optional__|string
+|**workspaces** +
+__optional__|< <<definitions.adoc#_workspace,Workspace>> > array
+|===
+
+
+[[_workspace]]
+=== Workspace
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**addons** +
+__optional__|< <<definitions.adoc#_workspaceaddonsrequest,WorkspaceAddonsRequest>> > array
+|**agent_config** +
+__optional__|<<definitions.adoc#_agentconfig,AgentConfig>>
+|**auto_stop_minutes** +
+__optional__|integer
+|**cloud_provider_id** +
+__optional__|string
+|**condition_type** +
+__optional__|string
+|**created_at** +
+__optional__|string
+|**creator** +
+__optional__|string
+|**database_id** +
+__optional__|string
+|**edge_count** +
+__optional__|integer
+|**enable_auto_start** +
+__optional__|boolean
+|**enable_copilot** +
+__optional__|boolean
+|**enable_ha** +
+__optional__|boolean
+|**folder_statistics** +
+__optional__|<<definitions.adoc#_folderstatistics,FolderStatistics>>
+|**graph_topology_size_bytes** +
+__optional__|integer
+|**is_rw** +
+__optional__|boolean
+|**last_modified_time** +
+__optional__|string
+|**name** +
+__optional__|string
+|**nginx_host** +
+__optional__|string
+|**org_id** +
+__optional__|string
+|**org_name** +
+__optional__|string
+|**refresh_message** +
+__optional__|string
+|**refresh_status** +
+__optional__|string
+|**region** +
+__optional__|string
+|**size** +
+__optional__|integer
+|**snapshot_time** +
+__optional__|string
+|**solution_catalog_id** +
+__optional__|string
+|**status** +
+__optional__|string
+|**tg_version** +
+__optional__|string
+|**version_number** +
+__optional__|integer
+|**vertex_count** +
+__optional__|integer
+|**workgroup_id** +
+__optional__|string
+|**workgroup_name** +
+__optional__|string
+|**workspace_id** +
+__optional__|string
+|**workspace_type** +
+__optional__|<<definitions.adoc#_workspacetype,WorkspaceType>>
+|===
+
+
+[[_workspaceschedule]]
+=== WorkspaceSchedule
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**date** +
+__optional__|string
+|**id** +
+__optional__|string
+|**repeat** +
+__required__|string
+|**repeat_on** +
+__optional__|string
+|**time** +
+__required__|string
+|**timezone** +
+__required__|string
+|**workspace_id** +
+__required__|string
+|**workspace_type_name** +
+__optional__|string
+|===
+
+
+[[_workspacesize]]
+=== WorkspaceSize
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**size** +
+__optional__|integer
+|**workspace_id** +
+__optional__|string
+|===
+
+
+[[_workspacetype]]
+=== WorkspaceType
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**cpu** +
+__optional__|string
+|**ha** +
+__optional__|integer
+|**memory** +
+__optional__|string
+|**partition** +
+__optional__|integer
+|**typeName** +
+__optional__|string
+|===
+
+
+[[_middleware_error]]
+=== middleware.Error
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**FieldName** +
+__optional__|string
+|**Reason** +
+__optional__|string
+|**Type** +
+__optional__|<<definitions.adoc#_middleware_errortype,middleware.ErrorType>>
+|===
+
+
+[[_middleware_errortype]]
+=== middleware.ErrorType
+__Type__ : enum (Internal-Error, Bad-Request, Not-Found, Forbidden, Unauthorized, API-Disabled, Quota-Exceed, Unknown)
+
+
+[[_middleware_response]]
+=== middleware.Response
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**Error** +
+__optional__|boolean
+|**ErrorDetails** +
+__optional__|< <<definitions.adoc#_middleware_error,middleware.Error>> > array
+|**Message** +
+__optional__|string
+|**RequestID** +
+__optional__|string
+|**Result** +
+__optional__|object
+|===
+
+
+[[_org_handler_orglistuserresponse]]
+=== org_handler.OrgListUserResponse
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**auth0UserID** +
+__optional__|string
+|**authID** +
+__optional__|string
+|**created** +
+__optional__|string
+|**email** +
+__optional__|string
+|**enabled** +
+__optional__|boolean
+|**firstName** +
+__optional__|string
+|**id** +
+__optional__|string
+|**lastName** +
+__optional__|string
+|**metadata** +
+__optional__|<<definitions.adoc#_org_handler_orgmetadata,org_handler.OrgMetadata>>
+|**path** +
+__optional__|string
+|**roles** +
+__optional__|< <<definitions.adoc#_org_handler_orgrole,org_handler.OrgRole>> > array
+|**tenantID** +
+__optional__|string
+|**trn** +
+__optional__|string
+|**updated** +
+__optional__|string
+|**username** +
+__optional__|string
+|===
+
+
+[[_org_handler_orgmetadata]]
+=== org_handler.OrgMetadata
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**attachedTo** +
+__optional__|< string > array
+|**lastLogin** +
+__optional__|string
+|===
+
+
+[[_org_handler_orgrole]]
+=== org_handler.OrgRole
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**displayName** +
+__optional__|string
+|**id** +
+__optional__|string
+|**name** +
+__optional__|string
+|**path** +
+__optional__|string
+|**tenantID** +
+__optional__|string
+|**trn** +
+__optional__|string
+|===
+
+
+[[_org_handler_putorgusersroles]]
+=== org_handler.PutOrgUsersRoles
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**roles** +
+__optional__|< string > array
+|===
+
+
+[[_pb_apikey]]
+=== pb.APIKey
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**created_at** +
+__optional__|string
+|**creator** +
+__optional__|string
+|**description** +
+__optional__|string
+|**expires_at** +
+__optional__|string
+|**key_name** +
+__optional__|string
+|**org_id** +
+__optional__|string
+|**plaintext_key** +
+__optional__|string
+|**redacted_key** +
+__optional__|string
+|**user_id** +
+__optional__|string
+|===
+
+
+[[_pb_createapikeyrequest]]
+=== pb.CreateAPIKeyRequest
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**description** +
+__optional__|string
+|**life_time_in_seconds** +
+__optional__|integer
+|===
+
+
+[[_pb_customercreditcard]]
+=== pb.CustomerCreditCard
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**brand** +
+__optional__|string
+|**card_id** +
+__optional__|string
+|**expire_month** +
+__optional__|integer
+|**expire_year** +
+__optional__|integer
+|**last_4_digits** +
+__optional__|string
+|**name_on_card** +
+__optional__|string
+|**org_id** +
+__optional__|string
+|===
+
+
+[[_pb_datastoragepricing]]
+=== pb.DataStoragePricing
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**platform** +
+__optional__|string
+|**price_per_month** +
+__optional__|number
+|**region** +
+__optional__|string
+|===
+
+
+[[_pb_deleteapikeyrequest]]
+=== pb.DeleteAPIKeyRequest
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**key_name** +
+__optional__|string
+|===
+
+
+[[_pb_featureflag]]
+=== pb.FeatureFlag
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**enabled** +
+__optional__|boolean
+|**feature_name** +
+__optional__|string
+|===
+
+
+[[_pb_getcustomercreditcardsresponse]]
+=== pb.GetCustomerCreditCardsResponse
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**credit_cards** +
+__optional__|< <<definitions.adoc#_pb_customercreditcard,pb.CustomerCreditCard>> > array
+|**default_card** +
+__optional__|string
+|===
+
+
+[[_pb_orgquota]]
+=== pb.OrgQuota
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**max_workspace_memory** +
+__optional__|string
+|**max_workspace_type** +
+__optional__|string
+|**memory_limit** +
+__optional__|string
+|**memory_usage_in_bytes** +
+__optional__|integer
+|**org_id** +
+__optional__|string
+|**ro_workspace_count_limit** +
+__optional__|integer
+|**ro_workspace_count_usage** +
+__optional__|integer
+|**rw_workspace_count_limit** +
+__optional__|integer
+|**rw_workspace_count_usage** +
+__optional__|integer
+|**tier** +
+__optional__|string
+|**workspace_auto_backup_count_limit** +
+__optional__|integer
+|**workspace_auto_backup_retention_in_days** +
+__optional__|integer
+|**workspace_manual_backup_count_limit** +
+__optional__|integer
+|===
+
+
+[[_pb_organization]]
+=== pb.Organization
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**create_time** +
+__optional__|string
+|**creator** +
+__optional__|string
+|**feature_flag** +
+__optional__|< <<definitions.adoc#_pb_featureflag,pb.FeatureFlag>> > array
+|**logo_url** +
+__optional__|string
+|**org_display_name** +
+__optional__|string
+|**org_id** +
+__optional__|string
+|**org_name** +
+__optional__|string
+|===
+
+
+[[_pb_resourcepricing]]
+=== pb.ResourcePricing
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**addon_pricing** +
+__optional__|< <<definitions.adoc#_pb_addonpricing,pb.AddOnPricing>> > array
+|**data_storage_pricing** +
+__optional__|< <<definitions.adoc#_pb_datastoragepricing,pb.DataStoragePricing>> > array
+|**workspace_pricing** +
+__optional__|< <<definitions.adoc#_pb_workspacepricing,pb.WorkspacePricing>> > array
+|===
+
+
+[[_pb_workspacepricing]]
+=== pb.WorkspacePricing
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**cloud_provider** +
+__optional__|string
+|**ha** +
+__optional__|string
+|**platform** +
+__optional__|string
+|**price_per_hour** +
+__optional__|number
+|**region** +
+__optional__|string
+|**workspace_type** +
+__optional__|string
+|===
+
+
+[[_resource_manager_handler_getmetadata_metadata]]
+=== resource_manager_handler.GetMetadata.metadata
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**regions** +
+__optional__|< <<definitions.adoc#_region,Region>> > array
+|**tgVersions** +
+__optional__|< <<definitions.adoc#_tgversion,TGVersion>> > array
+|**workspaceTypes** +
+__optional__|< <<definitions.adoc#_workspacetype,WorkspaceType>> > array
+|===
+
+
+[[_tgiam_iamuser]]
+=== tgIAM.IAMUser
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**auth0UserID** +
+__optional__|string
+|**created** +
+__optional__|string
+|**email** +
+__optional__|string
+|**enabled** +
+__optional__|boolean
+|**firstName** +
+__optional__|string
+|**id** +
+__optional__|string
+|**lastName** +
+__optional__|string
+|**path** +
+__optional__|string
+|**tenantID** +
+__optional__|string
+|**trn** +
+__optional__|string
+|**updated** +
+__optional__|string
+|**username** +
+__optional__|string
+|===
+
+
+[[_tgiam_orgrequest]]
+=== tgIAM.OrgRequest
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**logoUrl** +
+__optional__|string
+|**orgDisplayName** +
+__optional__|string
+|**orgID** +
+__optional__|string
+|**orgName** +
+__optional__|string
+|===
+
+
+

@@ -13,7 +13,7 @@ __Version__ : 2.0
 
 === URI scheme
 [%hardbreaks]
-__BasePath__ : https://api.tgcloud.io/controller/v4/v2
+__BasePath__ : https://api.tgcloud.io
 
 
 

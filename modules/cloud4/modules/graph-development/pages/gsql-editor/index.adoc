@@ -1,0 +1,131 @@
+= Get Started with GSQL Editor
+:experimental:
+
+The GSQL Editor is a powerful tool for developing and executing GSQL queries, allowing you to unlock insights from your graph databases.
+
+== Get Started with the GSQL Editor UI
+
+The GSQL Editor contains 4 work areas:
+
+image::Screenshot 2024-10-11 at 11.39.23.png[]
+* Left  image:left.png[] - GSQL xref:cloud4:graph-development:gsql-editor/index.adoc#_file_list[File List ] Panel.
+* Bottom image:bottom.png[] - GSQL Result Panel.
+* Right image:right.png[] Schema Designer Panel.
++
+[NOTE]
+====
+For more details please see xref:cloud4:graph-development:design-schema/index.adoc[].
+====
+
+* Main area image:main.png[] Main GSQL Editing Panel.
+
+[TIP]
+====
+Additionally, you can use shortcuts to run a GSQL query.
+
+image::gsql-editor-shorcuts.png[]
+
+See xref:cloud4:graph-development:gsql-editor/how2-edit-gsql-query.adoc[] for more details.
+====
+
+== File List
+
+The GSQL File List in the GSQL Editor provides an overview of the GSQL files in your workspace.
+It helps you organize and manage your GSQL queries effectively with a list of GSQL files and folders present in your organization.
+
+* Navigate through the files and folders by clicking on their names in the list.
++
+image:Screenshot 2024-10-11 at 10.59.49.png[]
++
+* It also includes a search bar that allows you to search for specific files by their names.
++
+[TIP]
+====
+This feature helps you quickly locate the desired GSQL file, especially when you have a large number of files in your workspace.
+====
++
+image::Screenshot 2024-04-18 at 10.08.25 AM.png[]
+
+* Additionally, click on btn:[ + ] button to create a folder or a GSQL file.
++
+image:Screenshot 2024-04-18 at 10.08.58 AM.png[]
+
+* You can also order the file list by selecting an option from the order list
++
+image:Screenshot 2024-04-18 at 10.09.33 AM.png[]
+
+== Folders
+
+The GSQL Editor in TigerGraph Cloud 4 has two types of folders presented in the list:
+
+=== Shared Folder
+The Shared Folder is a special type of folder that facilitates collaboration and sharing of GSQL files. The folder contains all GSQL files that are shared with you from other users with in the organization.
+
+For more information about sharing GSQL files, please refer to xref:cloud4:graph-development:gsql-editor/how2-edit-gsql-query.adoc#_share_gsql_files[Share GSQL Files].
+
+=== User-defined Folders
+
+These are folders created by individual users to organize their GSQL files within their personal workspace.
+User-defined folders allow you to group related queries or scripts together based on your own preferences.
+You can `create`, `rename`, and/or `delete` these folders as needed to manage your GSQL files effectively.
+
+==== Create a Folder
+
+.To create your first folder:
+. Click on the btn:[ Folder] from the btn:[ + ] menu.
++
+image::gsql-editor-folder-1.png[]
+
+. Name the folder.
++
+image::gsql-editor-folder-2.png[]
+
+. You can add a new file to the folder by clicking on the btn:[+] button.
+
+. You can also rename or delete the folder via the btn:[ … ] menu.
++
+image::gsql-editor-folder-3.png[]
+
+== Query List
+
+The Query List in the GSQL Editor provides an overview of all custom queries for each graph. It helps you manage your queries efficiently, allowing you to create, edit, delete, and install queries.
+
+* View all custom queries for the current graph.
+
+image::queries.png[]
+
+* Create a query by clicking on the btn:[ + ] button on the side of the target graph.
+
+image::add-query.png[]
+
+[TIP]
+====
+This feature helps you quickly view and edit custom queries on your graph.
+====
+
+image::query-details.png[]
+
+* Edit existing queries by selecting the query and clicking the btn:[ Edit ] button.
+
+* Delete queries that are no longer needed by selecting the query and clicking the btn:[ Delete ] button.
+
+* If the query is not installed, you can install the query by selecting the query and clicking the btn:[ Install ] button.
+
+image::install-query.png[]
+
+== Edit Schema
+
+The schema defines the structure of your graph database, influencing its performance and functionality.
+You can easily open the Schema Designer in GSQL Editor by clicking on the image:right.png[width=50]  button.
+
+[NOTE]
+====
+For more details please see xref:cloud4:graph-development:design-schema/index.adoc[].
+====
+
+== Next Steps
+Next, learn more about how to xref:cloud4:graph-development:gsql-editor/how2-edit-gsql-query.adoc[].
+
+Or return to the xref:cloud4:overview:index.adoc[Overview] page for a different topic.
+
+

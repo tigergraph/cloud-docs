@@ -122,7 +122,7 @@ image::advanced-settings.png[]
 
 == 7) Advanced Settings For Edge
 
-The Advanced Settings section allows you to fine tune the edge of your graph database by configuring additional settings for edges.
+The Advanced Settings section allows you to fine tune the definition of an edge type in your graph database by configuring additional settings.
 
 You can click on the btn:[ Advanced Settings ] button on an edge to configure the following settings:
 

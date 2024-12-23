@@ -4,6 +4,6 @@
 
 Once a cluster has been provisioned, you can access it and interact with the database in any of the following ways:
 
-* xref:access-solution/graphstudio.adoc[GraphStudio™]
+* xref:access-solution/graphstudio.adoc[GraphStudio]
 * xref:access-solution/rest-requests.adoc[REST endpoints]
 * xref:access-solution/gsql-web-shell.adoc[GSQL web shell]

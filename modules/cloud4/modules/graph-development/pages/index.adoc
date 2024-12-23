@@ -1,6 +1,6 @@
 = Graph Development
 
-Welcome! This guide provides an overview of the essential tools and processes for managing and developing your graph databases. Here, you will find comprehensive guides and resources to help you design, load, query, and explore your graph database. Click on the sections below to learn more about each area.
+Welcome! This guide provides an overview of the essential tools and processes for managing and developing your graph databases. Here, you will find comprehensive guides and resources to help you design, load, query, and explore a graph database. Click on the sections below to learn more about each area.
 
 == xref:load-data/index.adoc[Load Data]
 

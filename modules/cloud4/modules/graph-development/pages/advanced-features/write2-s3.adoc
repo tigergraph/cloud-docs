@@ -124,7 +124,3 @@ run query print_to_csv_s3();
 - **Credential Issues**: Ensure that the correct credentials are provided either via GSQL Editor, API headers, or Graph Admin configurations.
 
 For more detailed troubleshooting, refer to the [AWS S3 Documentation](https://docs.aws.amazon.com/s3/index.html).
-
----
-
-This updated documentation now includes all three methods for writing data to S3, providing comprehensive guidance for users.

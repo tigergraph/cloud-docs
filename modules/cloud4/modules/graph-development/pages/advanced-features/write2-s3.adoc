@@ -3,6 +3,8 @@
 
 Exporting data to Amazon S3 from TigerGraph Cloud v4 allows you to export your graph data efficiently. This feature is particularly useful for backup, data sharing, and integration with other AWS services.
 
+This documentation have been updated to include all three methods for writing data to S3, providing comprehensive guidance for users.
+
 == Prerequisites
 
 Before you begin, ensure you have the following:

@@ -7,7 +7,7 @@ With TigerGraph GraphQL, you can use any GraphQL client or simply submit GraphQL
 
 [TIP]
 ====
-To learn more about GraphQL read our xref:3.9@graphql:ROOT:index.adoc[].
+To learn more about GraphQL read our xref:graphql:ROOT:index.adoc[].
 ====
 
 == Get Started GraphQL Add-on

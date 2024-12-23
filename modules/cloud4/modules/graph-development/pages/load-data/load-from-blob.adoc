@@ -23,7 +23,7 @@ The current data loading tool only supports CSV,TSV and JSON files. Other format
 ====
 
 == 2) Configure File
-.This step lets you configure the source file details.
+This step lets you configure the source file details.
 . The data loading tool will automatically detect the `.csv` separators and line breaks.
 The parser automatically splits each line into a series of tokens.
 +

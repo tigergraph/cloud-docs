@@ -72,7 +72,7 @@ Replace `$AWS_KEY_ID` and `$AWS_ACCESS_KEY` with your actual AWS credentials, `$
 
 === Method 3: Using Graph Admin
 
-1) Setup TigerGraph Cloud 4 workspace and ensure it is running.
+1) Set up the TigerGraph Cloud 4 workspace and ensure it is running.
 
 2) Edit workspace by clicking the btn:[...] button of your selected workspace.
 

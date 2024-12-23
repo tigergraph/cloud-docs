@@ -54,7 +54,7 @@ Replace `<AWS_KEY_ID>`, `<AWS_ACCESS_KEY>`, and `<s3_path>` with your actual AWS
 
 === Method 2: Via API
 
-1) Setup TigerGraph Cloud 4 workspace and ensure it is running.
+1) Set up the TigerGraph Cloud 4 workspace and ensure it is running.
 
 2) **Send a GET Request**:
 

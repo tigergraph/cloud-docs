@@ -90,7 +90,7 @@ image::quick-map.png[]
 
 == 4) Confirm
 
-.This step will let you confirm the changes made to the schema and the data mapping you created to load the data.
+This step will let you confirm the changes made to the schema and the data mapping you created to load the data.
 . Simply review the `Schema to be changed` and `Data to be loaded` lists.
 +
 image::confirm.png[]

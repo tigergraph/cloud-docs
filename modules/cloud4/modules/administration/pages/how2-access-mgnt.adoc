@@ -18,7 +18,7 @@ You can go to xref:cloud4:workgroup-workspace:workgroups/how2-workgroup-access.a
 
 == User Level Permission
 At the user level, you can define permissions that apply to individual users or groups of users.
-User-level permissions determine what actions a user can perform across the entire TigerGraph Cloud 4 organization.
+User-level permissions determine what actions a user can perform across your entire TigerGraph Cloud 4 organization.
 
 [TIP]
 ====

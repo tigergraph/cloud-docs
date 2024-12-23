@@ -60,7 +60,7 @@ Explore Graph allows users to visually interact with their graph data, helping t
 
 == xref:advanced-features/index.adoc[Advanced Features]
 
-This section covers the powerful and sophisticated functionalities that allow you to leverage TigerGraph Cloud to its fullest potential. Here, you will find detailed guides on:
+This section covers the powerful and sophisticated functionalities that allow you to leverage TigerGraph Cloud to its fullest potential. 
 
 ### Key Features:
 - Export data to Amazon S3.

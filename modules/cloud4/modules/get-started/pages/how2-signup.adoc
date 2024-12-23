@@ -12,7 +12,7 @@ image::signup.png[width=450]
 . If you are signing up for the first time using username and password registration, you will be prompted to enter a password.
 +
 [CAUTION]
-Please refer to out xref:cloud4:administration:security/password-policy.adoc[] that applies to TigerGraph Cloud.
+Please refer to our xref:cloud4:administration:security/password-policy.adoc[] that applies to TigerGraph Cloud 4.
 
 . When registering for a new TigerGraph Cloud 4 account, we will ask to confirm your email address.
 btn:[ Click ] the link in your email to verify, then log in using your username and password.

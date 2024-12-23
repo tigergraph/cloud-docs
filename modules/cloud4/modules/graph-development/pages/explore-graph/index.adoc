@@ -20,6 +20,6 @@ Learn how look for specific patterns or sequences within a dataset or system.
 
 == Next Steps
 
-Next, checkout the xref:cloud4:integrations:index.adoc[].
+Next, check out the xref:cloud4:integrations:index.adoc[].
 
 Or return to the  xref:cloud4:overview:index.adoc[Overview] page for a different topic.

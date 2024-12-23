@@ -78,7 +78,7 @@ Replace `$AWS_KEY_ID` and `$AWS_ACCESS_KEY` with your actual AWS credentials, `$
 
 3) Navigate to the btn:[Graph Admin] tab.
 
-4) Select btn:[GPE] section, then configure the following entries:
+4) Select the btn:[GPE] section, then configure the following entries:
 
 image::config-s3.png[]
 

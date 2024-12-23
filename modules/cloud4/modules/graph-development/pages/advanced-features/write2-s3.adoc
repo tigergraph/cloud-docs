@@ -89,7 +89,7 @@ image::config-s3.png[]
 
 [TIP]
 ====
-It is recommended to always setup a default s3 access key ID and secret access key in the Graph Admin. This will be the fallback option in case the query does not have the s3 access key ID and secret access key set.
+It is recommended to always set up a default s3 access key ID and secret access key in the Graph Admin. This will be the fallback option in case the query does not have the s3 access key ID and secret access key set.
 ====
 
 [NOTE]

@@ -1,7 +1,7 @@
 = Configure User Defined Functions (UDFs) On TigerGraph Cloud 4
 :experimental:
 
-User-Defined Functions (UDFs) in TigerGraph allow you to incorporate custom logic into your GSQL queries. You can configure GSQL to read from a GitHub repository for ExprFunctions and ExprUtil. This is TigerGraph’s recommended approach to managing UDFs.
+User-Defined Functions (UDFs) in TigerGraph allow you to incorporate custom logic into your GSQL queries. You can configure GSQL to your UDF definitions from a GitHub repository. This is TigerGraph’s recommended approach for managing UDFs.
 
 == Prerequisites
 

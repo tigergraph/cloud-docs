@@ -23,7 +23,7 @@ See xref:manage-org-users.adoc#_organization_roles_and_privileges[Organization r
 
 == Reset your TigerGraph Cloud user account password
 
-. Go to the https://portal.tgcloud.io[TigerGraph Cloud main page].
+. Go to the https://tgcloud.io[TigerGraph Cloud main page].
 . Click the *Login* link next to "Have an account?"
 . Enter your organization name. If you don't remember your organization name, contact your administrator.
 . Click *Forgot password?*

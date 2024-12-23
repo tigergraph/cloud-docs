@@ -5,7 +5,7 @@ TigerGraph Cloud 4 allows you to load data directly from Azure Blob Storage. Thi
 
 == 1) Select Source
 
-.Once you’ve selected btn:[Azure Blob Storage], you will be asked to configure the Azure Blob Storage data source.
+Once you’ve selected btn:[Azure Blob Storage], you will be asked to configure the Azure Blob Storage data source.
 . Click on image:Screenshot 2024-04-17 at 9.36.58 PM.png[width=50] to add a new Azure Blob Storage data source.
 +
 image:gcs-empty-data-source.png[]

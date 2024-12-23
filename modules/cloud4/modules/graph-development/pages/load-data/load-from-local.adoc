@@ -14,7 +14,7 @@ image::Screenshot 2024-04-17 at 5.53.05 PM.png[]
 +
 [NOTE]
 ====
-* The current data loading tool only supports CSV,TSV and JSON files. Other formats will be available in later releases.
+* The current data loading tool only supports CSV, TSV, and JSON files. Other formats will be available in later releases.
 * The maxiumn supported file size is 2GB.
 ====
 

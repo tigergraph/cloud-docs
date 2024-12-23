@@ -9,7 +9,7 @@ Please see xref:cloud4:resources:terms_conditions.adoc[].
 ====
 
 == Sign up
-Click btn:[Sign Up] on the https://portal.tgcloud.io/[TigerGraph Cloud landing page].
+Click btn:[Sign Up] on the https://tgcloud.io/[TigerGraph Cloud landing page].
 
 When you register for a new TigerGraph Cloud account, you create an Organization Account to which you can later invite other users.
 

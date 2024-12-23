@@ -1,7 +1,7 @@
 = How to Log In
 :experimental:
 
-After first xref:get-started:how2-signup.adoc[signing up] or being xref:cloud4:administration:how2-invite-users.adoc[invited by your organization] users must  btn:[Log In].
+After first xref:get-started:how2-signup.adoc[signing up] or being xref:cloud4:administration:how2-invite-users.adoc[invited by your organization], users must  btn:[Log In].
 This guide will walk you through the necessary steps.
 
 == Log In

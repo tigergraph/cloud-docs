@@ -12,7 +12,7 @@ A fully-managed TigerGraph instance or a group of instances connected together. 
 
 Information authenticating a user's identity. TigerGraph allows either username:password or API token credentials.
 
-== GraphStudio™
+== GraphStudio
 
 TigerGraph's visual interface for designing a graph, ingesting data, exploring the graph, developing and running queries, and visualizing the results.
 

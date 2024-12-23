@@ -58,7 +58,7 @@ The header name is ignored during data loading.
 
 == 3) Configure Map
 
-.If you are loading data into a brand new graph, you will be prompted to let our engine generate a schema and mapping for you. Or you can start from scratch. For more details of schema design please refer to xref:cloud4:graph-development:design-schema/index.adoc[Design Schema].
+If you are loading data into a brand new graph, you will be prompted to let our engine generate a schema and mapping for you. Or you can start from scratch. For more details of schema design please refer to xref:cloud4:graph-development:design-schema/index.adoc[Design Schema].
 . Select `Generate the schema only` or `Generate the schema and data mapping`.
 +
 image::Screenshot 2024-04-17 at 5.55.35 PM.png[]

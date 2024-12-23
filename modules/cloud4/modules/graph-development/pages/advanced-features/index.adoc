@@ -1,7 +1,7 @@
 = Advanced Features
 :experimental:
 
-This section covers the powerful and sophisticated functionalities that allow you to leverage TigerGraph Cloud to its fullest potential. Here, you will find detailed guides on:
+This section covers the powerful and sophisticated functionalities that allow you to leverage TigerGraph Cloud to its fullest potential.
 
 == Write Output to S3
 

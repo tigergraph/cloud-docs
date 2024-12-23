@@ -234,7 +234,7 @@ Please refer to the following tables of the roles and permissions for the organi
 
 [NOTE]
 ====
-`*` Additional database role/permission may need to be assigned to the user for certain actions.
+`*` Additional database role(s) or permission(s) may need to be assigned to the user for certain actions.
 ====
 
 == Next Steps

@@ -5,7 +5,8 @@ Here are some differences between the different TigerGraph offerings.
 
 |===
 | Category | Topic | TigerGraph Enterprise Server | TigerGraph Cloud Classic | TigerGraph Cloud 4 Beta
-.7+| Architecture and Deployment | Architecture | Integrated storage and compute | Integrated storage and compute | Separate storage and compute
+.7+| Architecture and Deployment
+| Architecture | Integrated storage and compute | Integrated storage and compute | Separate storage and compute
 | Hardware and Software Requirements | Yes | N/A | N/A
 | Installation and Configuration | Yes | There are a few simple steps to install a Starter Kit, See the xref:cloud:support:faqs.adoc[] | Users can install solutions at any time
 | Kubernetes Support | Yes, custom setup required | No | Yes, built-in support

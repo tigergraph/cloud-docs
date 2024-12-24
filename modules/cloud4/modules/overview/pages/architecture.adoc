@@ -47,6 +47,6 @@ It helps users discover valuable information within their data even if they are 
 
 == Next Steps
 
-Next, to understand how TigerGraph cloud differs from other TigerGraph offerings see xref:overview:comparison_table.adoc[] or see xref:cloud4:get-started:index.adoc[] to unlock its full potential.
+Next, to understand how TigerGraph cloud differs from other TigerGraph offerings, see xref:overview:comparison_table.adoc[] or see xref:cloud4:get-started:index.adoc[] to unlock its full potential.
 
 Return to xref:cloud4:overview:index.adoc[TigerGraph Cloud 4] for another topic.

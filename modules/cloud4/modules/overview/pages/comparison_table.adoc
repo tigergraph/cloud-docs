@@ -1,4 +1,4 @@
-= Compare with Other TigerGraph Offering
+= Compare TigerGraph Offerings
 
 Most of the documentation for TigerGraph Enterprise Server also applies to TigerGraph Cloud 4.
 Here are some differences between the different TigerGraph offerings.

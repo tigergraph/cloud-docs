@@ -1,7 +1,7 @@
 = Token Function
 :experimental:
 
-TigerGraph Cloud 4 allows you to enhance your data loading process by adding token functions. Token functions enable you to manipulate and transform data during the loading process, making it easier to prepare your data for graph analysis. This guide will walk you through the steps to add token functions using the TigerGraph Cloud UI. For more details please refer to xref:gsql-ref:ddl-and-loading:functions:token.adoc[Token Functions].
+TigerGraph Cloud 4 allows you to enhance your data loading process by adding token functions. Token functions enable you to manipulate and transform data during the loading process, making it easier to prepare your data for graph analysis. This guide will walk you through the steps to add token functions using the TigerGraph Cloud UI. For more details please refer to xref:4.1@gsql-ref:ddl-and-loading:functions:token/index.adoc[Token Functions].
 
 == Add a token function
 . Click on the btn:[Token Function] button to configure token functions for your data source.
@@ -14,7 +14,7 @@ image::config-mapping-2.png[width=400]
 image::token-function-1.png[]
 +
 
-. Select the token function you want to use from the `Type` dropdown menu. This will automatically populate the output data type and the required parameters. You can also check the sample input and output by hovering over the btn:[?] icon. Please refer to the xref:gsql-ref:ddl-and-loading:functions:token.adoc[Token Functions] documentation for more details.
+. Select the token function you want to use from the `Type` dropdown menu. This will automatically populate the output data type and the required parameters. You can also check the sample input and output by hovering over the btn:[?] icon. Please refer to the xref:4.1@gsql-ref:ddl-and-loading:functions:token/index.adoc[Token Functions] documentation for more details.
 
 +
 image::token-function-3.png[]

@@ -3,7 +3,7 @@
 :toc: left
 :toclevels: 3
 
-Purpose-built for graph analytics, this approach empowers users to independently scale compute and storage resources, optimizing performance and cost-efficiency according to their specific requirements.
+Purpose-built for graph analytics, TigerGraph Cloud 4 empowers users to independently scale compute and storage resources, optimizing performance and cost-efficiency according to their specific requirements.
 
 The platform also comes with intuitive interfaces, designed to reduce the learning curve and enable users to quickly leverage the benefits of graph analytics.
 

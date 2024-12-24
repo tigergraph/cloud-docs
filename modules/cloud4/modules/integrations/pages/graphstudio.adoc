@@ -8,7 +8,7 @@ The platform supports a wide range of data types and allows users to import data
 
 [TIP]
 ====
-To learn more about xref:gui:graphstudio:overview.adoc[GraphStudio™]
+To learn more about xref:gui:graphstudio:overview.adoc[GraphStudio]
 ====
 
 == Get Started GraphStudio Add-on

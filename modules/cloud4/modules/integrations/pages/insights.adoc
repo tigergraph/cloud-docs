@@ -33,4 +33,4 @@ image::disable-insights-addon.png[width=350]
 
 Now, learn about additional add-ons on the xref:integrations:index.adoc[] page or continue on to learn about the xref:administration:index.adoc[Administration] features or xref:cloud4:administration:security/index.adoc[] in TigerGraph Cloud 4.
 
-Or return to the  page to xref:cloud4:overview:index.adoc[Overview] page for a different topic.
+Or return to the  xref:cloud4:overview:index.adoc[Overview] page for a different topic.

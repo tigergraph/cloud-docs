@@ -1,0 +1,12 @@
+= Advanced Features
+:experimental:
+
+This section covers the powerful and sophisticated functionalities that allow you to leverage TigerGraph Cloud to its fullest potential.
+
+== Write Output to S3
+
+TigerGraph Cloud v4 enables you to write data directly to Amazon S3, providing a seamless way to export and store your graph data in a scalable and cost-effective manner. Click xref:advanced-features/write2-s3.adoc[Export Data to S3] to learn how to configure and use this feature.
+
+== Configure User Defined Functions (UDF)
+
+User-Defined Functions (UDFs) are a powerful way to extend TigerGraph's capabilities by adding custom logic to your graph queries. This guide will walk you through the process of updating existing UDFs. Click xref:advanced-features/configure-udf.adoc[Configure UDF] to get started.

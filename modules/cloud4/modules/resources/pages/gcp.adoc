@@ -1,0 +1,5 @@
+= Google Cloud Platform (GCP)
+
+We do not support GCP at this time, we are actively working on it. Please check back soon. 
+
+Please refer to xref:cloud4:resources:aws.adoc[AWS] for more information.

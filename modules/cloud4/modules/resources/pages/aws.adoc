@@ -1,0 +1,35 @@
+= Amazon Web Services (AWS)
+
+TigerGraph Cloud 4 leverages Amazon Web Services (AWS) to provide reliable and scalable infrastructure. Below are the supported AWS regions where TigerGraph Cloud 4 is available.
+
+== Supported AWS Regions
+
+* US East (N. Virginia)	- us-east-1
+* US East (Ohio)    - us-east-2
+* US West (Oregon)	- us-west-2
+* Europe (Frankfurt)	- eu-central-1
+* Europe (Ireland)	- eu-west-1
+* Europe (London)	- eu-west-2
+* South America (Sao Paulo)	- sa-east-1
+* Asia Pacific (Singapore)	- ap-southeast-1
+* Asia Pacific (Sydney)	- ap-southeast-2
+* Asia Pacific (Tokyo)	- ap-northeast-1
+
+Please contact support for any inquiries regarding additional regions.
+
+== Storage
+
+TigerGraph Cloud 4 utilizes various AWS storage services to ensure optimal performance and data management:
+
+https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volumes.html[Amazon Elastic Block Store (EBS)]: EBS provides high-performance block storage for use with Amazon EC2 instances. In TigerGraph Cloud, EBS is used to store system data, Kafka data, and logs, ensuring faster access and high availability for these critical components.
+
+https://docs.aws.amazon.com/efs/latest/ug/whatisefs.html[Amazon Elastic File System (EFS)]: EFS offers scalable file storage for use with AWS Cloud services and on-premises resources. TigerGraph Cloud uses EFS to store graph IDS data, providing a scalable and managed file system that can grow and shrink automatically as you add and remove files.
+
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html[Amazon Simple Storage Service (S3)]: S3 provides object storage with industry-leading scalability, data availability, security, and performance. In TigerGraph Cloud 4, S3 is also utilized to store the graph data, logs, other metadata and backups, offering a highly durable and cost-effective storage solution.
+
+== Data Encryption
+All data stored on AWS services is encrypted-at-rest using platform-managed keys to ensure data security and compliance.
+
+== Next Steps
+
+Learn how much it costs to run TigerGraph Cloud 4 on AWS in xref:cloud4:overview:pricing.adoc[].

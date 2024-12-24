@@ -1,0 +1,25 @@
+= Get Started with TigerGraph Cloud 4
+:experimental:
+
+To get started with TigerGraph Cloud 4, users must first Sign Up and Log In.
+These guides will walk you through the necessary steps.
+
+== xref:how2-signup.adoc[]
+
+Learn how to create a TigerGraph Cloud 4 Cloud account and get access to the platform.
+
+== xref:how2-login.adoc[]
+
+Learn how to log in to your TigerGraph Cloud 4 Cloud account.
+
+== Next Steps
+
+Once logged in, learn more about xref:cloud4:workgroup-workspace:index.adoc[] or jump right into creating a xref:workgroup-workspace:workgroups/workgroup.adoc[Workgroup] and xref:workgroup-workspace:workspaces/workspace.adoc[Workspaces].
+
+Return to the xref:cloud4:overview:index.adoc[Overview] page for a different topic.
+
+
+
+
+
+

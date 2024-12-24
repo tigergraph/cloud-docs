@@ -1,0 +1,83 @@
+= Invite Users
+:experimental:
+
+When you set up a TigerGraph Cloud 4 account, you are granted the privileges of an Organization Admin for your organization.
+An Organization Admin can manage multiple users in your organization and control their access to various resources.
+
+[NOTE]
+For help with setting up workspaces, visit xref:workgroup-workspace:workspaces/how2-create-a-workspace.adoc[]
+
+== How to Invite and Delete Users
+
+.To get started with inviting users follow the steps below:
+. Navigate to the btn:[Users] tab in the left navigation under btn:[Admin].
++
+image::adminleftnav.png[width=300]
+
+. At the top of the window you will see:
+* A search bar where you can search for users by username or email.
+* A dropdown that sort users by their assied roles.
+* An btn:[Invite Users] button. Click this button to open the btn:[Invite a New User to Your Organization].
++
+image::inviteUserupperffeatures.png[width=500]
+
+. Type the email of the user you wish to invite to your organization and click the btn:[Add] button.
++
+image::addemail.png[width=500]
+
+. Once added you can specify if the user will be an btn:[Org Admin] or not.
+If not select btn:[Not Specified].
+Then select btn:[Invite] button on the bottom right.
++
+[TIP]
+====
+This will send the user and email invite to the email that was provided.
+They will then have to check there email and select accept.
+You should let the user know to check there email after an invite was sent.
+====
++
+image::inviteusers.png[width=500]
+
+. The user will now appear in the user list.
++
+image::permissionschanges.png[]
++
+.You will see five column items.
+* *User Name*: This will be the username for the user.
++
+[TIP]
+====
+It is generated from the first part of the email entered.
+====
+* *Workspace*: This is the full email that was entered when invited.
+* *Role*: This is the role the user has been given.
+* *Last Login*: Is the timestamp of when the user last logged in.
+* *Created on*: Once the user accepts the invitation this will give the timestamp of when they created the account.
++
+image::invitepending.png[width=500]
+
+=== Resend Invite or Delete User
+
+At the end of the row their will be two options.
+
+image::mail again or delete.png[]
+
+The image:sendinvite.png[width=50] icon will resend the invite, while the image:delete.png[width=50] icon will delete the user.
+
+[NOTE]
+====
+If the user has already accept the invite and created an account the delete icon will be the only one shown.
+====
+
+Click on the image:delete.png[width=50] and small window will appear asking to confirm the deletion.
+
+image::inviteuser-delete.png[]
+
+Select btn:[Cancel] or btn:[OK] to confirm.
+
+== Next Steps
+
+Next, learn about xref:cloud4:administration:how2-access-mgnt.adoc[]
+or continue on to learn about xref:cloud4:administration:security/index.adoc[] or additional xref:cloud4:resources:index.adoc[] in TigerGraph Cloud 4.
+
+Return to the xref:cloud4:overview:index.adoc[Overview] page for a different topic.

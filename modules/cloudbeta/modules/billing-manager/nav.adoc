@@ -1,9 +1,0 @@
-* xref:index.adoc[Billing]
-** xref:cloudBeta:billing-manager:payment-methods.adoc[]
-** xref:cloudBeta:billing-manager:invoices.adoc[]
-** xref:cloudBeta:billing-manager:pricing.adoc[]
-
-
-//** xref:cloudBeta:billing-manager:compute_price.adoc[]
-//** xref:cloudBeta:billing-manager:storage_price.adoc[]
-

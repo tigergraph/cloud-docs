@@ -16,6 +16,6 @@ image::full-cluster-actions-dropdown.png[]
 
 == Use GraphStudio
 
-To learn how to use GraphStudio, read our xref:gui:graphstudio:overview.adoc[GraphStudio UI Guide].
+To learn how to use the GraphStudio™ design interface, read our xref:gui:graphstudio:overview.adoc[GraphStudio™ UI Guide].
 
 

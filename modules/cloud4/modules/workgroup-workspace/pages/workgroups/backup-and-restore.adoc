@@ -1,0 +1,115 @@
+= Backup and Restore
+:experimental:
+
+Data protection and business continuity are critical considerations for any database system.
+A built-in backup and restore system, allows users to create backups of graph databases and restore them when needed.
+
+[TIP]
+====
+This ensures the safety and availability of your data, protecting against accidental data loss or system failures.
+====
+
+== Setup Backup Points
+Discover how to create backup points and restore your workspace to a specific point in time.
+
+[IMPORTANT]
+====
+Backup functionality is currently available only for xref:cloud4:workgroup-workspace:workspaces/readwrite-readonly.adoc#_read_write_rw_workspace[Read-Write (RW) workspaces].
+Make sure your workspace is in RW mode before attempting to perform a backup.
+====
+image::backuprestore1.png[]
+
+=== How to Create a Manual Backup
+In this section, you can find information on how to manually initiate a backup of your data.
+
+.To manually back up your data, follow these steps:
+
+. Click on image:backupButton.png[width=75,height=75] button to start manual backup.
+
+. Specify a backup tag for a manual backup.
++
+[TIP]
+Backup tag is used to identify your graph database backup.
++
+image::backuprestore2.png[width=250]
+
+. Click on image:backupbutton2.png[width=75] button to start the backup process.
+You can see the backup logs displayed in the window.
++
+image::backuprestore3.png[width=250]
+
+. Once the backup is completed, you will see the newly created backup in the backup list.
++
+image::backuprestore4.png[]
+
+[NOTE]
+====
+We have quotas for the number of backups that can be stored. Please make sure to manage your backups accordingly. For details about the backup quota, please refer to xref:cloud4:resources:quota_policy.adoc[Quata Policy].
+====
+
+=== How to Setup Scheduled Auto-Backup
+
+Schedule a recurring automatic backup for your data.
+
+[TIP]
+====
+Recurring backup jobs at specified intervals can help ensure regular data protection.
+====
+
+.To enable auto backup:
+. Simply toggle on the switch image:backupButton3.png[width=150].
+
+. You can specify the auto backup schedule using cron schedule.
+You can test out your Cron schedule in Crontab.
++
+image::backuprestore5.png[]
+
+. Click on btn:[ Save ] button to save the schedule.
+
+
+[NOTE]
+====
+We have quotas for the number of backups that can be stored. Please make sure to manage your backups accordingly. For details about the backup quota, please refer to xref:cloud4:resources:quota_policy.adoc[Quata Policy].
+====
+
+=== How to Restore a Backup
+To restore your backup to a workspace is a straightforward process.
+
+[IMPORTANT]
+Restoring is an offline operation. If there are any other operations in progress on the workspace, they will be affected.
+
+[TIP]
+====
+It is recommended to schedule the restore during a time when minimal or no operations are expected on the workspace to avoid any potential disruptions.
+====
+
+
+. Find the backup you wan to restore in the list.
++
+image:Screenshot 2024-04-17 at 5.38.09 PM.png[]
+
+. Click on the image:Screenshot 2024-04-17 at 5.38.52 PM.png[width=50] button to open the "Restore Drawer".
+
+. After reviewing the backup details, you can click on the btn:[ Restore ] button to proceed.
++
+[NOTE]
+====
+You will need to type in the backup name to confirm the restore.
+====
++
+image::Screenshot 2024-04-17 at 5.39.34 PM.png[]
+
+. After the restore is triggered, you can see the progress and detailed log in the window.
++
+image::Screenshot 2024-04-17 at 5.40.16 PM.png[]
+
+== Next Steps
+
+Next, learn more about how to xref:cloud4:workgroup-workspace:workspaces/connect-via-api.adoc[] a workspace, or xref:cloud4:workgroup-workspace:workgroups/monitor-workspaces.adoc[].
+
+Return to the xref:cloud4:workgroup-workspace:index.adoc[] page or xref:cloud4:overview:index.adoc[Overview] page for a different topic.
+
+
+
+
+

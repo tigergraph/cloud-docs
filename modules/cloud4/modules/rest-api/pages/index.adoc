@@ -1,0 +1,24 @@
+= REST API (Preview)
+:experimental:
+
+TigerGraph Cloud 4 REST API provides a set of endpoints that allow developers to interact programmatically with TigerGraph Cloud 4 services. Those APIs enable you to manage your graph databases and perform various administrative tasks.
+
+[IMPORTANT]
+====
+The TigerGraph Cloud 4 REST API is currently in preview version. Features and endpoints may change as the API evolves.
+====
+
+
+== xref:cloud4:rest-api:authentication.adoc[]
+
+Learn how to authenticate with the TigerGraph Cloud 4 REST API.
+
+
+== xref:cloud4:rest-api:endpoints.adoc[]
+
+Explore the REST API endpoints available in TigerGraph Cloud 4.
+
+== xref:cloud4:rest-api:definitions.adoc[]
+
+Explore the REST API data model definitions in TigerGraph Cloud 4.
+

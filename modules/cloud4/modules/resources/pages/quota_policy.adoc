@@ -1,0 +1,48 @@
+= TigerGraph Cloud 4 Subscription Plans and Quota Policy
+
+== Objective
+This document aims to provide customers with a clear understanding of the various subscription plans available, along with their associated resource allocations and limitations. It ensures customers can make informed decisions about their usage and upgrade options, enabling them to manage their resources and costs effectively while leveraging the full potential of TigerGraph Cloud.
+
+[IMPORTANT]
+This policy is subject to review and adjustment at the discretion of TigerGraph's management based on feedback from the user community and evolving business needs.
+
+== Subscription Plans
+TigerGraph Cloud offers four distinct subscription plans to cater to various customer needs:
+
+- **Free**
+- **Paid**
+- **Premium**
+- **Enterprise**
+
+== Policy Details
+The following table outlines the quotas and limits associated with each subscription plan:
+
+[cols="5", separator=| ]
+|===
+| **Subscription Plan**        | **Free**                         | **Paid**                         | **Premium**                      | **Enterprise**                                               
+| **Maximum Supported TGSize** | TG-4                             | TG-16                            | TG-32                            | TG-64 (Customizable)                           
+| **RW Workspace Quota (Per Account)** | 1                                | 2                                | 3                                | 4 (Customizable)                           
+| **RO Workspace Quota (Per Account)** | 2                                | 3                                | 5                                | 7 (Customizable)                           
+| **Maximum Memory Size (GiB)** | 768                              | 5,120                             | 16,384                            | 32,768 (Customizable)                           
+| **Manual Backup Quota (Per Read-Write Workspace)** | 1                                | 1                                | 3                                | 5 (Customizable)                           
+| **Auto Backup Quota (Per Read-Write Workspace)** | N/A                              | 3                                | 7                                | 7 (Customizable)                           
+| **Suspend Grace Period (Days)** | 0                                | 1                                | 3                                | 7                                      
+| **Terminate Grace Period (Days)** | 7                                | 7                                | 14                               | 28                                     
+| **Support**                  | Business hour email support      | Business hour email support      | Premium support                  | Dedicated account manager, 24/7 premium support 
+|===
+
+=== Explanation of Terms
+
+- **Monthly Usage Limit**: The maximum amount a customer can be charged for service usage within a month before additional actions are required.
+- **Maximum Supported TGSize**: The largest TigerGraph workpace size supported.
+- **RW Workspace Quota (Per Account)**: The number of Read-Write workspaces allowed per account.
+- **RO Workspace Quota (Per Account)**: The number of Read-Only workspaces allowed per account.
+- **Maximum Memory Size (GiB)**: The total memory allocation per subscription/orgnization.
+- **Manual Backup Quota (Per Read-Write Workspace)**: The number of manual backups allowed per Read-Write workspace.
+- **Auto Backup Quota (Per Read-Write Workspace)**: The number of automated backups allowed per Read-Write workspace.
+- **Suspend Grace Period (Days)**: The number of days a workspace can be suspended before termination.
+- **Terminate Grace Period (Days)**: The number of days before a suspended workspace is terminated.
+- **Support**: The type of customer support provided.
+
+[NOTE]
+Please contact us at sales@tigergraph.com if you have questions about the plan or need a custom plan.

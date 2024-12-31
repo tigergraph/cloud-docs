@@ -1,0 +1,17 @@
+site:
+  title: "Cloud Doc Test"
+  start_page: "cloud4:overview:index.adoc"
+
+content:
+  sources:
+    - url: .
+      branches: HEAD
+      start_paths: [modules/cloud4, modules/cloud]
+
+output:
+  dir: ./build/site
+
+ui:
+  bundle:
+    url: https://github.com/tigergraph/antora-ui/blob/main/build/ui-bundle.zip?raw=true
+    snapshot: true

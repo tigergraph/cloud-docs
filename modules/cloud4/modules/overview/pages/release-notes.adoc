@@ -10,6 +10,27 @@ TigerGraph Cloud 4 beta is for personal or R&D use and not for production use.
 Please see xref:cloud4:resources:terms_conditions.adoc[].
 ====
 
+== Dec 2024
+=== 2024-12-31
+==== Workspace Enhancements
+
+* xref:cloud4:workgroup-workspace:workspaces/schedule.adoc[Scheduled Workspace Expansion and Shrink]: Schedule workspace expansion and shrink operations to align with your usage patterns and optimize resource allocation.
+* Support HA with Cross-Zone Resiliency: Ensure business continuity and minimize downtime with the introduction of cross-zone high availability support, allowing you to deploy and manage resilient graph database clusters across multiple availability zones for enhanced fault tolerance and disaster recovery capabilities.
+
+==== Observability Enhancements
+
+* xref:cloud4:workgroup-workspace:workspaces/settings.adoc#_alerts_[Alerting] System: Stay informed about critical events and performance anomalies through the new alerting system, enabling proactive management of your graph database workspaces.
+
+==== Stability Enhancements
+
+* Improved stability and performance.
+
+==== Other Enhancements
+
+* Bug fixes.
+
+
+
 == Oct 2024
 === 2024-10-15
 

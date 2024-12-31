@@ -10,6 +10,10 @@ TigerGraph Cloud 4 beta is for personal or R&D use and not for production use.
 Please see xref:cloud4:resources:terms_conditions.adoc[].
 ====
 
+== Dec 2024
+=== 2024-12-31
+
+
 == Oct 2024
 === 2024-10-15
 

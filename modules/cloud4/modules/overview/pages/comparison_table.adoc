@@ -5,6 +5,7 @@ Here are some differences between the different TigerGraph offerings.
 
 |===
 | Category | Topic | TigerGraph Enterprise Server | TigerGraph Cloud Classic | TigerGraph Cloud 4 Beta
+
 .7+| Architecture and Deployment
 | Architecture | Integrated storage and compute | Integrated storage and compute | Separate storage and compute
 | Hardware and Software Requirements | Yes | N/A | N/A

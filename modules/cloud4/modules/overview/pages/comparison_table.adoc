@@ -11,29 +11,29 @@ Here are some differences between the different TigerGraph offerings.
 | Hardware and Software Requirements | Yes | N/A | N/A
 | Installation and Configuration | Yes | There are a few simple steps to install a Starter Kit, See the xref:cloud:support:faqs.adoc[] | Users can install solutions at any time
 | Kubernetes Support | Yes, custom setup required | No | Yes, built-in support
-| Amazon Web Service (AWS) | Yes, TigerGraph Lite on marketplace or custom deployment  | Yes | Yes
-| Google Cloud Platform (GCP) | Yes, TigerGraph Lite on marketplace or custom deployment  | Yes | No, we are actively working on it
+| Amazon Web Service (AWS) | Yes, TigerGraph Lite on marketplace or custom deployment | Yes | Yes
+| Google Cloud Platform (GCP) | Yes, TigerGraph Lite on marketplace or custom deployment | Yes | No, we are actively working on it
 | Microsoft Azure | Yes, TigerGraph Lite on marketplace or custom deployment | Yes | No, we are actively working on it
 
-.13+| Features and Capabilities 
-| Release Notes| Yes| TigerGraph Cloud provides database versions kept up to date with TigerGraph Server 3.x releases | TigerGraph Cloud 4 provides the latest TigerGraph Server 4.x
-| GSQL Graph Algorithm Library | Yes| Yes| Yes
+.13+| Features and Capabilities
+| Release Notes | Yes | TigerGraph Cloud provides database versions kept up to date with TigerGraph Server 3.x releases | TigerGraph Cloud 4 provides the latest TigerGraph Server 4.x
+| GSQL Graph Algorithm Library | Yes | Yes | Yes
 | Transaction Processing and ACID Support | Yes | Yes | Yes
 | GSQL 101 | Yes | Basic concepts still apply, most CREATE, INSTALL, LOAD, and RUN commands are replaced with the GraphStudio GUI-based approach | Fully supported using GSQL Editor
 | GSQL 102 Pattern Matching | Yes | The same patterns can be used in queries | The same patterns can be used in queries
 | MultiGraph Overview | Yes | Yes | Yes
-| GraphStudio™ | Yes | Yes | Yes, add-on 
+| GraphStudio™ | Yes | Yes | Yes, add-on
 | GSQL Demo Examples | Yes | Yes | Yes
-| GSQL Language Reference, Part 1 Data Definition and Loading | Yes| Yes. GSQL Web Shell (Paid Tiers) supports Data Definition and Loading. Data files can be imported into the filesystem through GraphStudio™, or submit support request to import into the filesystem. In addition, the operations can be performed through GraphStudio™ | Yes, Load Data UI
+| GSQL Language Reference, Part 1 Data Definition and Loading | Yes | Yes. GSQL Web Shell (Paid Tiers) supports Data Definition and Loading. Data files can be imported into the filesystem through GraphStudio™, or submit support request to import into the filesystem. In addition, the operations can be performed through GraphStudio™ | Yes, Load Data UI
 | GSQL Language Reference, Part 2 Querying | Yes | Yes | Yes, GSQL Editor
-| RESTPP API User Guide | Yes | Yes. Note the URL assigned to your cluster. | Yes, Connect From APIs option on all workspaces.
-| Data Loader User Guides | Yes | S3 Loader can be used through the GraphStudio™ interface. In addition, S3 Loader and Kafka Loader can be used in GSQL Web Shell (Paid Tiers). | Yes. Step-by-step guide to load local/S3/GCS/ABS files. Provide a GSQL template for all other connectors.
+| RESTPP API User Guide | Yes | Yes. Note the URL assigned to your cluster. | Yes, Connect From APIs option on all workspaces
+| Data Loader User Guides | Yes | S3 Loader can be used through the GraphStudio™ interface. In addition, S3 Loader and Kafka Loader can be used in GSQL Web Shell (Paid Tiers). | Yes. Step-by-step guide to load local/S3/GCS/ABS files. Provide a GSQL template for all other connectors
 | Schema Designer | Yes, GraphStudio™ | Yes, GraphStudio™ | Yes, Cloud Portal & GraphStudio™
 
 .5+| Security and Management
 | User Access Management | Yes | Yes | Yes
 | Data Encryption | Yes | TigerGraph Cloud is set up already for encrypted data at rest and at motion | TigerGraph Cloud is set up already for encrypted data at rest and at motion
-| System Management | Yes | The Cloud Portal is enhanced over the TigerGraph Server Admin Portal.  Backup and Restore is done through the Cloud Portal. | The Cloud Portal is enhanced over the TigerGraph Server Admin Portal. Backup and Restore is done through the Cloud Portal.
+| System Management | Yes | The Cloud Portal is enhanced over the TigerGraph Server Admin Portal. Backup and Restore is done through the Cloud Portal | The Cloud Portal is enhanced over the TigerGraph Server Admin Portal. Backup and Restore is done through the Cloud Portal
 | HA and DR | Yes | Yes | Yes
 | Monitoring | Yes, requires custom setup using Informant APIs | TigerGraph Server Admin Portal | Built-in Grafana dashboard & TigerGraph Server Admin Portal
 | Alerting | Yes, requires custom setup | No | Yes

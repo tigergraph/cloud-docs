@@ -5,7 +5,7 @@ Here are some differences between the different TigerGraph offerings.
 
 == Architecture and Deployment
 
-[cols="4", separator=|]
+[cols="4", separator=|,options="header"]
 |===
 | Topic | TigerGraph Enterprise Server | TigerGraph Cloud Classic | TigerGraph Cloud 4 Beta
 | Architecture | Integrated storage and compute | Integrated storage and compute | Separate storage and compute
@@ -19,7 +19,7 @@ Here are some differences between the different TigerGraph offerings.
 
 == Features and Capabilities
 
-[cols="4", separator=|]
+[cols="4", separator=|,options="header"]
 |===
 | Topic | TigerGraph Enterprise Server | TigerGraph Cloud Classic | TigerGraph Cloud 4 Beta
 | Release Notes | Yes | Kept up to date with 3.x releases | Latest 4.x releases
@@ -39,7 +39,7 @@ Here are some differences between the different TigerGraph offerings.
 
 == Security and Management
 
-[cols="4", separator=|]
+[cols="4", separator=|,options="header"]
 |===
 | Topic | TigerGraph Enterprise Server | TigerGraph Cloud Classic | TigerGraph Cloud 4 Beta
 | User Access Management | Yes | Yes | Yes

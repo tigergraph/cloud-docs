@@ -1,4 +1,4 @@
-* xref:index.adoc[Graph Management]
+* xref:index.adoc[Graph Development]
 ** xref:load-data/index.adoc[Load Data]
 *** xref:load-data/load-from-local.adoc[]
 *** xref:load-data/load-from-s3.adoc[Load from AWS S3]

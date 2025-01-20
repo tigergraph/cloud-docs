@@ -1,7 +1,7 @@
 = Add-Ons
 
 
-Extend the capabilities of TigerGraph Cloud 4 with add-ons tailored to your needs.
+Extend the capabilities of TigerGraph Savanna with add-ons tailored to your needs.
 Add-ons provide additional functionalities and integrations that enhance your graph database workflow.
 Whether you need advanced analytics, machine learning integration, or data visualization tools, TigerGraph Cloud offers a range of add-ons to choose from.
 

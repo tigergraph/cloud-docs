@@ -1,7 +1,7 @@
 = Load from Azure Blob Storage
 :experimental:
 
-TigerGraph Cloud 4 allows you to load data directly from Azure Blob Storage. This guide will walk you through the steps to configure and load data from Azure Blob Storage into your TigerGraph workspace.
+TigerGraph Savanna allows you to load data directly from Azure Blob Storage. This guide will walk you through the steps to configure and load data from Azure Blob Storage into your TigerGraph workspace.
 
 == 1) Select Source
 
@@ -105,7 +105,7 @@ image::Screenshot 2024-04-17 at 5.59.16 PM.png[]
 
 == Next Steps
 
-Next, learn how to use xref:cloud4:graph-development:design-schema/index.adoc[Design Schema], xref:cloud4:graph-development:gsql-editor/index.adoc[GSQL Editor] and xref:cloud4:graph-development:explore-graph/index.adoc[Explore Graph] in TigerGraph Cloud 4.
+Next, learn how to use xref:cloud4:graph-development:design-schema/index.adoc[Design Schema], xref:cloud4:graph-development:gsql-editor/index.adoc[GSQL Editor] and xref:cloud4:graph-development:explore-graph/index.adoc[Explore Graph] in TigerGraph Savanna.
 
 Or return to the xref:cloud4:overview:index.adoc[Overview] page for a different topic.
 

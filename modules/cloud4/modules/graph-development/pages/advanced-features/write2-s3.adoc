@@ -9,13 +9,13 @@ This documentation have been updated to include all three methods for writing da
 
 Before you begin, ensure you have the following:
 
-* An active TigerGraph Cloud 4 workspace.
+* An active TigerGraph Savanna workspace.
 * An AWS account with access to S3.
 * Appropriate IAM permissions to write to the S3 bucket.
 
 == Methods to Export Data to S3
 
-There are three main methods to write data to S3 from TigerGraph Cloud 4:
+There are three main methods to write data to S3 from TigerGraph Savanna:
 
 1. Using GSQL Editor
 2. Via API
@@ -23,9 +23,9 @@ There are three main methods to write data to S3 from TigerGraph Cloud 4:
 
 === Method 1: Using GSQL Editor
 
-1) Set up the TigerGraph Cloud 4 workspace and ensure it is running.
+1) Set up the TigerGraph Savanna workspace and ensure it is running.
 
-2) Open the xref:cloud4:graph-development:gsql-editor/index.adoc[GSQL Editor] in TigerGraph Cloud 4.
+2) Open the xref:cloud4:graph-development:gsql-editor/index.adoc[GSQL Editor] in TigerGraph Savanna.
 
 3) **Configure AWS Credentials**:
 
@@ -54,7 +54,7 @@ Replace `<AWS_KEY_ID>`, `<AWS_ACCESS_KEY>`, and `<s3_path>` with your actual AWS
 
 === Method 2: Via API
 
-1) Set up the TigerGraph Cloud 4 workspace and ensure it is running.
+1) Set up the TigerGraph Savanna workspace and ensure it is running.
 
 2) **Send a GET Request**:
 
@@ -68,11 +68,11 @@ curl -X GET \
 https://$HOST_ID.i.tgcloud.io/query/$GRAPH_NAME/$QUERY_NAME
 ```
 
-Replace `$AWS_KEY_ID` and `$AWS_ACCESS_KEY` with your actual AWS credentials, `$HOST_ID` with your TigerGraph Cloud 4 host ID, `$GRAPH_NAME` with your graph name, and `$QUERY_NAME` with your query name.
+Replace `$AWS_KEY_ID` and `$AWS_ACCESS_KEY` with your actual AWS credentials, `$HOST_ID` with your TigerGraph Savanna host ID, `$GRAPH_NAME` with your graph name, and `$QUERY_NAME` with your query name.
 
 === Method 3: Using Graph Admin
 
-1) Set up the TigerGraph Cloud 4 workspace and ensure it is running.
+1) Set up the TigerGraph Savanna workspace and ensure it is running.
 
 2) Edit the workspace by clicking the btn:[...] button of your selected workspace.
 

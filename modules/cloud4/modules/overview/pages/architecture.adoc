@@ -1,15 +1,15 @@
-= TigerGraph Cloud 4 Architecture
+= TigerGraph Savanna Architecture
 :experimental:
 :toc:
 :toclevels:2
 
-Welcome to the TigerGraph Cloud 4 Architecture documentation. This guide provides an in-depth look at the architecture of TigerGraph Cloud 4, detailing its components, design principles, and how it ensures performance, scalability, and reliability for your graph database applications.
+Welcome to the TigerGraph Savanna Architecture documentation. This guide provides an in-depth look at the architecture of TigerGraph Savanna, detailing its components, design principles, and how it ensures performance, scalability, and reliability for your graph database applications.
 
 
 
 == Overview
 
-These key features of TigerGraph Cloud 4 collectively provide a powerful and user-friendly environment for organizations to perform advanced graph analytics, gain valuable insights from interconnected data, and drive data-driven decision-making and innovation.
+These key features of TigerGraph Savanna collectively provide a powerful and user-friendly environment for organizations to perform advanced graph analytics, gain valuable insights from interconnected data, and drive data-driven decision-making and innovation.
 
 === Separation of Storage and Compute
 We introduce a unique architecture that separates storage and compute, allowing users to scale resources independently.
@@ -35,12 +35,12 @@ Designed with user convenience in mind, the GSQL Editor offers a user-friendly i
 With syntax highlighting, code completion, query execution, and debugging capabilities, users can easily develop and fine tune their graph queries. Additionally, the GSQL Editor enables seamless collaboration within organizations by allowing users to share GSQL files, fostering teamwork and facilitating efficient collaboration among colleagues.
 
 === Graph Explorer
-TigerGraph Cloud 4 features a Graph Explorer, a visual interface that allows users to interactively explore and analyze the graph data.
+TigerGraph Savanna features a Graph Explorer, a visual interface that allows users to interactively explore and analyze the graph data.
 The Graph Explorer provides a rich set of visualization tools, including graph visualizations, charts, and tables, enabling users to gain insights and discover patterns in their data.
 It offers intuitive navigation, filtering, and querying capabilities, making it easier for users to explore and understand the relationships and connections within their graph data.
 
 === Auto Data Profiles
-TigerGraph Cloud 4 incorporates auto data profile capabilities that automatically find data insights for users without prior knowledge of their schema and query.
+TigerGraph Savanna incorporates auto data profile capabilities that automatically find data insights for users without prior knowledge of their schema and query.
 This feature leverages advanced algorithms and machine learning techniques to analyze the graph data and identify meaningful patterns, relationships, and insights.
 It helps users discover valuable information within their data even if they are not familiar with the underlying data structure or query language.
 
@@ -49,4 +49,4 @@ It helps users discover valuable information within their data even if they are 
 
 Next, to understand how TigerGraph cloud differs from other TigerGraph offerings, see xref:overview:comparison_table.adoc[] or see xref:cloud4:get-started:index.adoc[] to unlock its full potential.
 
-Return to xref:cloud4:overview:index.adoc[TigerGraph Cloud 4] for another topic.
+Return to xref:cloud4:overview:index.adoc[TigerGraph Savanna] for another topic.

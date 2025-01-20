@@ -1,7 +1,7 @@
 = Solutions
 :experimental:
 
-TigerGraph Cloud 4 offers pre-built solution kits that address common use cases and industry-specific challenges.
+TigerGraph Savanna offers pre-built solution kits that address common use cases and industry-specific challenges.
 These solutions provide a starting point for your graph database projects, offering pre-configured schemas, sample data, and query templates.
 
 [TIP]
@@ -78,7 +78,7 @@ image::Screenshot 2024-04-18 at 10.19.26 AM.png[]
 
 == Next Steps
 
-Now, learn about additional add-ons on the xref:integrations:index.adoc[] page or continue on to learn more about xref:cloud4:administration:security/index.adoc[] in TigerGraph Cloud 4.
+Now, learn about additional add-ons on the xref:integrations:index.adoc[] page or continue on to learn more about xref:cloud4:administration:security/index.adoc[] in TigerGraph Savanna.
 
 Or return to the  page to xref:cloud4:overview:index.adoc[Overview] page for a different topic.
 

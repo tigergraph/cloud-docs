@@ -2,7 +2,7 @@
 :experimental:
 
 To learn more about workgroups see xref:cloud4:workgroup-workspace:workgroups/workgroup.adoc[].
-To create a workgroup in TigerGraph Cloud 4, follow the steps below.
+To create a workgroup in TigerGraph Savanna, follow the steps below.
 
 == Create a Workgroup
 
@@ -33,7 +33,7 @@ image::create-workgroup.png[width=1500]
 +
 [NOTE]
 ====
-TigerGraph Cloud 4 currently only operates on xref:cloud4:resources:aws.adoc[]. We are actively working on expanding to xref:cloud4:resources:gcp.adoc[] and xref:cloud4:resources:azure.adoc[]. Visit each platform's reference page to learn more about the available regions.
+TigerGraph Savanna currently only operates on xref:cloud4:resources:aws.adoc[]. We are actively working on expanding to xref:cloud4:resources:gcp.adoc[] and xref:cloud4:resources:azure.adoc[]. Visit each platform's reference page to learn more about the available regions.
 ====
 
 . Finally, click on the btn:[Next] button to create the workgroup.

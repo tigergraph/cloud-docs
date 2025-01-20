@@ -2,7 +2,7 @@
 :experimental:
 
 Monitoring the performance and health of your workspaces is essential for efficient operations.
-TigerGraph Cloud 4 offers comprehensive monitoring capabilities that allow you to track the status and resource usage of your workspaces.
+TigerGraph Savanna offers comprehensive monitoring capabilities that allow you to track the status and resource usage of your workspaces.
 You can monitor metrics such as CPU utilization, memory usage, and storage consumption, enabling you to optimize performance, identify bottlenecks, and ensure the smooth operation of TigerGraph databases using a Grafana dashboard.
 
 == How to Start Monitoring
@@ -23,7 +23,7 @@ image::workspace-monitor-tab.png[]
 
 == Next Steps
 
-Next, Learn how to xref:graph-development:load-data/index.adoc[Load Data] into TigerGraph Cloud 4.
+Next, Learn how to xref:graph-development:load-data/index.adoc[Load Data] into TigerGraph Savanna.
 
 Return to the xref:cloud4:workgroup-workspace:index.adoc[] page or xref:cloud4:overview:index.adoc[Overview] page for a different topic.
 

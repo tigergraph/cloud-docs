@@ -5,7 +5,7 @@ As an organization administrator, you have access to organization management fea
 
 [IMPORTANT]
 ====
-The TigerGraph Cloud 4 REST API is currently in preview version. Features and endpoints may change as the API evolves.
+The TigerGraph Savanna REST API is currently in preview version. Features and endpoints may change as the API evolves.
 ====
 
 == Overview
@@ -41,7 +41,7 @@ Treat your API key like a password. Do not share it or expose it in your code or
 
 == Next Steps
 
-Next, continue on to learn about xref:cloud4:rest-api:authentication.adoc[] or xref:cloud4:rest-api:endpoints.adoc[] in TigerGraph Cloud 4.
+Next, continue on to learn about xref:cloud4:rest-api:authentication.adoc[] or xref:cloud4:rest-api:endpoints.adoc[] in TigerGraph Savanna.
 
 Return to the xref:cloud4:overview:index.adoc[Overview] page for a different topic.
 

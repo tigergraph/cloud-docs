@@ -1,9 +1,9 @@
-= TigerGraph Cloud 4 FAQs
+= TigerGraph Savanna FAQs
 :experimental:
 :pp: {plus}{plus}
 
 //
-*Feedback for TigerGraph Cloud 4 is welcome at* tgcloud-feedback@tigergraph.com
+*Feedback for TigerGraph Savanna is welcome at* tgcloud-feedback@tigergraph.com
 
 == Top FAQs
 
@@ -22,28 +22,28 @@ A: If you clicked "forgot password" during sign in to Cloud and never received a
 
 If you're still unable to log in or reset your password, contact TigerGraph Support at support@tigergraph.com for individualized help with your issue.
 
-=== *Q:  How does TigerGraph Cloud 4 compare with other DBaaS offerings?*
+=== *Q:  How does TigerGraph Savanna compare with other DBaaS offerings?*
 
-A: TigerGraph Cloud 4 offers unique advantages such as a graph-native architecture, high performance for complex queries, and features like separation of storage and compute, which are optimized for graph analytics.
-TigerGraph Cloud 4 stands out among Database-as-a-Service (DBaaS) offerings due to its unique features and capabilities tailored specifically for graph analytics. Here are some key aspects where TigerGraph Cloud 4 excels:
+A: TigerGraph Savanna offers unique advantages such as a graph-native architecture, high performance for complex queries, and features like separation of storage and compute, which are optimized for graph analytics.
+TigerGraph Savanna stands out among Database-as-a-Service (DBaaS) offerings due to its unique features and capabilities tailored specifically for graph analytics. Here are some key aspects where TigerGraph Savanna excels:
 
-* Graph-Native Architecture: Unlike traditional DBaaS offerings that are built on relational or NoSQL databases, TigerGraph Cloud 4 is designed from the ground up for graph analytics. This ensures high performance and efficiency for complex graph queries.
-* Real-Time Analytics: TigerGraph Cloud 4 supports real-time graph analytics, allowing you to derive insights from your data as it changes.
-* Solution Kits Support: TigerGraph Cloud 4 offers a variety of solution kits tailored for specific use cases such as fraud detection, recommendation engines, and supply chain optimization. These kits come with pre-configured schemas, data, and queries to help you get started quickly.
+* Graph-Native Architecture: Unlike traditional DBaaS offerings that are built on relational or NoSQL databases, TigerGraph Savanna is designed from the ground up for graph analytics. This ensures high performance and efficiency for complex graph queries.
+* Real-Time Analytics: TigerGraph Savanna supports real-time graph analytics, allowing you to derive insights from your data as it changes.
+* Solution Kits Support: TigerGraph Savanna offers a variety of solution kits tailored for specific use cases such as fraud detection, recommendation engines, and supply chain optimization. These kits come with pre-configured schemas, data, and queries to help you get started quickly.
 * Add-Ons and Features
 ** GraphStudio™: An intuitive visual interface for designing, querying, and exploring your graph data. GraphStudio™ simplifies the process of building and managing your graph database.
 ** Insights: Advanced analytics tools that provide deeper insights into your graph data. Insights help you visualize patterns, trends, and anomalies within your data.
 * Monitoring and Alerting
-** Built-In Monitoring Tools: TigerGraph Cloud 4 includes comprehensive monitoring tools that provide real-time insights into the performance, usage, and health of your graph database.
+** Built-In Monitoring Tools: TigerGraph Savanna includes comprehensive monitoring tools that provide real-time insights into the performance, usage, and health of your graph database.
 ** Alerting: Set up custom alerts to notify you of important events such as performance degradation, resource utilization thresholds, and system errors.
 * Expansion and Shrink
-** Scalability: Easily scale your TigerGraph Cloud 4 instances up or down based on your workload requirements. This includes adding or removing nodes and adjusting disk sizes.
-** Elasticity: TigerGraph Cloud 4 supports schduled scaling, allowing you to automatically adjust resources by pre-defined schdule.
+** Scalability: Easily scale your TigerGraph Savanna instances up or down based on your workload requirements. This includes adding or removing nodes and adjusting disk sizes.
+** Elasticity: TigerGraph Savanna supports schduled scaling, allowing you to automatically adjust resources by pre-defined schdule.
 * User Management
 ** Role-Based Access Control (RBAC): Manage user permissions and access with fine-grained control. Assign roles to users based on their responsibilities and ensure secure access to your graph database.
-** Single Sign-On (SSO) Integration: Integrate TigerGraph Cloud 4 with your existing SSO system for streamlined user authentication and management.
+** Single Sign-On (SSO) Integration: Integrate TigerGraph Savanna with your existing SSO system for streamlined user authentication and management.
 * Read-Write and Read-Only Workspaces
-** Workspace Management: Create and manage multiple workspaces within a single TigerGraph Cloud 4 account. Assign read-write or read-only permissions to users based on their roles.
+** Workspace Management: Create and manage multiple workspaces within a single TigerGraph Savanna account. Assign read-write or read-only permissions to users based on their roles.
 ** Isolation: Ensure data isolation and security by managing access at the workspace level.
 * Additional Features
 ** Automated Backups: Schedule automated backups to ensure data protection and recovery.
@@ -52,25 +52,25 @@ TigerGraph Cloud 4 stands out among Database-as-a-Service (DBaaS) offerings due 
 ** Integration with Cloud Storage: Import and export data using popular cloud storage solutions like Amazon S3, Azure Blob Storage, and Google Cloud Storage.
 ** RESTful API: Access and interact with your graph database using a comprehensive RESTful API.
 * Competitive Edge
-** Performance: TigerGraph Cloud 4 is optimized for high performance, handling complex queries and large datasets efficiently.
+** Performance: TigerGraph Savanna is optimized for high performance, handling complex queries and large datasets efficiently.
 ** Flexibility: Support for various deployment options.
 ** Community and Support: Access to a vibrant community of users and dedicated support from TigerGraph experts.
 
-In summary, TigerGraph Cloud 4 offers a robust, scalable, and high-performance graph database solution with a wide range of features and tools that set it apart from other DBaaS offerings. Whether you are looking for advanced analytics, ease of use, or scalability, TigerGraph Cloud provides the capabilities you need to succeed.
+In summary, TigerGraph Savanna offers a robust, scalable, and high-performance graph database solution with a wide range of features and tools that set it apart from other DBaaS offerings. Whether you are looking for advanced analytics, ease of use, or scalability, TigerGraph Cloud provides the capabilities you need to succeed.
 
 [#q-are-there-free-tier-instances-or-free-credits-for-the-system]
 === *Q: Are there Free Tier Instances or Free Credits for the System?*
 
-A: There are free credits but no free instances at TigerGraph Cloud 4. You can complete the onboarding tasks to get free credits to get started without paying anything.
+A: There are free credits but no free instances at TigerGraph Savanna. You can complete the onboarding tasks to get free credits to get started without paying anything.
 
 
-=== *Q: In what cloud platforms and regions does TigerGraph Cloud 4 operate?*
+=== *Q: In what cloud platforms and regions does TigerGraph Savanna operate?*
 
-A: TigerGraph Cloud 4 currently only operates on xref:cloud4:resources:aws.adoc[]. We are actively working on expanding to xref:cloud4:resources:gcp.adoc[] and xref:cloud4:resources:azure.adoc[]. Visit each platform's reference page to learn more about the available regions.
+A: TigerGraph Savanna currently only operates on xref:cloud4:resources:aws.adoc[]. We are actively working on expanding to xref:cloud4:resources:gcp.adoc[] and xref:cloud4:resources:azure.adoc[]. Visit each platform's reference page to learn more about the available regions.
 
-=== *Q: Can I choose different versions of TigerGraph on TigerGraph Cloud 4?*
+=== *Q: Can I choose different versions of TigerGraph on TigerGraph Savanna?*
 
-A: Yes, TigerGraph Cloud 4 allows you to choose from different versions of TigerGraph during the workspace setup process.
+A: Yes, TigerGraph Savanna allows you to choose from different versions of TigerGraph during the workspace setup process.
 For security and stability reasons, only some legacy versions are available.
 There is no difference in cost for using different versions of TigerGraph.
 
@@ -85,9 +85,9 @@ A: The type of server you need depends on your data size and workload requiremen
 
 === *Q: What kind of services do I get?*
 
-A: TigerGraph Cloud 4 includes automatic scheduled backup, built-in encryption and other security features, patching, replication and distributed database option.  In addition, you can now provision a distributed database as well as a replica cluster for high availability.
+A: TigerGraph Savanna includes automatic scheduled backup, built-in encryption and other security features, patching, replication and distributed database option.  In addition, you can now provision a distributed database as well as a replica cluster for high availability.
 As a cloud service, many of the administrative and operational tasks - for monitoring, restoring, upgrading, for example - are just a click away.
-In addition to operations and management for your TigerGraph databases, TigerGraph Cloud 4 also offers Solution Kits to provide instant experience to various graph analytics use cases.
+In addition to operations and management for your TigerGraph databases, TigerGraph Savanna also offers Solution Kits to provide instant experience to various graph analytics use cases.
 The list of Solution Kits can be found here: link:https://www.tigergraph.com/solutions/[TigerGraph Cloud Solutions]
 
 [#q-is-there-a-quota-for-the-number-of-workspaces-i-can-create-in-a-single-account]
@@ -113,20 +113,20 @@ See TigerGraph's xref:cloud4:workgroup-workspace:workgroups/monitor-workspaces.a
 
 === *Q:  Is TigerGraph Cloud cloud-agnostic?*
 
-A: While TigerGraph Cloud 4 currently operates on xref:cloud4:resources:aws.adoc[] only, we are actively developing support for xref:cloud4:resources:gcp.adoc[] and xref:cloud4:resources:azure.adoc[]. It is not entirely cloud-agnostic as it leverages specific services and integrations from these cloud providers. If you require immediate assistance managing TigerGraph on another cloud provider, please contact link:mailto:sales@tigergraph.com[sales@tigergraph.com].
+A: While TigerGraph Savanna currently operates on xref:cloud4:resources:aws.adoc[] only, we are actively developing support for xref:cloud4:resources:gcp.adoc[] and xref:cloud4:resources:azure.adoc[]. It is not entirely cloud-agnostic as it leverages specific services and integrations from these cloud providers. If you require immediate assistance managing TigerGraph on another cloud provider, please contact link:mailto:sales@tigergraph.com[sales@tigergraph.com].
 
 
 === *Q:  Is the support for TigerGraph Cloud the same as the support for TigerGraph Enterprise?*
 
-A: Yes, TigerGraph supports TigerGraph cloud 4 users using paid/premium/enterprise tiers. See the Support Policy terms at link:https://www.tigergraph.com/support-policy/[www.tigergraph.com/support-policy].
+A: Yes, TigerGraph supports TigerGraph Savanna users using paid/premium/enterprise tiers. See the Support Policy terms at link:https://www.tigergraph.com/support-policy/[www.tigergraph.com/support-policy].
 Support is not included for free tier users; therefore, support tickets for free tier users are answered when support staff bandwidth allows.
 See Section 1.4 in link:https://www.tigergraph.com/tigergraph-cloud-subscription-terms/[www.tigergraph.com/tigergraph-cloud-subscription-terms].
 For additional developer resources for free tier users, join the TigerGraph developer community at link:https://community.tigergraph.com[community.tigergraph.com].
 
 
-=== *Q: What is the user interface for the TigerGraph Cloud 4?*
+=== *Q: What is the user interface for the TigerGraph Savanna?*
 
-A: The TigerGraph Cloud 4 portal provides a browser-based interface that makes it easy to manage, monitor, and operate your graph database. Through this portal, you can load data, design schemas, write queries, and explore your graph. Additionally, you have access to a suite of add-ons, including the TigerGraph xref:gui:graphstudio:overview.adoc[GraphStudio™ UI (User Interface)] and  TigerGraph xref:insights:intro:index.adoc[Insights].
+A: The TigerGraph Savanna portal provides a browser-based interface that makes it easy to manage, monitor, and operate your graph database. Through this portal, you can load data, design schemas, write queries, and explore your graph. Additionally, you have access to a suite of add-ons, including the TigerGraph xref:gui:graphstudio:overview.adoc[GraphStudio™ UI (User Interface)] and  TigerGraph xref:insights:intro:index.adoc[Insights].
 
 === *Q: What graph query language does TigerGraph support?*
 
@@ -154,14 +154,14 @@ A: Please see https://info.tigergraph.com/graph-gurus-24[Graph Gurus episode 24]
 
 === *Q: Can I upgrade from V2.x, V3.x to V4.x?*
 
-A: TigerGraph Cloud 4 only support TigerGraph database version 4.0.0 and above. If you are using an older version, you can migrate your data to a new workspace with the latest version. Please submit a support ticket from your cloud portal for more information.
+A: TigerGraph Savanna only support TigerGraph database version 4.0.0 and above. If you are using an older version, you can migrate your data to a new workspace with the latest version. Please submit a support ticket from your cloud portal for more information.
 
 == Pricing
 
 See xref:cloud4:overview:pricing.adoc[Pricing] for detailed information.
 
 === *Q: What billing models are available?*
-A: TigerGraph Cloud 4 offers different billing models and pricing options to accommodate various usage scenarios and customer needs. The available billing models include:
+A: TigerGraph Savanna offers different billing models and pricing options to accommodate various usage scenarios and customer needs. The available billing models include:
 
 * Pay-as-you-go: This model allows you to pay for the resources you consume on an hourly basis. You are charged based on the number and type of workspaces you use, the storage capacity you require, and the additional services you purchased. Pay-as-you-go provides flexibility as you can scale resources up or down based on your usage patterns.
 * Prepaid: The prepaid model allows you to purchase credits in advance, which can be used to cover the costs of your TigerGraph Cloud usage. With prepaid credits, you have the advantage of predictable costs and the ability to allocate resources as needed within the prepaid budget. Please contact sales@tigergraph.com for more information on prepaid credits.
@@ -224,7 +224,7 @@ For additional assistance, you can submit a support ticket through the TigerGrap
 
 === *Q: How do I expand the disk size?*
 
-There is no need to expand the disk size on TigerGraph Cloud 4, since the graph data is stored separately from the instance. You can scale up your instance to a larger size if you need more RAM or CPU power.
+There is no need to expand the disk size on TigerGraph Savanna, since the graph data is stored separately from the instance. You can scale up your instance to a larger size if you need more RAM or CPU power.
 
 
 === *Q: Can I migrate my database to a larger (or smaller) workpace?*
@@ -233,7 +233,7 @@ A: Yes, you can just expand or shrink your existing workspace. To do this, simpl
 
 === *Q: Can I deploy a distributed TigerGraph database across a cluster of instances?*
 
-A: Yes, you can provision a distributed database in TigerGraph Cloud 4. Please refer to the xref:cloud4:workgroup-workspace:workspaces/workspace-size.adoc[] documentation for more information.
+A: Yes, you can provision a distributed database in TigerGraph Savanna. Please refer to the xref:cloud4:workgroup-workspace:workspaces/workspace-size.adoc[] documentation for more information.
 
 == Hardware
 
@@ -247,7 +247,7 @@ Graph Data Storage: The graph data is stored in EFS (Elastic File System) and S3
 
 === *Q: What browsers are supported?*
 
-A: As of Oct 2024, TigerGraph Cloud 4 is certified on the following browsers:
+A: As of Oct 2024, TigerGraph Savanna is certified on the following browsers:
 
 |===
 |Chrome |Safari |Firefox |Edge
@@ -269,15 +269,15 @@ Please make sure to enable JavaScript and cookies in your browser settings.
 
 === *Q: What is a workgroup, workspace, database?*
 
-A: In TigerGraph Cloud 4, the concepts of workgroup, workspace, and database are used to organize and manage projects and data within the platform. Here's a breakdown of each term:
+A: In TigerGraph Savanna, the concepts of workgroup, workspace, and database are used to organize and manage projects and data within the platform. Here's a breakdown of each term:
 
 * Workgroup: A workgroup represents a project or a logical group within TigerGraph Cloud. It serves as a container that holds multiple workspaces and databases related to a specific use case, team, or application. Workgroups provide a way to organize and manage resources, access controls, and configurations for a particular project or initiative.
-* Workspace: A workspace is a compute unit within a TigerGraph database. It is where the graph processing and analytics take place. TigerGraph Cloud 4 supports two types of workspaces: read-write workspaces and read-only workspaces.
+* Workspace: A workspace is a compute unit within a TigerGraph database. It is where the graph processing and analytics take place. TigerGraph Savanna supports two types of workspaces: read-write workspaces and read-only workspaces.
 ** Read-write workspaces: These workspaces allow read and write operations on the graph data. They are typically used for data ingestion, data updates, and running queries that modify the graph structure or properties.
 ** Read-only workspaces: These workspaces are optimized for read-intensive operations. They are used for executing queries and analytics on the graph data without modifying it. Read-only workspaces provide improved performance and scalability for read operations.
-* Database: The database in TigerGraph Cloud 4 refers to the actual data stored within the platform. It is separate from the workspaces and can be associated with one or more workspaces within a workgroup. It holds the persistent data that is loaded into TigerGraph and is accessible for graph analytics and visualization. We only support a maximum of one ready-write workspace to connect to a database.
+* Database: The database in TigerGraph Savanna refers to the actual data stored within the platform. It is separate from the workspaces and can be associated with one or more workspaces within a workgroup. It holds the persistent data that is loaded into TigerGraph and is accessible for graph analytics and visualization. We only support a maximum of one ready-write workspace to connect to a database.
 
-By utilizing workgroups, workspaces, and databases, TigerGraph Cloud 4 provides a flexible and scalable environment for managing projects, allocating compute resources, and working with graph data effectively. The separation of compute and storage in workspaces allows for optimized performance and resource allocation, while the databases ensure the persistence and accessibility of the graph data.
+By utilizing workgroups, workspaces, and databases, TigerGraph Savanna provides a flexible and scalable environment for managing projects, allocating compute resources, and working with graph data effectively. The separation of compute and storage in workspaces allows for optimized performance and resource allocation, while the databases ensure the persistence and accessibility of the graph data.
 
 
 
@@ -402,13 +402,13 @@ Additionally, the network is completely isolated per workgroup, providing an ext
 
 This approach guarantees that your data and network remain private and secure, regardless of the compute resource tier you are using.
 
-=== *Q: How do I access my TigerGraph Cloud 4 account (e.g., username and password)?*
+=== *Q: How do I access my TigerGraph Savanna account (e.g., username and password)?*
 
 A: When you register your account, you can select either a username and password or Google SSO for authentication. You can then log in anytime at link:http://portal.tgcloud.io/[portal.tgcloud.io]. We also support Okta and AAD integration. If you are a paid tier customer, please submit a support ticket to request advanced service to integrate into an SSO system TigerGraph supports.
 
 === *Q: How do I access my TigerGraph database and POST to TigerGraph?*
 
-A: You can access the database through the TigerGraph Cloud 4 portal, TigerGraph GraphStudio™ visual interface and through RESTful endpoints. Use RESTful endpoints to POST to TigerGraph clusters and develop applications. Please refer to the xref:tigergraph-server:API:index.adoc[RESTful API User Guide] for more information. To find the RESTful endpoints for queries created in GraphStudio™, please read our documentation on xref:gui:graphstudio:write-queries.adoc[showing query endpoints]. There is also a recorded webinar which demos the process in detail: link:https://info.tigergraph.com/graph-gurus-24[Graph Gurus Episode 24]
+A: You can access the database through the TigerGraph Savanna portal, TigerGraph GraphStudio™ visual interface and through RESTful endpoints. Use RESTful endpoints to POST to TigerGraph clusters and develop applications. Please refer to the xref:tigergraph-server:API:index.adoc[RESTful API User Guide] for more information. To find the RESTful endpoints for queries created in GraphStudio™, please read our documentation on xref:gui:graphstudio:write-queries.adoc[showing query endpoints]. There is also a recorded webinar which demos the process in detail: link:https://info.tigergraph.com/graph-gurus-24[Graph Gurus Episode 24]
 
 *Here is the step-by-step instructions:*
 

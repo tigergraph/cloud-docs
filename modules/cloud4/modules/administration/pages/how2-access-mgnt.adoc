@@ -2,7 +2,7 @@
 :experimental:
 
 As an organization administrator, you can define permissions for users, controlling their level of access to workspaces, workgroup and features. This allows you to ensure data security and enforce access control policies within your organization.
-In TigerGraph Cloud 4, access management allows you to configure permissions at both the *Resource* level and the *User* level.
+In TigerGraph Savanna, access management allows you to configure permissions at both the *Resource* level and the *User* level.
 
 == Resource Level
 
@@ -18,7 +18,7 @@ You can go to xref:cloud4:workgroup-workspace:workgroups/how2-workgroup-access.a
 
 == User Level Permission
 At the user level, you can define permissions that apply to individual users or groups of users.
-User-level permissions determine what actions a user can perform across your entire TigerGraph Cloud 4 organization.
+User-level permissions determine what actions a user can perform across your entire TigerGraph Savanna organization.
 
 [TIP]
 ====
@@ -240,6 +240,6 @@ Please refer to the following tables of the roles and permissions for the organi
 == Next Steps
 
 Next, learn about xref:cloud4:administration:settings/how2-use-organization-mgnt.adoc[]
-or continue on to learn about xref:cloud4:administration:security/index.adoc[] or additional xref:cloud4:resources:index.adoc[] in TigerGraph Cloud 4.
+or continue on to learn about xref:cloud4:administration:security/index.adoc[] or additional xref:cloud4:resources:index.adoc[] in TigerGraph Savanna.
 
 Return to the xref:cloud4:overview:index.adoc[Overview] page for a different topic.

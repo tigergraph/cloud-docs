@@ -2,7 +2,7 @@
 :experimental:
 
 The Billing Manager allows you to stay in control of your account, optimize resource usage, and manage costs effectively.
-Understand the billing process and manage your subscription within TigerGraph Cloud 4 with the billing manager UI.
+Understand the billing process and manage your subscription within TigerGraph Savanna with the billing manager UI.
 
 image::billing-manager.png[]
 
@@ -18,7 +18,7 @@ Learn how to view and export invoices.
 
 == xref:cloud4:overview:pricing.adoc[]
 
-Here you can review pricing information in TigerGraph Cloud 4.
+Here you can review pricing information in TigerGraph Savanna.
 
 
 

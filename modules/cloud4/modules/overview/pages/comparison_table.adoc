@@ -1,13 +1,13 @@
 = Compare TigerGraph Offerings
 
-Most of the documentation for TigerGraph Enterprise Server also applies to TigerGraph Cloud 4.
+Most of the documentation for TigerGraph Enterprise Server also applies to TigerGraph Savanna.
 Here are some differences between the different TigerGraph offerings.
 
 == Architecture and Deployment
 
 [cols="4", separator=|,options="header"]
 |===
-| Topic | TigerGraph Enterprise Server | TigerGraph Cloud Classic | TigerGraph Cloud 4 Beta
+| Topic | TigerGraph Enterprise Server | TigerGraph Cloud Classic | TigerGraph Savanna
 | Architecture | Integrated storage and compute | Integrated storage and compute | Separate storage and compute
 | Hardware and Software Requirements | Yes | N/A | N/A
 | Installation and Configuration | Yes | Easy steps to install Starter Kit See the xref:cloud:support:faqs.adoc[]| Users can install solutions anytime
@@ -21,7 +21,7 @@ Here are some differences between the different TigerGraph offerings.
 
 [cols="4", separator=|,options="header"]
 |===
-| Topic | TigerGraph Enterprise Server | TigerGraph Cloud Classic | TigerGraph Cloud 4 Beta
+| Topic | TigerGraph Enterprise Server | TigerGraph Cloud Classic | TigerGraph Savanna
 | Release Notes | Yes | Kept up to date with 3.x releases | Latest 4.x releases
 | GSQL Graph Algorithm Library | Yes | Yes | Yes
 | Transaction Processing and ACID Support | Yes | Yes | Yes
@@ -41,7 +41,7 @@ Here are some differences between the different TigerGraph offerings.
 
 [cols="4", separator=|,options="header"]
 |===
-| Topic | TigerGraph Enterprise Server | TigerGraph Cloud Classic | TigerGraph Cloud 4 Beta
+| Topic | TigerGraph Enterprise Server | TigerGraph Cloud Classic | TigerGraph Savanna
 | User Access Management | Yes | Yes | Yes
 | Data Encryption | Yes | Set up for encrypted data at rest and in motion | Set up for encrypted data at rest and in motion
 | System Management | Yes | Enhanced Cloud Portal for backup and restore | Enhanced Cloud Portal for backup and restore
@@ -54,4 +54,4 @@ Here are some differences between the different TigerGraph offerings.
 
 Next, see xref:cloud4:get-started:index.adoc[] to unlock its full potential.
 
-Return to xref:cloud4:overview:index.adoc[TigerGraph Cloud 4] for another topic.
+Return to xref:cloud4:overview:index.adoc[TigerGraph Savanna] for another topic.

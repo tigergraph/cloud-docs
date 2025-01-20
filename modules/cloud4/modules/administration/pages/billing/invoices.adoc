@@ -1,7 +1,7 @@
 = Invoices
 :experimental:
 
-Here TigerGraph Cloud 4 users can check, reference, and export their invoice information.
+Here TigerGraph Savanna users can check, reference, and export their invoice information.
 
 == View and Export an Invoice
 

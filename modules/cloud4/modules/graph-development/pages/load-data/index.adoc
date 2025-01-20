@@ -1,4 +1,4 @@
-= Load Data in TigerGraph Cloud 4
+= Load Data in TigerGraph Savanna
 :experimental:
 
 Efficiently loading data into your TigerGraph databases is crucial for successful graph analysis.
@@ -68,7 +68,7 @@ Check out our step-by-step guide on loading data from a Azure Blob Storage.
 
 == xref:cloud4:graph-development:load-data/load-from-other-sources.adoc[]
 
-Here you can check the status of loading data form other sources in TigerGraph Cloud 4.
+Here you can check the status of loading data form other sources in TigerGraph Savanna.
 Or check out our xref:cloud4:graph-development:load-data/jdbc.adoc[].
 
 == Next Steps

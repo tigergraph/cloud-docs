@@ -1,6 +1,6 @@
 = Cost Estimation
 
-Here, you can configure various parameters to estimate your monthly costs for using TigerGraph Cloud 4. This tool allows you to tailor your workspace size, monthly usage, and database size to get a clear understanding of your anticipated expenses.
+Here, you can configure various parameters to estimate your monthly costs for using TigerGraph Savanna. This tool allows you to tailor your workspace size, monthly usage, and database size to get a clear understanding of your anticipated expenses.
 
 ++++
 
@@ -28,4 +28,4 @@ Here, you can configure various parameters to estimate your monthly costs for us
 
 Next, see xref:cloud4:get-started:index.adoc[] to unlock its full potential.
 
-Return to xref:cloud4:overview:index.adoc[TigerGraph Cloud 4] for another topic.
+Return to xref:cloud4:overview:index.adoc[TigerGraph Savanna] for another topic.

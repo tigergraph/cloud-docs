@@ -1,8 +1,8 @@
 = Workgroups and Workspaces
 :experimental:
 
-In TigerGraph Cloud 4, the concepts of workgroup, workspace, and database are used to organize and manage projects and data within the platform.
-By utilizing xref:cloud4:workgroup-workspace:workgroups/workgroup.adoc[workgroups], xref:cloud4:workgroup-workspace:workspaces/workspace.adoc[workspaces and databases], TigerGraph Cloud 4 provides a flexible and scalable environment for managing projects, allocating compute resources, and working with graph data effectively.
+In TigerGraph Savanna, the concepts of workgroup, workspace, and database are used to organize and manage projects and data within the platform.
+By utilizing xref:cloud4:workgroup-workspace:workgroups/workgroup.adoc[workgroups], xref:cloud4:workgroup-workspace:workspaces/workspace.adoc[workspaces and databases], TigerGraph Savanna provides a flexible and scalable environment for managing projects, allocating compute resources, and working with graph data effectively.
 
 == xref:cloud4:workgroup-workspace:workgroups/workgroup.adoc[]
 
@@ -41,11 +41,11 @@ Learn how to connect to your graph database using REST APIs.
 
 * xref:cloud4:workgroup-workspace:workgroups/monitor-workspaces.adoc[]
 -
-Learn how TigerGraph Cloud 4 offers comprehensive monitoring capabilities that allow you to track the status and resource usage of your workspaces.
+Learn how TigerGraph Savanna offers comprehensive monitoring capabilities that allow you to track the status and resource usage of your workspaces.
 
 == Next Steps
 
-Next, learn how to xref:cloud4:graph-development:load-data/index.adoc[Load Data] into TigerGraph Cloud 4.
+Next, learn how to xref:cloud4:graph-development:load-data/index.adoc[Load Data] into TigerGraph Savanna.
 
 Or return to the xref:cloud4:overview:index.adoc[Overview] page for a different topic.
 

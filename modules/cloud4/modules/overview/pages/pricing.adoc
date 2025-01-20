@@ -1,6 +1,6 @@
 = Pricing
 
-TigerGraph Cloud 4 offers a flexible and transparent pricing model designed to accommodate a wide range of usage scenarios, from small-scale projects to large enterprise deployments. Our pricing structure is crafted to provide you with the best value while ensuring your graph database solutions are scalable, reliable, and high-performing.
+TigerGraph Savanna offers a flexible and transparent pricing model designed to accommodate a wide range of usage scenarios, from small-scale projects to large enterprise deployments. Our pricing structure is crafted to provide you with the best value while ensuring your graph database solutions are scalable, reliable, and high-performing.
 
 == Select Platform and Region
 :provider: AWS
@@ -39,7 +39,7 @@ Platform
 ++++
 
 == Compute Pricing
-Compute resources on TigerGraph Cloud 4 are billed based on the number of TCRs consumed per hour. 
+Compute resources on TigerGraph Savanna are billed based on the number of TCRs consumed per hour. 
 
 === TigerGraph Credits
 
@@ -164,7 +164,7 @@ The compute costs are distinct from the storage fees listed below and are metere
 
 === High Availability (HA)
 
-High Availability (HA) on TigerGraph Cloud 4 ensures your graph database remains operational even during disruptions. When HA is enabled, the price is calculated using a multiplier based on the size of your TigerGraph compute resource.
+High Availability (HA) on TigerGraph Savanna ensures your graph database remains operational even during disruptions. When HA is enabled, the price is calculated using a multiplier based on the size of your TigerGraph compute resource.
 
 [cols="3", separator=¦ ]
 |===
@@ -176,7 +176,7 @@ High Availability (HA) on TigerGraph Cloud 4 ensures your graph database remains
 
 == Storage Pricing
 
-Storage on TigerGraph Cloud 4 is billed separately from compute resources. Storage fees are calculated based on the amount of data stored and are metered with fine-grained precision to ensure you only pay for what you use. This includes the storage of your graph data, backups, and any associated metadata. Our storage pricing is designed to be transparent and flexible, allowing you to scale your storage needs up or down as required.
+Storage on TigerGraph Savanna is billed separately from compute resources. Storage fees are calculated based on the amount of data stored and are metered with fine-grained precision to ensure you only pay for what you use. This includes the storage of your graph data, backups, and any associated metadata. Our storage pricing is designed to be transparent and flexible, allowing you to scale your storage needs up or down as required.
 
 [cols="2", separator=¦ ]
 |===
@@ -191,7 +191,7 @@ Storage on TigerGraph Cloud 4 is billed separately from compute resources. Stora
 |===
 
 == Add-on Pricing
-TigerGraph Cloud 4 offers a variety of add-ons to enhance your graph database experience. Each add-on is priced individually, allowing you to customize your TigerGraph Cloud environment to fit your specific needs and budget. Add-ons are billed monthly and can be added or removed at any time to provide maximum flexibility. 
+TigerGraph Savanna offers a variety of add-ons to enhance your graph database experience. Each add-on is priced individually, allowing you to customize your TigerGraph Cloud environment to fit your specific needs and budget. Add-ons are billed monthly and can be added or removed at any time to provide maximum flexibility. 
 [cols="3", separator=¦ ]
 |===
 ¦Add-On ¦Scope ¦Price

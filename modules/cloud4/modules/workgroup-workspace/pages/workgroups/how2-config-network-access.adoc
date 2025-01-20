@@ -1,11 +1,11 @@
 = How to Configure Network Access
 :experimental:
 
-The IP Allowlist feature in TigerGraph Cloud 4 is designed to enhance the security of your data by controlling which networks can access your resources. By specifying allowed IP addresses or ranges, you can safeguard your data from unauthorized access, data exfiltration, and insider threats.
+The IP Allowlist feature in TigerGraph Savanna is designed to enhance the security of your data by controlling which networks can access your resources. By specifying allowed IP addresses or ranges, you can safeguard your data from unauthorized access, data exfiltration, and insider threats.
 
 == Accessing the IP Allowlist Configuration
 
-To access the IP Allowlist configuration, navigate to the Network Access tab for your workgroup in TigerGraph Cloud 4. Here, you will find options to view, add, and manage the IP addresses that are permitted to access your data.
+To access the IP Allowlist configuration, navigate to the Network Access tab for your workgroup in TigerGraph Savanna. Here, you will find options to view, add, and manage the IP addresses that are permitted to access your data.
 
 
 == Your IP Address

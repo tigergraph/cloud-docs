@@ -1,14 +1,11 @@
-= TigerGraph Cloud 4 Release Notes
+= TigerGraph Savanna Release Notes
 :experimental:
 //:page-aliases: change-log.adoc, release-notes.adoc
 :toc:
 :toclevels:2
 
-[IMPORTANT]
-====
-TigerGraph Cloud 4 beta is for personal or R&D use and not for production use.
-Please see xref:cloud4:resources:terms_conditions.adoc[].
-====
+
+
 
 == Oct 2024
 === 2024-10-15
@@ -35,7 +32,7 @@ Please see xref:cloud4:resources:terms_conditions.adoc[].
 
 ==== General
 
-* Release xref:4.1@tigergraph-server:release-notes:index.adoc[TigerGraph Server 4.1 Preview] on TigerGraph Cloud 4.
+* Release xref:4.1@tigergraph-server:release-notes:index.adoc[TigerGraph Server 4.1 Preview] on TigerGraph Savanna.
 
 ==== Workspace Enhancements
 
@@ -112,14 +109,14 @@ Please see xref:cloud4:resources:terms_conditions.adoc[].
 
 == Apr 2024
 
-=== TigerGraph Cloud 4 (Beta) was released on Monday, April 29th, 2024.
+=== TigerGraph Savanna (Beta) was released on Monday, April 29th, 2024.
 
 //* xref:cloud4:get-started:index.adoc[Get Started] using TigerGraph Cloud with the 4.0.
 * xref:cloud4:overview:overview.adoc#_separation_of_storage_and_compute[Separation of Storage and Compute] - Introduction of a unique architecture that separates storage and compute, allowing users to scale resources independently.
 
 * xref:workgroup-workspace:workgroups/workgroup.adoc[Workgroups] and xref:workgroup-workspace:workspaces/workspace.adoc[Workspaces] give users control over resource management.
 
-* xref:cloud4:graph-development:load-data/index.adoc[] - Load Data into TigerGraph Cloud 4 and unlock its potential.
+* xref:cloud4:graph-development:load-data/index.adoc[] - Load Data into TigerGraph Savanna and unlock its potential.
 
 * xref:cloud4:graph-development:design-schema/index.adoc[Design Schema] - Easily modify and manage the schema of your graph databases using Schema Designer UI.
 
@@ -127,9 +124,9 @@ Please see xref:cloud4:resources:terms_conditions.adoc[].
 
 * xref:cloud4:graph-development:explore-graph/index.adoc[] and xref:cloud4:graph-development:explore-graph/how2-use-pattern-search.adoc[] - Visualize your data and navigate to understand complex connections and dependencies.
 
-* xref:integrations:index.adoc[] - TigerGraph Cloud 4 offers several powerful integration tools in our marketplace.
+* xref:integrations:index.adoc[] - TigerGraph Savanna offers several powerful integration tools in our marketplace.
 ** xref:cloud4:integrations:solutions.adoc[] -  Pre-built solution kits that address common use cases and industry-specific challenges.
-** xref:cloud4:integrations:add-ons.adoc[] - Extend the capabilities of TigerGraph Cloud 4 with add-ons tailored to your needs. Add-ons provide additional functionalities and integrations that enhance your graph database workflow.
+** xref:cloud4:integrations:add-ons.adoc[] - Extend the capabilities of TigerGraph Savanna with add-ons tailored to your needs. Add-ons provide additional functionalities and integrations that enhance your graph database workflow.
 *** xref:cloud4:integrations:insights.adoc[Insights Add-On] - TigerGraph Insights is a no-code visual graph analyzer that makes building data analytics dashboards intuitive.
 *** xref:cloud4:integrations:graphstudio.adoc[GraphStudio™ Add-On] - TigerGraph GraphStudio™ offers a range of features and tools to simplify the graph development process.
 *** xref:cloud4:integrations:graphql.adoc[GraphQL Add-On] - TigerGraph GraphQL enables users to access and modify graph data in TigerGraph using GraphQL queries.

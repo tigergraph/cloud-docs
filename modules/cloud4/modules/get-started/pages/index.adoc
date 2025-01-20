@@ -1,16 +1,16 @@
-= Get Started with TigerGraph Cloud 4
+= Get Started with TigerGraph Savanna
 :experimental:
 
-To get started with TigerGraph Cloud 4, users must first Sign Up and Log In.
+To get started with TigerGraph Savanna, users must first Sign Up and Log In.
 These guides will walk you through the necessary steps.
 
 == xref:how2-signup.adoc[]
 
-Learn how to create a TigerGraph Cloud 4 Cloud account and get access to the platform.
+Learn how to create a TigerGraph Savanna Cloud account and get access to the platform.
 
 == xref:how2-login.adoc[]
 
-Learn how to log in to your TigerGraph Cloud 4 Cloud account.
+Learn how to log in to your TigerGraph Savanna Cloud account.
 
 == Next Steps
 

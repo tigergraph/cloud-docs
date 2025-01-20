@@ -31,7 +31,7 @@ image::disable-graphql-addon.png[width=350]
 
 == Next Steps
 
-Now, learn about additional add-ons on the xref:integrations:index.adoc[] page or continue on to learn about the xref:administration:index.adoc[Administration] features or xref:cloud4:administration:security/index.adoc[] in TigerGraph Cloud 4.
+Now, learn about additional add-ons on the xref:integrations:index.adoc[] page or continue on to learn about the xref:administration:index.adoc[Administration] features or xref:cloud4:administration:security/index.adoc[] in TigerGraph Savanna.
 
 Return to the xref:cloud4:overview:index.adoc[Overview] page for a different topic.
 

@@ -1,4 +1,4 @@
-= Configure User Defined Functions (UDFs) On TigerGraph Cloud 4
+= Configure User Defined Functions (UDFs) On TigerGraph Savanna
 :experimental:
 
 User-Defined Functions (UDFs) in TigerGraph allow you to incorporate custom logic into your GSQL queries. You can configure GSQL to your UDF definitions from a GitHub repository. This is TigerGraph’s recommended approach for managing UDFs.
@@ -6,11 +6,11 @@ User-Defined Functions (UDFs) in TigerGraph allow you to incorporate custom logi
 == Prerequisites
 
 * Familiarity with GSQL and UDF syntax.
-* An active TigerGraph Cloud 4 workspace.
+* An active TigerGraph Savanna workspace.
 
 == Steps to Update a UDF
 
-1) Set up the TigerGraph Cloud 4 workspace and ensure it is running.
+1) Set up the TigerGraph Savanna workspace and ensure it is running.
 
 2) Edit the workspace by clicking the btn:[...] button of your selected workspace.
 

@@ -1,10 +1,10 @@
 = Authentication
 
-To use the TigerGraph Cloud 4 REST APIs, you need to authenticate your requests. Authentication is typically done using API keys.
+To use the TigerGraph Savanna REST APIs, you need to authenticate your requests. Authentication is typically done using API keys.
 
 [IMPORTANT]
 ====
-The TigerGraph Cloud 4 REST API is currently in preview version. Features and endpoints may change as the API evolves.
+The TigerGraph Savanna REST API is currently in preview version. Features and endpoints may change as the API evolves.
 ====
 
 == Setup API Keys

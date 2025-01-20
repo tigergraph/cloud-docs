@@ -1,7 +1,7 @@
 = Invite Users
 :experimental:
 
-When you set up a TigerGraph Cloud 4 account, you are granted the privileges of an Organization Admin for your organization.
+When you set up a TigerGraph Savanna account, you are granted the privileges of an Organization Admin for your organization.
 An Organization Admin can manage multiple users in your organization and control their access to various resources.
 
 [NOTE]
@@ -78,6 +78,6 @@ Select btn:[Cancel] or btn:[OK] to confirm.
 == Next Steps
 
 Next, learn about xref:cloud4:administration:how2-access-mgnt.adoc[]
-or continue on to learn about xref:cloud4:administration:security/index.adoc[] or additional xref:cloud4:resources:index.adoc[] in TigerGraph Cloud 4.
+or continue on to learn about xref:cloud4:administration:security/index.adoc[] or additional xref:cloud4:resources:index.adoc[] in TigerGraph Savanna.
 
 Return to the xref:cloud4:overview:index.adoc[Overview] page for a different topic.

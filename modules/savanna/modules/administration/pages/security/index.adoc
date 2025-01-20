@@ -1,0 +1,15 @@
+= Security
+:experimental:
+
+
+Here you can learn different security practices and policies in TigerGraph Savanna.
+
+
+== xref:savanna:administration:security/password-policy.adoc[]
+
+Learn and understand the password policy in TigerGraph Savanna.
+
+
+== xref:savanna:administration:security/idp.adoc[]
+
+Learn and understand IDP intergration with SSO password policy in TigerGraph Savanna.

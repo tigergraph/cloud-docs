@@ -1,0 +1,139 @@
+= Get Started with Schema Designer
+:experimental:
+
+The Schema Designer provides a user-friendly interface for schema management, allowing you to adapt your graph database to changing requirements and optimize its performance.
+
+[TIP]
+====
+The graph schema defines the structure of your graph database, influencing its performance and functionality.
+====
+
+With the Schema Designer, you can easily modify and manage the schema of your graph databases by:
+
+* Defining vertex and edge types.
+* Specifying properties and indexes.
+* Establish relationships between elements.
+
+image::design-schema.png[width=1200]
+== 1) Get Started
+
+Navigate to the Design Schema Page. It is accessible from:
+
+* Navigation Menu > Design Schema.
+* Workspace general page.
+* GSQL Editor page.
+* Load Data page.
+* Solution Builder page.
+
+image::workspace-connect-menu-1.png[width=300]
+
+[TIP]
+====
+The comprehensive list of shortcuts can make your schema design process more efficient and productive.
+
+image::Screenshot 2024-04-17 at 7.35.28 PM.png[]
+====
+
+== 2) Create a Graph
+
+Before creating vertices and edges, you need to create a graph in the Schema Designer.
+
+[TIP]
+====
+A graph represents the overall structure and framework of your graph database.
+====
+
+.When creating a graph, you define:
+* Its name.
+* Any global settings or configurations that apply to the entire graph.
++
+[NOTE]
+====
+You can skip creating a graph if you are defining the global graph schema.
+====
+
+. Now click on the btn:[Create New Graph] button in the graph selector dropdown menu.
++
+image::Screenshot 2024-04-17 at 7.38.22 PM.png[width=250]
+
+. Specify the graph name in the pop-up window.
++
+image::Screenshot 2024-04-17 at 7.38.43 PM.png[]
+
+[NOTE]
+====
+The initial creation of the first graph may require up to 2 minutes as the services warm up and the necessary environment is set up.
+====
+
+== 3) Create a Vertex
+
+.You can now create vertices to define the entities or nodes in your graph database. Vertices represent distinct entities you want to represent in your graph model, such as:
+* users
+* products
+* locations
+* or any other objects .
+
+Creating vertices involves specifying the vertex name and any attributes associated with it.
+
+. Click on the image:Screenshot 2024-04-17 at 7.39.38 PM.png[width=100] button, or hold key btn:[ V]  and btn:[ Left Click ] on the graph to create a vertex.
+
+
+. Once a vertex is created, you can configure the name and its attributes in the properties panel.
+
+== 4) Create a Edge
+
+Create edges to establish relationships between vertices in your graph database.
+
+[TIP]
+====
+Edges represent the connections or relationships between entities.
+====
+
+When creating an edge, you define the edge name, the source vertex, the target vertex, and any attributes associated with the edge.
+
+. Use your mouse drag from the border of a vertex and drop to a new position to create a new vertex and new edge or drop to an existing vertex to only create a new edge.
++
+image::unnamed.gif[]
+
+. Once an edge is created, you can now configure the edge name, and its attributes in the properties panel.
+
+== 5) Attributes
+
+Attributes play a crucial role in defining the properties or characteristics of vertices and edges in your graph database.
+You can define attributes for vertices and edges to store additional information about them.
+
+[TIP]
+====
+Attributes can be of different data types, such as strings, integers, booleans, or dates, and they provide valuable context and details to your graph data.
+====
+
+image::attributes.png[]
+
+== 6) Advanced Settings For Vertex
+
+The Advanced Settings section allows you to fine tune the definition of a vertex type in your graph database by configuring additional settings.
+
+You can click on the btn:[ Advanced Settings ] button on a vertex to configure the following settings:
+
+image::advanced-settings.png[]
+
+1. Enable *As Attribute* for primary key. For details, please refer to xref:gsql-ref:ddl-and-loading:defining-a-graph-schema.adoc#_with_primary_id_as_attribute[WITH primary_id_as_attribute] documentation.
+2. Enable index for non-primary key attributes. Indexes improve the speed of data retrieval operations by providing quick access paths to the data. For details, please refer to xref:gsql-ref:ddl-and-loading:defining-a-graph-schema.adoc#_alter_index[Alter Index] documentation.
+
+== 7) Advanced Settings For Edge
+
+The Advanced Settings section allows you to fine tune the definition of an edge type in your graph database by configuring additional settings.
+
+You can click on the btn:[ Advanced Settings ] button on an edge to configure the following settings:
+
+image::advanced-settings-2.png[]
+
+1. Specify other vertex pairs. You can define additional vertex pairs for an edge to establish more complex relationships between different types of vertices.
+2. Specify edge discriminators. Discriminators allow you to distinguish between different types of edges or relationships, providing more granularity in your graph schema. For details, please refer to the xref:gsql-ref:ddl-and-loading:defining-a-graph-schema.adoc#_discriminator[DISCRIMINATOR] documentation.
+3. For directed edges, you can specify a reverse edge to create a bidirectional relationship. This can be useful for queries that need to traverse edges in both directions. For details, please refer to xref:gsql-ref:ddl-and-loading:defining-a-graph-schema.adoc#_with_reverse_edge[WITH REVERSE_EDGE] documentation.
+
+== Next Steps
+
+Next, learn how to use xref:savanna:graph-development:gsql-editor/index.adoc[GSQL Editor] in TigerGraph Savanna.
+
+Or return to the xref:savanna:overview:index.adoc[Overview] page for a different topic.

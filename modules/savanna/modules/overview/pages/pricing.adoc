@@ -1,0 +1,211 @@
+= Pricing
+
+TigerGraph Savanna offers a flexible and transparent pricing model designed to accommodate a wide range of usage scenarios, from small-scale projects to large enterprise deployments. Our pricing structure is crafted to provide you with the best value while ensuring your graph database solutions are scalable, reliable, and high-performing.
+
+== Select Platform and Region
+:provider: AWS
+:region: us-east-1
+++++
+
+<div class="paragraph">
+<span>
+Platform
+<select id="provider" style="height:30px; width: 200px" onchange="updatePricing()">
+  <option value="AWS">AWS</option>
+  <option value="GCP" disabled>GCP (Coming soon)</option>
+  <option value="Azure" disabled>Azure (Coming soon)</option>
+</select></span>
+
+<span style="margin-left:20px;">Region
+<select id="region" style="height:30px; width: 250px" onchange="updatePricing()">
+  <option value="us-east-1">US East (N. Virginia) - Tier 1</option>
+  <option value="us-east-2">US East (Ohio) - Tier 1</option>
+  <option value="us-west-2">US West (Oregon) - Tier 1</option>
+  <option value="eu-central-1">Europe (Frankfurt) - Tier 3</option>
+  <option value="eu-west-1">Europe (Ireland) - Tier 2</option>
+  <option value="eu-west-2">Europe (London) - Tier 2</option>
+  <!-- <option value="eu-west-3">Europe (Paris) - Tier 2</option> -->
+  <!-- <option value="eu-north-1">Europe (Stockholm) - Tier 2</option>  -->
+  <option value="sa-east-1">South America (Sao Paulo) - Tier 4</option>
+  <!--  <option value="ca-central-1">Canada (Central) - Tier 2</option> -->
+  <!--  <option value="ap-southeast-3">Asia Pacific (Jakarta) - Tier 3</option> -->
+  <!--  <option value="ap-south-1">Asia Pacific (Mumbai) - Tier 2</option> -->
+  <!--  <option value="ap-northeast-2">Asia Pacific (Seoul) - Tier 3</option> -->
+  <option value="ap-southeast-1">Asia Pacific (Singapore) - Tier 3</option>
+  <option value="ap-southeast-2">Asia Pacific (Sydney) - Tier 3</option>
+  <option value="ap-northeast-1">Asia Pacific (Tokyo) - Tier 3</option>
+</select></span>
+</div>
+++++
+
+== Compute Pricing
+Compute resources on TigerGraph Savanna are billed based on the number of TCRs consumed per hour. 
+
+=== TigerGraph Credits
+
+A TigerGraph Credit (TCR) is a unit that represents the cost of using compute resources on TigerGraph Cloud. By using TCRs, you can easily scale your compute resources up or down to meet your performance needs without worrying about complex pricing structures.
+
+The exchange rate for TigerGraph Credits is straightforward:
+
+*1 TCR = $4.00*
+
+
+This means that for every TigerGraph Credit you consume, you will be billed $4.00.
+
+=== Compute Pricing Table
+
+The following table outlines the cost in TCRs for different sizes of compute resources.
+The compute costs are distinct from the storage fees listed below and are metered based on actual usage. For inquiries about pricing, volume discounts, or deploying in other regions, please contact us at sales@tigergraph.com.
+
+++++
+
+<div id="pricing-table" class="sectionbody">
+<table class="tableblock frame-all grid-all stretch pricing-table">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Size</th>
+<th class="tableblock halign-left valign-top">vCPUs</th>
+<th class="tableblock halign-left valign-top">Memory (GB)</th>
+<th class="tableblock halign-left valign-top">Price (TCR/hour) </th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-00</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">16</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">0.25</p></td></tr>
+<tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-0</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">32</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">0.50</p></td></tr>
+<tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-1</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">64</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">1.00</p></td></tr>
+<tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-2</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">16</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">128</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">2.00</p></td></tr>
+<tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-4</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">32</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">256</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">4.00</p></td></tr>
+<tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-6</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">48</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">384</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">6.00</p></td></tr>
+<tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-8</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">64</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">512</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">8.00</p></td></tr>
+<tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-16</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">128</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">1,024</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">16.00</p></td></tr>
+<tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-24</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">192</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">1,536</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">24.00</p></td></tr>
+<tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-32</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">256</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">2,048</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">32.00</p></td></tr>
+<tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-40</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">320</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">2,560</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">40.00</p></td></tr>
+<tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-48</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">384</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">3,072</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">48.00</p></td></tr>
+<tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-56</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">448</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">3,584</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">56.00</p></td></tr>
+<tr><td class="tableblock halign-left valign-top"><p class="tableblock">TG-64</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">512</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">4,096</p></td><td class="tableblock halign-left valign-top"><p class="tableblock">64.00</p></td></tr>
+</tbody>
+</table>
+</div>
+
+<script>
+  const basePrices = [
+            { size: 'TG-00', vcpus: 2, memory: '16', price: 0.25 },
+            { size: 'TG-0', vcpus: 4, memory: '32', price: 0.5 },
+            { size: 'TG-1', vcpus: 8, memory: '64', price: 1 },
+            { size: 'TG-2', vcpus: 16, memory: '128', price: 2 },
+            { size: 'TG-4', vcpus: 32, memory: '256', price: 4 },
+            { size: 'TG-6', vcpus: 48, memory: '384', price: 6 },
+            { size: 'TG-8', vcpus: 64, memory: '512', price: 8 },
+            { size: 'TG-16', vcpus: 128, memory: '1,024', price: 16 },
+            { size: 'TG-24', vcpus: 192, memory: '1,536', price: 24 },
+            { size: 'TG-32', vcpus: 256, memory: '2,048', price: 32 },
+            { size: 'TG-40', vcpus: 320, memory: '2,560', price: 40 },
+            { size: 'TG-48', vcpus: 384, memory: '3,072', price: 48 },
+            { size: 'TG-56', vcpus: 448, memory: '3,584', price: 56 },
+            { size: 'TG-64', vcpus: 512, memory: '4,096', price: 64 }
+        ];
+  const pricingData = {
+    'AWS': {
+      'us-east-1': { 'tier': 1, 'multiplier': 1, },
+      'us-east-2': { 'tier': 1, 'multiplier': 1, },
+      'us-west-2': { 'tier': 1, 'multiplier': 1, },
+      'eu-central-1': { 'tier': 3, 'multiplier': 1.250, },
+      'eu-west-1': { 'tier': 2, 'multiplier': 1.125, },
+      'eu-west-2': { 'tier': 2, 'multiplier': 1.125, },
+      'eu-west-3': { 'tier': 2, 'multiplier': 1.125, },
+      'eu-north-1': { 'tier': 2, 'multiplier': 1.125, },
+      'sa-east-1': { 'tier': 4, 'multiplier': 1.375, },
+      'ca-central-1': { 'tier': 2, 'multiplier': 1.125, },
+      'ap-southeast-3': { 'tier': 3, 'multiplier': 1.250, },
+      'ap-south-1': { 'tier': 2, 'multiplier': 1.125, },
+      'ap-northeast-2': { 'tier': 3, 'multiplier': 1.250, },
+      'ap-southeast-1': { 'tier': 3, 'multiplier': 1.250, },
+      'ap-southeast-2': { 'tier': 3, 'multiplier': 1.250, },
+      'ap-northeast-1': { 'tier': 3, 'multiplier': 1.250, },
+    },
+    'GCP': {
+      // Add GCP pricing data here
+    },
+    'Azure': {
+      // Add Azure pricing data here
+    }
+  };
+
+  function updatePricing() {
+    const provider = document.getElementById('provider').value;
+    const region = document.getElementById('region').value;
+    const pricingTable = document.getElementById('pricing-table').getElementsByTagName('tbody')[0];
+
+    // Clear existing rows
+    pricingTable.innerHTML = '';
+
+    // Populate new rows based on selection
+    const tier = pricingData[provider][region]['tier'];
+    const multiplier = pricingData[provider][region]['multiplier'];
+    basePrices.forEach(price => {
+      const row = pricingTable.insertRow();
+      row.innerHTML = `<td class="tableblock halign-left valign-top"><p class="tableblock">`+price.size+`</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">`+price.vcpus+`</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">`+price.memory+`</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">`+ (price.price * multiplier).toFixed(2) +`</p></td>`;
+    });
+  }
+</script>
+++++
+
+
+
+=== High Availability (HA)
+
+High Availability (HA) on TigerGraph Savanna ensures your graph database remains operational even during disruptions. When HA is enabled, the price is calculated using a multiplier based on the size of your TigerGraph compute resource.
+
+[cols="3", separator=¦ ]
+|===
+¦ Compute Size ¦ Replica Factor ¦ Cost Mutiplier
+¦ Sizes equal or below TG-8 ¦ 3 ¦ 2.8x
+¦ Sizes above TG-8 ¦ 2 ¦ 1.95x 
+
+|===
+
+== Storage Pricing
+
+Storage on TigerGraph Savanna is billed separately from compute resources. Storage fees are calculated based on the amount of data stored and are metered with fine-grained precision to ensure you only pay for what you use. This includes the storage of your graph data, backups, and any associated metadata. Our storage pricing is designed to be transparent and flexible, allowing you to scale your storage needs up or down as required.
+
+[cols="2", separator=¦ ]
+|===
+¦ Tier ¦ Price per average GB per Month
+
+¦ Tier 1 ¦ $0.025 
+¦ Tier 2 ¦ $0.027 
+¦ Tier 3 ¦ $0.028 
+¦ Tier 4 ¦ $0.044 
+// ¦ BYOC ¦ Billed From Your Cloud Provider
+
+|===
+
+== Add-on Pricing
+TigerGraph Savanna offers a variety of add-ons to enhance your graph database experience. Each add-on is priced individually, allowing you to customize your TigerGraph Cloud environment to fit your specific needs and budget. Add-ons are billed monthly and can be added or removed at any time to provide maximum flexibility. 
+[cols="3", separator=¦ ]
+|===
+¦Add-On ¦Scope ¦Price
+
+¦ Insights ¦ Workspace ¦ 10% of the compute usage
+¦ GraphStudio™ ¦ Workspace ¦ Free
+¦ GraphQL ¦ Workspace ¦ Free
+
+|===
+Learn more about the available add-ons xref:integrations:add-ons.adoc[here].
+
+== Next Steps
+
+Next, see xref:savanna:overview:cost-estimation.adoc[] or learn more billing topics at xref:savanna:administration:billing/index.adoc[].
+
+Return to the  page to xref:savanna:overview:index.adoc[Overview] page for a different topic.
+

@@ -1,0 +1,81 @@
+= How to Create a Workspace
+:experimental:
+
+To learn more about workspaces see xref:workspaces/workspace.adoc[].
+To create a workspace in TigerGraph Savanna follow the steps below:
+
+== Create a Workspace
+
+. Log in to your TigerGraph Cloud account.
++
+image::signup.png[width=450]
++
+. From the dashboard, navigate to the btn:[Workgroups] section
+Click on the btn:[ Create Workspace ] button.
++
+image::workspacecreate.png[]
++
+
+. Provide a name for the workspace.
++
+[NOTE]
+====
+Choose a name that reflects the purpose of your workspace.
+====
++
+image::workspaceinfo.png[]
+
+. Select a TigerGraph workspace runtime.
+
++
+. Specify workspace size and advanced settings.
++
+image::workspaceDetails.png[]
++
+. For supported workspace sizes, please go to the xref:savanna:workgroup-workspace:workspaces/workspace-size.adoc[] page.
+
+. For advanced settings please refer to xref:savanna:workgroup-workspace:workspaces/settings.adoc[] page.
+
+. Specify database name or attach to an existing database.
+
+.. This allows you to create Read-Write (RW) workspace or Read-Only (RO) workspace.
+For more details, please refer to xref:savanna:workgroup-workspace:workspaces/readwrite-readonly.adoc[].
+
+. Specify Solutions for your workspace, for more details please visit xref:savanna:integrations:solutions.adoc[] page.
++
+image::solution-add-on.png[]
+
+. Specify Add-ons to your workspace, for more details please visit xref:savanna:integrations:add-ons.adoc[] page.
++
+image::Add-onsimage.png[]
+
+. Click on the btn:[ Create ] button to create the workspace.
++
+[NOTE]
+====
+Currently, only one Read-Write workspace can be created for any given database.
+This means that multiple simultaneous Read-Write workspaces cannot be created, potentially limiting certain collaborative or concurrent development scenarios.
+====
++
+[IMPORTANT]
+====
+Users cannot re-create the Read-Write workspace once it has been terminated.
+====
+
+. The workspace will then start to build.
+This progress can be monitored on the btn:[General Tab].
++
+image::workspace-general-tab.png[]
+
+. Once built you can view details about your workspace on the workspace tab.
+And you can view information about your database on the database tab.
++
+image::workspace-info-tab.png[]
++
+image::workspace-database-tab.png[]
+
+== Next Steps
+
+Now, that you have a workspace created see xref:savanna:workgroup-workspace:workspaces/settings.adoc[] or learn more about xref:savanna:workgroup-workspace:workspaces/readwrite-readonly.adoc[].
+
+Return to the xref:savanna:workgroup-workspace:index.adoc[] page or xref:savanna:overview:index.adoc[Overview] page for a different topic.

@@ -12,7 +12,7 @@ handling all the complexity of deploying and managing your deployments on the cl
 ====
 TigerGraph Savanna Beta was released on Apr. 29, 2024.
 
-Check out the new Savanna at https://savanna.tgcloud.io or have a look at the xref:cloud4:overview:index.adoc[Documentation] for more details.
+Check out the new Savanna at https://savanna.tgcloud.io or have a look at the xref:savanna:overview:index.adoc[Documentation] for more details.
 ====
 
 // [NOTE]

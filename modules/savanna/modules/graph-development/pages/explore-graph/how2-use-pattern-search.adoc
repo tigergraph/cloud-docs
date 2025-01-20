@@ -1,0 +1,75 @@
+= Pattern Search
+:experimental:
+
+Patterns search involves looking for specific patterns or sequences within a dataset or system. It can be used to identify recurring trends, anomalies, or correlations in data. By analyzing patterns, developers can gain insights and make informed decisions.
+
+[CAUTION]
+====
+* Pattern search can be resource-intensive and time-consuming, especially for large datasets.
+* Due to memory and processing constraints, pattern search is disabled for multi-node workspaces.
+====
+
+== How to use Pattern Search
+
+.To get started with btn:[Explore Graph] follow the steps below:
+. Navigate to the btn:[Explore Graph] tab in the left navigation.
++
+image::select-exploregraph.png[width=300]
+
+. You will then see the btn:[Explore] window.
++
+image::patternserach-exploregraph.png[width=500]
+
+. Next, chose the workspace you want to use from the dropdown menu.
++
+image::patternsearch-selectaworksapce.png[width=500]
+
+. Then, choose which graph data you want to visualize patterns in.
++
+image::patternsearch-selectagraph.png[width=500]
+
+. Once, you have the workspace and graph selected you can choose btn:[SHOW SCHEMA] to visualized the schema created when you loaded your data.
++
+image::patternsearch-selectshowschema.png[width=500]
++
+image::showschema.png[width=500]
+
+. Now, select the image:patternserach-playbutton.png[width=50] or hit the btn:[ENTER] on your keyboard to run the visualizer.
++
+image::patternsearch-showschema.png[width=500]
+
+== Customize Your Pattern Search
+
+.You can also create your own searches.In this example, we will visualize a node attribute of a small sample dataset.
+. First we will select or btn:[nodes] data.
++
+image::nodes.png[width=300]
+
+. Next, we will select btn:[Add filter]
++
+image::addfilter.png[width=500]
+
+. You should see a list of column entries from the data that was laoded in this workspace database. Select the one you want to search and visualize.
++
+image::patternsearch-id.png[width=300]
+
+. Chose the operator and type in a number into the box on the right side of the equation.
++
+image::patternsearch-operator.png[width=300]
+
+. Now, select the image:patternserach-playbutton.png[width=50] or hit the btn:[ENTER] on your keyboard to run the visualizer and a result from your graph should appear.
++
+[NOTE]
+====
+If nothing appears the data does not exist in your graph.
+====
++
+image::graph.png[width=300]
+
+
+. Continue to experiment with more filters and searches to visualize your data and gain unique insights
+
+== Next Steps
+
+Return to the  xref:savanna:overview:index.adoc[Overview] page for a different topic.
+

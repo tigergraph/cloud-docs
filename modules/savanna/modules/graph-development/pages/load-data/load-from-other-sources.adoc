@@ -1,0 +1,14 @@
+= Load from Other Sources
+
+TigerGraph Savanna supports various data sources for ingestion, providing flexibility in integrating with your existing data infrastructure.
+GSQL templates can be used for connectors that are not yet supported in the step-by-step loading guide.
+See xref:tigergraph-server:data-loading:index.adoc[Data Loading in TigerGraph DB] for guides to loading data into TigerGraph.
+
+Additionally, data can also be loaded from a JDBC Connection as well, See xref:savanna:graph-development:load-data/jdbc.adoc[] for more details.
+
+== Next Steps
+
+Next, learn how to use xref:savanna:graph-development:design-schema/index.adoc[Design Schema] in TigerGraph Savanna.
+
+Or return to the xref:savanna:overview:index.adoc[Overview] page for a different topic.
+

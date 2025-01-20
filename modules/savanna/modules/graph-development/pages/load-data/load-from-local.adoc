@@ -1,0 +1,108 @@
+= Load from Local File
+:experimental:
+
+With TigerGraph Cloud, you can easily load data from local files into your graph databases. Whether you have data in CSV, JSON, or other formats, you can use the intuitive data ingestion process to import your data. Simply upload your files, specify the schema mapping, and let TigerGraph Cloud handle the rest. This allows you to quickly populate your graph databases with the necessary data for analysis.
+
+== 1) Select Source
+
+.Once you’ve selected btn:[ Local File ],
+. Click on image:Screenshot 2024-04-17 at 5.52.21 PM.png[width=50] to upload your files or directly drag and drop your files in the btn:[File Details] window.
++
+image::Screenshot 2024-04-17 at 5.53.05 PM.png[]
+
+. Click btn:[ Next ] to process the file.
++
+[NOTE]
+====
+* The current data loading tool only supports CSV, TSV, and JSON files. Other formats will be available in later releases.
+* The maximum supported file size is 2GB.
+====
+
+== 2) Configure File
+.This step lets you configure the source file details.
+. The data loading tool will automatically detect the `.csv` separators and line breaks.
+The parser automatically splits each line into a series of tokens.
++
+image::config-file.png[]
++
+[TIP]
+====
+If the parsing is *not* correct, click on the image:Screenshot 2024-04-17 at 5.54.17 PM.png[width=75]
+button to configure a different option for the delimiter, such as `eol`, or `quote and header`.
+
+image:Screenshot 2024-04-17 at 5.54.50 PM.png[]
+====
++
+The enclosing character is used to mark the boundaries of a token, overriding the delimiter character.
++
+====
+For example, if your delimiter is a comma, but you have commas in some strings, then you can define single or double quotes as the enclosing character to mark the endpoints of your string tokens.
+====
++
+[NOTE]
+====
+It is not necessary for every token to have enclosing characters. The parser uses enclosing characters when it encounters them.
+====
++
+[TIP]
+====
+You can edit the header line of the parsing result to give each column a more intuitive name, since you will be referring to these names when loading data to the graph.
+The header name is ignored during data loading.
+====
+
+. Once you are satisfied with the file settings, click btn:[ Next ] to proceed.
+
+== 3) Configure Map
+
+.If you are loading data into a brand new graph, you will be prompted to let our engine generate a schema and mapping for you. Or you can start from scratch. For more details of schema design please refer to xref:savanna:graph-development:design-schema/index.adoc[Design Schema].
+. Select `Generate the schema only` or `Generate the schema and data mapping`.
++
+image::Screenshot 2024-04-17 at 5.55.35 PM.png[]
++
+[CAUTION]
+====
+The schema generation feature is still a preview feature. The correctness and efficiency of the resulting graph schema and mapping could vary.
+====
+
+. In the `Source` column, you can choose the specific column from the data source that you want to map with the attribute.
++
+image::config-mapping-1.png[]
++
+. Use the `+` button to create a new attribute of the target vertex or edge.
++
+image::config-mapping-2.png[width=400]
+
+. Click the btn:[Token Function] button to configure token functions for the selected source. For more details of configuring token functions, please refer to xref:savanna:graph-development:load-data/token-function.adoc[Token Function].
+
+. Click the btn:[Quick Map] button to quickly map the data source headers to the existing schema attributes.
++
+image::quick-map.png[]
++
+    .. The btn:[Map all to target] button aligns existing attribute names with the corresponding data source headers, it won't introduce new attributes.
+    .. The btn:[Map all from source] button not only aligns existing attribute names with the corresponding dat asource headers, but also introduces new attributes based on unmatched data source headers.
+    .. The following list shows the mapping status of each attribute, you can manually adjust the mapping by checking the box next to the attribute name.
+
+. Click btn:[Next] to proceed.
+
+== 4) Confirm
+
+.This step will let you confirm the changes made to the schema and the data mapping you created to load the data.
+. Simply review the `Schema to be changed` and `Data to be loaded` lists.
++
+image::confirm.png[]
++
+[CAUTION]
+====
+Please be aware that some schema changes will result in unintentional deletion of the data. Please carefully review the warning message before confirming the loading.
+====
+. Click on the btn:[Confirm] button to run the loading jobs and monitor their `Status`.
++
+image::Screenshot 2024-04-17 at 5.59.16 PM.png[]
+
+== Next Steps
+
+Next, learn how to use xref:savanna:graph-development:design-schema/index.adoc[Design Schema], xref:savanna:graph-development:gsql-editor/index.adoc[GSQL Editor] and xref:savanna:graph-development:explore-graph/index.adoc[Explore Graph] in TigerGraph Savanna.
+
+Or return to the xref:savanna:overview:index.adoc[Overview] page for a different topic.
+
+

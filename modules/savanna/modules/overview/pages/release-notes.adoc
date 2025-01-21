@@ -4,10 +4,76 @@
 :toc:
 :toclevels:2
 
+== Jan 2025
 
+=== 2025-1-20
+==== Workspace Enhancements
+* Explore Graph: Enable editing of graph data in the explore graph page.
 
+==== Other Enhancements
+* Bug fixes.
+
+=== 2025-1-16
+==== Workspace Enhancements
+* BYOC: Bring Your Own Cloud (BYOC) is now available for enterprise users. You can now deploy TigerGraph Savanna on your own cloud infrastructure, providing greater flexibility and control over your graph database workspaces.
+
+==== Other Enhancements
+* Bug fixes.
+
+== Dec 2024
+=== 2024-12-19
+==== Workspace Enhancements
+* Data Profile: Data Profile is now available in the workspace, providing a comprehensive overview of your graph data, including data distribution, schema, and statistics.
+* API documentation: API documentation is now available, allowing you to access detailed information about the TigerGraph Savanna APIs.
+
+==== Observability Enhancements
+* Email notification: Users will receive email notification in advance when we are cleaning up delinquent workspaces.
+* Visual Indicators for Critical Memory Usage: You can get a more intuitive and visual view of critical memory usage.
+
+==== Other Enhancements
+* Bug fixes.
+
+== Nov 2024
+=== 2024-11-28
+==== Workspace Enhancements
+* Enforce auto stop to free tier: Auto stop is enabled and cannot change for Free tier customers’ workspaces
+
+==== GSQL Editor Enhancements
+* Auto-Completion: Boost your productivity with auto-completion suggestions that help you write cypher queries faster and with fewer errors.
+* Add tutorials to GSQL Editor: Providing samples of schema changes, data loading, and queries for customer reference greatly reduces the learning curve for users.
+
+==== Data Loading Enhancements
+* Enhanced the experience of automatic mapping, and optimize the graph widget performance
+
+==== Other Enhancements
+* Bug fixes.
+
+=== 2024-11-13
+==== Workspace Enhancements
+* Graph Admin: Revamp Graph Admin Configs to make it more user-friendly.
+* Quota Management: Check manual backup and auto backup limit separately, and failed backups do not count towards the backup quota limit.
+
+==== GSQL Editor Enhancements
+* Support JSON view for GSQL editor: Support JSON format to render the query result in GSQL editor
+
+==== Data Loading Enhancements
+* Support loading folder of data sources: Users don’t need specify the data file and can load data from all files within the folder.
+
+==== Other Enhancements
+* Bug fixes.
 
 == Oct 2024
+=== 2024-10-31
+==== Observability Enhancements
+* xref:savanna:workgroup-workspace:workspaces/settings.adoc#_alerts_[Alerting]: user can add recipients to receive alert email.
+
+==== GSQL Editor Enhancements
+* Improved User Interface: Notify users to save all files when they are leaving the editor page with unsaved files or schema.
+
+==== Other Enhancements
+* Bug fixes.
+
+
 === 2024-10-15
 
 ==== Workspace Enhancements
@@ -19,12 +85,8 @@
 
 * xref:savanna:workgroup-workspace:workspaces/settings.adoc#_alerts_[Alerting] System: Stay informed about critical events and performance anomalies through the new alerting system, enabling proactive management of your graph database workspaces.
 
-==== Stability Enhancements
-
-* Improved stability and performance.
-
 ==== Other Enhancements
-
+* Improved stability and performance.
 * Bug fixes.
 
 == Sep 2024

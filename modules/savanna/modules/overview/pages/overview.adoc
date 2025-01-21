@@ -11,7 +11,7 @@ The platform also comes with intuitive interfaces, designed to reduce the learni
 
 TigerGraph Savanna is designed to provide a robust, scalable, and secure environment for deploying graph databases in the cloud. The architecture leverages cloud-native technologies to deliver high performance and reliability, ensuring that your graph database can handle complex queries and large datasets efficiently.
 
-image::cloud4-architecture.png[Architecture Overview, 800, 600]
+image::savanna-architecture.png[Architecture Overview, 800, 600]
 
 === Components
 

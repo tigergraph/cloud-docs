@@ -13,7 +13,7 @@ image::Screenshot 2024-04-17 at 5.47.58 PM.png[width="500"]
 
 . Chose one of TigerGraph Savanna various types of connectors that allow you to load data into your graph database.
 +
-image::Screenshot 2024-04-17 at 5.49.07 PM.png[width="500"]
+image::data-sources.png[width="500"]
 
 . The data loading tool offers two different approaches to make it easier for users to load their data based on their specific needs and preferences.
 +

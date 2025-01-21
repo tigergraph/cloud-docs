@@ -8,7 +8,7 @@ With TigerGraph Savanna, you can easily load data from local files into your gra
 .Once you’ve selected btn:[ Local File ],
 . Click on image:Screenshot 2024-04-17 at 5.52.21 PM.png[width=50] to upload your files or directly drag and drop your files in the btn:[File Details] window.
 +
-image::Screenshot 2024-04-17 at 5.53.05 PM.png[]
+image::load-to-new-graph.png[]
 
 . Click btn:[ Next ] to process the file.
 +

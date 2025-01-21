@@ -8,7 +8,7 @@ To create a workspace in TigerGraph Savanna follow the steps below:
 
 . Log in to your TigerGraph Savanna account.
 +
-image::signup.png[width=450]
+image::login.png[width=450]
 +
 . From the dashboard, navigate to the btn:[Workgroups] section
 Click on the btn:[ Create Workspace ] button.

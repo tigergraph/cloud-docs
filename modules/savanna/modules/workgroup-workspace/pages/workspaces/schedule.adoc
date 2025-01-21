@@ -1,0 +1,53 @@
+= Workspace Schedule
+:experimental:
+
+TigerGraph Savanna provides the ability to schedule workspace actions such as stopping, starting, expanding, and shrinking your workspace. This guide will walk you through the steps to configure and schedule these actions using the TigerGraph Savanna UI.
+
+== Steps to Schedule Workspace Actions
+
+=== 1) Open the Scheduler
+
+. Click on the btn:[Edit] button from the btn:[...] menu of your workspace, and navigate to the btn:[Advanced Settings] tab.
+
++
+image:schedule-1.png[width=600]
+
+. In the schedule section, add new schedule by clicking the btn:[+] button or select edit option of an existing schedule.
+
++
+image:schedule-2.png[width=600]
+
+=== 2) Configure the Scheduler
+
+. Choose your timezone from the dropdown menu.
+
+. Select the repeat option for your schedule: `Daily`, `Weekly`, `Weekdays`. If you do not want the action to repeat, select `No Repeat`.
+
+. Specify the time of day you want the action to occur.
+
+. Choose the desired workspace size from the Workspace Size dropdown menu. The sizes include vCPUs, RAM, and the associated cost per hour. Learn more at xref:workspaces/workspace-size.adoc[].
+
++
+image:schedule-3.png[width=150]
+
+. Click on the btn:[Save] button to save your schedule, then your schedule will be displayed in the schedule list.
+
++
+image:schedule-4.png[width=600]
+
+[NOTE]
+====
+An expansion or shrink is an offline operation.
+If there are any other operations in progress on the workspace, they will be affected.
+====
+
+[TIP]
+====
+Use this feature to automate workspace actions and optimize resource usage.
+====
+
+
+== Next Steps
+See xref:workspaces/how2-create-a-workspace.adoc[] to get started.
+
+Return to the xref:savanna:workgroup-workspace:index.adoc[] page or xref:savanna:overview:index.adoc[Overview] page for a different topic.

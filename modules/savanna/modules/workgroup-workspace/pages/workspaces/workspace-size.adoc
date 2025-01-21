@@ -1,0 +1,67 @@
+= Workspace Size
+
+When creating a workspace, you can specify the size based on your data and performance requirements.
+TigerGraph Savanna offers multiple size options, allowing you to choose the appropriate capacity for your graph databases.
+
+[TIP]
+The size determines the number of instances and the allocated resources for your workspace.
+
+== Workspace Size Table
+
+We provide the following workspace sizes on TigerGraph Savanna.
+
+[cols=6]
+|===
+| Size | VCPU | Memory (GiB) | Pod Size | Maximum Topology Size(GiB) | Partition 
+
+|TG-00|2|16|C2M16| 8 | 1
+
+|TG-0|4|32|C4M32| 16 |1
+
+|TG-1|8|64|C8M64| 32 |1
+
+|TG-2|16|128|C16M128| 64 |1
+
+|TG-4|32|256|C32M256| 128 | 1
+
+|TG-6|48|384|C48M384| 192 |1
+
+|TG-8|64|512|C64M512| 256 |1
+
+|TG-16|128|1024|C64M512| 512 |2
+
+|TG-24|192|1536|C64M512| 768 |3
+
+|TG-32|256|2048|C64M512| 1024 |4
+
+|TG-40|320|2560|C64M512| 1280 |5
+
+|TG-48|384|3072|C64M512| 1536 |6
+
+|TG-56|448|3584|C64M512| 1792 |7
+
+|TG-64|512|4096|C64M512| 2048 |8
+
+|TG-128|1024|8192|C64M512| 4096 |16
+
+|===
+
+Please contact support@tigergraph.com if you need a workspace size that is not listed in the table.
+
+////
+TigerGraph Size Capacity Planner (TBD)
+
+To help you determine the ideal workspace size for your graph databases, TigerGraph provides the TigerGraph Size Capacity Planner. This tool helps estimate the required resources based on factors such as data volume, query complexity, and expected workload. By using the TigerGraph Size Capacity Planner, you can make informed decisions about the size of your workspace, ensuring optimal performance and cost-effectiveness.
+
+[User input of estimated data size]
+
+Choosing the right workspace size is crucial for achieving optimal performance and cost efficiency. The TigerGraph Size Capacity Planner empowers you to make informed decisions and effectively manage the resources for your graph databases within TigerGraph Savanna.
+////
+== Next Steps
+
+See xref:savanna:workgroup-workspace:workspaces/expansion-shrink.adoc[] to learn how to change the size of a workspace or
+return to the xref:savanna:workgroup-workspace:index.adoc[] page or xref:savanna:overview:index.adoc[Overview] page for a different topic.
+
+Or visit xref:savanna:overview:pricing.adoc[] and xref:savanna:overview:cost-estimation.adoc[] for detailed information on the costs associated with different workspace sizes.
+
+

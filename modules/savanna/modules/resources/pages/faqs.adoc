@@ -1,0 +1,530 @@
+= TigerGraph Savanna FAQs
+:experimental:
+:pp: {plus}{plus}
+
+//
+*Feedback for TigerGraph Savanna is welcome at* tgcloud-feedback@tigergraph.com
+
+== Top FAQs
+
+=== *Q: I can't find my registration activation email after registering for the first time. Where can I find it?*
+
+A: Please check your spam folder. If you can't find it in the spam folder, and still cannot receive the verification email in your mailbox after resending the verification email, please https://tigergraph.zendesk.com/hc/en-us/[open a support ticket] so that we can assist you with manual email verification process.
+
+=== *Q: Why don't I see a password reset email?*
+
+A: If you clicked "forgot password" during sign in to Cloud and never received an email, there could be a few explanations.
+
+* If you requested a password reset from an organization login screen, you won't get an email if you don't belong to that organization. Try resetting your password from the main login page at link:portal.tgcloud.io[].
+* If you signed up through Google authentication, you cannot use a password to log in to the same account. Try logging in with your Google account.
+* Check your junk/spam email folder or run a search for "TigerGraph" in case the email automatically got filtered to another inbox.
+* Double-check the email address you entered to make sure it matches the one you signed up with.
+
+If you're still unable to log in or reset your password, contact TigerGraph Support at support@tigergraph.com for individualized help with your issue.
+
+=== *Q:  How does TigerGraph Savanna compare with other DBaaS offerings?*
+
+A: TigerGraph Savanna offers unique advantages such as a graph-native architecture, high performance for complex queries, and features like separation of storage and compute, which are optimized for graph analytics.
+TigerGraph Savanna stands out among Database-as-a-Service (DBaaS) offerings due to its unique features and capabilities tailored specifically for graph analytics. Here are some key aspects where TigerGraph Savanna excels:
+
+* Graph-Native Architecture: Unlike traditional DBaaS offerings that are built on relational or NoSQL databases, TigerGraph Savanna is designed from the ground up for graph analytics. This ensures high performance and efficiency for complex graph queries.
+* Real-Time Analytics: TigerGraph Savanna supports real-time graph analytics, allowing you to derive insights from your data as it changes.
+* Solution Kits Support: TigerGraph Savanna offers a variety of solution kits tailored for specific use cases such as fraud detection, recommendation engines, and supply chain optimization. These kits come with pre-configured schemas, data, and queries to help you get started quickly.
+* Add-Ons and Features
+** GraphStudio™: An intuitive visual interface for designing, querying, and exploring your graph data. GraphStudio™ simplifies the process of building and managing your graph database.
+** Insights: Advanced analytics tools that provide deeper insights into your graph data. Insights help you visualize patterns, trends, and anomalies within your data.
+* Monitoring and Alerting
+** Built-In Monitoring Tools: TigerGraph Savanna includes comprehensive monitoring tools that provide real-time insights into the performance, usage, and health of your graph database.
+** Alerting: Set up custom alerts to notify you of important events such as performance degradation, resource utilization thresholds, and system errors.
+* Expansion and Shrink
+** Scalability: Easily scale your TigerGraph Savanna instances up or down based on your workload requirements. This includes adding or removing nodes and adjusting disk sizes.
+** Elasticity: TigerGraph Savanna supports schduled scaling, allowing you to automatically adjust resources by pre-defined schdule.
+* User Management
+** Role-Based Access Control (RBAC): Manage user permissions and access with fine-grained control. Assign roles to users based on their responsibilities and ensure secure access to your graph database.
+** Single Sign-On (SSO) Integration: Integrate TigerGraph Savanna with your existing SSO system for streamlined user authentication and management.
+* Read-Write and Read-Only Workspaces
+** Workspace Management: Create and manage multiple workspaces within a single TigerGraph Savanna account. Assign read-write or read-only permissions to users based on their roles.
+** Isolation: Ensure data isolation and security by managing access at the workspace level.
+* Additional Features
+** Automated Backups: Schedule automated backups to ensure data protection and recovery.
+** High Availability: Deploy your graph database across multiple nodes to ensure high availability and reliability.
+** Data Encryption: Support for encryption of data in transit and at rest to ensure data security.
+** Integration with Cloud Storage: Import and export data using popular cloud storage solutions like Amazon S3, Azure Blob Storage, and Google Cloud Storage.
+** RESTful API: Access and interact with your graph database using a comprehensive RESTful API.
+* Competitive Edge
+** Performance: TigerGraph Savanna is optimized for high performance, handling complex queries and large datasets efficiently.
+** Flexibility: Support for various deployment options.
+** Community and Support: Access to a vibrant community of users and dedicated support from TigerGraph experts.
+
+In summary, TigerGraph Savanna offers a robust, scalable, and high-performance graph database solution with a wide range of features and tools that set it apart from other DBaaS offerings. Whether you are looking for advanced analytics, ease of use, or scalability, TigerGraph Savanna provides the capabilities you need to succeed.
+
+[#q-are-there-free-tier-instances-or-free-credits-for-the-system]
+=== *Q: Are there Free Tier Instances or Free Credits for the System?*
+
+A: There are free credits but no free instances at TigerGraph Savanna. You can complete the onboarding tasks to get free credits to get started without paying anything.
+
+
+=== *Q: In what cloud platforms and regions does TigerGraph Savanna operate?*
+
+A: TigerGraph Savanna currently only operates on xref:savanna:resources:aws.adoc[]. We are actively working on expanding to xref:savanna:resources:gcp.adoc[] and xref:savanna:resources:azure.adoc[]. Visit each platform's reference page to learn more about the available regions.
+
+=== *Q: Can I choose different versions of TigerGraph on TigerGraph Savanna?*
+
+A: Yes, TigerGraph Savanna allows you to choose from different versions of TigerGraph during the workspace setup process.
+For security and stability reasons, only some legacy versions are available.
+There is no difference in cost for using different versions of TigerGraph.
+
+=== *Q: Does TigerGraph Savanna support distributed databases?*
+
+A: Yes, TigerGraph Savanna supports distributed databases, allowing you to scale your graph database across multiple nodes for improved performance and reliability. The partition factor is automatically defined based on your data size. You can also set up High Availability (HA), which adds a replication factor of 2 or 3 during the workspace setup process. For workspaces TG-8 and below, the replication factor is set to 3 if HA is enabled. For TG-16 and above, the replication factor is set to 2 if HA is enabled.
+
+=== *Q:  What type of server should I use for my data size and workload?*
+
+A: The type of server you need depends on your data size and workload requirements. Please see the section on pricing on our website at our link:https://www.tigergraph.com/cloud/[TigerGraph Savanna main page]. For further assistance, contact TigerGraph at link:mailto:sales@tigergraph.com[sales@tigergraph.com]
+
+
+=== *Q: What kind of services do I get?*
+
+A: TigerGraph Savanna includes automatic scheduled backup, built-in encryption and other security features, patching, replication and distributed database option.  In addition, you can now provision a distributed database as well as a replica cluster for high availability.
+As a cloud service, many of the administrative and operational tasks - for monitoring, restoring, upgrading, for example - are just a click away.
+In addition to operations and management for your TigerGraph databases, TigerGraph Savanna also offers Solution Kits to provide instant experience to various graph analytics use cases.
+The list of Solution Kits can be found here: link:https://www.tigergraph.com/solutions/[TigerGraph Savanna Solutions]
+
+[#q-is-there-a-quota-for-the-number-of-workspaces-i-can-create-in-a-single-account]
+=== *Q: Is there a quota for the number of workspaces I can create in a single account?*
+
+A: Yes. For details, please refer to the xref:savanna:resources:quota_policy.adoc[].
+
+To allow more workspaces, please contact TigerGraph at link:mailto:sales@tigergraph.com[sales@tigergraph.com].
+
+=== *Q: Can I run queries directly after sample solution kits are installed/provisioned?*
+
+A: Yes, you can run queries directly after provisioning sample solution kits. These kits come pre-configured with sample data and queries to help you get started quickly. Some of the solutions also come with one or two Insights applications. 
+
+Please visit our link:http://tigergraph.com/solutiions/[TigerGraph Savanna Solutions] page to watch the overview video for each solution.
+
+
+=== *Q:  How can I monitor my TigerGraph Savanna service?*
+
+A: You can monitor your TigerGraph Savanna service using the built-in monitoring tools provided in the TigerGraph Savanna portal. These tools offer insights into performance, usage, and system health.
+
+See TigerGraph's xref:savanna:workgroup-workspace:workgroups/monitor-workspaces.adoc[Monitor Workspace] for more detailed information.
+
+
+=== *Q:  Is TigerGraph Savanna cloud-agnostic?*
+
+A: While TigerGraph Savanna currently operates on xref:savanna:resources:aws.adoc[] only, we are actively developing support for xref:savanna:resources:gcp.adoc[] and xref:savanna:resources:azure.adoc[]. It is not entirely cloud-agnostic as it leverages specific services and integrations from these cloud providers. If you require immediate assistance managing TigerGraph on another cloud provider, please contact link:mailto:sales@tigergraph.com[sales@tigergraph.com].
+
+
+=== *Q:  Is the support for TigerGraph Savanna the same as the support for TigerGraph Enterprise?*
+
+A: Yes, TigerGraph supports TigerGraph Savanna users using paid/premium/enterprise tiers. See the Support Policy terms at link:https://www.tigergraph.com/support-policy/[www.tigergraph.com/support-policy].
+Support is not included for free tier users; therefore, support tickets for free tier users are answered when support staff bandwidth allows.
+See Section 1.4 in link:https://www.tigergraph.com/tigergraph-cloud-subscription-terms/[www.tigergraph.com/tigergraph-cloud-subscription-terms].
+For additional developer resources for free tier users, join the TigerGraph developer community at link:https://community.tigergraph.com[community.tigergraph.com].
+
+
+=== *Q: What is the user interface for the TigerGraph Savanna?*
+
+A: The TigerGraph Savanna portal provides a browser-based interface that makes it easy to manage, monitor, and operate your graph database. Through this portal, you can load data, design schemas, write queries, and explore your graph. Additionally, you have access to a suite of add-ons, including the TigerGraph xref:gui:graphstudio:overview.adoc[GraphStudio™ UI (User Interface)] and  TigerGraph xref:insights:intro:index.adoc[Insights].
+
+=== *Q: What graph query language does TigerGraph support?*
+
+A: TigerGraph uses GSQL, the query language designed for fast and scalable graph operations and analytics. GSQL's similarity to SQL, high-level syntax, Turing completeness, and built-in parallelism brings faster performance, faster development and the ability to describe any algorithm.
+
+You can start learning GSQL from our link:https://github.com/tigergraph/ecosys/blob/master/demos/guru_scripts/docker/tutorial/4.x/README.md[GSQL V3 Tutorial]. We also support a RESTful API and JSON output for easy integration with application languages like Python, Java, and C{pp}.
+
+Start learning GSQL and become a TigerGraph Certified Associate today with our link:https://www.tigergraph.com/certification/[Certification Program].
+
+
+=== *Q: Can I have multiple graphs in one TigerGraph Savanna workspace?*
+
+A: Yes. MultiGraph is supported. You can have multiple graphs in one TigerGraph Savanna workspace. Each graph is a separate entity with its own schema, data, and queries. You can create, manage, and query multiple graphs within the same workspace.
+
+=== *Q: What methods do you support for importing data?*
+
+A: We support loading data from Amazon S3, Google Cloud Storage, Azure Blob Storage, local files and many more data sources. Please refer to xref:savanna:graph-development:load-data/index.adoc[]. 
+
+For complex loading jobs through GSQL Editor for paid tier clusters, please submit a support ticket from your cloud portal for more information.
+
+=== *Q: How do I develop a customized application on top of TigerGraph Savanna?*
+
+A: Please see https://info.tigergraph.com/graph-gurus-24[Graph Gurus episode 24], where we presented "How to Build Innovative Applications with a Native Graph Database".
+
+
+=== *Q: Can I upgrade from V2.x, V3.x to V4.x?*
+
+A: TigerGraph Savanna only support TigerGraph database version 4.0.0 and above. If you are using an older version, you can migrate your data to a new workspace with the latest version. Please submit a support ticket from your cloud portal for more information.
+
+== Pricing
+
+See xref:savanna:overview:pricing.adoc[Pricing] for detailed information.
+
+=== *Q: What billing models are available?*
+A: TigerGraph Savanna offers different billing models and pricing options to accommodate various usage scenarios and customer needs. The available billing models include:
+
+* Pay-as-you-go: This model allows you to pay for the resources you consume on an hourly basis. You are charged based on the number and type of workspaces you use, the storage capacity you require, and the additional services you purchased. Pay-as-you-go provides flexibility as you can scale resources up or down based on your usage patterns.
+* Prepaid: The prepaid model allows you to purchase credits in advance, which can be used to cover the costs of your TigerGraph Savanna usage. With prepaid credits, you have the advantage of predictable costs and the ability to allocate resources as needed within the prepaid budget. Please contact sales@tigergraph.com for more information on prepaid credits.
+
+For more information on pricing and billing models, please refer to the xref:savanna:overview:pricing.adoc[Pricing] page.
+
+=== *Q:  Do you offer a discount for annual contracts/commitments?*
+
+A: Yes, there is a discount for contracting with TigerGraph for a one-year term.  Please contact link:mailto:sales@tigergraph.com[sales@tigergraph.com] to request your discount.
+
+=== *Q: Can I purchase credits?*
+
+A: Yes. You can purchase credits applied to TigerGraph Savanna usage. Please refer to https://www.tigergraph.com/cloud-credits/
+
+
+=== *Q:  If I delete my workspace before the end of the month, what will I have to pay?*
+
+A: If you are subscribed to our standard hourly service, you will be charged only for your hours of use.
+
+
+=== *Q: If I add a workspace mid-month, when do I start paying for it?*
+
+A:  We bill you and charge your credit card at the end of each calendar month.
+
+
+=== *Q:  If I have a billing problem that I can't solve online, how do I contact you?*
+
+A:  You can either open a support ticket from the cloud portal by clicking "`Support`" on the menu at the left of the page, or you can send an email to link:mailto:billing@tigergraph.com[billing@tigergraph.com].
+
+
+=== *Q:  What happens if my monthly costs exceed the credit limit on my credit card?*
+
+A: If this happens you can contact link:mailto:sales@tigergraph.com[sales@tigergraph.com] and we will provide you with other payment options.
+
+
+=== *Q:  Where can I find TigerGraph's terms and conditions for its products and services?*
+
+A:  You can find our terms and conditions here: http://www.tigergraph.com/terms[www.tigergraph.com/terms].
+
+
+=== *Q: How is TigerGraph Savanna priced for development, test, or QA environments?*
+
+A:  With TigerGraph Savanna, you only pay for what you use.  For long term contracts, please contact link:mailto:sales@tigergraph.com[sales@tigergraph.com].
+
+== Sizing and Scaling
+
+
+=== *Q: How do I determine the instance needed for my workload?*
+A: To determine the appropriate instance for your workload, follow these guidelines:
+
+* **Check Available Instance Types:** Refer to xref:index.adoc[] to see the instance types offered by each cloud provider in each region. Larger graphs require more RAM, while higher performance necessitates both more CPUs and more RAM.
+* **Use the Pricing Table:** Our xref:savanna:overview:pricing.adoc[pricing table] provides initial recommendations for which instance to start with based on the amount of data you plan to load into the graph. This input data is referred to as your "raw data." TigerGraph reorganizes your data into a graph, encoding and compressing it. Typically, the stored graph will be about 70% of the size of your raw data, although this is a conservative estimate and it’s often smaller.
+* **Consider RAM Requirements:** In addition to storage, you need sufficient RAM for graph querying and computation. Different applications of TigerGraph can require varying amounts of RAM. We recommend that your total RAM be about 1.5 times the maximum amount of raw data you expect to load.
+* **Scale as Needed:** If you find you need more space or compute power, you can easily scale up your instance.
+* **Use Tools for Assistance:**
+** xref:savanna:workgroup-workspace:workspaces/settings.adoc#_workspace_size_suggestion[Workspace Size Suggestion]: This tool helps you determine the appropriate instance size for your workload.
+** xref:savanna:overview:cost-estimation.adoc[Cost Estimation]: This tool helps you estimate the cost of your TigerGraph Savanna environment.
+
+For additional assistance, you can submit a support ticket through the TigerGraph Savanna Portal or https://tigergraph.zendesk.com/hc/en-us/[from Zendesk].
+
+=== *Q: How do I expand the disk size?*
+
+There is no need to expand the disk size on TigerGraph Savanna, since the graph data is stored separately from the instance. You can scale up your instance to a larger size if you need more RAM or CPU power.
+
+
+=== *Q: Can I migrate my database to a larger (or smaller) workpace?*
+
+A: Yes, you can just expand or shrink your existing workspace. To do this, simply edit your workspace settings as described in the xref:savanna:workgroup-workspace:workspaces/settings.adoc[] documentation. Alternatively, you can set up an expand/shrink operation on a predefined schedule by following the instructions in the xref:savanna:workgroup-workspace:workspaces/schedule.adoc[] documentation.
+
+=== *Q: Can I deploy a distributed TigerGraph database across a cluster of instances?*
+
+A: Yes, you can provision a distributed database in TigerGraph Savanna. Please refer to the xref:savanna:workgroup-workspace:workspaces/workspace-size.adoc[] documentation for more information.
+
+== Hardware
+
+
+=== *Q: What type of disks are attached to the provisioned TigerGraph Instances?*
+
+A: The provisioned TigerGraph instances have the following disk configurations:
+
+Root Disk: EBS (Elastic Block Store) based root disks is attached to the TigerGraph workspace.
+Graph Data Storage: The graph data is stored in EFS (Elastic File System) and S3 (Simple Storage Service).
+
+=== *Q: What browsers are supported?*
+
+A: As of Oct 2024, TigerGraph Savanna is certified on the following browsers:
+
+|===
+|Chrome |Safari |Firefox |Edge
+
+|Version 107.0.5304.107 (Official Build) (arm64)
+|Version 15.4 (17613.1.17.1.13)
+|Version 106.0.3
+|Version 107.0.1418.42 (Official build) (arm64)
+|===
+
+
+Not all features are guaranteed to work on other browsers.
+Please make sure to enable JavaScript and cookies in your browser settings.
+
+
+
+== Provisioning, Backup and Restore
+
+
+=== *Q: What is a workgroup, workspace, database?*
+
+A: In TigerGraph Savanna, the concepts of workgroup, workspace, and database are used to organize and manage projects and data within the platform. Here's a breakdown of each term:
+
+* Workgroup: A workgroup represents a project or a logical group within TigerGraph Savanna. It serves as a container that holds multiple workspaces and databases related to a specific use case, team, or application. Workgroups provide a way to organize and manage resources, access controls, and configurations for a particular project or initiative.
+* Workspace: A workspace is a compute unit within a TigerGraph database. It is where the graph processing and analytics take place. TigerGraph Savanna supports two types of workspaces: read-write workspaces and read-only workspaces.
+** Read-write workspaces: These workspaces allow read and write operations on the graph data. They are typically used for data ingestion, data updates, and running queries that modify the graph structure or properties.
+** Read-only workspaces: These workspaces are optimized for read-intensive operations. They are used for executing queries and analytics on the graph data without modifying it. Read-only workspaces provide improved performance and scalability for read operations.
+* Database: The database in TigerGraph Savanna refers to the actual data stored within the platform. It is separate from the workspaces and can be associated with one or more workspaces within a workgroup. It holds the persistent data that is loaded into TigerGraph and is accessible for graph analytics and visualization. We only support a maximum of one ready-write workspace to connect to a database.
+
+By utilizing workgroups, workspaces, and databases, TigerGraph Savanna provides a flexible and scalable environment for managing projects, allocating compute resources, and working with graph data effectively. The separation of compute and storage in workspaces allows for optimized performance and resource allocation, while the databases ensure the persistence and accessibility of the graph data.
+
+
+
+=== *Q: Is there a warm-up period for TigerGraph workspaces?*
+
+A: When you provision or restart a workspace, there will be a warm-up period for the workspace.
+The larger the data size and the greater the size of workspace, the longer the warm-up period will be.
+
+
+=== *Q: What is the difference between stopping, pausing, and terminating a workspace?*
+
+A: 
+
+Stopping a Workspace:
+
+* **Action**: Shuts down the workspace without listening to incoming requests.
+* **State**: The TigerGraph database is frozen in its current state.
+* **Billing**: Billing for the machine instance stops, but you will still incur charges for disk storage and backups.
+* **Backups**: Scheduled backups stop, but existing backup copies are kept in storage.
+* **Recovery**: You can start the workspace again, and after a warmup period, it will return to its previous state.
+
+Pausing a Workspace:
+
+* **Action**: Suspends the workspace but listening to incoming requests.
+* **State**: The TigerGraph database is frozen in its current state.
+* **Billing**: Billing for the machine instance stops, but you will still incur charges for disk storage and backups.
+* **Backups**: Scheduled backups stop, but existing backup copies are kept in storage.
+* **Recovery**: The workspace will resume automatically if incoming requests are detected or can be manually started. After a warmup period, it will return to its previous state.
+
+Terminating a Workspace:
+
+* **Action**: Deprovisions the workspace and the attached disk space.
+* **State**: The workspace and all its data are deleted according to the cloud platform's policies.
+* **Billing**: All associated billing stops, including for the virtual machine instance, disk storage, and backups.
+* **Backups**: We will keep the latest backup in storage for 15 days and then delete.
+* **Recovery**: The workspace cannot be recovered once terminated.
+
+In summary:
+
+* **Stopping**: Shuts down the workspace but keeps data and backups; can be restarted.
+* **Pausing**: Suspends the workspace while still listening for requests.
+* **Terminating**: Completely deletes the workspace and its data; cannot be recovered.
+
+=== *Q: Do you offer backup in TigerGraph Savanna?*
+
+A: Yes. Please see our guide for using xref:savanna:workgroup-workspace:workgroups/backup-and-restore.adoc[] in the TigeGraph Cloud 4 Portal.
+
+
+=== *Q: What backup options are available?*
+
+A: TigerGraph Savanna offers full backups on a scheduled or on-demand basis.
+By default, backup is turned on when instances are running and will be done daily.
+There are four backup schedules you can choose from: daily, weekly, monthly, and ad hoc.
+Please refer to the xref:savanna:workgroup-workspace:workgroups/backup-and-restore.adoc[] documentation for more information. You can also check the quota policy for the backup in the xref:savanna:resources:quota_policy.adoc[Quota Policy] documentation.
+
+=== *Q: Can I restore from a backup from another workspace in my account?*
+
+A: Cross workspace restore is not supported yet. Contact TigerGraph Support to restore from another workspace backup.
+
+
+=== *Q: What happens to my automated backups if I terminate my workspace?*
+
+A: We will keep the latest backup for 15 days and then delete.
+Within that 15 days, you may use your backup to restore into another similar cluster if it is a single server cluster.
+To restore a cluster within 15 days, please submit a support ticket through the cloud portal.
+
+
+=== *Q: How soon can I restore from a backup that I just made?*
+
+A: After you perform a backup, you should wait at least 15 minutes.
+
+
+=== *Q: How can I delete my TigerGraph Savanna account?*
+
+A: Please submit a support ticket through the cloud portal.
+
+== High Availability and Replication
+
+
+=== *Q: What kind of replicas does TigerGraph Savanna support?*
+
+A:  TigerGraph Distributed Cloud offers active-active replication for increased availability and automatic failover.
+
+A TigerGraph system with High Availability (HA) is a cluster of server machines which uses replication to provide continuous service when one or more servers are not available or when some service components fail.
+TigerGraph HA service provides loading balancing when all components are operational, as well as automatic failover in the event of a service disruption.
+
+[#q-what-is-the-replication-factor]
+=== *Q: What is the replication factor?*
+
+A: Replication factor means how many copies of data are stored, each on a separate machine.
+You can enable HA, which adds a replication factor of 2 or 3 for your workspace. For workspaces TG-8 and below, the replication factor is set to 3 if HA is enabled. For TG-16 and above, the replication factor is set to 2 if HA is enabled.
+
+[#q-what-is-the-partition-factor]
+=== *Q: What is the partition factor?*
+
+A: Partition factor means the number of parts or components your graph data is split into, which also equals the number of instances that collectively store one copy of the full graph.
+For example, if you select a partition factor of 3, each instance will hold approximately 1/3 of your data.
+Please read the xref:tigergraph-server:cluster-and-ha-management:ha-cluster.adoc[] documentation for additional details about partitions and replications. For the partition factor for each workspace size, please refer to the xref:savanna:workgroup-workspace:workspaces/workspace-size.adoc[] documentation.
+
+[#q-what-is-the-difference-between-replication-and-partition]
+
+
+=== *Q: How long do I need to wait for the cluster to be ready after provisioning process starts?*
+
+A: It currently takes about 4 minutes to provision a workspace. It might take longer for Read-Only workspaces or Read-Write workspaces with a solution kit selected.
+
+== Network, Security and User Management
+
+=== *Q: Does TigerGraph Savanna support encrypting my data in transit and at rest?*
+
+A: Yes, TigerGraph Savanna encrypts all data in transit and at rest.
+
+
+=== *Q: Am I sharing data storage with other customers? Is TigerGraph a multi-tenant cluster?*
+
+A: You are not sharing storage with other customers. For compute resources:
+
+* TG-2 and below: You share the virtual machine with other customers, but the TigerGraph database runs as containers, which are completely isolated from each other. Your data storage remains secure and isolated.
+* TG-4 and above: Each TigerGraph workspace is provisioned as one or more dedicated virtual machine instances of the TigerGraph engine, used exclusively for your account. These instances come with their own dedicated disk space, ensuring that no two accounts share the same TigerGraph database.
+
+Additionally, the network is completely isolated per workgroup, providing an extra layer of security and ensuring that your network traffic is segregated from that of other customers.
+
+This approach guarantees that your data and network remain private and secure, regardless of the compute resource tier you are using.
+
+=== *Q: How do I access my TigerGraph Savanna account (e.g., username and password)?*
+
+A: When you register your account, you can select either a username and password or Google SSO for authentication. You can then log in anytime at link:http://portal.tgcloud.io/[portal.tgcloud.io]. We also support Okta and AAD integration. If you are a paid tier customer, please submit a support ticket to request advanced service to integrate into an SSO system TigerGraph supports.
+
+=== *Q: How do I access my TigerGraph database and POST to TigerGraph?*
+
+A: You can access the database through the TigerGraph Savanna portal, TigerGraph GraphStudio™ visual interface and through RESTful endpoints. Use RESTful endpoints to POST to TigerGraph clusters and develop applications. Please refer to the xref:tigergraph-server:API:index.adoc[RESTful API User Guide] for more information. To find the RESTful endpoints for queries created in GraphStudio™, please read our documentation on xref:gui:graphstudio:write-queries.adoc[showing query endpoints]. There is also a recorded webinar which demos the process in detail: link:https://info.tigergraph.com/graph-gurus-24[Graph Gurus Episode 24]
+
+*Here is the step-by-step instructions:*
+
+TigerGraph Savanna enables xref:tigergraph-server:API:authentication.adoc[REST{pp} Authentication] to securely connect TigerGraph Savanna workspaces with your application through an endpoint on port 443 at `443/restpp/<endpoint>`.
+
+
+*Step 1:* (First time only) Navigate to the TigerGraph cluster's Admin Portal, and generate a secret from User Management.
+
+For example, the URL for the cluster is:
+
+[source,text]
+----
+https://SOLUTIONID.i.tgcloud.io:443/admin/#/user-management
+----
+
+and the generated secret is `abcd1234` from the Admin Portal.
+
+*Step 2:* (Need to renew every lifetime) Use the secret generated in step 1 to get a RESTPP token (for example, xyz789) using `curl`. Access RESTPP endpoints on port 443 using the syntax `443/restpp/<endpoint>`.
+
+Here is an example where you obtain a token with a lifetime of 1,000,000 seconds (11 days):
+
+[source,text]
+----
+curl -X POST 'https://SOLUTIONID.i.tgcloud.io:443/restpp/requesttoken -d '{"secret"="abcd1234", "lifetime"="1000000"}'
+----
+
+[source,text]
+----
+{
+  "code":"REST-0000",
+  "expiration":1570727825,
+  "error":false,
+  "message":"Generate new token successfully.",
+  "token":"xyz789"
+}
+----
+
+*Step 3:*  Now in your application, use the token in the REST call as follows:
+
+[source,text]
+----
+curl -X GET -H "Authorization: Bearer xyz789" 'https://SOLUTIONID.i.tgcloud.io:443/restpp/graph/MyGraph/vertices/Account?limit=3'
+----
+
+
+=== *Q: Does TigerGraph Savanna offer Role Based Access Control?*
+
+A: TigerGraph's role-based access control with MultiGraph and User Management is available if you use TigerGraph V3.0.5+.
+
+
+=== *Q: What happens to my data if I terminate an instance or if my account is closed?*
+
+A: When you terminate an instance in TigerGraph Distributed Cloud, the virtual machine instance and its associated storage volume are deleted according to the policies of the underlying cloud infrastructure vendor.
+
+
+=== *Q: How does TigerGraph Savanna secure my data?*
+
+A: TigerGraph Savanna encrypts data at rest and in transit, and SSL is enabled for secure access.
+
+
+=== *Q: Can I integrate TigerGraph Savanna into my single sign on system?*
+
+A: The ability to use cloud portal to integrate TigerGraph Savanna into an SSO system will be provided at a future date.
+If you are a paid tier customer, please submit a support ticket to request advanced service to integrate into an SSO system TigerGraph supports.
+
+// == Upgrade
+
+
+// === Q: Can I upgrade TigerGraph version on my cluster?
+
+// A: For free tier clusters, upgrading is not supported unless you are migrating to paid tier clusters.
+// If you want to change the database version in your free tier, you can terminate the existing free tier cluster, and create a new free tier with the new version.
+// In each TigerGraph Savanna account, you can have one free tier cluster.
+// If you want to migrate to paid tier clusters, please send a support ticket through your cloud portal.
+
+// For paid tier clusters, please submit a support ticket for upgrade assistance.
+// Downtime is expected during this upgrade.
+// It is recommended to create a new blank cluster, import your data and copy the GSQL queries to test and experiment before upgrading your production instance.
+
+== TigerGraph Savanna Support
+
+
+=== *Q: How do I submit a support ticket?*
+
+A: In your cloud portal, on the navigation menu, you can submit the support ticket by clicking on the btn:[ Support ] on the lower left corner.
+
+This will generate a support ticket in TigerGraph's Zendesk support system.
+You can track the ticket status in Zendesk.
+
+
+=== *Q: How do I submit a support ticket if I cannot access the Cloud Portal?*
+
+A: If in rare cases, you cannot submit TigerGraph Savanna support tickets through the cloud portal for your account, you can also https://tigergraph.zendesk.com/hc/en-us/[open a support ticket] from Zendesk.
+This action automatically generates a new Zendesk support ticket, and you can track the support ticket in the Freshdesk portal.
+
+== Performance
+
+
+=== *Q: Is TigerGraph built on a NoSQL database or a relational database?*
+
+A: TigerGraph is a native parallel graph database built on C{pp}. It is not built on a NoSQL database or relational database.
+
+
+=== *Q: How can I monitor the speed or throughput of queries and data loading?*
+
+A: You can monitor the loading speed on the xref:savanna:graph-development:load-data/index.adoc[] page. For query perormance, you can use the monitoring tools in the xref:savanna:workgroup-workspace:workgroups/monitor-workspaces.adoc[] page.
+
+=== *Q: How can I improve the speed of my system?*
+
+A: Due to TigerGraph's massively parallel and hybrid in-memory database design, an instance with more vCPUs and more memory will usually run faster.
+For a given hardware configuration, performance can be improved by optimizing graph schema, loading jobs, and queries.
+In TigerGraph Distributed Cloud, you can also choose to provision a cluster with replication factor 2 to increase throughput.
+Contact link:mailto:sales@tigergraph.com[sales@tigergraph.com] to discuss query optimization services.
+
+
+=== *Q: What third-party software is used in TigerGraph Savanna?*
+
+A: A list of third-party software used in the TigerGraph engine and TigerGraph Savanna is available at xref:tigergraph-server:reference:patents-and-third-party-software.adoc[].
+//

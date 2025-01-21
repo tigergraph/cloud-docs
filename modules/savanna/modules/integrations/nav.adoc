@@ -1,0 +1,8 @@
+* xref:index.adoc[Marketplace]
+** xref:solutions.adoc[]
+** xref:add-ons.adoc[]
+*** xref:graphstudio.adoc[]
+*** xref:insights.adoc[]
+*** xref:savanna:integrations:graphql.adoc[]
+
+

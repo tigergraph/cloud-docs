@@ -2,12 +2,6 @@
 :experimental:
 :page-aliases: get-started.adoc
 
-[IMPORTANT]
-====
-TigerGraph Cloud 4 beta is for personal or R&D use and not for production use.
-Please see xref:cloud4:resources:terms_conditions.adoc[].
-====
-
 == Sign up
 Click btn:[Sign Up] on the https://tgcloud.io/[TigerGraph Cloud landing page].
 

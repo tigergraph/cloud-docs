@@ -68,7 +68,7 @@ Adjust the auto-suspend interval accordingly to avoid interrupting critical proc
 ==== Auto-Suspend Limitations
 
 .The following operations are not treated as "active" and will not prevent the workspace from being auto-suspended:
-* Consuming TigerGraph Cloud Controller APIs
+* Consuming TigerGraph Savanna Controller APIs
 * Configuring the workspace.
 * Monitoring the workspace.
 * Backuping/Restoring the workspace.
@@ -93,7 +93,7 @@ The first request that hits the Workspace when it is idle will trigger a start w
 ==== Auto-Resume Limitations
 
 .The following endpoints will not trigger auto-resume:
-* Consuming TigerGraph Cloud Controller APIs
+* Consuming TigerGraph Savanna Controller APIs
 
 == Add-ons
 

@@ -55,7 +55,7 @@ To help you determine the ideal workspace size for your graph databases, TigerGr
 
 [User input of estimated data size]
 
-Choosing the right workspace size is crucial for achieving optimal performance and cost efficiency. The TigerGraph Size Capacity Planner empowers you to make informed decisions and effectively manage the resources for your graph databases within TigerGraph Cloud.
+Choosing the right workspace size is crucial for achieving optimal performance and cost efficiency. The TigerGraph Size Capacity Planner empowers you to make informed decisions and effectively manage the resources for your graph databases within TigerGraph Savanna.
 ////
 == Next Steps
 

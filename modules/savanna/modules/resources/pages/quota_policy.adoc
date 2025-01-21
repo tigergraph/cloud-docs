@@ -1,13 +1,13 @@
 = TigerGraph Savanna Subscription Plans and Quota Policy
 
 == Objective
-This document aims to provide customers with a clear understanding of the various subscription plans available, along with their associated resource allocations and limitations. It ensures customers can make informed decisions about their usage and upgrade options, enabling them to manage their resources and costs effectively while leveraging the full potential of TigerGraph Cloud.
+This document aims to provide customers with a clear understanding of the various subscription plans available, along with their associated resource allocations and limitations. It ensures customers can make informed decisions about their usage and upgrade options, enabling them to manage their resources and costs effectively while leveraging the full potential of TigerGraph Savanna.
 
 [IMPORTANT]
 This policy is subject to review and adjustment at the discretion of TigerGraph's management based on feedback from the user community and evolving business needs.
 
 == Subscription Plans
-TigerGraph Cloud offers four distinct subscription plans to cater to various customer needs:
+TigerGraph Savanna offers four distinct subscription plans to cater to various customer needs:
 
 - **Free**
 - **Paid**

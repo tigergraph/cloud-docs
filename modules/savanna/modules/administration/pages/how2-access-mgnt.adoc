@@ -6,7 +6,7 @@ In TigerGraph Savanna, access management allows you to configure permissions at 
 
 == Resource Level
 
-At the resource level, you can configure permissions that apply to specific workspaces within your TigerGraph Cloud organization.
+At the resource level, you can configure permissions that apply to specific workspaces within your TigerGraph Savanna organization.
 Resource-level permissions determine what actions a user can perform on a specific resource.
 
 [TIP]

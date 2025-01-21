@@ -1,7 +1,7 @@
 = Token Function
 :experimental:
 
-TigerGraph Savanna allows you to enhance your data loading process by adding token functions. Token functions enable you to manipulate and transform data during the loading process, making it easier to prepare your data for graph analysis. This guide will walk you through the steps to add token functions using the TigerGraph Cloud UI. For more details please refer to xref:4.1@gsql-ref:ddl-and-loading:functions/token/index.adoc[Token Functions].
+TigerGraph Savanna allows you to enhance your data loading process by adding token functions. Token functions enable you to manipulate and transform data during the loading process, making it easier to prepare your data for graph analysis. This guide will walk you through the steps to add token functions using the TigerGraph Savanna UI. For more details please refer to xref:4.1@gsql-ref:ddl-and-loading:functions/token/index.adoc[Token Functions].
 
 == Add a token function
 . Click on the btn:[Token Function] button to configure token functions for your data source.

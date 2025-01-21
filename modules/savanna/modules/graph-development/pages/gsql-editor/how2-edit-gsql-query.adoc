@@ -79,7 +79,7 @@ You can only share a GSQL file if you are the file owner.
 
 image::Screenshot 2024-04-18 at 10.14.54 AM.png[width=300]
 
-In TigerGraph Cloud, GSQL files have btn:[Viewer] and btn:[Editor] permissions that can be assigned to individual users or shared with the entire organization.
+In TigerGraph Savanna, GSQL files have btn:[Viewer] and btn:[Editor] permissions that can be assigned to individual users or shared with the entire organization.
 
 image::Screenshot 2024-04-18 at 10.15.25 AM.png[width=300]
 

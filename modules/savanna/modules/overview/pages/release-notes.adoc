@@ -36,7 +36,7 @@
 
 ==== Workspace Enhancements
 
-* Output to Amazon S3: Benefit from integration with Amazon S3 for data output, enabling you to store and retrieve data from Amazon S3 buckets directly from your TigerGraph Cloud environment.
+* Output to Amazon S3: Benefit from integration with Amazon S3 for data output, enabling you to store and retrieve data from Amazon S3 buckets directly from your TigerGraph Savanna environment.
 * Built-in Read-only Algorithms: Run built-in read-only algorithms on read-only workspaces, empowering users to leverage algorithmic capabilities for analysis and insights.
 
 ==== GSQL Editor Enhancements
@@ -52,7 +52,7 @@
 
 ==== Other Enhancements
 * xref:savanna:workgroup-workspace:workgroups/how2-config-network-access.adoc[Network Configuration]:  Set up IP allow lists to protect your workspaces, allowing you to control access and enhance the security of your graph database workspaces.
-* xref:savanna:rest-api:index.adoc[Controller APIs] Support: Enable APIs to operate on TigerGraph Cloud workspaces by providing support for API keys, enhancing the flexibility and security of interacting with your graph database through APIs. 
+* xref:savanna:rest-api:index.adoc[Controller APIs] Support: Enable APIs to operate on TigerGraph Savanna workspaces by providing support for API keys, enhancing the flexibility and security of interacting with your graph database through APIs. 
 * Bug fixes.
 
 === 2024-09-12
@@ -91,7 +91,7 @@
 
 ==== Obvervability Enhancements
 
-* Enhanced xref:savanna:workgroup-workspace:workgroups/monitor-workspaces.adoc[Monitoring] Tools: Gain deeper insights into your TigerGraph Cloud environment with improved monitoring tools, allowing you to track performance metrics and diagnose issues effectively.
+* Enhanced xref:savanna:workgroup-workspace:workgroups/monitor-workspaces.adoc[Monitoring] Tools: Gain deeper insights into your TigerGraph Savanna environment with improved monitoring tools, allowing you to track performance metrics and diagnose issues effectively.
 
 ==== Other Enhancements
 
@@ -111,7 +111,7 @@
 
 === TigerGraph Savanna (Beta) was released on Monday, April 29th, 2024.
 
-//* xref:savanna:get-started:index.adoc[Get Started] using TigerGraph Cloud with the 4.0.
+//* xref:savanna:get-started:index.adoc[Get Started] using TigerGraph Savanna with the 4.0.
 * xref:savanna:overview:overview.adoc#_separation_of_storage_and_compute[Separation of Storage and Compute] - Introduction of a unique architecture that separates storage and compute, allowing users to scale resources independently.
 
 * xref:workgroup-workspace:workgroups/workgroup.adoc[Workgroups] and xref:workgroup-workspace:workspaces/workspace.adoc[Workspaces] give users control over resource management.

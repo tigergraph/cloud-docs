@@ -13,7 +13,7 @@ It revolutionizes graph analytics by introducing a groundbreaking separation of 
 
 //{tooltip}
 
-== Get to Know Your TigerGraph Cloud
+== Get to Know TigerGraph Savanna
 
 [.home-card,cols="2",grid=none,frame=none, separator=¦]
 |===

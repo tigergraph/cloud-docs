@@ -43,7 +43,7 @@ Compute resources on TigerGraph Savanna are billed based on the number of TCRs c
 
 === TigerGraph Credits
 
-A TigerGraph Credit (TCR) is a unit that represents the cost of using compute resources on TigerGraph Cloud. By using TCRs, you can easily scale your compute resources up or down to meet your performance needs without worrying about complex pricing structures.
+A TigerGraph Credit (TCR) is a unit that represents the cost of using compute resources on TigerGraph Savanna. By using TCRs, you can easily scale your compute resources up or down to meet your performance needs without worrying about complex pricing structures.
 
 The exchange rate for TigerGraph Credits is straightforward:
 
@@ -191,7 +191,7 @@ Storage on TigerGraph Savanna is billed separately from compute resources. Stora
 |===
 
 == Add-on Pricing
-TigerGraph Savanna offers a variety of add-ons to enhance your graph database experience. Each add-on is priced individually, allowing you to customize your TigerGraph Cloud environment to fit your specific needs and budget. Add-ons are billed monthly and can be added or removed at any time to provide maximum flexibility. 
+TigerGraph Savanna offers a variety of add-ons to enhance your graph database experience. Each add-on is priced individually, allowing you to customize your TigerGraph Savanna environment to fit your specific needs and budget. Add-ons are billed monthly and can be added or removed at any time to provide maximum flexibility. 
 [cols="3", separator=¦ ]
 |===
 ¦Add-On ¦Scope ¦Price

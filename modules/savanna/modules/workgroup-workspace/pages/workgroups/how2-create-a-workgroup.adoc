@@ -8,9 +8,9 @@ To create a workgroup in TigerGraph Savanna, follow the steps below.
 
 [Placeholder for create workgroup screenshot]
 
-. Log in to your TigerGraph Cloud account.
+. Log in to your TigerGraph Savanna account.
 +
-image::signup.png[width=450]
+image::login.png[width=450]
 
 . Click on the btn:[Create Workspace] button on your landing page.
 +

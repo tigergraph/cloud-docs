@@ -1,7 +1,7 @@
 = Load from Local File
 :experimental:
 
-With TigerGraph Cloud, you can easily load data from local files into your graph databases. Whether you have data in CSV, JSON, or other formats, you can use the intuitive data ingestion process to import your data. Simply upload your files, specify the schema mapping, and let TigerGraph Cloud handle the rest. This allows you to quickly populate your graph databases with the necessary data for analysis.
+With TigerGraph Savanna, you can easily load data from local files into your graph databases. Whether you have data in CSV, JSON, or other formats, you can use the intuitive data ingestion process to import your data. Simply upload your files, specify the schema mapping, and let TigerGraph Savanna handle the rest. This allows you to quickly populate your graph databases with the necessary data for analysis.
 
 == 1) Select Source
 

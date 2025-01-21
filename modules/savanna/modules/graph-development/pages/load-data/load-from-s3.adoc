@@ -1,7 +1,7 @@
 = Load from Amazon S3
 :experimental:
 
-If you store your data in Amazon S3, TigerGraph Cloud provides seamless integration for data ingestion.
+If you store your data in Amazon S3, TigerGraph Savanna provides seamless integration for data ingestion.
 You can directly load data from your S3 buckets into your graph databases, eliminating the need for manual data transfers.
 This simplifies the process of importing large datasets and enables you to leverage the scalability and durability of Amazon S3 for your graph analysis.
 

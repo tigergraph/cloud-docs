@@ -68,7 +68,7 @@ A database user with its own roles and privileges for different graphs stored on
 
 == vCPU
 
-A virtual central processing unit. A vCPU is a core within a virtual machine inside TigerGraph Cloud.
+A virtual central processing unit. A vCPU is a core within a virtual machine inside TigerGraph Savanna.
 
 == VPC
 
@@ -80,11 +80,11 @@ A network between two VPCs allowing instances to communicate as if they are on t
 
 == web shell
 
-A browser-accessible command line for running GSQL commands on a TigerGraph Cloud cluster.
+A browser-accessible command line for running GSQL commands on a TigerGraph Savanna cluster.
 
 == workgroup
 
-A workgroup represents a project or a logical group within TigerGraph Cloud. It serves as a container that holds multiple workspaces and databases related to a specific use case, team, or application.
+A workgroup represents a project or a logical group within TigerGraph Savanna. It serves as a container that holds multiple workspaces and databases related to a specific use case, team, or application.
 
 == workspace
 

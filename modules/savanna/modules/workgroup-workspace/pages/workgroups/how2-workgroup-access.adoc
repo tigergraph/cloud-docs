@@ -1,7 +1,7 @@
 = How to Manage Workgroup and Workspace Permissions
 :experimental:
 
-In TigerGraph Cloud, access management allows you to configure permissions at both the user level and the resource level.
+In TigerGraph Savanna, access management allows you to configure permissions at both the user level and the resource level.
 
 == User Level Permission
 At the user level, you can define permissions that apply to individual users or groups of users.
@@ -17,7 +17,7 @@ You can go to xref:savanna:administration:how2-access-mgnt.adoc[] to manage acce
 
 == Resource Level
 
-At the resource level, you can configure permissions that apply to specific workspaces within your TigerGraph Cloud organization.
+At the resource level, you can configure permissions that apply to specific workspaces within your TigerGraph Savanna organization.
 Resource-level permissions determine what actions a user can perform on a specific resource.
 
 [TIP]

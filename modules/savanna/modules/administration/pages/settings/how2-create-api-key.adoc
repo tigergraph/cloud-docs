@@ -10,7 +10,7 @@ The TigerGraph Savanna REST API is currently in preview version. Features and en
 
 == Overview
 
-API keys are essential for authenticating and securing access to the TigerGraph Cloud REST API. This guide will walk you through the steps to create, configure, and manage your API keys.
+API keys are essential for authenticating and securing access to the TigerGraph Savanna REST API. This guide will walk you through the steps to create, configure, and manage your API keys.
 
 == Creating an API Key
 

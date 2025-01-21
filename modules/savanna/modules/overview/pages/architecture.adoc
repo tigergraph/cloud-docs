@@ -47,6 +47,6 @@ It helps users discover valuable information within their data even if they are 
 
 == Next Steps
 
-Next, to understand how TigerGraph cloud differs from other TigerGraph offerings, see xref:overview:comparison_table.adoc[] or see xref:savanna:get-started:index.adoc[] to unlock its full potential.
+Next, to understand how TigerGraph Savanna differs from other TigerGraph offerings, see xref:overview:comparison_table.adoc[] or see xref:savanna:get-started:index.adoc[] to unlock its full potential.
 
 Return to xref:savanna:overview:index.adoc[TigerGraph Savanna] for another topic.

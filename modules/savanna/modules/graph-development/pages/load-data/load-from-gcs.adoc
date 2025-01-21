@@ -1,7 +1,7 @@
 = Load from Google Cloud Storage (GCS)
 :experimental:
 
-If you store your data in Google Cloud Storage (GCS), TigerGraph Cloud provides seamless integration for data ingestion. You can directly load data from your GCS into your graph databases, eliminating the need for manual data transfers. This simplifies the process of importing large datasets and enables you to leverage the scalability and durability of Google Cloud Storage for your graph analysis.
+If you store your data in Google Cloud Storage (GCS), TigerGraph Savanna provides seamless integration for data ingestion. You can directly load data from your GCS into your graph databases, eliminating the need for manual data transfers. This simplifies the process of importing large datasets and enables you to leverage the scalability and durability of Google Cloud Storage for your graph analysis.
 
 == 1) Select Source
 

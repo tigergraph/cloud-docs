@@ -1,7 +1,7 @@
 = Workspace Schedule
 :experimental:
 
-TigerGraph Savanna provides the ability to schedule workspace actions such as stopping, starting, expanding, and shrinking your workspace. This guide will walk you through the steps to configure and schedule these actions using the TigerGraph Cloud UI.
+TigerGraph Savanna provides the ability to schedule workspace actions such as stopping, starting, expanding, and shrinking your workspace. This guide will walk you through the steps to configure and schedule these actions using the TigerGraph Savanna UI.
 
 == Steps to Schedule Workspace Actions
 

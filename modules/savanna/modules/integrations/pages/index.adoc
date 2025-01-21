@@ -1,7 +1,7 @@
 = Marketplace Overview
 :experimental:
 
-TigerGraph Cloud seamlessly integrates with various tools and services to enhance your graph database workflow.
+TigerGraph Savanna seamlessly integrates with various tools and services to enhance your graph database workflow.
 
 == xref:savanna:integrations:add-ons.adoc[]
 

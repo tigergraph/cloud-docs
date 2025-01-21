@@ -59,8 +59,7 @@ You can manually sync up the data with Read-Write(RW) workspace when needed.
 
 //[Placeholder for update read-only workspace]
 
-[NOTE]
-Updating a Read-Only (RO) workspace is an offline operation.
+[NOTE]:Updating a Read-Only (RO) workspace is an offline operation.
 
 If there are any other operations in progress on the RO workspace, they are likely to be affected during the update process.
 

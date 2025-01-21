@@ -17,12 +17,40 @@ Read-Only (RO) workspaces are optimized for read-intensive operations.
 They are used for executing queries and analytics on the graph data without modifying it.
 Read-only workspaces provide improved performance and scalability for read operations.
 
+[NOTE]: The Read-Only workspace must be manually synced with the Read-Write workspace to reflect the latest data changes.
+
 //[Placeholder for attach to an existing database]
 
-[NOTE]
-====
-Current RO workspace requires manual sync up with the RW workspace to catch up with the latest change.
-====
+=== Operations Prohibited in a Read-Only (RO) Workspace
+
+In a Read-Only (RO) workspace within TigerGraph Cloud, the following operations are strictly prohibited:
+
+.Database Operations
+- Running "gsql --reset" command.
+- Clearing the graph store.
+- Executing the DROP ALL command.
+
+.Schema Management
+- Updating schemas, including adding, updating, or dropping schema elements.
+- Creating, dropping, or running schema change jobs.
+
+.Graph Management
+- Creating or dropping graphs.
+- Exporting or importing database data.
+
+.Data Modification
+- Running any queries that modify the database data.
+- Inserting, updating, or deleting data.
+- Committing the data(such as new vertices or edges) in memory to disk. for example: rebuildnow operation
+
+.Loading Jobs
+- Creating, deleting, or running loading jobs.
+- Creating, deleting, pausing, restarting, or resuming connectors.
+- Creating or updating data sources.
+
+.Backup and Restore
+- Performing backup or restore operations.
+
 
 === Update Read-Only(RO) Workspace
 
@@ -46,5 +74,3 @@ It is recommended to schedule the update during a time when minimal or no operat
 Next, about xref:cloud4:workgroup-workspace:workspaces/workspace-size.adoc[Workspace Sizes] or learn how to xref:cloud4:workgroup-workspace:workspaces/expansion-shrink.adoc[Expand and Shrink] a workspace.
 
 Return to the xref:cloud4:workgroup-workspace:index.adoc[] page or xref:cloud4:overview:index.adoc[Overview] page for a different topic.
-
-

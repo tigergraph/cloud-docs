@@ -25,6 +25,38 @@ It holds the persistent data that is loaded into TigerGraph and is accessible fo
 We only support a maximum of one Read-Write workspace to connect to a database.
 ====
 
+
+=== Operations Prohibited in a Read-Only (RO) Workspace
+
+In a Read-Only (RO) workspace within TigerGraph Cloud, the following operations are strictly prohibited:
+
+.Database Operations
+- Running "gsql --reset" command.
+- Clearing the graph store.
+- Executing the DROP ALL command.
+
+.Schema Management
+- Updating schemas, including adding, updating, or dropping schema elements.
+- Creating, dropping, or running schema change jobs.
+
+.Graph Management
+- Creating or dropping graphs.
+- Exporting or importing database data.
+
+.Data Modification
+- Running any queries that modify the database data.
+- Inserting, updating, or deleting data.
+- Committing the data(such as new vertices or edges) in memory to disk. for example: rebuildnow operation
+
+.Loading Jobs
+- Creating, deleting, or running loading jobs.
+- Creating, deleting, pausing, restarting, or resuming connectors.
+- Creating or updating data sources.
+
+.Backup and Restore
+- Performing backup or restore operations.
+
+
 == Next Steps
 See xref:workspaces/how2-create-a-workspace.adoc[] to get started.
 

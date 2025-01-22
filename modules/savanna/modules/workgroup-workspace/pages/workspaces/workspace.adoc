@@ -28,7 +28,7 @@ We only support a maximum of one Read-Write workspace to connect to a database.
 
 === Operations Restricted in a Read-Only (RO) Workspace
 
-In a Read-Only (RO) workspace within TigerGraph Savanna, the following operations are strictly prohibited:
+In a Read-Only (RO) workspace within TigerGraph Savanna, the following operations are restricted:
 
 .Database Operations
 - Running "gsql --reset" command.

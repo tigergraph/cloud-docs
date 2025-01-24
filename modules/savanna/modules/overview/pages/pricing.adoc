@@ -61,10 +61,10 @@ The compute costs are distinct from the storage fees listed below and are metere
 For inquiries about pricing, volume discounts, or deploying in other regions, please contact us at sales@tigergraph.com.
 
 [NOTE]
-----
+====
 Prices depend on your region.
 The table automatically adjusts to the region you select above.
-----
+====
 
 ++++
 
@@ -177,7 +177,7 @@ High Availability (HA) on TigerGraph Savanna ensures your graph database remains
 
 [cols="3", separator=¦ ]
 |===
-¦ Compute Size ¦ Replica Factor ¦ Cost Mutiplier
+¦ Compute Size ¦ Replica Factor ¦ Cost Multiplier
 ¦ Sizes equal or below TG-8 ¦ 3 ¦ 2.8x
 ¦ Sizes above TG-8 ¦ 2 ¦ 1.95x 
 

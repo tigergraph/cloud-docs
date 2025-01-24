@@ -1,6 +1,7 @@
 = Pricing
 
-TigerGraph Savanna offers a flexible and transparent pricing model designed to accommodate a wide range of usage scenarios, from small-scale projects to large enterprise deployments. Our pricing structure is crafted to provide you with the best value while ensuring your graph database solutions are scalable, reliable, and high-performing.
+TigerGraph Savanna offers a flexible and transparent pricing model designed to accommodate a wide range of usage scenarios, from small-scale projects to large enterprise deployments.
+Our pricing structure is crafted to provide you with the best value while ensuring your graph database solutions are scalable, reliable, and high-performing.
 
 == Select Platform and Region
 :provider: AWS
@@ -43,7 +44,8 @@ Compute resources on TigerGraph Savanna are billed based on the number of TCRs c
 
 === TigerGraph Credits
 
-A TigerGraph Credit (TCR) is a unit that represents the cost of using compute resources on TigerGraph Savanna. By using TCRs, you can easily scale your compute resources up or down to meet your performance needs without worrying about complex pricing structures.
+A TigerGraph Credit (TCR) is a unit that represents the cost of using compute resources on TigerGraph Savanna.
+By using TCRs, you can easily scale your compute resources up or down to meet your performance needs without worrying about complex pricing structures.
 
 The exchange rate for TigerGraph Credits is straightforward:
 
@@ -55,7 +57,14 @@ This means that for every TigerGraph Credit you consume, you will be billed $4.0
 === Compute Pricing Table
 
 The following table outlines the cost in TCRs for different sizes of compute resources.
-The compute costs are distinct from the storage fees listed below and are metered based on actual usage. For inquiries about pricing, volume discounts, or deploying in other regions, please contact us at sales@tigergraph.com.
+The compute costs are distinct from the storage fees listed below and are metered based on actual usage.
+For inquiries about pricing, volume discounts, or deploying in other regions, please contact us at sales@tigergraph.com.
+
+[NOTE]
+----
+Prices depend on your region.
+The table automatically adjusts to the region you select above.
+----
 
 ++++
 

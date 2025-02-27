@@ -1,0 +1,52 @@
+= Token Function
+:experimental:
+
+TigerGraph Savanna allows you to enhance your data loading process by adding token functions. Token functions enable you to manipulate and transform data during the loading process, making it easier to prepare your data for graph analysis. This guide will walk you through the steps to add token functions using the TigerGraph Savanna UI. For more details please refer to xref:4.1@gsql-ref:ddl-and-loading:functions/token/index.adoc[Token Functions].
+
+== Add a token function
+. Click on the btn:[Token Function] button to configure token functions for your data source.
+
++
+image::config-mapping-2.png[width=400]
++
+. Click on the btn:[+] button to create a new token function, or select one from the list to edit.
++
+image::token-function-1.png[]
++
+
+. Select the token function you want to use from the `Type` dropdown menu. This will automatically populate the output data type and the required parameters. You can also check the sample input and output by hovering over the btn:[?] icon. Please refer to the xref:4.1@gsql-ref:ddl-and-loading:functions/token/index.adoc[Token Functions] documentation for more details.
+
++
+image::token-function-3.png[]
++
+
+. Configure the parameters in the *Parameters* section of the window. You can click on the btn:[+] button to add more data columns from the source file.
+
++
+image::token-function-2.png[]
++
+
+. Click on the btn:[Save] button to save the token function.
+
+. Select the token function you just created in the source column to map to the target attribute.
+
++
+image::token-function-4.png[]
++
+
+[TIP]
+====
+You can also apply nested token functions to maximize the potential of TigerGraph.
+====
+
++
+[NOTE]
+====
+Custom token functions are not supported in the TigerGraph Savanna UI.
+====
+
+== Next Steps
+Next, learn more about how to xref:savanna:graph-development:load-data/index.adoc[].
+
+Or return to the xref:savanna:workgroup-workspace:index.adoc[] page or xref:savanna:overview:index.adoc[Overview] page for a different topic.
+

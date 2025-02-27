@@ -1,0 +1,52 @@
+= Configure User Defined Functions (UDFs) On TigerGraph Savanna
+:experimental:
+
+User-Defined Functions (UDFs) in TigerGraph allow you to incorporate custom logic into your GSQL queries. You can configure GSQL to your UDF definitions from a GitHub repository. This is TigerGraph’s recommended approach for managing UDFs.
+
+== Prerequisites
+
+* Familiarity with GSQL and UDF syntax.
+* An active TigerGraph Savanna workspace.
+
+== Steps to Update a UDF
+
+1) Set up the TigerGraph Savanna workspace and ensure it is running.
+
+2) Edit the workspace by clicking the btn:[...] button of your selected workspace.
+
+3) Navigate to the btn:[Graph Admin] tab.
+
+4) Select the btn:[GSQL] section, then configure the following entries:
+
+image::config-udf.png[]
+
+.GitHub Configuration For UDFs
+[cols="3", separator=¦]
+|===
+
+¦Input ¦ Description ¦ Example
+¦GitHub URL For UDF ¦ Optional parameter used for GitHub Enterprise ¦ `https://api.github.com`
+¦GitHub Repository For UDF ¦ The user and repository where the files are held ¦ `sample_user/repository`
+¦Repository Branch For UDF ¦ The branch to access ¦ `main`
+¦Repository Path For UDF ¦ Path to the directory in the repository that has ExprFunctions.hpp and ExprUtil.hpp ¦ `src/`
+¦GitHub User Access Token For UDF ¦ The credential used to access the repository ¦ `anonymous`
+
+|===
+
+5) Click btn:[Save] to apply the changes. 
+
+[NOTE]
+====
+Update Graph Admin configurations may require restart of certain services, which may impact the running queries/loading jobs/schema changes. Apply changes with caution.
+====
+
+== Best Practices
+
+* Version Control: Keep track of changes to your UDFs using a version control system.
+* Testing: Thoroughly test UDFs in a development environment before deploying to production.
+* Documentation: Document the purpose and usage of each UDF for future reference.
+
+== Troubleshooting
+
+* Syntax Errors: Double-check the syntax of your UDF code.
+* Logic Errors: Ensure that the logic within the UDF is correct and handles all edge cases.

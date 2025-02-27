@@ -1,0 +1,52 @@
+= TigerGraph Savanna Architecture
+:experimental:
+:toc:
+:toclevels:2
+
+Welcome to the TigerGraph Savanna Architecture documentation. This guide provides an in-depth look at the architecture of TigerGraph Savanna, detailing its components, design principles, and how it ensures performance, scalability, and reliability for your graph database applications.
+
+
+
+== Overview
+
+These key features of TigerGraph Savanna collectively provide a powerful and user-friendly environment for organizations to perform advanced graph analytics, gain valuable insights from interconnected data, and drive data-driven decision-making and innovation.
+
+=== Separation of Storage and Compute
+We introduce a unique architecture that separates storage and compute, allowing users to scale resources independently.
+This enables optimized performance and cost-efficiency by allocating resources based on specific workload requirements.
+It is designed to scale seamlessly as data and workload demands grow.
+It offers elastic scaling capabilities, allowing users to dynamically adjust resources to handle varying workloads and ensure optimal performance.
+
+=== Read-Write and Read-Only Workspaces
+We introduce Read-Write and Read-Only Workspaces to connect to the same database, allowing users to dynamically control OLTP and OLAP workloads for complete isolation of analytical and transactional traffic.
+
+=== Streamlined Data Loading Pipeline
+The platform simplifies the process of importing and transforming data into a graph database.
+With support for various data connectors such as Local File, Amazon S3, Azure Blob Storage, GCP Cloud Storage, Spark, Snowflake, Postgres, Kafka, and BigQuery, the platform offers seamless integration with diverse data sources.
+It provides step-by-step data loading for select connectors, automatically detecting formats, schemas, and mappings. This streamlines the data loading process and enables auto schema and mapping generation, making it convenient to leverage existing data assets for graph analytics.
+
+=== Integrations with Solution Kits
+TigerGraph Solution Kits are comprehensive, ready-to-use solutions that package TigerGraph's industry-leading graph database and AI technology with domain-specific schema, workflows, and dashboards.
+They provide everything users need to get started with graph analytics and AI-driven insights in their respective fields.
+
+=== GSQL Editor
+The platform features a dedicated GSQL Editor—an integrated development environment (IDE) tailored for working with GSQL, the query language of TigerGraph.
+Designed with user convenience in mind, the GSQL Editor offers a user-friendly interface that simplifies the process of writing, testing, and optimizing GSQL queries.
+With syntax highlighting, code completion, query execution, and debugging capabilities, users can easily develop and fine tune their graph queries. Additionally, the GSQL Editor enables seamless collaboration within organizations by allowing users to share GSQL files, fostering teamwork and facilitating efficient collaboration among colleagues.
+
+=== Graph Explorer
+TigerGraph Savanna features a Graph Explorer, a visual interface that allows users to interactively explore and analyze the graph data.
+The Graph Explorer provides a rich set of visualization tools, including graph visualizations, charts, and tables, enabling users to gain insights and discover patterns in their data.
+It offers intuitive navigation, filtering, and querying capabilities, making it easier for users to explore and understand the relationships and connections within their graph data.
+
+=== Auto Data Profiles
+TigerGraph Savanna incorporates auto data profile capabilities that automatically find data insights for users without prior knowledge of their schema and query.
+This feature leverages advanced algorithms and machine learning techniques to analyze the graph data and identify meaningful patterns, relationships, and insights.
+It helps users discover valuable information within their data even if they are not familiar with the underlying data structure or query language.
+
+
+== Next Steps
+
+Next, to understand how TigerGraph Savanna differs from other TigerGraph offerings, see xref:overview:comparison_table.adoc[] or see xref:savanna:get-started:index.adoc[] to unlock its full potential.
+
+Return to xref:savanna:overview:index.adoc[TigerGraph Savanna] for another topic.

@@ -1,6 +1,7 @@
-= TigerGraph Cloud
+= TigerGraph Cloud Classic
 :experimental:
 :page-aliases: cloud-overview.adoc
+
 
 TigerGraph Cloud is a fully-managed cloud database built on the Enterprise Server engine and completely integrated with the full TigerGraph Suite.
 
@@ -9,10 +10,15 @@ handling all the complexity of deploying and managing your deployments on the cl
 
 [NOTE]
 ====
-TigerGraph Cloud 4.0 (beta version) was released on Apr. 29th, 2024.
+TigerGraph Savanna Beta was released on Apr. 29, 2024.
 
-Check out the new Cloud 4.0 beta at https://beta.tgcloud.io or have a look at the xref:cloudBeta:overview:index.adoc[Documentation] for more details.
+Check out the new Savanna at https://savanna.tgcloud.io or have a look at the xref:savanna:overview:index.adoc[Documentation] for more details.
 ====
+
+// [NOTE]
+// ====
+// On December 31, 2025, we'll retire the TigerGraph Cloud Classic platform. Before that date, you’ll need to migrate your data from TigerGraph Cloud Classic to TigerGraph Savanna. For support, please contact us at support@tigergraph.com.
+// ====
 
 == Get to Know Your TigerGraph Cloud
 
@@ -35,7 +41,6 @@ image:security-homecard.png[alt=security,width=74,height=74]
 *Security*
 
 Learn how TigerGraph Cloud can help ensure the xref:cloud:security:index.adoc[Security] of your data and network.
-
 
 ¦
 image:billing-homecard.png[alt=billing,width=74,height=74]
@@ -62,6 +67,6 @@ See other documents to help support your TigerGraph Cloud journey.
 xref:cloud:reference:index.adoc[Reference |]
 xref:cloud:reference:glossary.adoc[Glossary |]
 xref:cloud:reference:service-limits.adoc[Service Limits]
-¦
+
 |===
 

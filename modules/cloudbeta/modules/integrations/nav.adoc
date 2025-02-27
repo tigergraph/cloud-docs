@@ -1,9 +1,0 @@
-* xref:index.adoc[Marketplace]
-** xref:solutions.adoc[]
-** xref:add-ons.adoc[]
-*** xref:cloudBeta:explore-graph:copilot-enablement.adoc[]
-*** xref:graphstudio.adoc[]
-*** xref:insights.adoc[]
-*** xref:cloudBeta:integrations:graphql.adoc[]
-
-

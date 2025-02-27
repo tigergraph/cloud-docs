@@ -1,0 +1,136 @@
+= JDBC Spark Connection
+
+An open-source solution exists for loading data into TigerGraph using JDBC and Spark.  This guide will show you how to set up a connection to read data from PostgreSQL through PySpark and write the data to TigerGraph.
+
+NOTE: For large volumes of data with fault-tolerance, we recommend our Kafka-based streaming data connector.
+
+This guide is written for Ubuntu 18.04.
+
+== Prerequisites
+
+First make sure you have current versions of Java, Python, and Spark on the machine that will be the Spark server.
+[source, console]
+----
+$ sudo apt update
+$ sudo apt-get -y install openjdk-8-jdk-headless
+$ sudo apt install python3
+$ wget https://downloads.apache.org/spark/spark-3.3.1/spark-3.3.1-bin-hadoop2.tgz
+----
+
+Download the PostgreSQL JDBC driver.
+[source, console]
+----
+$ wget https://jdbc.postgresql.org/download/postgresql-42.5.0.jar
+----
+
+Download the TigerGraph JDBC driver.
+[source, console]
+----
+$ wget https://repo1.maven.org/maven2/com/tigergraph/tigergraph-jdbc-driver/1.3.6/tigergraph-jdbc-driver-1.3.6.jar
+----
+
+Copy both drivers into the `$SPARK_HOME/jars/` folder.
+[source, console]
+----
+$ cp tigergraph-jdbc-driver-1.3.6.jar postgresql-42.5.0.jar $SPARK_HOME/jars
+----
+
+Test your Spark installation by running this command:
+[source, console]
+----
+$ spark-submit --class org.apache.spark.examples.SparkPi spark/examples/jars/spark-examples_2.12-3.3.1.jar 10
+----
+
+== Set up SSL connection
+
+TigerGraph Savanna uses SSL connections, so we need to create the certificate for Spark to use.
+
+For this step and other steps, you need your TigerGraph Savanna workspace URL, which can be found on the Clusters page.
+A typical cluster URL looks like `7c141e8c7669404f923623083ba01da9.i.tgcloud.io`.
+
+[source, console]
+----
+$ echo | openssl s_client -host <your TigerGraph Savanna workspace URL> -port 443 | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' > ~/tgcloud.crt
+----
+
+This SSL certificate, a `.crt` file, cannot be used directly with the JDBC driver.
+Instead, you must use it to create a Java KeyStore (JKS) file using the `keytool` utility.
+Create a password and use it where the sample command below has the placeholder `<your password>`.
+
+[source, console]
+----
+$ keytool -import -alias <your TigerGraph Savanna workspace URL> -file ~/tgcloud.crt -keystore ~/trust.jks -storepass <your password>
+----
+
+== Create the secret key on your TigerGraph instance
+
+Go to xref:gui:admin-portal:overview.adoc[Admin Portal], then on the sidebar, go to Management > Users.
+
+Choose the graph you want to access.
+Create a secret key by following the instructions on the xref:gui:admin-portal:management/user-management.adoc#manage-secrets[Manage Secrets] page.
+
+Save the secret key separately on your server.
+This key will be your password to access the TigerGraph database.
+
+== Create and run the PySpark script
+
+Create a PySpark script file using the following template.
+In this example, the file is named `postgres_to_tg.py`.
+You must decide how you want to map your source data to the graph.
+The template example loads data into a graph vertex type called Account.
+For more details on how to use the TigerGraph JDBC Connector, see the documentation at https://github.com/tigergraph/ecosys/blob/master/tools/etl/tg-jdbc-driver/README.md.
+
+The last section of the file, the Loading to TigerGraph section, requires several parameters.
+Some are filled in already in the example, but others require your input.
+
+* `url`: Your TigerGraph Savanna workspace URL
+* `password`: Your secret key created with Admin Portal
+* `graph`: The graph for which you created the secret key
+* `truststore`: The JKS file you created previously
+* `trustStorePassword`: The JKS password
+
+.postgres_to_tg.py
+[source, console]
+----
+from pyspark.sql import SparkSession
+
+
+spark = SparkSession.builder \
+.appName("Python Spark pg to TigerGraph") \
+.config("spark.driver.extraClassPath", "/home/ubuntu/postgresql-42.5.0.jar:/home/ubuntu/tigergraph-jdbc-driver-1.3.6.jar") \
+.getOrCreate()
+
+
+df = spark.read \
+.format("jdbc") \
+.option("url", "jdbc:postgresql://localhost:5432/data_postgres") \
+.option("dbtable", "account") \
+.option("user", "postgres") \
+.option("password", "postgres") \
+.option("driver", "org.postgresql.Driver") \
+.load()
+
+
+//Loading to TigerGraph
+df.write \
+.mode("overwrite") \
+.format("jdbc") \
+.option("driver", "com.tigergraph.jdbc.Driver") \
+.option("url", "jdbc:tg:https://7c141e8c3221404f923623083fa01da6.i.tgcloud.io:443") \
+.option("user", "__GSQL__secret") \
+.option("password", "<your secret>") \
+.option("graph", "<your graph name>") \
+.option("dbtable", "vertex Account") \
+.option("debug", "1") \
+.option("trustStore", "trust.jks") \
+.option("trustStorePassword", "password") \
+.option("trustStoreType", "JKS") \
+.save()
+----
+
+To run the file, execute this command:
+
+[source, console]
+----
+spark-submit postgres_to_tg.py
+----

@@ -1,0 +1,24 @@
+= REST API (Preview)
+:experimental:
+
+TigerGraph Savanna REST API provides a set of endpoints that allow developers to interact programmatically with TigerGraph Savanna services. Those APIs enable you to manage your graph databases and perform various administrative tasks.
+
+[IMPORTANT]
+====
+The TigerGraph Savanna REST API is currently in preview version. Features and endpoints may change as the API evolves.
+====
+
+
+== xref:savanna:rest-api:authentication.adoc[]
+
+Learn how to authenticate with the TigerGraph Savanna REST API.
+
+
+== xref:savanna:rest-api:endpoints.adoc[]
+
+Explore the REST API endpoints available in TigerGraph Savanna.
+
+== xref:savanna:rest-api:definitions.adoc[]
+
+Explore the REST API data model definitions in TigerGraph Savanna.
+

@@ -1,0 +1,244 @@
+= TigerGraph Savanna Release Notes
+:experimental:
+//:page-aliases: change-log.adoc, release-notes.adoc
+:toc:
+:toclevels:2
+
+== Jan 2025
+
+=== 2025-1-20
+==== Workspace Enhancements
+* Explore Graph: Enable editing of graph data in the explore graph page.
+
+==== Other Enhancements
+* Bug fixes.
+
+=== 2025-1-16
+==== Workspace Enhancements
+* BYOC: Bring Your Own Cloud (BYOC) is now available for enterprise users. You can now deploy TigerGraph Savanna on your own cloud infrastructure, providing greater flexibility and control over your graph database workspaces.
+
+==== Other Enhancements
+* Bug fixes.
+
+== Dec 2024
+=== 2024-12-19
+==== Workspace Enhancements
+* Data Profile: Data Profile is now available in the workspace, providing a comprehensive overview of your graph data, including data distribution, schema, and statistics.
+* API documentation: API documentation is now available, allowing you to access detailed information about the TigerGraph Savanna APIs.
+
+==== Observability Enhancements
+* Email notification: Users will receive email notification in advance when we are cleaning up delinquent workspaces.
+* Visual Indicators for Critical Memory Usage: You can get a more intuitive and visual view of critical memory usage.
+
+==== Other Enhancements
+* Bug fixes.
+
+== Nov 2024
+=== 2024-11-28
+==== Workspace Enhancements
+* Enforce auto stop to free tier: Auto stop is enabled and cannot change for Free tier customers’ workspaces
+
+==== GSQL Editor Enhancements
+* Auto-Completion: Boost your productivity with auto-completion suggestions that help you write cypher queries faster and with fewer errors.
+* Add tutorials to GSQL Editor: Providing samples of schema changes, data loading, and queries for customer reference greatly reduces the learning curve for users.
+
+==== Data Loading Enhancements
+* Enhanced the experience of automatic mapping, and optimize the graph widget performance
+
+==== Other Enhancements
+* Bug fixes.
+
+=== 2024-11-13
+==== Workspace Enhancements
+* Graph Admin: Revamp Graph Admin Configs to make it more user-friendly.
+* Quota Management: Check manual backup and auto backup limit separately, and failed backups do not count towards the backup quota limit.
+
+==== GSQL Editor Enhancements
+* Support JSON view for GSQL editor: Support JSON format to render the query result in GSQL editor
+
+==== Data Loading Enhancements
+* Support loading folder of data sources: Users don’t need specify the data file and can load data from all files within the folder.
+
+==== Other Enhancements
+* Bug fixes.
+
+== Oct 2024
+=== 2024-10-31
+==== Observability Enhancements
+* xref:savanna:workgroup-workspace:workspaces/settings.adoc#_alerts_[Alerting]: user can add recipients to receive alert email.
+
+==== GSQL Editor Enhancements
+* Improved User Interface: Notify users to save all files when they are leaving the editor page with unsaved files or schema.
+
+==== Other Enhancements
+* Bug fixes.
+
+
+=== 2024-10-15
+
+==== Workspace Enhancements
+
+* xref:savanna:workgroup-workspace:workspaces/schedule.adoc[Scheduled Workspace Expansion and Shrink]: Schedule workspace expansion and shrink operations to align with your usage patterns and optimize resource allocation.
+* Support HA with Cross-Zone Resiliency: Ensure business continuity and minimize downtime with the introduction of cross-zone high availability support, allowing you to deploy and manage resilient graph database clusters across multiple availability zones for enhanced fault tolerance and disaster recovery capabilities.
+
+==== Observability Enhancements
+
+* xref:savanna:workgroup-workspace:workspaces/settings.adoc#_alerts_[Alerting] System: Stay informed about critical events and performance anomalies through the new alerting system, enabling proactive management of your graph database workspaces.
+
+==== Other Enhancements
+* Improved stability and performance.
+* Bug fixes.
+
+== Sep 2024
+=== 2024-09-28
+
+==== General
+
+* Release xref:4.1@tigergraph-server:release-notes:index.adoc[TigerGraph Server 4.1 Preview] on TigerGraph Savanna.
+
+==== Workspace Enhancements
+
+* Output to Amazon S3: Benefit from integration with Amazon S3 for data output, enabling you to store and retrieve data from Amazon S3 buckets directly from your TigerGraph Savanna environment.
+* Built-in Read-only Algorithms: Run built-in read-only algorithms on read-only workspaces, empowering users to leverage algorithmic capabilities for analysis and insights.
+
+==== GSQL Editor Enhancements
+
+* Improved User Interface: The GSQL Editor has undergone a significant facelift, providing a more intuitive and user-friendly interface for writing and executing GSQL queries.
+* Syntax Highlighting: Enjoy enhanced code readability with syntax highlighting for GSQL queries, making it easier to identify keywords, variables, and functions.
+* Auto-Completion: Boost your productivity with auto-completion suggestions that help you write GSQL queries faster and with fewer errors.
+
+==== Data Loading and Solution Kits
+
+* Enhanced xref:savanna:graph-development:load-data/index.adoc[Data Loading] Capabilities: Experience faster and more efficient data loading processes with optimized performance and reliability.
+* Customizable UDF: Customize user-defined functions (UDFs) to extend the functionality of your graph database workspaces, enabling you to implement custom logic and algorithms for advanced analytics and insights.
+
+==== Other Enhancements
+* xref:savanna:workgroup-workspace:workgroups/how2-config-network-access.adoc[Network Configuration]:  Set up IP allow lists to protect your workspaces, allowing you to control access and enhance the security of your graph database workspaces.
+* xref:savanna:rest-api:index.adoc[Controller APIs] Support: Enable APIs to operate on TigerGraph Savanna workspaces by providing support for API keys, enhancing the flexibility and security of interacting with your graph database through APIs. 
+* Bug fixes.
+
+=== 2024-09-12
+
+==== Workspace Enhancements
+
+* xref:savanna:workgroup-workspace:workspaces/settings.adoc#_workspace_size_suggestion[Capacity Planning]: Benefit from capacity planning features that help you estimate and plan your workspace size and cost more efficiently.
+
+==== Other Enhancements
+
+* Bug fixes.
+
+== Aug 2024
+=== 2024-08-27
+
+==== Workspace Enhancements
+
+* xref:savanna:workgroup-workspace:workspaces/settings.adoc#_auto_suspend[Auto Suspend] Enhancement: Auto Suspend feature now supports detection of installing queries, running queries, loading jobs and changing schema.
+
+==== Other Enhancements
+
+* Bug fixes.
+
+=== 2024-08-14
+
+==== Data Loading and Solution Kits
+
+* xref:savanna:integrations:solutions.adoc[Solution Kits]: Explore an expanded collection of solution kits tailored to specific use cases, providing pre-built templates and workflows for accelerated graph database development.
+
+== Jul 2024
+=== 2024-07-31
+
+==== General
+
+* Support GSQL API v2: Introducing GSQL API v2 support for enhanced query performance and efficiency, enabling users to leverage the latest GSQL features and optimizations.
+
+==== Obvervability Enhancements
+
+* Enhanced xref:savanna:workgroup-workspace:workgroups/monitor-workspaces.adoc[Monitoring] Tools: Gain deeper insights into your TigerGraph Savanna environment with improved monitoring tools, allowing you to track performance metrics and diagnose issues effectively.
+
+==== Other Enhancements
+
+* Bug fixes.
+
+=== 2024-07-13
+
+==== Workspace Enhancements
+
+* xref:savanna:workgroup-workspace:workspaces/readwrite-readonly.adoc#_update_read_onlyro_workspace[Syncing Read-only Data with Read-write]: Enable synchronization of read-only data with read-write workspaces, ensuring consistency across different workspace types.
+
+==== Other Enhancements
+
+* Bug fixes.
+
+== Apr 2024
+
+=== TigerGraph Savanna (Beta) was released on Monday, April 29th, 2024.
+
+//* xref:savanna:get-started:index.adoc[Get Started] using TigerGraph Savanna with the 4.0.
+* xref:savanna:overview:overview.adoc#_separation_of_storage_and_compute[Separation of Storage and Compute] - Introduction of a unique architecture that separates storage and compute, allowing users to scale resources independently.
+
+* xref:workgroup-workspace:workgroups/workgroup.adoc[Workgroups] and xref:workgroup-workspace:workspaces/workspace.adoc[Workspaces] give users control over resource management.
+
+* xref:savanna:graph-development:load-data/index.adoc[] - Load Data into TigerGraph Savanna and unlock its potential.
+
+* xref:savanna:graph-development:design-schema/index.adoc[Design Schema] - Easily modify and manage the schema of your graph databases using Schema Designer UI.
+
+* xref:savanna:graph-development:gsql-editor/index.adoc[GSQL Editor] - The GSQL Editor is a powerful tool for developing and executing GSQL queries, allowing you to unlock insights from your graph databases by xref:savanna:graph-development:gsql-editor/how2-edit-gsql-query.adoc[Editing, Running, and Sharing a GSQL Query.].
+
+* xref:savanna:graph-development:explore-graph/index.adoc[] and xref:savanna:graph-development:explore-graph/how2-use-pattern-search.adoc[] - Visualize your data and navigate to understand complex connections and dependencies.
+
+* xref:integrations:index.adoc[] - TigerGraph Savanna offers several powerful integration tools in our marketplace.
+** xref:savanna:integrations:solutions.adoc[] -  Pre-built solution kits that address common use cases and industry-specific challenges.
+** xref:savanna:integrations:add-ons.adoc[] - Extend the capabilities of TigerGraph Savanna with add-ons tailored to your needs. Add-ons provide additional functionalities and integrations that enhance your graph database workflow.
+*** xref:savanna:integrations:insights.adoc[Insights Add-On] - TigerGraph Insights is a no-code visual graph analyzer that makes building data analytics dashboards intuitive.
+*** xref:savanna:integrations:graphstudio.adoc[GraphStudio™ Add-On] - TigerGraph GraphStudio™ offers a range of features and tools to simplify the graph development process.
+*** xref:savanna:integrations:graphql.adoc[GraphQL Add-On] - TigerGraph GraphQL enables users to access and modify graph data in TigerGraph using GraphQL queries.
+
+* xref:savanna:administration:index.adoc[] - The tools for organizational administrators to xref:savanna:administration:how2-invite-users.adoc[]
+, xref:savanna:administration:how2-access-mgnt.adoc[Mange Access], xref:savanna:administration:settings/how2-use-organization-mgnt.adoc[Manage Organization].
+
+* xref:savanna:administration:billing/index.adoc[Billing UI] - The new billing UI allows users to check and pay only for their specific usage of storage, data access, and compute resources
+with an xref:savanna:administration:billing/payment-methods.adoc[easy-to-use Payment Method manager], and the xref:savanna:administration:billing/invoices.adoc[ability to check and export invoices].
+
+////
+== Fixed issues
+=== Fixed and Improved [v number]
+
+==== Functionality
+* Description (Ticket Number)
+
+==== Crashes and Deadlocks
+
+* Description (Ticket Number)
+
+==== Improvements
+
+* Description (Ticket Number)
+
+== Known Issues and Limitations
+
+[cols="4", separator=¦ ]
+|===
+¦ Description ¦ Found In ¦ Workaround ¦ Fixed In
+
+|===
+
+=== Compatibility Issues
+
+[cols="2", separator=¦ ]
+|===
+¦ Description ¦ Version Introduced
+
+|===
+
+=== Deprecations
+
+[cols="3", separator=¦ ]
+|===
+¦ Description ¦ Deprecated ¦ Removed
+
+|===
+
+== Release notes for previous versions
+* TBD
+////
+

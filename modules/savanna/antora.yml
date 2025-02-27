@@ -1,0 +1,16 @@
+name: savanna
+title: TigerGraph Savanna
+version: main
+display_version: default
+start_page: overview:index.adoc
+
+nav:
+  - modules/overview/nav.adoc
+  - modules/get-started/nav.adoc
+  - modules/workgroup-workspace/nav.adoc
+  - modules/graph-development/nav.adoc
+  - modules/rest-api/nav.adoc
+  - modules/integrations/nav.adoc
+  - modules/byoc/nav.adoc
+  - modules/administration/nav.adoc
+  - modules/resources/nav.adoc

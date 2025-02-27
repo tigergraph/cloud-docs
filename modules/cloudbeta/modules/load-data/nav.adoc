@@ -1,5 +1,0 @@
-* xref:index.adoc[Load Data]
-** xref:load-data:load-from-local.adoc[]
-** xref:load-data:load-from-cloud.adoc[]
-** xref:load-data:load-from-other-sources.adoc[]
-*** xref:load-data:jdbc.adoc[]

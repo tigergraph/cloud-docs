@@ -1,8 +1,8 @@
 name: cloud
-title: TigerGraph Cloud
-version: master
-display_version: default
+title: TigerGraph Cloud Classic
 start_page: start:overview.adoc
+version: main
+display_version: default
 
 nav:
 - modules/start/nav.adoc

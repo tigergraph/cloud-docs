@@ -6,7 +6,7 @@ content:
   sources:
     - url: .
       branches: HEAD
-      start_paths: [modules/cloud4, modules/cloud]
+      start_paths: [modules/cloud, modules/savanna]
 
 output:
   dir: ./build/site

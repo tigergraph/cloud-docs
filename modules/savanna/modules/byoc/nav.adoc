@@ -1,0 +1,6 @@
+* xref:index.adoc[Bring Your Own Cloud]
+** xref:workspaces.adoc[Workgroups and Workspaces]
+** xref:cloudprovider.adoc[Cloud Provider]
+// Hide the following pages since we haven't enabled these features yet.
+// *** xref:secure-connection.adoc[Secure Connection]
+// *** xref:byo-vpc.adoc[Use Existing VPC]

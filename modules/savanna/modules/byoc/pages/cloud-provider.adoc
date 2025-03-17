@@ -1,0 +1,266 @@
+= Cloud Provider
+:experimental:
+
+== Overview
+In TigerGraph's xref:byoc:index.adoc[BYOC] context, a "Cloud Provider" represents resources in customer cloud account in a cloud vendor and a specific region. It serves as a bridge between TigerGraph's main control plane and your cloud infrastructure, enabling you to manage multiple TigerGraph workspaces within your own cloud environment.
+
+This page provides an overview of Cloud Providers in TigerGraph BYOC, explains their significance, and outlines the process of creating and managing them.
+
+== Creating a Cloud Provider
+
+Creating a Cloud Provider is a crucial step in setting up BYOC. Here's the process:
+
+1. **Prepare AWS Account**:
+   - Ensure you have the necessary permissions in your AWS account.
+   - Create an IAM role with the required policy permissions. This step is your responsibility and must be completed in the AWS console before proceeding.
+
+[source, json]
+----
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "acm:DeleteCertificate",
+                "acm:DescribeCertificate",
+                "acm:ListTagsForCertificate",
+                "acm:RequestCertificate",
+                "autoscaling:CreateOrUpdateTags",
+                "autoscaling:DeleteTags",
+                "autoscaling:DescribeTags",
+                "ec2:AllocateAddress",
+                "ec2:AssociateRouteTable",
+                "ec2:AttachInternetGateway",
+                "ec2:AuthorizeSecurityGroupEgress",
+                "ec2:AuthorizeSecurityGroupIngress",
+                "ec2:CreateInternetGateway",
+                "ec2:CreateLaunchTemplate",
+                "ec2:CreateLaunchTemplateVersion",
+                "ec2:CreateNatGateway",
+                "ec2:CreateNetworkAclEntry",
+                "ec2:CreateVpcEndpoint",
+                "ec2:CreateRoute",
+                "ec2:CreateRouteTable",
+                "ec2:CreateSecurityGroup",
+                "ec2:CreateSubnet",
+                "ec2:CreateTags",
+                "ec2:CreateVpc",
+                "ec2:CreateVpcEndpointServiceConfiguration",
+                "ec2:DeleteInternetGateway",
+                "ec2:DeleteLaunchTemplate",
+                "ec2:DeleteLaunchTemplateVersions",
+                "ec2:DeleteNatGateway",
+                "ec2:DeleteNetworkAclEntry",
+                "ec2:DeleteRoute",
+                "ec2:DeleteRouteTable",
+                "ec2:DeleteSecurityGroup",
+                "ec2:DeleteSubnet",
+                "ec2:DeleteTags",
+                "ec2:DeleteVpc",
+                "ec2:DeleteVpcEndpoints",
+                "ec2:DeleteVpcEndpointServiceConfigurations",
+                "ec2:DescribeAddresses",
+                "ec2:DescribeVpcEndpoints",
+                "ec2:DescribePrefixLists",
+                "ec2:DescribeAvailabilityZones",
+                "ec2:DescribeInternetGateways",
+                "ec2:DescribeInstances",
+                "ec2:DescribeLaunchTemplateVersions",
+                "ec2:DescribeLaunchTemplates",
+                "ec2:DescribeNatGateways",
+                "ec2:DescribeNetworkAcls",
+                "ec2:DescribeNetworkInterfaces",
+                "ec2:DescribeRouteTables",
+                "ec2:DescribeSecurityGroupRules",
+                "ec2:DescribeSecurityGroups",
+                "ec2:DescribeSubnets",
+                "ec2:DescribeTags",
+                "ec2:DescribeVpcAttribute",
+                "ec2:DescribeVpcEndpointConnectionNotifications",
+                "ec2:DescribeVpcEndpointServiceConfigurations",
+                "ec2:DescribeVpcEndpointServicePermissions",
+                "ec2:DescribeVpcEndpointServices",
+                "ec2:DescribeVpcs",
+                "ec2:DetachInternetGateway",
+                "ec2:DisassociateAddress",
+                "ec2:DisassociateRouteTable",
+                "ec2:GetLaunchTemplateData",
+                "ec2:ModifyVpcEndpoint",
+                "ec2:ModifyLaunchTemplate",
+                "ec2:ModifySubnetAttribute",
+                "ec2:ModifyVpcAttribute",
+                "ec2:ModifyVpcEndpointServiceConfiguration",
+                "ec2:ModifyVpcEndpointServicePayerResponsibility",
+                "ec2:ModifyVpcEndpointServicePermissions",
+                "ec2:ReleaseAddress",
+                "ec2:RevokeSecurityGroupEgress",
+                "ec2:RevokeSecurityGroupIngress",
+                "ec2:RunInstances",
+                "ec2:StartVpcEndpointServicePrivateDnsVerification",
+                "eks:AssociateAccessPolicy",
+                "eks:CreateAccessEntry",
+                "eks:CreateAddon",
+                "eks:CreateCluster",
+                "eks:CreateNodegroup",
+                "eks:DeleteAccessEntry",
+                "eks:DeleteAddon",
+                "eks:DeleteCluster",
+                "eks:DeleteNodegroup",
+                "eks:DescribeAccessEntry",
+                "eks:DescribeAddon",
+                "eks:DescribeCluster",
+                "eks:DescribeNodegroup",
+                "eks:DisassociateAccessPolicy",
+                "eks:ListAssociatedAccessPolicies",
+                "eks:TagResource",
+                "eks:UpdateAddon",
+                "eks:UpdateNodegroupConfig",
+                "eks:UpdateClusterVersion",
+                "eks:UpdateClusterConfig",
+                "eks:UpdateNodegroupVersion",
+                "eks:DescribeUpdate",
+                "elasticfilesystem:CreateFileSystem",
+                "elasticfilesystem:CreateMountTarget",
+                "elasticfilesystem:DeleteFileSystem",
+                "elasticfilesystem:DeleteMountTarget",
+                "elasticfilesystem:DescribeBackupPolicy",
+                "elasticfilesystem:DescribeFileSystems",
+                "elasticfilesystem:DescribeLifecycleConfiguration",
+                "elasticfilesystem:DescribeMountTargetSecurityGroups",
+                "elasticfilesystem:DescribeMountTargets",
+                "elasticfilesystem:PutBackupPolicy",
+                "elasticfilesystem:PutLifecycleConfiguration",
+                "elasticfilesystem:TagResource",
+                "elasticloadbalancing:ApplySecurityGroupsToLoadBalancer",
+                "elasticloadbalancing:AttachLoadBalancerToSubnets",
+                "elasticloadbalancing:CreateLoadBalancer",
+                "elasticloadbalancing:CreateTargetGroup",
+                "elasticloadbalancing:DeregisterInstancesFromLoadBalancer",
+                "elasticloadbalancing:DescribeInstanceHealth",
+                "elasticloadbalancing:DescribeLoadBalancerAttributes",
+                "elasticloadbalancing:DescribeLoadBalancers",
+                "elasticloadbalancing:DescribeTags",
+                "elasticloadbalancing:EnableAvailabilityZonesForLoadBalancer",
+                "elasticloadbalancing:RegisterInstancesWithLoadBalancer",
+                "elasticloadbalancing:RegisterTargets",
+                "elasticloadbalancing:SetIpAddressType",
+                "elasticloadbalancing:SetSubnets",
+                "iam:AttachRolePolicy",
+                "iam:CreateOpenIDConnectProvider",
+                "iam:CreatePolicy",
+                "iam:CreateRole",
+                "iam:CreatePolicyVersion",
+                "iam:DeleteOpenIDConnectProvider",
+                "iam:DeletePolicy",
+                "iam:DeleteRole",
+                "iam:DeleteRolePolicy",
+                "iam:DetachRolePolicy",
+                "iam:DeletePolicyVersion",
+                "iam:GetOpenIDConnectProvider",
+                "iam:GetPolicy",
+                "iam:GetPolicyVersion",
+                "iam:GetRole",
+                "iam:GetRolePolicy",
+                "iam:ListAttachedRolePolicies",
+                "iam:ListInstanceProfilesForRole",
+                "iam:ListPolicyVersions",
+                "iam:ListRolePolicies",
+                "iam:PassRole",
+                "iam:PutRolePolicy",
+                "iam:SimulatePrincipalPolicy",
+                "iam:SetDefaultPolicyVersion",
+                "iam:TagOpenIDConnectProvider",
+                "logs:CreateLogGroup",
+                "logs:DeleteLogGroup",
+                "logs:DescribeLogGroups",
+                "logs:ListTagsLogGroup",
+                "logs:PutRetentionPolicy",
+                "logs:TagResource",
+                "s3:CreateBucket",
+                "s3:DeleteBucket",
+                "s3:DeleteObject",
+                "s3:GetLifecycleConfiguration",
+                "s3:ListBucket",
+                "s3:PutLifecycleConfiguration",
+                "s3:PutObject",
+                "sqs:SendMessage",
+                "kms:CreateKey",
+                "kms:GenerateDataKeyWithoutPlaintext",
+                "kms:ScheduleKeyDeletion",
+                "kms:Encrypt",
+                "kms:Decrypt",
+                "secretsmanager:CreateSecret",
+                "secretsmanager:DeleteSecret",
+                "secretsmanager:UpdateSecret",
+                "secretsmanager:GetSecretValue",
+                "servicequotas:ListServiceQuotas"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+----
+
+2. **Access TigerGraph Savanna**:
+   - Log in to your TigerGraph Savanna account.
+   - Navigate to the "Cloud Providers" section.
+
+3. **Initiate Cloud Provider Creation**:
+   - Click on "Add New Cloud Provider".
+   - Select AWS as the cloud platform.
+
+   CAUTION:: You can only create AWS Cloud Providers in the current version of TigerGraph Savanna.
+
+4. **Provide AWS Details**:
+   - Enter a name for your Cloud Provider.
+   - Input the ARN of the IAM role you created in step 1.
+//   - Specify the VPC ID where you want TigerGraph resources to be deployed.
+//   - Enter the Subnet ID(s) for TigerGraph resources.
+
+// 5. **Configure Network Settings**:
+//    - Optionally, you may select the "Secure Connection" option to enable additional security measures for communication between TigerGraph compute plane and your browser. Please check the xref:security:secure-connection.adoc[Secure Connection] page for more details.
+//    - Optionally, you may select the "BYO VPC" option in advanced settings to make the cloud provider use existing VPC configurations. Please check the xref:byoc:byo-vpc.adoc[BYO VPC] page for more details. 
+
+6. **Review and Create**:
+   - Review all the information you've entered.
+   - Click "Create Cloud Provider" to initiate the process.
+
+7. **Validation and Deployment**:
+   - TigerGraph Savanna will validate the provided information.
+   - If validation is successful, it will deploy the necessary components in your AWS account.
+
+8. **Confirmation**:
+   - Your new Cloud Provider will appear in the Cloud Providers list in TigerGraph Savanna.
+   - It will be in a "Provisioning" state initially. Once the deployment is complete, the status will change to "Active". This process may take a few minutes.
+   - You can leave the page and return later to check the status.
+
+
+== Managing Cloud Providers
+
+After creation, you can:
+- View details of your Cloud Provider
+- Monitor the status of the Cloud Provider
+- Create and manage workspaces associated with this Cloud Provider
+
+Remember, a single Cloud Provider can host multiple workspaces, allowing you to efficiently manage your TigerGraph deployments within your own cloud infrastructure.
+
+[Diagram: Cloud Provider Architecture]
+
+Description: This diagram illustrates the relationship between TigerGraph Savanna, your AWS account, and the Cloud Provider:
+- TigerGraph Savanna (Control Plane) at the top
+- Customer AWS Account in the middle, containing:
+  - Cloud Provider (mini control plane)
+  - VPC with associated subnets
+  - IAM Role connected to the Cloud Provider
+- Multiple Workspaces within the VPC, managed by the Cloud Provider
+- Secure connections between TigerGraph Savanna and the Cloud Provider, and between the Cloud Provider and Workspaces
+
+This section provides a comprehensive overview of the Cloud Provider concept in TigerGraph BYOC, its significance, and the process of creating one, emphasizing the customer's role in preparing the AWS environment.
+
+
+== Next Steps
+
+Now learn about xref:byoc:index.adoc[BYOC] feature in TigerGraph Savanna 4.0.
+
+Or return to the xref:cloudBeta:overview:index.adoc[Overview] page for a different topic.

@@ -2,9 +2,9 @@
 :page-aliases:
 :experimental:
 
-When you set up a TigerGraph Cloud account, you are granted the privileges of an Organization Admin for your company.
+When you set up a TigerGraph Cloud Classic account, you are granted the privileges of an Organization Admin for your company.
 
-TigerGraph Cloud allows an Organization Admin to manage multiple users in your organization and control their access to various clusters.
+TigerGraph Cloud Classic allows an Organization Admin to manage multiple users in your organization and control their access to various clusters.
 
 This page explains the user access controls. For help with setting up clusters, visit xref:solutions:create-a-solution.adoc[].
 
@@ -14,7 +14,7 @@ The first time you log in to a new organization account, you have the opportunit
 
 image:invite-more-users.png[]
 
-You can also add users later by going to the Access Management page under the sidebar button btn:[Users] in the TigerGraph Cloud interface.
+You can also add users later by going to the Access Management page under the sidebar button btn:[Users] in the TigerGraph Cloud Classic interface.
 
 image:access-management.png[]
 
@@ -22,7 +22,7 @@ Invitations will expire after seven days. If an invitation expires, resend the i
 
 === Organization roles and privileges
 
-The privileges granted to the various roles in a TigerGraph Cloud organization are as follows:
+The privileges granted to the various roles in a TigerGraph Cloud Classic organization are as follows:
 
 |====
 |Action | Organization Member | Organization Cluster Admin |Organization Admin
@@ -42,14 +42,14 @@ These legacy clusters exist entirely outside of the User Management system and c
 
 === TigerGraph solution roles
 
-A user in an organization on TigerGraph Cloud is separate from a user on a TigerGraph cluster.
-On TigerGraph Cloud, a single user in an organization may be assigned to several clusters and have various roles on those clusters.
+A user in an organization on TigerGraph Cloud Classic is separate from a user on a TigerGraph cluster.
+On TigerGraph Cloud Classic, a single user in an organization may be assigned to several clusters and have various roles on those clusters.
 
 In this documentation, for consistency, we will refer to these using the terms "organization role" and "cluster role."
 
 For information about the TigerGraph cluster roles, see the page xref:tigergraph-server:user-access:access-control-model.adoc[].
 
-When a TigerGraph Cloud user is added to a cluster as an Organization Cluster Admin or Organization Admin, they are granted the `superuser` role on that cluster.
+When a TigerGraph Cloud Classic user is added to a cluster as an Organization Cluster Admin or Organization Admin, they are granted the `superuser` role on that cluster.
 A user added to a cluster as an Organization Member has no role on the cluster by default, but can be assigned a cluster role by anyone with the `superuser` cluster role.
 
 === Access Management

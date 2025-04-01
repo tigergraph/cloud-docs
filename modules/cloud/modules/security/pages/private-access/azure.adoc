@@ -11,7 +11,7 @@ link:https://youtu.be/Sv20Ugt_REk[Azure Private Link on TigerGraph - Video Tutor
 
 == Azure General Workflow
 
-. Begin creating a paid-tier TigerGraph Cloud cluster in a region that supports private access.
+. Begin creating a paid-tier TigerGraph Cloud Classic cluster in a region that supports private access.
 
 . Select “Private“ for the TigerGraph Endpoint Type.
 

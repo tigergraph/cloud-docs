@@ -5,7 +5,7 @@ In order to use TigerGraph Savanna, users must first btn:[Sign Up].
 This guide will walk you through the necessary steps.
 
 == Sign Up
-. Click btn:[Sign Up] https://portal.tgcloud.io[on the TigerGraph Savanna landing page].
+. Click btn:[Sign Up] https://tgcloud.io[on the TigerGraph Savanna landing page].
 +
 image::signup.png[width=450]
 

@@ -1,5 +1,5 @@
 = Reference
-:description: References for TigerGraph Cloud documentation.
+:description: References for TigerGraph Cloud Classic documentation.
 :page-aliases: readme.adoc, README.adoc
 
 This section contains the following references:

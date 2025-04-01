@@ -43,14 +43,14 @@ $ spark-submit --class org.apache.spark.examples.SparkPi spark/examples/jars/spa
 
 == Set up SSL connection
 
-TigerGraph Cloud uses SSL connections, so we need to create the certificate for Spark to use.
+TigerGraph Cloud Classic uses SSL connections, so we need to create the certificate for Spark to use.
 
-For this step and other steps, you need your TigerGraph Cloud cluster URL, which can be found on the Clusters page.
+For this step and other steps, you need your TigerGraph Cloud Classic cluster URL, which can be found on the Clusters page.
 A typical cluster URL looks like `7c141e8c7669404f923623083ba01da9.i.tgcloud.io`.
 
 [source, console]
 ----
-$ echo | openssl s_client -host <your TigerGraph Cloud URL> -port 443 | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' > ~/tgcloud.crt
+$ echo | openssl s_client -host <your TigerGraph Cloud Classic URL> -port 443 | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' > ~/tgcloud.crt
 ----
 
 This SSL certificate, a `.crt` file, cannot be used directly with the JDBC driver.
@@ -59,7 +59,7 @@ Create a password and use it where the sample command below has the placeholder 
 
 [source, console]
 ----
-$ keytool -import -alias <your TigerGraph Cloud URL> -file ~/tgcloud.crt -keystore ~/trust.jks -storepass <your password>
+$ keytool -import -alias <your TigerGraph Cloud Classic URL> -file ~/tgcloud.crt -keystore ~/trust.jks -storepass <your password>
 ----
 
 == Create the secret key on your TigerGraph instance
@@ -83,7 +83,7 @@ For more details on how to use the TigerGraph JDBC Connector, see the documentat
 The last section of the file, the Loading to TigerGraph section, requires several parameters.
 Some are filled in already in the example, but others require your input.
 
-* `url`: Your TigerGraph Cloud URL
+* `url`: Your TigerGraph Cloud Classic URL
 * `password`: Your secret key created with Admin Portal
 * `graph`: The graph for which you created the secret key
 * `truststore`: The JKS file you created previously

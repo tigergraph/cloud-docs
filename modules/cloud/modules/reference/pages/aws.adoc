@@ -72,7 +72,7 @@ The table below shows the instance types available on AWS.
 
 == Disk storage
 
-On AWS, disk storage refers to the https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volumes.html[EBS volume] attached to your TigerGraph Cloud instance. By default, data in disk storage is encrypted-at-rest with platform-managed keys.
+On AWS, disk storage refers to the https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volumes.html[EBS volume] attached to your TigerGraph Cloud Classic instance. By default, data in disk storage is encrypted-at-rest with platform-managed keys.
 
 Disk storage is charged per GB per hour.
 

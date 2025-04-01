@@ -1,5 +1,5 @@
 = Backup and Restore
-:description: The procedure to perform backup and restore on TigerGraph Cloud.
+:description: The procedure to perform backup and restore on TigerGraph Cloud Classic.
 //:page-aliases: backup-and-restore/index.adoc
 :experimental:
 

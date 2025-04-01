@@ -5,11 +5,11 @@
 :page-aliases: cloud:vpc-peering/gcp.adoc
 
 This is a guide for setting up a VPC peering connection between your
-TigerGraph Cloud VPC and another GCP VPC.
+TigerGraph Cloud Classic VPC and another GCP VPC.
 
 == Prerequisite
 
-* At least one unterminated TigerGraph Cloud cluster on GCP
+* At least one unterminated TigerGraph Cloud Classic cluster on GCP
 
 == Procedure
 
@@ -55,8 +55,8 @@ Network Peering]
 that includes the network you want to peer with and the name of the VPC
 network:
 ** Project ID:`+tgcloud-prod+`
-** VPC network name: Name of your TigerGraph Cloud VPC. You can find it
-in the menu:TigerGraph Cloud portal[Network tab > VPC Peering] page.
+** VPC network name: Name of your TigerGraph Cloud Classic VPC. You can find it
+in the menu:TigerGraph Cloud Classic portal[Network tab > VPC Peering] page.
 Choose `+GCP+` as the platform, and in the VPC column is the VPC name.
 . You can leave the other fields as they are (with only btn:[Export subnet
 routes with public IP] selected) unless you need special configurations.

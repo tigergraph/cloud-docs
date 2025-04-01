@@ -5,7 +5,7 @@
 
 Besides GraphStudio, another way to interact with your TigerGraph database is through the REST API, also known as RESTPP.
 
-On TigerGraph Cloud, RESTPP authentication is enabled by default, and only the requests made with a valid authorization token in the request header are accepted.
+On TigerGraph Cloud Classic, RESTPP authentication is enabled by default, and only the requests made with a valid authorization token in the request header are accepted.
 
 == Generate an authorization token
 
@@ -60,7 +60,7 @@ $ curl -X POST https://example.i.tgcloud.io:443/restpp/requesttoken -d '{"secret
 ----
 
 [NOTE]
-For TigerGraph Cloud clusters created before June 20, 2022, replace "443/restpp" with "9000". See the xref:release-notes:index.adoc[] for details.
+For TigerGraph Cloud Classic clusters created before June 20, 2022, replace "443/restpp" with "9000". See the xref:release-notes:index.adoc[] for details.
 
 --
 Response::
@@ -104,7 +104,7 @@ $ curl -H "Authorization: Bearer fc6p0i2ijjt031n0sja6m9ci70p232h7" \
 ----
 
 [NOTE]
-For TigerGraph Cloud clusters created before June 20, 2022, replace "443/restpp" with "9000". See the xref:release-notes:index.adoc[] for details.
+For TigerGraph Cloud Classic clusters created before June 20, 2022, replace "443/restpp" with "9000". See the xref:release-notes:index.adoc[] for details.
 --
 Response::
 +

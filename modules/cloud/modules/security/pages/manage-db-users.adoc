@@ -2,7 +2,7 @@
 :experimental:
 :page-aliases: manage-database-users.adoc
 
-When you connect to a TigerGraph Cloud instance programmatically, such as from connectors like pyTigerGraph or the remote GSQL client, you often need to provide credentials that are created in the database of your cluster.
+When you connect to a TigerGraph Cloud Classic instance programmatically, such as from connectors like pyTigerGraph or the remote GSQL client, you often need to provide credentials that are created in the database of your cluster.
 This is different from your TigerGraph Organization account which allows you to log in to clusters in your organization to which you have access.
 
 NOTE: You can only create database users for clusters created after August 18th, 2022.
@@ -12,7 +12,7 @@ image::database-access.png[]
 == Create a database user
 
 === Prerequisite
-* Your TigerGraph Cloud account has role Organization Admin
+* Your TigerGraph Cloud Classic account has role Organization Admin
 
 === Procedure
 
@@ -28,7 +28,7 @@ For details on TigerGraph's role-based access control model, see xref:tigergraph
 == Delete a database user
 
 === Prerequisite
-* Your TigerGraph Cloud account has role Organization Admin
+* Your TigerGraph Cloud Classic account has role Organization Admin
 
 === Procedure
 

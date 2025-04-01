@@ -1,8 +1,8 @@
 = Security
 :page-aliases: readme.adoc, README.adoc
 
-TigerGraph Cloud leverages the secured infrastructure of our cloud service providers and provides additional security features to ensure the security of your data and network.
-This page provides an overview of the security features available on TigerGraph Cloud.
+TigerGraph Cloud Classic leverages the secured infrastructure of our cloud service providers and provides additional security features to ensure the security of your data and network.
+This page provides an overview of the security features available on TigerGraph Cloud Classic.
 
 
 == Network access

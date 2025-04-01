@@ -6,11 +6,11 @@
 
 
 This is a guide for setting up a VPC peering connection between your
-TigerGraph Cloud VPC and another AWS VPC.
+TigerGraph Cloud Classic VPC and another AWS VPC.
 
 == Prerequisites
 
-* Unterminated TigerGraph Cloud clusters on AWS
+* Unterminated TigerGraph Cloud Classic clusters on AWS
 
 == Procedure
 

@@ -2,11 +2,11 @@
 :page-aliases: view-activity-log.adoc, monitor-solution/index.adoc
 :experimental:
 
-TigerGraph Cloud allows users to monitor activity at the organization and cluster level.
+TigerGraph Cloud Classic allows users to monitor activity at the organization and cluster level.
 
 == Organization Activity Log
 
-Click btn:[Activities] on the left-side menu in TigerGraph Cloud to see a log of all actions performed on all clusters in the organization.
+Click btn:[Activities] on the left-side menu in TigerGraph Cloud Classic to see a log of all actions performed on all clusters in the organization.
 
 image::org-activities-page.png["Activities page shown filtered by search term 'controller', showing all actions performed by the controller"]
 

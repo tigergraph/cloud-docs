@@ -15,7 +15,7 @@ A: Please check your spam folder. If you can't find it in the spam folder, and s
 
 A: If you clicked "forgot password" during sign in to Cloud and never received an email, there could be a few explanations.
 
-* If you requested a password reset from an organization login screen, you won't get an email if you don't belong to that organization. Try resetting your password from the main login page at link:portal.tgcloud.io[].
+* If you requested a password reset from an organization login screen, you won't get an email if you don't belong to that organization. Try resetting your password from the main login page at link:tgcloud.io[].
 * If you signed up through Google authentication, you cannot use a password to log in to the same account. Try logging in with your Google account.
 * Check your junk/spam email folder or run a search for "TigerGraph" in case the email automatically got filtered to another inbox.
 * Double-check the email address you entered to make sure it matches the one you signed up with.
@@ -404,7 +404,7 @@ This approach guarantees that your data and network remain private and secure, r
 
 === *Q: How do I access my TigerGraph Savanna account (e.g., username and password)?*
 
-A: When you register your account, you can select either a username and password or Google SSO for authentication. You can then log in anytime at link:http://portal.tgcloud.io/[portal.tgcloud.io]. We also support Okta and AAD integration. If you are a paid tier customer, please submit a support ticket to request advanced service to integrate into an SSO system TigerGraph supports.
+A: When you register your account, you can select either a username and password or Google SSO for authentication. You can then log in anytime at link:http://tgcloud.io/[tgcloud.io]. We also support Okta and AAD integration. If you are a paid tier customer, please submit a support ticket to request advanced service to integrate into an SSO system TigerGraph supports.
 
 === *Q: How do I access my TigerGraph database and POST to TigerGraph?*
 

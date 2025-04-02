@@ -6,7 +6,7 @@
 The GSQL Shell is a newly redesigned browser-based interface for running GSQL commands on a cluster.
 It includes useful developer tools such as keyboard shortcuts and customized autocomplete for commands.
 
-Most TigerGraph Cloud solutions, free and paid, have access to the GSQL Shell in the TigerGraph suite.
+Most TigerGraph Cloud Classic solutions, free and paid, have access to the GSQL Shell in the TigerGraph suite.
 
 Please see the main xref:tigergraph-server:gsql-shell:web.adoc[GSQL Shell documentation page] for complete information.
 

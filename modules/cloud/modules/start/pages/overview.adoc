@@ -3,7 +3,7 @@
 :page-aliases: cloud-overview.adoc
 
 
-TigerGraph Cloud is a fully-managed cloud database built on the Enterprise Server engine and completely integrated with the full TigerGraph Suite.
+TigerGraph Cloud Classic is a fully-managed cloud database built on the Enterprise Server engine and completely integrated with the full TigerGraph Suite.
 
 Everything including xref:3.9@gui:admin-portal:overview.adoc[Admin Portal], xref:3.9@gui:graphstudio:overview.adoc[GraphStudio], xref:3.9@insights:intro:index.adoc[Insights], xref:1.4@ml-workbench:intro:index.adoc[ML Workbench], as well as,
 handling all the complexity of deploying and managing your deployments on the cloud service provider of your choice ( xref:cloud:reference:aws.adoc[], xref:cloud:reference:azure.adoc[], and xref:cloud:reference:gcp.adoc[] ).
@@ -12,7 +12,7 @@ handling all the complexity of deploying and managing your deployments on the cl
 ====
 TigerGraph Savanna Beta was released on Apr. 29, 2024.
 
-Check out the new Savanna at https://savanna.tgcloud.io or have a look at the xref:savanna:overview:index.adoc[Documentation] for more details.
+Check out the new Savanna at https://tgcloud.io or have a look at the xref:savanna:overview:index.adoc[Documentation] for more details.
 ====
 
 // [NOTE]
@@ -20,7 +20,7 @@ Check out the new Savanna at https://savanna.tgcloud.io or have a look at the xr
 // On December 31, 2025, we'll retire the TigerGraph Cloud Classic platform. Before that date, you’ll need to migrate your data from TigerGraph Cloud Classic to TigerGraph Savanna. For support, please contact us at support@tigergraph.com.
 // ====
 
-== Get to Know Your TigerGraph Cloud
+== Get to Know Your TigerGraph Cloud Classic
 
 [.home-card,cols="2",grid=none,frame=none, separator=¦]
 |===
@@ -40,29 +40,29 @@ xref:cloud:solutions:README.adoc[Cluster Management] are resources to create, co
 image:security-homecard.png[alt=security,width=74,height=74]
 *Security*
 
-Learn how TigerGraph Cloud can help ensure the xref:cloud:security:index.adoc[Security] of your data and network.
+Learn how TigerGraph Cloud Classic can help ensure the xref:cloud:security:index.adoc[Security] of your data and network.
 
 ¦
 image:billing-homecard.png[alt=billing,width=74,height=74]
 *Billing*
 
-Understand and track TigerGraph Cloud xref:billing:index.adoc[Billing] information within the portal.
+Understand and track TigerGraph Cloud Classic xref:billing:index.adoc[Billing] information within the portal.
 
 ¦
 image:documentation-homecard.png[alt=support,width=74,height=74]
 *Release Notes and Support*
 
-See the most up-to-date news on TigerGraph Cloud as well check out answers to common questions.
+See the most up-to-date news on TigerGraph Cloud Classic as well check out answers to common questions.
 
 xref:cloud:release-notes:index.adoc[Release Notes |]
-xref:support:faqs.adoc[TigerGraph Cloud FAQs |]
+xref:support:faqs.adoc[TigerGraph Cloud Classic FAQs |]
 xref:cloud:support:support.adoc[Support]
 
 ¦
 image:referece-homecard.png[alt=ref,width=74,height=74]
 *Reference*
 
-See other documents to help support your TigerGraph Cloud journey.
+See other documents to help support your TigerGraph Cloud Classic journey.
 
 xref:cloud:reference:index.adoc[Reference |]
 xref:cloud:reference:glossary.adoc[Glossary |]

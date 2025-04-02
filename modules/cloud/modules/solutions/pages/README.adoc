@@ -9,6 +9,6 @@ Clusters are fully-managed TigerGraph deployments. Here are some resources you c
 * xref:stop-restart-and-terminate.adoc[Stop, Restart and Terminate a Cluster]
  ** A step-by-step guide on how to stop, restart, and terminate a cluster
 * xref:monitor-cluster-activity.adoc[]
-** Information on the activity monitoring available on TigerGraph Cloud
+** Information on the activity monitoring available on TigerGraph Cloud Classic
 * xref:billing:index.adoc[]
 ** Add a payment method and keep track of invoices

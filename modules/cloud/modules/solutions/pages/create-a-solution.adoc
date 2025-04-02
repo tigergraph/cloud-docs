@@ -2,7 +2,7 @@
 :page-aliases: create.adoc
 :experimental:
 
-TigerGraph Cloud clusters offer a full-scale analytics platform to store and query your graph data.
+TigerGraph Cloud Classic clusters offer a full-scale analytics platform to store and query your graph data.
 
 This page guides you through the process of creating a *free-tier* cluster (subject to xref:reference:service-limits.adoc[limits]).
 
@@ -46,7 +46,7 @@ The default options are chosen for you automatically in the Free tier.
 [NOTE]
 The xref:tigergraph-server:gsql-shell:web.adoc[GSQL Web Shell] is currently not supported on Azure-hosted clusters due to a limitation with Azure Application Gateway.
 
-Not all TigerGraph versions that are offered on-premises are offered on TigerGraph Cloud.
+Not all TigerGraph versions that are offered on-premises are offered on TigerGraph Cloud Classic.
 In the dropdown list, choose the version of TigerGraph you want to run.
 
 image:cluster-name-and-version.png[]
@@ -61,15 +61,15 @@ If you don't add a custom subdomain, a random alphanumeric subdomain will be aut
 
 image::enterprise-tier-clusters.png[]
 
-TigerGraph Cloud offers enterprise-level hardware and support solutions for graph databases.
+TigerGraph Cloud Classic offers enterprise-level hardware and support solutions for graph databases.
 Click btn:[Contact us] or send an email to sales@tigergraph.com for more information.
 
 === ML Workbench
 
 IMPORTANT: ML Workbench is disabled by default for Free, Professional, and Enterprise instances. To get started with the ML Bundle, please contact support@tigergraph.com.
 
-TigerGraph Cloud supports integration with xref:ml-workbench:intro:index.adoc[Machine Learning Workbench] and also provides a custom-built use case starter kit.
-Machine Learning Workbench is not available with other use case starter kits or on TigerGraph Cloud solutions older than version 3.8.0.
+TigerGraph Cloud Classic supports integration with xref:ml-workbench:intro:index.adoc[Machine Learning Workbench] and also provides a custom-built use case starter kit.
+Machine Learning Workbench is not available with other use case starter kits or on TigerGraph Cloud Classic solutions older than version 3.8.0.
 
 [NOTE]
 Machine Learning Workbench is only available on single-machine clusters.

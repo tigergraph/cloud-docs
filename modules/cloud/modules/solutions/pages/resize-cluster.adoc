@@ -2,7 +2,7 @@
 :experimental:
 :page-aliases: resize-solution/index.adoc solutions/sizing-and-scaling.adoc
 
-As your workload changes, you can resize your TigerGraph Cloud cluster to maximize the efficiency of your resources.
+As your workload changes, you can resize your TigerGraph Cloud Classic cluster to maximize the efficiency of your resources.
 You can resize the instance type (the CPU and RAM allocated to your instance) or upgrade the storage volume.
 
 == Choose the right instance type
@@ -28,7 +28,7 @@ Disk storage refers to the root disk attached to your instance that holds the fo
 
 When you choose the size of the disk, consider the size of the data for all the above installations and files.
 
-To ensure adequate disk storage, TigerGraph Cloud mandates that any disk size of a cluster must be *at least 3 times* the size of its instance's RAM. For example, if your cluster instance has 64 GB of RAM, then the disk size must be higher than 192 GB.
+To ensure adequate disk storage, TigerGraph Cloud Classic mandates that any disk size of a cluster must be *at least 3 times* the size of its instance's RAM. For example, if your cluster instance has 64 GB of RAM, then the disk size must be higher than 192 GB.
 
 [NOTE]
 Resizing instance types will result in a short period of downtime.
@@ -50,7 +50,7 @@ Click btn:[Resize Instance] and choose the new instance type that you'd like to 
 
 === Resize disk size
 
-If you decide that your cluster needs more disk storage space, TigerGraph Cloud allows you to upgrade your disk volume.
+If you decide that your cluster needs more disk storage space, TigerGraph Cloud Classic allows you to upgrade your disk volume.
 
 image::screen-shot-2021-07-27-at-10.58.44-am.png[]
 

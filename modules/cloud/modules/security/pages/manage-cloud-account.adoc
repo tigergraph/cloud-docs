@@ -1,4 +1,4 @@
-= Manage your TigerGraph Cloud User Account
+= Manage your TigerGraph Cloud Classic User Account
 :experimental:
 
 == Creating an account
@@ -11,7 +11,7 @@ See xref:manage-org-users.adoc#_invite_new_users[Invite new users] for more deta
 
 Your user account is displayed in the order [First Name] [Last Name] in the list of users in the organization account.
 
-Changing your display name is not currently supported by TigerGraph Cloud.
+Changing your display name is not currently supported by TigerGraph Cloud Classic.
 To change your name, an Organization Admin needs to remove your account and send a new invitation for you to make a new account.
 
 == Account permissions
@@ -21,9 +21,9 @@ If you believe you have been given the wrong organization role in error, contact
 
 See xref:manage-org-users.adoc#_organization_roles_and_privileges[Organization roles and privileges] for detailed information on the privileges available to each organization role.
 
-== Reset your TigerGraph Cloud user account password
+== Reset your TigerGraph Cloud Classic user account password
 
-. Go to the https://tgcloud.io[TigerGraph Cloud main page].
+. Go to the https://classic.tgcloud.io[TigerGraph Cloud Classic main page].
 . Click the *Login* link next to "Have an account?"
 . Enter your organization name. If you don't remember your organization name, contact your administrator.
 . Click *Forgot password?*

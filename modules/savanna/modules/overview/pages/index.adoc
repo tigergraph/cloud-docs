@@ -4,7 +4,7 @@
 
 This documentation will guide you through the various features and functionalities of our brand new cloud-native Graph-as-a-Service (GaaS) management platform.
 
-TigerGraph Savanna (https://savanna.tgcloud.io) offers a powerful and user-friendly environment for managing, analyzing, and exploring your graph data.
+TigerGraph Savanna (https://tgcloud.io) offers a powerful and user-friendly environment for managing, analyzing, and exploring your graph data.
 It revolutionizes graph analytics by introducing a groundbreaking separation of compute and storage in its cloud-based graph database platform.
 
 //pass:[<abbr title="Define User Friendly">ToolTip Practice</abbr>]

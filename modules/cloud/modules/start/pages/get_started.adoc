@@ -1,18 +1,18 @@
-= Get started with TigerGraph Cloud
+= Get started with TigerGraph Cloud Classic
 :experimental:
 :page-aliases: get-started.adoc
 
 == Sign up
-Click btn:[Sign Up] on the https://tgcloud.io/[TigerGraph Cloud landing page].
+Click btn:[Sign Up] on the https://classic.tgcloud.io/[TigerGraph Cloud Classic landing page].
 
-When you register for a new TigerGraph Cloud account, you create an Organization Account to which you can later invite other users.
+When you register for a new TigerGraph Cloud Classic account, you create an Organization Account to which you can later invite other users.
 
-image::create-organization.png[TigerGraph Cloud Create Organization page]
+image::create-organization.png[TigerGraph Cloud Classic Create Organization page]
 
 Create a new account with a company name, personal name, and email address.
 
 If you are signing up for the first time, you will be prompted to enter a password.
-Please note the xref:security:password-policy.adoc[] that applies to TigerGraph Cloud.
+Please note the xref:security:password-policy.adoc[] that applies to TigerGraph Cloud Classic.
 
 After completing the signup page, you will get a link to verify your email address.
 Click the link in your email to verify, then log in using your username and password.
@@ -23,7 +23,7 @@ The system recognizes a verified email address on the registration page and allo
 [NOTE]
 ====
 TigerGraph recommends enterprise customers use a shared mailbox to set up an organization account.
-TigerGraph Cloud sends important email notifications to this address, including for:
+TigerGraph Cloud Classic sends important email notifications to this address, including for:
 
 * Billing and credits
 * Cluster behavior
@@ -32,7 +32,7 @@ TigerGraph Cloud sends important email notifications to this address, including 
 
 == Log in
 
-Click btn:[Log In] on the https://tgcloud.io/[TigerGraph Cloud landing page].
+Click btn:[Log In] on the https://classic.tgcloud.io/[TigerGraph Cloud Classic landing page].
 
 When you log in, you must first provide an organization name before entering your username and password.
 If you were invited by a member of your organization and you do not know the name used for the organization account, contact your organization's administrator.
@@ -45,24 +45,24 @@ Once logged in, you can create clusters and add more users to your organization.
 
 == Comparison with TigerGraph Enterprise Server
 
-Most of the documentation for TigerGraph Enterprise Server also applies to TigerGraph Cloud.
-However, since TigerGraph Cloud does not have a command-line interface on the OS level, command-line features are not supported in the same way.
+Most of the documentation for TigerGraph Enterprise Server also applies to TigerGraph Cloud Classic.
+However, since TigerGraph Cloud Classic does not have a command-line interface on the OS level, command-line features are not supported in the same way.
 In many cases, there is a GUI-based method for the same feature.
 For advanced OS-level commands, submit a support ticket for more information.
 
 
 |===
-| Topic | TigerGraph Enterprise Server | TigerGraph Cloud
+| Topic | TigerGraph Enterprise Server | TigerGraph Cloud Classic
 
 | GSQL Graph Algorithm Library | Yes | Yes
-| Release Notes | Yes | TigerGraph Cloud keeps its database instances up to date with the latest TigerGraph Server releases.
+| Release Notes | Yes | TigerGraph Cloud Classic keeps its database instances up to date with the latest TigerGraph Server releases.
 | GSQL 101 | Yes | Basic concepts still apply. Most CREATE, INSTALL, LOAD, and RUN commands are replaced with the GraphStudio GUI-based approach.
 | GSQL 102 Pattern Matching | Yes | The same patterns can be used in queries.
 | MultiGraph Overview | Yes | Yes
 | Hardware and Software Requirements | Yes | N/A
-| Installation and Configuration | Yes | N/A. There are a few simple steps to install a Starter Kit.  See the TigerGraph Cloud FAQs.
+| Installation and Configuration | Yes | N/A. There are a few simple steps to install a Starter Kit.  See the TigerGraph Cloud Classic FAQs.
 | User Access Management | Yes | Yes
-| Data Encryption | Yes | N/A. TigerGraph Cloud is setup already for encrypted data at rest and at motion.
+| Data Encryption | Yes | N/A. TigerGraph Cloud Classic is setup already for encrypted data at rest and at motion.
 | System Management | Yes | The Cloud Admin Portal is enhanced over the TigerGraph Server Admin Portal.  Backup and Restore is done through the Cloud Admin Portal.
 | GraphStudio UI Guide | Yes | Yes
 | GSQL Demo Examples | Yes | Yes

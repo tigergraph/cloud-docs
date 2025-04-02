@@ -4,11 +4,11 @@
 
 The TigerGraph GraphStudio™ UI (User Interface) provides an intuitive, browser-based interface that helps users get started quickly with graph-based application development tasks: designing a graph schema, creating a schema mapping, loading data, exploring the graph, and writing GSQL queries.
 
-GraphStudio is supported in the same way on TigerGraph Cloud as on the on-prem version of TigerGraph.
+GraphStudio is supported in the same way on TigerGraph Cloud Classic as on the on-prem version of TigerGraph.
 
 == Open GraphStudio
 
-After link:https://tgcloud.io/[logging into TigerGraph Cloud], go to the home page or the Clusters page in the left-hand menu.
+After link:https://classic.tgcloud.io/[logging into TigerGraph Cloud Classic], go to the home page or the Clusters page in the left-hand menu.
 
 Find your cluster in the list and click the Tools button in the same row, then choose btn:[GraphStudio] from the dropdown list.
 

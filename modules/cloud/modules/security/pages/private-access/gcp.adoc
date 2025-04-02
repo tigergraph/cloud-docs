@@ -37,7 +37,7 @@ Google has a detailed page about using Private Service Connect at this link: lin
 
 . For *Target*, select *Published service*.
 
-. For *Target service*, enter the service attachment URI from the TigerGraph Cloud Portal.
+. For *Target service*, enter the service attachment URI from the TigerGraph Cloud Classic Portal.
 .. The service attachment URI is in this format: `projects/SERVICE_PROJECT/regions/REGION/serviceAttachments/SERVICE_NAME`
 
 . Enter a name to use for the endpoint under *Endpoint name*
@@ -61,7 +61,7 @@ Google has a detailed page about using Private Service Connect at this link: lin
 === Private DNS via GCP console
 Create a Private DNS Zone named `privatelink.i.tgcloud.io` on the *Cloud DNS* page.
 
-In the new DNS zone, add a DNS *A* record with the same name as the cluster domain from the TigerGraph Cloud Portal.
+In the new DNS zone, add a DNS *A* record with the same name as the cluster domain from the TigerGraph Cloud Classic Portal.
 The value is the private static IP address for Private Service Connect.
 
 [WARNING]
@@ -72,7 +72,7 @@ Do not add `privatelink.tgcloud.io` to the DNS *A* record.
 Make sure you have the latest GCP CLI tools from this link: link:https://cloud.google.com/sdk/docs/install[Install the gcloud CLI]
 
 
-Verify that a subnet with *Purpose* set to *None* exists to contain the Private Service Connect endpoint. The subnet region must be the same as TigerGraph Cloud.
+Verify that a subnet with *Purpose* set to *None* exists to contain the Private Service Connect endpoint. The subnet region must be the same as TigerGraph Cloud Classic.
 
 You can reuse an existing subnet that you have already created using the GUI or create a new subnetwork using this command:
 
@@ -106,7 +106,7 @@ Run this command to create private DNS zone:
 gcloud dns managed-zones create <zone_name> --dns-name=privatelink.tgcloud.io --networks="<customer_network>" --visibility=private
 ----
 
-Next run this command to add a DNS *A* record to the DNS zone. Replace `<full_domain_name>` with the domain name in the TigerGraph Cloud portal.
+Next run this command to add a DNS *A* record to the DNS zone. Replace `<full_domain_name>` with the domain name in the TigerGraph Cloud Classic portal.
 
 [source]
 ----

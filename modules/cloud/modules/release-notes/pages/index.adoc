@@ -2,10 +2,10 @@
 :page-toclevels: 1
 :page-aliases: release-notes.adoc
 
-New updates to TigerGraph Cloud, both to the user experience and the backend capability, are regularly released.
+New updates to TigerGraph Cloud Classic, both to the user experience and the backend capability, are regularly released.
 This page provides a summary of each update upon release.
 
-These TigerGraph Cloud updates are separate from updates to the core TigerGraph architecture. For release notes about new TigerGraph versions, see xref:tigergraph-server:release-notes:index.adoc[TigerGraph Server Release Notes].
+These TigerGraph Cloud Classic updates are separate from updates to the core TigerGraph architecture. For release notes about new TigerGraph versions, see xref:tigergraph-server:release-notes:index.adoc[TigerGraph Server Release Notes].
 
 Cloud clusters are not automatically upgraded to a new TigerGraph version when a new version is released.
 For version upgrades for existing clusters, please contact TigerGraph Support.
@@ -142,7 +142,7 @@ Release date: January 18th, 2023
 * Disk resize limits now match the limits from each cloud service provider.
 
 === Known issues
-* Subscriptions to TigerGraph Cloud from cloud service provider marketplaces occasionally encounter issues during setup.
+* Subscriptions to TigerGraph Cloud Classic from cloud service provider marketplaces occasionally encounter issues during setup.
 Please contact TigerGraph Support for assistance if your account is affected.
 
 == November 2022 Updates
@@ -151,9 +151,9 @@ Release date: November 15th, 2022
 
 === Feature updates
 
-* xref:insights:intro:index.adoc[TigerGraph Insights,] an all-new data visualization platform, is now available in TigerGraph Cloud
-* xref:ml-workbench:on-cloud:on-tgcloud.adoc[Machine Learning Workbench] is now integrated seamlessly into TigerGraph Cloud
-* Added a dedicated starter kit for Machine Learning Workbench on TigerGraph Cloud
+* xref:insights:intro:index.adoc[TigerGraph Insights,] an all-new data visualization platform, is now available in TigerGraph Cloud Classic
+* xref:ml-workbench:on-cloud:on-tgcloud.adoc[Machine Learning Workbench] is now integrated seamlessly into TigerGraph Cloud Classic
+* Added a dedicated starter kit for Machine Learning Workbench on TigerGraph Cloud Classic
 * Reworked Billing and Analytics pages for improved ease of use
 * TigerGraph 3.8.0 is now available when creating new clusters
 
@@ -219,8 +219,8 @@ Log out and log in again to fix this error.
 Release date: August 18th, 2022
 
 === New Features
-* Users with an invitation can provision xref:ml-workbench:on-cloud:mlwb-service.adoc[ML Workbench (preview version)] instances on top of TigerGraph Cloud clusters.
-** If you are interested in experimenting with ML Workbench on TigerGraph Cloud, please contact sales@tigergraph.com
+* Users with an invitation can provision xref:ml-workbench:on-cloud:mlwb-service.adoc[ML Workbench (preview version)] instances on top of TigerGraph Cloud Classic clusters.
+** If you are interested in experimenting with ML Workbench on TigerGraph Cloud Classic, please contact sales@tigergraph.com
 * TigerGraph 3.6.2 is available when creating new clusters.
 
 === Feature updates
@@ -235,12 +235,12 @@ Release date: July 6, 2022
 
 * Multiple users can now share access to the same organization account.
 * Role based access control (RBAC) to control and manage access to specific clusters and capabilities.
-* TigerGraph Cloud Console and GraphStudio user authentication are now integrated to eliminate repeated logins.
+* TigerGraph Cloud Classic Console and GraphStudio user authentication are now integrated to eliminate repeated logins.
 * All-new clean and unified user interface.
 
 === Feature Updates
 
-* Username/password authentication has changed for connectors to TigerGraph Cloud instances.
+* Username/password authentication has changed for connectors to TigerGraph Cloud Classic instances.
 ** Users need to create a secret in the Admin Portal UI.
 ** Secrets can only be created through the GUI after a graph has been created.
 ** When entering the credentials, the username needs to be `\__GSQL__secret`, and the password needs to be the secret.
@@ -257,7 +257,7 @@ Release date: June 20, 2022
 
 === Feature updates
 
-* TigerGraph Cloud clusters created on or after June 20, 2022 no longer expose ports 14240 or 9000.
+* TigerGraph Cloud Classic clusters created on or after June 20, 2022 no longer expose ports 14240 or 9000.
 This also applies to previously created clusters that are resized on or after June 20, 2022. Use port 443 instead for API endpoint connectivity:
 ** Use API endpoint `443/restpp/<endpoint>` for RESTPP endpoints that were on port 9000
 ** Use API endpoint `443/<endpoint>` for endpoints that were on port 14240
@@ -266,9 +266,9 @@ Always back up a cluster before performing a resize operation.
 
 === Known issues
 
-* The GSQL Web Shell is temporarily disabled for new clusters due to recent networking improvements on the TigerGraph Cloud backend. Clusters created before June 20, 2022 are unaffected and still have access to the Web Shell.
+* The GSQL Web Shell is temporarily disabled for new clusters due to recent networking improvements on the TigerGraph Cloud Classic backend. Clusters created before June 20, 2022 are unaffected and still have access to the Web Shell.
 
-** Use the xref:tigergraph-server:gsql-shell:using-a-remote-gsql-client.adoc[Remote GSQL client] to access GSQL on new TigerGraph Cloud clusters until access is restored.
+** Use the xref:tigergraph-server:gsql-shell:using-a-remote-gsql-client.adoc[Remote GSQL client] to access GSQL on new TigerGraph Cloud Classic clusters until access is restored.
 
 
 == May 2022 Updates
@@ -296,7 +296,7 @@ Release date: Feb 8th, 2022
 === New features
 
 * TigerGraph Version 3.5 is now available for selection when creating new clusters.
-* Added the framework to render TigerGraph Cloud UIs in other languages besides English.
+* Added the framework to render TigerGraph Cloud Classic UIs in other languages besides English.
 * Improvements on secure access and auditability.
 * Improvements on operational SLAs and faster resolution of issues.
 
@@ -307,8 +307,8 @@ Release date: Sep 22, 2021
 === New features
 
 * **TigerGraph V3.1.5 is now available for selection when creating new clusters**. Users can create clusters that include both single server and cluster deployment when they choose TigerGraph V3.1.5.
-* *VPC Peering*. Users can now create a VPC peering connection between their TigerGraph Cloud VPC and another VPC on all supported cloud providers.
-* *Automatic load balancing for HA clusters*. When users provision a cluster with replicas in TigerGraph Cloud, a load balancer will be automatically attached to the cluster.
+* *VPC Peering*. Users can now create a VPC peering connection between their TigerGraph Cloud Classic VPC and another VPC on all supported cloud providers.
+* *Automatic load balancing for HA clusters*. When users provision a cluster with replicas in TigerGraph Cloud Classic, a load balancer will be automatically attached to the cluster.
 * *Multi-AZ deployment*. When a user provisions an HA cluster, the replicas of the cluster will automatically be provisioned on different availability zones. This feature is supported on AWS and GCP.
 * *Free-tier clusters on GCP*. We now offer the option to create a free-tier cluster on GCP in addition to AWS.
 
@@ -359,7 +359,7 @@ Release Date:  December 16, 2020
 * ​✅Support TigerGraph V3.0.6 for New Clusters
 * ​​✅Support TigerGraph v2.6.4 for New Clusters
 * ✅Support replication factor of 3 for TigerGraph V3.0.6 clusters
-* ✅New TigerGraph Cloud Instance Type TG.C4.M16 available from AWS
+* ✅New TigerGraph Cloud Classic Instance Type TG.C4.M16 available from AWS
 * ✅SOC2 Type 2 report available to request
 * ✅5 New TigerGraph Starter Kits
 ** Graph Convolutional Networks (V3.0.6)
@@ -412,7 +412,7 @@ Release Date:  April 27, 2020
 *** Centrality
 *** Community Detection
 
-== TigerGraph Cloud V2.0
+== TigerGraph Cloud Classic V2.0
 
 Release Date: January 08, 2020
 
@@ -425,7 +425,7 @@ Release Date: January 08, 2020
 * ✅Added Steps in Cloud Portal Provision Workflow
 * ✅New TigerGraph Starter Kits
 
-== TigerGraph Cloud V1.0
+== TigerGraph Cloud Classic V1.0
 
 Release Date: September 25, 2019
 
@@ -438,7 +438,7 @@ Sunset Date: March 31, 2020
 * ✅Free Credits for 1st Time Sign Up
 * ✅Available in 8 Tiers of Instances (Free Tier Included) and 6 Global Regions
 * ✅Flexible Billing and Pay As You Go Pricing
-* ✅Secure and Isolated Network (VPC) for Each TigerGraph Cloud Account
+* ✅Secure and Isolated Network (VPC) for Each TigerGraph Cloud Classic Account
 * ✅Fast Data Loading through S3 and Local Files
 * ✅13 TigerGraph Starter Kits with Sample Datasets and Queries
 * ✅Start/Stop/Terminate TigerGraph Clusters On Demand through Cloud Portal

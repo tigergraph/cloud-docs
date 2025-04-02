@@ -61,7 +61,7 @@ A database user with its own roles and privileges for different graphs stored on
 
 == vCPU
 
-A virtual central processing unit. A vCPU is a core within a virtual machine inside TigerGraph Cloud.
+A virtual central processing unit. A vCPU is a core within a virtual machine inside TigerGraph Cloud Classic.
 
 == VPC
 
@@ -73,4 +73,4 @@ A network between two VPCs allowing instances to communicate as if they are on t
 
 == web shell
 
-A browser-accessible command line for running GSQL commands on a TigerGraph Cloud cluster.
+A browser-accessible command line for running GSQL commands on a TigerGraph Cloud Classic cluster.

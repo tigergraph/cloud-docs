@@ -15,7 +15,7 @@ Data transfer costs from the cloud platforms are calculated according to the clo
 
 [NOTE]
 ====
-This section only applies to the standard hourly service of TigerGraph Cloud. If you have a committed long-term contract with TigerGraph, please contact link:mailto:sales@tigergraph.com[sales@tigergraph.com] for questions.
+This section only applies to the standard hourly service of TigerGraph Cloud Classic. If you have a committed long-term contract with TigerGraph, please contact link:mailto:sales@tigergraph.com[sales@tigergraph.com] for questions.
 ====
 
 == Pricing Information
@@ -27,7 +27,7 @@ View our https://www.tigergraph.com/tigergraph-cloud-pricing/[pricing table] for
 
 image::payment-methods.png[]
 
-For standard hourly use of TigerGraph Cloud clusters, we currently support payment through cards.
+For standard hourly use of TigerGraph Cloud Classic clusters, we currently support payment through cards.
 
 To connect a credit card to your account, click the btn:[Add Credit Card] button in the center of the page.
 You can add multiple cards and set one as the default payment method.
@@ -38,11 +38,11 @@ If you need to use ACH payment or purchase bulk cloud credits, please contact sa
 
 === Subscriptions
 
-You can also pay for TigerGraph Cloud via marketplace subscriptions through a cloud provider:
+You can also pay for TigerGraph Cloud Classic via marketplace subscriptions through a cloud provider:
 
-* https://aws.amazon.com/marketplace/pp/prodview-5rpjtqdqixmds[AWS Marketplace]: Pay for TigerGraph Cloud via AWS
-* https://azuremarketplace.microsoft.com/en-us/marketplace/apps/tigergraph.tigergraph-cloud?tab=Overview[Azure Marketplace]: Pay for TigerGraph Cloud via Azure
-* https://console.cloud.google.com/marketplace/product/tigergraph-public/tigergraph-cloud[GCP Marketplace]: Pay for TigerGraph Cloud via GCP
+* https://aws.amazon.com/marketplace/pp/prodview-5rpjtqdqixmds[AWS Marketplace]: Pay for TigerGraph Cloud Classic via AWS
+* https://azuremarketplace.microsoft.com/en-us/marketplace/apps/tigergraph.tigergraph-cloud?tab=Overview[Azure Marketplace]: Pay for TigerGraph Cloud Classic via Azure
+* https://console.cloud.google.com/marketplace/product/tigergraph-public/tigergraph-cloud[GCP Marketplace]: Pay for TigerGraph Cloud Classic via GCP
 
 == Invoices
 

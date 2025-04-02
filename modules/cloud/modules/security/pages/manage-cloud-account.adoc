@@ -23,7 +23,7 @@ See xref:manage-org-users.adoc#_organization_roles_and_privileges[Organization r
 
 == Reset your TigerGraph Cloud Classic user account password
 
-. Go to the https://tgcloud.io[TigerGraph Cloud Classic main page].
+. Go to the https://classic.tgcloud.io[TigerGraph Cloud Classic main page].
 . Click the *Login* link next to "Have an account?"
 . Enter your organization name. If you don't remember your organization name, contact your administrator.
 . Click *Forgot password?*

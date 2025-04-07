@@ -2203,7 +2203,7 @@ __optional__|string
 |**RequestID** +
 __optional__|string
 |**Result** +
-__optional__|< <<definitions.adoc#_workspaceschedule,WorkspaceSchedule>> > array
+__optional__|string
 |===
 
 

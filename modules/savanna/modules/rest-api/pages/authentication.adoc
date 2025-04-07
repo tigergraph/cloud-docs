@@ -16,7 +16,7 @@ Before you can authenticate your API requests, you need to set up your API keys.
 Here’s an example of how to consume the APIs using your API key:
 
 ```bash
-curl -X GET "https://api.tgcloud.io/controller/v4/v2/workgroups"" \
+curl -X GET "https://api.tgcloud.io/controller/v4/v2/workgroups" \
      -H 'Content-Type: application/json' \
      -H "x-api-key: <your-api-key>"
 ```

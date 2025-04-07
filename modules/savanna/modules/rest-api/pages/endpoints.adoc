@@ -2028,7 +2028,7 @@ __optional__|< <<definitions.adoc#_backup,Backup>> > array
 [[_https_api_tgcloud_io_controller_v4_v2_workspaces_workspaceid_backups_restore_job_status_get]]
 === Get backup restore status
 ....
-GET https://api.tgcloud.io/controller/v4/v2/workspaces/{workspaceID}/backups/restore/{job}/status
+GET https://api.tgcloud.io/controller/v4/v2/workspaces/{workspaceID}/backups/{job}/status
 ....
 
 

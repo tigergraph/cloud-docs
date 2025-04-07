@@ -2090,78 +2090,10 @@ __optional__|<<definitions.adoc#_backuprestorestatus,BackupRestoreStatus>>
 
 * Backup
 
-
-[[_https_api_tgcloud_io_controller_v4_v2_workspaces_workspaceid_backups_schedule_post]]
-=== Create a new workspace schedule
-....
-POST https://api.tgcloud.io/controller/v4/v2/workspaces/{workspaceID}/backups/schedule
-....
-
-
-==== Description
-Create a new workspace schedule for a given workspace
-
-
-==== Parameters
-
-[options="header", cols=".^2a,.^3a,.^9a,.^4a"]
-|===
-|Type|Name|Description|Schema
-|**Path**|**workspaceID** +
-__required__|Workspace ID|string
-|**Body**|**body** +
-__required__|Workspace Schedule|<<definitions.adoc#_workspaceschedule,WorkspaceSchedule>>
-|===
-
-
-==== Responses
-
-[options="header", cols=".^2a,.^14a,.^4a"]
-|===
-|HTTP Code|Description|Schema
-|**200**|OK|<<_https_api_tgcloud_io_controller_v4_v2_workspaces_workspaceid_backups_schedule_post_response_200,Response 200>>
-|**400**|Bad Request|<<definitions.adoc#_middleware_response,middleware.Response>>
-|**500**|Internal Server Error|<<definitions.adoc#_middleware_response,middleware.Response>>
-|===
-
-[[_https_api_tgcloud_io_controller_v4_v2_workspaces_workspaceid_backups_schedule_post_response_200]]
-**Response 200**
-
-[options="header", cols=".^3a,.^4a"]
-|===
-|Name|Schema
-|**Error** +
-__optional__|boolean
-|**ErrorDetails** +
-__optional__|< <<definitions.adoc#_middleware_error,middleware.Error>> > array
-|**Message** +
-__optional__|string
-|**RequestID** +
-__optional__|string
-|**Result** +
-__optional__|<<definitions.adoc#_workspaceschedule,WorkspaceSchedule>>
-|===
-
-
-==== Consumes
-
-* `application/json`
-
-
-==== Produces
-
-* `application/json`
-
-
-==== Tags
-
-* WorkspaceSchedule
-
-
 [[_https_api_tgcloud_io_controller_v4_v2_workspaces_workspaceid_backups_schedule_get]]
 === Get backup schedule
 ....
-GET https://api.tgcloud.io/controller/v4/v2/workspaces/{workspaceID}/backups/schedule
+GET https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/backups/schedule
 ....
 
 
@@ -2174,6 +2106,8 @@ Get the backup schedule for a workspace
 [options="header", cols=".^2a,.^3a,.^9a,.^4a"]
 |===
 |Type|Name|Description|Schema
+|**Path**|**workgroupID** +
+__required__|Workgroup ID|string
 |**Path**|**workspaceID** +
 __required__|Workspace ID|string
 |===
@@ -2225,7 +2159,7 @@ __optional__|<<definitions.adoc#_backupschedule,BackupSchedule>>
 [[_https_api_tgcloud_io_controller_v4_v2_workspaces_workspaceid_schedules_get]]
 === Retrieve workspace schedule
 ....
-GET https://api.tgcloud.io/controller/v4/v2/workspaces/{workspaceID}/schedules
+GET https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/schedules
 ....
 
 
@@ -2237,6 +2171,9 @@ Retrieve the schedule for a given workspace
 
 [options="header", cols=".^2a,.^3a,.^9a,.^4a"]
 |===
+|Type|Name|Description|Schema
+|**Path**|**workgroupID** +
+__required__|Workgroup ID|string
 |Type|Name|Description|Schema
 |**Path**|**workspaceID** +
 __required__|Workspace ID|string
@@ -2284,7 +2221,7 @@ __optional__|< <<definitions.adoc#_workspaceschedule,WorkspaceSchedule>> > array
 [[_https_api_tgcloud_io_controller_v4_v2_workspaces_workspaceid_schedules_schedule_id_put]]
 === Update an existing workspace schedule
 ....
-PUT https://api.tgcloud.io/controller/v4/v2/workspaces/{workspaceID}/schedules/{schedule_id}
+POST https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/backups/schedule
 ....
 
 
@@ -2297,8 +2234,8 @@ Update an existing workspace schedule for a given workspace
 [options="header", cols=".^2a,.^3a,.^9a,.^4a"]
 |===
 |Type|Name|Description|Schema
-|**Path**|**schedule_id** +
-__required__|Schedule ID|string
+|**Path**|**workgroupID** +
+__required__|Workgroup ID|string
 |**Path**|**workspaceID** +
 __required__|Workspace ID|string
 |**Body**|**body** +
@@ -2353,7 +2290,7 @@ __optional__|string
 [[_https_api_tgcloud_io_controller_v4_v2_workspaces_workspaceid_schedules_schedule_id_delete]]
 === Delete an existing workspace schedule
 ....
-DELETE https://api.tgcloud.io/controller/v4/v2/workspaces/{workspaceID}/schedules/{schedule_id}
+POST https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/backups/schedule
 ....
 
 
@@ -2366,10 +2303,12 @@ Delete an existing workspace schedule for a given workspace
 [options="header", cols=".^2a,.^3a,.^9a,.^4a"]
 |===
 |Type|Name|Description|Schema
-|**Path**|**schedule_id** +
-__required__|Schedule ID|string
+|**Path**|**workgroupID** +
+__required__|Workgroup ID|string
 |**Path**|**workspaceID** +
 __required__|Workspace ID|string
+|**Body**|**body** +
+__required__|Workspace Schedule|<<definitions.adoc#_workspaceschedule,WorkspaceSchedule>>
 |===
 
 

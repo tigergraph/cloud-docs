@@ -2174,7 +2174,6 @@ Retrieve the schedule for a given workspace
 |Type|Name|Description|Schema
 |**Path**|**workgroupID** +
 __required__|Workgroup ID|string
-|Type|Name|Description|Schema
 |**Path**|**workspaceID** +
 __required__|Workspace ID|string
 |===

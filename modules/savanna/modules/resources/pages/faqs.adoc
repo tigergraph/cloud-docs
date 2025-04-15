@@ -132,7 +132,7 @@ A: The TigerGraph Savanna portal provides a browser-based interface that makes i
 
 A: TigerGraph uses GSQL, the query language designed for fast and scalable graph operations and analytics. GSQL's similarity to SQL, high-level syntax, Turing completeness, and built-in parallelism brings faster performance, faster development and the ability to describe any algorithm.
 
-You can start learning GSQL from our link:https://github.com/tigergraph/ecosys/blob/master/demos/guru_scripts/docker/tutorial/4.x/README.md[GSQL V3 Tutorial]. We also support a RESTful API and JSON output for easy integration with application languages like Python, Java, and C{pp}.
+You can start learning GSQL from our link:https://github.com/tigergraph/ecosys/blob/master/tutorials/GSQL.md[GSQL V3 Tutorial]. We also support a RESTful API and JSON output for easy integration with application languages like Python, Java, and C{pp}.
 
 Start learning GSQL and become a TigerGraph Certified Associate today with our link:https://www.tigergraph.com/certification/[Certification Program].
 

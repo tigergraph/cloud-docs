@@ -29,7 +29,7 @@ This step lets you view the source details.
 +
 image::snowflake-sample-data.png[]
 
-. Once you are satisfied with the samle data, click btn:[ Next ] to proceed.
+. Once you are satisfied with the sample data, click btn:[ Next ] to proceed.
 
 == 3) Configure Map
 

@@ -12,7 +12,7 @@ The Log feature is only available to enterprise-level customers. If you need to 
 
 .Enable log when creating a workgroup:
 
-. When you xref:graph-development:workgroup-workspace/workgroups/how2-create-a-workgroup.adoc[create a workgroup], you can check the option to enable log collection on the page.
+. When you xref:savanna:workgroup-workspace:workgroups/how2-create-a-workgroup.adoc[create a workgroup], you can check the option to enable log collection on the page.
 +
 image::enablelogwhencreateworkgroup.png[width="1600"]
 

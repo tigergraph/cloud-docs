@@ -22,7 +22,7 @@ image::Screenshot 2024-04-18 at 10.12.15 AM.png[]
 The opened files will be listed on the top tabs on the code edit folder
 +
 image::query-editor.png[]
-
++
 
 == Run GSQL Query
 

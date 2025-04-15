@@ -1,7 +1,7 @@
 = Log
 :experimental:
 
-Workspace Log provides full-text search capabilities for workspace logs (including historical logs, with a default retrievable period of 30 days) and allows filtering of logs based on time, nodes, and components. By utilizing Workspace Log, teams can not only quickly locate and resolve issues but also gain in-depth insights into system performance, user behavior, and operational auditing, ultimately enhancing system reliability and performance.
+Log provides full-text search capabilities for workspace logs (including historical logs, with a default retrievable period of 30 days) and allows filtering of logs based on time, nodes, and components. By utilizing log, teams can not only quickly locate and resolve issues but also gain in-depth insights into system performance, user behavior, and operational auditing, ultimately enhancing system reliability and performance.
 
 [TIP]
 ====
@@ -12,18 +12,18 @@ The Log feature is only available to enterprise-level customers. If you need to 
 
 .Enable log when creating a workgroup:
 
-. When you xref:graph-development:workgroup-workspace/workgroups/how2-create-a-workgroup.adoc[create a workgroup], you can check the option to enable log collection on the page..
+. When you xref:graph-development:workgroup-workspace/workgroups/how2-create-a-workgroup.adoc[create a workgroup], you can check the option to enable log collection on the page.
 +
 image::enablelogwhencreateworkgroup.png[width="1600"]
 
 .Enable log when after workgroup is created:
-. Alternatively, you can enable log collection by clicking the edit setting button image:workgroupsettingbutton.png[width="75"] on the workgroup configuration after creating the workgroup, and then accessing the workgroup configuration modification page.
+. Alternatively, you can enable log collection by clicking the configuration modification button image:workgroupsettingbutton.png[width="75"] after creating the workgroup, and then modifying the corresponding configuration items on the workgroup configuration modification page.
 +
 image::enablelogsafterworkgroupcreated.png[width="1600"]
 
 == How to Search Log
 
-.To start log, follow these steps:
+.To start log search, follow these steps:
 
 . Go to the `Log` tab on your workgroup dashboard.
 +

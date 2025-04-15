@@ -1,0 +1,48 @@
+= Log
+:experimental:
+
+Workspace Log provides full-text search capabilities for workspace logs (including historical logs, with a default retrievable period of 30 days) and allows filtering of logs based on time, nodes, and components. By utilizing Workspace Log, teams can not only quickly locate and resolve issues but also gain in-depth insights into system performance, user behavior, and operational auditing, ultimately enhancing system reliability and performance.
+
+[TIP]
+====
+The Log feature is only available to enterprise-level customers. If you need to use this feature, please contact support@tigergraph.com to enable it for your organization.
+====
+
+== How to Enable Log
+
+.Enable log when creating a workgroup:
+
+. When you xref:graph-development:workgroup-workspace/workgroups/how2-create-a-workgroup.adoc[create a workgroup], you can check the option to enable log collection on the page..
++
+image::enablelogwhencreateworkgroup.png[width="1600"]
+
+.Enable log when after workgroup is created:
+. Alternatively, you can enable log collection by clicking the edit setting button image:workgroupsettingbutton.png[width="75"] on the workgroup configuration after creating the workgroup, and then accessing the workgroup configuration modification page.
++
+image::enablelogsafterworkgroupcreated.png[width="300"]
+
+[TIP]
+====
+These permissions allow you to control access to individual resources based on the needs and responsibilities of different users.
+====
+
+== How to Search Log
+
+.To start log, follow these steps:
+
+. Go to the `Log` tab on your workgroup dashboard.
++
+image::tabs.png[width="1600"]
+
+. Then you can then select the workspace, node, component, and time range to search the logs..
++
+image::workspacelog.png[width="1600"]
+
+== Next Steps
+
+See xref:savanna:workgroup-workspace:workgroups/how2-create-a-workgroup.adoc[] to get started.
+
+Return to the xref:savanna:workgroup-workspace:index.adoc[] page or xref:savanna:overview:index.adoc[Overview] page for a different topic.
+
+
+

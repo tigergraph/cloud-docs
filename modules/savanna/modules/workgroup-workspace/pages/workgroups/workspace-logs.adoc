@@ -19,12 +19,7 @@ image::enablelogwhencreateworkgroup.png[width="1600"]
 .Enable log when after workgroup is created:
 . Alternatively, you can enable log collection by clicking the edit setting button image:workgroupsettingbutton.png[width="75"] on the workgroup configuration after creating the workgroup, and then accessing the workgroup configuration modification page.
 +
-image::enablelogsafterworkgroupcreated.png[width="300"]
-
-[TIP]
-====
-These permissions allow you to control access to individual resources based on the needs and responsibilities of different users.
-====
+image::enablelogsafterworkgroupcreated.png[width="1600"]
 
 == How to Search Log
 

@@ -16,6 +16,7 @@ Efficiently loading data into your TigerGraph databases is crucial for successfu
 - xref:load-data/load-from-s3.adoc[Load from AWS S3]
 - xref:load-data/load-from-gcs.adoc[Load from GCS]
 - xref:load-data/load-from-blob.adoc[Load from Blob]
+- xref:load-data/load-from-snowflake.adoc[Load from Snowflake]
 - xref:load-data/token-function.adoc[Token Function]
 - xref:load-data/load-from-other-sources.adoc[]
 - xref:load-data/jdbc.adoc[]

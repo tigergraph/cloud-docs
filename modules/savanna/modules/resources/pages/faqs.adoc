@@ -108,7 +108,7 @@ Please visit our link:http://tigergraph.com/solutiions/[TigerGraph Savanna Solut
 
 A: You can monitor your TigerGraph Savanna service using the built-in monitoring tools provided in the TigerGraph Savanna portal. These tools offer insights into performance, usage, and system health.
 
-See TigerGraph's xref:savanna:workgroup-workspace:workgroups/monitor-workspaces.adoc[Monitor Workspace] for more detailed information.
+See TigerGraph's xref:savanna:workgroup-workspace:workgroups/monitor-workspaces.adoc[Monitor Workspace] and xref:savanna:workgroup-workspace:workgroups/workspace-logs.adoc[Workspace Log] for more detailed information.
 
 
 === *Q:  Is TigerGraph Savanna cloud-agnostic?*

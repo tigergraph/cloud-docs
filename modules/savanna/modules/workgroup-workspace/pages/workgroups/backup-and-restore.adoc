@@ -105,7 +105,7 @@ image::Screenshot 2024-04-17 at 5.40.16 PM.png[]
 
 == Next Steps
 
-Next, learn more about how to xref:savanna:workgroup-workspace:workspaces/connect-via-api.adoc[] a workspace, or xref:savanna:workgroup-workspace:workgroups/monitor-workspaces.adoc[].
+Next, learn more about how to xref:savanna:workgroup-workspace:workspaces/connect-via-api.adoc[] a workspace, xref:savanna:workgroup-workspace:workgroups/monitor-workspaces.adoc[], or xref:savanna:workgroup-workspace:workgroups/workspace-logs.adoc[use workspace logs].
 
 Return to the xref:savanna:workgroup-workspace:index.adoc[] page or xref:savanna:overview:index.adoc[Overview] page for a different topic.
 

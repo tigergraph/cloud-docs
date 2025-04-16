@@ -64,6 +64,6 @@ If you need to connect using the database secret, please refer to xref:tigergrap
 
 == Next Steps
 
-Next, learn more about how to xref:savanna:workgroup-workspace:workgroups/monitor-workspaces.adoc[].
+Next, learn more about how to xref:savanna:workgroup-workspace:workgroups/monitor-workspaces.adoc[], or xref:savanna:workgroup-workspace:workgroups/workspace-logs.adoc[Search Log].
 
 Return to the xref:savanna:workgroup-workspace:index.adoc[] page or xref:savanna:overview:index.adoc[Overview] page for a different topic.

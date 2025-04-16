@@ -43,6 +43,10 @@ Learn how to connect to your graph database using REST APIs.
 -
 Learn how TigerGraph Savanna offers comprehensive monitoring capabilities that allow you to track the status and resource usage of your workspaces.
 
+* xref:savanna:workgroup-workspace:workgroups/workspace-logs.adoc[]
+-
+Learn how to enable and use logs to quickly identify and resolve issues, thereby enhancing the reliability and performance of the system in TigerGraph Savana.
+
 == Next Steps
 
 Next, learn how to xref:savanna:graph-development:load-data/index.adoc[Load Data] into TigerGraph Savanna.

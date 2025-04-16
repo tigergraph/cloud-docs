@@ -1,27 +1,27 @@
-= Log
+= Workspace Log
 :experimental:
 
 The Workspace Log feature provides full-text search capabilities for workspace logs (including historical logs, with a default retrievable period of 30 days) and allows filtering of logs based on time, nodes, and components. This feature enables teams not only to quickly locate and resolve issues but also to gain in-depth insights into system performance, user behavior, and operational auditing, ultimately enhancing system reliability and performance.
 
 [TIP]
 ====
-The Log feature is only available to enterprise-level customers. If you need to use this feature, please contact support@tigergraph.com to enable it for your organization.
+The Log feature is only available to users on the xref:savanna:resources/quota_policy.adoc#_subscription_plans[Enterprise plan].
+If you wish to have access to this feature, please contact support@tigergraph.com to enable it for your organization.
 ====
 
-== How to Enable Log
+== How to Enable the Log
 
-.Enable log when creating a workgroup:
+There are two ways to enable logging:
 
 . When you xref:savanna:workgroup-workspace:workgroups/how2-create-a-workgroup.adoc[create a workgroup], you can check the option to enable log collection on the page.
 +
 image::enablelogwhencreateworkgroup.png[width="1600"]
 
-.Enable log when after workgroup is created:
 . Alternatively, you can enable log collection by clicking the configuration modification button image:workgroupsettingbutton.png[width="75"] after creating the workgroup, and then modifying the corresponding configuration items on the workgroup configuration modification page.
 +
 image::enablelogsafterworkgroupcreated.png[width="1600"]
 
-== How to Search Log
+== How to Search the Log
 
 .To start log search, follow these steps:
 

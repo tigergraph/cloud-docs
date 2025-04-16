@@ -67,7 +67,7 @@ Check out our step-by-step guide on loading data from a Azure Blob Storage.
 
 == xref:savanna:graph-development:load-data/load-from-snowflake.adoc[]
 
-Check out our step-by-step guide on loading data from a Snowflake.
+Check out our step-by-step guide on loading data from Snowflake.
 
 
 == xref:savanna:graph-development:load-data/load-from-other-sources.adoc[]

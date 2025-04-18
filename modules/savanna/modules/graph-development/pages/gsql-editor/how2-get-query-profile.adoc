@@ -81,15 +81,18 @@ GSQL > RUN QUERY qtest()
 
 *Query Editor*
 
-You can get query profile in Query Eidtor.
+You can get query profile in Query Editor.
 
-. enable profiling in the query editor by clicking the button "Enable Profiling" in the top right corner of the query editor.
+. You can create and install the query in the Query Editor, select the query, enable profiling by clicking the button "Enable Profiling" in the top right corner of the Query Editor *(It's enabled by default)*.
 +
 image::enable-profile.png[]
 
-. After that, you can run the query in the query editor, and the profiling data will be generated automatically.
+
+. After run the query, the profiling data will be generated automatically.
 +
 image::profile.png[]
+
+
 
 
 *Profiling Data Explanation*

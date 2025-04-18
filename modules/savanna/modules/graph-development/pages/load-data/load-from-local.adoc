@@ -5,7 +5,8 @@ With TigerGraph Savanna, you can easily load data from local files into your gra
 
 == 1) Select Source
 
-.Once you’ve selected btn:[ Local File ],
+Once you’ve selected btn:[ Local File ], you will be asked to configure the local file data source.
+
 . Click on image:Screenshot 2024-04-17 at 5.52.21 PM.png[width=50] to upload your files or directly drag and drop your files in the btn:[File Details] window.
 +
 image::load-to-new-graph.png[]
@@ -19,7 +20,8 @@ image::load-to-new-graph.png[]
 ====
 
 == 2) Configure File
-.This step lets you configure the source file details.
+This step lets you configure the source file details.
+
 . The data loading tool will automatically detect the `.csv` separators and line breaks.
 The parser automatically splits each line into a series of tokens.
 +
@@ -54,7 +56,8 @@ The header name is ignored during data loading.
 
 == 3) Configure Map
 
-.If you are loading data into a brand new graph, you will be prompted to let our engine generate a schema and mapping for you. Or you can start from scratch. For more details of schema design please refer to xref:savanna:graph-development:design-schema/index.adoc[Design Schema].
+If you are loading data into a brand new graph, you will be prompted to let our engine generate a schema and mapping for you. Or you can start from scratch. For more details of schema design please refer to xref:savanna:graph-development:design-schema/index.adoc[Design Schema].
+
 . Select `Generate the schema only` or `Generate the schema and data mapping`.
 +
 image::Screenshot 2024-04-17 at 5.55.35 PM.png[]
@@ -79,14 +82,15 @@ image::config-mapping-2.png[width=400]
 image::quick-map.png[]
 +
     .. The btn:[Map all to target] button aligns existing attribute names with the corresponding data source headers, it won't introduce new attributes.
-    .. The btn:[Map all from source] button not only aligns existing attribute names with the corresponding dat asource headers, but also introduces new attributes based on unmatched data source headers.
-    .. The following list shows the mapping status of each attribute, you can manually adjust the mapping by checking the box next to the attribute name.
+    .. The btn:[Map all from source] button not only aligns existing attribute names with the corresponding data asource headers, but also introduces new attributes based on unmatched data source headers.
+    .. The following list shows the mapping status of each attribute. You can manually adjust the mapping by checking the box next to the attribute name.
 
 . Click btn:[Next] to proceed.
 
 == 4) Confirm
 
-.This step will let you confirm the changes made to the schema and the data mapping you created to load the data.
+This step will let you confirm the changes made to the schema and the data mapping you created to load the data.
+
 . Simply review the `Schema to be changed` and `Data to be loaded` lists.
 +
 image::confirm.png[]

@@ -4,7 +4,7 @@
 *** xref:savanna:workgroup-workspace:workgroups/how2-workgroup-access.adoc[Permissions]
 *** xref:savanna:workgroup-workspace:workgroups/monitor-workspaces.adoc[Monitor]
 *** xref:savanna:workgroup-workspace:workgroups/backup-and-restore.adoc[]
-*** xref:savanna:workgroup-workspace:workgroups/workspace-logs.adoc[Log]
+*** xref:savanna:workgroup-workspace:workgroups/workspace-logs.adoc[]
 *** xref:savanna:workgroup-workspace:workgroups/how2-config-network-access.adoc[Network Access]
 ** xref:workspaces/workspace.adoc[Workspaces]
 *** xref:savanna:workgroup-workspace:workspaces/how2-create-a-workspace.adoc[Create Workspace]

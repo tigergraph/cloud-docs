@@ -1,0 +1,144 @@
+= How to get a GSQL Query Profile
+:experimental:
+
+Query profiling is a new feature added in TigerGraph version 4.2.0. It aims to provide profiling data when query is either running or completed.
+
+User can activate query profiling to view and analyze the details of a query execution. Query profiling data can help troubleshoot performance bottlenecks throughout the execution of a query.
+
+You can analyze the generated actions derived from the original statements to identify potential optimizations through query rewriting.
+
+To diagnose bottlenecks, you can examine each generated action along with its associated metrics, such as execution time, the number of vertices and edges accessed, and memory usage.
+
+[TIP]
+====
+This feature applies to GSQL Syntax, not OpenCypher Syntax for now.
+====
+
+== Query Mode
+
+.This feature applies to the following queries:
+
+I.Installed DISTRIBUTED user-defined queries
+
+II.Installed NON-distributed user-defined queries if installed with flag -SINGLE, eg: INSTALL QUERY -SINGLE q1.
+
+III.3 built-in endpoints:
+
+    /kstep_expansion
+
+    /allpaths
+
+    /searchvertex
+
+For those queries, the profiling data contains detailed information including memory and topology, see section ”Profiling Data Explanation” below.
+
+For other queries, the profiling data will only contain some brief information, in field profile.overall.
+
+
+== How to activate Profiling
+
+.We use profile flags to indicate query profiling mode.
+
+In 4.2.0, we only provide 1 flag: BASIC.
+RESTPP Request
+
+We just need to add header -H "PROFILE: BASIC" to the request. For example:
+
+
+
+curl -H "PROFILE: BASIC" -X POST 'http://localhost:14240/restpp/query/testGraph/qtest'
+This header may be used with async mode, so we can fetch the real-time profiling data with /query_status:
+
+
+
+// Send async request with profiling activated
+curl -H "GSQL-ASYNC: true" -H "PROFILE: BASIC" -X GET 'http://localhost:14240/restpp/query/testGraph/qtest'
+// Get real-time profiling data
+curl -X GET "http://localhost:14240/restpp/query_status?requestid=$reqid"
+GSQL
+
+In GSQL Shell, we can activate profiling for run query in 2 ways.
+
+RUN QUERY Option
+
+
+
+GSQL > RUN QUERY -PROFILE BASIC qtest()
+GSQL Session Parameter
+
+
+
+GSQL > SET PROFILE = "BASIC"
+GSQL > RUN QUERY qtest()
+
+
+Query Editor
+
+
+
+== General Metrics
+This section introduces general metrics in query profiling that exists in different levels (Query, Statement and Action).
+
+ExecutionCount
+
+The metric executionCount represents how many times a stage has been executed and completed. It does not count the on-going stage.
+
+Time
+
+This metric contains the following data:
+
+startTime: start time of the stage. This field is omitted when executionCount > 1.
+
+endTime: end time of the stage. This field is omitted when executionCount > 1.
+
+Memory
+
+Data for this metric is separated to different GPE nodes, with name in format "GPE_<partId>_<replicaId>".
+
+For each GPE node, this metric only contains vertexAccumulator for now, which represents memory usage of VERTEX-attached accumulators, without EDGE-attached accumulators or Global accumulators.
+
+Notice the vertexAccumulator include internal variables not explicitly declared in original query, so it can be non-zero even there’s no VERTEX-attached accumulators declared.
+
+vertexAccumulator
+
+totalPeakMB: peak memory usages throughout execution of this stage.
+
+totalFinalMB: memory usage at end time of last execution of this stage.
+
+Topology
+
+Data for this metric is separated to different GPE nodes, with name in format "GPE_<partId>_<replicaId>".
+
+For each GPE node, this metric contains non-zeros values for following fields:
+
+vertex
+
+readCount: count of accesses to vertices in this stage. There might be duplicate accesses to the same entity.
+
+edge
+
+readCount: count of accesses to edges in this stage. There might be duplicate accesses to the same entity.
+
+table
+
+rowCount: count of accesses to table rows in this stage. There might be duplicate accesses to the same entity.
+
+join
+
+totalCount: count of total join operations in this stage.
+
+
+
+Disable Query Profiling Feature
+
+1. If the Query Profiling feature is causing issues, it can be disabled for all installed queries by adding DISABLE_PROFILE=true; to GSQL.BasicConfig.Env, then re-install all queries.
+2. Operate in frontend Query Editor
+
+
+
+== Next Steps
+
+Next, learn to xref:savanna:graph-development:explore-graph/index.adoc[].
+
+Or return to the xref:savanna:overview:index.adoc[Overview] page for a different topic.
+

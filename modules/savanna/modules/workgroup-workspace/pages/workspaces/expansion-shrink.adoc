@@ -50,7 +50,7 @@ It is recommended to schedule the expansion or shrink during a time when minimal
 
 == Next Steps
 
-Next, setup xref:savanna:workgroup-workspace:workspaces/schedule.adoc[Schedule] or learn more about how to xref:savanna:workgroup-workspace:workgroups/backup-and-restore.adoc[], xref:savanna:workgroup-workspace:workspaces/connect-via-api.adoc[], or xref:savanna:workgroup-workspace:workgroups/monitor-workspaces.adoc[].
+Next, set up a xref:savanna:workgroup-workspace:workspaces/schedule.adoc[Schedule] or learn more about how to xref:savanna:workgroup-workspace:workgroups/backup-and-restore.adoc[], xref:savanna:workgroup-workspace:workspaces/connect-via-api.adoc[], xref:savanna:workgroup-workspace:workgroups/monitor-workspaces.adoc[], or xref:savanna:workgroup-workspace:workgroups/workspace-logs.adoc[use the logging feature].
 
 Return to the xref:savanna:workgroup-workspace:index.adoc[] page or xref:savanna:overview:index.adoc[Overview] page for a different topic.
 

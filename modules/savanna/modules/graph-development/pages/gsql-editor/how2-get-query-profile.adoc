@@ -18,11 +18,11 @@ This feature applies to GSQL Syntax, not OpenCypher Syntax for now.
 
 .This feature applies to the following queries:
 
-I.Installed DISTRIBUTED user-defined queries
+. Installed DISTRIBUTED user-defined queries
 
-II.Installed NON-distributed user-defined queries if installed with flag -SINGLE, eg: INSTALL QUERY -SINGLE q1.
+. Installed NON-distributed user-defined queries if installed with flag -SINGLE, eg: INSTALL QUERY -SINGLE q1.
 
-III.3 built-in endpoints:
+. 3 built-in endpoints:
 
     /kstep_expansion
 
@@ -45,53 +45,111 @@ RESTPP Request
 We just need to add header -H "PROFILE: BASIC" to the request. For example:
 
 
-
+----
 curl -H "PROFILE: BASIC" -X POST 'http://localhost:14240/restpp/query/testGraph/qtest'
+----
 This header may be used with async mode, so we can fetch the real-time profiling data with /query_status:
 
 
-
+----
 // Send async request with profiling activated
 curl -H "GSQL-ASYNC: true" -H "PROFILE: BASIC" -X GET 'http://localhost:14240/restpp/query/testGraph/qtest'
+
+
 // Get real-time profiling data
 curl -X GET "http://localhost:14240/restpp/query_status?requestid=$reqid"
-GSQL
+----
+
+*GSQL*
+
 
 In GSQL Shell, we can activate profiling for run query in 2 ways.
 
 RUN QUERY Option
 
-
-
+----
 GSQL > RUN QUERY -PROFILE BASIC qtest()
+----
+
 GSQL Session Parameter
 
 
-
+----
 GSQL > SET PROFILE = "BASIC"
 GSQL > RUN QUERY qtest()
+----
+
+*Query Editor*
+
+You can get query profile in Query Eidtor.
+
+. enable profiling in the query editor by clicking the button "Enable Profiling" in the top right corner of the query editor.
++
+image::enable-profile.png[]
+
+. After that, you can run the query in the query editor, and the profiling data will be generated automatically.
++
+image::profile.png[]
 
 
-Query Editor
+*Profiling Data Explanation*
 
+This section is to explain the profiling data.
+
+If profiling is activated for a query, there will be a field "profile" for profiling data, in the output json of query result, and /query_status output for real-time profiling.
+
+*Profile Query Stages Breakdown*
+
+We can use the following simple query to understand the Profile Query Stages.
+
+
+----
+CREATE DISTRIBUTED QUERY qTest(INT temp) {
+	INT threshold = 90;                     // statementKey 1 (1 action)
+	IF temp > threshold THEN                // statementKey 2 (2 child statements)
+	  STRING new_state = "sweat";           // statementKey 2.1 (1 action)
+	  vSet = SELECT s from person:s         // statementKey 2.2 (3 actions: create_vset, vertex, reduce)
+	         POST-ACCUM s.state = new_state;
+	END;
+}
+----
+
+For run of the query qTest, we can split to the following stages:
+
+. Scheduling: the stage between TigerGraph server receives the request, and a thread is assigned to work on compute of the request.
+
+. Execution: it contains 3 sub stages below.
+
+ .. Initialization: initialize global variables that will be used. For distributed query also include starting workers on all nodes.
+
+ .. Processing: main control flow logic and run actions, including preparing topology, computing, shuffling.
+
+ .. Finalization: construct and send query result.
+
+
+There are 2 types of fine-grained stages within the Processing stage:
+
+. Statement: it represents one complete statement in original query. It can be graph-traversal, control-flow, or other types. A control-flow statement may contain child statements.
+
+. Action: it is a minimum execution unit in execution plan, from final transformed and optimized query. For example: vertex map action. A statement without any child statements must have child actions, and it can have 1 or more child actions. A statement with child statements does NOT have child actions.
 
 
 == General Metrics
 This section introduces general metrics in query profiling that exists in different levels (Query, Statement and Action).
 
-ExecutionCount
+*ExecutionCount*
 
 The metric executionCount represents how many times a stage has been executed and completed. It does not count the on-going stage.
 
-Time
+*Time*
 
 This metric contains the following data:
 
-startTime: start time of the stage. This field is omitted when executionCount > 1.
+. startTime: start time of the stage. This field is omitted when executionCount > 1.
 
-endTime: end time of the stage. This field is omitted when executionCount > 1.
+. endTime: end time of the stage. This field is omitted when executionCount > 1.
 
-Memory
+*Memory*
 
 Data for this metric is separated to different GPE nodes, with name in format "GPE_<partId>_<replicaId>".
 
@@ -99,41 +157,42 @@ For each GPE node, this metric only contains vertexAccumulator for now, which re
 
 Notice the vertexAccumulator include internal variables not explicitly declared in original query, so it can be non-zero even there’s no VERTEX-attached accumulators declared.
 
-vertexAccumulator
+. vertexAccumulator
 
-totalPeakMB: peak memory usages throughout execution of this stage.
+ .. totalPeakMB: peak memory usages throughout execution of this stage.
 
-totalFinalMB: memory usage at end time of last execution of this stage.
+ .. totalFinalMB: memory usage at end time of last execution of this stage.
 
-Topology
+*Topology*
 
 Data for this metric is separated to different GPE nodes, with name in format "GPE_<partId>_<replicaId>".
 
 For each GPE node, this metric contains non-zeros values for following fields:
 
-vertex
+. vertex
 
-readCount: count of accesses to vertices in this stage. There might be duplicate accesses to the same entity.
+ .. readCount: count of accesses to vertices in this stage. There might be duplicate accesses to the same entity.
 
-edge
+. edge
 
-readCount: count of accesses to edges in this stage. There might be duplicate accesses to the same entity.
+ .. readCount: count of accesses to edges in this stage. There might be duplicate accesses to the same entity.
 
-table
+. table
 
-rowCount: count of accesses to table rows in this stage. There might be duplicate accesses to the same entity.
+ .. rowCount: count of accesses to table rows in this stage. There might be duplicate accesses to the same entity.
 
-join
+. join
 
-totalCount: count of total join operations in this stage.
+ .. totalCount: count of total join operations in this stage.
 
 
 
-Disable Query Profiling Feature
+*Disable Query Profiling Feature*
 
 1. If the Query Profiling feature is causing issues, it can be disabled for all installed queries by adding DISABLE_PROFILE=true; to GSQL.BasicConfig.Env, then re-install all queries.
 2. Operate in frontend Query Editor
-
++
+image::disable-profile.png[]
 
 
 == Next Steps

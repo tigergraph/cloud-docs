@@ -9,7 +9,7 @@
 *** xref:load-data/load-from-other-sources.adoc[]
 **** xref:load-data/jdbc.adoc[]
 ** xref:design-schema/index.adoc[Design Schema]
-** xref:gsql-editor/index.adoc[GSQL Editor]
+** xref:gsql-editor/index.adoc[Query Editor]
 *** xref:gsql-editor/how2-edit-gsql-query.adoc[Edit Query]
 *** xref:gsql-editor/how2-get-query-profile.adoc[Query Profile]
 ** xref:explore-graph/index.adoc[Explore Graph]

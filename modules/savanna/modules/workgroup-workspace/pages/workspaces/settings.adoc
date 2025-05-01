@@ -90,6 +90,11 @@ Auto-resume will kick-in when users access tools and rest APIs.
 The first request that hits the Workspace when it is idle will trigger a start workspace request. The request itself is not buffered so you should keep retrying until it is successful.
 ====
 
+[NOTE]
+====
+A known issue may cause a 502 Bad Gateway error during automatic workspace startup. If you encounter this error, refresh the page (for web browser users) or retry the request (for API users).
+====
+
 ==== Auto-Resume Limitations
 
 .The following endpoints will not trigger auto-resume:

@@ -1,6 +1,11 @@
-
 [[_definitions]]
-== Definitions
+= Data Definitions
+:description: Descriptions of the data schemas used by the parameters, request bodies, and responses of Savanna endpoints
+
+Savanna uses several standardized data structures to pass information to and from its REST endpoints.
+This data describes the data schemas for those data objects.
+
+== Data Objects
 
 [[_agentconfig]]
 === AgentConfig

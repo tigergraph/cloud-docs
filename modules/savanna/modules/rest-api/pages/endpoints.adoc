@@ -1,6 +1,8 @@
-
 [[_paths]]
-== Paths
+= Savanna REST Endpoints
+:description: Reference guide for Savanna's REST endpoints
+
+== Endpoints
 
 [[_https_api_tgcloud_io_controller_v4_v2_workgroups_post]]
 === Create workgroups in your org
@@ -8,11 +10,11 @@
 POST https://api.tgcloud.io/controller/v4/v2/workgroups
 ....
 
-
+[discrete]
 ==== Description
 Create workgroups in your org
 
-
+[discrete]
 ==== Parameters
 
 [options="header", cols=".^2a,.^3a,.^9a,.^4a"]
@@ -22,7 +24,7 @@ Create workgroups in your org
 __required__|Create workgroup request|<<definitions.adoc#_createworkgrouprequest,CreateWorkgroupRequest>>
 |===
 
-
+[discrete]
 ==== Responses
 
 [options="header", cols=".^2a,.^14a,.^4a"]
@@ -49,17 +51,17 @@ __optional__|string
 __optional__|<<definitions.adoc#_workgroup,Workgroup>>
 |===
 
-
+[discrete]
 ==== Consumes
 
 * `application/json`
 
-
+[discrete]
 ==== Produces
 
 * `application/json`
 
-
+[discrete]
 ==== Tags
 
 * Workgroup
@@ -71,11 +73,11 @@ __optional__|<<definitions.adoc#_workgroup,Workgroup>>
 GET https://api.tgcloud.io/controller/v4/v2/workgroups
 ....
 
-
+[discrete]
 ==== Description
 Get workgroups for your org
 
-
+[discrete]
 ==== Responses
 
 [options="header", cols=".^2a,.^14a,.^4a"]
@@ -102,17 +104,17 @@ __optional__|string
 __optional__|< <<definitions.adoc#_workgroup,Workgroup>> > array
 |===
 
-
+[discrete]
 ==== Consumes
 
 * `application/json`
 
-
+[discrete]
 ==== Produces
 
 * `application/json`
 
-
+[discrete]
 ==== Tags
 
 * Workgroup
@@ -124,11 +126,11 @@ __optional__|< <<definitions.adoc#_workgroup,Workgroup>> > array
 GET https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}
 ....
 
-
+[discrete]
 ==== Description
 Get workgroup detail in your org
 
-
+[discrete]
 ==== Parameters
 
 [options="header", cols=".^2a,.^3a,.^9a,.^4a"]
@@ -138,7 +140,7 @@ Get workgroup detail in your org
 __required__|Workgroup ID|string
 |===
 
-
+[discrete]
 ==== Responses
 
 [options="header", cols=".^2a,.^14a,.^4a"]
@@ -165,17 +167,17 @@ __optional__|string
 __optional__|<<definitions.adoc#_workgroup,Workgroup>>
 |===
 
-
+[discrete]
 ==== Consumes
 
 * `application/json`
 
-
+[discrete]
 ==== Produces
 
 * `application/json`
 
-
+[discrete]
 ==== Tags
 
 * Workgroup
@@ -187,11 +189,11 @@ __optional__|<<definitions.adoc#_workgroup,Workgroup>>
 PUT https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}
 ....
 
-
+[discrete]
 ==== Description
 Update workgroups in your org
 
-
+[discrete]
 ==== Parameters
 
 [options="header", cols=".^2a,.^3a,.^9a,.^4a"]
@@ -203,7 +205,7 @@ __required__|Workgroup ID|string
 __required__|Update workgroup request|<<definitions.adoc#_updateworkgrouprequest,UpdateWorkgroupRequest>>
 |===
 
-
+[discrete]
 ==== Responses
 
 [options="header", cols=".^2a,.^14a,.^4a"]
@@ -230,17 +232,16 @@ __optional__|string
 __optional__|<<definitions.adoc#_workgroup,Workgroup>>
 |===
 
-
+[discrete]
 ==== Consumes
 
 * `application/json`
 
-
+[discrete]
 ==== Produces
 
 * `application/json`
-
-
+[discrete]
 ==== Tags
 
 * Workgroup
@@ -252,11 +253,11 @@ __optional__|<<definitions.adoc#_workgroup,Workgroup>>
 DELETE https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}
 ....
 
-
+[discrete]
 ==== Description
 Delete workgroup detail in your org
 
-
+[discrete]
 ==== Parameters
 
 [options="header", cols=".^2a,.^3a,.^9a,.^4a"]
@@ -266,7 +267,7 @@ Delete workgroup detail in your org
 __required__|Workgroup ID|string
 |===
 
-
+[discrete]
 ==== Responses
 
 [options="header", cols=".^2a,.^14a,.^4a"]
@@ -293,17 +294,17 @@ __optional__|string
 __optional__|string
 |===
 
-
+[discrete]
 ==== Consumes
 
 * `application/json`
 
-
+[discrete]
 ==== Produces
 
 * `application/json`
 
-
+[discrete]
 ==== Tags
 
 * Workgroup
@@ -315,11 +316,11 @@ __optional__|string
 POST https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/allow_list
 ....
 
-
+[discrete]
 ==== Description
 Add a new allowed IP to the workgroup
 
-
+[discrete]
 ==== Parameters
 
 [options="header", cols=".^2a,.^3a,.^9a,.^4a"]
@@ -331,7 +332,7 @@ __required__|Workgroup ID|string
 __required__|Allowed IP request|<<definitions.adoc#_allowedip,AllowedIP>>
 |===
 
-
+[discrete]
 ==== Responses
 
 [options="header", cols=".^2a,.^14a,.^4a"]
@@ -395,18 +396,17 @@ __optional__|string
 |**Result** +
 __optional__|string
 |===
-
-
+[discrete]
 ==== Consumes
 
 * `application/json`
 
-
+[discrete]
 ==== Produces
 
 * `application/json`
 
-
+[discrete]
 ==== Tags
 
 * AllowedIP
@@ -418,11 +418,11 @@ __optional__|string
 GET https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/allow_list
 ....
 
-
+[discrete]
 ==== Description
 List all allowed IPs in the workgroup
 
-
+[discrete]
 ==== Parameters
 
 [options="header", cols=".^2a,.^3a,.^9a,.^4a"]
@@ -432,7 +432,7 @@ List all allowed IPs in the workgroup
 __required__|Workgroup ID|string
 |===
 
-
+[discrete]
 ==== Responses
 
 [options="header", cols=".^2a,.^14a,.^4a"]
@@ -478,17 +478,17 @@ __optional__|string
 __optional__|string
 |===
 
-
+[discrete]
 ==== Consumes
 
 * `application/json`
 
-
+[discrete]
 ==== Produces
 
 * `application/json`
 
-
+[discrete]
 ==== Tags
 
 * AllowedIP
@@ -500,11 +500,11 @@ __optional__|string
 GET https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/allow_list/current
 ....
 
-
+[discrete]
 ==== Description
 Get the current IP and check if it is allowed in the workgroup
 
-
+[discrete]
 ==== Parameters
 
 [options="header", cols=".^2a,.^3a,.^9a,.^4a"]
@@ -514,7 +514,7 @@ Get the current IP and check if it is allowed in the workgroup
 __required__|Workgroup ID|string
 |===
 
-
+[discrete]
 ==== Responses
 
 [options="header", cols=".^2a,.^14a,.^4a"]
@@ -572,17 +572,17 @@ __optional__|string
 __optional__|string
 |===
 
-
+[discrete]
 ==== Consumes
 
 * `application/json`
 
-
+[discrete]
 ==== Produces
 
 * `application/json`
 
-
+[discrete]
 ==== Tags
 
 * AllowedIP
@@ -594,11 +594,11 @@ __optional__|string
 PUT https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/allow_list/disable
 ....
 
-
+[discrete]
 ==== Description
 Disable the allow list for the workgroup
 
-
+[discrete]
 ==== Parameters
 
 [options="header", cols=".^2a,.^3a,.^9a,.^4a"]
@@ -608,7 +608,7 @@ Disable the allow list for the workgroup
 __required__|Workgroup ID|string
 |===
 
-
+[discrete]
 ==== Responses
 
 [options="header", cols=".^2a,.^14a,.^4a"]
@@ -654,17 +654,17 @@ __optional__|string
 __optional__|string
 |===
 
-
+[discrete]
 ==== Consumes
 
 * `application/json`
 
-
+[discrete]
 ==== Produces
 
 * `application/json`
 
-
+[discrete]
 ==== Tags
 
 * AllowedIP
@@ -676,11 +676,11 @@ __optional__|string
 PUT https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/allow_list/enable
 ....
 
-
+[discrete]
 ==== Description
 Enable the allow list for the workgroup
 
-
+[discrete]
 ==== Parameters
 
 [options="header", cols=".^2a,.^3a,.^9a,.^4a"]
@@ -690,7 +690,7 @@ Enable the allow list for the workgroup
 __required__|Workgroup ID|string
 |===
 
-
+[discrete]
 ==== Responses
 
 [options="header", cols=".^2a,.^14a,.^4a"]
@@ -736,17 +736,17 @@ __optional__|string
 __optional__|string
 |===
 
-
+[discrete]
 ==== Consumes
 
 * `application/json`
 
-
+[discrete]
 ==== Produces
 
 * `application/json`
 
-
+[discrete]
 ==== Tags
 
 * AllowedIP
@@ -758,11 +758,11 @@ __optional__|string
 PUT https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/allow_list/{id}
 ....
 
-
+[discrete]
 ==== Description
 Update an existing allowed IP in the workgroup
 
-
+[discrete]
 ==== Parameters
 
 [options="header", cols=".^2a,.^3a,.^9a,.^4a"]
@@ -776,7 +776,7 @@ __required__|Workgroup ID|string
 __required__|Allowed IP request|<<definitions.adoc#_allowedip,AllowedIP>>
 |===
 
-
+[discrete]
 ==== Responses
 
 [options="header", cols=".^2a,.^14a,.^4a"]
@@ -841,17 +841,17 @@ __optional__|string
 __optional__|string
 |===
 
-
+[discrete]
 ==== Consumes
 
 * `application/json`
 
-
+[discrete]
 ==== Produces
 
 * `application/json`
 
-
+[discrete]
 ==== Tags
 
 * AllowedIP
@@ -863,11 +863,11 @@ __optional__|string
 DELETE https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/allow_list/{id}
 ....
 
-
+[discrete]
 ==== Description
 Delete an existing allowed IP from the workgroup
 
-
+[discrete]
 ==== Parameters
 
 [options="header", cols=".^2a,.^3a,.^9a,.^4a"]
@@ -879,7 +879,7 @@ __required__|Allowed IP ID|string
 __required__|Workgroup ID|string
 |===
 
-
+[discrete]
 ==== Responses
 
 [options="header", cols=".^2a,.^14a,.^4a"]
@@ -925,17 +925,17 @@ __optional__|string
 __optional__|string
 |===
 
-
+[discrete]
 ==== Consumes
 
 * `application/json`
 
-
+[discrete]
 ==== Produces
 
 * `application/json`
 
-
+[discrete]
 ==== Tags
 
 * AllowedIP
@@ -947,11 +947,11 @@ __optional__|string
 GET https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/databases/{databaseID}
 ....
 
-
+[discrete]
 ==== Description
 Get database in workgroup
 
-
+[discrete]
 ==== Parameters
 
 [options="header", cols=".^2a,.^3a,.^9a,.^4a"]
@@ -963,7 +963,7 @@ __required__|Database ID|string
 __required__|Workgroup ID|string
 |===
 
-
+[discrete]
 ==== Responses
 
 [options="header", cols=".^2a,.^14a,.^4a"]
@@ -990,17 +990,17 @@ __optional__|string
 __optional__|<<definitions.adoc#_tgdatabase,TGDatabase>>
 |===
 
-
+[discrete]
 ==== Consumes
 
 * `application/json`
 
-
+[discrete]
 ==== Produces
 
 * `application/json`
 
-
+[discrete]
 ==== Tags
 
 * Database
@@ -1012,11 +1012,11 @@ __optional__|<<definitions.adoc#_tgdatabase,TGDatabase>>
 PUT https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/databases/{databaseID}
 ....
 
-
+[discrete]
 ==== Description
 Update database in workgroup
 
-
+[discrete]
 ==== Parameters
 
 [options="header", cols=".^2a,.^3a,.^9a,.^4a"]
@@ -1030,7 +1030,7 @@ __required__|Workgroup ID|string
 __required__|Update database request|<<definitions.adoc#_updatetgdatabaserequest,UpdateTGDatabaseRequest>>
 |===
 
-
+[discrete]
 ==== Responses
 
 [options="header", cols=".^2a,.^14a,.^4a"]
@@ -1057,17 +1057,17 @@ __optional__|string
 __optional__|<<definitions.adoc#_tgdatabase,TGDatabase>>
 |===
 
-
+[discrete]
 ==== Consumes
 
 * `application/json`
 
-
+[discrete]
 ==== Produces
 
 * `application/json`
 
-
+[discrete]
 ==== Tags
 
 * Database
@@ -1079,11 +1079,11 @@ __optional__|<<definitions.adoc#_tgdatabase,TGDatabase>>
 DELETE https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/databases/{databaseID}
 ....
 
-
+[discrete]
 ==== Description
 Delete database in workgroup
 
-
+[discrete]
 ==== Parameters
 
 [options="header", cols=".^2a,.^3a,.^9a,.^4a"]
@@ -1095,7 +1095,7 @@ __required__|Database ID|string
 __required__|Workgroup ID|string
 |===
 
-
+[discrete]
 ==== Responses
 
 [options="header", cols=".^2a,.^14a,.^4a"]
@@ -1104,17 +1104,17 @@ __required__|Workgroup ID|string
 |**200**|OK|<<definitions.adoc#_middleware_response,middleware.Response>>
 |===
 
-
+[discrete]
 ==== Consumes
 
 * `application/json`
 
-
+[discrete]
 ==== Produces
 
 * `application/json`
 
-
+[discrete]
 ==== Tags
 
 * Database
@@ -1126,11 +1126,11 @@ __required__|Workgroup ID|string
 POST https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/workspaces
 ....
 
-
+[discrete]
 ==== Description
 Create workspace in workgroup
 
-
+[discrete]
 ==== Parameters
 
 [options="header", cols=".^2a,.^3a,.^9a,.^4a"]
@@ -1142,7 +1142,7 @@ __required__|Workgroup ID|string
 __required__|Create workspace request|<<definitions.adoc#_createworkspacerequest,CreateWorkspaceRequest>>
 |===
 
-
+[discrete]
 ==== Responses
 
 [options="header", cols=".^2a,.^14a,.^4a"]
@@ -1169,17 +1169,17 @@ __optional__|string
 __optional__|<<definitions.adoc#_workspace,Workspace>>
 |===
 
-
+[discrete]
 ==== Consumes
 
 * `application/json`
 
-
+[discrete]
 ==== Produces
 
 * `application/json`
 
-
+[discrete]
 ==== Tags
 
 * Workspace
@@ -1191,11 +1191,11 @@ __optional__|<<definitions.adoc#_workspace,Workspace>>
 GET https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}
 ....
 
-
+[discrete]
 ==== Description
 Get workspace in workgroup
 
-
+[discrete]
 ==== Parameters
 
 [options="header", cols=".^2a,.^3a,.^9a,.^4a"]
@@ -1207,7 +1207,7 @@ __required__|Workgroup ID|string
 __required__|Workspace ID|string
 |===
 
-
+[discrete]
 ==== Responses
 
 [options="header", cols=".^2a,.^14a,.^4a"]
@@ -1234,17 +1234,17 @@ __optional__|string
 __optional__|<<definitions.adoc#_workspace,Workspace>>
 |===
 
-
+[discrete]
 ==== Consumes
 
 * `application/json`
 
-
+[discrete]
 ==== Produces
 
 * `application/json`
 
-
+[discrete]
 ==== Tags
 
 * Workspace
@@ -1256,11 +1256,11 @@ __optional__|<<definitions.adoc#_workspace,Workspace>>
 PUT https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}
 ....
 
-
+[discrete]
 ==== Description
 Update workspace in workgroup
 
-
+[discrete]
 ==== Parameters
 
 [options="header", cols=".^2a,.^3a,.^9a,.^4a"]
@@ -1274,7 +1274,7 @@ __required__|Workspace ID|string
 __required__|Update workspace request|<<definitions.adoc#_updateworkspacerequest,UpdateWorkspaceRequest>>
 |===
 
-
+[discrete]
 ==== Responses
 
 [options="header", cols=".^2a,.^14a,.^4a"]
@@ -1301,17 +1301,17 @@ __optional__|string
 __optional__|<<definitions.adoc#_workspace,Workspace>>
 |===
 
-
+[discrete]
 ==== Consumes
 
 * `application/json`
 
-
+[discrete]
 ==== Produces
 
 * `application/json`
 
-
+[discrete]
 ==== Tags
 
 * Workspace
@@ -1323,11 +1323,11 @@ __optional__|<<definitions.adoc#_workspace,Workspace>>
 DELETE https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}
 ....
 
-
+[discrete]
 ==== Description
 Delete workspace in workgroup
 
-
+[discrete]
 ==== Parameters
 
 [options="header", cols=".^2a,.^3a,.^9a,.^4a"]
@@ -1339,7 +1339,7 @@ __required__|Workgroup ID|string
 __required__|Workspace ID|string
 |===
 
-
+[discrete]
 ==== Responses
 
 [options="header", cols=".^2a,.^14a,.^4a"]
@@ -1348,17 +1348,17 @@ __required__|Workspace ID|string
 |**200**|OK|<<definitions.adoc#_middleware_response,middleware.Response>>
 |===
 
-
+[discrete]
 ==== Consumes
 
 * `application/json`
 
-
+[discrete]
 ==== Produces
 
 * `application/json`
 
-
+[discrete]
 ==== Tags
 
 * Workspace
@@ -1370,11 +1370,11 @@ __required__|Workspace ID|string
 DELETE https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/backups
 ....
 
-
+[discrete]
 ==== Description
 Delete a backup for a workspace
 
-
+[discrete]
 ==== Parameters
 
 [options="header", cols=".^2a,.^3a,.^9a,.^4a"]
@@ -1388,7 +1388,7 @@ __required__|Workspace ID|string
 __required__|Delete Backup Request|<<definitions.adoc#_deletebackuprequest,DeleteBackupRequest>>
 |===
 
-
+[discrete]
 ==== Responses
 
 [options="header", cols=".^2a,.^14a,.^4a"]
@@ -1399,17 +1399,17 @@ __required__|Delete Backup Request|<<definitions.adoc#_deletebackuprequest,Delet
 |**500**|Internal server error|<<definitions.adoc#_middleware_response,middleware.Response>>
 |===
 
-
+[discrete]
 ==== Consumes
 
 * `application/json`
 
-
+[discrete]
 ==== Produces
 
 * `application/json`
 
-
+[discrete]
 ==== Tags
 
 * Backup
@@ -1421,11 +1421,11 @@ __required__|Delete Backup Request|<<definitions.adoc#_deletebackuprequest,Delet
 POST https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/backups/restore
 ....
 
-
+[discrete]
 ==== Description
 Restore a backup for a workspace
 
-
+[discrete]
 ==== Parameters
 
 [options="header", cols=".^2a,.^3a,.^9a,.^4a"]
@@ -1439,7 +1439,7 @@ __required__|Workspace ID|string
 __required__|Restore Backup Request|<<definitions.adoc#_restorebackuprequest,RestoreBackupRequest>>
 |===
 
-
+[discrete]
 ==== Responses
 
 [options="header", cols=".^2a,.^14a,.^4a"]
@@ -1468,17 +1468,17 @@ __optional__|string
 __optional__|string
 |===
 
-
+[discrete]
 ==== Consumes
 
 * `application/json`
 
-
+[discrete]
 ==== Produces
 
 * `application/json`
 
-
+[discrete]
 ==== Tags
 
 * Backup
@@ -1490,11 +1490,11 @@ __optional__|string
 POST https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/backups/schedule
 ....
 
-
+[discrete]
 ==== Description
 Set a backup schedule for a workspace
 
-
+[discrete]
 ==== Parameters
 
 [options="header", cols=".^2a,.^3a,.^9a,.^4a"]
@@ -1508,7 +1508,7 @@ __required__|Workspace ID|string
 __required__|Backup Schedule|<<definitions.adoc#_backupschedule,BackupSchedule>>
 |===
 
-
+[discrete]
 ==== Responses
 
 [options="header", cols=".^2a,.^14a,.^4a"]
@@ -1519,17 +1519,17 @@ __required__|Backup Schedule|<<definitions.adoc#_backupschedule,BackupSchedule>>
 |**500**|Internal server error|<<definitions.adoc#_middleware_response,middleware.Response>>
 |===
 
-
+[discrete]
 ==== Consumes
 
 * `application/json`
 
-
+[discrete]
 ==== Produces
 
 * `application/json`
 
-
+[discrete]
 ==== Tags
 
 * Backup
@@ -1541,11 +1541,11 @@ __required__|Backup Schedule|<<definitions.adoc#_backupschedule,BackupSchedule>>
 POST https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/dbuser
 ....
 
-
+[discrete]
 ==== Description
 Create a new in-database GSQL user in the specified workspace and workgroup.
 
-
+[discrete]
 ==== Parameters
 
 [options="header", cols=".^2a,.^3a,.^9a,.^4a"]
@@ -1559,7 +1559,7 @@ __required__|Workspace ID|string
 __required__|In-database user request|<<definitions.adoc#_indatabaseuserrequest,InDatabaseUserRequest>>
 |===
 
-
+[discrete]
 ==== Responses
 
 [options="header", cols=".^2a,.^14a,.^4a"]
@@ -1588,17 +1588,17 @@ __optional__|string
 __optional__|<<definitions.adoc#_tgiam_iamuser,tgIAM.IAMUser>>
 |===
 
-
+[discrete]
 ==== Consumes
 
 * `application/json`
 
-
+[discrete]
 ==== Produces
 
 * `application/json`
 
-
+[discrete]
 ==== Tags
 
 * DatabaseUser
@@ -1610,11 +1610,11 @@ __optional__|<<definitions.adoc#_tgiam_iamuser,tgIAM.IAMUser>>
 GET https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/dbuser
 ....
 
-
+[discrete]
 ==== Description
 List all in-database GSQL users in the specified workspace and workgroup.
 
-
+[discrete]
 ==== Parameters
 
 [options="header", cols=".^2a,.^3a,.^9a,.^4a"]
@@ -1626,7 +1626,7 @@ __required__|Workgroup ID|string
 __required__|Workspace ID|string
 |===
 
-
+[discrete]
 ==== Responses
 
 [options="header", cols=".^2a,.^14a,.^4a"]
@@ -1654,12 +1654,12 @@ __optional__|string
 __optional__|< <<definitions.adoc#_tgiam_iamuser,tgIAM.IAMUser>> > array
 |===
 
-
+[discrete]
 ==== Produces
 
 * `application/json`
 
-
+[discrete]
 ==== Tags
 
 * DatabaseUser
@@ -1671,11 +1671,11 @@ __optional__|< <<definitions.adoc#_tgiam_iamuser,tgIAM.IAMUser>> > array
 PUT https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/dbuser
 ....
 
-
+[discrete]
 ==== Description
 Update the password of an in-database GSQL user in the specified workspace and workgroup.
 
-
+[discrete]
 ==== Parameters
 
 [options="header", cols=".^2a,.^3a,.^9a,.^4a"]
@@ -1689,7 +1689,7 @@ __required__|Workspace ID|string
 __required__|In-database user request|<<definitions.adoc#_indatabaseuserrequest,InDatabaseUserRequest>>
 |===
 
-
+[discrete]
 ==== Responses
 
 [options="header", cols=".^2a,.^14a,.^4a"]
@@ -1700,17 +1700,17 @@ __required__|In-database user request|<<definitions.adoc#_indatabaseuserrequest,
 |**500**|Internal server error|<<definitions.adoc#_middleware_response,middleware.Response>>
 |===
 
-
+[discrete]
 ==== Consumes
 
 * `application/json`
 
-
+[discrete]
 ==== Produces
 
 * `application/json`
 
-
+[discrete]
 ==== Tags
 
 * DatabaseUser
@@ -1722,11 +1722,11 @@ __required__|In-database user request|<<definitions.adoc#_indatabaseuserrequest,
 DELETE https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/dbuser
 ....
 
-
+[discrete]
 ==== Description
 Delete an in-database GSQL user in the specified workspace and workgroup.
 
-
+[discrete]
 ==== Parameters
 
 [options="header", cols=".^2a,.^3a,.^9a,.^4a"]
@@ -1740,7 +1740,7 @@ __required__|Workspace ID|string
 __required__|In-database user request|<<definitions.adoc#_indatabaseuserrequest,InDatabaseUserRequest>>
 |===
 
-
+[discrete]
 ==== Responses
 
 [options="header", cols=".^2a,.^14a,.^4a"]
@@ -1751,17 +1751,17 @@ __required__|In-database user request|<<definitions.adoc#_indatabaseuserrequest,
 |**500**|Internal server error|<<definitions.adoc#_middleware_response,middleware.Response>>
 |===
 
-
+[discrete]
 ==== Consumes
 
 * `application/json`
 
-
+[discrete]
 ==== Produces
 
 * `application/json`
 
-
+[discrete]
 ==== Tags
 
 * DatabaseUser
@@ -1773,11 +1773,11 @@ __required__|In-database user request|<<definitions.adoc#_indatabaseuserrequest,
 POST https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/pause
 ....
 
-
+[discrete]
 ==== Description
 Pause workspace in workgroup
 
-
+[discrete]
 ==== Parameters
 
 [options="header", cols=".^2a,.^3a,.^9a,.^4a"]
@@ -1789,7 +1789,7 @@ __required__|Workgroup ID|string
 __required__|Workspace ID|string
 |===
 
-
+[discrete]
 ==== Responses
 
 [options="header", cols=".^2a,.^14a,.^4a"]
@@ -1798,17 +1798,17 @@ __required__|Workspace ID|string
 |**200**|OK|<<definitions.adoc#_middleware_response,middleware.Response>>
 |===
 
-
+[discrete]
 ==== Consumes
 
 * `application/json`
 
-
+[discrete]
 ==== Produces
 
 * `application/json`
 
-
+[discrete]
 ==== Tags
 
 * Workspace
@@ -1820,11 +1820,11 @@ __required__|Workspace ID|string
 POST https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/refresh
 ....
 
-
+[discrete]
 ==== Description
 Refresh workspace in workgroup
 
-
+[discrete]
 ==== Parameters
 
 [options="header", cols=".^2a,.^3a,.^9a,.^4a"]
@@ -1836,7 +1836,7 @@ __required__|Workgroup ID|string
 __required__|Workspace ID|string
 |===
 
-
+[discrete]
 ==== Responses
 
 [options="header", cols=".^2a,.^14a,.^4a"]
@@ -1845,17 +1845,17 @@ __required__|Workspace ID|string
 |**200**|OK|<<definitions.adoc#_middleware_response,middleware.Response>>
 |===
 
-
+[discrete]
 ==== Consumes
 
 * `application/json`
 
-
+[discrete]
 ==== Produces
 
 * `application/json`
 
-
+[discrete]
 ==== Tags
 
 * Workspace
@@ -1867,11 +1867,11 @@ __required__|Workspace ID|string
 POST https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/resume
 ....
 
-
+[discrete]
 ==== Description
 Resume workspace in workgroup
 
-
+[discrete]
 ==== Parameters
 
 [options="header", cols=".^2a,.^3a,.^9a,.^4a"]
@@ -1883,7 +1883,7 @@ __required__|Workgroup ID|string
 __required__|Workspace ID|string
 |===
 
-
+[discrete]
 ==== Responses
 
 [options="header", cols=".^2a,.^14a,.^4a"]
@@ -1892,17 +1892,17 @@ __required__|Workspace ID|string
 |**200**|OK|<<definitions.adoc#_middleware_response,middleware.Response>>
 |===
 
-
+[discrete]
 ==== Consumes
 
 * `application/json`
 
-
+[discrete]
 ==== Produces
 
 * `application/json`
 
-
+[discrete]
 ==== Tags
 
 * Workspace
@@ -1914,11 +1914,11 @@ __required__|Workspace ID|string
 GET https://api.tgcloud.io/controller/v4/v2/workspaces/meta
 ....
 
-
+[discrete]
 ==== Description
 Get regions/tgVersions/workspaceTypes supported for your org
 
-
+[discrete]
 ==== Responses
 
 [options="header", cols=".^2a,.^14a,.^4a"]
@@ -1945,17 +1945,17 @@ __optional__|string
 __optional__|<<definitions.adoc#_resource_manager_handler_getmetadata_metadata,resource_manager_handler.GetMetadata.metadata>>
 |===
 
-
+[discrete]
 ==== Consumes
 
 * `application/json`
 
-
+[discrete]
 ==== Produces
 
 * `application/json`
 
-
+[discrete]
 ==== Tags
 
 * Org
@@ -1967,11 +1967,11 @@ __optional__|<<definitions.adoc#_resource_manager_handler_getmetadata_metadata,r
 GET https://api.tgcloud.io/controller/v4/v2/workspaces/{workspaceID}/backups
 ....
 
-
+[discrete]
 ==== Description
 List all backups for a workspace
 
-
+[discrete]
 ==== Parameters
 
 [options="header", cols=".^2a,.^3a,.^9a,.^4a"]
@@ -1981,7 +1981,7 @@ List all backups for a workspace
 __required__|Workspace ID|string
 |===
 
-
+[discrete]
 ==== Responses
 
 [options="header", cols=".^2a,.^14a,.^4a"]
@@ -2009,17 +2009,17 @@ __optional__|string
 __optional__|< <<definitions.adoc#_backup,Backup>> > array
 |===
 
-
+[discrete]
 ==== Consumes
 
 * `application/json`
 
-
+[discrete]
 ==== Produces
 
 * `application/json`
 
-
+[discrete]
 ==== Tags
 
 * Backup
@@ -2031,11 +2031,11 @@ __optional__|< <<definitions.adoc#_backup,Backup>> > array
 GET https://api.tgcloud.io/controller/v4/v2/workspaces/{workspaceID}/backups/{job}/status
 ....
 
-
+[discrete]
 ==== Description
 Get the status of a backup restore job
 
-
+[discrete]
 ==== Parameters
 
 [options="header", cols=".^2a,.^3a,.^9a,.^4a"]
@@ -2047,7 +2047,7 @@ __required__|Job ID|string
 __required__|Workspace ID|string
 |===
 
-
+[discrete]
 ==== Responses
 
 [options="header", cols=".^2a,.^14a,.^4a"]
@@ -2075,17 +2075,17 @@ __optional__|string
 __optional__|<<definitions.adoc#_backuprestorestatus,BackupRestoreStatus>>
 |===
 
-
+[discrete]
 ==== Consumes
 
 * `application/json`
 
-
+[discrete]
 ==== Produces
 
 * `application/json`
 
-
+[discrete]
 ==== Tags
 
 * Backup
@@ -2096,11 +2096,11 @@ __optional__|<<definitions.adoc#_backuprestorestatus,BackupRestoreStatus>>
 GET https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/backups/schedule
 ....
 
-
+[discrete]
 ==== Description
 Get the backup schedule for a workspace
 
-
+[discrete]
 ==== Parameters
 
 [options="header", cols=".^2a,.^3a,.^9a,.^4a"]
@@ -2112,7 +2112,7 @@ __required__|Workgroup ID|string
 __required__|Workspace ID|string
 |===
 
-
+[discrete]
 ==== Responses
 
 [options="header", cols=".^2a,.^14a,.^4a"]
@@ -2140,17 +2140,17 @@ __optional__|string
 __optional__|<<definitions.adoc#_backupschedule,BackupSchedule>>
 |===
 
-
+[discrete]
 ==== Consumes
 
 * `application/json`
 
-
+[discrete]
 ==== Produces
 
 * `application/json`
 
-
+[discrete]
 ==== Tags
 
 * Backup
@@ -2162,11 +2162,11 @@ __optional__|<<definitions.adoc#_backupschedule,BackupSchedule>>
 GET https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/schedules
 ....
 
-
+[discrete]
 ==== Description
 Retrieve the schedule for a given workspace
 
-
+[discrete]
 ==== Parameters
 
 [options="header", cols=".^2a,.^3a,.^9a,.^4a"]
@@ -2178,7 +2178,7 @@ __required__|Workgroup ID|string
 __required__|Workspace ID|string
 |===
 
-
+[discrete]
 ==== Responses
 
 [options="header", cols=".^2a,.^14a,.^4a"]
@@ -2206,12 +2206,12 @@ __optional__|string
 __optional__|string
 |===
 
-
+[discrete]
 ==== Produces
 
 * `application/json`
 
-
+[discrete]
 ==== Tags
 
 * WorkspaceSchedule
@@ -2223,11 +2223,11 @@ __optional__|string
 POST https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/backups/schedule
 ....
 
-
+[discrete]
 ==== Description
 Update an existing workspace schedule for a given workspace
 
-
+[discrete]
 ==== Parameters
 
 [options="header", cols=".^2a,.^3a,.^9a,.^4a"]
@@ -2241,7 +2241,7 @@ __required__|Workspace ID|string
 __required__|Workspace Schedule|<<definitions.adoc#_workspaceschedule,WorkspaceSchedule>>
 |===
 
-
+[discrete]
 ==== Responses
 
 [options="header", cols=".^2a,.^14a,.^4a"]
@@ -2270,17 +2270,17 @@ __optional__|string
 __optional__|string
 |===
 
-
+[discrete]
 ==== Consumes
 
 * `application/json`
 
-
+[discrete]
 ==== Produces
 
 * `application/json`
 
-
+[discrete]
 ==== Tags
 
 * WorkspaceSchedule
@@ -2292,11 +2292,11 @@ __optional__|string
 POST https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/backups/schedule
 ....
 
-
+[discrete]
 ==== Description
 Delete an existing workspace schedule for a given workspace
 
-
+[discrete]
 ==== Parameters
 
 [options="header", cols=".^2a,.^3a,.^9a,.^4a"]
@@ -2310,7 +2310,7 @@ __required__|Workspace ID|string
 __required__|Workspace Schedule|<<definitions.adoc#_workspaceschedule,WorkspaceSchedule>>
 |===
 
-
+[discrete]
 ==== Responses
 
 [options="header", cols=".^2a,.^14a,.^4a"]
@@ -2338,12 +2338,12 @@ __optional__|string
 __optional__|string
 |===
 
-
+[discrete]
 ==== Produces
 
 * `application/json`
 
-
+[discrete]
 ==== Tags
 
 * WorkspaceSchedule
@@ -2355,11 +2355,11 @@ __optional__|string
 GET https://api.tgcloud.io/users
 ....
 
-
+[discrete]
 ==== Description
 List of users in the org. Note: this endpoint is not APIKEY compatible
 
-
+[discrete]
 ==== Responses
 
 [options="header", cols=".^2a,.^14a,.^4a"]
@@ -2368,17 +2368,17 @@ List of users in the org. Note: this endpoint is not APIKEY compatible
 |**200**|OK|<<definitions.adoc#_org_handler_orglistuserresponse,org_handler.OrgListUserResponse>>
 |===
 
-
+[discrete]
 ==== Consumes
 
 * `application/json`
 
-
+[discrete]
 ==== Produces
 
 * `application/json`
 
-
+[discrete]
 ==== Tags
 
 * Org
@@ -2390,11 +2390,11 @@ List of users in the org. Note: this endpoint is not APIKEY compatible
 PUT https://api.tgcloud.io/users/{userId}/roles
 ....
 
-
+[discrete]
 ==== Description
 Updates the role of an org user. Note: this endpoint is not APIKEY compatible
 
-
+[discrete]
 ==== Parameters
 
 [options="header", cols=".^2a,.^3a,.^9a,.^4a"]
@@ -2406,7 +2406,7 @@ __required__|Id of the user|string
 __required__|Roles of the user|<<definitions.adoc#_org_handler_putorgusersroles,org_handler.PutOrgUsersRoles>>
 |===
 
-
+[discrete]
 ==== Responses
 
 [options="header", cols=".^2a,.^14a,.^4a"]
@@ -2415,17 +2415,17 @@ __required__|Roles of the user|<<definitions.adoc#_org_handler_putorgusersroles,
 |**204**|No Content|No Content
 |===
 
-
+[discrete]
 ==== Consumes
 
 * `application/json`
 
-
+[discrete]
 ==== Produces
 
 * `application/json`
 
-
+[discrete]
 ==== Tags
 
 * Org

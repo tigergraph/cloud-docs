@@ -20,5 +20,5 @@ Explore the REST API endpoints available in TigerGraph Savanna.
 
 == xref:savanna:rest-api:definitions.adoc[]
 
-Explore the REST API data model definitions in TigerGraph Savanna.
+Look up the REST API data schema definitions in TigerGraph Savanna.
 

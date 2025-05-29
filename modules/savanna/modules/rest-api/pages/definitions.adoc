@@ -382,8 +382,6 @@ __optional__|string
 __optional__|integer
 |**enable_auto_start** +
 __optional__|boolean
-|**enable_copilot** +
-__optional__|boolean
 |**enable_ha** +
 __optional__|boolean
 |**folder_statistics** +

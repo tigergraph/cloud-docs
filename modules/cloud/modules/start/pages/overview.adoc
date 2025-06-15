@@ -4,7 +4,7 @@
 
 [NOTE]
 ====
-TigerGraph Cloud Classic is not longer available for new users.
+TigerGraph Cloud Classic is no longer available for new users.
 
 Check out the new Savanna at https://tgcloud.io or have a look at the xref:savanna:overview:index.adoc[Documentation] for more details.
 ====

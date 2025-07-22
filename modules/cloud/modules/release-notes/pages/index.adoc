@@ -152,7 +152,7 @@ Release date: November 15th, 2022
 === Feature updates
 
 * xref:insights:intro:index.adoc[TigerGraph Insights,] an all-new data visualization platform, is now available in TigerGraph Cloud Classic
-* xref:ml-workbench:on-cloud:on-tgcloud.adoc[Machine Learning Workbench] is now integrated seamlessly into TigerGraph Cloud Classic
+* Machine Learning Workbench is now integrated seamlessly into TigerGraph Cloud Classic
 * Added a dedicated starter kit for Machine Learning Workbench on TigerGraph Cloud Classic
 * Reworked Billing and Analytics pages for improved ease of use
 * TigerGraph 3.8.0 is now available when creating new clusters
@@ -219,7 +219,7 @@ Log out and log in again to fix this error.
 Release date: August 18th, 2022
 
 === New Features
-* Users with an invitation can provision xref:ml-workbench:on-cloud:mlwb-service.adoc[ML Workbench (preview version)] instances on top of TigerGraph Cloud Classic clusters.
+* Users with an invitation can provision *ML Workbench (preview version)* instances on top of TigerGraph Cloud Classic clusters.
 ** If you are interested in experimenting with ML Workbench on TigerGraph Cloud Classic, please contact sales@tigergraph.com
 * TigerGraph 3.6.2 is available when creating new clusters.
 

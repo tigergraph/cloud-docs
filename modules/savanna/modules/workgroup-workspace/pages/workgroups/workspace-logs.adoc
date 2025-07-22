@@ -5,7 +5,7 @@ The Workspace Log feature provides full-text search capabilities for workspace l
 
 [TIP]
 ====
-The Log feature is only available to users on the xref:savanna:resources/quota_policy.adoc#_subscription_plans[Enterprise plan].
+The Log feature is only available to users on the xref:savanna:resources:quota_policy.adoc#_subscription_plans[Enterprise plan].
 If you wish to have access to this feature, please contact support@tigergraph.com to enable it for your organization.
 ====
 

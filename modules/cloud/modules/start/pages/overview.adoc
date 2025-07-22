@@ -2,18 +2,17 @@
 :experimental:
 :page-aliases: cloud-overview.adoc
 
-
-TigerGraph Cloud Classic is a fully-managed cloud database built on the Enterprise Server engine and completely integrated with the full TigerGraph Suite.
-
-Everything including xref:3.9@gui:admin-portal:overview.adoc[Admin Portal], xref:3.9@gui:graphstudio:overview.adoc[GraphStudio], xref:3.9@insights:intro:index.adoc[Insights], xref:1.4@ml-workbench:intro:index.adoc[ML Workbench], as well as,
-handling all the complexity of deploying and managing your deployments on the cloud service provider of your choice ( xref:cloud:reference:aws.adoc[], xref:cloud:reference:azure.adoc[], and xref:cloud:reference:gcp.adoc[] ).
-
 [NOTE]
 ====
-TigerGraph Savanna Beta was released on Apr. 29, 2024.
+TigerGraph Cloud Classic is no longer available for new users.
 
 Check out the new Savanna at https://tgcloud.io or have a look at the xref:savanna:overview:index.adoc[Documentation] for more details.
 ====
+
+
+TigerGraph Cloud Classic is a fully-managed cloud database built on the Enterprise Server engine and completely integrated with the full TigerGraph Suite.
+
+The service includes xref:3.9@gui:admin-portal:overview.adoc[Admin Portal], xref:3.9@gui:graphstudio:overview.adoc[GraphStudio], and xref:3.9@insights:intro:index.adoc[Insights] for handling all the complexity of deploying and managing your deployments on the cloud service provider of your choice ( xref:cloud:reference:aws.adoc[], xref:cloud:reference:azure.adoc[], and xref:cloud:reference:gcp.adoc[] ).
 
 // [NOTE]
 // ====

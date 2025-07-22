@@ -4,6 +4,52 @@
 :toc:
 :toclevels:2
 
+== June 2025
+
+=== 25_06_A
+
+==== Workspace Enhancements
+
+* *Improved Read-Only Workspace Refresh Process:* Savanna now parallelizes workspace refresh tasks. Snapshots more accurately reflect the data state at the start of the refresh, improving both accuracy and performance.
+
+=== 25_06_B
+
+==== Workspace Enhancements
+
+* *Configurable Maintenance Window for Auto-Upgrades:* Users can now set a preferred weekly maintenance window in Savanna. Automatic version upgrades will run during your chosen time slot, giving you more control over your maintenance schedule.
+
+== May 2025
+
+=== 25_05_A
+
+==== Onboarding Enhancements
+ 
+* *Pre-Provisioned Workspace for New Users:* New users now receive a ready-to-use workspace loaded with sample graph data at sign-up, simplifying the onboarding process and reducing setup time.
+
+== April 2025
+
+=== 25_04_B
+
+==== Workspace Enhancements
+
+* *Encrypted Log Management and Search:* Users can securely collect, store, and search of application logs using Bring Your Own Key (BYOK) encryption, improving both visibility and operational efficiency.
+
+== March 2025
+
+=== 25_03_B
+
+==== Data Ingestion Enhancements
+
+* *Snowflake Integration with Savanna:* Users can now connect securely to Snowflake from Savanna. Preview sample data, auto-generate graph schemas and mappings, customize data transformations, and manage your data loading jobs directly within Savanna.
+
+==== DB Updates
+
+* *TigerGraph 4.2 Preview Now Available in Savanna:* Preview TigerGraph Database version 4.2 in Savanna to access the latest database features and enhancements ahead of general availability.
+
+==== Help Enhancements
+
+* *AI-Enabled Chatbot Integration:* Savanna now offers an AI-powered help chatbot to assist with onboarding, troubleshooting, and user support, making it easier to find answers and get help quickly.
+
 == Jan 2025
 
 === 2025-1-20
@@ -15,7 +61,7 @@
 
 === 2025-1-16
 ==== Workspace Enhancements
-* BYOC: Bring Your Own Cloud (BYOC) is now available for enterprise users. You can now deploy TigerGraph Savanna on your own cloud infrastructure, providing greater flexibility and control over your graph database workspaces.
+* BYOC: Bring Your Own Cloud (BYOC) is now available for enterprise users. Users can now deploy TigerGraph Savanna on your own cloud infrastructure, providing greater flexibility and control over your graph database workspaces.
 
 ==== Other Enhancements
 * Bug fixes.

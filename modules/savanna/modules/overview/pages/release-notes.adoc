@@ -6,13 +6,13 @@
 
 == June 2025
 
-=== 25_06_A
+=== 2025-06-25 
 
 ==== Workspace Enhancements
 
 * *Improved Read-Only Workspace Refresh Process:* Savanna now parallelizes workspace refresh tasks. Snapshots more accurately reflect the data state at the start of the refresh, improving both accuracy and performance.
 
-=== 25_06_B
+=== 2025-06-11 
 
 ==== Workspace Enhancements
 
@@ -20,7 +20,7 @@
 
 == May 2025
 
-=== 25_05_A
+=== 2025-05-20 
 
 ==== Onboarding Enhancements
  
@@ -28,7 +28,7 @@
 
 == April 2025
 
-=== 25_04_B
+=== 2025-04-29 
 
 ==== Workspace Enhancements
 
@@ -36,7 +36,7 @@
 
 == March 2025
 
-=== 25_03_B
+=== 2025-04-03
 
 ==== Data Ingestion Enhancements
 

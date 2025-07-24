@@ -4,6 +4,21 @@
 :toc:
 :toclevels:2
 
+== Jul 2025
+=== 2025-07-24
+==== Ease of Use Enhancements
+
+* User-created files and folders are now grouped under “My Files” to reduce sidebar clutter
+* We’ve moved the “Connect via API” option from the Workspace Connect drop-down to the GSQL Editor
+* We’ve added an Explore button when hovering over a vertex in the GSQL Editor, allowing quick navigation to the Explore Graph interface
+* We’ve improved the messaging when accessing GraphStudio while a workspace is restarting
+
+==== Other Enhancements
+
+* Bug fixes
+
+
+
 == June 2025
 
 === 2025-06-25 

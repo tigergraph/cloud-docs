@@ -312,7 +312,7 @@ Terminating a Workspace:
 * **Action**: Deprovisions the workspace and the attached disk space.
 * **State**: The workspace and all its data are deleted according to the cloud platform's policies.
 * **Billing**: All associated billing stops, including for the virtual machine instance, disk storage, and backups.
-* **Backups**: We will keep the latest backup in storage for 15 days and then delete.
+* **Backups**: All backups associated with the workspace will be deleted.
 * **Recovery**: The workspace cannot be recovered once terminated.
 
 In summary:
@@ -340,9 +340,7 @@ A: Cross workspace restore is not supported yet. Contact TigerGraph Support to r
 
 === *Q: What happens to my automated backups if I terminate my workspace?*
 
-A: We will keep the latest backup for 15 days and then delete.
-Within that 15 days, you may use your backup to restore into another similar cluster if it is a single server cluster.
-To restore a cluster within 15 days, please submit a support ticket through the cloud portal.
+A: All backups associated with the workspace will be deleted.
 
 
 === *Q: How soon can I restore from a backup that I just made?*

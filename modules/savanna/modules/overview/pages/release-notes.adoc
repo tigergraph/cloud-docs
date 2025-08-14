@@ -4,6 +4,14 @@
 :toc:
 :toclevels:2
 
+== Aug 2025
+=== 2025-08-14
+==== Other Enhancements
+
+* Bug fixes
+
+
+
 == Jul 2025
 === 2025-07-24
 ==== Ease of Use Enhancements

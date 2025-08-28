@@ -5,6 +5,32 @@
 :toclevels:2
 
 == Aug 2025
+=== 2025-08-28
+==== Notifications
+
+* Improved messaging when deleting Read-Write workspaces to provide clearer guidance.
+* Added a banner to notify users of upcoming downtime.
+* Users are now notified when a backup restore has completed.
+
+==== Onboarding Experience
+
+* Onboarding credits now display their expiration date for better visibility.
+
+==== Monitoring Enhancements
+
+* CPU and Memory monitoring extended to multi-node deployments, with alerting enabled.
+
+==== Mobile Experience
+
+* Several Savanna capabilities are now optimized for small screens, including mobile devices.
+
+==== Other Enhancements
+
+* Bug fixes
+
+
+
+== Aug 2025
 === 2025-08-14
 ==== Other Enhancements
 

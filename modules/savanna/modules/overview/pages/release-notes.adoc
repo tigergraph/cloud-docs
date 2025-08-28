@@ -29,8 +29,6 @@
 * Bug fixes
 
 
-
-== Aug 2025
 === 2025-08-14
 ==== Other Enhancements
 

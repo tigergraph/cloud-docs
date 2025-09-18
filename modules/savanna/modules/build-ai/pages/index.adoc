@@ -1,0 +1,90 @@
+= Build a Graph with AI
+:experimental:
+
+AI Build helps you go from CSV files to a ready-to-explore graph in minutes. It drafts a schema, loads your data, installs queries, and surfaces quick insights — all guided and automated.
+
+== Prerequisites
+
+Before you start:
+
+* Your data is prepared as CSV/TSV files with headers.
+** Total upload size limit: 1 GB
+** Maximum total number of columns across all files: 120
+
+== Entry Points
+
+* From first-time organization sign-up: a workspace will be automatically and quickly provisioned
++
+image::1-setupworkspace.png[]
+
+* From Workspace Connect menu (opens Import CSV directly)
++
+image::menu-buildai.png[]
+
+== Steps
+
+. Set up your workspace (if prompted)
+
+. Choose the onboarding path
++
+image::2-chooseonboarding.png[]
+
+.. Select btn:[Import My Data] to proceed to Import CSV.
++
+[TIP]
+====
+Prefer to explore a sample solution first? Choose "Explore Our Anti-Fraud Solution" or select "Explore on my own" to go to xref:savanna:graph-development:explore-graph/index.adoc[]
+====
+
+. Import your CSV files and grant AI usage consent
+.. Accept the AI usage prompt
++
+image::3.1-importcsv-accept.png[]
+.. Upload CSV/TSV files (with headers)
++
+image::3.2-importcsv-upload.png[]
++
+[NOTE]
+====
+On the Import CSV page, you can select which uploaded CSV files to include for AI schema generation. You can exclude files you don't want to use.
+====
+
+. Review your AI‑drafted schema (optional manual edit)
++
+image::4-schema.png[]
++
+[TIP]
+====
+Want to fine‑tune your schema mappings? Open Manual Edit and see xref:savanna:graph-development:design-schema/index.adoc[]
+====
+
+. Build graph with AI
++
+The system creates the schema, imports data, and installs queries. This typically takes 3–5 minutes.
++
+--
+image::5-buildgraph.png[]
+--
+
+. View results and choose next actions
++
+See schema, basic stats, and key insights. Click btn:[ Get Started ] to choose your next step.
++
+--
+image::6.1-build-result.png[]
+
+image::6.2-build-action.png[]
+--
+
+== Troubleshooting
+
+* If an error appears during schema creation or data load, adjust your CSV/TSV files (headers, separators, column counts) and try again.
+* Keep the page open while AI builds your graph.
+
+== Next Steps
+
+* Explore your graph: xref:savanna:graph-development:explore-graph/index.adoc[]
+* Edit schema visually: xref:savanna:graph-development:design-schema/index.adoc[]
+* Write queries: xref:savanna:graph-development:gsql-editor/index.adoc[]
+
+

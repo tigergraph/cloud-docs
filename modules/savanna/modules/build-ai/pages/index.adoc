@@ -1,7 +1,7 @@
 = Build a Graph with AI
 :experimental:
 
-AI Build helps you go from CSV files to a ready-to-explore graph in minutes. It drafts a schema, loads your data, installs queries, and surfaces quick insights — all guided and automated.
+AI Build takes you from CSV files to a ready‑to‑explore graph in minutes. It drafts a schema, loads your data, installs queries, and surfaces quick insights—fully guided and automated.
 
 == Prerequisites
 
@@ -13,11 +13,11 @@ Before you start:
 
 == Entry Points
 
-* From first-time organization sign-up: a workspace will be automatically and quickly provisioned
+* During first‑time organization sign‑up, a workspace is automatically provisioned
 +
 image::1-setupworkspace.png[]
 
-* From Workspace Connect menu (opens Import CSV directly)
+* From the Workspace Connect menu (opens Import CSV directly)
 +
 image::menu-buildai.png[]
 
@@ -25,19 +25,19 @@ image::menu-buildai.png[]
 
 . Set up your workspace (if prompted)
 
-. Choose the onboarding path
+. Choose your onboarding path
 +
 image::2-chooseonboarding.png[]
 
-.. Select btn:[Import My Data] to proceed to Import CSV.
+.. Select btn:[Import My Data] to open Import CSV.
 +
 [TIP]
 ====
-Prefer to explore a sample solution first? Choose "Explore Our Anti-Fraud Solution" or select "Explore on my own" to go to xref:savanna:graph-development:explore-graph/index.adoc[]
+Prefer to explore a sample solution first? Choose "Explore Our Anti‑Fraud Solution" or select "Explore on my own" to go to xref:savanna:graph-development:explore-graph/index.adoc[]
 ====
 
-. Import your CSV files and grant AI usage consent
-.. Accept the AI usage prompt
+. Import your CSV files and grant consent for AI usage
+.. Accept the AI usage consent prompt
 +
 image::3.1-importcsv-accept.png[]
 .. Upload CSV/TSV files (with headers)
@@ -49,16 +49,16 @@ image::3.2-importcsv-upload.png[]
 On the Import CSV page, you can select which uploaded CSV files to include for AI schema generation. You can exclude files you don't want to use.
 ====
 
-. Review your AI‑drafted schema (optional manual edit)
+. Review your AI‑drafted schema (optional manual edits)
 +
 image::4-schema.png[]
 +
 [TIP]
 ====
-Want to fine‑tune your schema mappings? Open Manual Edit and see xref:savanna:graph-development:design-schema/index.adoc[]
+Want to fine‑tune your schema mappings? Open Manual Edit and refer to xref:savanna:graph-development:design-schema/index.adoc[]
 ====
 
-. Build graph with AI
+. Build the graph with AI
 +
 The system creates the schema, imports data, and installs queries. This typically takes 3–5 minutes.
 +
@@ -66,9 +66,9 @@ The system creates the schema, imports data, and installs queries. This typicall
 image::5-buildgraph.png[]
 --
 
-. View results and choose next actions
+. View results and choose your next actions
 +
-See schema, basic stats, and key insights. Click btn:[ Get Started ] to choose your next step.
+See the schema, basic stats, and key insights. Click btn:[Get Started] to choose your next step.
 +
 --
 image::6.1-build-result.png[]
@@ -79,7 +79,7 @@ image::6.2-build-action.png[]
 == Troubleshooting
 
 * If an error appears during schema creation or data load, adjust your CSV/TSV files (headers, separators, column counts) and try again.
-* Keep the page open while AI builds your graph.
+* Keep the page open while AI builds the graph.
 
 == Next Steps
 

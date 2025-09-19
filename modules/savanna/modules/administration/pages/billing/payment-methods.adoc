@@ -33,11 +33,27 @@ image::action-column-options.png[]
 +
 image::deletecard.png[]
 
-=== Subscriptions
+== Subscriptions
 
 You can also pay for Savanna via AWS marketplace subscription.
 
 * https://aws.amazon.com/marketplace/pp/prodview-txouq7rtexndc[AWS Marketplace]
+
+.To subscribe via AWS Marketplace follow the steps below:
+. Click the link above to navigate to our AWS Marketplace listing.
+. Select the btn:[View purchase options] button on the right.
++
+image::aws-marketplace-listing.png[]
+
+[NOTE]
+====
+AWS Marketplace subscription will only be set as the current payment method if there has been no existing
+usage and an invoice balance of 0 upon subscribing. If you have an existing account or would like to switch
+payment methods to AWS Marketplace, please see the section below xref:savanna:administration:billing:payment-methods.adoc#switch-payment-methods[].
+====
+
+[[switch-payment-methods]]
+== Switch Payment Methods
 
 == Next Steps
 

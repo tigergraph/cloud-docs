@@ -45,15 +45,33 @@ You can also pay for Savanna via AWS marketplace subscription.
 +
 image::aws-marketplace-listing.png[]
 
+. Scroll down to the btn:[Subscribe] button on the left and select it.
++
+image::aws-marketplace-subscribe.png[]
+
+. A pop up will then appear at the top. Select the btn:[Set up your account] button on the right to be redirected to Savanna.
+. NOTE: If you are not signed in, please sign in to Savanna then click the link again to be redirected to the proper page.
++
+image::aws-marketplace-fulfillment.png[]
+
+. Navigate to the btn:[Billing] tab in the left navigation panel.
+. Select the btn:[Payment Methods] tab at the top.
+. Your AWS Marketplace subscription should now appear with its status.
+. NOTE: If it says pending, please wait it should be activated momentarily.
++
+image::aws-marketplace-active.png[]
+
 [NOTE]
 ====
-AWS Marketplace subscription will only be set as the current payment method if there has been no existing
-usage and an invoice balance of 0 upon subscribing. If you have an existing account or would like to switch
-payment methods to AWS Marketplace, please see the section below xref:savanna:administration:billing:payment-methods.adoc#switch-payment-methods[].
+Upon subscription, AWS Marketplace subscription will only be set as the default payment method if there is currently an invoice balance of 0 and no existing usage.
+If you have an existing account or would like to switch payment methods to AWS Marketplace, please see the section below xref:savanna:administration:billing:payment-methods.adoc#switch-payment-methods[Switch Payment Methods].
 ====
 
 [[switch-payment-methods]]
 == Switch Payment Methods
+
+Payment method switching is currently not available through the UI. If you are an existing customer currently paying with credit card and would like to
+switch payment method to AWS Marketplace, please contact link:mailto:support@tigergraph.com[support@tigergraph.com].
 
 == Next Steps
 

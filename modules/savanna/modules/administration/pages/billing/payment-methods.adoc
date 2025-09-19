@@ -1,7 +1,7 @@
 = Payment Method
 :experimental:
 
-Here on the Payment method window you can learn how to manage your payment methods.
+Here on the Payment method window you can learn how to manage your payment methods. 
 
 == Add a new Payment Method
 
@@ -17,21 +17,27 @@ image::add-creditcard.png[]
 . The btn:[Add Credit Card] panel should apper on the right.
 . Fill in your credit card information and select btn:[ Add ]
 +
-image::creaditcardInfomration.png[]
+image::creditcardInformation.png[]
 
 . After you select btn:[Add] you new payment method should appear in the list.
 +
-image::creaditcard-list.png[]
+image::creditcard-list.png[]
 
-== Delete a payment mothend
+== Delete a payment method
 
 .To delete a payment method:
 . First, in the payment method list select the btn:[ ... ] under the btn:[Action] column.
 +
-image::action-colum-options.png[]
+image::action-column-options.png[]
 . Click on btn:[Delete Card] and the card will be removed from the list.
 +
 image::deletecard.png[]
+
+=== Subscriptions
+
+You can also pay for Savanna via AWS marketplace subscription.
+
+* https://aws.amazon.com/marketplace/pp/prodview-txouq7rtexndc[AWS Marketplace]
 
 == Next Steps
 

@@ -4,6 +4,22 @@
 :toc:
 :toclevels:2
 
+== Sep 2025
+=== 2025-09-19
+==== Onboarding Experience
+
+* Introduced a guided onboarding flow with automated data mapping and loading job setup, helping new users get started faster and with less manual effort.
+
+==== Billing & Provisioning
+
+* Added AWS Marketplace support for seamless billing and provisioning, making it easier for customers to purchase and manage their deployments directly through AWS.
+
+==== Notifications
+
+* Launched new user notifications to guide registration tasks and ensure smoother account setup.
+
+
+
 == Aug 2025
 === 2025-08-28
 ==== Notifications

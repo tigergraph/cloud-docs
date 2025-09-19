@@ -8,6 +8,7 @@ nav:
   - modules/overview/nav.adoc
   - modules/get-started/nav.adoc
   - modules/workgroup-workspace/nav.adoc
+  - modules/build-ai/nav.adoc
   - modules/graph-development/nav.adoc
   - modules/rest-api/nav.adoc
   - modules/integrations/nav.adoc

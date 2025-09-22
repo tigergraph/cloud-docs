@@ -50,16 +50,20 @@ image::aws-marketplace-listing.png[]
 image::aws-marketplace-subscribe.png[]
 
 . A pop up will then appear at the top. Select the btn:[Set up your account] button on the right to be redirected to Savanna.
++
 . NOTE: If you are not signed in, please sign in to Savanna then click the link again to be redirected to the proper page.
 +
 image::aws-marketplace-fulfillment.png[]
 
 . Navigate to the btn:[Billing] tab in the left navigation panel.
 . Select the btn:[Payment Methods] tab at the top.
++
 . Your AWS Marketplace subscription should now appear with its status.
-. NOTE: If it says pending, please wait it should be activated momentarily.
 +
 image::aws-marketplace-active.png[]
++
+. NOTE: If it says pending, please wait it should be activated momentarily.
+
 
 [NOTE]
 ====

@@ -1,7 +1,7 @@
 = Payment Method
 :experimental:
 
-Here on the Payment method window you can learn how to manage your payment methods. 
+The Payment Methods section allows you to add, manage, and remove payment options for your Savanna account.
 
 == Add a new Payment Method
 

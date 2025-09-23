@@ -5,6 +5,23 @@
 :toclevels:2
 
 == Sep 2025
+=== 2025-09-23
+==== Bug Fix
+
+* Fix WorkspaceSchedule timeout from 59 seconds to 1 minute.
+* Update the redirect URL for access marketplace.
+
+==== Billing & Provisioning
+
+* Added AWS Marketplace support for seamless billing and provisioning, making it easier for customers to purchase and manage their deployments directly through AWS.
+
+==== Notifications
+
+* Launched new user notifications to guide registration tasks and ensure smoother account setup.
+
+
+
+== Sep 2025
 === 2025-09-19
 ==== Onboarding Experience
 

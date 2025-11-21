@@ -65,7 +65,7 @@ Release date: August 2nd, 2023
 
 === New and Modified Features
 * Users can have multiple browser windows open to work with multiple clusters or tools.
-* [3.9.2+ clusters] New xref:3.9@gui:admin-portal:components/README.adoc[configuration options] in Admin Portal:
+* [3.9.2+ clusters] New xref:gui:admin-portal:components/README.adoc[configuration options] in Admin Portal:
 ** Set memory usage limits for the GPE.
 ** Set the maximum number of concurrent Kafka loading jobs and tasks per CPU.
 

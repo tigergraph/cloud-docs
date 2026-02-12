@@ -4,6 +4,20 @@
 :toc:
 :toclevels:2
 
+== Feb 2026
+=== 2026-02-12
+==== Billing & Account Management
+
+* Savanna now enforces billing status by pausing workspaces and scheduling resource termination for organizations with exhausted credits and no valid payment method, with advance email notifications before termination.
+
+==== Bug Fixes
+
+* Fixed issues with query & developer experience
+* Fixed UI and usability issues
+* Fixed platform stability & reliability issues
+
+
+
 == Dec 2025
 === 2025-12-10
 ==== Workspace Improvements

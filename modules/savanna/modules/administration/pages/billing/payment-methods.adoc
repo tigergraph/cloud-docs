@@ -67,14 +67,8 @@ image::aws-marketplace-active.png[]
 [NOTE]
 ====
 Upon subscription, AWS Marketplace subscription will only be set as the default payment method if there is currently an invoice balance of 0 and no existing usage.
-If you have an existing account or would like to switch payment methods to AWS Marketplace, please see the section below xref:#switch-payment-methods[Switch Payment Methods].
+If you have an existing account or would like to switch payment methods to AWS Marketplace, please contact link:mailto:support@tigergraph.com[support@tigergraph.com].
 ====
-
-[[switch-payment-methods]]
-== Switch Payment Methods
-
-Payment method switching is currently not available through the UI. If you are an existing customer currently paying with credit card and would like to
-switch payment method to AWS Marketplace, please contact link:mailto:support@tigergraph.com[support@tigergraph.com].
 
 == Next Steps
 

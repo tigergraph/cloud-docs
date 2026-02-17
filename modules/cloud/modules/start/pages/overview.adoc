@@ -12,7 +12,7 @@ Check out the new Savanna at https://tgcloud.io or have a look at the xref:savan
 
 TigerGraph Cloud Classic is a fully-managed cloud database built on the Enterprise Server engine and completely integrated with the full TigerGraph Suite.
 
-The service includes xref:3.9@gui:admin-portal:overview.adoc[Admin Portal], xref:3.9@gui:graphstudio:overview.adoc[GraphStudio], and xref:3.9@insights:intro:index.adoc[Insights] for handling all the complexity of deploying and managing your deployments on the cloud service provider of your choice ( xref:cloud:reference:aws.adoc[], xref:cloud:reference:azure.adoc[], and xref:cloud:reference:gcp.adoc[] ).
+The service includes xref:gui:admin-portal:overview.adoc[Admin Portal], xref:gui:graphstudio:overview.adoc[GraphStudio], and xref:insights:intro:index.adoc[Insights] for handling all the complexity of deploying and managing your deployments on the cloud service provider of your choice ( xref:cloud:reference:aws.adoc[], xref:cloud:reference:azure.adoc[], and xref:cloud:reference:gcp.adoc[] ).
 
 // [NOTE]
 // ====

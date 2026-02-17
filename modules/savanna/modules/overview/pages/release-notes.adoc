@@ -4,6 +4,38 @@
 :toc:
 :toclevels:2
 
+== Feb 2026
+=== 2026-02-12
+==== Billing & Account Management
+
+* Savanna now enforces billing status by pausing workspaces and scheduling resource termination for organizations with exhausted credits and no valid payment method, with advance email notifications before termination.
+
+==== Bug Fixes
+
+* Fixed issues with query & developer experience
+* Fixed UI and usability issues
+* Fixed platform stability & reliability issues
+
+
+
+== Dec 2025
+=== 2025-12-10
+==== Workspace Improvements
+
+* Improved user experience when deleting workspace
+* Improve visibility to data loading progress
+
+
+
+== Sep 2025
+=== 2025-09-23
+==== Bug Fixes
+
+* Fix WorkspaceSchedule timeout from 59 seconds to 1 minute.
+* Update the redirect URL for access marketplace.
+
+
+
 == Sep 2025
 === 2025-09-19
 ==== Onboarding Experience
@@ -69,13 +101,13 @@
 
 == June 2025
 
-=== 25_06_A
+=== 2025-06-25 
 
 ==== Workspace Enhancements
 
 * *Improved Read-Only Workspace Refresh Process:* Savanna now parallelizes workspace refresh tasks. Snapshots more accurately reflect the data state at the start of the refresh, improving both accuracy and performance.
 
-=== 25_06_B
+=== 2025-06-11 
 
 ==== Workspace Enhancements
 
@@ -83,7 +115,7 @@
 
 == May 2025
 
-=== 25_05_A
+=== 2025-05-20 
 
 ==== Onboarding Enhancements
  
@@ -91,7 +123,7 @@
 
 == April 2025
 
-=== 25_04_B
+=== 2025-04-29 
 
 ==== Workspace Enhancements
 
@@ -99,7 +131,7 @@
 
 == March 2025
 
-=== 25_03_B
+=== 2025-04-03
 
 ==== Data Ingestion Enhancements
 

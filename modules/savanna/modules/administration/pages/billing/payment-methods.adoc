@@ -39,6 +39,12 @@ You can also pay for Savanna via AWS marketplace subscription.
 
 * https://aws.amazon.com/marketplace/pp/prodview-txouq7rtexndc[AWS Marketplace]
 
+[NOTE]
+====
+Upon subscription, AWS Marketplace subscription will only be set as the default payment method if there is currently an invoice balance of 0 and no existing usage.
+If you have an existing account or would like to switch payment methods to AWS Marketplace, please contact link:mailto:support@tigergraph.com[support@tigergraph.com].
+====
+
 .To subscribe via AWS Marketplace follow the steps below:
 . Click the link above to navigate to our AWS Marketplace listing.
 . Select the btn:[View purchase options] button on the right.
@@ -62,13 +68,6 @@ Your AWS Marketplace subscription should now appear with its status.
 NOTE: If it says pending, please wait then refresh. It should be activated momentarily.
 +
 image::aws-marketplace-active.png[]
-
-
-[NOTE]
-====
-Upon subscription, AWS Marketplace subscription will only be set as the default payment method if there is currently an invoice balance of 0 and no existing usage.
-If you have an existing account or would like to switch payment methods to AWS Marketplace, please contact link:mailto:support@tigergraph.com[support@tigergraph.com].
-====
 
 == Next Steps
 

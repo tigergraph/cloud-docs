@@ -23,6 +23,31 @@ image::invoice-list.png[]
 
 . To export a specific invoice as a `.pdf` select the btn:[PDF] button under btn:[Export As].
 
+== Invoice statuses
+Invoice statuses indicate the stage of an invoice in the billing lifecycle.
+
+=== In Billing Period
+
+The invoice period is ongoing and charges are still accumulating.
+
+image::billing period.png[]
+
+=== In Grace Period
+The billing period has ended, but the system will automatically attempt payment after the grace period.
+
+image::grace period.png[]
+
+=== Processing
+Invoice amount is being finalized and is not ready for payment.
+
+image::processing.png[]
+
+=== No Payment Needed
+The invoice does not require payment (e.g., zero amount or covered by credits).
+
+image::no payment needed.png[]
+
+
 == Next Steps
 
 Next, learn about other billing topics on the xref:savanna:administration:billing/index.adoc[] page or check out the xref:resources:index.adoc[] section.

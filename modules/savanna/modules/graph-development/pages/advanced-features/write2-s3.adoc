@@ -36,7 +36,7 @@ Set your AWS credentials and query timeout in the GSQL Editor.
 set query_timeout=7200000;
 set s3_aws_access_key_id = <AWS_KEY_ID>;
 set s3_aws_secret_access_key = <AWS_ACCESS_KEY>;
-set s3_region = "<REGION>";
+set s3_region = <REGION>;
 ----
 
 [NOTE]

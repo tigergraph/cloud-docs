@@ -31,26 +31,34 @@ There are three main methods to write data to S3 from TigerGraph Savanna:
 
 Set your AWS credentials and query timeout in the GSQL Editor.
 
-```sql
+[source,gsql]
+----
 set query_timeout=7200000;
 set s3_aws_access_key_id = <AWS_KEY_ID>;
 set s3_aws_secret_access_key = <AWS_ACCESS_KEY>;
-```
+set s3_region = <REGION>;
+----
+
+[NOTE]
+====
+The `s3_region` parameter specifies the AWS region where your S3 bucket is located. If you don't set this parameter, it defaults to `us-east-1`. Set the correct region to successfully write data to your S3 bucket. For example, if your bucket is in `us-west-2`, set `s3_region = "us-west-2"`.
+====
 
 4) **Create and Run the Query**:
 
 Create a query to write data to S3 and run it.
 
-```sql
+[source,gsql]
+----
 CREATE QUERY print_to_csv_s3() FOR GRAPH ldbc_snb {
   FILE f_hello ("s3://<s3_path>/" + "f_hello.csv");
   print "f_hello", "world\n" TO_CSV f_hello;
 }
 
 run query print_to_csv_s3();
-```
+----
 
-Replace `<AWS_KEY_ID>`, `<AWS_ACCESS_KEY>`, and `<s3_path>` with your actual AWS credentials and S3 path.
+Replace `<AWS_KEY_ID>`, `<AWS_ACCESS_KEY>`, and `<s3_path>` with your actual AWS credentials, S3 region, and S3 path.
 
 === Method 2: Via API
 
@@ -60,15 +68,17 @@ Replace `<AWS_KEY_ID>`, `<AWS_ACCESS_KEY>`, and `<s3_path>` with your actual AWS
 
 Use the following curl command to run the query via API.
 
-```shell
+[source,bash]
+----
 curl -X GET \
 -H "GSQL-S3AWSAccessKeyId: $AWS_KEY_ID" \
 -H "GSQL-S3AWSSecretAccessKey: $AWS_ACCESS_KEY" \
+-H "GSQL-S3Region: $S3_REGION" \
 -H "GSQL-TIMEOUT: 7200000" \
 https://$HOST_ID.i.tgcloud.io/query/$GRAPH_NAME/$QUERY_NAME
-```
+----
 
-Replace `$AWS_KEY_ID` and `$AWS_ACCESS_KEY` with your actual AWS credentials, `$HOST_ID` with your TigerGraph Savanna host ID, `$GRAPH_NAME` with your graph name, and `$QUERY_NAME` with your query name.
+Replace `$AWS_KEY_ID` and `$AWS_ACCESS_KEY` with your actual AWS credentials, `$S3_REGION` with your S3 bucket region (for example, `us-west-2`), `$HOST_ID` with your TigerGraph Savanna host ID, `$GRAPH_NAME` with your graph name, and `$QUERY_NAME` with your query name.
 
 === Method 3: Using Graph Admin
 
@@ -94,19 +104,22 @@ It is recommended to always set up a default s3 access key ID and secret access 
 
 [NOTE]
 ====
-Update Graph Admin configurations may require restart of certain services, which may impact the running queries/loading jobs/schema changes. Apply changes with caution.
+Update Graph Admin configurations may require restart of certain services, which may impact the running queries, loading jobs, or schema changes. Apply changes with caution.
+
+The Graph Admin method does not support setting the `s3_region` parameter. To specify a region other than the default `us-east-1`, use Method 1 (GSQL Editor) or Method 2 (API).
 ====
 
 
 === Example
 
-Here’s an example of writing data to S3 using the GSQL Editor:
+Here’s a complete example of writing data to S3 using the GSQL Editor with all required parameters:
 
-```sql
-
+[source,gsql]
+----
 set query_timeout=7200000;
 set s3_aws_access_key_id = "your_aws_access_key_id";
 set s3_aws_secret_access_key = "your_aws_secret_access_key";
+set s3_region = "us-east-1";
 
 CREATE QUERY print_to_csv_s3() FOR GRAPH ldbc_snb {
     FILE f_hello ("s3://your_s3_bucket/your_path/" + "f_hello.csv");
@@ -114,13 +127,15 @@ CREATE QUERY print_to_csv_s3() FOR GRAPH ldbc_snb {
 }
 
 run query print_to_csv_s3();
+----
 
-```
+Replace `us-east-1` with the actual region of your S3 bucket.
 
 == Troubleshooting
 
-- **Permission Issues**: Ensure that the IAM role or user has the necessary permissions (`s3:PutObject`, `s3:ListBucket`).
-- **Network Issues**: Verify that your TigerGraph workspace can reach the S3 endpoint.
-- **Credential Issues**: Ensure that the correct credentials are provided either via GSQL Editor, API headers, or Graph Admin configurations.
+* *Permission Issues*: Ensure that the IAM role or user has the necessary permissions (`s3:PutObject`, `s3:ListBucket`).
+* *Network Issues*: Verify that your TigerGraph workspace can reach the S3 endpoint.
+* *Credential Issues*: Ensure that the correct credentials are provided either via GSQL Editor, API headers, or Graph Admin configurations.
+* *Region Mismatch*: If you receive errors when writing to S3, verify that the `s3_region` parameter matches the actual region of your S3 bucket. Using the wrong region will cause the write operation to fail.
 
 For more detailed troubleshooting, refer to the [AWS S3 Documentation](https://docs.aws.amazon.com/s3/index.html).

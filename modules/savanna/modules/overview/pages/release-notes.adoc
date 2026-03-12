@@ -5,6 +5,28 @@
 :toclevels:2
 
 == Mar 2026
+=== 2026-03-12
+==== Billing & Account Management
+
+* Savanna now displays the expiration date for free credits, providing users with greater transparency into credit availability and usage timelines.
+
+==== User Experience
+
+* Savanna now includes a product tour to help new users quickly understand the platform and navigate key features.
+
+* Users can now copy GSQL queries directly from the GSQL Editor using a built-in copy function, making it easier to reuse or share queries.
+
+==== Data Integration
+
+* Savanna now supports key-pair authentication for Snowflake, aligning with Snowflake’s deprecation of password-based authentication and improving security for integrations.
+
+==== GraphStudio
+
+* GraphStudio GSQL query editor functionality is now supported in Savanna, expanding compatibility for users familiar with the GraphStudio application
+
+
+
+== Mar 2026
 === 2026-03-11
 ==== Billing & Account Management
 

@@ -4,6 +4,24 @@
 :toc:
 :toclevels:2
 
+== Apr 2026
+=== 2026-04-15
+==== User Experience
+
+* Users can now start with a pre-loaded sample graph (including data and queries) or create a workspace from scratch — making it easier to explore Savanna or jump directly into real-world use cases.
+
+==== Version Maintenance
+
+* Users can now schedule maintenance version upgrades at a preferred date and time, or choose to upgrade immediately, providing greater control and flexibility over environment updates.
+
+* Users are notified when a new database version is available, with options to upgrade immediately or defer to a future maintenance window.
+
+==== License  Manager
+
+* New license metrics provide deeper insight into usage, allocation, and capacity, enabling better monitoring and management of licensed resources.
+
+
+
 == Mar 2026
 === 2026-03-11
 ==== Billing & Account Management

@@ -3,6 +3,7 @@
 // ** xref:savanna:overview:architecture.adoc[Architecture]
 ** xref:savanna:overview:comparison_table.adoc[Compare Different Offerings]
 ** xref:savanna:overview:release-notes.adoc[Release Notes]
+** xref:savanna:overview:tools-release-notes.adoc[Tools Release Notes]
 ** xref:savanna:overview:pricing.adoc[]
 ** xref:savanna:overview:cost-estimation.adoc[]
 

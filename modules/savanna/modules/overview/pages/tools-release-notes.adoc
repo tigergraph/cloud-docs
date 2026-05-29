@@ -1,0 +1,127 @@
+= TigerGraph Tools Release Notes
+:experimental:
+:toc:
+:toclevels: 2
+
+== May 2026
+=== 2026-05-06
+==== GraphStudio & Explore Graph Improvements
+
+* Added graph exploration filtering capabilities in GraphStudio to improve graph analysis and navigation workflows.
+* Improved version validation logic for enhanced compatibility and upgrade handling.
+
+==== Data Integration & Authentication Enhancements
+
+* Added E2E validation support for key-pair authentication with Snowflake loading workflows.
+
+==== Security & Stability Improvements
+
+* Addressed gRPC and Go library security vulnerabilities to improve platform security and reliability.
+* Improved search log parameter handling reliability.
+* Improved on-prem E2E workflow and environment stability.
+
+== Apr 2026
+=== 2026-04-16
+==== GraphStudio & Explore Graph Improvements
+
+* Improved graph exploration workflows by enhancing retrieval of multiple vertices and edges.
+* Improved Zoom In and Zoom Out responsiveness and mouse scroll performance in Explore Graph.
+* Improved login failure messaging and error visibility for users.
+* Improved configuration update handling when uploading the same file multiple times.
+
+==== Administration & Security Enhancements
+
+* Added RBAC support for Query Monitoring in Admin Portal.
+* Improved privilege validation behavior for Query Monitoring workflows.
+
+==== Data Integration & Connectivity Improvements
+
+* Improved Snowflake connection handling and timeout behavior for loading workflows.
+
+== Feb 2026
+=== 2026-02-27
+==== GraphStudio & Explore Graph Improvements
+
+* Improved GraphStudio usability, graph selection persistence, and attribute panel customization capabilities.
+* Improved Explore Graph access control and graph loading behavior.
+* Improved stability when rendering large JSON query results in Cloud v3.
+* Fixed username display issues on the home page.
+* Improved logout synchronization between GraphStudio and user sessions.
+
+==== Write Query & GAP Improvements
+
+* Improved query timeout handling in Write Queries.
+* Improved message rendering behavior in GAP pop-up windows.
+* Updated downgrade messaging and workflow text for Tools operations.
+
+==== Logging & Download Enhancements
+
+* Added read-only access support for logs.
+* Improved log download reliability in cloud environments.
+
+==== Data Loading & Integration Enhancements
+
+* Added key-pair authentication support for Snowflake loading workflows.
+
+== Dec 2025
+=== 2025-12-17
+==== Explore Graph & UI Improvements
+
+* Improved style configuration and detail panel behavior in Explore Graph workflows.
+* Improved tooltip rendering and overflow handling in the user interface.
+
+==== Download & Solution Experience
+
+* Updated solution descriptions in the download site to improve usability and clarity.
+
+== Sep 2025
+=== 2025-09-26
+==== Insights Improvements
+
+* Improved Insights query execution, page submission handling, widget reliability, and variable processing.
+* Added support to display the current user name in the Insights header.
+* Improved screenshot capture reliability in Firefox.
+* Added ActionForm CRUD widget support in Insights.
+
+==== GraphStudio & Query Experience
+
+* Improved Write Query stability, query execution reliability, error visibility, and result rendering.
+* Enhanced GSQL Shell messaging, query feedback visibility, and JSON result usability.
+* Improved load data page stability during extended idle periods.
+
+==== Explore Graph & Design Schema
+
+* Improved Explore Graph usability, Design Schema stability, table rendering, and editing workflows.
+
+==== Administration
+
+* Improved GAP reliability, SSL support, cloud data source loading, and user management workflows.
+* Added expanded administration, security, Kerberos, CORS, and certificate configuration capabilities.
+
+==== Reliability & Stability Improvements
+
+* Fixed runtime memory access issues impacting Insights API execution.
+* Improved UI consistency and stability across GAP and GST modules.
+
+== Aug 2025
+=== 2025-08-14
+==== GraphStudio & Query Experience
+
+* Improved query execution stability and reliability in GST, including fixes for stuck queries and intermittent query page crashes.
+* Improved query save and draft workflows in GraphStudio.
+* Added support to display the current Tools version directly in the application header.
+* Improved graph editing protections for embedding attributes in local graph configurations.
+
+==== Cloud Portal Enhancements
+
+* Improved Insights integration and Cloud Portal workflow support.
+
+==== Download & File Handling Improvements
+
+* Improved large file download performance, validation, and error handling.
+* Improved CSV rendering and GAP/YAML data handling behavior.
+
+==== Configuration & Reliability Improvements
+
+* Fixed issues where configuration values could reset to defaults after service restarts.
+

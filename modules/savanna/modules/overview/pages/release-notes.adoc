@@ -4,6 +4,19 @@
 :toc:
 :toclevels:2
 
+== Jun 2026
+=== 2026-06-03
+==== Workspace Management
+
+* Enhanced Workspace Views: users can now manage Savanna workspaces through multiple visualization modes including Card View, Table View, and Graph View for improved operational visibility and navigation.
+* Workspace Filtering: users can now filter workspaces to simplify navigation and management across large environments.
+
+==== Observability & APIs
+
+* Savanna Health Metrics via API: Savanna health and infrastructure metrics are now exposed through APIs, enabling external monitoring and operational dashboards. Metrics include CPU, disk, IOPS, and service-level utilization telemetry.
+
+
+
 == May 2026
 === 2026-05-06
 ==== Billing

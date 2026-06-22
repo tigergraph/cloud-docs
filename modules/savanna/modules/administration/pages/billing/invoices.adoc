@@ -12,19 +12,18 @@ image::billing-nav.png[width=300]
 
 . Select the btn:[Invoices] tab to view the invoices list.
 +
-image::invoice-list.png[]
+image::invoice_tab_.png[]
 +
 .Here you can view general information on invoices, such as:
 * *Invoice Date*: The date the invoice was issued.
 * *Invoice Status*: The status of the invoice.
 * *Invoice Period*: The period that the invoice was issued in.
-* *Total (Credits)*: Total credits used during that invoice period.
 * *Total*: Total charge during that invoiced period.
 
 . To export a specific invoice as a `.pdf` select the btn:[PDF] button under btn:[Export As].
 
-== Invoice statuses
-Invoice statuses indicate the stage of an invoice in the billing lifecycle.
+== Invoice status
+Each invoice status indicates the stage of an invoice in the billing lifecycle.
 
 === In Billing Period
 

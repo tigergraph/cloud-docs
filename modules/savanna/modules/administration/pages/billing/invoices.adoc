@@ -29,22 +29,22 @@ Each invoice status indicates the stage of an invoice in the billing lifecycle.
 
 The invoice period is ongoing and charges are still accumulating.
 
-image::billing period.png[]
+image::billing period.png[width=300]
 
 === In Grace Period
 The billing period has ended, but the system will automatically attempt payment after the grace period.
 
-image::grace period.png[]
+image::grace period.png[width=300]
 
 === Processing
 Invoice amount is being finalized and is not ready for payment.
 
-image::processing.png[]
+image::processing.png[width=300]
 
 === No Payment Needed
 The invoice does not require payment (e.g., zero amount or covered by credits).
 
-image::no payment needed.png[]
+image::no payment needed.png[width=300]
 
 
 == Next Steps

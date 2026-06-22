@@ -35,7 +35,7 @@ You can go to xref:savanna:graph-development:design-schema/index.adoc[Design Sch
 These APIs represent different operations that you can perform on your graph database, such as querying data, adding vertices and edges, updating properties, and more.
 ====
 +
-image::image-20260621-193747.png[width="500"]
+image::image-20260621-193747.png[]
 //image::Screenshot 2024-04-17 at 5.42.36 PM.png[width="500"]
 
 . Go to btn:[Edit GSQL Query] to write and install a new GSQL query.

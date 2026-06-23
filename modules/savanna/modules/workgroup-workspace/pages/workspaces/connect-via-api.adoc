@@ -16,7 +16,7 @@ These code snippets are available in JavaScript, cURL, and Python.
 ====
 
 .To connect via APIs and interact with your graph database, follow these steps:
-. Click on btn:[Connect From API] option in the btn:[Connect] menu in a workspace.
+. Click btn:[Connect] in the workspace and select btn:[Connect from API].
 +
 image::image-20260621-193812.png[]
 //image::Screenshot 2024-04-28 at 9.36.29 PM.png[]

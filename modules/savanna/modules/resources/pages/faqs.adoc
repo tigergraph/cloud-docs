@@ -7,6 +7,10 @@
 
 == Top FAQs
 
+=== *Q: Where can I find information about migrating from TG Cloud Classic to Savanna?
+
+A: See xref:savanna:resources:savanna-migration-faqs.adoc[TG Cloud Classic to Savanna Migration FAQ].
+
 === *Q: I can't find my registration activation email after registering for the first time. Where can I find it?*
 
 A: Please check your spam folder. If you can't find it in the spam folder, and still cannot receive the verification email in your mailbox after resending the verification email, please https://tigergraph.zendesk.com/hc/en-us/[open a support ticket] so that we can assist you with manual email verification process.

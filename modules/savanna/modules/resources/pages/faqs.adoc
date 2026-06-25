@@ -7,7 +7,7 @@
 
 == Top FAQs
 
-=== *Q: Where can I find information about migrating from TG Cloud Classic to Savanna?
+=== Q: Where can I find information about migrating from TG Cloud Classic to Savanna?
 
 A: See xref:savanna:resources:savanna-migration-faqs.adoc[TG Cloud Classic to Savanna Migration FAQ].
 

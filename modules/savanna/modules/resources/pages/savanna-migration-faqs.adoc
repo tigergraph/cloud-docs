@@ -1,15 +1,15 @@
 = TG Cloud Classic to Savanna Migration FAQ
 :description: Frequently asked questions about migrating from TigerGraph Cloud Classic (TG Cloud V3) on AWS to TigerGraph Savanna.
 
-This page answers common questions about migrating from TigerGraph Cloud Classic (TG Cloud V3) on AWS to TigerGraph Savanna.
+This page answers common questions about migrating from *TigerGraph Cloud Classic* (TG Cloud V3) on AWS to https://tgcloud.io/[TigerGraph Savanna].
 
 == General
 
 === What is happening to TigerGraph Cloud Classic on AWS?
 
-TigerGraph Cloud Classic, also known as TG Cloud V3, on AWS will reach end of life on September 30, 2026.
+TigerGraph Cloud Classic, also known as TG Cloud V3, on AWS will reach end of life on *September 30, 2026*.
 
-TigerGraph is transitioning customers from TG Cloud Classic to TigerGraph Savanna, our next-generation cloud-native graph database platform.
+TigerGraph is transitioning customers from TigerGraph Cloud Classic to https://tgcloud.io/[TigerGraph Savanna], our next-generation cloud-native graph database platform.
 
 Savanna is the future of TigerGraph Cloud and provides a modern foundation for operational graph workloads, analytics, AI, GraphRAG, MCP, and agent-based workflows.
 
@@ -29,21 +29,21 @@ Moving customers to Savanna allows TigerGraph to focus innovation, support, and 
 
 === When is TG Cloud Classic on AWS reaching end of life?
 
-TG Cloud Classic on AWS will reach end of life on September 30, 2026.
+TigerGraph Cloud Classic on AWS will reach end of life on September 30, 2026.
 
-Customers currently running on TG Cloud Classic on AWS will need to migrate to Savanna before that date.
+If you are currently running TG Cloud Classic on AWS, you will need to migrate to Savanna before that date.
 
 == Migration Process
 
 === Who will manage the migration?
 
-TigerGraph will manage and execute the migration end-to-end.
+TigerGraph will manage and execute your migration end-to-end.
 
-TigerGraph will work with each customer to plan the migration, prepare the target Savanna environment, validate workloads in advance, execute the migration, and support the customer through verification and cutover.
+TigerGraph will work with you to plan the migration, prepare the target Savanna environment, validate workloads in advance, execute the migration, and support you through verification and cutover.
 
 === Is there a cost for the migration?
 
-No. There is no additional cost for the migration from TG Cloud Classic to Savanna.
+No. There is no additional cost for migrating from TG Cloud Classic to Savanna.
 
 TigerGraph will perform the migration as part of the transition to Savanna.
 
@@ -59,15 +59,15 @@ Any remaining TG Cloud Classic credits will be added to Savanna as part of the m
 
 Savanna does not use credits in the same way as TG Cloud Classic. Savanna uses dollars.
 
-As part of the migration, remaining TG Cloud Classic credits will be converted into dollar value based on the original credit purchase price.
+As part of the migration, your remaining TG Cloud Classic credits will be converted into dollar value based on the original credit purchase price.
 
 === Will there be downtime during migration?
 
-TigerGraph's goal is to perform the migration with minimal downtime and minimal disruption to customer operations.
+TigerGraph's goal is to perform your migration with minimal downtime and minimal disruption to your operations.
 
-The exact downtime will depend on the size of the environment, data volume, workload complexity, and migration plan.
+The exact downtime will depend on the size of your environment, data volume, workload complexity, and migration plan.
 
-TigerGraph will work with each customer to define the migration window and validate the expected downtime before execution.
+TigerGraph will work with you to define the migration window and validate the expected downtime before execution.
 
 === What are the major phases of the migration?
 
@@ -85,43 +85,43 @@ The migration process generally includes the following phases:
 
 == Customer Responsibilities
 
-=== What is the customer responsible for during migration?
+=== What am I responsible for during migration?
 
-TigerGraph will manage the migration process, but customers are responsible for validating and updating their applications, integrations, and workflows where needed.
+TigerGraph will manage the migration process, but you are responsible for validating and updating your applications, integrations, and workflows where needed.
 
-Customer responsibilities may include:
+Your responsibilities may include:
 
-* Reviewing and resolving any breaking changes before migration
-* Updating application-side authentication or token-generation logic if required
-* Updating API calls, endpoints, or integrations that change as part of the move to Savanna
-* Pausing or stopping application traffic, REST API calls, loading jobs, ingress, or egress activity during the agreed migration window
-* Validating that applications can connect to the new Savanna workspace
-* Testing application behavior after migration
-* Reporting any issues promptly to TigerGraph during verification
+* Reviewing and resolving any breaking changes before migration.
+* Updating application-side authentication or token-generation logic if required.
+* Updating API calls, endpoints, or integrations that change as part of the move to Savanna.
+* Pausing or stopping application traffic, REST API calls, loading jobs, ingress, or egress activity during the agreed migration window.
+* Validating that your applications can connect to the new Savanna workspace.
+* Testing application behavior after migration.
+* Reporting any issues promptly to TigerGraph during verification.
 
 === Who is responsible for breaking changes?
 
-Customers are responsible for resolving any breaking changes as part of the migration.
+You are responsible for resolving any breaking changes as part of the migration.
 
-TigerGraph will help identify known changes and provide guidance, but customers are responsible for making any required updates to their applications, client code, integrations, queries, authentication flows, or operational processes.
+TigerGraph will help identify known changes and provide guidance, but you are responsible for making any required updates to your applications, client code, integrations, queries, authentication flows, or operational processes.
 
 === Will my applications need to change?
 
 Some applications may require changes.
 
-For example, applications may need to update connection endpoints, authentication flows, token-generation logic, API calls, or other integration points depending on how they currently interact with TG Cloud Classic.
+For example, you may need to update connection endpoints, authentication flows, token-generation logic, API calls, or other integration points depending on how your applications currently interact with TG Cloud Classic.
 
-TigerGraph will work with customers during the planning phase to help identify potential changes before migration.
+TigerGraph will work with you during the planning phase to help identify potential changes before migration.
 
 === Do I need to stop traffic during migration?
 
-Yes, customers may need to pause traffic during the agreed migration window.
+Yes. You may need to pause traffic during the agreed migration window.
 
 This may include stopping user access, REST API calls, loading jobs, ingress operations, egress operations, and application traffic to the TG Cloud Classic environment.
 
 This helps ensure a clean migration and consistent data state.
 
-TigerGraph will coordinate timing and required actions with the customer in advance.
+TigerGraph will coordinate the timing and required actions with you in advance.
 
 == Validation and Cutover
 
@@ -138,9 +138,9 @@ This may include:
 * Service validation
 * Confirmation that the target Savanna environment is operational
 
-=== What does the customer need to validate?
+=== What do I need to validate?
 
-Customers should validate that their applications, integrations, workloads, queries, and operational processes work as expected in Savanna.
+You should validate that your applications, integrations, workloads, queries, and operational processes work as expected in Savanna.
 
 This includes:
 
@@ -150,19 +150,19 @@ This includes:
 * Checking performance
 * Confirming that data and application results are correct
 
-=== Can we run Savanna in parallel with TG Cloud Classic before cutover?
+=== Can I run Savanna in parallel with TG Cloud Classic before cutover?
 
 Yes. Where appropriate, TigerGraph may support a shadowing or parallel validation period.
 
 During this phase, traffic can be mirrored or workloads can be tested against the new Savanna environment while the legacy TG Cloud Classic environment continues serving production traffic.
 
-This allows customers to observe behavior, compare results, validate latency, and identify issues before final cutover.
+This allows you to observe behavior, compare results, validate latency, and identify issues before final cutover.
 
 === What happens during cutover?
 
 During cutover, production traffic is moved from TG Cloud Classic to Savanna.
 
-Once the customer and TigerGraph confirm that the Savanna environment is operating as expected, the legacy TG Cloud Classic environment can be decommissioned according to the agreed plan.
+Once you and TigerGraph confirm that the Savanna environment is operating as expected, the legacy TG Cloud Classic environment can be decommissioned according to the agreed plan.
 
 == Savanna Capabilities
 
@@ -182,19 +182,19 @@ Savanna provides several key capabilities, including:
 
 Separation of compute and storage allows workloads to scale more flexibly.
 
-Customers can run operational and analytical workloads in parallel and scale them independently based on demand.
+You can run operational and analytical workloads in parallel and scale them independently based on demand.
 
-This helps improve resource efficiency and gives teams more flexibility in how they operate graph workloads.
+This helps improve resource efficiency and gives you more flexibility in how you operate graph workloads.
 
 === What does native vector storage enable?
 
 Native vector storage enables AI use cases such as similarity search, semantic retrieval, and GraphRAG.
 
-By combining graph relationships with vector data, customers can build AI applications that use both semantic similarity and connected data context.
+By combining graph relationships with vector data, you can build AI applications that use both semantic similarity and connected data context.
 
 === What does MCP and agent-based execution enable?
 
-MCP and agent-based execution allow teams to automate graph workflows.
+MCP and agent-based execution allow you to automate graph workflows.
 
 Agents can help automate graph deployment, query execution, analysis workflows, and other graph operations through controlled, programmatic access.
 
@@ -202,15 +202,15 @@ Agents can help automate graph deployment, query execution, analysis workflows, 
 
 Savanna provides programmatic control over graph creation, data loading, query execution, and management.
 
-This allows TigerGraph to be integrated into CI/CD pipelines, enterprise workflows, internal platforms, and automated operational processes.
+This allows you to integrate TigerGraph into CI/CD pipelines, enterprise workflows, internal platforms, and automated operational processes.
 
 == Support
 
-=== How will TigerGraph support customers during the migration?
+=== How will TigerGraph support me during the migration?
 
-TigerGraph will work directly with customers throughout the migration process.
+TigerGraph will work directly with you throughout the migration process.
 
-Support will include:
+Support includes:
 
 * Migration planning
 * Technical guidance
@@ -219,8 +219,10 @@ Support will include:
 * Troubleshooting
 * Cutover coordination
 
-=== Who should customers contact with questions?
+=== Who should I contact with questions?
 
-Customers should contact their TigerGraph account team or TigerGraph Support for migration planning and questions.
+If you have questions about migration planning or the migration process, contact your TigerGraph account team or TigerGraph Support.
+
+You can also contact the Savanna migration team by emailing mailto:savanna-support@tigergraph.com[savanna-support@tigergraph.com].
 
 TigerGraph will provide migration resources, documentation, and support contacts as part of the customer migration program.

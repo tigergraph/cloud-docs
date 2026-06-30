@@ -113,6 +113,21 @@ For the list of available add-ons and their capabilities, please refer to xref:s
 Some add-ons may require additional configuration or incur extra costs. Review the documentation for each add-on to understand its capabilities and requirements.
 ====
 
+=== Automatic Maintenance Upgrade
+
+Automatic maintenance upgrade is enabled by default when you create a new workspace.
+
+image::automatic_maintenance[]
+
+By default, automatic maintenance runs every 4 weeks, on Sunday between 20:00 and 22:00 in the workspace's time zone.
+
+You can change this schedule at any time after the workspace is created.
+
+[NOTE]
+====
+The maintenance interval can be set to any value from 1 week to 52 weeks. Values outside this range are not supported.
+====
+
 == Alerts
 
 The *Alerts* section allows users to set up notifications for various workspace events. Alerts help monitor the health and performance of your workspace and ensure timely responses to critical events.

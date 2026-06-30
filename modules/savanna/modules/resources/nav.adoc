@@ -5,7 +5,6 @@
 ** xref:savanna:resources:glossary.adoc[]
 ** xref:savanna:resources:support.adoc[]
 ** xref:savanna:resources:faqs.adoc[]
-** xref:savanna:resources:savanna-migration-faqs.adoc[]
 ** xref:savanna:resources:quota_policy.adoc[Subscription Plans and Quota Policy]
 // ** xref:savanna:resources:terms_conditions.adoc[Terms and Conditions]
 // ** xref:resources:faqs.adoc[FAQs]

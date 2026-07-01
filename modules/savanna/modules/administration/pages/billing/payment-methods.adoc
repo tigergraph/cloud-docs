@@ -82,15 +82,15 @@ To unsubscribe from AWS Marketplace, follow the steps below:
 
 . Navigate to *Manage subscriptions* in AWS Marketplace and locate the TigerGraph Savanna subscription under *Active subscriptions*.
 +
-image::aws-marketplace-manage-subscriptions.png[]
+image::aws-marketplace-manage-subscriptions.png[width=300]
 
 . Click *Actions* in the top-right corner.
 +
-image::aws-marketplace-actions.png[]
+image::aws-marketplace-actions.png[width=300]
 
 . Select *Cancel subscription*.
 +
-image::aws-marketplace-cancel.png[]
+image::aws-marketplace-cancel.png[width=300]
 
 If the AWS Marketplace subscription has been cancelled and no other payment method is configured, click *Add Credit Card* on the Payment Methods page.
 

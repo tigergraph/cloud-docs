@@ -8,9 +8,7 @@ Here, you can configure various parameters to estimate your monthly costs for us
     src="https://tgcloud.io/price.html"
     width="100%"
     height="628px"
-    frameborder="0"
-    sandbox="allow-scripts allow-top-navigation allow-same-origin allow-popups"
->
+    frameborder="0">
 </iframe>
 <script>
 	window.addEventListener("message", function (event) {

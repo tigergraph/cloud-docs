@@ -4,6 +4,16 @@
 :toc:
 :toclevels:2
 
+== Jul 2026
+=== 2026-07-01
+==== Version Maintenance
+
+* Flexible Maintenance Scheduling: You can now configure maintenance windows using a weekly interval (for example, every 4 weeks), providing flexibility for recurring maintenance.
+* Automatic Maintenance: New workspaces now indicate that automatic maintenance upgrades are enabled by default. You can change this setting after workspace creation.
+* Upgrade Notifications: Users now receive a notification when a workspace is scheduled for an automatic maintenance upgrade.
+
+
+
 == Jun 2026
 === 2026-06-03
 ==== Workspace Management

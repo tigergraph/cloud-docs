@@ -45,7 +45,7 @@ Upon subscription, AWS Marketplace subscription will only be set as the default 
 If you have an existing account or would like to switch payment methods to AWS Marketplace, please contact link:mailto:support@tigergraph.com[support@tigergraph.com].
 ====
 
-.To subscribe via AWS Marketplace follow the steps below:
+.To subscribe via AWS Marketplace, follow the steps below:
 . Click the link above to navigate to our AWS Marketplace listing.
 . Select the btn:[View purchase options] button on the right.
 +
@@ -68,6 +68,31 @@ Your AWS Marketplace subscription should now appear with its status.
 NOTE: If it says pending, please wait then refresh. It should be activated momentarily.
 +
 image::aws-marketplace-active.png[]
+
+Once subscribed, AWS Marketplace becomes the only available payment method. To change your payment method, you must first unsubscribe from AWS Marketplace.
+
+[NOTE]
+====
+If you subscribe mid-billing cycle, the current cycle is charged to your existing credit card. AWS Marketplace metering begins at the start of the next billing cycle.
+====
+
+==== Unsubscribe from AWS Marketplace
+
+To unsubscribe from AWS Marketplace, follow the steps below:
+
+. Navigate to *Manage subscriptions* in AWS Marketplace and locate the TigerGraph Savanna subscription under *Active subscriptions*.
++
+image::aws-marketplace-manage-subscriptions.png[]
+
+. Click *Actions* in the top-right corner.
++
+image::aws-marketplace-actions.png[]
+
+. Select *Cancel subscription*.
++
+image::aws-marketplace-cancel.png[]
+
+If the AWS Marketplace subscription has been cancelled and no other payment method is configured, click *Add Credit Card* on the Payment Methods page.
 
 == Next Steps
 

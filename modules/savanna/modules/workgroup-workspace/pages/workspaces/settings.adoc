@@ -115,17 +115,31 @@ Some add-ons may require additional configuration or incur extra costs. Review t
 
 === Automatic Maintenance Upgrade
 
+Automatic maintenance upgrade keeps your workspace up to date by automatically applying eligible maintenance releases. These releases include bug fixes, security updates, and performance improvements, applied during a maintenance window you configure.
+
+[TIP]
+====
+This helps you stay current on stability and security fixes without having to track releases or schedule upgrades manually.
+====
+
 Automatic maintenance upgrade is enabled by default when you create a new workspace.
 
 image::automatic_maintenance[]
 
 By default, automatic maintenance runs every 4 weeks, on Sunday between 20:00 and 22:00 in the workspace's time zone.
 
-You can change this schedule at any time after the workspace is created. Choose an interval based on when your workspace is least active, to minimize disruption.
+You can change this schedule at any time after the workspace is created. Choose an interval and time window based on when your workspace is least active to minimize disruption.
 
 [NOTE]
 ====
 You can set the maintenance interval to any value between 1 week and 52 weeks. Values outside this range are not supported.
+====
+
+An upgrade only starts once an eligible maintenance release is available and the current time falls within your configured maintenance window. If no eligible release is available, no action is taken.
+
+[NOTE]
+====
+An automatic upgrade may take more than two hours to complete. Automatic maintenance upgrade does not replace manual upgrades. You can still start a manual upgrade from the workspace configuration page if you need to upgrade sooner.
 ====
 
 == Alerts

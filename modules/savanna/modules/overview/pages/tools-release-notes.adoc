@@ -3,6 +3,17 @@
 :toc:
 :toclevels: 2
 
+
+== Jul 2026
+=== 2026-07-01
+==== GraphStudio & Explore Graph Improvements
+
+* Improved query result handling in GraphStudio by retaining results from multiple executions in separate tabs, allowing users to switch between prior results without rerunning queries. Results now persist across GraphStudio page navigation within the same browser session.
+
+==== Administration & Security Enhancements
+
+* Added support to generate a self-signed X.509 certificate directly from the SAML SSO configuration page, streamlining Service Provider authentication setup.
+
 == May 2026
 === 2026-05-06
 ==== GraphStudio & Explore Graph Improvements

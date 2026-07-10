@@ -16,12 +16,6 @@ For version upgrades for existing clusters, please contact TigerGraph Support.
  
 * Improved the loading performance of the portal.
  
-== June 2026 Updates
- 
-=== Fixed Issues
- 
-* Fixed an issue where multi-node clusters in GCP `us-central1` and Azure South Africa North did not use multi-availability-zone deployment.
- 
 == October 2025 Updates
  
 === New Features

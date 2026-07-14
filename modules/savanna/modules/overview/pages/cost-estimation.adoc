@@ -1,26 +1,12 @@
 = Cost Estimation
 
-Here, you can configure various parameters to estimate your monthly costs for using TigerGraph Savanna. This tool allows you to tailor your workspace size, monthly usage, and database size to get a clear understanding of your anticipated expenses.
+Estimate your monthly TigerGraph Savanna costs using the online Cost Estimation tool.
 
-++++
+The Cost Estimation tool allows you to configure parameters such as workspace size, monthly usage, and database size to estimate your anticipated monthly costs.
 
-<iframe
-    src="https://tgcloud.io/price.html"
-    width="100%"
-    height="628px"
-    frameborder="0">
-</iframe>
-<script>
-	window.addEventListener("message", function (event) {
-	const data = event.data;
-	if (data && data.type === "resize") {
-		const iframe = document.querySelector("iframe");
-		iframe.style.height = `${data.height}px`;
-	}
-	});
-</script>
+To access the tool, visit:
 
-++++
+https://tgcloud.io/price.html[TigerGraph Savanna Cost Estimation]
 
 == Next Steps
 

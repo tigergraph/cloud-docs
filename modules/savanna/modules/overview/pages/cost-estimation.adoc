@@ -6,7 +6,7 @@ The Cost Estimation tool allows you to configure parameters such as workspace si
 
 To access the tool, visit:
 
-https://tgcloud.io/price.html[TigerGraph Savanna Cost Estimation]
+https://tgcloud.io/price.html[TigerGraph Savanna Cost Estimation^]
 
 == Next Steps
 

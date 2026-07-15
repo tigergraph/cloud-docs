@@ -96,6 +96,35 @@ image::aws-marketplace-cancel_.png[]
 
 If the AWS Marketplace subscription has been cancelled and no other payment method is configured, click *Add Credit Card* on the Payment Methods page.
 
+
+==== Billing After Canceling Your Subscription
+
+If your AWS Marketplace subscription is canceled, complete the following steps to keep using Savanna without interruption:
+
+. Add a valid payment method to your Savanna account.
+. Contact mailto:savanna-support@tigergraph.com[savanna-support@tigergraph.com] to reconcile any outstanding usage charges and avoid duplicate billing.
+
+Usage up to the cancellation date is billed through AWS Marketplace. After that date, TigerGraph bills usage directly, using the payment method on the account.
+
+==== Grace Period
+
+If a subscription is canceled with no active payment method, the following grace periods give organizations time to complete the transition:
+
+* **Suspend Grace Period**: Starts on the cancellation date. Add a valid payment method before this period ends to keep workspaces running. If no payment method is added in time, workspaces are suspended and the Termination Grace Period begins.
+* **Termination Grace Period**: Starts once workspaces are suspended. Add a valid payment method before this period ends to restore access. If no payment method is added in time, workspaces and their database resources are permanently deleted. Data recovery may not be possible after deletion.
+
+Grace period durations vary by subscription tier. See xref:resources:quota_policy.adoc[Subscription Plans and Quota Policy] for details.
+
+==== Example Timeline
+
+An organization cancels its AWS Marketplace subscription on July 10, 2026.
+
+* **July 10**: AWS Marketplace bills usage up through today. No payment method is added yet, so the Suspend Grace Period begins.
+* **July 12**: The organization adds a payment method. TigerGraph now bills usage directly, and Savanna keeps running without interruption.
+* **July 15**: The organization reaches out to TigerGraph Support. TigerGraph reconciles the usage already billed through AWS Marketplace and applies the necessary credits.
+
+If the transition isn't completed, workspaces are suspended when the Suspend Grace Period ends, and permanently deleted when the Termination Grace Period ends.
+
 == Next Steps
 
 Next, learn about other billing topics on the xref:savanna:administration:billing/index.adoc[] page or check out the xref:resources:index.adoc[] section.

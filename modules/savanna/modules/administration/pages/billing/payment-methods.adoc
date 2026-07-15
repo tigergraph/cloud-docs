@@ -123,8 +123,6 @@ An organization cancels its AWS Marketplace subscription on July 10, 2026.
 * **July 12**: The organization adds a payment method. TigerGraph now bills usage directly, and Savanna keeps running without interruption.
 * **July 15**: The organization reaches out to TigerGraph Support. TigerGraph reconciles the usage already billed through AWS Marketplace and applies the necessary credits.
 
-If the transition isn't completed, workspaces are suspended when the Suspend Grace Period ends, and permanently deleted when the Termination Grace Period ends.
-
 == Next Steps
 
 Next, learn about other billing topics on the xref:savanna:administration:billing/index.adoc[] page or check out the xref:resources:index.adoc[] section.

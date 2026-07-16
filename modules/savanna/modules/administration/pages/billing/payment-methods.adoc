@@ -42,7 +42,7 @@ You can also pay for Savanna via AWS marketplace subscription.
 [NOTE]
 ====
 Upon subscription, AWS Marketplace subscription will only be set as the default payment method if there is currently an invoice balance of 0 and no existing usage.
-If you have an existing account or would like to switch payment methods to AWS Marketplace, please contact link:mailto:support@tigergraph.com[support@tigergraph.com].
+If you have an existing account or would like to switch payment methods to AWS Marketplace, please contact mailto:support@tigergraph.com[support@tigergraph.com].
 ====
 
 .To subscribe via AWS Marketplace, follow the steps below:
@@ -105,7 +105,7 @@ After you cancel your subscription, AWS Marketplace bills TigerGraph usage incur
 
 To continue using Savanna after canceling your AWS Marketplace subscription, add a valid payment method to your organization. Once added, future TigerGraph usage is billed using that payment method.
 
-For the steps to add a xref:Add_a_new_Payment_Method[payment method].
+For the steps to add a xref:_Add_a_new_Payment_Method[payment method].
 
 *Billing reconciliation*
 

@@ -40,8 +40,8 @@ The following table outlines the quotas and limits associated with each subscrip
 - **Maximum Memory Size (GiB)**: The total memory allocation per subscription/orgnization.
 - **Manual Backup Quota (Per Read-Write Workspace)**: The number of manual backups allowed per Read-Write workspace.
 - **Auto Backup Quota (Per Read-Write Workspace)**: The number of automated backups allowed per Read-Write workspace.
-- **Suspend Grace Period (Days)**: The number of days a workspace can be suspended before termination.
-- **Terminate Grace Period (Days)**: The number of days before a suspended workspace is terminated.
+- **Suspend Grace Period (Days)**: The number of days before a workspace is suspended.
+- **Terminate Grace Period (Days)**: The number of days a suspended workspace remains suspended before it is permanently    terminated.
 - **Support**: The type of customer support provided.
 
 [NOTE]

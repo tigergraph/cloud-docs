@@ -76,7 +76,7 @@ Once subscribed, AWS Marketplace becomes the only available payment method. To c
 If you subscribe mid-billing cycle, the current cycle is charged to your existing credit card. AWS Marketplace metering begins at the start of the next billing cycle.
 ====
 
-==== Unsubscribe from AWS Marketplace
+=== Unsubscribe from AWS Marketplace
 
 To unsubscribe from AWS Marketplace, follow the steps below:
 
@@ -95,6 +95,39 @@ image::aws-marketplace-actions.png[]
 image::aws-marketplace-cancel_.png[]
 
 If the AWS Marketplace subscription has been cancelled and no other payment method is configured, click *Add Credit Card* on the Payment Methods page.
+
+
+=== Billing After Canceling Your AWS Marketplace Subscription
+
+After you cancel your subscription, AWS Marketplace bills TigerGraph usage incurred up to the subscription cancellation date.
+
+*Add a Payment Method* 
+
+To continue using Savanna after canceling your AWS Marketplace subscription, add a valid payment method to your organization. Once added, future TigerGraph usage is billed using that payment method.
+
+For the steps to add a payment method, see #Add_a_new_Payment_Method.
+
+*Billing reconciliation*
+
+If you cancel your AWS Marketplace subscription during an active billing cycle, some usage may already have been reported for billing before you switch to direct TigerGraph billing.
+
+TigerGraph reconciles this usage after the transition and applies the appropriate credits to prevent duplicate billing. Billing reconciliation is performed by the TigerGraph team and does not prevent you from continuing to use Savanna after adding a valid payment method.
+
+[NOTE]
+====
+ If you cancel mid-billing cycle, we recommend contacting savanna-support@tigergraph.com, so TigerGraph can resolve any usage already billed through AWS Marketplace.
+====
+
+*Grace period*
+
+If your organization does not have an active payment method after cancellation, it progresses through a series of grace period stages, which can ultimately result in permanent deletion of your workspaces and associated database resources.
+
+* *Suspend Grace Period*: the period before your workspaces are suspended. Add a valid payment method before it ends to avoid suspension.
+* *Workspace suspended*: no payment method was added before the Suspend Grace Period ended. The Termination Grace Period begins.
+* *Termination Grace Period*: the period before your workspaces are permanently deleted. Add a valid payment method before it ends to restore access.
+* *Workspace terminated*: no payment method was added before the Termination Grace Period ended. Workspaces and associated database resources are permanently deleted.
+
+Grace period durations depend on your organization's subscription tier. See xref:resources:quota_policy.adoc[Subscription Plans and Quota Policy] for details. 
 
 == Next Steps
 

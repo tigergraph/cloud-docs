@@ -105,7 +105,7 @@ After you cancel your subscription, AWS Marketplace bills TigerGraph usage incur
 
 To continue using Savanna after canceling your AWS Marketplace subscription, add a valid payment method to your organization. Once added, future TigerGraph usage is billed using that payment method.
 
-For the steps to add a xref:_Add_a_new_Payment_Method[payment method].
+For the steps to add a xref:_add_a_new_payment_method[payment method].
 
 *Billing reconciliation*
 
@@ -113,9 +113,9 @@ If you cancel your AWS Marketplace subscription during an active billing cycle, 
 
 TigerGraph reconciles this usage after the transition and applies the appropriate credits to prevent duplicate billing. Billing reconciliation is performed by the TigerGraph team and does not prevent you from continuing to use Savanna after adding a valid payment method.
 
-[NOTE]
+[IMPORTANT]
 ====
- If you cancel mid-billing cycle, we recommend contacting mailto:savanna-support@tigergraph.com[savanna-support@tigergraph.com], so TigerGraph can resolve any usage already billed through AWS Marketplace.
+If you cancel mid-billing cycle, we recommend contacting mailto:savanna-support@tigergraph.com[savanna-support@tigergraph.com] to resolve any usage already billed through AWS Marketplace.
 ====
 
 *Grace period*

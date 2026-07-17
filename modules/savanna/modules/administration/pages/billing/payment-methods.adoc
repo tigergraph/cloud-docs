@@ -99,7 +99,7 @@ If the AWS Marketplace subscription has been cancelled and no other payment meth
 
 === Billing After Canceling Your AWS Marketplace Subscription
 
-After you cancel your subscription, AWS Marketplace bills TigerGraph usage incurred up to the subscription cancellation date.
+If you cancel your subscription, AWS Marketplace bills TigerGraph usage incurred up to the subscription cancellation date.
 
 *Add a Payment Method* 
 

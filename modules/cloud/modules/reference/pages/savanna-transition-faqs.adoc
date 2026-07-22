@@ -49,9 +49,8 @@ TigerGraph will perform the transition as part of the move to Savanna.
 
 === Will my pricing change after transition?
 
-No. The transition will not impact your current pricing.
-
-Your consumption rate will remain the same in Savanna based on your existing pricing agreement.
+No. Your pricing will continue according to your existing agreement. 
+If you have questions about pricing after transitioning to Savanna, please contact your TigerGraph representative.
 
 === What happens to my TG Cloud Classic credits?
 
@@ -99,19 +98,17 @@ Your responsibilities may include:
 * Testing application behavior after transition.
 * Reporting any issues promptly to TigerGraph during verification.
 
-=== Who is responsible for breaking changes?
-
-You are responsible for resolving any breaking changes as part of the transition.
-
-TigerGraph will help identify known changes and provide guidance, but you are responsible for making any required updates to your applications, client code, integrations, queries, authentication flows, or operational processes.
-
 === Will my applications need to change?
 
 Some applications may require changes, depending on how they currently integrate with TG Cloud Classic.
 
 For example, you may need to update connection endpoints, authentication flows, token-generation logic, API calls, or other integration points depending on how your applications currently interact with TG Cloud Classic.
 
-TigerGraph will work with you during the planning phase to help identify potential changes before transition.
+TigerGraph will work with you during the planning phase to help identify potential breaking changes and application adjustments before transition.
+
+== Who is responsible for making application updates?
+
+You are responsible for making and verifying changes to your applications that use TigerGraph Cloud.
 
 === Do I need to stop traffic during transition?
 

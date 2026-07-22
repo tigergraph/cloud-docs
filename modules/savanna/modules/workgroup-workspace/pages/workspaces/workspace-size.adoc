@@ -46,7 +46,7 @@ We provide the following workspace sizes on TigerGraph Savanna.
 
 |===
 
-Please contact support@tigergraph.com if you need a workspace size that is not listed in the table.
+Please contact savanna-support@tigergraph.com if you need a workspace size that is not listed in the table.
 
 ////
 TigerGraph Size Capacity Planner (TBD)

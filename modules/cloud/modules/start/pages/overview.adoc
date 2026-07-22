@@ -16,7 +16,7 @@ The service includes xref:gui:admin-portal:overview.adoc[Admin Portal], xref:gui
 
 // [NOTE]
 // ====
-// On December 31, 2025, we'll retire the TigerGraph Cloud Classic platform. Before that date, you’ll need to migrate your data from TigerGraph Cloud Classic to TigerGraph Savanna. For support, please contact us at support@tigergraph.com.
+// On December 31, 2025, we'll retire the TigerGraph Cloud Classic platform. Before that date, you’ll need to migrate your data from TigerGraph Cloud Classic to TigerGraph Savanna. For support, please contact us at savanna-support@tigergraph.com.
 // ====
 
 == Get to Know Your TigerGraph Cloud Classic

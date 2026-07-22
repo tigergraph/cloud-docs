@@ -20,7 +20,7 @@ A: If you clicked "forgot password" during sign in to Cloud and never received a
 * Check your junk/spam email folder or run a search for "TigerGraph" in case the email automatically got filtered to another inbox.
 * Double-check the email address you entered to make sure it matches the one you signed up with.
 
-If you're still unable to log in or reset your password, contact TigerGraph Support at support@tigergraph.com for individualized help with your issue.
+If you're still unable to log in or reset your password, contact TigerGraph Support at savanna-support@tigergraph.com for individualized help with your issue.
 
 === *Q:  How does TigerGraph Savanna compare with other DBaaS offerings?*
 

@@ -98,17 +98,15 @@ Your responsibilities may include:
 * Testing application behavior after transition.
 * Reporting any issues promptly to TigerGraph during verification.
 
-=== Will my applications need to change?
+=== Will my applications or integrations need to change?
 
-Some applications may require changes, depending on how they currently integrate with TG Cloud Classic.
+Yes. Savanna requires changes to connection endpoints and authentication flows compared with TG Cloud Classic. Depending on your implementation, you may also need to update token-generation logic, API calls, data pipelines, or other integration points.
 
-For example, you may need to update connection endpoints, authentication flows, token-generation logic, API calls, or other integration points depending on how your applications currently interact with TG Cloud Classic.
-
-TigerGraph will work with you during the planning phase to help identify potential breaking changes and application adjustments before transition.
+TigerGraph will work with you during the planning phase to identify the changes needed for your implementation and provide migration guidance.
 
 == Who is responsible for making application updates?
 
-You are responsible for making and verifying changes to your applications that use TigerGraph Cloud.
+You are responsible for implementing the necessary updates and validating that your applications, integrations, and data pipelines work correctly with Savanna.
 
 === Do I need to stop traffic during transition?
 

@@ -15,3 +15,4 @@ ui:
   bundle:
     url: https://github.com/tigergraph/antora-ui/blob/main/build/ui-bundle.zip?raw=true
     snapshot: true
+  supplemental_files: ./supplemental-ui

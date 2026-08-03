@@ -1,0 +1,121 @@
+= Billing Transition FAQ
+:description: Frequently asked questions about the temporary billing platform transition in TigerGraph Savanna.
+
+TigerGraph is transitioning to a new *billing and invoicing platform*. During this transition, some *billing information* and *billing actions* in Savanna will be temporarily unavailable.
+
+[NOTE]
+====
+* *Graph operations* continue as normal.
+* Savanna continues to *meter and record your resource consumption* without interruption.
+* Your *existing pricing* and *usage-metering rules* remain unchanged.
+* Once the new billing platform is enabled, *invoices* will accurately reflect the usage recorded during the transition, and *applicable credits* will be applied.
+* *No transition-related action is required.*
+====
+
+== General
+
+=== What billing features will be unavailable?
+
+The following *billing information* and *capabilities* will be temporarily unavailable:
+
+* Current usage and estimated cost information
+* Billing period and product-level cost details
+* Invoice generation, history, downloads, and payment status
+* Invoice payments and automatic payment processing
+* Credit balances, grants, expiration details, and transaction history
+
+The *Payment methods* tab will remain available.
+
+=== Why are these features temporarily unavailable?
+
+TigerGraph is replacing the underlying platform used to generate invoices and manage credits.
+
+This is a temporary limitation of the billing experience and does not indicate an issue with your organization or account.
+
+=== Can I continue using Savanna?
+
+Yes. You can continue accessing and using your workspaces as usual.
+
+The billing platform transition does not affect your workspace data, graphs, queries, or any other Savanna functionality.
+
+=== Is my usage still being recorded?
+
+Yes. TigerGraph will continue to record your Savanna usage throughout the transition.
+
+Your usage and estimated cost information may not be visible in Savanna temporarily, but your recorded usage will be used to generate accurate invoices and apply applicable credits. No manual reconstruction or adjustment of your usage will be required.
+
+=== Are my pricing or usage metering changing?
+
+No. There are no changes to how your resource consumption is metered or to your existing pricing as part of this transition.
+
+== Invoices and Payments
+
+=== Will I receive invoices during the transition?
+
+No. New invoices will not be generated while the billing platform is being replaced.
+
+Invoice generation will resume once the new billing system is enabled. Your usage recorded during the transition will be included in your subsequent billing.
+
+=== Will my invoice due dates or payment deadlines change?
+
+No. Your existing invoice due dates and payment deadlines will not change because of the billing platform transition.
+
+Because invoice payments will not be available through Savanna, TigerGraph will contact affected customers directly with payment instructions when required.
+
+=== Will my historical invoices remain available?
+
+Yes. Your historical invoices and related billing information will be retained and made available through the new billing platform.
+
+== Credits
+
+=== What happens to my credits?
+
+Credits associated with your organization will remain available and will continue to be accounted for during the billing platform transition.
+
+While the transition is in progress, your credit balances, grants, transaction history, usage, and validity details will be temporarily unavailable in Savanna.
+
+Once the new billing platform is enabled, your credit information will again be available in Savanna and applicable credits will be reflected in your billing.
+
+=== Will my credits expire during the transition?
+
+No. Your credits will not expire while the affected billing features are unavailable.
+
+TigerGraph will preserve your applicable credits during the transition.
+
+== Usage and Billing Accuracy
+
+=== How will TigerGraph ensure my billing information is accurate?
+
+Savanna will continue to meter resource consumption throughout the transition using the existing metering process.
+
+When the new billing system is enabled, your recorded usage will be used to generate invoices and apply applicable credits using your existing pricing. This provides a continuous system record of resource consumption and eliminates the need for manual usage calculations or adjustments.
+
+== Customer Actions
+
+=== Do I need to take any action?
+
+No. *No transition-related action is required.*
+
+You can continue using Savanna and managing your payment methods as usual. TigerGraph will contact your organization directly if payment instructions, additional information, or any other action is required.
+
+=== Will my workspaces be affected?
+
+No. The temporary unavailability of billing features will not, by itself, affect access to your workspaces.
+
+You can continue using your workspaces as usual. TigerGraph will contact you directly if there is a separate account-specific issue requiring your attention.
+
+== Availability
+
+=== When will I be able to access billing features again?
+
+Invoice generation, payment processing, credit management, and the affected billing information will become available after TigerGraph completes the billing platform transition.
+
+TigerGraph will communicate relevant updates when these features become available.
+
+== Support
+
+=== Who should I contact if I have questions?
+
+In Savanna, select *Contact Support* to contact the TigerGraph Support team.
+
+You can also email mailto:savanna-support@tigergraph.com[savanna-support@tigergraph.com].

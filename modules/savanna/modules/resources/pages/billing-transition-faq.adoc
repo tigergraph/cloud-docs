@@ -56,6 +56,14 @@ No. New invoices will not be generated while the billing platform is being repla
 
 Invoice generation will resume once the new billing system is enabled. Your usage recorded during the transition will be included in your subsequent billing.
 
+=== What happens to payments during the transition?
+
+No payments will be processed while the invoicing platform is unavailable. This includes credit card payments and charges through AWS Marketplace.
+
+Once the new invoicing platform is available, an invoice will be generated for all usage recorded since your last payment. Payment will then be processed through your existing billing method.
+
+Because the transition may extend beyond a typical monthly billing cycle, the resulting invoice or payment may be higher than usual.k
+
 === Will my invoice due dates or payment deadlines change?
 
 No. Your existing invoice due dates and payment deadlines will not change because of the billing platform transition.
@@ -68,19 +76,17 @@ Yes. Your historical invoices and related billing information will be retained a
 
 == Credits
 
-=== What happens to my credits?
+=== What happens to free credits during the transition?
 
-Credits associated with your organization will remain available and will continue to be accounted for during the billing platform transition.
+Free credits will not be deducted while the invoicing platform is unavailable, but Savanna will continue to record all usage.
 
-While the transition is in progress, your credit balances, grants, transaction history, usage, and validity details will be temporarily unavailable in Savanna.
+Once invoicing resumes:
 
-Once the new billing platform is enabled, your credit information will again be available in Savanna and applicable credits will be reflected in your billing.
+* Usage will be applied against credits that were valid and available when the usage occurred.
+* If usage exceeds the available credit balance, the excess usage will be invoiced.
+* If credits expire during the transition, usage recorded after the expiration date will be invoiced.
 
-=== Will my credits expire during the transition?
-
-No. Your credits will not expire while the affected billing features are unavailable.
-
-TigerGraph will preserve your applicable credits during the transition.
+As a result, you may receive an invoice even if free credits continue to appear available during the transition.
 
 == Usage and Billing Accuracy
 

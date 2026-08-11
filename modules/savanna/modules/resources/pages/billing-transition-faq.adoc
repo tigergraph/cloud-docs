@@ -62,7 +62,7 @@ No payments will be processed while the invoicing platform is unavailable. This 
 
 Once the new invoicing platform is available, an invoice will be generated for all usage recorded since your last payment. Payment will then be processed through your existing billing method.
 
-Because the transition may extend beyond a typical monthly billing cycle, the resulting invoice or payment may be higher than usual.k
+Because the transition may extend beyond a typical monthly billing cycle, the resulting invoice or payment may be higher than usual.
 
 === Will my invoice due dates or payment deadlines change?
 

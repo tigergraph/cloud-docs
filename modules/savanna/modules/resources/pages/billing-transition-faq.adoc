@@ -20,7 +20,7 @@ The following *billing information* and *capabilities* will be temporarily unava
 
 * Current usage and estimated cost information
 * Billing period and product-level cost details
-* Invoice generation, history, downloads, and payment status
+* Invoice generation, downloads, payment status, and access to historical invoices
 * Invoice payments and automatic payment processing
 * Credit balances, grants, expiration details, and transaction history
 
@@ -70,9 +70,11 @@ No. Your existing invoice due dates and payment deadlines will not change becaus
 
 Because invoice payments will not be available through Savanna, TigerGraph will contact affected customers directly with payment instructions when required.
 
-=== Will my historical invoices remain available?
+=== Will I be able to access my historical invoices?
 
-Yes. Your historical invoices and related billing information will be retained and made available through the new billing platform.
+Historical invoices generated before *August 19, 2026* will not be available in Savanna during or after the billing platform transition.
+
+We recommend downloading any invoices you may need before the transition begins. If you need a historical invoice after August 19, 2026, TigerGraph Support can provide it upon request.
 
 == Credits
 

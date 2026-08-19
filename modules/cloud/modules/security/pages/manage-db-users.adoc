@@ -23,7 +23,7 @@ image::database-access.png[]
 * Make sure to keep a record of the username and password when you create the user.
 The password is no longer visible once you leave the page.
 . Assign roles to the user as needed.
-For details on TigerGraph's role-based access control model, see xref:tigergraph-server:user-access:access-control-model.adoc#_role_based_access_control[Access Control Model].
+For details on TigerGraph's role-based access control model, see https://www.tigergraph.com/docs/tigergraph-server/4.3/user-access/access-control-model/#_role_based_access_control[Access Control Model^].
 
 == Delete a database user
 

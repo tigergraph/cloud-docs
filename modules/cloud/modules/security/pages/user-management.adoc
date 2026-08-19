@@ -19,10 +19,10 @@ See xref:idp.adoc[] for more information.
 
 == TigerGraph user access levels
 
-On the individual cluster level, the same https://www.tigergraph.com/docs/gui/4.3/admin-portal/management/user-management/[role-based access control^] used by the on-premises version of TigerGraph also applies to TigerGraph Cloud Classic.
+On the individual cluster level, the same xref:gui:admin-portal:management/user-management.adoc[role-based access control] used by the on-premises version of TigerGraph also applies to TigerGraph Cloud Classic.
 Each cluster can have many TigerGraph Cloud Classic users and each user can have different roles for each graph with different privileges.
 
-For more information on how to manage users and roles in Admin Portal, see https://www.tigergraph.com/docs/gui/4.3/admin-portal/management/user-management/[Manage Users^].
+For more information on how to manage users and roles in Admin Portal, see xref:gui:admin-portal:management/user-management.adoc[].
 
 [NOTE]
 ====

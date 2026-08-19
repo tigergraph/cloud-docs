@@ -88,7 +88,7 @@ Now that you have an authorization token, you can proceed to make requests to yo
 ==== Token Request
 To use the authorization token, include it in the request header as a bearer token.
 
-The following example makes a request to the https://www.tigergraph.com/docs/tigergraph-server/4.3/API/built-in-endpoints/#_list_vertices[List vertices^] endpoint on a cluster with the https://www.youtube.com/watch?v=s6-QapCEz1M&feature=youtu.be&ab_channel=TigerGraph[COVID-19 starter kit].
+The following example makes a request to the xref:tigergraph-server:API:built-in-endpoints.adoc#_list_vertices[List vertices] endpoint on a cluster with the https://www.youtube.com/watch?v=s6-QapCEz1M&feature=youtu.be&ab_channel=TigerGraph[COVID-19 starter kit].
 
 The request lists 5 patients and their ages.
 
@@ -171,4 +171,4 @@ curl -H "Authorization: GSQL-Secret fc6p0i2ijjt031n0sja6m9ci70p232h7" \
 "https://aa768d833bbf47fea6db80a7972a9477.i.tgcloud.io:443/restpp/graph/MyGraph/vertices/Patient?limit=5&select=birth_year"
 ----
 
-See https://www.tigergraph.com/docs/tigergraph-server/4.3/API/built-in-endpoints/[Built-in Endpoints^] to learn about all the endpoints available.
+See xref:tigergraph-server:API:built-in-endpoints.adoc[] to learn about all the endpoints available.

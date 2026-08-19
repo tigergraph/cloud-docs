@@ -1,18 +1,34 @@
-= Workgroup Overview
+= About workgroups
+:experimental:
 
-A workgroup represents a project or a logical group within TigerGraph Savanna.
-It serves as a container that holds multiple xref:savanna:workgroup-workspace:workspaces/workspace.adoc[Workspaces and Databases] related to a specific use case, team, or application.
-
-//image::defineworkgroupvsworkspace2.png[]
+A workgroup is the project boundary in TigerGraph Savanna.
+It groups the workspaces and databases that belong to one team, use case, or application, and it is where you set access and network rules for that boundary.
 
 image::defineworkgroupvsworkspace.png[width=500]
 
-[TIP]
-Workgroups provide a way to organize and manage resources, access controls, and configurations for a particular project or initiative.
+== What lives in a workgroup
 
-== Next Step
+* Workspaces, which are the compute you attach to a database for loading, querying, and analytics.
+* Databases, which hold the persistent graph data those workspaces connect to.
+* Access and network settings that apply across the workspaces inside the workgroup.
 
-See xref:savanna:workgroup-workspace:workgroups/how2-create-a-workgroup.adoc[] to get started.
+A workgroup does not run queries itself.
+It organizes the resources that do.
 
-Return to the xref:savanna:workgroup-workspace:index.adoc[] page or xref:savanna:overview:index.adoc[Overview] page for a different topic.
+== Why use a workgroup
 
+Savanna creates your first workgroup (and a workspace inside it) when you register.
+Add another workgroup when you want a second project, team, or environment, so access, regions, and resources stay separated.
+
+Creating a workgroup is a two-step wizard: you name the workgroup, then you create its first workspace.
+
+[NOTE]
+====
+Name the workgroup after the project or team it serves, such as `fraud-detection` or `customer-360`, so it stays easy to find as you add more workspaces.
+====
+
+== Where to go next
+
+* xref:savanna:workgroup-workspace:workgroups/how2-create-a-workgroup.adoc[Create a workgroup]
+* xref:savanna:workgroup-workspace:workgroups/how2-workgroup-access.adoc[Manage workgroup access]
+* xref:savanna:workgroup-workspace:workspaces/workspace.adoc[About workspaces]

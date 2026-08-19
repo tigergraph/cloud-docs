@@ -1,6 +1,11 @@
-= Graph Development
+= Build
+:experimental:
 
-Welcome! This guide provides an overview of the essential tools and processes for managing and developing your graph databases. Here, you will find comprehensive guides and resources to help you design, load, query, and explore a graph database. Click on the sections below to learn more about each area.
+Model, load, query, and explore graphs on Savanna.
+New here? Start with xref:savanna:get-started:first-graph-ui.adoc[Build your graph in Savanna], or xref:savanna:get-started:connect-agent-mcp.adoc[Connect AI tools with MCP] once you have a graph.
+Or use xref:savanna:build-ai:index.adoc[Build a graph with AI] as a console shortcut.
+
+This hub links the core Build workflows. Use xref:savanna:workgroup-workspace:workspaces/connect-via-api.adoc[Connect via APIs] or xref:savanna:get-started:connect-agent-mcp.adoc[Connect AI tools with MCP] when you are ready to call the same graph from code or an agent.
 
 == xref:load-data/index.adoc[Load Data]
 
@@ -76,4 +81,4 @@ This section covers the powerful and sophisticated functionalities that allow yo
 
 == Next Steps
 
-Learn how to manage your workgroups and workspaces in xref:savanna:workgroup-workspace:index.adoc[Workgroup and Workspace Management].
+Learn how to manage your workgroups and workspaces in xref:savanna:workgroup-workspace:index.adoc[Workgroups and workspaces].

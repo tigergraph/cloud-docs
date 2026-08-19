@@ -1,18 +1,31 @@
-= Administrative Settings Overview
+= Settings
 :experimental:
 
-Here you can learn about the configurations for an organization.
+Configure organization options, create API keys for the control plane, and create database secrets for the data plane.
 
-== xref:savanna:administration:settings/how2-use-organization-mgnt.adoc[]
+== Tasks
 
-Learn about the organization management features that allow you to configure organization settings.
+[.start-cards,cols="2",grid=none,frame=none, separator=¦]
+|===
+¦
+xref:savanna:administration:settings/how2-use-organization-mgnt.adoc[Organization settings]
 
-== xref:savanna:administration:settings/how2-create-api-key.adoc[]
+Configure organization-level options and preferences.
+¦
+xref:savanna:administration:settings/how2-create-api-key.adoc[Create an API key]
 
-Learn how to create API keys for your organization.
+Authenticate scripts and services against the control plane.
+¦
+xref:savanna:administration:settings/how2-create-database-secret.adoc[Create a database secret]
 
-== Next Steps
+Authenticate tools and agents against a workspace database.
+¦
+xref:savanna:administration:security/index.adoc[Security settings]
 
-Next, learn about xref:savanna:administration:security/index.adoc[] or additional xref:savanna:resources:index.adoc[] in TigerGraph Savanna.
+Set the password policy and configure SSO with your identity provider.
+|===
 
-Return to the xref:savanna:overview:index.adoc[Overview] page for a different topic.
+== Where to go next
+
+* xref:savanna:resources:index.adoc[Resources] covers comparison tables, FAQs, and support.
+* xref:savanna:overview:changelog.adoc[Changelog] covers what changed in recent Savanna releases.

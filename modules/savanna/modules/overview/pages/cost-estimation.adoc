@@ -10,6 +10,6 @@ https://tgcloud.io/price.html[TigerGraph Savanna Cost Estimation^]
 
 == Next Steps
 
-Next, see xref:savanna:get-started:index.adoc[] to unlock its full potential.
+Next, xref:savanna:get-started:first-graph-ui.adoc[Build your graph in Savanna].
 
 Return to xref:savanna:overview:index.adoc[TigerGraph Savanna] for another topic.

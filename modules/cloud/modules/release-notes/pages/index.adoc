@@ -5,7 +5,7 @@
 New updates to TigerGraph Cloud Classic, both to the user experience and the backend capability, are regularly released.
 This page provides a summary of each update upon release.
 
-These TigerGraph Cloud Classic updates are separate from updates to the core TigerGraph architecture. For release notes about new TigerGraph versions, see https://www.tigergraph.com/docs/tigergraph-server/4.3/release-notes/[TigerGraph Server Release Notes^].
+These TigerGraph Cloud Classic updates are separate from updates to the core TigerGraph architecture. For release notes about new TigerGraph versions, see xref:tigergraph-server:release-notes:index.adoc[TigerGraph Server Release Notes].
 
 Cloud clusters are not automatically upgraded to a new TigerGraph version when a new version is released.
 For version upgrades for existing clusters, please contact TigerGraph Support.

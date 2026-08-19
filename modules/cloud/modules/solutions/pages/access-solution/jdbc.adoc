@@ -64,10 +64,10 @@ $ keytool -import -alias <your TigerGraph Cloud Classic URL> -file ~/tgcloud.crt
 
 == Create the secret key on your TigerGraph instance
 
-Go to https://www.tigergraph.com/docs/gui/4.3/admin-portal/overview/[Admin Portal^], then on the sidebar, go to Management > Users.
+Go to xref:gui:admin-portal:overview.adoc[Admin Portal], then on the sidebar, go to Management > Users.
 
 Choose the graph you want to access.
-Create a secret key by following the instructions on the https://www.tigergraph.com/docs/gui/4.3/admin-portal/management/user-management/#manage-secrets[Manage Secrets^] page.
+Create a secret key by following the instructions on the xref:gui:admin-portal:management/user-management.adoc#manage-secrets[Manage Secrets] page.
 
 Save the secret key separately on your server.
 This key will be your password to access the TigerGraph database.

@@ -21,7 +21,9 @@ asciidoc:
 output:
   dir: ./build/site
 
+# Local UI development: clone antora-ui as a sibling repo, run `gulp build` there,
+# then build or preview cloud-docs with `npm run build:local` or `npm run dev`.
 ui:
   bundle:
-    url: https://github.com/tigergraph/antora-ui/blob/main/build/ui-bundle.zip?raw=true
+    url: ../antora-ui/public/_
     snapshot: true

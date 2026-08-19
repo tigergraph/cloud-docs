@@ -24,7 +24,7 @@ The system recognizes a verified email address on the registration page and allo
 ====
 TigerGraph recommends enterprise customers use a shared mailbox to set up an organization account.
 TigerGraph Cloud Classic sends important email notifications to this address, including for:
-
++
 * Billing and credits
 * Cluster behavior
 * New cloud products

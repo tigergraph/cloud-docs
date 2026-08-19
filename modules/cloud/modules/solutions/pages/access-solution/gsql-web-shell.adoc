@@ -8,7 +8,7 @@ It includes useful developer tools such as keyboard shortcuts and customized aut
 
 Most TigerGraph Cloud Classic solutions, free and paid, have access to the GSQL Shell in the TigerGraph suite.
 
-Please see the main xref:tigergraph-server:gsql-shell:web.adoc[GSQL Shell documentation page] for complete information.
+Please see the main https://www.tigergraph.com/docs/tigergraph-server/4.3/gsql-shell/web/[GSQL Shell documentation page^] for complete information.
 
 == Access
 

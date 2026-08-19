@@ -1,0 +1,420 @@
+= Connect AI tools with MCP
+:experimental:
+
+TigerGraph MCP connects AI development tools to your TigerGraph database, allowing agents to manage graphs, explore schemas, query graph data, load data, and perform database operations using MCP tools.
+
+This page explains what MCP is, what TigerGraph MCP server is, and gets you from install to a successful tool call in Cursor, VS Code, Claude Code, or Claude Desktop.
+
+== What is MCP?
+
+The link:https://modelcontextprotocol.io/[Model Context Protocol^] (MCP) is an open standard that connects AI applications to external systems through a common interface.
+Instead of hardcoding a custom integration for every service, an *MCP client* (your AI tool) connects to an *MCP server* that exposes capabilities as *tools* the model can call.
+
+When you ask the agent to do something, it chooses which tools to call, runs them, and uses the results to complete your request.
+Because MCP is standardized, the same server works across any MCP-capable client, such as Cursor, VS Code, Claude Code, and Claude Desktop.
+
+How it works in practice:
+
+* The AI client decides *when* to call a tool based on your prompt and the conversation, so you do not have to invoke tools manually.
+* Each tool call runs *during* response generation, so the agent works with live data from the connected system instead of relying on training data or guesswork.
+* Tools can both read and act, so an agent can inspect a system and, when you ask, change it.
+
+== What is TigerGraph MCP server?
+
+The TigerGraph MCP server is TigerGraph's implementation of the Model Context Protocol, distributed as the `tigergraph-mcp` Python package on link:https://pypi.org/project/tigergraph-mcp/[PyPI^].
+It is the *server* your AI tool (the MCP client) connects to.
+It runs locally as a command-based server that your MCP client launches, and turns TigerGraph database operations into MCP tools your agent can call: creating and managing graphs, exploring schemas, reading and writing vertices and edges, running GSQL, creating loading jobs, and working with vector search.
+
+Once connected, your AI tool works with your Savanna database in natural language.
+You describe what you want; the agent picks the right TigerGraph tools, runs them against the database you configured, and returns the results, with no hand-written REST calls or pasted JSON.
+
+For how the pieces fit together, see <<how-it-works>>.
+
+== What you can do
+
+TigerGraph MCP gives your agent hands-on access to the database, so you work in plain language instead of REST calls and GSQL boilerplate. From a single prompt, the agent can:
+
+* *Design and evolve graphs.* Create graphs, read and change schemas, and reshape the data model as your requirements shift.
+* *Read and write graph data.* Fetch vertices and edges, traverse neighbors, and upsert new data without leaving the chat.
+* *Query the graph.* Ask a question in plain English; the agent writes and runs the GSQL, fetches the results, and explains them back to you. It can also install and reuse queries for repeatable, production-grade workflows.
+* *Load at scale.* Create loading jobs, pull from the sources Savanna supports, and track job status as data lands.
+* *Power vector search.* Manage vector attributes, upsert embeddings, and run top-k similarity search for RAG and recommendations.
+* *Check its own work.* Inspect vertex, edge, and degree counts, and discover the tools and workflows it needs for multi-step tasks.
+
+Under the hood that is dozens of tools, but you never call them directly. You describe the goal; the agent picks the tools, runs them against your database, and reports back with real results.
+
+== Before you start
+
+* A running Savanna xref:savanna:workgroup-workspace:workspaces/workspace.adoc[workspace] with an attached database. If you do not have one yet, xref:first-graph-ui.adoc[build a graph in the console] first.
+* A database secret for that database. See xref:savanna:administration:settings/how2-create-database-secret.adoc[Create a database secret].
+* link:https://docs.astral.sh/uv/[uv^] installed, if you use the recommended `uvx` path.
+
+== How the server runs
+
+You do not start the server yourself. Your MCP client launches it from the command in your configuration.
+
+The TigerGraph MCP server is distributed as a Python package. The recommended command uses `uvx` (bundled with `uv`), which runs it in an isolated environment with no separate install, the way `npx` runs npm tools.
+
+[source,json]
+----
+"command": "uvx",
+"args": ["tigergraph-mcp"]
+----
+
+Prefer to install it yourself? Run `pip install tigergraph-mcp` and set `"command": "tigergraph-mcp"` instead.
+
+== Configure your connection
+
+Set three environment variables in your MCP client configuration.
+
+[cols="1,1,2",options="header"]
+|===
+|Variable |Required |What to use
+
+|`TG_HOST`
+|Yes
+|Your Savanna workspace URL. Open *Workspaces*, select the workspace, and copy its URL.
+
+|`TG_SECRET`
+|Yes
+|A database secret for that workspace's database. See xref:savanna:administration:settings/how2-create-database-secret.adoc[Create a database secret].
+
+|`TG_GRAPHNAME`
+|No
+|The graph to use by default. Set it if most of your work is on one graph. Leave it out if you work across several. You can still pass a different graph on any single tool call.
+|===
+
+== Connect your AI tool
+
+Pick your client, install the server, then fill in your own values.
+The install links carry placeholders only, so you never enter credentials on this page.
+
+[tabs]
+====
+Cursor::
++
+--
+image:mcp-install-cursor.svg[Add to Cursor,role=install-badge,link="cursor://anysphere.cursor-deeplink/mcp/install?name=tigergraph&config=eyJjb21tYW5kIjoidXZ4IiwiYXJncyI6WyJ0aWdlcmdyYXBoLW1jcCJdLCJlbnYiOnsiVEdfSE9TVCI6IllPVVJfV09SS1NQQUNFX1VSTCIsIlRHX0dSQVBITkFNRSI6IllPVVJfR1JBUEhfTkFNRSIsIlRHX1NFQ1JFVCI6IllPVVJfREFUQUJBU0VfU0VDUkVUIn19"]
+
+To open Cursor and add the TigerGraph MCP server automatically, select *Add to Cursor*.
+You can also add the following to your `~/.cursor/mcp.json` file.
+To learn more, see the link:https://cursor.com/docs/mcp[Cursor documentation^].
+
+[source,json]
+----
+{
+  "mcpServers": {
+    "tigergraph": {
+      "command": "uvx",
+      "args": ["tigergraph-mcp"],
+      "env": {
+        "TG_HOST": "YOUR_WORKSPACE_URL",
+        "TG_GRAPHNAME": "YOUR_GRAPH_NAME",
+        "TG_SECRET": "YOUR_DATABASE_SECRET"
+      }
+    }
+  }
+}
+----
+--
+
+Claude Desktop::
++
+--
+Add the following to your Claude Desktop config file.
+On macOS open `~/Library/Application Support/Claude/claude_desktop_config.json`, and on Windows open `%APPDATA%\Claude\claude_desktop_config.json`.
+You can also use *Settings → Developer → Edit Config*.
+Save the file, then restart Claude Desktop fully.
+To learn more, see the link:https://modelcontextprotocol.io/quickstart/user[Claude Desktop documentation^].
+
+[source,json]
+----
+{
+  "mcpServers": {
+    "tigergraph": {
+      "command": "uvx",
+      "args": ["tigergraph-mcp"],
+      "env": {
+        "TG_HOST": "YOUR_WORKSPACE_URL",
+        "TG_GRAPHNAME": "YOUR_GRAPH_NAME",
+        "TG_SECRET": "YOUR_DATABASE_SECRET"
+      }
+    }
+  }
+}
+----
+--
+
+VS Code::
++
+--
+image:mcp-install-vscode.svg[Install Server,role=install-badge,link="https://vscode.dev/redirect/mcp/install?name=tigergraph&config=%7B%22type%22%3A%22stdio%22%2C%22command%22%3A%22uvx%22%2C%22args%22%3A%5B%22tigergraph-mcp%22%5D%2C%22env%22%3A%7B%22TG_HOST%22%3A%22YOUR_WORKSPACE_URL%22%2C%22TG_GRAPHNAME%22%3A%22YOUR_GRAPH_NAME%22%2C%22TG_SECRET%22%3A%22YOUR_DATABASE_SECRET%22%7D%7D"]
+
+To open VS Code and add the TigerGraph MCP server automatically, select *Install Server*.
+You can also add the following to a workspace file at `.vscode/mcp.json`, or run *MCP: Open User Configuration* for a user level file.
+To learn more, see the link:https://code.visualstudio.com/docs/copilot/chat/mcp-servers[VS Code documentation^].
+
+[source,json]
+----
+{
+  "servers": {
+    "tigergraph": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": ["tigergraph-mcp"],
+      "env": {
+        "TG_HOST": "YOUR_WORKSPACE_URL",
+        "TG_GRAPHNAME": "YOUR_GRAPH_NAME",
+        "TG_SECRET": "YOUR_DATABASE_SECRET"
+      }
+    }
+  }
+}
+----
+--
+
+Claude Code::
++
+--
+Add the TigerGraph MCP server from the terminal, then restart Claude Code.
+
+[source,bash]
+----
+claude mcp add --transport stdio tigergraph \
+  --env TG_HOST=YOUR_WORKSPACE_URL \
+  --env TG_GRAPHNAME=YOUR_GRAPH_NAME \
+  --env TG_SECRET=YOUR_DATABASE_SECRET \
+  -- uvx tigergraph-mcp
+----
+
+You can also add the following to a project file at `.mcp.json`.
+To learn more, see the link:https://code.claude.com/docs/en/mcp[Claude Code documentation^].
+
+[source,json]
+----
+{
+  "mcpServers": {
+    "tigergraph": {
+      "command": "uvx",
+      "args": ["tigergraph-mcp"],
+      "env": {
+        "TG_HOST": "YOUR_WORKSPACE_URL",
+        "TG_GRAPHNAME": "YOUR_GRAPH_NAME",
+        "TG_SECRET": "YOUR_DATABASE_SECRET"
+      }
+    }
+  }
+}
+----
+--
+====
+
+Once the TigerGraph MCP server is configured with the values from xref:connect-agent-mcp.adoc#_configure_your_connection[Configure your connection], ask your agent:
+
+----
+List the graphs available in my TigerGraph database.
+----
+
+If the agent returns graph information, the connection is working.
+
+== Try TigerGraph MCP
+
+After the connection works, try these prompts.
+Start with read-only requests.
+
+=== Explore your database
+
+----
+List the graphs available in my TigerGraph database.
+----
+
+----
+Show the schema of my graph and explain how the vertex types are connected.
+----
+
+----
+Show the vertex and edge counts for my graph.
+----
+
+=== Explore graph data
+
+----
+Find the neighbors of a sample vertex and explain the relationships.
+----
+
+----
+Show me a few sample vertices from this graph.
+----
+
+=== Query the graph
+
+----
+Write a GSQL query to find the top 10 vertices by degree.
+----
+
+Review the query before allowing the agent to install or run it.
+
+=== Load data
+
+----
+Show me the TigerGraph MCP tools available for loading data.
+----
+
+----
+Help me create a loading job for this CSV file.
+----
+
+=== Discover MCP capabilities
+
+----
+What TigerGraph tools do you have available?
+----
+
+[[how-it-works]]
+== How it works
+
+The TigerGraph MCP server runs locally as a command-based MCP server:
+
+----
+Cursor / VS Code / Claude Code / Claude Desktop
+              |
+              | MCP over stdio
+              v
+       tigergraph-mcp
+              |
+              | pyTigerGraph
+              v
+      TigerGraph Savanna
+----
+
+* The AI application launches `tigergraph-mcp` on your machine.
+* The TigerGraph MCP server exposes TigerGraph operations as MCP tools.
+* The AI application decides which tools to call based on your request.
+* The TigerGraph MCP server uses your configured Savanna connection details to perform the operations.
+* Tool results return to the AI application and appear in its response.
+
+=== Tool behavior
+
+Your AI client determines which TigerGraph MCP tools to use based on your prompt and the current conversation.
+
+Example:
+
+----
+"Show me my graph schema"
+          ↓
+AI chooses a schema tool
+          ↓
+TigerGraph MCP server
+          ↓
+Savanna
+----
+
+For a more complex task such as "Load this customer CSV and verify the data", the agent may:
+
+. Inspect the graph schema
+. Discover loading tools
+. Create or run a loading job
+. Check vertex and edge counts
+. Return the result
+
+[CAUTION]
+====
+Actions performed through TigerGraph MCP run against the connected database and can modify or permanently delete data and graph resources. Review destructive tool calls carefully before approving them, particularly in production.
+====
+
+== Troubleshooting
+
+=== `uvx` is not found
+
+macOS:
+
+[source,bash]
+----
+which uvx
+----
+
+Windows:
+
+[source,powershell]
+----
+where.exe uvx
+----
+
+If the MCP client cannot resolve `uvx`, set `command` to the absolute path returned by your shell.
+
+=== `tigergraph-mcp` is not found
+
+Verify the package is installed:
+
+[source,bash]
+----
+pip install tigergraph-mcp
+----
+
+Then locate the executable:
+
+macOS:
+
+[source,bash]
+----
+which tigergraph-mcp
+----
+
+Windows:
+
+[source,powershell]
+----
+where.exe tigergraph-mcp
+----
+
+Use that absolute path as `command` if the client cannot find it on `PATH`.
+
+=== Works in the terminal but not in the MCP client
+
+Desktop applications can use a different `PATH` than your terminal.
+Use the full executable path in `command`.
+
+Examples:
+
+[source,json]
+----
+"command": "/absolute/path/to/uvx"
+----
+
+[source,json]
+----
+"command": "C:\\absolute\\path\\to\\uvx.exe"
+----
+
+Do not assume a fixed install directory.
+The same approach applies to `tigergraph-mcp`.
+
+=== MCP starts but cannot connect
+
+Check that:
+
+* `TG_HOST` points to the intended Savanna workspace
+* `TG_SECRET` is valid for the intended database
+* `TG_GRAPHNAME`, if present, matches a graph in that database
+* You remove `TG_GRAPHNAME` when a graph-specific default is unnecessary
+* The selected workspace and database are available
+
+=== Windows JSON paths
+
+Escape backslashes in JSON:
+
+[source,json]
+----
+"command": "C:\\path\\to\\uvx.exe"
+----
+
+== Feedback and contributions
+
+Found a bug or unexpected behavior? Open an issue in the link:https://github.com/tigergraph/tigergraph-mcp[TigerGraph MCP GitHub repository^]. If you have a fix, submit a pull request.
+
+== Related
+
+* Same outcomes without an agent: xref:savanna:workgroup-workspace:workspaces/connect-via-api.adoc[Connect via APIs]
+* Console snippet generator: xref:savanna:workgroup-workspace:workspaces/connect-via-api.adoc[Connect via APIs]
+* Load data in the console: xref:savanna:graph-development:load-data/index.adoc[Load data]
+* Write queries in the console: xref:savanna:graph-development:gsql-editor/index.adoc[GSQL Editor]

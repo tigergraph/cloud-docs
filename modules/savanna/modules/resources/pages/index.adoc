@@ -1,36 +1,44 @@
 = Resources
 :experimental:
 
-Resources provide other documents to help support your TigerGraph Savanna journey.
+Reference material for TigerGraph Savanna: how the product works, how offerings compare, cloud providers, and support.
 
-== xref:resources:glossary.adoc[]
+== Product
 
-Here you can refer terms used in TigerGraph Savanna.
+[.start-cards,cols="2",grid=none,frame=none, separator=¦]
+|===
+¦
+xref:savanna:overview:overview.adoc[How Savanna works]
 
-== xref:resources:support.adoc[]
+Architecture and product concepts behind the managed service.
+¦
+xref:savanna:overview:comparison_table.adoc[Compare offerings]
 
-Here you can learn how to get support.
+See how Savanna compares to Enterprise Server and Cloud Classic.
+¦
+xref:quota_policy.adoc[Plans and quota policy]
 
-== xref:resources:faqs.adoc[]
+Subscription plans and the quota rules that apply to them.
+¦
+xref:savanna:overview:changelog.adoc[What's new]
 
-Here you can find answers to frequently asked questions.
+Recent features, improvements, and fixes in the Savanna changelog.
+|===
 
-== xref:resources:aws.adoc[]
+== Cloud providers
 
-Here you can learn about Amazon Web Services (AWS).
+* xref:resources:aws.adoc[Amazon Web Services]
+* xref:resources:gcp.adoc[Google Cloud Platform]
+* xref:resources:azure.adoc[Microsoft Azure]
 
-== xref:resources:gcp.adoc[]
+== Help
 
-Here you can learn about Google Cloud Platform (GCP).
+* xref:resources:glossary.adoc[Glossary]
+* xref:resources:support.adoc[Support]
+* xref:resources:faqs.adoc[FAQs]
+* xref:resources:billing-transition-faq.adoc[Billing transition FAQ]
 
-== xref:resources:azure.adoc[]
+== Where to go next
 
-Here you can learn about Microsoft Azure.
-
-== Policy Documents
-
-If you are a participating TigerGraph Savanna user, please review our policy documents:
-
-* xref:quota_policy.adoc[TigerGraph Savanna Subscription Plans and Quota Policy]
-
-
+* xref:savanna:overview:index.adoc[Introduction] for getting started paths and common tasks.
+* xref:savanna:administration:index.adoc[Administration] for users, access, and organization settings.

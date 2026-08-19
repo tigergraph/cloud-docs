@@ -4,13 +4,15 @@ version: main
 display_version: default
 start_page: overview:index.adoc
 
+# Nav order: Start → Workgroups/workspaces → Build → Reference
+# Orphan modules security/, schema-designer/, and automate/ are intentionally omitted
+# (content lives under administration/, graph-development/, get-started/, and workgroup-workspace/).
 nav:
   - modules/overview/nav.adoc
   - modules/get-started/nav.adoc
   - modules/workgroup-workspace/nav.adoc
-  - modules/build-ai/nav.adoc
   - modules/graph-development/nav.adoc
   - modules/rest-api/nav.adoc
-  - modules/integrations/nav.adoc
   - modules/administration/nav.adoc
+  - modules/integrations/nav.adoc
   - modules/resources/nav.adoc

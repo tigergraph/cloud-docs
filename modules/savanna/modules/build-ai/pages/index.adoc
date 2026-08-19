@@ -1,7 +1,7 @@
-= Build a Graph with AI
+= Build a graph with AI
 :experimental:
 
-AI Build takes you from CSV files to a ready‑to‑explore graph in minutes. It drafts a schema, loads your data, installs queries, and surfaces quick insights—fully guided and automated.
+AI Build takes you from CSV files to a ready-to-explore graph in minutes. It drafts a schema, loads your data, installs queries, and surfaces quick insights, fully guided and automated.
 
 == Prerequisites
 
@@ -81,10 +81,10 @@ image::6.2-build-action.png[]
 * If an error appears during schema creation or data load, adjust your CSV/TSV files (headers, separators, column counts) and try again.
 * Keep the page open while AI builds the graph.
 
-== Next Steps
+== Where to go next
 
-* Explore your graph: xref:savanna:graph-development:explore-graph/index.adoc[]
-* Edit schema visually: xref:savanna:graph-development:design-schema/index.adoc[]
-* Write queries: xref:savanna:graph-development:gsql-editor/index.adoc[]
+* xref:savanna:graph-development:explore-graph/index.adoc[Explore graph]
+* xref:savanna:graph-development:design-schema/index.adoc[Design a schema]
+* xref:savanna:graph-development:gsql-editor/index.adoc[GSQL Editor]
 
 

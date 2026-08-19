@@ -1,24 +1,39 @@
-= REST API (Preview)
+= REST API reference (Preview)
 :experimental:
 
-TigerGraph Savanna REST API provides a set of endpoints that allow developers to interact programmatically with TigerGraph Savanna services. Those APIs enable you to manage your graph databases and perform various administrative tasks.
+Control-plane REST API for managing TigerGraph Savanna (workgroups, workspaces, and related resources) via `api.tgcloud.io`.
+
+For data-plane queries on a workspace, see xref:savanna:workgroup-workspace:workspaces/connect-via-api.adoc[Connect via APIs].
+For agent-based access, see xref:savanna:get-started:connect-agent-mcp.adoc[Connect AI tools with MCP].
 
 [IMPORTANT]
 ====
-The TigerGraph Savanna REST API is currently in preview version. Features and endpoints may change as the API evolves.
+The TigerGraph Savanna REST API is currently in preview. Features and endpoints may change as the API evolves.
 ====
 
+== Reference
 
-== xref:savanna:rest-api:authentication.adoc[]
+[.start-cards,cols="2",grid=none,frame=none, separator=¦]
+|===
+¦
+xref:savanna:rest-api:authentication.adoc[Authentication]
 
-Learn how to authenticate with the TigerGraph Savanna REST API.
+Authenticate to the control plane before you call any endpoint.
+¦
+xref:savanna:rest-api:endpoints.adoc[Endpoints]
 
+Browse the available control-plane endpoints.
+¦
+xref:savanna:rest-api:definitions.adoc[Definitions]
 
-== xref:savanna:rest-api:endpoints.adoc[]
+Look up request and response schemas used by the API.
+¦
+xref:savanna:administration:settings/how2-create-api-key.adoc[Create an API key]
 
-Explore the REST API endpoints available in TigerGraph Savanna.
+Generate a key for scripts and services that call the control plane.
+|===
 
-== xref:savanna:rest-api:definitions.adoc[]
+== Where to go next
 
-Look up the REST API data schema definitions in TigerGraph Savanna.
-
+* xref:savanna:workgroup-workspace:workspaces/connect-via-api.adoc[Connect via APIs] for data-plane curl, Python, and JavaScript examples.
+* xref:savanna:get-started:connect-agent-mcp.adoc[Connect AI tools with MCP] when you want an AI agent to work against your database.

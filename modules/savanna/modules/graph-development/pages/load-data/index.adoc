@@ -1,9 +1,9 @@
-= Load Data in TigerGraph Savanna
+= Load data
 :experimental:
 
-Efficiently loading data into your TigerGraph databases is crucial for successful graph analysis.
+Load data into a TigerGraph database from local files or connected sources.
 
-== Load Data Overview
+== Load data overview
 .TigerGraph Savanna offers multiple methods for loading data:
 . Select an active workspace from the dropdown menu.
 +
@@ -35,7 +35,7 @@ So, you have more flexibility and control over the data loading process.
 You can leverage GSQL's powerful features to transform, validate, and load data from various sources into your graph database.
 ====
 
-=== Data Loading Tool Limitations
+=== Data loading tool limitations
 
 When selecting a data source a step-by-step guide might not always be available.
 When this is the case users will see btn:[Open in GSQL Editor] on the bottom right of the panel.
@@ -46,37 +46,44 @@ image::open-in-gsql-editor.png[width=200]
 ====
 As of Oct. 31, 2024, the step-by-step guide supports loading from xref:savanna:graph-development:load-data/load-from-local.adoc[Local File], xref:savanna:graph-development:load-data/load-from-s3.adoc[Amazon S3], xref:savanna:graph-development:load-data/load-from-gcs.adoc[Google Cloud Storage] and xref:savanna:graph-development:load-data/load-from-blob.adoc[Azure Blob Storage].
 We are actively working on adding support for more data sources.
-
 ====
 
-== xref:savanna:graph-development:load-data/load-from-local.adoc[]
+== Data sources
 
-Check out our step-by-step guide on loading data from a local file.
+[.start-cards,cols="2",grid=none,frame=none, separator=¦]
+|===
+¦
+xref:savanna:graph-development:load-data/load-from-local.adoc[Local files]
 
-== xref:savanna:graph-development:load-data/load-from-s3.adoc[]
+Load data from a file on your machine.
+¦
+xref:savanna:graph-development:load-data/load-from-s3.adoc[Amazon S3]
 
-Check out our step-by-step guide on loading data from a Amazon S3.
+Load data from an Amazon S3 bucket.
+¦
+xref:savanna:graph-development:load-data/load-from-gcs.adoc[Google Cloud Storage]
 
-== xref:savanna:graph-development:load-data/load-from-gcs.adoc[]
+Load data from a Google Cloud Storage bucket.
+¦
+xref:savanna:graph-development:load-data/load-from-blob.adoc[Azure Blob Storage]
 
-Check out our step-by-step guide on loading data from a Google Cloud Storage.
+Load data from Azure Blob Storage.
+¦
+xref:savanna:graph-development:load-data/load-from-snowflake.adoc[Snowflake]
 
-== xref:savanna:graph-development:load-data/load-from-blob.adoc[]
+Load data from Snowflake.
+¦
+xref:savanna:graph-development:load-data/load-from-other-sources.adoc[Other sources]
 
-Check out our step-by-step guide on loading data from a Azure Blob Storage.
+Check loading status for additional sources, including JDBC.
+|===
 
-== xref:savanna:graph-development:load-data/load-from-snowflake.adoc[]
+== Related
 
-Check out our step-by-step guide on loading data from Snowflake.
+* xref:savanna:graph-development:load-data/jdbc.adoc[Load from JDBC]
+* xref:savanna:graph-development:load-data/token-function.adoc[Token functions]
 
+== Where to go next
 
-== xref:savanna:graph-development:load-data/load-from-other-sources.adoc[]
-
-Here you can check the status of loading data form other sources in TigerGraph Savanna.
-Or check out our xref:savanna:graph-development:load-data/jdbc.adoc[].
-
-== Next Steps
-Next, learn more about how to xref:savanna:graph-development:design-schema/index.adoc[].
-
-Or return to the xref:savanna:workgroup-workspace:index.adoc[] page or xref:savanna:overview:index.adoc[Overview] page for a different topic.
-
+* xref:savanna:graph-development:design-schema/index.adoc[Design a schema] if you still need to define vertices and edges.
+* xref:savanna:graph-development:index.adoc[Build] for the full set of schema, load, and query workflows.

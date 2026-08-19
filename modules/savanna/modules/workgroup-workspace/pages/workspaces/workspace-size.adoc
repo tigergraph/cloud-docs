@@ -63,5 +63,3 @@ See xref:savanna:workgroup-workspace:workspaces/expansion-shrink.adoc[] to learn
 return to the xref:savanna:workgroup-workspace:index.adoc[] page or xref:savanna:overview:index.adoc[Overview] page for a different topic.
 
 Or visit xref:savanna:overview:pricing.adoc[] and xref:savanna:overview:cost-estimation.adoc[] for detailed information on the costs associated with different workspace sizes.
-
-

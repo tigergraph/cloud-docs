@@ -1,0 +1,504 @@
+= Changelog
+:experimental:
+:page-role: changelog
+:page-toclevels: 1
+:page-aliases: release-notes.adoc
+
+Savanna changelog and product updates.
+Stay up to date with new features, improvements, and bug fixes.
+
+== Aug 5, 2026
+
+=== Enhanced workspace management
+
+Workspace Card and Table views now surface graph functions, database information, and common workspace actions more directly.
+You spend less time drilling into menus when you need to load data, open the GSQL Editor, or adjust settings.
+The views are meant for day-to-day operations, not just scanning what you have running.
+
+=== Longer billing grace periods
+
+Savanna now allows more time before a workspace is suspended or terminated when billing issues come up.
+That extra runway helps you fix an expired card, reprocess an invoice, or sort out a payment method without losing access mid-investigation.
+Fewer surprises when a billing hiccup overlaps with active work.
+
+=== GSQL Editor improvements
+
+The GSQL Editor received usability and reliability fixes for a smoother editing experience.
+Edits, saves, and query runs should feel more predictable during longer development sessions.
+These are incremental quality improvements rather than a full redesign.
+
+=== In-app chatbot retired
+
+The in-app chatbot has been retired as Savanna shifts toward broader developer resources and documentation.
+Support and docs remain available through the usual channels, and more self-service guidance is planned for future releases.
+Use xref:savanna:resources:support.adoc[Support] or the in-platform ticket flow when you need help.
+
+== Jul 1, 2026
+
+=== Flexible maintenance scheduling
+
+Maintenance windows can now repeat on a custom weekly cadence instead of a fixed schedule.
+Set an interval such as every 2 or 4 weeks and Savanna runs recurring maintenance only in that slot, so upgrades land when they least disrupt your workloads.
+This helps when you batch operational changes around a sprint or a monthly release calendar.
+
+=== Automatic maintenance for new workspaces
+
+New workspaces are now created with automatic maintenance upgrades turned on, and the workspace clearly shows that the setting is active.
+Leaving it on means version and security updates are applied for you during the maintenance window.
+You can change or disable the setting at any time after the workspace is created if you prefer to control upgrades yourself.
+
+=== Upgrade notifications
+
+Savanna now notifies you before a workspace is upgraded during an automatic maintenance window.
+The advance notice gives you time to review the change, reschedule if needed, or prepare dependent systems.
+You no longer have to watch the console to learn that an upgrade is coming.
+
+== Jun 3, 2026
+
+=== Enhanced workspace views
+
+You can now switch between Card, Table, and Graph views when managing workspaces.
+Card view is best for a quick visual scan, Table view lets you compare many workspaces by their attributes, and Graph view shows how workspaces relate within a workgroup.
+Pick the layout that fits the task instead of being locked into a single list.
+
+=== Workspace filtering
+
+A filter lets you narrow the workspace list down to what you are looking for instead of scrolling through everything.
+This is especially useful in large organizations that run many workspaces across teams and environments.
+
+=== Savanna health metrics via API
+
+Health and infrastructure metrics are now exposed through APIs, so you can pull them into your own monitoring stack and dashboards.
+The feed includes CPU, disk, IOPS, and service-level utilization, the same operational signals Savanna uses internally.
+Use it to set alerts, track trends, and correlate database health with the rest of your platform.
+
+== May 6, 2026
+
+=== Reprocess unpaid invoices
+
+You can now retry an unpaid invoice directly in Savanna instead of contacting support.
+If a payment failed because of an expired card or a temporary issue, update the payment method and reprocess the invoice in place.
+This shortens the time it takes to clear a billing block and restore normal access.
+
+=== Create support tickets in Savanna
+
+Support tickets can now be created and submitted from inside Savanna, with your account context already attached.
+You stay in one place instead of switching to a separate portal or email thread, which gets your request to the right team faster.
+
+== Apr 15, 2026
+
+=== Start with a sample graph
+
+When you create a workspace you can now start from a pre-loaded sample graph that already includes data and example queries, or start from an empty workspace when you are ready for a real project.
+The sample path lets you explore schema, loading, and querying without setting anything up first.
+It is the fastest way to see how Savanna works from end to end.
+
+=== Schedule version upgrades
+
+You can choose the exact date and time for a maintenance version upgrade, or apply it immediately when you want the change right away.
+Scheduling lets you line an upgrade up with a low-traffic window and coordinate it with your team.
+Nothing forces you to upgrade on Savanna's timing.
+
+=== New database version notifications
+
+Savanna now tells you when a new database version is available and lets you upgrade now or defer to a future maintenance window.
+You stay aware of what is current without being pushed into an unplanned change.
+
+=== Deeper license metrics
+
+License reporting now shows more detail about how your entitlement is used across usage, allocation, and capacity.
+With clearer numbers you can see how close you are to your limits and plan capacity before it becomes a problem.
+
+== Mar 11, 2026
+
+=== Free credit expiration date
+
+Savanna now shows when your free credits expire, so you know exactly how much runway you have.
+The clearer timeline helps you plan evaluation work and avoid losing credits you meant to use.
+
+=== Product tour
+
+A guided product tour walks new users through the platform and points out the features they will use most.
+It shortens the time from first login to a working graph, especially for people who are new to Savanna.
+
+=== Copy queries from the GSQL Editor
+
+A copy action in the GSQL Editor lets you grab a query in one click instead of selecting text by hand.
+Reusing a query in another workspace, sharing it with a teammate, or pasting it into a ticket is now quicker and less error prone.
+
+=== Snowflake key-pair authentication
+
+Savanna now connects to Snowflake using key-pair authentication in addition to passwords.
+This aligns with Snowflake's move away from password-based sign-in and gives your integration a more secure credential that is easier to rotate.
+
+=== GraphStudio GSQL editor in Savanna
+
+The GSQL query editor from GraphStudio is now supported inside Savanna.
+If your team already writes queries in GraphStudio, you get a familiar editing experience without leaving Savanna.
+
+== Feb 12, 2026
+
+=== Billing enforcement for exhausted credits
+
+Organizations that run out of credits and have no valid payment method now have their workspaces paused and scheduled for resource termination, with email warnings sent well before anything is removed.
+The advance notices give you time to add a payment method or export data before termination.
+This keeps billing predictable while protecting you from surprise data loss.
+
+=== Bug fixes
+
+This release includes fixes across query and developer experience, UI and usability, and overall platform stability.
+
+== Dec 10, 2025
+
+=== Clearer workspace deletion
+
+The workspace deletion flow now spells out what will happen before you confirm, so it is harder to remove the wrong workspace by mistake.
+The clearer prompts reduce the risk of an accidental, irreversible delete.
+
+=== Data loading progress visibility
+
+Loading jobs now show progress more clearly while they run, so you can tell whether a job is moving, stalled, or nearly done without guessing.
+
+== Sep 23, 2025
+
+=== Bug fixes
+
+Raised the WorkspaceSchedule timeout from 59 seconds to a full minute to avoid premature timeouts, and corrected the redirect URL used for marketplace access.
+
+== Sep 19, 2025
+
+=== Guided onboarding flow
+
+A guided flow now walks first-time users through mapping their data and setting up a loading job automatically.
+It removes much of the manual setup that used to stand between sign-up and a working graph.
+
+=== AWS Marketplace support
+
+You can now purchase and manage Savanna through AWS Marketplace, with billing and provisioning handled through your AWS account.
+This consolidates the deployment under existing AWS agreements and simplifies procurement.
+
+=== Registration notifications
+
+New notifications guide you through registration tasks so account setup is smoother and you are less likely to miss a required step.
+
+== Aug 28, 2025
+
+=== Clearer Read-Write deletion messaging
+
+Deleting a Read-Write workspace now comes with clearer messaging about the consequences, so the impact of the action is easier to understand before you confirm.
+
+=== Downtime and restore notifications
+
+A banner now warns you about upcoming downtime, and you get a notification when a backup restore finishes.
+You spend less time watching the console to learn the current state.
+
+=== Onboarding credit expiration
+
+Onboarding credits now display their expiration date, so you can see how long they last and plan your evaluation accordingly.
+
+=== Multi-node CPU and memory monitoring
+
+CPU and memory monitoring now covers multi-node deployments and includes alerting.
+You get visibility and warnings for clustered workspaces, not just single-node ones.
+
+=== Mobile optimizations
+
+Several Savanna screens are now optimized for small screens, so common tasks are usable on a phone or tablet.
+
+=== Bug fixes
+
+Assorted platform fixes and stability improvements.
+
+== Aug 14, 2025
+
+=== Bug fixes
+
+Assorted platform fixes and stability improvements.
+
+== Jul 24, 2025
+
+=== My Files grouping
+
+User-created files and folders are now grouped under *My Files*, which cuts sidebar clutter and makes your own work easier to find.
+
+=== Connect via API in the GSQL Editor
+
+The *Connect via API* option moved from the Workspace Connect menu into the GSQL Editor, so connection details sit next to where you write and run queries.
+
+=== Explore from the GSQL Editor
+
+Hovering a vertex in the GSQL Editor now shows an *Explore* button that takes you straight to Explore Graph.
+You can move from a query result to a visual investigation without hunting for the entry point.
+
+=== Clearer GraphStudio restart messaging
+
+When you open GraphStudio while a workspace is restarting, the messaging now explains what is happening, so you are not left wondering why it is unavailable.
+
+=== Bug fixes
+
+Assorted platform fixes.
+
+== Jun 25, 2025
+
+=== Faster Read-Only workspace refresh
+
+Savanna now runs read-only refresh tasks in parallel, and snapshots more accurately capture the data state at the moment the refresh starts.
+The result is faster refreshes and more trustworthy read-only data.
+
+== Jun 11, 2025
+
+=== Configurable auto-upgrade maintenance window
+
+You can set a preferred weekly maintenance window, and automatic version upgrades run only in that slot.
+This gives you control over when upgrades happen, so they land during low-traffic hours.
+
+== May 20, 2025
+
+=== Pre-provisioned workspace for new users
+
+New users now get a ready-to-use workspace loaded with sample graph data at sign-up.
+You can start exploring right away instead of provisioning and loading data first.
+
+== Apr 29, 2025
+
+=== Encrypted log management and search
+
+You can collect, store, and search application logs with Bring Your Own Key encryption, so log data stays under keys you control.
+The added visibility helps with troubleshooting and operational auditing without giving up control of sensitive data.
+
+== Apr 3, 2025
+
+=== Snowflake integration
+
+You can connect securely to Snowflake from Savanna, preview sample data, and auto-generate graph schemas and mappings from your tables.
+From there you can customize transformations and manage loading jobs without leaving Savanna, which shortens the path from warehouse data to a working graph.
+
+=== TigerGraph 4.2 Preview
+
+TigerGraph Database 4.2 is available as a preview in Savanna, so you can try the newest database features ahead of general availability.
+Use it to evaluate upcoming capabilities against your own workloads before they ship broadly.
+
+=== AI help chatbot
+
+An AI-powered help chatbot assists with onboarding, troubleshooting, and support questions right inside Savanna.
+It gives you quick answers without waiting for a support handoff.
+
+== Jan 20, 2025
+
+=== Edit data in Explore Graph
+
+You can now edit graph data directly on the Explore Graph page, so small corrections and updates no longer require a separate query or loading job.
+
+=== Bug fixes
+
+Assorted platform fixes.
+
+== Jan 16, 2025
+
+=== Bring Your Own Cloud
+
+Bring Your Own Cloud (BYOC) is available for enterprise users, letting you deploy Savanna on your own cloud infrastructure.
+You keep the managed experience while meeting data residency, security, and cost requirements on infrastructure you control.
+
+=== Bug fixes
+
+Assorted platform fixes.
+
+== Dec 19, 2024
+
+=== Data Profile
+
+Data Profile is now available in the workspace and summarizes your graph's data distribution, schema, and statistics in one place.
+It gives you a quick health check of what is actually loaded before you build queries on top of it.
+
+=== API documentation
+
+Reference documentation for the Savanna APIs is now available, with the detail you need to automate and integrate against the platform.
+
+=== Delinquent workspace email notices
+
+You now get advance email notice before delinquent workspaces are cleaned up, so you have time to act before resources are removed.
+
+=== Critical memory usage indicators
+
+Visual indicators make critical memory usage easy to spot at a glance, so you can react before a workspace runs into trouble.
+
+=== Bug fixes
+
+Assorted platform fixes.
+
+== Nov 28, 2024
+
+=== Auto stop on Free tier
+
+Auto stop is now enabled and locked on for Free tier workspaces, which keeps idle free workspaces from consuming resources unnecessarily.
+
+=== Cypher auto-completion in the GSQL Editor
+
+The GSQL Editor now offers auto-completion for Cypher, helping you write queries faster and with fewer syntax errors.
+
+=== GSQL Editor tutorials
+
+Built-in tutorials in the GSQL Editor provide ready samples for schema changes, data loading, and queries, which lowers the learning curve for new users.
+
+=== Better automatic mapping
+
+Automatic data mapping is smoother and the graph widget performs better, so setting up a loading job takes less effort.
+
+=== Bug fixes
+
+Assorted platform fixes.
+
+== Nov 13, 2024
+
+=== Clearer Graph Admin configs
+
+Graph Admin configuration screens are reworked to be more straightforward, making common administrative changes easier to find and apply.
+
+=== Separate backup quota checks
+
+Manual and automatic backup limits are now checked separately, and failed backups no longer count against your backup quota.
+You get more predictable backup behavior and fewer false limits.
+
+=== JSON results in the GSQL Editor
+
+Query results can now render as JSON in the GSQL Editor, which is handy when you want to inspect nested output or copy it into another tool.
+
+=== Load a folder of data sources
+
+You can load every file in a folder at once instead of naming each file individually, which speeds up bulk loading jobs.
+
+=== Bug fixes
+
+Assorted platform fixes.
+
+== Oct 31, 2024
+
+=== Alert email recipients
+
+You can add recipients for xref:savanna:workgroup-workspace:workspaces/settings.adoc#_alerts_[alert] emails, so the right people are notified when something needs attention.
+
+=== Unsaved file warnings in the GSQL Editor
+
+The editor now prompts you to save when you leave with unsaved files or schema changes, which helps you avoid losing work.
+
+=== Bug fixes
+
+Assorted platform fixes.
+
+== Oct 15, 2024
+
+=== Scheduled expand and shrink
+
+You can xref:savanna:workgroup-workspace:workspaces/schedule.adoc[schedule workspace expansion and shrink] to match your usage patterns, so capacity grows for peak periods and shrinks when demand drops.
+This keeps performance high while controlling cost.
+
+=== Cross-zone high availability
+
+Cross-zone HA lets you deploy clusters across multiple availability zones for stronger fault tolerance.
+If a zone fails, your workspace stays available, which supports business continuity and disaster recovery.
+
+=== Alerting system
+
+The xref:savanna:workgroup-workspace:workspaces/settings.adoc#_alerts_[alerting] system notifies you about critical events and performance anomalies, so you can act before they affect users.
+
+=== Stability improvements
+
+Improved stability and performance across the platform, plus assorted bug fixes.
+
+== Sep 28, 2024
+
+=== TigerGraph Server 4.1 Preview
+
+link:https://docs.tigergraph.com/tigergraph-server/current/release-notes/[TigerGraph Server 4.1 Preview^] is available on TigerGraph Savanna, giving you early access to the newest server capabilities.
+
+=== Output to Amazon S3
+
+You can now write query output to Amazon S3 and read it back, storing and retrieving data in your own S3 buckets directly from Savanna.
+This makes it easier to move results into the rest of your data pipeline.
+
+=== Built-in read-only algorithms
+
+You can run built-in read-only algorithms on read-only workspaces, so you get analytical results without needing write access.
+
+=== GSQL Editor refresh
+
+The GSQL Editor has a cleaner interface with syntax highlighting and auto-completion, making queries easier to read and faster to write.
+
+=== Faster data loading
+
+xref:savanna:graph-development:load-data/index.adoc[Data loading] is faster and more reliable, so large loads finish sooner with fewer retries.
+
+=== Customizable UDFs
+
+You can customize user-defined functions to extend a workspace with your own logic and algorithms for advanced analytics.
+
+=== Network configuration
+
+You can set up IP allow lists with xref:savanna:workgroup-workspace:workgroups/how2-config-network-access.adoc[network configuration] to control who can reach your workspaces, tightening access at the network level.
+
+=== Controller APIs
+
+xref:savanna:rest-api:index.adoc[Controller APIs] now support API keys, so you can automate Savanna operations more securely.
+
+=== Bug fixes
+
+Assorted platform fixes.
+
+== Sep 12, 2024
+
+=== Capacity planning
+
+xref:savanna:workgroup-workspace:workspaces/settings.adoc#_workspace_size_suggestion[Capacity planning] helps you estimate the right workspace size and its cost before you provision, so you can balance performance against spend.
+
+=== Bug fixes
+
+Assorted platform fixes.
+
+== Aug 27, 2024
+
+=== Smarter Auto Suspend
+
+xref:savanna:workgroup-workspace:workspaces/settings.adoc#_auto_suspend[Auto Suspend] now recognizes installing queries, running queries, loading jobs, and schema changes as activity, so it will not suspend a workspace that is still doing work.
+
+=== Bug fixes
+
+Assorted platform fixes.
+
+== Aug 14, 2024
+
+=== Expanded solution kits
+
+The xref:savanna:integrations:solutions.adoc[solution kit] library is larger, with more pre-built templates and workflows for common graph use cases.
+Starting from a kit gets you to a working solution faster than building from scratch.
+
+== Jul 31, 2024
+
+=== GSQL API v2
+
+GSQL API v2 improves query performance and unlocks the latest GSQL features, giving your applications access to newer capabilities and optimizations.
+
+=== Deeper monitoring
+
+Enhanced xref:savanna:workgroup-workspace:workgroups/monitor-workspaces.adoc[monitoring] tools give you deeper insight into your environment, so you can track performance metrics and diagnose issues more effectively.
+
+=== Bug fixes
+
+Assorted platform fixes.
+
+== Jul 13, 2024
+
+=== Sync read-only data with read-write
+
+You can xref:savanna:workgroup-workspace:workspaces/readwrite-readonly.adoc#_update_read_onlyro_workspace[synchronize read-only data with read-write workspaces], keeping the two workspace types consistent so read-only analysis reflects the latest data.
+
+=== Bug fixes
+
+Assorted platform fixes.
+
+== Apr 29, 2024
+
+=== TigerGraph Savanna Beta
+
+TigerGraph Savanna launched in Beta with its core platform, including separation of storage and compute, workgroups and workspaces for resource control, schema design, data loading, the GSQL Editor, Explore Graph, integrations and add-ons, administration tools, and usage-based billing.
+Together these gave the first end-to-end way to build and run graph applications on Savanna.

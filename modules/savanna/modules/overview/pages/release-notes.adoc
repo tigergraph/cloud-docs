@@ -23,19 +23,19 @@ For more information, see https://www.tigergraph.com/docs/savanna/main/resources
 === 2026-08-05
 ==== Workspace Management
 
-*Enhanced Workspace Management: Workspace Card and Table views now provide quicker access to graph functions, database information, and common workspace management actions.
+* Enhanced Workspace Management: Workspace Card and Table views now provide quicker access to graph functions, database information, and common workspace management actions.
 
 ==== Workspace Lifecycle
 
-*Increased Billing Grace Periods: We've increased the grace periods before workspace suspension and termination, giving you more time to resolve payment issues and avoid service interruptions.
+* Increased Billing Grace Periods: We've increased the grace periods before workspace suspension and termination, giving you more time to resolve payment issues and avoid service interruptions.
 
 ==== GSQL Editor
 
-*Improved Editing Experience: We've made usability and reliability improvements to the GSQL Editor for a smoother editing experience.
+* Improved Editing Experience: We've made usability and reliability improvements to the GSQL Editor for a smoother editing experience.
 
 ==== Developer Support
 
-*Chatbot Assistant Update: We've retired the in-app chatbot as we focus on delivering more comprehensive developer resources and experiences. Documentation and support resources remain available, with additional capabilities planned for future releases.
+* Chatbot Assistant Update: We've retired the in-app chatbot as we focus on delivering more comprehensive developer resources and experiences. Documentation and support resources remain available, with additional capabilities planned for future releases.
 
 
 

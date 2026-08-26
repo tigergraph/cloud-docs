@@ -12,7 +12,8 @@ content:
 antora:
   extensions:
     - ./lib/markdown-for-llm.js
-    - ./lib/llms-txt.js
+    # ./lib/llms-txt.js is kept in the repo for a later site-wide /llms.txt. Do not
+    # enable it here: this playbook only builds Savanna and Cloud Classic.
 
 asciidoc:
   extensions:

@@ -18,6 +18,9 @@ asciidoc:
   extensions:
     - '@asciidoctor/tabs'
 
+urls:
+  redirect_facility: static
+
 output:
   dir: ./build/site
 

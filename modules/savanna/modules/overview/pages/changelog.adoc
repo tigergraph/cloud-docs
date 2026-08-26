@@ -7,6 +7,25 @@
 Savanna changelog and product updates.
 Stay up to date with new features, improvements, and bug fixes.
 
+== Aug 19, 2026
+
+=== Billing platform transition
+
+Starting August 19, 2026, Savanna is moving to a new billing and invoicing platform, with that transition expected to continue through early October 2026.
+Usage is still tracked during this period, but invoices, payments, and some billing information are temporarily unavailable.
+Pricing and usage-metering rules are unchanged.
+See xref:savanna:resources:billing-transition-faq.adoc[Billing Transition FAQ] for details.
+
+=== Add Solution availability
+
+The *Add Solution* option could stay disabled even when a workgroup already had a running workspace with no solution installed.
+It now stays available as long as there is an eligible workspace where a solution can be added.
+
+=== Add-ons workspace status
+
+The *Add-ons* page did not always reflect the current workspace status when you picked a workspace.
+Active workspaces can be selected; workspaces that are creating, stopped, terminating, or terminated are handled according to that status.
+
 == Aug 5, 2026
 
 === Enhanced workspace management

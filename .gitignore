@@ -15,6 +15,9 @@ yarn-error.log*
 # Lockfile — yarn.lock is the committed source of truth
 package-lock.json
 
+# Local-only Antora playbook (sibling antora-ui path)
+antora-playbook.local.yml
+
 # OS
 .DS_Store
 Thumbs.db

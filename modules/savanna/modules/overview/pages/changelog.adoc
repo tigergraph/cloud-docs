@@ -2,7 +2,7 @@
 :experimental:
 :page-role: changelog
 :page-toclevels: 1
-:page-aliases: changelog.adoc
+:page-aliases: release-notes.adoc
 
 Savanna changelog and product updates.
 Stay up to date with new features, improvements, and bug fixes.

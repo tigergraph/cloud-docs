@@ -18,10 +18,6 @@ asciidoc:
   extensions:
     - '@asciidoctor/tabs'
 
-# Old /release-notes URLs redirect to /changelog on Netlify.
-urls:
-  redirect_facility: netlify
-
 output:
   dir: ./build/site
 

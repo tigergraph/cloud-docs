@@ -1,10 +1,9 @@
-= Changelog
+= Release Notes
 :experimental:
-:page-role: changelog
+:page-role: release-notes
 :page-toclevels: 1
-:page-aliases: release-notes.adoc
 
-Savanna changelog and product updates.
+Savanna release notes and product updates.
 Stay up to date with new features, improvements, and bug fixes.
 
 == Aug 19, 2026

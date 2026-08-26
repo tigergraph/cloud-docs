@@ -30,4 +30,4 @@ Authenticate scripts and services against the control plane.
 * xref:savanna:administration:security/index.adoc[Security] covers password policy and identity provider setup.
 * xref:savanna:administration:billing/index.adoc[Billing] covers plans, invoices, and usage.
 * xref:savanna:resources:index.adoc[Resources] covers comparison tables, FAQs, and support.
-* xref:savanna:overview:changelog.adoc[Changelog] covers what changed in recent Savanna releases.
+* xref:savanna:overview:release-notes.adoc[Release Notes] covers what changed in recent Savanna releases.

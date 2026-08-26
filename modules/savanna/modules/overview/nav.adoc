@@ -1,2 +1,2 @@
 * xref:index.adoc[Introduction]
-* xref:changelog.adoc[Changelog]
+* xref:release-notes.adoc[Release Notes]

@@ -20,9 +20,9 @@ xref:quota_policy.adoc[Plans and quota policy]
 
 Subscription plans and the quota rules that apply to them.
 ¦
-xref:savanna:overview:changelog.adoc[What's new]
+xref:savanna:overview:release-notes.adoc[What's new]
 
-Recent features, improvements, and fixes in the Savanna changelog.
+Recent features, improvements, and fixes in the Savanna release notes.
 |===
 
 == Cloud providers

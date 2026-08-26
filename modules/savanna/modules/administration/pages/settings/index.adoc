@@ -28,4 +28,4 @@ Set the password policy and configure SSO with your identity provider.
 == Where to go next
 
 * xref:savanna:resources:index.adoc[Resources] covers comparison tables, FAQs, and support.
-* xref:savanna:overview:changelog.adoc[Changelog] covers what changed in recent Savanna releases.
+* xref:savanna:overview:release-notes.adoc[Release Notes] covers what changed in recent Savanna releases.

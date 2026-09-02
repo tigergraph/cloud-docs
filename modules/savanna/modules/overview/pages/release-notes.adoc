@@ -4,6 +4,25 @@
 :toc:
 :toclevels:2
 
+== Sep 2026
+=== 2026-09-02
+==== Enhancements
+
+* Database Secrets: users can now create database secrets in Savanna and use them to connect pyTigerGraph, TigerGraph MCP, and GraphRAG to their database. Previously, users had to leave Savanna, open Admin Portal, and create a database username and password. Creating the secret in Savanna and pasting it into the client keeps credential setup in one place, reducing setup time and connection failures from mismatched database usernames or passwords.
+
+==== Workspace Management
+
+* Workspace Size Suggestion Over Limit: when the data size entered for Size Suggestion is larger than the biggest available workspace, Savanna now tells the user, disables *Apply*, and offers *Contact us*. Users find out immediately instead of applying a workspace that cannot hold the data. Sizes within the supported range still recommend a workspace that can be applied as usual.
+
+==== Improvements & Bug Fixes
+
+* Fixed an issue where the backup table did not clearly expose restore. The table now includes an *Action* column, and hovering the restore icon shows a *Restore* tooltip so users can restore a backup without guessing which control does what.
+* Fixed an issue where Table view showed an empty table when a query returned no rows. Table view now shows *No data available*, so an empty result is not mistaken for a loading failure or a broken view.
+* Fixed an issue where the billing placeholder page used incorrect Light and Dark mode backgrounds during the billing platform transition. The page now matches the rest of Savanna when users switch themes.
+* Fixed an issue where signing in with *Login with organization* produced an unexpected 403 on organization operations that should be authorized. Organization admins can now complete those tasks after sign-in.
+
+
+
 == Aug 2026
 === 2026-08-19
 ==== Billing

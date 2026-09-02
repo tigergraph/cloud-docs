@@ -1,4 +1,5 @@
-* xref:index.adoc[REST API (Preview)]
+* REST API reference
+** xref:index.adoc[Overview]
 ** xref:rest-api:authentication.adoc[Authentication]
 ** xref:rest-api:endpoints.adoc[Endpoints]
 ** xref:rest-api:definitions.adoc[Definitions]

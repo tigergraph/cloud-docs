@@ -1,4 +1,29 @@
-.idea/
+# Dependencies
+node_modules/
+
+# Antora build output and cache
+build/
+.cache/
+antora.log
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Lockfile — yarn.lock is the committed source of truth
+package-lock.json
+
+# Local-only Antora playbook (sibling antora-ui path)
+antora-playbook.local.yml
+
+# OS
 .DS_Store
-node_modules
-build
+Thumbs.db
+
+# Editors / IDEs
+.idea/
+.vscode/
+*.swp
+*~

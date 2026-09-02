@@ -1,26 +1,33 @@
-= Administration Overview
+= Administration
 :experimental:
 
-Here you can learn about the tools available for organizational administrators.
+Invite users, manage access, configure organization settings, and create API keys.
 
-== xref:savanna:administration:how2-invite-users.adoc[]
+== Tasks
 
-Learn how to invite new users to your organizations.
+[.start-cards,cols="2",grid=none,frame=none, separator=¦]
+|===
+¦
+xref:savanna:administration:how2-invite-users.adoc[Invite users]
 
-== xref:savanna:administration:how2-access-mgnt.adoc[]
+Add people to your organization so they can work in Savanna.
+¦
+xref:savanna:administration:how2-access-mgnt.adoc[Manage access]
 
-Learn how to manage access to workspaces and resources within TigerGraph Savanna.
+Control who can use workspaces and other resources.
+¦
+xref:savanna:administration:settings/how2-use-organization-mgnt.adoc[Organization settings]
 
-== xref:savanna:administration:settings/how2-use-organization-mgnt.adoc[]
+Configure organization-level options and preferences.
+¦
+xref:savanna:administration:settings/how2-create-api-key.adoc[Create an API key]
 
-Learn about the organization management features that allow you to configure organization settings.
+Authenticate scripts and services against the control plane.
+|===
 
-== xref:savanna:administration:settings/how2-create-api-key.adoc[]
+== Where to go next
 
-Learn how to create API keys for your organization.
-
-== Next Steps
-
-Next, learn about xref:savanna:administration:security/index.adoc[] or additional xref:savanna:resources:index.adoc[] in TigerGraph Savanna.
-
-Return to the xref:savanna:overview:index.adoc[Overview] page for a different topic.
+* xref:savanna:administration:security/index.adoc[Security] covers password policy and identity provider setup.
+* xref:savanna:administration:billing/index.adoc[Billing] covers plans, invoices, and usage.
+* xref:savanna:resources:index.adoc[Resources] covers comparison tables, FAQs, and support.
+* xref:savanna:overview:release-notes.adoc[Release Notes] covers what changed in recent Savanna releases.

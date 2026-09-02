@@ -1,0 +1,75 @@
+= Build your graph in Savanna
+:experimental:
+:page-aliases: index.adoc, how2-signup.adoc, how2-login.adoc
+
+This is the browser path to a working graph on TigerGraph Savanna: a running workspace, a schema you designed, data loaded against it, and a GSQL query returning results. Budget about fifteen minutes. The same graph is reachable afterward from an AI agent (xref:connect-agent-mcp.adoc[Connect AI tools with MCP]); the interface differs, the graph does not.
+
+You'll need a https://tgcloud.io[Savanna account^] and some data to load. That can be a local CSV, TSV, or JSON file, or a source Savanna connects to directly, Amazon S3, Google Cloud Storage, Azure Blob Storage, Snowflake, and xref:savanna:graph-development:load-data/index.adoc[more]. Building the schema yourself is worth the extra time: you learn how Savanna models data, and you end up with a graph shaped for the questions you actually want to ask.
+
+== Set up a workgroup and workspace
+
+Savanna nests your work in two objects. A *workgroup* is a container for related workspaces and the boundary for access control; name it after a team or project. A *workspace* is the compute that runs your graph, and it's what you start, stop, and resize.
+
+When you first register, Savanna creates a workgroup and a workspace for you. Wait until the workspace status is *active*, then continue below. You do not need to create either one to try the product.
+
+To add another project later, *Create Workgroup* is a two-step wizard: the workgroup, then its first workspace. Choose *Read/Write* so the workspace can load data and install queries (a Read-Only workspace can query an existing graph but not load into it). You can resize later without rebuilding.
+
+Full screens: xref:savanna:workgroup-workspace:workgroups/how2-create-a-workgroup.adoc[create a workgroup] and xref:savanna:workgroup-workspace:workspaces/how2-create-a-workspace.adoc[create a workspace].
+
+== Model the graph
+
+Open *Design Schema* from the navigation menu, the workspace page, or the GSQL Editor. The schema is the structure of your graph: which entities exist, how they connect, and what each one stores.
+
+Start by creating a graph from the graph selector dropdown and giving it a name. Your first graph on a workspace can take up to two minutes while the services warm up.
+
+Then lay out the model:
+
+* *Vertices* are your entities, the nouns in your domain: a user, a product, a transaction, an account. Add one from the vertex button, or hold kbd:[V] and click on the canvas, then set its name and attributes in the properties panel.
+* *Edges* are the relationships between them, the verbs: _placed_, _belongs to_, _transferred to_. Drag from the border of a vertex and drop onto another to connect two existing vertices, or drop onto empty canvas to create a new vertex and edge together. Name the edge and give it attributes if the relationship itself carries data, such as a timestamp or an amount.
+* *Attributes* are the properties on either one, typed as strings, integers, booleans, or dates.
+
+Give each vertex type a primary key that uniquely identifies an entity, since that's what the loader matches on when it creates and deduplicates vertices. Under *Advanced Settings* you can index non-primary attributes you expect to filter on, and add a reverse edge on a directed edge when you need to traverse it in both directions.
+
+Modeling reference: xref:savanna:graph-development:design-schema/index.adoc[Schema Designer].
+
+== Load your data
+
+Open *Load Data* and select an active workspace, then pick your connector. Savanna ships step-by-step flows for xref:savanna:graph-development:load-data/load-from-local.adoc[local files], xref:savanna:graph-development:load-data/load-from-s3.adoc[Amazon S3], xref:savanna:graph-development:load-data/load-from-gcs.adoc[Google Cloud Storage], and xref:savanna:graph-development:load-data/load-from-blob.adoc[Azure Blob Storage], with xref:savanna:graph-development:load-data/load-from-snowflake.adoc[Snowflake] and xref:savanna:graph-development:load-data/jdbc.adoc[JDBC] alongside them. Connectors without a guided flow yet hand you a GSQL template to finish in the editor instead.
+
+The guided flow moves through three decisions:
+
+*Configure the file.* Savanna detects delimiters and line breaks and shows you the parsed result. If the columns split wrong, change the delimiter, end-of-line, or quoting options. An enclosing character such as a double quote overrides the delimiter inside a token, which is what you want when string values contain commas. You can rename header columns here to something readable, since those names are what you'll map against.
+
+*Map columns to the schema.* For each vertex and edge type, choose which source column feeds which attribute. *Quick Map* does the obvious matches in one pass: _map all to target_ aligns existing attributes with matching headers, while _map all from source_ also creates new attributes for headers that don't match anything yet. Where the source doesn't quite fit the target, a xref:savanna:graph-development:load-data/token-function.adoc[token function] transforms the value as it loads.
+
+*Confirm and run.* Savanna shows you _Schema to be changed_ and _Data to be loaded_ before anything executes. Read the schema diff carefully; some schema changes drop existing data, and the warning on that screen is the last checkpoint. Confirm to start the loading jobs, then watch their *Status* as they run.
+
+Load vertices before the edges that reference them, so each edge finds both endpoints already present.
+
+== Query it
+
+Open the *GSQL Editor*. Queries are written in GSQL, TigerGraph's query language, and the editor gives you a file list on the left, the editing panel in the middle, results at the bottom, and the Schema Designer on the right when you need to check a type.
+
+Create a query with the btn:[+] next to your graph in the Query List. A useful first query starts from one vertex and walks one hop out: select a vertex by its primary key, traverse an edge type, and return the neighbors. That single traversal is the thing a graph database does that a relational join makes painful, so it's worth writing by hand once.
+
+A custom query has to be *installed* before it can run. Select it in the Query List and click btn:[Install], then run it and read the result panel. Expect vertices, edges, paths, or computed values depending on what your query returns.
+
+For a visual read on the same data, *Explore Graph* lets you walk vertices and their neighbors, and xref:savanna:graph-development:explore-graph/how2-use-pattern-search.adoc[pattern search] finds paths between them without writing GSQL. It's the fastest way to confirm your edges connect what you think they connect.
+
+Editing, installing, and sharing queries: xref:savanna:graph-development:gsql-editor/how2-edit-gsql-query.adoc[GSQL Editor guide].
+
+== You're done when
+
+* The workspace is *active* and *Read/Write*.
+* Your vertex and edge types appear in the Schema Designer for the graph you created.
+* The loading jobs finished with a successful *Status* on the Load Data screen.
+* An installed GSQL query returns graph data or computed values, or Explore Graph renders your vertices and edges.
+
+If a loading job fails, the mapping is the usual cause: check that the parsed columns line up with the attributes you targeted and that primary keys aren't empty in the source. Fix the mapping and rerun the job; you don't need to recreate the workspace or the schema.
+
+== Where to go next
+
+* Point an AI agent at the same graph: xref:connect-agent-mcp.adoc[Connect AI tools with MCP].
+* Model, load, and query in depth: xref:savanna:graph-development:index.adoc[Build].
+* In a hurry, or want a schema drafted for you? xref:savanna:build-ai:index.adoc[Build a graph with AI] infers one from your files, and a xref:savanna:integrations:solutions.adoc[Marketplace solution] ships with schema, data, and queries already in place.
+* Unfamiliar term? xref:savanna:resources:glossary.adoc[Glossary].

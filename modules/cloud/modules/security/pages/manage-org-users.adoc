@@ -37,8 +37,10 @@ The privileges granted to the various roles in a TigerGraph Cloud Classic organi
 
 
 [NOTE]
+====
 User management was redesigned with the release of TigerGraph v3.6.0 in July 2022. Clusters created before then are only visible to Organization Admins and Cluster Admins.
 These legacy clusters exist entirely outside of the User Management system and can still be accessed by ordinary users with the URL.
+====
 
 === TigerGraph solution roles
 
@@ -47,7 +49,7 @@ On TigerGraph Cloud Classic, a single user in an organization may be assigned to
 
 In this documentation, for consistency, we will refer to these using the terms "organization role" and "cluster role."
 
-For information about the TigerGraph cluster roles, see the page xref:tigergraph-server:user-access:access-control-model.adoc[].
+For information about the TigerGraph cluster roles, see the page https://www.tigergraph.com/docs/tigergraph-server/4.3/user-access/access-control-model/[Access Control Model^].
 
 When a TigerGraph Cloud Classic user is added to a cluster as an Organization Cluster Admin or Organization Admin, they are granted the `superuser` role on that cluster.
 A user added to a cluster as an Organization Member has no role on the cluster by default, but can be assigned a cluster role by anyone with the `superuser` cluster role.

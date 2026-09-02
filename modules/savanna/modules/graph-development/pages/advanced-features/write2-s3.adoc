@@ -105,7 +105,6 @@ It is recommended to always set up a default s3 access key ID and secret access 
 [NOTE]
 ====
 Update Graph Admin configurations may require restart of certain services, which may impact the running queries, loading jobs, or schema changes. Apply changes with caution.
-
 The Graph Admin method does not support setting the `s3_region` parameter. To specify a region other than the default `us-east-1`, use Method 1 (GSQL Editor) or Method 2 (API).
 ====
 

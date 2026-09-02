@@ -1,12 +1,23 @@
 site:
-  title: "Cloud Doc Test"
-  start_page: "savanna:overview:index.adoc"
+  title: Docs
+  url: https://www.tigergraph.com/docs
+  start_page: savanna:overview:index.adoc
 
 content:
   sources:
     - url: .
       branches: HEAD
       start_paths: [modules/savanna, modules/cloud]
+
+antora:
+  extensions:
+    - ./lib/markdown-for-llm.js
+    # ./lib/llms-txt.js is kept in the repo for a later site-wide /llms.txt. Do not
+    # enable it here: this playbook only builds Savanna and Cloud Classic.
+
+asciidoc:
+  extensions:
+    - '@asciidoctor/tabs'
 
 output:
   dir: ./build/site

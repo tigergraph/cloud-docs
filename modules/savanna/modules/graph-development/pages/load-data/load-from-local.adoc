@@ -31,7 +31,6 @@ image::config-file.png[]
 ====
 If the parsing is *not* correct, click on the image:Screenshot 2024-04-17 at 5.54.17 PM.png[width=75]
 button to configure a different option for the delimiter, such as `eol`, or `quote and header`.
-
 image:Screenshot 2024-04-17 at 5.54.50 PM.png[]
 ====
 +

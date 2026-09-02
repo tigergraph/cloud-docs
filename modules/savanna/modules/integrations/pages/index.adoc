@@ -1,23 +1,29 @@
-= Marketplace Overview
+= Marketplace
 :experimental:
 
-TigerGraph Savanna seamlessly integrates with various tools and services to enhance your graph database workflow.
+Extend Savanna with add-ons, or start from a prebuilt solution for a common use case.
 
-== xref:savanna:integrations:add-ons.adoc[]
+== Options
 
-Learn how to extend the capabilities of TigerGraph Savanna with add-ons tailored to your needs.
+[.start-cards,cols="2",grid=none,frame=none, separator=¦]
+|===
+¦
+xref:savanna:integrations:add-ons.adoc[Add-ons]
 
-* xref:savanna:integrations:insights.adoc[]
-* xref:savanna:integrations:graphstudio.adoc[]
-* xref:savanna:integrations:graphql.adoc[]
+Install Insights, GraphStudio, GraphQL, and other tools on top of a workspace.
+¦
+xref:savanna:integrations:solutions.adoc[Solutions]
 
-== xref:savanna:integrations:solutions.adoc[]
+Deploy a prebuilt graph for a common industry or use case.
+|===
 
-Here you can learn about our array of industry standard prebuilt solutions for diverse industries and use cases.
-Designed for users to swiftly adopt graph technology.
+== Add-ons
 
-== Next Steps
+* xref:savanna:integrations:insights.adoc[Insights]
+* xref:savanna:integrations:graphstudio.adoc[GraphStudio]
+* xref:savanna:integrations:graphql.adoc[GraphQL]
 
-Now learn about xref:administration:index.adoc[Administration] features or xref:savanna:administration:security/index.adoc[] in TigerGraph Savanna.
+== Where to go next
 
-Or return to the xref:savanna:overview:index.adoc[Overview] page for a different topic.
+* xref:savanna:administration:index.adoc[Administration] covers users, access, and organization settings.
+* xref:savanna:administration:security/index.adoc[Security] covers password policy and identity providers.

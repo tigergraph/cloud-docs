@@ -38,6 +38,3 @@ image::workspacelog.png[width="1600"]
 See xref:savanna:workgroup-workspace:workgroups/how2-create-a-workgroup.adoc[] to get started.
 
 Return to the xref:savanna:workgroup-workspace:index.adoc[] page or xref:savanna:overview:index.adoc[Overview] page for a different topic.
-
-
-

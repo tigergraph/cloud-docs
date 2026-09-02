@@ -1,59 +1,37 @@
-= How to Create a Workgroup
+= Create a workgroup
 :experimental:
 
-To learn more about workgroups see xref:savanna:workgroup-workspace:workgroups/workgroup.adoc[].
-To create a workgroup in TigerGraph Savanna, follow the steps below.
+Creating a workgroup is a two-step wizard: you name the workgroup, then you create its first workspace on the next screen.
+You cannot finish a new workgroup without that workspace.
 
-== Create a Workgroup
+== After you sign up
 
-[Placeholder for create workgroup screenshot]
+The first time you register, Savanna provisions a workgroup and a workspace for you.
+Wait until setup finishes, then start building — you do not need to create either one to try the product.
 
-. Log in to your TigerGraph Savanna account.
-+
-image::login.png[width=450]
+image::onboarding-setup-workspace.png[]
 
-. Click on the btn:[Create Workspace] button on your landing page.
-+
-image::landing-page.png[]
+Use the steps below when you want another workgroup — a second project, team, or environment.
 
-. Alternatively, from the dashboard, navigate to the btn:[Workgroups] section and click on the btn:[Create Workgroup] or you can click on the image:plusbutton.png[width=50,height=50] button next to btn:[Workgroups].
-+
-image::no-workgroup.png[]
+== Create a workgroup
 
-
-. Provide a name for the workgroup.
+. Sign in to TigerGraph Savanna.
+. From the dashboard, open btn:[Workgroups] and click btn:[Create Workgroup], or the image:plusbutton.png[width=50,height=50] button next to btn:[Workgroups].
+. On *Create Workgroup* (step 1 of 2), name the workgroup.
 +
 [NOTE]
 ====
-Choose a name that reflects the purpose of your project or initiative.
+Name it after the project or team it serves, such as `fraud-detection` or `customer-360`.
 ====
+. Choose the cloud provider and region.
+AWS is available.
+Azure and GCP are marked *Coming Soon*.
 +
-image::create-workgroup.png[width=1500]
-. Choose the cloud provider and the region
-+
-[NOTE]
-====
-TigerGraph Savanna currently only operates on xref:savanna:resources:aws.adoc[]. We are actively working on expanding to xref:savanna:resources:gcp.adoc[] and xref:savanna:resources:azure.adoc[]. Visit each platform's reference page to learn more about the available regions.
-====
+image::create-workgroup.png[]
+. Click btn:[Next].
+That opens step 2, *Create Workspace*.
 
-. Finally, click on the btn:[Next] button to create the workgroup.
+== Where to go next
 
-== Next Step
-
-Now, learn xref:savanna:workgroup-workspace:workgroups/how2-workgroup-access.adoc[] or learn more about xref:savanna:workgroup-workspace:workspaces/workspace.adoc[Workspaces and Databases].
-
-Return to the xref:savanna:workgroup-workspace:index.adoc[] page or xref:savanna:overview:index.adoc[Overview] page for a different topic.
-
-////
-xref:savanna:workgroup-workspace:workspaces/workspace.adoc[Workspaces and Databases, role=next-button]
-
-[.next-button]
-xref:savanna:workgroup-workspace:workspaces/workspace.adoc[Link Text]
-
-:next-button: pass:[<span class="next-button">xref:savanna:workgroup-workspace:workspaces/workspace.adoc[Next]</span>]
-{next-button}
-
-++++
-<a href="cloud4:workgroup-workspace:workspaces/workspace.adoc" class="next-button">Next</a>
-++++
-////
+* xref:savanna:workgroup-workspace:workspaces/how2-create-a-workspace.adoc[Create the first workspace] (step 2 of this wizard)
+* xref:savanna:workgroup-workspace:workgroups/workgroup.adoc[About workgroups]

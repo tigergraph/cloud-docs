@@ -169,6 +169,3 @@ Updating Graph Admin settings might result in the restart of certain TigerGraph 
 Next, learn about  xref:savanna:workgroup-workspace:workspaces/readwrite-readonly.adoc[] or learn more about xref:savanna:workgroup-workspace:workspaces/workspace-size.adoc[].
 
 Return to the xref:savanna:workgroup-workspace:index.adoc[] page or xref:savanna:overview:index.adoc[Overview] page for a different topic.
-
-
-

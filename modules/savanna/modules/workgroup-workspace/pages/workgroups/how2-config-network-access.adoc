@@ -76,7 +76,6 @@ xref:savanna:workgroup-workspace:workspaces/workspace.adoc[Workspaces and Databa
 xref:savanna:workgroup-workspace:workspaces/workspace.adoc[Link Text]
 
 :next-button: pass:[<span class="next-button">xref:savanna:workgroup-workspace:workspaces/workspace.adoc[Next]</span>]
-{next-button}
 
 ++++
 <a href="cloud4:workgroup-workspace:workspaces/workspace.adoc" class="next-button">Next</a>

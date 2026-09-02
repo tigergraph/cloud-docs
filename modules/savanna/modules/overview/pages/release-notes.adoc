@@ -6,6 +6,33 @@
 Savanna release notes and product updates.
 Stay up to date with new features, improvements, and bug fixes.
 
+== Sep 2, 2026
+
+=== Database secrets
+
+You can now create database secrets in Savanna and use them to connect pyTigerGraph, TigerGraph MCP, and GraphRAG to your database.
+Until now you had to leave Savanna, open Admin Portal, and create a database username and password, which was confusing and hard to set up.
+Create the secret in Savanna and paste it into the client instead.
+That keeps credential setup in one place, so you spend less time bouncing between products and fewer connections fail because of a mismatched username or password.
+See xref:savanna:administration:settings/how2-create-database-secret.adoc[Create a database secret].
+
+=== Improvements and bug fixes
+
+* **Workspace size suggestion when data is over the limit.**
+When the size you enter is larger than the biggest available workspace, Savanna tells you so, disables *Apply*, and offers *Contact us*.
+You find out immediately instead of applying a workspace that cannot hold the data.
+Sizes in range still recommend a workspace you can apply as usual.
+See xref:savanna:workgroup-workspace:workspaces/settings.adoc#_workspace_size_suggestion[Workspace size suggestion].
+* **Restore action on backups.**
+The backup table now includes an *Action* column, and hovering the restore icon shows a *Restore* tooltip.
+You can restore a backup without guessing which control does what.
+* **Empty query results in Table view.**
+When a query returns no rows, Table view shows *No data available* instead of an empty table, so an empty result is not mistaken for a loading failure or a broken view.
+* **Billing placeholder in Light and Dark mode.**
+The billing placeholder page now uses the correct Light and Dark mode backgrounds during the billing platform transition, so it matches the rest of Savanna when you switch themes.
+* **Login with organization 403.**
+Signing in with *Login with organization* no longer produces an unexpected 403 on organization operations that should be authorized, so organization admins can complete those tasks after sign-in.
+
 == Aug 19, 2026
 
 === Billing platform transition

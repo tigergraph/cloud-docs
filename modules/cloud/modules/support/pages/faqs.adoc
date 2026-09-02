@@ -9,7 +9,7 @@
 
 If you clicked "forgot password" during sign in to Cloud and never received an email, there could be a few explanations.
 
-* If you requested a password reset from an organization login screen, you won't get an email if you don't belong to that organization. Try resetting your password from the main login page at link:tgcloud.io[].
+* If you requested a password reset from an organization login screen, you won't get an email if you don't belong to that organization. Try resetting your password from the main login page at link:https://tgcloud.io[].
 * If you signed up through Google authentication, you cannot use a password to log in to the same account. Try logging in with your Google account.
 * Check your junk/spam email folder or run a search for "TigerGraph" in case the email automatically got filtered to another inbox.
 * Double-check the email address you entered to make sure it matches the one you signed up with.
@@ -98,7 +98,6 @@ A:  Please see the section on pricing on our website at our link:https://www.tig
 A: TigerGraph Cloud Classic includes automatic scheduled backup, built-in encryption and other security features, patching, replication and distributed database option.  In addition, you can now provision a distributed database as well as a replica cluster for high availability.
 As a cloud service, many of the administrative and operational tasks - for monitoring, restoring, upgrading, for example - are just a click away.
 In addition to operations and management for your TigerGraph databases, TigerGraph Cloud Classic also offers Starter Kits to provide instant experience to various graph analytics use cases.
-The list of Starter Kits can be found here: link:https://www.tigergraph.com/starterkits/[TigerGraph Cloud Classic Starter Kits]
 
 [#q-is-there-a-quota-for-the-number-of-clusters-i-can-provision-in-a-single-account]
 === *Q: Is there a quota for the number of clusters I can provision in a single account?*
@@ -145,7 +144,7 @@ A: Data must be loaded and queries must be installed first. Please perform the f
 . On the Load Data tab, click the Load button to load the sample dataset.
 . On the Write Query tab, click the Install button to install the sample queries.
 
-Now you can run queries on the starter kit's sample data. Please visit our link:http://tigergraph.com/starterkits[TigerGraph Cloud Classic Starter Kits] page to watch the overview video for each starter kit.
+Now you can run queries on the starter kit's sample data. Please visit link:https://www.youtube.com/@TigerGraph/search?query=starter%20kit[TigerGraph's YouTube channel'] to watch an overview video for your starter kit.
 
 
 === *Q:  How can I monitor my TigerGraph Cloud Classic service?*
@@ -227,7 +226,7 @@ A: Yes, there is a discount for contracting with TigerGraph for a one-year term.
 
 === *Q: Can I purchase TigerGraph Cloud Classic Credits?*
 
-A: Yes. You can purchase cloud credits applied to TigerGraph Cloud Classic usage. Please refer to https://www.tigergraph.com/cloud-credits/
+A: Yes. You can purchase cloud credits applied to TigerGraph Cloud Classic usage.
 
 
 === *Q:  If I delete my instance before the end of the month, what will I have to pay?*
@@ -252,7 +251,7 @@ A: If this happens you can contact link:mailto:sales@tigergraph.com[sales@tigerg
 
 === *Q:  Where can I find TigerGraph's terms and conditions for its products and services?*
 
-A:  You can find our terms and conditions here: http://www.tigergraph.com/terms[www.tigergraph.com/terms].
+A:  You can find our terms and conditions here: https://www.tigergraph.com/terms[www.tigergraph.com/terms].
 
 
 === *Q: How is TigerGraph Cloud Classic priced for development, test, or QA environments?*
@@ -455,7 +454,7 @@ A: You are not sharing storage with other customers. Each TigerGraph cluster is 
 
 === *Q: How do I access my TigerGraph Cloud Classic account (e.g., username and password)?*
 
-A: When you register your account, you will select a username and password. You can then log in anytime at link:http://www.tgcloud.io/[www.tgcloud.io]. You will also be given a URL using a subdomain name that you select.
+A: When you register your account, you will select a username and password. You can then log in anytime at link:https://www.tgcloud.io/[www.tgcloud.io]. You will also be given a URL using a subdomain name that you select.
 
 === *Q: How do I access my TigerGraph database and POST to TigerGraph?*
 

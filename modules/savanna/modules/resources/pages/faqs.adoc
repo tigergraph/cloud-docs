@@ -15,7 +15,7 @@ A: Please check your spam folder. If you can't find it in the spam folder, and s
 
 A: If you clicked "forgot password" during sign in to Cloud and never received an email, there could be a few explanations.
 
-* If you requested a password reset from an organization login screen, you won't get an email if you don't belong to that organization. Try resetting your password from the main login page at link:tgcloud.io[].
+* If you requested a password reset from an organization login screen, you won't get an email if you don't belong to that organization. Try resetting your password from the main login page at link:https://tgcloud.io[].
 * If you signed up through Google authentication, you cannot use a password to log in to the same account. Try logging in with your Google account.
 * Check your junk/spam email folder or run a search for "TigerGraph" in case the email automatically got filtered to another inbox.
 * Double-check the email address you entered to make sure it matches the one you signed up with.
@@ -101,7 +101,7 @@ To allow more workspaces, please contact TigerGraph at link:mailto:sales@tigergr
 
 A: Yes, you can run queries directly after provisioning sample solution kits. These kits come pre-configured with sample data and queries to help you get started quickly. Some of the solutions also come with one or two Insights applications. 
 
-Please visit our link:http://tigergraph.com/solutiions/[TigerGraph Savanna Solutions] page to watch the overview video for each solution.
+Please visit our link:https://tigergraph.com/solutions/[TigerGraph Savanna Solutions] page to watch the overview video for each solution.
 
 
 === *Q:  How can I monitor my TigerGraph Savanna service?*
@@ -199,7 +199,7 @@ A: If this happens you can contact link:mailto:sales@tigergraph.com[sales@tigerg
 
 === *Q:  Where can I find TigerGraph's terms and conditions for its products and services?*
 
-A:  You can find our terms and conditions here: http://www.tigergraph.com/terms[www.tigergraph.com/terms].
+A:  You can find our terms and conditions here: https://www.tigergraph.com/terms[www.tigergraph.com/terms].
 
 
 === *Q: How is TigerGraph Savanna priced for development, test, or QA environments?*

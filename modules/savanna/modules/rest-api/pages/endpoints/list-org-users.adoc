@@ -3,7 +3,7 @@
 
 [.api-request]
 ....
-GET /controller/v4/v2/users
+GET /users
 ....
 
 List of users in the org. Note: this endpoint is not APIKEY compatible

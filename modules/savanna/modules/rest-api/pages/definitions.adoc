@@ -931,3 +931,1000 @@ __optional__|string
 
 
 
+
+[[_apikey]]
+=== APIKey
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**created_at** +
+__optional__
+|string
+|**creator** +
+__optional__
+|string
+|**description** +
+__optional__
+|string
+|**expires_at** +
+__optional__
+|string
+|**key_name** +
+__optional__
+|string
+|**org_id** +
+__optional__
+|string
+|**plaintext_key** +
+__optional__
+|string
+|**redacted_key** +
+__optional__
+|string
+|**user_id** +
+__optional__
+|string
+|===
+
+[[_addonpricing]]
+=== AddOnPricing
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**platform** +
+__optional__
+|string
+|**price_per_hour** +
+__optional__
+|number
+|**region** +
+__optional__
+|string
+|**type** +
+__optional__
+|string
+|**workspace_type** +
+__optional__
+|string
+|===
+
+[[_cloudprovideroptions]]
+=== CloudProviderOptions
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**account_id** +
+__optional__
+|string
+|**secure_connection** +
+__optional__
+|boolean
+|===
+
+[[_cloudproviderresource]]
+=== CloudProviderResource
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**api_tokens** +
+__optional__
+|< string > array
+|**availability_zones** +
+__optional__
+|< string > array
+|**cluster_enabled_log_types** +
+__optional__
+|< xref:rest-api:definitions.adoc#_constants_clusterlogtype[constants.ClusterLogType] > array
+|**component_versions** +
+__optional__
+|string
+|**created_at** +
+__optional__
+|string
+|**created_by** +
+__optional__
+|string
+|**eks_id** +
+__optional__
+|string
+|**endpoint_service_name** +
+__optional__
+|string
+|**id** +
+__optional__
+|string
+|**last_error** +
+__optional__
+|string
+|**name** +
+__optional__
+|string
+|**node_group_config** +
+__optional__
+|xref:rest-api:definitions.adoc#_aws_nodegroupconfig[aws.NodeGroupConfig]
+|**options** +
+__optional__
+|xref:rest-api:definitions.adoc#_cloudprovideroptions[CloudProviderOptions]
+|**org_id** +
+__optional__
+|string
+|**platform** +
+__optional__
+|string
+|**region** +
+__optional__
+|string
+|**role_arn** +
+__optional__
+|string
+|**role_external_id** +
+__optional__
+|string
+|**security_group_id** +
+__optional__
+|string
+|**short_id** +
+__optional__
+|string
+|**status** +
+__optional__
+|string
+|**subnet_id** +
+__optional__
+|< string > array
+|**type** +
+__optional__
+|string
+|**updated_at** +
+__optional__
+|string
+|**version** +
+__optional__
+|string
+|**version_number** +
+__optional__
+|integer
+|**vpc_id** +
+__optional__
+|string
+|**vpc_owned_by_tg** +
+__optional__
+|boolean
+|**work_dir** +
+__optional__
+|string
+|===
+
+[[_createapikeyrequest]]
+=== CreateAPIKeyRequest
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**description** +
+__optional__
+|string
+|**life_time_in_seconds** +
+__optional__
+|integer
+|===
+
+[[_createcloudproviderresourcerequest]]
+=== CreateCloudProviderResourceRequest
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**created_by** +
+__optional__
+|string
+|**name** +
+__optional__
+|string
+|**options** +
+__optional__
+|xref:rest-api:definitions.adoc#_cloudprovideroptions[CloudProviderOptions]
+|**platform** +
+__optional__
+|string
+|**region** +
+__optional__
+|string
+|**role_arn** +
+__optional__
+|string
+|**role_external_id** +
+__optional__
+|string
+|**type** +
+__optional__
+|string
+|===
+
+[[_createconfigrequest]]
+=== CreateConfigRequest
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**config_name** +
+__required__
+|string
+|**config_value** +
+__required__
+|string
+|===
+
+[[_customercreditcard]]
+=== CustomerCreditCard
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**brand** +
+__optional__
+|string
+|**card_id** +
+__optional__
+|string
+|**expire_month** +
+__optional__
+|integer
+|**expire_year** +
+__optional__
+|integer
+|**last_4_digits** +
+__optional__
+|string
+|**name_on_card** +
+__optional__
+|string
+|**org_id** +
+__optional__
+|string
+|===
+
+[[_customerresponse]]
+=== CustomerResponse
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**address** +
+__optional__
+|xref:rest-api:definitions.adoc#_updateaddressrequest[UpdateAddressRequest]
+|**customer_email** +
+__optional__
+|string
+|**customer_id** +
+__optional__
+|string
+|**customer_name** +
+__optional__
+|string
+|===
+
+[[_datastoragepricing]]
+=== DataStoragePricing
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**platform** +
+__optional__
+|string
+|**price_per_month** +
+__optional__
+|number
+|**region** +
+__optional__
+|string
+|===
+
+[[_deleteapikeyrequest]]
+=== DeleteAPIKeyRequest
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**key_name** +
+__optional__
+|string
+|===
+
+[[_error]]
+=== Error
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**FieldName** +
+__optional__
+|string
+|**Reason** +
+__optional__
+|string
+|**Type** +
+__optional__
+|xref:rest-api:definitions.adoc#_errortype[ErrorType]
+|===
+
+[[_errortype]]
+=== ErrorType
+
+Type: string
+
+[[_featureflag]]
+=== FeatureFlag
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**enabled** +
+__optional__
+|boolean
+|**feature_name** +
+__optional__
+|string
+|===
+
+[[_getcustomercreditcardsresponse]]
+=== GetCustomerCreditCardsResponse
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**credit_cards** +
+__optional__
+|< xref:rest-api:definitions.adoc#_customercreditcard[CustomerCreditCard] > array
+|**default_card** +
+__optional__
+|string
+|===
+
+[[_iamuser]]
+=== IAMUser
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**auth0UserID** +
+__optional__
+|string
+|**created** +
+__optional__
+|string
+|**description** +
+__optional__
+|string
+|**email** +
+__optional__
+|string
+|**enabled** +
+__optional__
+|boolean
+|**firstName** +
+__optional__
+|string
+|**id** +
+__optional__
+|string
+|**lastName** +
+__optional__
+|string
+|**metadata** +
+__optional__
+|xref:rest-api:definitions.adoc#_tgiam_metadata[tgIAM.Metadata]
+|**path** +
+__optional__
+|string
+|**role** +
+__optional__
+|string
+|**tenantID** +
+__optional__
+|string
+|**trn** +
+__optional__
+|string
+|**updated** +
+__optional__
+|string
+|**username** +
+__optional__
+|string
+|===
+
+[[_orglistuserresponse]]
+=== OrgListUserResponse
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**auth0UserID** +
+__optional__
+|string
+|**authID** +
+__optional__
+|string
+|**created** +
+__optional__
+|string
+|**email** +
+__optional__
+|string
+|**enabled** +
+__optional__
+|boolean
+|**firstName** +
+__optional__
+|string
+|**id** +
+__optional__
+|string
+|**lastName** +
+__optional__
+|string
+|**metadata** +
+__optional__
+|xref:rest-api:definitions.adoc#_orgmetadata[OrgMetadata]
+|**path** +
+__optional__
+|string
+|**roles** +
+__optional__
+|< xref:rest-api:definitions.adoc#_orgrole[OrgRole] > array
+|**tenantID** +
+__optional__
+|string
+|**trn** +
+__optional__
+|string
+|**updated** +
+__optional__
+|string
+|**username** +
+__optional__
+|string
+|===
+
+[[_orgmetadata]]
+=== OrgMetadata
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**attachedTo** +
+__optional__
+|< string > array
+|**lastLogin** +
+__optional__
+|string
+|===
+
+[[_orgquota]]
+=== OrgQuota
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**max_workspace_memory** +
+__optional__
+|string
+|**max_workspace_type** +
+__optional__
+|string
+|**memory_limit** +
+__optional__
+|string
+|**memory_usage_in_bytes** +
+__optional__
+|integer
+|**org_id** +
+__optional__
+|string
+|**ro_workspace_count_limit** +
+__optional__
+|integer
+|**ro_workspace_count_usage** +
+__optional__
+|integer
+|**rw_workspace_count_limit** +
+__optional__
+|integer
+|**rw_workspace_count_usage** +
+__optional__
+|integer
+|**tier** +
+__optional__
+|string
+|**workspace_auto_backup_count_limit** +
+__optional__
+|integer
+|**workspace_auto_backup_retention_in_days** +
+__optional__
+|integer
+|**workspace_manual_backup_count_limit** +
+__optional__
+|integer
+|===
+
+[[_orgrequest]]
+=== OrgRequest
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**logoUrl** +
+__optional__
+|string
+|**orgDisplayName** +
+__optional__
+|string
+|**orgID** +
+__optional__
+|string
+|**orgName** +
+__optional__
+|string
+|===
+
+[[_orgrole]]
+=== OrgRole
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**displayName** +
+__optional__
+|string
+|**id** +
+__optional__
+|string
+|**name** +
+__optional__
+|string
+|**path** +
+__optional__
+|string
+|**tenantID** +
+__optional__
+|string
+|**trn** +
+__optional__
+|string
+|===
+
+[[_organization]]
+=== Organization
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**create_time** +
+__optional__
+|string
+|**creator** +
+__optional__
+|string
+|**delinquent_since** +
+__optional__
+|string
+|**feature_flag** +
+__optional__
+|< xref:rest-api:definitions.adoc#_featureflag[FeatureFlag] > array
+|**logo_url** +
+__optional__
+|string
+|**org_display_name** +
+__optional__
+|string
+|**org_id** +
+__optional__
+|string
+|**org_name** +
+__optional__
+|string
+|===
+
+[[_platform]]
+=== Platform
+
+Type: string
+
+[[_publiccloudproviderresource]]
+=== PublicCloudProviderResource
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**component_versions** +
+__optional__
+|string
+|**id** +
+__optional__
+|string
+|**name** +
+__optional__
+|string
+|**org_id** +
+__optional__
+|string
+|**platform** +
+__optional__
+|string
+|**region** +
+__optional__
+|string
+|**status** +
+__optional__
+|string
+|**version** +
+__optional__
+|string
+|**version_number** +
+__optional__
+|integer
+|===
+
+[[_putorgusersroles]]
+=== PutOrgUsersRoles
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**roles** +
+__optional__
+|< string > array
+|===
+
+[[_requestaddonrequest]]
+=== RequestAddonRequest
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**addon_name** +
+__optional__
+|string
+|**message** +
+__optional__
+|string
+|===
+
+[[_resourcepricing]]
+=== ResourcePricing
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**addon_pricing** +
+__optional__
+|< xref:rest-api:definitions.adoc#_addonpricing[AddOnPricing] > array
+|**data_storage_pricing** +
+__optional__
+|< xref:rest-api:definitions.adoc#_datastoragepricing[DataStoragePricing] > array
+|**workspace_pricing** +
+__optional__
+|< xref:rest-api:definitions.adoc#_workspacepricing[WorkspacePricing] > array
+|===
+
+[[_response]]
+=== Response
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**Error** +
+__optional__
+|boolean
+|**ErrorDetails** +
+__optional__
+|< xref:rest-api:definitions.adoc#_error[Error] > array
+|**Message** +
+__optional__
+|string
+|**RequestID** +
+__optional__
+|string
+|**Result** +
+__optional__
+|object
+|===
+
+[[_servermcpchatrequest]]
+=== ServerMCPChatRequest
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**authorization** +
+__optional__
+|string
+|**debug** +
+__optional__
+|boolean
+|**message** +
+__optional__
+|object
+|**thread_id** +
+__optional__
+|string
+|**type** +
+__optional__
+|string
+|**workspace_id** +
+__optional__
+|string
+|===
+
+[[_updateaddressrequest]]
+=== UpdateAddressRequest
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**city** +
+__optional__
+|string
+|**country** +
+__optional__
+|string
+|**line1** +
+__optional__
+|string
+|**postalCode** +
+__optional__
+|string
+|**state** +
+__optional__
+|string
+|===
+
+[[_updatecloudproviderresourcerequest]]
+=== UpdateCloudProviderResourceRequest
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**name** +
+__optional__
+|string
+|**version** +
+__optional__
+|string
+|===
+
+[[_updateconfigrequest]]
+=== UpdateConfigRequest
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**config_value** +
+__required__
+|string
+|===
+
+[[_upgradecloudprovidercomponent]]
+=== UpgradeCloudProviderComponent
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**name** +
+__optional__
+|string
+|**version** +
+__optional__
+|string
+|===
+
+[[_upgradecloudproviderresourcerequest]]
+=== UpgradeCloudProviderResourceRequest
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**cluster_enabled_log_types** +
+__optional__
+|< xref:rest-api:definitions.adoc#_constants_clusterlogtype[constants.ClusterLogType] > array
+|**components** +
+__optional__
+|< xref:rest-api:definitions.adoc#_upgradecloudprovidercomponent[UpgradeCloudProviderComponent] > array
+|**node_group_config** +
+__optional__
+|xref:rest-api:definitions.adoc#_aws_nodegroupconfig[aws.NodeGroupConfig]
+|===
+
+[[_upgradeworkspacerequest]]
+=== UpgradeWorkspaceRequest
+
+Upgrade Workspace Request
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**desired_version** +
+__optional__
+|string
+|**scheduled** +
+__optional__
+|boolean
+|===
+
+[[_validatecloudproviderrequest]]
+=== ValidateCloudProviderRequest
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**account_id** +
+__optional__
+|string
+|**platform** +
+__required__
+|string
+|**region** +
+__required__
+|string
+|**role_arn** +
+__required__
+|string
+|**role_external_id** +
+__optional__
+|string
+|**secure_connection** +
+__optional__
+|boolean
+|===
+
+[[_workspacemetadata]]
+=== WorkspaceMetadata
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**regions** +
+__optional__
+|< xref:rest-api:definitions.adoc#_region[Region] > array
+|**tgVersions** +
+__optional__
+|< xref:rest-api:definitions.adoc#_tgversion[TGVersion] > array
+|**workspaceTypes** +
+__optional__
+|< xref:rest-api:definitions.adoc#_workspacetype[WorkspaceType] > array
+|===
+
+[[_workspacepricing]]
+=== WorkspacePricing
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**cloud_provider** +
+__optional__
+|string
+|**ha** +
+__optional__
+|string
+|**platform** +
+__optional__
+|string
+|**price_per_hour** +
+__optional__
+|number
+|**region** +
+__optional__
+|string
+|**workspace_type** +
+__optional__
+|string
+|===
+
+[[_aws_nodegroup]]
+=== aws.NodeGroup
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**max_size** +
+__optional__
+|integer
+|**min_size** +
+__optional__
+|integer
+|**overprovisioning_factor** +
+__optional__
+|integer
+|===
+
+[[_aws_nodegroupconfig]]
+=== aws.NodeGroupConfig
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**ng_16** +
+__optional__
+|xref:rest-api:definitions.adoc#_aws_nodegroup[aws.NodeGroup]
+|**ng_32** +
+__optional__
+|xref:rest-api:definitions.adoc#_aws_nodegroup[aws.NodeGroup]
+|**ng_48** +
+__optional__
+|xref:rest-api:definitions.adoc#_aws_nodegroup[aws.NodeGroup]
+|**ng_64** +
+__optional__
+|xref:rest-api:definitions.adoc#_aws_nodegroup[aws.NodeGroup]
+|**ng_system** +
+__optional__
+|xref:rest-api:definitions.adoc#_aws_nodegroup[aws.NodeGroup]
+|**prefetch_image_list** +
+__optional__
+|< string > array
+|===
+
+[[_constants_clusterlogtype]]
+=== constants.ClusterLogType
+
+Type: string
+
+[[_data_encryptionmethod]]
+=== data.EncryptionMethod
+
+Type: string
+
+[[_observability_metricvalue]]
+=== observability.MetricValue
+
+Workspace metric value
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**avgValue** +
+__optional__
+|number
+|===
+
+[[_observability_workgroupmetric]]
+=== observability.WorkgroupMetric
+
+Metrics for workspaces in a workgroup
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**workgroupID** +
+__optional__
+|string
+|**workspaceMetrics** +
+__optional__
+|< xref:rest-api:definitions.adoc#_observability_workspacemetric[observability.WorkspaceMetric] > array
+|===
+
+[[_observability_workspacemetric]]
+=== observability.WorkspaceMetric
+
+Workspace metric
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**metrics** +
+__optional__
+|object<string, xref:rest-api:definitions.adoc#_observability_metricvalue[observability.MetricValue]>
+|**workspaceID** +
+__optional__
+|string
+|===
+
+[[_tgiam_metadata]]
+=== tgIAM.Metadata
+
+Type: object<string, object>

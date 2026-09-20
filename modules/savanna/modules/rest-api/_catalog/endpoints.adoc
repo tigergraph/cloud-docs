@@ -2425,7 +2425,7 @@ __optional__|string
 [[_https_api_tgcloud_io_users_get]]
 == List of users in the org
 ....
-GET https://api.tgcloud.io/controller/v4/v2/users
+GET https://api.tgcloud.io/users
 ....
 
 [discrete]
@@ -2460,7 +2460,7 @@ List of users in the org. Note: this endpoint is not APIKEY compatible
 [[_https_api_tgcloud_io_users_userid_roles_put]]
 == Update the role of an org user
 ....
-PUT https://api.tgcloud.io/controller/v4/v2/users/{userId}/roles
+PUT https://api.tgcloud.io/users/{userId}/roles
 ....
 
 [discrete]

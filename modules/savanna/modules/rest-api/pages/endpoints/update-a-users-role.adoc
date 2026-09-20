@@ -3,7 +3,7 @@
 
 [.api-request]
 ....
-PUT /controller/v4/v2/users/{userId}/roles
+PUT /users/{userId}/roles
 ....
 
 Updates the role of an org user. Note: this endpoint is not APIKEY compatible

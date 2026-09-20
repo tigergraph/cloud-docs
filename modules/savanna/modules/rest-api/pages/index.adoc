@@ -31,14 +31,14 @@ Create, update, and delete the workgroups, workspaces, and databases that host y
 
 * xref:savanna:rest-api:endpoints/create-a-workgroup.adoc[Create a workgroup]: create a workgroup in your organization.
 * xref:savanna:rest-api:endpoints/list-workgroups.adoc[List workgroups]: list the workgroups in your organization.
-* xref:savanna:rest-api:endpoints/get-a-workgroup.adoc[Get a workgroup]: retrieve a single workgroup's details.
+* xref:savanna:rest-api:endpoints/get-workgroup-details.adoc[Get workgroup details]: retrieve one workgroup with its settings, workspaces, and databases.
 * xref:savanna:rest-api:endpoints/update-a-workgroup.adoc[Update a workgroup]: change a workgroup's settings.
 * xref:savanna:rest-api:endpoints/delete-a-workgroup.adoc[Delete a workgroup]: remove a workgroup.
 * xref:savanna:rest-api:endpoints/create-a-workspace.adoc[Create a workspace]: create a workspace in a workgroup.
-* xref:savanna:rest-api:endpoints/get-a-workspace.adoc[Get a workspace]: retrieve a workspace, including its status.
+* xref:savanna:rest-api:endpoints/get-workspace-details.adoc[Get workspace details]: retrieve a workspace, including its status.
 * xref:savanna:rest-api:endpoints/update-a-workspace.adoc[Update a workspace]: resize or reconfigure a workspace.
 * xref:savanna:rest-api:endpoints/delete-a-workspace.adoc[Delete a workspace]: remove a workspace.
-* xref:savanna:rest-api:endpoints/get-a-database.adoc[Get a database]: retrieve a database in a workgroup.
+* xref:savanna:rest-api:endpoints/get-database-details.adoc[Get database details]: retrieve a database in a workgroup.
 * xref:savanna:rest-api:endpoints/update-a-database.adoc[Update a database]: change a database's settings.
 * xref:savanna:rest-api:endpoints/delete-a-database.adoc[Delete a database]: remove a database from a workgroup.
 
@@ -50,7 +50,7 @@ Control when a workspace is running so it is available when you need it and idle
 * xref:savanna:rest-api:endpoints/pause-a-workspace.adoc[Pause a workspace]: stop a workspace to save cost.
 * xref:savanna:rest-api:endpoints/refresh-a-workspace.adoc[Refresh a workspace]: refresh a workspace.
 * xref:savanna:rest-api:endpoints/create-a-workspace-schedule.adoc[Create a workspace schedule]: schedule automatic pause and resume.
-* xref:savanna:rest-api:endpoints/get-workspace-schedules.adoc[Get workspace schedules]: list a workspace's schedules.
+* xref:savanna:rest-api:endpoints/list-workspace-schedules.adoc[List workspace schedules]: list a workspace's schedules.
 * xref:savanna:rest-api:endpoints/update-a-workspace-schedule.adoc[Update a workspace schedule]: change an existing schedule.
 * xref:savanna:rest-api:endpoints/delete-a-workspace-schedule.adoc[Delete a workspace schedule]: remove a schedule.
 
@@ -60,7 +60,7 @@ Back up a workspace, restore it, and automate backups on a recurring schedule.
 
 * xref:savanna:rest-api:endpoints/list-backups.adoc[List backups]: list a workspace's backups.
 * xref:savanna:rest-api:endpoints/restore-a-backup.adoc[Restore a backup]: restore a workspace from a backup.
-* xref:savanna:rest-api:endpoints/get-restore-status.adoc[Get restore status]: check the status of a restore job.
+* xref:savanna:rest-api:endpoints/get-backup-restore-status.adoc[Get backup restore status]: check the status of a restore job.
 * xref:savanna:rest-api:endpoints/delete-a-backup.adoc[Delete a backup]: remove a backup.
 * xref:savanna:rest-api:endpoints/get-backup-schedule.adoc[Get backup schedule]: retrieve the recurring backup schedule.
 * xref:savanna:rest-api:endpoints/set-backup-schedule.adoc[Set backup schedule]: create or update the recurring backup schedule.
@@ -73,23 +73,23 @@ Restrict network access to a workgroup and manage the database users inside a wo
 
 * xref:savanna:rest-api:endpoints/add-an-allowed-ip.adoc[Add an allowed IP]: add an IP or CIDR range to the allow list.
 * xref:savanna:rest-api:endpoints/list-allowed-ips.adoc[List allowed IPs]: list the allow list entries.
-* xref:savanna:rest-api:endpoints/get-current-ip.adoc[Get current IP]: return the caller's public IP address.
+* xref:savanna:rest-api:endpoints/check-the-current-ip.adoc[Check the current IP]: return the caller's public IP and whether the allow list permits it.
 * xref:savanna:rest-api:endpoints/update-an-allowed-ip.adoc[Update an allowed IP]: edit an allow list entry.
 * xref:savanna:rest-api:endpoints/delete-an-allowed-ip.adoc[Delete an allowed IP]: remove an allow list entry.
 * xref:savanna:rest-api:endpoints/enable-the-allow-list.adoc[Enable the allow list]: enforce the IP allow list.
 * xref:savanna:rest-api:endpoints/disable-the-allow-list.adoc[Disable the allow list]: stop enforcing the IP allow list.
 * xref:savanna:rest-api:endpoints/create-an-in-database-user.adoc[Create an in-database user]: create a GSQL user in a workspace.
 * xref:savanna:rest-api:endpoints/list-in-database-users.adoc[List in-database users]: list the workspace's GSQL users.
-* xref:savanna:rest-api:endpoints/update-a-user-password.adoc[Update a user password]: change an in-database user's password.
+* xref:savanna:rest-api:endpoints/update-an-in-database-users-password.adoc[Update an in-database user's password]: set a new password for a GSQL user in a workspace.
 * xref:savanna:rest-api:endpoints/delete-an-in-database-user.adoc[Delete an in-database user]: remove a GSQL user.
 
 === Administer your organization
 
 Discover available capacity and manage the people in your org.
 
-* xref:savanna:rest-api:endpoints/get-org-metadata.adoc[Get org metadata]: discover the regions, sizes, and capacity available to your org.
+* xref:savanna:rest-api:endpoints/get-supported-workspace-options.adoc[Get supported workspace options]: discover the regions, TigerGraph versions, and workspace types available to your org.
 * xref:savanna:rest-api:endpoints/list-org-users.adoc[List org users]: list the users in your organization.
-* xref:savanna:rest-api:endpoints/update-a-users-role.adoc[Update a user's role]: change an org user's role.
+* xref:savanna:rest-api:endpoints/update-an-org-users-role.adoc[Update an org user's role]: change which role a user holds in your organization.
 
 == Common use cases
 
@@ -97,7 +97,7 @@ Discover available capacity and manage the people in your org.
 * *Control cost automatically*: pause idle compute with xref:savanna:rest-api:endpoints/pause-a-workspace.adoc[Pause a workspace] and xref:savanna:rest-api:endpoints/resume-a-workspace.adoc[Resume a workspace], or automate it with xref:savanna:rest-api:endpoints/create-a-workspace-schedule.adoc[Create a workspace schedule].
 * *Protect your data*: snapshot and recover with xref:savanna:rest-api:endpoints/set-backup-schedule.adoc[Set backup schedule] and xref:savanna:rest-api:endpoints/restore-a-backup.adoc[Restore a backup].
 * *Secure access*: restrict traffic with xref:savanna:rest-api:endpoints/add-an-allowed-ip.adoc[Add an allowed IP] and xref:savanna:rest-api:endpoints/enable-the-allow-list.adoc[Enable the allow list], and manage logins with xref:savanna:rest-api:endpoints/create-an-in-database-user.adoc[Create an in-database user].
-* *CI/CD integration*: create ephemeral workspaces for tests or preview environments, polling xref:savanna:rest-api:endpoints/get-a-workspace.adoc[Get a workspace] until the status is ready.
+* *CI/CD integration*: create ephemeral workspaces for tests or preview environments, polling xref:savanna:rest-api:endpoints/get-workspace-details.adoc[Get workspace details] until the status is ready.
 
 == Related topics
 

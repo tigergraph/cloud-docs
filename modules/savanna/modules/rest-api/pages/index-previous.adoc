@@ -117,14 +117,14 @@ Stand up and tear down the workgroups, workspaces, and databases that host your 
 
 |xref:savanna:rest-api:endpoints/create-a-workgroup.adoc[Create a workgroup] |POST |Create a workgroup in your org.
 |xref:savanna:rest-api:endpoints/list-workgroups.adoc[List workgroups] |GET |List the workgroups in your org.
-|xref:savanna:rest-api:endpoints/get-a-workgroup.adoc[Get a workgroup] |GET |Retrieve one workgroup's details.
+|xref:savanna:rest-api:endpoints/get-workgroup-details.adoc[Get workgroup details] |GET |Retrieve one workgroup with its settings, workspaces, and databases.
 |xref:savanna:rest-api:endpoints/update-a-workgroup.adoc[Update a workgroup] |PUT |Change a workgroup's settings.
 |xref:savanna:rest-api:endpoints/delete-a-workgroup.adoc[Delete a workgroup] |DELETE |Remove a workgroup.
 |xref:savanna:rest-api:endpoints/create-a-workspace.adoc[Create a workspace] |POST |Create a workspace in a workgroup.
-|xref:savanna:rest-api:endpoints/get-a-workspace.adoc[Get a workspace] |GET |Retrieve a workspace, including its status.
+|xref:savanna:rest-api:endpoints/get-workspace-details.adoc[Get workspace details] |GET |Retrieve a workspace, including its status.
 |xref:savanna:rest-api:endpoints/update-a-workspace.adoc[Update a workspace] |PUT |Resize or reconfigure a workspace.
 |xref:savanna:rest-api:endpoints/delete-a-workspace.adoc[Delete a workspace] |DELETE |Remove a workspace.
-|xref:savanna:rest-api:endpoints/get-a-database.adoc[Get a database] |GET |Retrieve a database in a workgroup.
+|xref:savanna:rest-api:endpoints/get-database-details.adoc[Get database details] |GET |Retrieve a database in a workgroup.
 |xref:savanna:rest-api:endpoints/update-a-database.adoc[Update a database] |PUT |Change a database's settings.
 |xref:savanna:rest-api:endpoints/delete-a-database.adoc[Delete a database] |DELETE |Remove a database from a workgroup.
 |===
@@ -141,7 +141,7 @@ Control when a workspace is running so it is available when you need it and idle
 |xref:savanna:rest-api:endpoints/pause-a-workspace.adoc[Pause a workspace] |POST |Stop a workspace to save cost.
 |xref:savanna:rest-api:endpoints/refresh-a-workspace.adoc[Refresh a workspace] |POST |Refresh a workspace.
 |xref:savanna:rest-api:endpoints/create-a-workspace-schedule.adoc[Create a workspace schedule] |POST |Schedule automatic pause and resume.
-|xref:savanna:rest-api:endpoints/get-workspace-schedules.adoc[Get workspace schedules] |GET |List a workspace's schedules.
+|xref:savanna:rest-api:endpoints/list-workspace-schedules.adoc[List workspace schedules] |GET |List a workspace's schedules.
 |xref:savanna:rest-api:endpoints/update-a-workspace-schedule.adoc[Update a workspace schedule] |PUT |Change an existing schedule.
 |xref:savanna:rest-api:endpoints/delete-a-workspace-schedule.adoc[Delete a workspace schedule] |DELETE |Remove a schedule.
 |===
@@ -156,7 +156,7 @@ Back up a workspace, restore it, and automate backups on a recurring schedule.
 
 |xref:savanna:rest-api:endpoints/list-backups.adoc[List backups] |GET |List a workspace's backups.
 |xref:savanna:rest-api:endpoints/restore-a-backup.adoc[Restore a backup] |POST |Restore a workspace from a backup.
-|xref:savanna:rest-api:endpoints/get-restore-status.adoc[Get restore status] |GET |Check the status of a restore job.
+|xref:savanna:rest-api:endpoints/get-backup-restore-status.adoc[Get backup restore status] |GET |Check the status of a restore job.
 |xref:savanna:rest-api:endpoints/delete-a-backup.adoc[Delete a backup] |DELETE |Remove a backup.
 |xref:savanna:rest-api:endpoints/get-backup-schedule.adoc[Get backup schedule] |GET |Retrieve the recurring backup schedule.
 |xref:savanna:rest-api:endpoints/set-backup-schedule.adoc[Set backup schedule] |POST |Create or update the backup schedule.
@@ -177,7 +177,7 @@ Restrict network access to a workgroup and manage the database users inside a wo
 
 |xref:savanna:rest-api:endpoints/add-an-allowed-ip.adoc[Add an allowed IP] |POST |Add an IP or CIDR range to the allow list.
 |xref:savanna:rest-api:endpoints/list-allowed-ips.adoc[List allowed IPs] |GET |List the allow list entries.
-|xref:savanna:rest-api:endpoints/get-current-ip.adoc[Get current IP] |GET |Return the caller's public IP.
+|xref:savanna:rest-api:endpoints/check-the-current-ip.adoc[Check the current IP] |GET |Return the caller's public IP and whether the allow list permits it.
 |xref:savanna:rest-api:endpoints/update-an-allowed-ip.adoc[Update an allowed IP] |PUT |Edit an allow list entry.
 |xref:savanna:rest-api:endpoints/delete-an-allowed-ip.adoc[Delete an allowed IP] |DELETE |Remove an allow list entry.
 |xref:savanna:rest-api:endpoints/enable-the-allow-list.adoc[Enable the allow list] |PUT |Enforce the IP allow list.
@@ -193,7 +193,7 @@ Restrict network access to a workgroup and manage the database users inside a wo
 
 |xref:savanna:rest-api:endpoints/create-an-in-database-user.adoc[Create an in-database user] |POST |Create a GSQL user in a workspace.
 |xref:savanna:rest-api:endpoints/list-in-database-users.adoc[List in-database users] |GET |List the workspace's GSQL users.
-|xref:savanna:rest-api:endpoints/update-a-user-password.adoc[Update a user password] |PUT |Change an in-database user's password.
+|xref:savanna:rest-api:endpoints/update-an-in-database-users-password.adoc[Update an in-database user's password] |PUT |Change an in-database user's password.
 |xref:savanna:rest-api:endpoints/delete-an-in-database-user.adoc[Delete an in-database user] |DELETE |Remove a GSQL user.
 |===
 
@@ -205,9 +205,9 @@ Discover available capacity and manage the people in your org.
 |===
 |Operation |Method |Purpose
 
-|xref:savanna:rest-api:endpoints/get-org-metadata.adoc[Get org metadata] |GET |Discover regions, sizes, and other capacity metadata.
+|xref:savanna:rest-api:endpoints/get-supported-workspace-options.adoc[Get supported workspace options] |GET |Discover the regions, TigerGraph versions, and workspace types available to your org.
 |xref:savanna:rest-api:endpoints/list-org-users.adoc[List org users] |GET |List the users in your org.
-|xref:savanna:rest-api:endpoints/update-a-users-role.adoc[Update a user's role] |PUT |Change an org user's role.
+|xref:savanna:rest-api:endpoints/update-an-org-users-role.adoc[Update an org user's role] |PUT |Change an org user's role.
 |===
 
 == Get started
@@ -215,10 +215,10 @@ Discover available capacity and manage the people in your org.
 Provision your first workspace end to end, then connect to it on the data plane.
 
 . xref:savanna:rest-api:create-api-key.adoc[Create an API key] and export it as `x-api-key`.
-. Call xref:savanna:rest-api:endpoints/get-org-metadata.adoc[Get org metadata] to see the regions and sizes available to you.
+. Call xref:savanna:rest-api:endpoints/get-supported-workspace-options.adoc[Get supported workspace options] to see the regions and workspace types available to you.
 . xref:savanna:rest-api:endpoints/create-a-workgroup.adoc[Create a workgroup] in your chosen region.
 . xref:savanna:rest-api:endpoints/create-a-workspace.adoc[Create a workspace] in that workgroup.
-. Poll xref:savanna:rest-api:endpoints/get-a-workspace.adoc[Get a workspace] until its status is ready.
+. Poll xref:savanna:rest-api:endpoints/get-workspace-details.adoc[Get workspace details] until its status is ready.
 . xref:savanna:workgroup-workspace:workspaces/connect-via-api.adoc[Connect via APIs] to load data and run GSQL on the data plane.
 
 == Reference

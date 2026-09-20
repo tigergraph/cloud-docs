@@ -7,12 +7,12 @@
 ** Workgroups
 *** xref:rest-api:endpoints/create-a-workgroup.adoc[POST Create a workgroup]
 *** xref:rest-api:endpoints/list-workgroups.adoc[GET List workgroups]
-*** xref:rest-api:endpoints/get-a-workgroup.adoc[GET Get a workgroup]
+*** xref:rest-api:endpoints/get-workgroup-details.adoc[GET Get workgroup details]
 *** xref:rest-api:endpoints/update-a-workgroup.adoc[PUT Update a workgroup]
 *** xref:rest-api:endpoints/delete-a-workgroup.adoc[DELETE Delete a workgroup]
 ** Workspaces
 *** xref:rest-api:endpoints/create-a-workspace.adoc[POST Create a workspace]
-*** xref:rest-api:endpoints/get-a-workspace.adoc[GET Get a workspace]
+*** xref:rest-api:endpoints/get-workspace-details.adoc[GET Get workspace details]
 *** xref:rest-api:endpoints/update-a-workspace.adoc[PUT Update a workspace]
 *** xref:rest-api:endpoints/delete-a-workspace.adoc[DELETE Delete a workspace]
 *** xref:rest-api:endpoints/resume-a-workspace.adoc[POST Resume a workspace]
@@ -20,24 +20,24 @@
 *** xref:rest-api:endpoints/refresh-a-workspace.adoc[POST Refresh a workspace]
 ** Workspace schedules
 *** xref:rest-api:endpoints/create-a-workspace-schedule.adoc[POST Create a workspace schedule]
-*** xref:rest-api:endpoints/get-workspace-schedules.adoc[GET Get workspace schedules]
+*** xref:rest-api:endpoints/list-workspace-schedules.adoc[GET List workspace schedules]
 *** xref:rest-api:endpoints/update-a-workspace-schedule.adoc[PUT Update a workspace schedule]
 *** xref:rest-api:endpoints/delete-a-workspace-schedule.adoc[DELETE Delete a workspace schedule]
 ** Databases
-*** xref:rest-api:endpoints/get-a-database.adoc[GET Get a database]
+*** xref:rest-api:endpoints/get-database-details.adoc[GET Get database details]
 *** xref:rest-api:endpoints/update-a-database.adoc[PUT Update a database]
 *** xref:rest-api:endpoints/delete-a-database.adoc[DELETE Delete a database]
 ** Backups
 *** xref:rest-api:endpoints/list-backups.adoc[GET List backups]
 *** xref:rest-api:endpoints/restore-a-backup.adoc[POST Restore a backup]
-*** xref:rest-api:endpoints/get-restore-status.adoc[GET Get restore status]
+*** xref:rest-api:endpoints/get-backup-restore-status.adoc[GET Get backup restore status]
 *** xref:rest-api:endpoints/delete-a-backup.adoc[DELETE Delete a backup]
 *** xref:rest-api:endpoints/get-backup-schedule.adoc[GET Get backup schedule]
 *** xref:rest-api:endpoints/set-backup-schedule.adoc[POST Set backup schedule]
 ** IP allow list
 *** xref:rest-api:endpoints/add-an-allowed-ip.adoc[POST Add an allowed IP]
 *** xref:rest-api:endpoints/list-allowed-ips.adoc[GET List allowed IPs]
-*** xref:rest-api:endpoints/get-current-ip.adoc[GET Get current IP]
+*** xref:rest-api:endpoints/check-the-current-ip.adoc[GET Check the current IP]
 *** xref:rest-api:endpoints/update-an-allowed-ip.adoc[PUT Update an allowed IP]
 *** xref:rest-api:endpoints/delete-an-allowed-ip.adoc[DELETE Delete an allowed IP]
 *** xref:rest-api:endpoints/enable-the-allow-list.adoc[PUT Enable the allow list]
@@ -45,10 +45,10 @@
 ** In-database users
 *** xref:rest-api:endpoints/create-an-in-database-user.adoc[POST Create an in-database user]
 *** xref:rest-api:endpoints/list-in-database-users.adoc[GET List in-database users]
-*** xref:rest-api:endpoints/update-a-user-password.adoc[PUT Update a user password]
+*** xref:rest-api:endpoints/update-an-in-database-users-password.adoc[PUT Update an in-database user's password]
 *** xref:rest-api:endpoints/delete-an-in-database-user.adoc[DELETE Delete an in-database user]
 ** Organization
-*** xref:rest-api:endpoints/get-org-metadata.adoc[GET Get org metadata]
+*** xref:rest-api:endpoints/get-supported-workspace-options.adoc[GET Get supported workspace options]
 *** xref:rest-api:endpoints/list-org-users.adoc[GET List org users]
-*** xref:rest-api:endpoints/update-a-users-role.adoc[PUT Update a user's role]
+*** xref:rest-api:endpoints/update-an-org-users-role.adoc[PUT Update an org user's role]
 ** xref:rest-api:definitions.adoc[Definitions]

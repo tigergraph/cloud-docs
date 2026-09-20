@@ -35,7 +35,7 @@ https://<workspace-id>.i.tgcloud.io/restpp/...   # REST++ interface
 https://<workspace-id>.i.tgcloud.io/gsql/...     # GSQL interface
 ----
 
-Find your workspace host in the Savanna console from the workspace's *Connect* dialog, or from the control plane with xref:savanna:rest-api:endpoints/get-a-workspace.adoc[Get a workspace].
+Find your workspace host in the Savanna console from the workspace's *Connect* dialog, or from the control plane with xref:savanna:rest-api:endpoints/get-workspace-details.adoc[Get workspace details].
 
 == Authentication
 

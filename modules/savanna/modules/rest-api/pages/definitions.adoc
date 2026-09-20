@@ -431,6 +431,27 @@ __optional__|<<definitions.adoc#_workspacetype,WorkspaceType>>
 |===
 
 
+[[_workspaceaddonsrequest]]
+=== WorkspaceAddonsRequest
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**addons_id** +
+__required__|string
+|**enable** +
+__required__|boolean
+|**enable_configuration** +
+__optional__|object
+|**is_free** +
+__optional__|boolean
+|**unique_name** +
+__optional__|string
+|**workspace_id** +
+__optional__|string
+|===
+
+
 [[_workspaceschedule]]
 === WorkspaceSchedule
 
@@ -486,6 +507,11 @@ __optional__|integer
 |**typeName** +
 __optional__|string
 |===
+
+
+[[_constants_platform]]
+=== constants.Platform
+__Type__ : enum (aws, azure, gcp)
 
 
 [[_middleware_error]]
@@ -634,6 +660,25 @@ __optional__|string
 |**redacted_key** +
 __optional__|string
 |**user_id** +
+__optional__|string
+|===
+
+
+[[_pb_addonpricing]]
+=== pb.AddOnPricing
+
+[options="header", cols=".^3a,.^4a"]
+|===
+|Name|Schema
+|**platform** +
+__optional__|string
+|**price_per_hour** +
+__optional__|number
+|**region** +
+__optional__|string
+|**type** +
+__optional__|string
+|**workspace_type** +
 __optional__|string
 |===
 

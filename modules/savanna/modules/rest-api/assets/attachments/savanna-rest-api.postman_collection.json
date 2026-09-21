@@ -1,0 +1,2225 @@
+{
+  "info": {
+    "_postman_id": "7c4e1b2a-9d83-4f0e-a6c1-8b2d4e6f90ab",
+    "name": "TigerGraph Savanna REST API",
+    "description": "Control-plane endpoints for TigerGraph Savanna (https://api.tgcloud.io). Set apiKey to your Savanna API key (x-api-key). Org user endpoints do not accept API keys.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "x-api-key",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}",
+        "type": "string"
+      },
+      {
+        "key": "in",
+        "value": "header",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://api.tgcloud.io"
+    },
+    {
+      "key": "apiKey",
+      "value": ""
+    },
+    {
+      "key": "cloudProviderID",
+      "value": ""
+    },
+    {
+      "key": "workgroupID",
+      "value": ""
+    },
+    {
+      "key": "workspaceID",
+      "value": ""
+    },
+    {
+      "key": "addonsID",
+      "value": ""
+    },
+    {
+      "key": "installedAddonsID",
+      "value": ""
+    },
+    {
+      "key": "configName",
+      "value": ""
+    },
+    {
+      "key": "configID",
+      "value": ""
+    },
+    {
+      "key": "scheduleID",
+      "value": ""
+    },
+    {
+      "key": "databaseID",
+      "value": ""
+    },
+    {
+      "key": "job",
+      "value": ""
+    },
+    {
+      "key": "id",
+      "value": ""
+    },
+    {
+      "key": "userId",
+      "value": ""
+    }
+  ],
+  "item": [
+    {
+      "name": "Cloud providers",
+      "item": [
+        {
+          "name": "Create a cloud provider",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/cloud-providers",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "cloud-providers"
+              ]
+            },
+            "description": "Create a new cloud provider",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"created_by\": \"string\",\n  \"name\": \"string\",\n  \"options\": {\n    \"account_id\": \"string\",\n    \"secure_connection\": false\n  },\n  \"platform\": \"string\",\n  \"region\": \"string\",\n  \"role_arn\": \"string\",\n  \"role_external_id\": \"string\",\n  \"type\": \"string\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "List cloud providers",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/cloud-providers",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "cloud-providers"
+              ]
+            },
+            "description": "List all cloud provider belonging to the org"
+          }
+        },
+        {
+          "name": "List public cloud providers",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/cloud-providers/public",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "cloud-providers",
+                "public"
+              ]
+            },
+            "description": "List of public cloud providers"
+          }
+        },
+        {
+          "name": "Validate a cloud provider",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/cloud-providers/validate",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "cloud-providers",
+                "validate"
+              ]
+            },
+            "description": "Validate the cloud provider request",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"account_id\": \"string\",\n  \"platform\": \"string\",\n  \"region\": \"string\",\n  \"role_arn\": \"string\",\n  \"role_external_id\": \"string\",\n  \"secure_connection\": false\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Get cloud provider details",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/cloud-providers/:cloudProviderID",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "cloud-providers",
+                ":cloudProviderID"
+              ],
+              "variable": [
+                {
+                  "key": "cloudProviderID",
+                  "value": "{{cloudProviderID}}",
+                  "description": "Cloud Provider ID"
+                }
+              ]
+            },
+            "description": "Get a cloud provider by ID"
+          }
+        },
+        {
+          "name": "Update a cloud provider",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/cloud-providers/:cloudProviderID",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "cloud-providers",
+                ":cloudProviderID"
+              ],
+              "variable": [
+                {
+                  "key": "cloudProviderID",
+                  "value": "{{cloudProviderID}}",
+                  "description": "Cloud Provider ID"
+                }
+              ]
+            },
+            "description": "Update a cloud provider",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"string\",\n  \"version\": \"string\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Delete a cloud provider",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/cloud-providers/:cloudProviderID",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "cloud-providers",
+                ":cloudProviderID"
+              ],
+              "variable": [
+                {
+                  "key": "cloudProviderID",
+                  "value": "{{cloudProviderID}}",
+                  "description": "Cloud Provider ID"
+                }
+              ]
+            },
+            "description": "Delete a cloud provider"
+          }
+        },
+        {
+          "name": "Upgrade a cloud provider",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/cloud-providers/:cloudProviderID/upgrade",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "cloud-providers",
+                ":cloudProviderID",
+                "upgrade"
+              ],
+              "variable": [
+                {
+                  "key": "cloudProviderID",
+                  "value": "{{cloudProviderID}}",
+                  "description": "Cloud Provider ID"
+                }
+              ]
+            },
+            "description": "Upgrade a cloud provider",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"cluster_enabled_log_types\": [\n    \"api\"\n  ],\n  \"components\": [],\n  \"node_group_config\": {\n    \"ng_16\": {},\n    \"ng_32\": {},\n    \"ng_48\": {},\n    \"ng_64\": {},\n    \"ng_system\": {},\n    \"prefetch_image_list\": [\n      \"string\"\n    ]\n  }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Workgroups",
+      "item": [
+        {
+          "name": "Create a workgroup",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/workgroups",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "workgroups"
+              ]
+            },
+            "description": "Create workgroups in your org",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"cloud_provider_id\": \"string\",\n  \"enable_application_log\": false,\n  \"enable_encryption\": false,\n  \"name\": \"string\",\n  \"platform\": \"aws\",\n  \"region\": \"string\",\n  \"shared_storage\": false\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "List workgroups",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/workgroups",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "workgroups"
+              ]
+            },
+            "description": "Get workgroups for your org"
+          }
+        },
+        {
+          "name": "Get workgroup details",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/workgroups/:workgroupID",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "workgroups",
+                ":workgroupID"
+              ],
+              "variable": [
+                {
+                  "key": "workgroupID",
+                  "value": "{{workgroupID}}",
+                  "description": "Workgroup ID"
+                }
+              ]
+            },
+            "description": "Get workgroup detail in your org"
+          }
+        },
+        {
+          "name": "Update a workgroup",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/workgroups/:workgroupID",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "workgroups",
+                ":workgroupID"
+              ],
+              "variable": [
+                {
+                  "key": "workgroupID",
+                  "value": "{{workgroupID}}",
+                  "description": "Workgroup ID"
+                }
+              ]
+            },
+            "description": "Update workgroups in your org",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"enable_application_log\": false,\n  \"encryption_method\": \"TMK\",\n  \"workgroup_name\": \"string\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Delete a workgroup",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/workgroups/:workgroupID",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "workgroups",
+                ":workgroupID"
+              ],
+              "variable": [
+                {
+                  "key": "workgroupID",
+                  "value": "{{workgroupID}}",
+                  "description": "Workgroup ID"
+                }
+              ]
+            },
+            "description": "Get workgroup detail in your org"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Workspaces",
+      "item": [
+        {
+          "name": "Create a workspace",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/workgroups/:workgroupID/workspaces",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "workgroups",
+                ":workgroupID",
+                "workspaces"
+              ],
+              "variable": [
+                {
+                  "key": "workgroupID",
+                  "value": "{{workgroupID}}",
+                  "description": "Workgroup ID"
+                }
+              ]
+            },
+            "description": "Create workspace in workgroup",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"addons\": [],\n  \"auto_stop_minutes\": 0,\n  \"enable_auto_start\": false,\n  \"enable_ha\": false,\n  \"is_rw\": false,\n  \"maintenance_window_day_of_week\": 0,\n  \"maintenance_window_hour_of_day\": 0,\n  \"maintenance_window_interval_weeks\": 0,\n  \"maintenance_window_time_zone\": \"string\",\n  \"name\": \"string\",\n  \"solution_install_request\": {\n    \"addons\": [],\n    \"data_source_origin\": \"string\",\n    \"name\": \"string\",\n    \"solution_catalog_id\": \"string\"\n  },\n  \"tg_database_id\": \"string\",\n  \"tg_version\": \"string\",\n  \"update_strategy\": \"string\",\n  \"workspace_type_name\": \"string\",\n  \"x_test_env\": \"string\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Get workspace details",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/workgroups/:workgroupID/workspaces/:workspaceID",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "workgroups",
+                ":workgroupID",
+                "workspaces",
+                ":workspaceID"
+              ],
+              "variable": [
+                {
+                  "key": "workgroupID",
+                  "value": "{{workgroupID}}",
+                  "description": "Workgroup ID"
+                },
+                {
+                  "key": "workspaceID",
+                  "value": "{{workspaceID}}",
+                  "description": "Workspace ID"
+                }
+              ]
+            },
+            "description": "Get workspace in workgroup"
+          }
+        },
+        {
+          "name": "Update a workspace",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/workgroups/:workgroupID/workspaces/:workspaceID",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "workgroups",
+                ":workgroupID",
+                "workspaces",
+                ":workspaceID"
+              ],
+              "variable": [
+                {
+                  "key": "workgroupID",
+                  "value": "{{workgroupID}}",
+                  "description": "Workgroup ID"
+                },
+                {
+                  "key": "workspaceID",
+                  "value": "{{workspaceID}}",
+                  "description": "Workspace ID"
+                }
+              ]
+            },
+            "description": "Update workspace in workgroup",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"addons\": [],\n  \"agent_config\": {\n    \"catalog_activity_update_interval_seconds\": 0,\n    \"enable_topology_force_update\": false,\n    \"heartbeat_interval_seconds\": 0,\n    \"query_activity_update_interval_seconds\": 0,\n    \"topology_update_interval_seconds\": 0\n  },\n  \"auto_stop_minutes\": 0,\n  \"auto_upgrade_state\": \"string\",\n  \"desired_tg_version\": \"string\",\n  \"enable_auto_start\": false,\n  \"enable_ha\": false,\n  \"maintenance_window_day_of_week\": 0,\n  \"maintenance_window_hour_of_day\": 0,\n  \"maintenance_window_interval_weeks\": 0,\n  \"maintenance_window_time_zone\": \"string\",\n  \"pause\": false,\n  \"update_strategy\": \"string\",\n  \"workspace_name\": \"string\",\n  \"workspace_type_name\": \"string\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Delete a workspace",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/workgroups/:workgroupID/workspaces/:workspaceID",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "workgroups",
+                ":workgroupID",
+                "workspaces",
+                ":workspaceID"
+              ],
+              "variable": [
+                {
+                  "key": "workgroupID",
+                  "value": "{{workgroupID}}",
+                  "description": "Workgroup ID"
+                },
+                {
+                  "key": "workspaceID",
+                  "value": "{{workspaceID}}",
+                  "description": "Workspace ID"
+                }
+              ]
+            },
+            "description": "Delete workspace in workgroup"
+          }
+        },
+        {
+          "name": "Resume a workspace",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/workgroups/:workgroupID/workspaces/:workspaceID/resume",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "workgroups",
+                ":workgroupID",
+                "workspaces",
+                ":workspaceID",
+                "resume"
+              ],
+              "variable": [
+                {
+                  "key": "workgroupID",
+                  "value": "{{workgroupID}}",
+                  "description": "Workgroup ID"
+                },
+                {
+                  "key": "workspaceID",
+                  "value": "{{workspaceID}}",
+                  "description": "Workspace ID"
+                }
+              ]
+            },
+            "description": "Resume workspace in workgroup"
+          }
+        },
+        {
+          "name": "Pause a workspace",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/workgroups/:workgroupID/workspaces/:workspaceID/pause",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "workgroups",
+                ":workgroupID",
+                "workspaces",
+                ":workspaceID",
+                "pause"
+              ],
+              "variable": [
+                {
+                  "key": "workgroupID",
+                  "value": "{{workgroupID}}",
+                  "description": "Workgroup ID"
+                },
+                {
+                  "key": "workspaceID",
+                  "value": "{{workspaceID}}",
+                  "description": "Workspace ID"
+                }
+              ]
+            },
+            "description": "Pause workspace in workgroup"
+          }
+        },
+        {
+          "name": "Refresh a workspace",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/workgroups/:workgroupID/workspaces/:workspaceID/refresh",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "workgroups",
+                ":workgroupID",
+                "workspaces",
+                ":workspaceID",
+                "refresh"
+              ],
+              "variable": [
+                {
+                  "key": "workgroupID",
+                  "value": "{{workgroupID}}",
+                  "description": "Workgroup ID"
+                },
+                {
+                  "key": "workspaceID",
+                  "value": "{{workspaceID}}",
+                  "description": "Workspace ID"
+                }
+              ]
+            },
+            "description": "Refresh workspace in workgroup"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Add-ons",
+      "item": [
+        {
+          "name": "List available add-ons",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/addons/meta",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "addons",
+                "meta"
+              ]
+            },
+            "description": "Get metadata for add-ons."
+          }
+        },
+        {
+          "name": "Install an add-on",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/addons/:addonsID/install",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "addons",
+                ":addonsID",
+                "install"
+              ],
+              "variable": [
+                {
+                  "key": "addonsID",
+                  "value": "{{addonsID}}",
+                  "description": "Add-on ID"
+                }
+              ],
+              "query": [
+                {
+                  "key": "enable",
+                  "value": "{{enable}}",
+                  "description": "Enable or disable add-on",
+                  "disabled": false
+                }
+              ]
+            },
+            "description": "Installs an add-on by ID."
+          }
+        },
+        {
+          "name": "List installed add-ons",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/installed-addons",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "installed-addons"
+              ]
+            },
+            "description": "List all installed add-ons for the organization."
+          }
+        },
+        {
+          "name": "Get installed add-on details",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/installed-addons/:installedAddonsID",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "installed-addons",
+                ":installedAddonsID"
+              ],
+              "variable": [
+                {
+                  "key": "installedAddonsID",
+                  "value": "{{installedAddonsID}}",
+                  "description": "Installed Add-on ID"
+                }
+              ]
+            },
+            "description": "Get details of an installed add-on by its ID."
+          }
+        },
+        {
+          "name": "List add-on workspaces",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/addons/:addonsID/workspaces",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "addons",
+                ":addonsID",
+                "workspaces"
+              ],
+              "variable": [
+                {
+                  "key": "addonsID",
+                  "value": "{{addonsID}}",
+                  "description": "Addons ID"
+                }
+              ]
+            },
+            "description": "Retrieves a list of workspaces associated with a specific addons ID."
+          }
+        },
+        {
+          "name": "List add-on configurations",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/installed-addons/:installedAddonsID/configs/:configName",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "installed-addons",
+                ":installedAddonsID",
+                "configs",
+                ":configName"
+              ],
+              "variable": [
+                {
+                  "key": "installedAddonsID",
+                  "value": "{{installedAddonsID}}",
+                  "description": "Installed Add-on ID"
+                },
+                {
+                  "key": "configName",
+                  "value": "{{configName}}",
+                  "description": "Configuration Name"
+                }
+              ]
+            },
+            "description": "List configurations for a specific installed add-on."
+          }
+        },
+        {
+          "name": "Create an add-on configuration",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/add-ons/:installedAddonsID/configs",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "add-ons",
+                ":installedAddonsID",
+                "configs"
+              ],
+              "variable": [
+                {
+                  "key": "installedAddonsID",
+                  "value": "{{installedAddonsID}}",
+                  "description": "Installed Add-on ID"
+                }
+              ]
+            },
+            "description": "Create a new configuration for a specific installed add-on.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"config_name\": \"string\",\n  \"config_value\": \"string\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Update an add-on configuration",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/add-ons/:installedAddonsID/configs/:configID",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "add-ons",
+                ":installedAddonsID",
+                "configs",
+                ":configID"
+              ],
+              "variable": [
+                {
+                  "key": "installedAddonsID",
+                  "value": "{{installedAddonsID}}",
+                  "description": "Installed Add-on ID"
+                },
+                {
+                  "key": "configID",
+                  "value": "{{configID}}",
+                  "description": "Configuration ID"
+                }
+              ]
+            },
+            "description": "Update an existing configuration for an add-on.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"config_value\": \"string\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Delete an add-on configuration",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/add-ons/:installedAddonsID/configs/:configID",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "add-ons",
+                ":installedAddonsID",
+                "configs",
+                ":configID"
+              ],
+              "variable": [
+                {
+                  "key": "installedAddonsID",
+                  "value": "{{installedAddonsID}}",
+                  "description": "Installed Add-on ID"
+                },
+                {
+                  "key": "configID",
+                  "value": "{{configID}}",
+                  "description": "Configuration ID"
+                }
+              ]
+            },
+            "description": "Delete a specific configuration for an add-on."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Workspace schedules",
+      "item": [
+        {
+          "name": "Create a workspace schedule",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/workgroups/:workgroupID/workspaces/:workspaceID/schedules",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "workgroups",
+                ":workgroupID",
+                "workspaces",
+                ":workspaceID",
+                "schedules"
+              ],
+              "variable": [
+                {
+                  "key": "workgroupID",
+                  "value": "{{workgroupID}}",
+                  "description": "Workgroup ID"
+                },
+                {
+                  "key": "workspaceID",
+                  "value": "{{workspaceID}}",
+                  "description": "Workspace ID"
+                }
+              ]
+            },
+            "description": "Create a new workspace schedule for a given workspace",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"date\": \"string\",\n  \"id\": \"string\",\n  \"repeat\": \"string\",\n  \"repeat_on\": \"string\",\n  \"time\": \"string\",\n  \"timezone\": \"string\",\n  \"workspace_id\": \"string\",\n  \"workspace_type_name\": \"string\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "List workspace schedules",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/workgroups/:workgroupID/workspaces/:workspaceID/schedules",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "workgroups",
+                ":workgroupID",
+                "workspaces",
+                ":workspaceID",
+                "schedules"
+              ],
+              "variable": [
+                {
+                  "key": "workgroupID",
+                  "value": "{{workgroupID}}",
+                  "description": "Workgroup ID"
+                },
+                {
+                  "key": "workspaceID",
+                  "value": "{{workspaceID}}",
+                  "description": "Workspace ID"
+                }
+              ]
+            },
+            "description": "Retrieve the schedule for a given workspace"
+          }
+        },
+        {
+          "name": "Update a workspace schedule",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/workgroups/:workgroupID/workspaces/:workspaceID/schedules/:scheduleID",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "workgroups",
+                ":workgroupID",
+                "workspaces",
+                ":workspaceID",
+                "schedules",
+                ":scheduleID"
+              ],
+              "variable": [
+                {
+                  "key": "workgroupID",
+                  "value": "{{workgroupID}}",
+                  "description": "Workgroup ID"
+                },
+                {
+                  "key": "workspaceID",
+                  "value": "{{workspaceID}}",
+                  "description": "Workspace ID"
+                },
+                {
+                  "key": "scheduleID",
+                  "value": "{{scheduleID}}",
+                  "description": "Schedule ID"
+                }
+              ]
+            },
+            "description": "Update an existing workspace schedule for a given workspace",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"date\": \"string\",\n  \"id\": \"string\",\n  \"repeat\": \"string\",\n  \"repeat_on\": \"string\",\n  \"time\": \"string\",\n  \"timezone\": \"string\",\n  \"workspace_id\": \"string\",\n  \"workspace_type_name\": \"string\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Delete a workspace schedule",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/workgroups/:workgroupID/workspaces/:workspaceID/schedules/:scheduleID",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "workgroups",
+                ":workgroupID",
+                "workspaces",
+                ":workspaceID",
+                "schedules",
+                ":scheduleID"
+              ],
+              "variable": [
+                {
+                  "key": "workgroupID",
+                  "value": "{{workgroupID}}",
+                  "description": "Workgroup ID"
+                },
+                {
+                  "key": "workspaceID",
+                  "value": "{{workspaceID}}",
+                  "description": "Workspace ID"
+                },
+                {
+                  "key": "scheduleID",
+                  "value": "{{scheduleID}}",
+                  "description": "Schedule ID"
+                }
+              ]
+            },
+            "description": "Delete an existing workspace schedule for a given workspace"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Databases",
+      "item": [
+        {
+          "name": "Get database details",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/workgroups/:workgroupID/databases/:databaseID",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "workgroups",
+                ":workgroupID",
+                "databases",
+                ":databaseID"
+              ],
+              "variable": [
+                {
+                  "key": "workgroupID",
+                  "value": "{{workgroupID}}",
+                  "description": "Workgroup ID"
+                },
+                {
+                  "key": "databaseID",
+                  "value": "{{databaseID}}",
+                  "description": "Database ID"
+                }
+              ]
+            },
+            "description": "Get database in workgroup"
+          }
+        },
+        {
+          "name": "Update a database",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/workgroups/:workgroupID/databases/:databaseID",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "workgroups",
+                ":workgroupID",
+                "databases",
+                ":databaseID"
+              ],
+              "variable": [
+                {
+                  "key": "workgroupID",
+                  "value": "{{workgroupID}}",
+                  "description": "Workgroup ID"
+                },
+                {
+                  "key": "databaseID",
+                  "value": "{{databaseID}}",
+                  "description": "Database ID"
+                }
+              ]
+            },
+            "description": "Update database in workgroup",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"tg_database_name\": \"string\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Delete a database",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/workgroups/:workgroupID/databases/:databaseID",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "workgroups",
+                ":workgroupID",
+                "databases",
+                ":databaseID"
+              ],
+              "variable": [
+                {
+                  "key": "workgroupID",
+                  "value": "{{workgroupID}}",
+                  "description": "Workgroup ID"
+                },
+                {
+                  "key": "databaseID",
+                  "value": "{{databaseID}}",
+                  "description": "Database ID"
+                }
+              ]
+            },
+            "description": "Delete database in workgroup"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Backups",
+      "item": [
+        {
+          "name": "List backups",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/workgroups/:workgroupID/workspaces/:workspaceID/backups",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "workgroups",
+                ":workgroupID",
+                "workspaces",
+                ":workspaceID",
+                "backups"
+              ],
+              "variable": [
+                {
+                  "key": "workgroupID",
+                  "value": "{{workgroupID}}",
+                  "description": "Workgroup ID"
+                },
+                {
+                  "key": "workspaceID",
+                  "value": "{{workspaceID}}",
+                  "description": "Workspace ID"
+                }
+              ]
+            },
+            "description": "List all backups for a workspace"
+          }
+        },
+        {
+          "name": "Restore a backup",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/workgroups/:workgroupID/workspaces/:workspaceID/backups/restore",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "workgroups",
+                ":workgroupID",
+                "workspaces",
+                ":workspaceID",
+                "backups",
+                "restore"
+              ],
+              "variable": [
+                {
+                  "key": "workspaceID",
+                  "value": "{{workspaceID}}",
+                  "description": "Workspace ID"
+                },
+                {
+                  "key": "workgroupID",
+                  "value": "{{workgroupID}}",
+                  "description": "Workgroup ID"
+                }
+              ]
+            },
+            "description": "Restore a backup for a workspace",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"backup_id\": \"string\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Get backup restore status",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/workgroups/:workgroupID/workspaces/:workspaceID/backups/:job/status",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "workgroups",
+                ":workgroupID",
+                "workspaces",
+                ":workspaceID",
+                "backups",
+                ":job",
+                "status"
+              ],
+              "variable": [
+                {
+                  "key": "workgroupID",
+                  "value": "{{workgroupID}}",
+                  "description": "Workgroup ID"
+                },
+                {
+                  "key": "workspaceID",
+                  "value": "{{workspaceID}}",
+                  "description": "Workspace ID"
+                },
+                {
+                  "key": "job",
+                  "value": "{{job}}",
+                  "description": "Job ID"
+                }
+              ]
+            },
+            "description": "Get the status of a backup restore job"
+          }
+        },
+        {
+          "name": "Delete a backup",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/workgroups/:workgroupID/workspaces/:workspaceID/backups",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "workgroups",
+                ":workgroupID",
+                "workspaces",
+                ":workspaceID",
+                "backups"
+              ],
+              "variable": [
+                {
+                  "key": "workspaceID",
+                  "value": "{{workspaceID}}",
+                  "description": "Workspace ID"
+                },
+                {
+                  "key": "workgroupID",
+                  "value": "{{workgroupID}}",
+                  "description": "Workgroup ID"
+                }
+              ]
+            },
+            "description": "Delete a backup for a workspace",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"backup_id\": \"string\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Get backup schedule",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/workgroups/:workgroupID/workspaces/:workspaceID/backups/schedule",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "workgroups",
+                ":workgroupID",
+                "workspaces",
+                ":workspaceID",
+                "backups",
+                "schedule"
+              ],
+              "variable": [
+                {
+                  "key": "workgroupID",
+                  "value": "{{workgroupID}}",
+                  "description": "Workgroup ID"
+                },
+                {
+                  "key": "workspaceID",
+                  "value": "{{workspaceID}}",
+                  "description": "Workspace ID"
+                }
+              ]
+            },
+            "description": "Get the backup schedule for a workspace"
+          }
+        },
+        {
+          "name": "Set backup schedule",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/workgroups/:workgroupID/workspaces/:workspaceID/backups/schedule",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "workgroups",
+                ":workgroupID",
+                "workspaces",
+                ":workspaceID",
+                "backups",
+                "schedule"
+              ],
+              "variable": [
+                {
+                  "key": "workspaceID",
+                  "value": "{{workspaceID}}",
+                  "description": "Workspace ID"
+                },
+                {
+                  "key": "workgroupID",
+                  "value": "{{workgroupID}}",
+                  "description": "Workgroup ID"
+                }
+              ]
+            },
+            "description": "Set a backup schedule for a workspace",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"max_backup_files\": 0,\n  \"max_reserved_days\": 0,\n  \"max_retry\": 0,\n  \"pause\": false,\n  \"schedule\": \"string\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "IP allow list",
+      "item": [
+        {
+          "name": "Add an allowed IP",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/workgroups/:workgroupID/allow_list",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "workgroups",
+                ":workgroupID",
+                "allow_list"
+              ],
+              "variable": [
+                {
+                  "key": "workgroupID",
+                  "value": "{{workgroupID}}",
+                  "description": "Workgroup ID"
+                }
+              ]
+            },
+            "description": "Add a new allowed IP to the workgroup",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"cidr\": \"string\",\n  \"id\": \"string\",\n  \"note\": \"string\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "List allowed IPs",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/workgroups/:workgroupID/allow_list",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "workgroups",
+                ":workgroupID",
+                "allow_list"
+              ],
+              "variable": [
+                {
+                  "key": "workgroupID",
+                  "value": "{{workgroupID}}",
+                  "description": "Workgroup ID"
+                }
+              ]
+            },
+            "description": "List all allowed IPs in the workgroup"
+          }
+        },
+        {
+          "name": "Check the current IP",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/workgroups/:workgroupID/allow_list/current",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "workgroups",
+                ":workgroupID",
+                "allow_list",
+                "current"
+              ],
+              "variable": [
+                {
+                  "key": "workgroupID",
+                  "value": "{{workgroupID}}",
+                  "description": "Workgroup ID"
+                }
+              ]
+            },
+            "description": "Get the current IP and check if it is allowed in the workgroup"
+          }
+        },
+        {
+          "name": "Update an allowed IP",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/workgroups/:workgroupID/allow_list/:id",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "workgroups",
+                ":workgroupID",
+                "allow_list",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "workgroupID",
+                  "value": "{{workgroupID}}",
+                  "description": "Workgroup ID"
+                },
+                {
+                  "key": "id",
+                  "value": "{{id}}",
+                  "description": "Allowed IP ID"
+                }
+              ]
+            },
+            "description": "Update an existing allowed IP in the workgroup",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"cidr\": \"string\",\n  \"id\": \"string\",\n  \"note\": \"string\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Delete an allowed IP",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/workgroups/:workgroupID/allow_list/:id",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "workgroups",
+                ":workgroupID",
+                "allow_list",
+                ":id"
+              ],
+              "variable": [
+                {
+                  "key": "workgroupID",
+                  "value": "{{workgroupID}}",
+                  "description": "Workgroup ID"
+                },
+                {
+                  "key": "id",
+                  "value": "{{id}}",
+                  "description": "Allowed IP ID"
+                }
+              ]
+            },
+            "description": "Delete an existing allowed IP from the workgroup"
+          }
+        },
+        {
+          "name": "Enable the allow list",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/workgroups/:workgroupID/allow_list/enable",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "workgroups",
+                ":workgroupID",
+                "allow_list",
+                "enable"
+              ],
+              "variable": [
+                {
+                  "key": "workgroupID",
+                  "value": "{{workgroupID}}",
+                  "description": "Workgroup ID"
+                }
+              ]
+            },
+            "description": "Enable the allow list for the workgroup"
+          }
+        },
+        {
+          "name": "Disable the allow list",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/workgroups/:workgroupID/allow_list/disable",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "workgroups",
+                ":workgroupID",
+                "allow_list",
+                "disable"
+              ],
+              "variable": [
+                {
+                  "key": "workgroupID",
+                  "value": "{{workgroupID}}",
+                  "description": "Workgroup ID"
+                }
+              ]
+            },
+            "description": "Disable the allow list for the workgroup"
+          }
+        }
+      ]
+    },
+    {
+      "name": "In-database users",
+      "item": [
+        {
+          "name": "Create an in-database user",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/workgroups/:workgroupID/workspaces/:workspaceID/dbuser",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "workgroups",
+                ":workgroupID",
+                "workspaces",
+                ":workspaceID",
+                "dbuser"
+              ],
+              "variable": [
+                {
+                  "key": "workgroupID",
+                  "value": "{{workgroupID}}",
+                  "description": "Workgroup ID"
+                },
+                {
+                  "key": "workspaceID",
+                  "value": "{{workspaceID}}",
+                  "description": "Workspace ID"
+                }
+              ]
+            },
+            "description": "Create a new in-database GSQL user in the specified workspace and workgroup.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"password\": \"string\",\n  \"username\": \"string\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "List in-database users",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/workgroups/:workgroupID/workspaces/:workspaceID/dbuser",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "workgroups",
+                ":workgroupID",
+                "workspaces",
+                ":workspaceID",
+                "dbuser"
+              ],
+              "variable": [
+                {
+                  "key": "workgroupID",
+                  "value": "{{workgroupID}}",
+                  "description": "Workgroup ID"
+                },
+                {
+                  "key": "workspaceID",
+                  "value": "{{workspaceID}}",
+                  "description": "Workspace ID"
+                }
+              ]
+            },
+            "description": "List all in-database GSQL users in the specified workspace and workgroup."
+          }
+        },
+        {
+          "name": "Update an in-database user's password",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/workgroups/:workgroupID/workspaces/:workspaceID/dbuser",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "workgroups",
+                ":workgroupID",
+                "workspaces",
+                ":workspaceID",
+                "dbuser"
+              ],
+              "variable": [
+                {
+                  "key": "workgroupID",
+                  "value": "{{workgroupID}}",
+                  "description": "Workgroup ID"
+                },
+                {
+                  "key": "workspaceID",
+                  "value": "{{workspaceID}}",
+                  "description": "Workspace ID"
+                }
+              ]
+            },
+            "description": "Update the password of an in-database GSQL user in the specified workspace and workgroup.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"password\": \"string\",\n  \"username\": \"string\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Delete an in-database user",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/workgroups/:workgroupID/workspaces/:workspaceID/dbuser",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "workgroups",
+                ":workgroupID",
+                "workspaces",
+                ":workspaceID",
+                "dbuser"
+              ],
+              "variable": [
+                {
+                  "key": "workgroupID",
+                  "value": "{{workgroupID}}",
+                  "description": "Workgroup ID"
+                },
+                {
+                  "key": "workspaceID",
+                  "value": "{{workspaceID}}",
+                  "description": "Workspace ID"
+                }
+              ]
+            },
+            "description": "Delete an in-database GSQL user in the specified workspace and workgroup.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"password\": \"string\",\n  \"username\": \"string\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Organization",
+      "item": [
+        {
+          "name": "Get supported workspace options",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/controller/v4/v2/workspaces/meta",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "controller",
+                "v4",
+                "v2",
+                "workspaces",
+                "meta"
+              ],
+              "query": [
+                {
+                  "key": "upgrade",
+                  "value": "{{upgrade}}",
+                  "description": "When true, tgVersions only include versions with allow_upgrade; when false or omitted (default), all create-allowed versions for the org are returned",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Get regions/tgVersions/workspaceTypes supported for your org"
+          }
+        },
+        {
+          "name": "List org users",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/users",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "users"
+              ]
+            },
+            "description": "List of users in the org. Note: this endpoint is not APIKEY compatible",
+            "auth": {
+              "type": "noauth"
+            }
+          }
+        },
+        {
+          "name": "Update an org user's role",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/users/:userId/roles",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "users",
+                ":userId",
+                "roles"
+              ],
+              "variable": [
+                {
+                  "key": "userId",
+                  "value": "{{userId}}",
+                  "description": "Id of the user"
+                }
+              ]
+            },
+            "description": "Updates the role of an org user. Note: this endpoint is not APIKEY compatible",
+            "auth": {
+              "type": "noauth"
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"roles\": [\n    \"string\"\n  ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

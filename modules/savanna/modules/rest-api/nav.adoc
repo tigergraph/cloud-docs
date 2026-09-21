@@ -5,7 +5,6 @@
 ** xref:index.adoc[Overview]
 ** xref:rest-api:create-api-key.adoc[Create an API key]
 ** xref:rest-api:data-plane-apis.adoc[Data-plane APIs]
-** xref:rest-api:index-previous.adoc[Overview (previous)]
 ** Cloud providers
 *** xref:rest-api:endpoints/create-a-cloud-provider.adoc[POST Create a cloud provider]
 *** xref:rest-api:endpoints/list-cloud-providers.adoc[GET List cloud providers]

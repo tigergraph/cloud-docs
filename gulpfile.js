@@ -78,6 +78,14 @@ function rebuildUiBundle (done) {
   execSync('npx gulp bundle', { cwd: antoraUiRoot, stdio: 'inherit' })
   execSync('rm -rf build/ui-bundle && mkdir -p build/ui-bundle', { stdio: 'inherit' })
   execSync(`unzip -oq ${JSON.stringify(uiBundleZip)} -d build/ui-bundle`, { stdio: 'inherit' })
+  // An empty site.js extracts without error and the preview still renders, so the
+  // only symptom is that nothing scripted works — collapsible nav groups, the
+  // language picker, search. Fail here instead of serving a mute site.
+  const siteJs = 'build/ui-bundle/js/site.js'
+  if (!fs.existsSync(siteJs) || !fs.statSync(siteJs).size) {
+    done(new Error(`${siteJs} is missing or empty; rerun after ${uiBundleZip} finishes writing`))
+    return
+  }
   done()
 }
 

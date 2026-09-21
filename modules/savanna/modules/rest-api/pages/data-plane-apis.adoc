@@ -1,5 +1,6 @@
 = Data-plane APIs (REST++ and GSQL)
 :experimental:
+:page-hidden: true
 
 The xref:savanna:rest-api:index.adoc[Savanna REST API] is the *control plane*: it manages the resources _around_ your graph (workgroups, workspaces, backups). To read and write the data _inside_ a workspace, you call that workspace's *data-plane* APIs directly.
 

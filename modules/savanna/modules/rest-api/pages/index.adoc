@@ -12,7 +12,7 @@ The Savanna REST API is the *control plane* for TigerGraph Savanna. It manages t
 https://api.tgcloud.io
 ----
 
-To read and write the data inside a workspace (schema, loading jobs, and GSQL), use the workspace's xref:savanna:rest-api:data-plane-apis.adoc[data-plane APIs (REST{plus}{plus} and GSQL)]. You can also generate snippets from the console with xref:savanna:workgroup-workspace:workspaces/connect-via-api.adoc[Connect via APIs], or xref:savanna:get-started:connect-agent-mcp.adoc[Connect AI tools with MCP] to drive Savanna in natural language.
+To read and write the data inside a workspace (schema, loading jobs, and GSQL), call that workspace host with the https://www.tigergraph.com/docs/tigergraph-server/4.3/api/gsql-endpoints[GSQL endpoints^] (schema, loading, and query installation) and the https://www.tigergraph.com/docs/tigergraph-server/4.3/api/built-in-endpoints[REST{plus}{plus} built-in endpoints^] (run queries and read or upsert graph data). You can also generate snippets from the console with xref:savanna:workgroup-workspace:workspaces/connect-via-api.adoc[Connect via APIs].
 
 == The resource model
 
@@ -131,4 +131,3 @@ Discover available capacity and manage the people in your org.
 
 * xref:savanna:rest-api:create-api-key.adoc[Create an API key]. Generate a key in Organization Settings.
 * xref:savanna:workgroup-workspace:workspaces/connect-via-api.adoc[Connect via APIs]. Data-plane curl, Python, and JavaScript examples.
-* xref:savanna:get-started:connect-agent-mcp.adoc[Connect AI tools with MCP]. Drive Savanna with an AI agent.

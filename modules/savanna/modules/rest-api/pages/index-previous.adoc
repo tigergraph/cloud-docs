@@ -3,7 +3,7 @@
 
 // This is a previous draft of the REST API overview, kept temporarily for side-by-side comparison with xref:savanna:rest-api:index.adoc[the current overview].
 
-The Savanna REST API is the control plane for TigerGraph Savanna. Use it to provision and manage the resources behind your graphs, such as workgroups, workspaces, backups, networking, and organization users, from your own scripts, services, and CI/CD pipelines instead of the Savanna UI.
+The Savanna REST API is the control plane for TigerGraph Savanna. Use it to provision and manage the resources behind your graphs, such as cloud providers, workgroups, workspaces, add-ons, backups, networking, and organization users, from your own scripts, services, and CI/CD pipelines instead of the Savanna UI.
 
 Everything in this reference runs against a single base URL and authenticates with an API key, so you can automate the full lifecycle of a workspace: create it, size it, protect it with backups, schedule it to save cost, and tear it down when you are done.
 
@@ -16,7 +16,7 @@ Savanna exposes two different APIs. Knowing which one you need saves time.
 |API |What it manages |Where it lives
 
 |*Control plane* (this reference)
-|The resources _around_ your graph: workgroups, workspaces, databases, backups, IP allow lists, schedules, and org users.
+|The resources _around_ your graph: cloud providers, workgroups, workspaces, databases, add-ons, backups, IP allow lists, schedules, and org users.
 |`https://api.tgcloud.io/controller/v4/v2`
 
 |*Data plane* (REST{plus}{plus})
@@ -35,7 +35,10 @@ Control-plane resources are nested. Most paths follow this hierarchy, so underst
 |Resource |What it is
 
 |*Organization*
-|Your Savanna account boundary. Owns users, roles, and quotas.
+|Your Savanna account boundary. Owns users, roles, quotas, add-ons, and cloud providers.
+
+|*Cloud provider*
+|Where a workgroup deploys: a TigerGraph-operated region, or a Bring Your Own Cloud (BYOC) account you register.
 
 |*Workgroup*
 |A container that groups related workspaces and holds shared settings such as the IP allow list. Lives in a cloud provider and region.
@@ -44,7 +47,7 @@ Control-plane resources are nested. Most paths follow this hierarchy, so underst
 |A running, independently scalable compute environment attached to a *database*. This is what you connect to, query, back up, pause, and schedule.
 
 |*Database*
-|The persistent storage for a workspace's graph data, managed within its workgroup.
+|The persistent storage for a workspace's graph data. Created with the workspace; managed within its workgroup.
 |===
 
 A typical path reflects that nesting:
@@ -107,9 +110,27 @@ Keep API keys out of source control. Store them as environment variables or in a
 
 The sections below group every documented endpoint by the job it does. Each link jumps straight to its request, parameters, and response.
 
+=== Choose a cloud provider
+
+TigerGraph-operated providers are the default. Bring Your Own Cloud (BYOC) registers a cloud account you own so workgroups can run there.
+
+[options="header",cols="4a,1,5a"]
+|===
+|Operation |Method |Purpose
+
+|xref:savanna:rest-api:endpoints/list-public-cloud-providers.adoc[List public cloud providers] |GET |List the providers TigerGraph operates.
+|xref:savanna:rest-api:endpoints/list-cloud-providers.adoc[List cloud providers] |GET |List the BYOC providers registered to your organization.
+|xref:savanna:rest-api:endpoints/get-cloud-provider-details.adoc[Get cloud provider details] |GET |Return one BYOC provider.
+|xref:savanna:rest-api:endpoints/create-a-cloud-provider.adoc[Create a cloud provider] |POST |Register a cloud account you own with Savanna.
+|xref:savanna:rest-api:endpoints/validate-a-cloud-provider.adoc[Validate a cloud provider] |POST |Check whether a BYOC registration would succeed.
+|xref:savanna:rest-api:endpoints/update-a-cloud-provider.adoc[Update a cloud provider] |PUT |Rename a BYOC provider or record a version against it.
+|xref:savanna:rest-api:endpoints/upgrade-a-cloud-provider.adoc[Upgrade a cloud provider] |PUT |Upgrade Savanna components in a BYOC account.
+|xref:savanna:rest-api:endpoints/delete-a-cloud-provider.adoc[Delete a cloud provider] |DELETE |Unregister a BYOC provider.
+|===
+
 === Provision graph infrastructure
 
-Stand up and tear down the workgroups, workspaces, and databases that host your graphs.
+Stand up and tear down the workgroups and workspaces that host your graphs. A database is created with the workspace; there is no separate create-database call.
 
 [options="header",cols="4a,1,5a"]
 |===
@@ -120,7 +141,7 @@ Stand up and tear down the workgroups, workspaces, and databases that host your 
 |xref:savanna:rest-api:endpoints/get-workgroup-details.adoc[Get workgroup details] |GET |Retrieve one workgroup with its settings, workspaces, and databases.
 |xref:savanna:rest-api:endpoints/update-a-workgroup.adoc[Update a workgroup] |PUT |Change a workgroup's settings.
 |xref:savanna:rest-api:endpoints/delete-a-workgroup.adoc[Delete a workgroup] |DELETE |Remove a workgroup.
-|xref:savanna:rest-api:endpoints/create-a-workspace.adoc[Create a workspace] |POST |Create a workspace in a workgroup.
+|xref:savanna:rest-api:endpoints/create-a-workspace.adoc[Create a workspace] |POST |Create a workspace in a workgroup. The database is created with it.
 |xref:savanna:rest-api:endpoints/get-workspace-details.adoc[Get workspace details] |GET |Retrieve a workspace, including its status.
 |xref:savanna:rest-api:endpoints/update-a-workspace.adoc[Update a workspace] |PUT |Resize or reconfigure a workspace.
 |xref:savanna:rest-api:endpoints/delete-a-workspace.adoc[Delete a workspace] |DELETE |Remove a workspace.
@@ -197,6 +218,25 @@ Restrict network access to a workgroup and manage the database users inside a wo
 |xref:savanna:rest-api:endpoints/delete-an-in-database-user.adoc[Delete an in-database user] |DELETE |Remove a GSQL user.
 |===
 
+=== Enable add-ons
+
+Install GraphStudio, Insights, GraphQL, and other add-ons, then attach them to a workspace.
+
+[options="header",cols="4a,1,5a"]
+|===
+|Operation |Method |Purpose
+
+|xref:savanna:rest-api:endpoints/list-available-add-ons.adoc[List available add-ons] |GET |List the add-ons available to your organization.
+|xref:savanna:rest-api:endpoints/install-an-add-on.adoc[Install an add-on] |POST |Install an add-on, or enable or disable it.
+|xref:savanna:rest-api:endpoints/list-installed-add-ons.adoc[List installed add-ons] |GET |List the add-ons installed for your organization.
+|xref:savanna:rest-api:endpoints/get-installed-add-on-details.adoc[Get installed add-on details] |GET |Return a single installed add-on.
+|xref:savanna:rest-api:endpoints/list-add-on-workspaces.adoc[List add-on workspaces] |GET |List the workspaces that have a given add-on enabled.
+|xref:savanna:rest-api:endpoints/list-add-on-configurations.adoc[List add-on configurations] |GET |List configurations of a given name for an installed add-on.
+|xref:savanna:rest-api:endpoints/create-an-add-on-configuration.adoc[Create an add-on configuration] |POST |Create a configuration for an installed add-on.
+|xref:savanna:rest-api:endpoints/update-an-add-on-configuration.adoc[Update an add-on configuration] |PUT |Update a configuration of an installed add-on.
+|xref:savanna:rest-api:endpoints/delete-an-add-on-configuration.adoc[Delete an add-on configuration] |DELETE |Delete a configuration of an installed add-on.
+|===
+
 === Administer your organization
 
 Discover available capacity and manage the people in your org.
@@ -234,13 +274,13 @@ xref:savanna:rest-api:index.adoc#_endpoints[Endpoints]
 
 Browse every control-plane endpoint with parameters and responses.
 ¦
-xref:savanna:rest-api:definitions.adoc[Definitions]
-
-Look up the request and response schemas used by the API.
-¦
 xref:savanna:rest-api:create-api-key.adoc[Create an API key]
 
 Generate a key for scripts and services that call the control plane.
+¦
+xref:savanna:rest-api:data-plane-apis.adoc[Data-plane APIs]
+
+Read and write graph data with REST{plus}{plus} and GSQL.
 |===
 
 == Where to go next

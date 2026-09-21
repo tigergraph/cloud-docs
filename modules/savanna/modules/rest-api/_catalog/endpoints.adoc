@@ -1959,6 +1959,219 @@ __optional__|<<definitions.adoc#_resource_manager_handler_getmetadata_metadata,r
 * Org
 
 
+// Cloud provider operations are present in the OpenAPI catalog but were not
+// emitted by the legacy AsciiDoc generator. These minimal entries preserve the
+// catalog as the endpoint/nav allowlist; page content comes from openapi.json.
+
+[[_https_api_tgcloud_io_controller_v4_v2_cloud_providers_post]]
+== Create a new cloud provider
+....
+POST https://api.tgcloud.io/controller/v4/v2/cloud-providers
+....
+
+[discrete]
+==== Tags
+
+* CloudProvider
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_cloud_providers_get]]
+== List all cloud providers belonging to the org
+....
+GET https://api.tgcloud.io/controller/v4/v2/cloud-providers
+....
+
+[discrete]
+==== Tags
+
+* CloudProvider
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_cloud_providers_public_get]]
+== List public cloud providers
+....
+GET https://api.tgcloud.io/controller/v4/v2/cloud-providers/public
+....
+
+[discrete]
+==== Tags
+
+* CloudProvider
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_cloud_providers_validate_post]]
+== Validate a cloud provider request
+....
+POST https://api.tgcloud.io/controller/v4/v2/cloud-providers/validate
+....
+
+[discrete]
+==== Tags
+
+* CloudProvider
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_cloud_providers_cloudproviderid_get]]
+== Get a cloud provider by ID
+....
+GET https://api.tgcloud.io/controller/v4/v2/cloud-providers/{cloudProviderID}
+....
+
+[discrete]
+==== Tags
+
+* CloudProvider
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_cloud_providers_cloudproviderid_put]]
+== Update a cloud provider
+....
+PUT https://api.tgcloud.io/controller/v4/v2/cloud-providers/{cloudProviderID}
+....
+
+[discrete]
+==== Tags
+
+* CloudProvider
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_cloud_providers_cloudproviderid_delete]]
+== Delete a cloud provider
+....
+DELETE https://api.tgcloud.io/controller/v4/v2/cloud-providers/{cloudProviderID}
+....
+
+[discrete]
+==== Tags
+
+* CloudProvider
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_cloud_providers_cloudproviderid_upgrade_put]]
+== Upgrade a cloud provider
+....
+PUT https://api.tgcloud.io/controller/v4/v2/cloud-providers/{cloudProviderID}/upgrade
+....
+
+[discrete]
+==== Tags
+
+* CloudProvider
+
+
+// Add-on operations are present in the OpenAPI catalog but were not
+// emitted by the legacy AsciiDoc generator. These minimal entries preserve the
+// catalog as the endpoint/nav allowlist; page content comes from openapi.json.
+// POST /addons/request is omitted: it files a request for an unavailable add-on,
+// not the install/configure path used by GraphStudio, Insights, and GraphQL.
+
+[[_https_api_tgcloud_io_controller_v4_v2_addons_meta_get]]
+== List available add-ons
+....
+GET https://api.tgcloud.io/controller/v4/v2/addons/meta
+....
+
+[discrete]
+==== Tags
+
+* Add-ons
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_addons_addonsid_install_post]]
+== Install an add-on
+....
+POST https://api.tgcloud.io/controller/v4/v2/addons/{addonsID}/install
+....
+
+[discrete]
+==== Tags
+
+* Add-ons
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_installed_addons_get]]
+== List installed add-ons
+....
+GET https://api.tgcloud.io/controller/v4/v2/installed-addons
+....
+
+[discrete]
+==== Tags
+
+* Add-ons
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_installed_addons_installedaddonsid_get]]
+== Get installed add-on details
+....
+GET https://api.tgcloud.io/controller/v4/v2/installed-addons/{installedAddonsID}
+....
+
+[discrete]
+==== Tags
+
+* Add-ons
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_addons_addonsid_workspaces_get]]
+== List add-on workspaces
+....
+GET https://api.tgcloud.io/controller/v4/v2/addons/{addonsID}/workspaces
+....
+
+[discrete]
+==== Tags
+
+* Add-ons
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_installed_addons_installedaddonsid_configs_configname_get]]
+== List add-on configurations
+....
+GET https://api.tgcloud.io/controller/v4/v2/installed-addons/{installedAddonsID}/configs/{configName}
+....
+
+[discrete]
+==== Tags
+
+* Add-ons
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_add_ons_installedaddonsid_configs_post]]
+== Create an add-on configuration
+....
+POST https://api.tgcloud.io/controller/v4/v2/add-ons/{installedAddonsID}/configs
+....
+
+[discrete]
+==== Tags
+
+* Add-ons
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_add_ons_installedaddonsid_configs_configid_put]]
+== Update an add-on configuration
+....
+PUT https://api.tgcloud.io/controller/v4/v2/add-ons/{installedAddonsID}/configs/{configID}
+....
+
+[discrete]
+==== Tags
+
+* Add-ons
+
+
+[[_https_api_tgcloud_io_controller_v4_v2_add_ons_installedaddonsid_configs_configid_delete]]
+== Delete an add-on configuration
+....
+DELETE https://api.tgcloud.io/controller/v4/v2/add-ons/{installedAddonsID}/configs/{configID}
+....
+
+[discrete]
+==== Tags
+
+* Add-ons
+
 [[_https_api_tgcloud_io_controller_v4_v2_workspaces_workspaceid_backups_get]]
 == List backups
 ....

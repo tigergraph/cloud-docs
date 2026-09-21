@@ -496,34 +496,34 @@ and 'public' when called by the public cloud provider creation API.</p>
   --header 'x-api-key: &lt;your-api-key&gt;' \
   --header 'Content-Type: application/json' \
   --data '{
-    "created_by": "string",
-    "name": "string",
+    "created_by": "&lt;string&gt;",
+    "name": "&lt;string&gt;",
     "options": {
-      "account_id": "string",
+      "account_id": "&lt;string&gt;",
       "secure_connection": false
     },
-    "platform": "string",
-    "region": "string",
-    "role_arn": "string",
-    "role_external_id": "string",
-    "type": "string"
+    "platform": "&lt;string&gt;",
+    "region": "&lt;string&gt;",
+    "role_arn": "&lt;string&gt;",
+    "role_external_id": "&lt;string&gt;",
+    "type": "&lt;string&gt;"
   }'</code></pre>
           <pre data-request-language="python" hidden><code class="hljs language-python">import requests
 
 url = "https://api.tgcloud.io/controller/v4/v2/cloud-providers"
 headers = {"x-api-key": "&lt;your-api-key&gt;"}
 payload = {
-  "created_by": "string",
-  "name": "string",
+  "created_by": "&lt;string&gt;",
+  "name": "&lt;string&gt;",
   "options": {
-    "account_id": "string",
+    "account_id": "&lt;string&gt;",
     "secure_connection": False
   },
-  "platform": "string",
-  "region": "string",
-  "role_arn": "string",
-  "role_external_id": "string",
-  "type": "string"
+  "platform": "&lt;string&gt;",
+  "region": "&lt;string&gt;",
+  "role_arn": "&lt;string&gt;",
+  "role_external_id": "&lt;string&gt;",
+  "type": "&lt;string&gt;"
 }
 
 response = requests.post(url, headers=headers, json=payload)
@@ -534,17 +534,17 @@ print(response.json())</code></pre>
     method: "POST",
     headers: { "x-api-key": "&lt;your-api-key&gt;", "Content-Type": "application/json" },
     body: JSON.stringify({
-      "created_by": "string",
-      "name": "string",
+      "created_by": "&lt;string&gt;",
+      "name": "&lt;string&gt;",
       "options": {
-        "account_id": "string",
+        "account_id": "&lt;string&gt;",
         "secure_connection": false
       },
-      "platform": "string",
-      "region": "string",
-      "role_arn": "string",
-      "role_external_id": "string",
-      "type": "string"
+      "platform": "&lt;string&gt;",
+      "region": "&lt;string&gt;",
+      "role_arn": "&lt;string&gt;",
+      "role_external_id": "&lt;string&gt;",
+      "type": "&lt;string&gt;"
     }),
   }
 )
@@ -559,31 +559,31 @@ curl_setopt($request, CURLOPT_HTTPHEADER, [
   "Content-Type: application/json"
 ]);
 curl_setopt($request, CURLOPT_POSTFIELDS, '{
-    "created_by": "string",
-    "name": "string",
+    "created_by": "&lt;string&gt;",
+    "name": "&lt;string&gt;",
     "options": {
-      "account_id": "string",
+      "account_id": "&lt;string&gt;",
       "secure_connection": false
     },
-    "platform": "string",
-    "region": "string",
-    "role_arn": "string",
-    "role_external_id": "string",
-    "type": "string"
+    "platform": "&lt;string&gt;",
+    "region": "&lt;string&gt;",
+    "role_arn": "&lt;string&gt;",
+    "role_external_id": "&lt;string&gt;",
+    "type": "&lt;string&gt;"
   }');
 curl_exec($request);</code></pre>
           <pre data-request-language="go" hidden><code class="hljs language-go">payload := strings.NewReader(`{
-    "created_by": "string",
-    "name": "string",
+    "created_by": "&lt;string&gt;",
+    "name": "&lt;string&gt;",
     "options": {
-      "account_id": "string",
+      "account_id": "&lt;string&gt;",
       "secure_connection": false
     },
-    "platform": "string",
-    "region": "string",
-    "role_arn": "string",
-    "role_external_id": "string",
-    "type": "string"
+    "platform": "&lt;string&gt;",
+    "region": "&lt;string&gt;",
+    "role_arn": "&lt;string&gt;",
+    "role_external_id": "&lt;string&gt;",
+    "type": "&lt;string&gt;"
   }`)
 
 request, _ := http.NewRequest(
@@ -602,17 +602,17 @@ response, _ := http.DefaultClient.Do(request)</code></pre>
   .header("Content-Type", "application/json")
   .method("POST", HttpRequest.BodyPublishers.ofString("""
 {
-      "created_by": "string",
-      "name": "string",
+      "created_by": "&lt;string&gt;",
+      "name": "&lt;string&gt;",
       "options": {
-        "account_id": "string",
+        "account_id": "&lt;string&gt;",
         "secure_connection": false
       },
-      "platform": "string",
-      "region": "string",
-      "role_arn": "string",
-      "role_external_id": "string",
-      "type": "string"
+      "platform": "&lt;string&gt;",
+      "region": "&lt;string&gt;",
+      "role_arn": "&lt;string&gt;",
+      "role_external_id": "&lt;string&gt;",
+      "type": "&lt;string&gt;"
     }
   """))
   .build();</code></pre>
@@ -624,17 +624,17 @@ request["x-api-key"] = "&lt;your-api-key&gt;"
 request["Content-Type"] = "application/json"
 request.body = &lt;&lt;~JSON
 {
-    "created_by": "string",
-    "name": "string",
+    "created_by": "&lt;string&gt;",
+    "name": "&lt;string&gt;",
     "options": {
-      "account_id": "string",
+      "account_id": "&lt;string&gt;",
       "secure_connection": false
     },
-    "platform": "string",
-    "region": "string",
-    "role_arn": "string",
-    "role_external_id": "string",
-    "type": "string"
+    "platform": "&lt;string&gt;",
+    "region": "&lt;string&gt;",
+    "role_arn": "&lt;string&gt;",
+    "role_external_id": "&lt;string&gt;",
+    "type": "&lt;string&gt;"
   }
 JSON
 response = Net::HTTP.start(uri.host, uri.port, use_ssl: true) {
@@ -658,26 +658,26 @@ response = Net::HTTP.start(uri.host, uri.port, use_ssl: true) {
           <pre role="tabpanel" data-response-pane="200"><code class="hljs language-json">{
   "Error": false,
   "ErrorDetails": [],
-  "Message": "",
-  "RequestID": "string",
+  "Message": "&lt;string&gt;",
+  "RequestID": "&lt;string&gt;",
   "Result": {
     "api_tokens": [
-      "string"
+      "&lt;string&gt;"
     ],
     "availability_zones": [
-      "string"
+      "&lt;string&gt;"
     ],
     "cluster_enabled_log_types": [
       "api"
     ],
-    "component_versions": "string",
-    "created_at": "string",
-    "created_by": "string",
-    "eks_id": "string",
-    "endpoint_service_name": "string",
-    "id": "string",
-    "last_error": "string",
-    "name": "string",
+    "component_versions": "&lt;string&gt;",
+    "created_at": "&lt;string&gt;",
+    "created_by": "&lt;string&gt;",
+    "eks_id": "&lt;string&gt;",
+    "endpoint_service_name": "&lt;string&gt;",
+    "id": "&lt;string&gt;",
+    "last_error": "&lt;string&gt;",
+    "name": "&lt;string&gt;",
     "node_group_config": {
       "ng_16": {
         "max_size": 0,
@@ -705,31 +705,31 @@ response = Net::HTTP.start(uri.host, uri.port, use_ssl: true) {
         "overprovisioning_factor": 0
       },
       "prefetch_image_list": [
-        "string"
+        "&lt;string&gt;"
       ]
     },
     "options": {
-      "account_id": "string",
+      "account_id": "&lt;string&gt;",
       "secure_connection": false
     },
-    "org_id": "string",
-    "platform": "string",
-    "region": "string",
-    "role_arn": "string",
-    "role_external_id": "string",
-    "security_group_id": "string",
-    "short_id": "string",
-    "status": "string",
+    "org_id": "&lt;string&gt;",
+    "platform": "&lt;string&gt;",
+    "region": "&lt;string&gt;",
+    "role_arn": "&lt;string&gt;",
+    "role_external_id": "&lt;string&gt;",
+    "security_group_id": "&lt;string&gt;",
+    "short_id": "&lt;string&gt;",
+    "status": "&lt;string&gt;",
     "subnet_id": [
-      "string"
+      "&lt;string&gt;"
     ],
-    "type": "string",
-    "updated_at": "string",
-    "version": "string",
+    "type": "&lt;string&gt;",
+    "updated_at": "&lt;string&gt;",
+    "version": "&lt;string&gt;",
     "version_number": 0,
-    "vpc_id": "string",
+    "vpc_id": "&lt;string&gt;",
     "vpc_owned_by_tg": false,
-    "work_dir": "string"
+    "work_dir": "&lt;string&gt;"
   }
 }</code></pre>
         </div>

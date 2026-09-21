@@ -365,25 +365,25 @@ response = Net::HTTP.start(uri.host, uri.port, use_ssl: true) {
           <pre role="tabpanel" data-response-pane="200"><code class="hljs language-json">{
   "Error": false,
   "ErrorDetails": [],
-  "Message": "",
-  "RequestID": "string",
+  "Message": "&lt;string&gt;",
+  "RequestID": "&lt;string&gt;",
   "Result": [
     {
-      "auth0UserID": "string",
-      "created": "string",
-      "description": "string",
-      "email": "string",
+      "auth0UserID": "&lt;string&gt;",
+      "created": "&lt;string&gt;",
+      "description": "&lt;string&gt;",
+      "email": "&lt;string&gt;",
       "enabled": false,
-      "firstName": "string",
-      "id": "string",
-      "lastName": "string",
-      "metadata": "string",
-      "path": "string",
-      "role": "string",
-      "tenantID": "string",
-      "trn": "string",
-      "updated": "string",
-      "username": "string"
+      "firstName": "&lt;string&gt;",
+      "id": "&lt;string&gt;",
+      "lastName": "&lt;string&gt;",
+      "metadata": "&lt;string&gt;",
+      "path": "&lt;string&gt;",
+      "role": "&lt;string&gt;",
+      "tenantID": "&lt;string&gt;",
+      "trn": "&lt;string&gt;",
+      "updated": "&lt;string&gt;",
+      "username": "&lt;string&gt;"
     }
   ]
 }</code></pre>
@@ -391,13 +391,13 @@ response = Net::HTTP.start(uri.host, uri.port, use_ssl: true) {
   "Error": true,
   "ErrorDetails": [
     {
-      "FieldName": "string",
-      "Reason": "string",
+      "FieldName": "&lt;string&gt;",
+      "Reason": "&lt;string&gt;",
       "Type": "Internal-Error"
     }
   ],
-  "Message": "string",
-  "RequestID": "string"
+  "Message": "&lt;string&gt;",
+  "RequestID": "&lt;string&gt;"
 }</code></pre>
         </div>
       </section>

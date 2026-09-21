@@ -386,16 +386,16 @@
   --header 'x-api-key: &lt;your-api-key&gt;' \
   --header 'Content-Type: application/json' \
   --data '{
-    "password": "string",
-    "username": "string"
+    "password": "&lt;string&gt;",
+    "username": "&lt;string&gt;"
   }'</code></pre>
           <pre data-request-language="python" hidden><code class="hljs language-python">import requests
 
 url = "https://api.tgcloud.io/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/dbuser"
 headers = {"x-api-key": "&lt;your-api-key&gt;"}
 payload = {
-  "password": "string",
-  "username": "string"
+  "password": "&lt;string&gt;",
+  "username": "&lt;string&gt;"
 }
 
 response = requests.post(url, headers=headers, json=payload)
@@ -406,8 +406,8 @@ print(response.json())</code></pre>
     method: "POST",
     headers: { "x-api-key": "&lt;your-api-key&gt;", "Content-Type": "application/json" },
     body: JSON.stringify({
-      "password": "string",
-      "username": "string"
+      "password": "&lt;string&gt;",
+      "username": "&lt;string&gt;"
     }),
   }
 )
@@ -422,13 +422,13 @@ curl_setopt($request, CURLOPT_HTTPHEADER, [
   "Content-Type: application/json"
 ]);
 curl_setopt($request, CURLOPT_POSTFIELDS, '{
-    "password": "string",
-    "username": "string"
+    "password": "&lt;string&gt;",
+    "username": "&lt;string&gt;"
   }');
 curl_exec($request);</code></pre>
           <pre data-request-language="go" hidden><code class="hljs language-go">payload := strings.NewReader(`{
-    "password": "string",
-    "username": "string"
+    "password": "&lt;string&gt;",
+    "username": "&lt;string&gt;"
   }`)
 
 request, _ := http.NewRequest(
@@ -447,8 +447,8 @@ response, _ := http.DefaultClient.Do(request)</code></pre>
   .header("Content-Type", "application/json")
   .method("POST", HttpRequest.BodyPublishers.ofString("""
 {
-      "password": "string",
-      "username": "string"
+      "password": "&lt;string&gt;",
+      "username": "&lt;string&gt;"
     }
   """))
   .build();</code></pre>
@@ -460,8 +460,8 @@ request["x-api-key"] = "&lt;your-api-key&gt;"
 request["Content-Type"] = "application/json"
 request.body = &lt;&lt;~JSON
 {
-    "password": "string",
-    "username": "string"
+    "password": "&lt;string&gt;",
+    "username": "&lt;string&gt;"
   }
 JSON
 response = Net::HTTP.start(uri.host, uri.port, use_ssl: true) {
@@ -487,49 +487,49 @@ response = Net::HTTP.start(uri.host, uri.port, use_ssl: true) {
           <pre role="tabpanel" data-response-pane="200"><code class="hljs language-json">{
   "Error": false,
   "ErrorDetails": [],
-  "Message": "",
-  "RequestID": "string",
+  "Message": "&lt;string&gt;",
+  "RequestID": "&lt;string&gt;",
   "Result": {
-    "auth0UserID": "string",
-    "created": "string",
-    "description": "string",
-    "email": "string",
+    "auth0UserID": "&lt;string&gt;",
+    "created": "&lt;string&gt;",
+    "description": "&lt;string&gt;",
+    "email": "&lt;string&gt;",
     "enabled": false,
-    "firstName": "string",
-    "id": "string",
-    "lastName": "string",
-    "metadata": "string",
-    "path": "string",
-    "role": "string",
-    "tenantID": "string",
-    "trn": "string",
-    "updated": "string",
-    "username": "string"
+    "firstName": "&lt;string&gt;",
+    "id": "&lt;string&gt;",
+    "lastName": "&lt;string&gt;",
+    "metadata": "&lt;string&gt;",
+    "path": "&lt;string&gt;",
+    "role": "&lt;string&gt;",
+    "tenantID": "&lt;string&gt;",
+    "trn": "&lt;string&gt;",
+    "updated": "&lt;string&gt;",
+    "username": "&lt;string&gt;"
   }
 }</code></pre>
           <pre role="tabpanel" data-response-pane="400" hidden><code class="hljs language-json">{
   "Error": true,
   "ErrorDetails": [
     {
-      "FieldName": "string",
-      "Reason": "string",
+      "FieldName": "&lt;string&gt;",
+      "Reason": "&lt;string&gt;",
       "Type": "Internal-Error"
     }
   ],
-  "Message": "string",
-  "RequestID": "string"
+  "Message": "&lt;string&gt;",
+  "RequestID": "&lt;string&gt;"
 }</code></pre>
           <pre role="tabpanel" data-response-pane="500" hidden><code class="hljs language-json">{
   "Error": true,
   "ErrorDetails": [
     {
-      "FieldName": "string",
-      "Reason": "string",
+      "FieldName": "&lt;string&gt;",
+      "Reason": "&lt;string&gt;",
       "Type": "Internal-Error"
     }
   ],
-  "Message": "string",
-  "RequestID": "string"
+  "Message": "&lt;string&gt;",
+  "RequestID": "&lt;string&gt;"
 }</code></pre>
         </div>
       </section>

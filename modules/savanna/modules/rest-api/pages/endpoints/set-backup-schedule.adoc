@@ -347,7 +347,7 @@
     "max_reserved_days": 0,
     "max_retry": 0,
     "pause": false,
-    "schedule": "string"
+    "schedule": "&lt;string&gt;"
   }'</code></pre>
           <pre data-request-language="python" hidden><code class="hljs language-python">import requests
 
@@ -358,7 +358,7 @@ payload = {
   "max_reserved_days": 0,
   "max_retry": 0,
   "pause": False,
-  "schedule": "string"
+  "schedule": "&lt;string&gt;"
 }
 
 response = requests.post(url, headers=headers, json=payload)
@@ -373,7 +373,7 @@ print(response.json())</code></pre>
       "max_reserved_days": 0,
       "max_retry": 0,
       "pause": false,
-      "schedule": "string"
+      "schedule": "&lt;string&gt;"
     }),
   }
 )
@@ -392,7 +392,7 @@ curl_setopt($request, CURLOPT_POSTFIELDS, '{
     "max_reserved_days": 0,
     "max_retry": 0,
     "pause": false,
-    "schedule": "string"
+    "schedule": "&lt;string&gt;"
   }');
 curl_exec($request);</code></pre>
           <pre data-request-language="go" hidden><code class="hljs language-go">payload := strings.NewReader(`{
@@ -400,7 +400,7 @@ curl_exec($request);</code></pre>
     "max_reserved_days": 0,
     "max_retry": 0,
     "pause": false,
-    "schedule": "string"
+    "schedule": "&lt;string&gt;"
   }`)
 
 request, _ := http.NewRequest(
@@ -423,7 +423,7 @@ response, _ := http.DefaultClient.Do(request)</code></pre>
       "max_reserved_days": 0,
       "max_retry": 0,
       "pause": false,
-      "schedule": "string"
+      "schedule": "&lt;string&gt;"
     }
   """))
   .build();</code></pre>
@@ -439,7 +439,7 @@ request.body = &lt;&lt;~JSON
     "max_reserved_days": 0,
     "max_retry": 0,
     "pause": false,
-    "schedule": "string"
+    "schedule": "&lt;string&gt;"
   }
 JSON
 response = Net::HTTP.start(uri.host, uri.port, use_ssl: true) {
@@ -465,33 +465,33 @@ response = Net::HTTP.start(uri.host, uri.port, use_ssl: true) {
           <pre role="tabpanel" data-response-pane="200"><code class="hljs language-json">{
   "Error": false,
   "ErrorDetails": [],
-  "Message": "",
-  "RequestID": "string",
-  "Result": "string"
+  "Message": "&lt;string&gt;",
+  "RequestID": "&lt;string&gt;",
+  "Result": "&lt;string&gt;"
 }</code></pre>
           <pre role="tabpanel" data-response-pane="400" hidden><code class="hljs language-json">{
   "Error": true,
   "ErrorDetails": [
     {
-      "FieldName": "string",
-      "Reason": "string",
+      "FieldName": "&lt;string&gt;",
+      "Reason": "&lt;string&gt;",
       "Type": "Internal-Error"
     }
   ],
-  "Message": "string",
-  "RequestID": "string"
+  "Message": "&lt;string&gt;",
+  "RequestID": "&lt;string&gt;"
 }</code></pre>
           <pre role="tabpanel" data-response-pane="500" hidden><code class="hljs language-json">{
   "Error": true,
   "ErrorDetails": [
     {
-      "FieldName": "string",
-      "Reason": "string",
+      "FieldName": "&lt;string&gt;",
+      "Reason": "&lt;string&gt;",
       "Type": "Internal-Error"
     }
   ],
-  "Message": "string",
-  "RequestID": "string"
+  "Message": "&lt;string&gt;",
+  "RequestID": "&lt;string&gt;"
 }</code></pre>
         </div>
       </section>

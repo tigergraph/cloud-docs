@@ -307,13 +307,13 @@ response = Net::HTTP.start(uri.host, uri.port, use_ssl: true) {
           <pre role="tabpanel" data-response-pane="200"><code class="hljs language-json">{
   "Error": false,
   "ErrorDetails": [],
-  "Message": "",
-  "RequestID": "string",
+  "Message": "&lt;string&gt;",
+  "RequestID": "&lt;string&gt;",
   "Result": [
     {
-      "cidr": "string",
-      "id": "string",
-      "note": "string"
+      "cidr": "&lt;string&gt;",
+      "id": "&lt;string&gt;",
+      "note": "&lt;string&gt;"
     }
   ]
 }</code></pre>
@@ -321,13 +321,13 @@ response = Net::HTTP.start(uri.host, uri.port, use_ssl: true) {
   "Error": true,
   "ErrorDetails": [
     {
-      "FieldName": "string",
-      "Reason": "string",
+      "FieldName": "&lt;string&gt;",
+      "Reason": "&lt;string&gt;",
       "Type": "Internal-Error"
     }
   ],
-  "Message": "string",
-  "RequestID": "string"
+  "Message": "&lt;string&gt;",
+  "RequestID": "&lt;string&gt;"
 }</code></pre>
         </div>
       </section>

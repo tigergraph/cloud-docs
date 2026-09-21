@@ -316,38 +316,38 @@ response = Net::HTTP.start(uri.host, uri.port, use_ssl: true) {
           <pre role="tabpanel" data-response-pane="200"><code class="hljs language-json">{
   "Error": false,
   "ErrorDetails": [],
-  "Message": "",
-  "RequestID": "string",
+  "Message": "&lt;string&gt;",
+  "RequestID": "&lt;string&gt;",
   "Result": {
     "regions": [
       {
-        "description": "string",
-        "name": "string"
+        "description": "&lt;string&gt;",
+        "name": "&lt;string&gt;"
       }
     ],
     "tgVersions": [
       {
         "allow_create": false,
         "allow_upgrade": false,
-        "channel": "string",
-        "end_of_life": "string",
-        "image": "string",
+        "channel": "&lt;string&gt;",
+        "end_of_life": "&lt;string&gt;",
+        "image": "&lt;string&gt;",
         "incompatible_upgrades_from": [
-          "string"
+          "&lt;string&gt;"
         ],
-        "name": "string",
+        "name": "&lt;string&gt;",
         "orgs": [
-          "string"
+          "&lt;string&gt;"
         ]
       }
     ],
     "workspaceTypes": [
       {
-        "cpu": "string",
+        "cpu": "&lt;string&gt;",
         "ha": 0,
-        "memory": "string",
+        "memory": "&lt;string&gt;",
         "partition": 0,
-        "typeName": "string"
+        "typeName": "&lt;string&gt;"
       }
     ]
   }

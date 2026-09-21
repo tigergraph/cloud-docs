@@ -193,11 +193,11 @@
   --header 'x-api-key: &lt;your-api-key&gt;' \
   --header 'Content-Type: application/json' \
   --data '{
-    "account_id": "string",
-    "platform": "string",
-    "region": "string",
-    "role_arn": "string",
-    "role_external_id": "string",
+    "account_id": "&lt;string&gt;",
+    "platform": "&lt;string&gt;",
+    "region": "&lt;string&gt;",
+    "role_arn": "&lt;string&gt;",
+    "role_external_id": "&lt;string&gt;",
     "secure_connection": false
   }'</code></pre>
           <pre data-request-language="python" hidden><code class="hljs language-python">import requests
@@ -205,11 +205,11 @@
 url = "https://api.tgcloud.io/controller/v4/v2/cloud-providers/validate"
 headers = {"x-api-key": "&lt;your-api-key&gt;"}
 payload = {
-  "account_id": "string",
-  "platform": "string",
-  "region": "string",
-  "role_arn": "string",
-  "role_external_id": "string",
+  "account_id": "&lt;string&gt;",
+  "platform": "&lt;string&gt;",
+  "region": "&lt;string&gt;",
+  "role_arn": "&lt;string&gt;",
+  "role_external_id": "&lt;string&gt;",
   "secure_connection": False
 }
 
@@ -221,11 +221,11 @@ print(response.json())</code></pre>
     method: "POST",
     headers: { "x-api-key": "&lt;your-api-key&gt;", "Content-Type": "application/json" },
     body: JSON.stringify({
-      "account_id": "string",
-      "platform": "string",
-      "region": "string",
-      "role_arn": "string",
-      "role_external_id": "string",
+      "account_id": "&lt;string&gt;",
+      "platform": "&lt;string&gt;",
+      "region": "&lt;string&gt;",
+      "role_arn": "&lt;string&gt;",
+      "role_external_id": "&lt;string&gt;",
       "secure_connection": false
     }),
   }
@@ -241,20 +241,20 @@ curl_setopt($request, CURLOPT_HTTPHEADER, [
   "Content-Type: application/json"
 ]);
 curl_setopt($request, CURLOPT_POSTFIELDS, '{
-    "account_id": "string",
-    "platform": "string",
-    "region": "string",
-    "role_arn": "string",
-    "role_external_id": "string",
+    "account_id": "&lt;string&gt;",
+    "platform": "&lt;string&gt;",
+    "region": "&lt;string&gt;",
+    "role_arn": "&lt;string&gt;",
+    "role_external_id": "&lt;string&gt;",
     "secure_connection": false
   }');
 curl_exec($request);</code></pre>
           <pre data-request-language="go" hidden><code class="hljs language-go">payload := strings.NewReader(`{
-    "account_id": "string",
-    "platform": "string",
-    "region": "string",
-    "role_arn": "string",
-    "role_external_id": "string",
+    "account_id": "&lt;string&gt;",
+    "platform": "&lt;string&gt;",
+    "region": "&lt;string&gt;",
+    "role_arn": "&lt;string&gt;",
+    "role_external_id": "&lt;string&gt;",
     "secure_connection": false
   }`)
 
@@ -274,11 +274,11 @@ response, _ := http.DefaultClient.Do(request)</code></pre>
   .header("Content-Type", "application/json")
   .method("POST", HttpRequest.BodyPublishers.ofString("""
 {
-      "account_id": "string",
-      "platform": "string",
-      "region": "string",
-      "role_arn": "string",
-      "role_external_id": "string",
+      "account_id": "&lt;string&gt;",
+      "platform": "&lt;string&gt;",
+      "region": "&lt;string&gt;",
+      "role_arn": "&lt;string&gt;",
+      "role_external_id": "&lt;string&gt;",
       "secure_connection": false
     }
   """))
@@ -291,11 +291,11 @@ request["x-api-key"] = "&lt;your-api-key&gt;"
 request["Content-Type"] = "application/json"
 request.body = &lt;&lt;~JSON
 {
-    "account_id": "string",
-    "platform": "string",
-    "region": "string",
-    "role_arn": "string",
-    "role_external_id": "string",
+    "account_id": "&lt;string&gt;",
+    "platform": "&lt;string&gt;",
+    "region": "&lt;string&gt;",
+    "role_arn": "&lt;string&gt;",
+    "role_external_id": "&lt;string&gt;",
     "secure_connection": false
   }
 JSON
@@ -320,9 +320,9 @@ response = Net::HTTP.start(uri.host, uri.port, use_ssl: true) {
           <pre role="tabpanel" data-response-pane="200"><code class="hljs language-json">{
   "Error": false,
   "ErrorDetails": [],
-  "Message": "",
-  "RequestID": "string",
-  "Result": "string"
+  "Message": "&lt;string&gt;",
+  "RequestID": "&lt;string&gt;",
+  "Result": "&lt;string&gt;"
 }</code></pre>
         </div>
       </section>

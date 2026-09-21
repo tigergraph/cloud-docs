@@ -244,18 +244,18 @@ response = Net::HTTP.start(uri.host, uri.port, use_ssl: true) {
           <pre role="tabpanel" data-response-pane="200"><code class="hljs language-json">{
   "Error": false,
   "ErrorDetails": [],
-  "Message": "",
-  "RequestID": "string",
+  "Message": "&lt;string&gt;",
+  "RequestID": "&lt;string&gt;",
   "Result": [
     {
-      "component_versions": "string",
-      "id": "string",
-      "name": "string",
-      "org_id": "string",
-      "platform": "string",
-      "region": "string",
-      "status": "string",
-      "version": "string",
+      "component_versions": "&lt;string&gt;",
+      "id": "&lt;string&gt;",
+      "name": "&lt;string&gt;",
+      "org_id": "&lt;string&gt;",
+      "platform": "&lt;string&gt;",
+      "region": "&lt;string&gt;",
+      "status": "&lt;string&gt;",
+      "version": "&lt;string&gt;",
       "version_number": 0
     }
   ]

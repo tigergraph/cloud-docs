@@ -339,7 +339,7 @@
       "ng_64": {},
       "ng_system": {},
       "prefetch_image_list": [
-        "string"
+        "&lt;string&gt;"
       ]
     }
   }'</code></pre>
@@ -359,7 +359,7 @@ payload = {
     "ng_64": {},
     "ng_system": {},
     "prefetch_image_list": [
-      "string"
+      "&lt;string&gt;"
     ]
   }
 }
@@ -383,7 +383,7 @@ print(response.json())</code></pre>
         "ng_64": {},
         "ng_system": {},
         "prefetch_image_list": [
-          "string"
+          "&lt;string&gt;"
         ]
       }
     }),
@@ -411,7 +411,7 @@ curl_setopt($request, CURLOPT_POSTFIELDS, '{
       "ng_64": {},
       "ng_system": {},
       "prefetch_image_list": [
-        "string"
+        "&lt;string&gt;"
       ]
     }
   }');
@@ -428,7 +428,7 @@ curl_exec($request);</code></pre>
       "ng_64": {},
       "ng_system": {},
       "prefetch_image_list": [
-        "string"
+        "&lt;string&gt;"
       ]
     }
   }`)
@@ -460,7 +460,7 @@ response, _ := http.DefaultClient.Do(request)</code></pre>
         "ng_64": {},
         "ng_system": {},
         "prefetch_image_list": [
-          "string"
+          "&lt;string&gt;"
         ]
       }
     }
@@ -485,7 +485,7 @@ request.body = &lt;&lt;~JSON
       "ng_64": {},
       "ng_system": {},
       "prefetch_image_list": [
-        "string"
+        "&lt;string&gt;"
       ]
     }
   }
@@ -511,9 +511,9 @@ response = Net::HTTP.start(uri.host, uri.port, use_ssl: true) {
           <pre role="tabpanel" data-response-pane="200"><code class="hljs language-json">{
   "Error": false,
   "ErrorDetails": [],
-  "Message": "",
-  "RequestID": "string",
-  "Result": "string"
+  "Message": "&lt;string&gt;",
+  "RequestID": "&lt;string&gt;",
+  "Result": "&lt;string&gt;"
 }</code></pre>
         </div>
       </section>

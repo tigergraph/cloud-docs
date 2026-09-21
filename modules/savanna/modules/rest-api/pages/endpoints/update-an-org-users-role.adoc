@@ -90,7 +90,7 @@
   --header 'Content-Type: application/json' \
   --data '{
     "roles": [
-      "string"
+      "&lt;string&gt;"
     ]
   }'</code></pre>
           <pre data-request-language="python" hidden><code class="hljs language-python">import requests
@@ -99,7 +99,7 @@ url = "https://api.tgcloud.io/users/{userId}/roles"
 headers = {"x-api-key": "&lt;your-api-key&gt;"}
 payload = {
   "roles": [
-    "string"
+    "&lt;string&gt;"
   ]
 }
 
@@ -112,7 +112,7 @@ print(response.json())</code></pre>
     headers: { "x-api-key": "&lt;your-api-key&gt;", "Content-Type": "application/json" },
     body: JSON.stringify({
       "roles": [
-        "string"
+        "&lt;string&gt;"
       ]
     }),
   }
@@ -129,13 +129,13 @@ curl_setopt($request, CURLOPT_HTTPHEADER, [
 ]);
 curl_setopt($request, CURLOPT_POSTFIELDS, '{
     "roles": [
-      "string"
+      "&lt;string&gt;"
     ]
   }');
 curl_exec($request);</code></pre>
           <pre data-request-language="go" hidden><code class="hljs language-go">payload := strings.NewReader(`{
     "roles": [
-      "string"
+      "&lt;string&gt;"
     ]
   }`)
 
@@ -156,7 +156,7 @@ response, _ := http.DefaultClient.Do(request)</code></pre>
   .method("PUT", HttpRequest.BodyPublishers.ofString("""
 {
       "roles": [
-        "string"
+        "&lt;string&gt;"
       ]
     }
   """))
@@ -170,7 +170,7 @@ request["Content-Type"] = "application/json"
 request.body = &lt;&lt;~JSON
 {
     "roles": [
-      "string"
+      "&lt;string&gt;"
     ]
   }
 JSON

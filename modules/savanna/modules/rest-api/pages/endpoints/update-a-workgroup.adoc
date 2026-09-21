@@ -1032,7 +1032,7 @@
   --data '{
     "enable_application_log": false,
     "encryption_method": "TMK",
-    "workgroup_name": "string"
+    "workgroup_name": "&lt;string&gt;"
   }'</code></pre>
           <pre data-request-language="python" hidden><code class="hljs language-python">import requests
 
@@ -1041,7 +1041,7 @@ headers = {"x-api-key": "&lt;your-api-key&gt;"}
 payload = {
   "enable_application_log": False,
   "encryption_method": "TMK",
-  "workgroup_name": "string"
+  "workgroup_name": "&lt;string&gt;"
 }
 
 response = requests.put(url, headers=headers, json=payload)
@@ -1054,7 +1054,7 @@ print(response.json())</code></pre>
     body: JSON.stringify({
       "enable_application_log": false,
       "encryption_method": "TMK",
-      "workgroup_name": "string"
+      "workgroup_name": "&lt;string&gt;"
     }),
   }
 )
@@ -1071,13 +1071,13 @@ curl_setopt($request, CURLOPT_HTTPHEADER, [
 curl_setopt($request, CURLOPT_POSTFIELDS, '{
     "enable_application_log": false,
     "encryption_method": "TMK",
-    "workgroup_name": "string"
+    "workgroup_name": "&lt;string&gt;"
   }');
 curl_exec($request);</code></pre>
           <pre data-request-language="go" hidden><code class="hljs language-go">payload := strings.NewReader(`{
     "enable_application_log": false,
     "encryption_method": "TMK",
-    "workgroup_name": "string"
+    "workgroup_name": "&lt;string&gt;"
   }`)
 
 request, _ := http.NewRequest(
@@ -1098,7 +1098,7 @@ response, _ := http.DefaultClient.Do(request)</code></pre>
 {
       "enable_application_log": false,
       "encryption_method": "TMK",
-      "workgroup_name": "string"
+      "workgroup_name": "&lt;string&gt;"
     }
   """))
   .build();</code></pre>
@@ -1112,7 +1112,7 @@ request.body = &lt;&lt;~JSON
 {
     "enable_application_log": false,
     "encryption_method": "TMK",
-    "workgroup_name": "string"
+    "workgroup_name": "&lt;string&gt;"
   }
 JSON
 response = Net::HTTP.start(uri.host, uri.port, use_ssl: true) {
@@ -1136,28 +1136,28 @@ response = Net::HTTP.start(uri.host, uri.port, use_ssl: true) {
           <pre role="tabpanel" data-response-pane="200"><code class="hljs language-json">{
   "Error": false,
   "ErrorDetails": [],
-  "Message": "",
-  "RequestID": "string",
+  "Message": "&lt;string&gt;",
+  "RequestID": "&lt;string&gt;",
   "Result": {
-    "cloud_provider_id": "string",
-    "cloud_provider_name": "string",
-    "cloud_provider_status": "string",
-    "cloud_provider_type": "string",
-    "creator": "string",
+    "cloud_provider_id": "&lt;string&gt;",
+    "cloud_provider_name": "&lt;string&gt;",
+    "cloud_provider_status": "&lt;string&gt;",
+    "cloud_provider_type": "&lt;string&gt;",
+    "creator": "&lt;string&gt;",
     "enable_allow_list": false,
     "enable_application_log": false,
     "encryption_method": "TMK",
     "is_current_ip_allowed": false,
-    "name": "string",
-    "org_id": "string",
-    "org_name": "string",
+    "name": "&lt;string&gt;",
+    "org_id": "&lt;string&gt;",
+    "org_name": "&lt;string&gt;",
     "platform": "aws",
-    "region": "string",
+    "region": "&lt;string&gt;",
     "shared_storage": false,
     "tg_databases": [
       {
-        "create_time": "string",
-        "database_id": "string",
+        "create_time": "&lt;string&gt;",
+        "database_id": "&lt;string&gt;",
         "folder_statistics": {
           "backup_size": 0,
           "billed_size": 0,
@@ -1166,16 +1166,16 @@ response = Net::HTTP.start(uri.host, uri.port, use_ssl: true) {
           "total_size": 0,
           "workspaces": []
         },
-        "name": "string",
-        "org_id": "string",
-        "org_name": "string",
-        "region": "string",
-        "tg_version": "string",
-        "workgroup_id": "string",
+        "name": "&lt;string&gt;",
+        "org_id": "&lt;string&gt;",
+        "org_name": "&lt;string&gt;",
+        "region": "&lt;string&gt;",
+        "tg_version": "&lt;string&gt;",
+        "workgroup_id": "&lt;string&gt;",
         "workspaces": []
       }
     ],
-    "workgroup_id": "string",
+    "workgroup_id": "&lt;string&gt;",
     "workspaces": [
       {
         "addons": [],
@@ -1187,23 +1187,23 @@ response = Net::HTTP.start(uri.host, uri.port, use_ssl: true) {
           "topology_update_interval_seconds": 0
         },
         "auto_stop_minutes": 0,
-        "auto_upgrade_state": "string",
-        "cloud_provider_id": "string",
-        "cloud_provider_name": "string",
-        "cloud_provider_short_id": "string",
-        "condition_type": "string",
-        "created_at": "string",
-        "creator": "string",
-        "database_id": "string",
-        "database_name": "string",
-        "deleted_at": "string",
-        "desired_tg_version": "string",
-        "display_status": "string",
+        "auto_upgrade_state": "&lt;string&gt;",
+        "cloud_provider_id": "&lt;string&gt;",
+        "cloud_provider_name": "&lt;string&gt;",
+        "cloud_provider_short_id": "&lt;string&gt;",
+        "condition_type": "&lt;string&gt;",
+        "created_at": "&lt;string&gt;",
+        "creator": "&lt;string&gt;",
+        "database_id": "&lt;string&gt;",
+        "database_name": "&lt;string&gt;",
+        "deleted_at": "&lt;string&gt;",
+        "desired_tg_version": "&lt;string&gt;",
+        "display_status": "&lt;string&gt;",
         "edge_count": 0,
         "enable_auto_start": false,
         "enable_copilot": false,
         "enable_ha": false,
-        "err_message": "string",
+        "err_message": "&lt;string&gt;",
         "folder_statistics": {
           "backup_size": 0,
           "billed_size": 0,
@@ -1214,36 +1214,36 @@ response = Net::HTTP.start(uri.host, uri.port, use_ssl: true) {
         },
         "graph_topology_size_bytes": 0,
         "is_rw": false,
-        "last_maintenance": "string",
-        "last_modified_time": "string",
+        "last_maintenance": "&lt;string&gt;",
+        "last_modified_time": "&lt;string&gt;",
         "maintenance_window_day_of_week": 0,
         "maintenance_window_hour_of_day": 0,
         "maintenance_window_interval_weeks": 0,
-        "maintenance_window_time_zone": "string",
-        "name": "string",
-        "nginx_host": "string",
-        "org_id": "string",
-        "org_name": "string",
-        "refresh_message": "string",
-        "refresh_status": "string",
-        "region": "string",
+        "maintenance_window_time_zone": "&lt;string&gt;",
+        "name": "&lt;string&gt;",
+        "nginx_host": "&lt;string&gt;",
+        "org_id": "&lt;string&gt;",
+        "org_name": "&lt;string&gt;",
+        "refresh_message": "&lt;string&gt;",
+        "refresh_status": "&lt;string&gt;",
+        "region": "&lt;string&gt;",
         "replicas": 0,
-        "snapshot_time": "string",
-        "solution_catalog_id": "string",
-        "status": "string",
-        "tg_version": "string",
-        "update_strategy": "string",
+        "snapshot_time": "&lt;string&gt;",
+        "solution_catalog_id": "&lt;string&gt;",
+        "status": "&lt;string&gt;",
+        "tg_version": "&lt;string&gt;",
+        "update_strategy": "&lt;string&gt;",
         "version_number": 0,
         "vertex_count": 0,
-        "workgroup_id": "string",
-        "workgroup_name": "string",
-        "workspace_id": "string",
+        "workgroup_id": "&lt;string&gt;",
+        "workgroup_name": "&lt;string&gt;",
+        "workspace_id": "&lt;string&gt;",
         "workspace_type": {
-          "cpu": "string",
+          "cpu": "&lt;string&gt;",
           "ha": 0,
-          "memory": "string",
+          "memory": "&lt;string&gt;",
           "partition": 0,
-          "typeName": "string"
+          "typeName": "&lt;string&gt;"
         }
       }
     ]

@@ -292,35 +292,35 @@ response = Net::HTTP.start(uri.host, uri.port, use_ssl: true) {
         </header>
         <div class="api-code-body">
           <pre role="tabpanel" data-response-pane="200"><code class="hljs language-json">{
-  "auth0UserID": "string",
-  "authID": "string",
-  "created": "string",
-  "email": "string",
+  "auth0UserID": "&lt;string&gt;",
+  "authID": "&lt;string&gt;",
+  "created": "&lt;string&gt;",
+  "email": "&lt;string&gt;",
   "enabled": false,
-  "firstName": "string",
-  "id": "string",
-  "lastName": "string",
+  "firstName": "&lt;string&gt;",
+  "id": "&lt;string&gt;",
+  "lastName": "&lt;string&gt;",
   "metadata": {
     "attachedTo": [
-      "string"
+      "&lt;string&gt;"
     ],
-    "lastLogin": "string"
+    "lastLogin": "&lt;string&gt;"
   },
-  "path": "string",
+  "path": "&lt;string&gt;",
   "roles": [
     {
-      "displayName": "string",
-      "id": "string",
-      "name": "string",
-      "path": "string",
-      "tenantID": "string",
-      "trn": "string"
+      "displayName": "&lt;string&gt;",
+      "id": "&lt;string&gt;",
+      "name": "&lt;string&gt;",
+      "path": "&lt;string&gt;",
+      "tenantID": "&lt;string&gt;",
+      "trn": "&lt;string&gt;"
     }
   ],
-  "tenantID": "string",
-  "trn": "string",
-  "updated": "string",
-  "username": "string"
+  "tenantID": "&lt;string&gt;",
+  "trn": "&lt;string&gt;",
+  "updated": "&lt;string&gt;",
+  "username": "&lt;string&gt;"
 }</code></pre>
         </div>
       </section>

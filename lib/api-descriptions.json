@@ -1,0 +1,459 @@
+{
+  "_comment": "Attribute prose for the REST reference pages, keyed by OpenAPI definition. The published spec describes almost none of its properties, so this file covers every attribute the endpoint pages reach. Add an entry here when the spec gains a definition; a property with neither spec text nor an entry renders with its name and type alone. The _operations map is separate: keyed by \"METHOD /path\", it replaces the opening paragraph of a page where the spec's own description is too thin to tell a reader whether the endpoint applies to them.",
+  "_operations": {
+    "GET /controller/v4/v2/cloud-providers/public": "Lists the cloud providers TigerGraph operates. Use an id from this list as the cloud_provider_id when you create a workgroup.",
+    "GET /controller/v4/v2/cloud-providers": "Lists the Bring Your Own Cloud (BYOC) providers registered to your organization, the cloud accounts you own that Savanna deploys into. Use an id from this list as the cloud_provider_id when you create a workgroup.",
+    "GET /controller/v4/v2/cloud-providers/{cloudProviderID}": "Returns a single Bring Your Own Cloud (BYOC) provider, including its status, the AWS resources Savanna created in your account, and its component versions.",
+    "POST /controller/v4/v2/cloud-providers": "Registers a cloud account you own with Savanna so workgroups can be deployed into it. This is the Bring Your Own Cloud (BYOC) setup step, and it grants Savanna a cross-account IAM role in your AWS account.",
+    "POST /controller/v4/v2/cloud-providers/validate": "Checks whether a Bring Your Own Cloud (BYOC) registration would succeed, without creating anything.",
+    "PUT /controller/v4/v2/cloud-providers/{cloudProviderID}": "Renames a Bring Your Own Cloud (BYOC) provider or records a version against it. Use the upgrade endpoint to change what is deployed in the cloud account.",
+    "PUT /controller/v4/v2/cloud-providers/{cloudProviderID}/upgrade": "Upgrades the Savanna components deployed in a Bring Your Own Cloud (BYOC) provider's cloud account, and optionally resizes its node groups.",
+    "DELETE /controller/v4/v2/cloud-providers/{cloudProviderID}": "Unregisters a Bring Your Own Cloud (BYOC) provider and removes the Savanna components from that cloud account. Delete its workgroups first.",
+    "POST /controller/v4/v2/workgroups/{workgroupID}/allow_list": "Adds an IP address or CIDR range to a workgroup allow list.",
+    "GET /controller/v4/v2/workgroups/{workgroupID}/allow_list/current": "Returns your current public IP address and whether the workgroup allow list permits it.",
+    "POST /controller/v4/v2/workgroups": "Creates a workgroup with the selected cloud provider, region, and deployment settings.",
+    "POST /controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/schedules": "Creates a recurring workspace schedule.",
+    "POST /controller/v4/v2/workgroups/{workgroupID}/workspaces": "Creates a workspace in a workgroup. The workspace's database is created with it.",
+    "POST /controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/dbuser": "Creates an in-database GSQL user for a workspace.",
+    "DELETE /controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/backups": "Deletes the specified workspace backup.",
+    "DELETE /controller/v4/v2/workgroups/{workgroupID}/databases/{databaseID}": "Deletes a database from a workgroup.",
+    "DELETE /controller/v4/v2/workgroups/{workgroupID}": "Deletes a workgroup.",
+    "DELETE /controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/schedules/{scheduleID}": "Deletes a workspace schedule.",
+    "DELETE /controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}": "Deletes a workspace from a workgroup.",
+    "DELETE /controller/v4/v2/workgroups/{workgroupID}/allow_list/{id}": "Removes an IP address or CIDR range from a workgroup allow list.",
+    "DELETE /controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/dbuser": "Deletes an in-database GSQL user from a workspace.",
+    "PUT /controller/v4/v2/workgroups/{workgroupID}/allow_list/disable": "Disables IP allow-list enforcement for a workgroup.",
+    "PUT /controller/v4/v2/workgroups/{workgroupID}/allow_list/enable": "Enables IP allow-list enforcement for a workgroup.",
+    "GET /controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/backups/{job}/status": "Returns the status of a backup restore job.",
+    "GET /controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/backups/schedule": "Returns the backup schedule for a workspace.",
+    "GET /controller/v4/v2/workgroups/{workgroupID}/databases/{databaseID}": "Returns details for a database in a workgroup.",
+    "GET /controller/v4/v2/workspaces/meta": "Lists the regions, TigerGraph versions, and workspace types available to your organization.",
+    "GET /controller/v4/v2/workgroups/{workgroupID}": "Returns details for a workgroup in your organization.",
+    "GET /controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}": "Returns details for a workspace in a workgroup.",
+    "GET /controller/v4/v2/workgroups/{workgroupID}/allow_list": "Lists the IP addresses and CIDR ranges permitted by a workgroup allow list.",
+    "GET /controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/backups": "Lists the backups for a workspace.",
+    "GET /controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/dbuser": "Lists the in-database GSQL users for a workspace.",
+    "GET /users": "Lists the users in your organization. This endpoint does not support API key authentication.",
+    "GET /controller/v4/v2/workgroups": "Lists the workgroups in your organization.",
+    "GET /controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/schedules": "Lists the schedules for a workspace.",
+    "POST /controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/pause": "Pauses a workspace.",
+    "POST /controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/refresh": "Refreshes a workspace.",
+    "POST /controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/backups/restore": "Restores a workspace from a backup.",
+    "POST /controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/resume": "Resumes a paused workspace.",
+    "POST /controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/backups/schedule": "Creates or replaces the backup schedule for a workspace.",
+    "PUT /controller/v4/v2/workgroups/{workgroupID}/databases/{databaseID}": "Renames a database in a workgroup.",
+    "PUT /controller/v4/v2/workgroups/{workgroupID}": "Updates a workgroup name, application logging, or encryption settings.",
+    "PUT /controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/schedules/{scheduleID}": "Updates a workspace schedule.",
+    "PUT /controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}": "Updates a workspace configuration.",
+    "PUT /controller/v4/v2/workgroups/{workgroupID}/allow_list/{id}": "Updates an entry in a workgroup allow list.",
+    "PUT /controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/dbuser": "Updates an in-database GSQL user's password.",
+    "PUT /users/{userId}/roles": "Updates an organization user's role. This endpoint does not support API key authentication.",
+    "GET /controller/v4/v2/addons/meta": "Lists the add-ons available to your organization. Use an id from this list as addons_id when you install an add-on or enable one on a workspace.",
+    "POST /controller/v4/v2/addons/{addonsID}/install": "Installs an add-on for your organization, or enables or disables it.",
+    "GET /controller/v4/v2/installed-addons": "Lists the add-ons installed for your organization.",
+    "GET /controller/v4/v2/installed-addons/{installedAddonsID}": "Returns a single installed add-on.",
+    "GET /controller/v4/v2/addons/{addonsID}/workspaces": "Lists the workspaces that have a given add-on enabled.",
+    "GET /controller/v4/v2/installed-addons/{installedAddonsID}/configs/{configName}": "Lists configurations of a given name for an installed add-on.",
+    "POST /controller/v4/v2/add-ons/{installedAddonsID}/configs": "Creates a configuration for an installed add-on.",
+    "PUT /controller/v4/v2/add-ons/{installedAddonsID}/configs/{configID}": "Updates a configuration of an installed add-on.",
+    "DELETE /controller/v4/v2/add-ons/{installedAddonsID}/configs/{configID}": "Deletes a configuration of an installed add-on."
+  },
+  "CreateConfigRequest": {
+    "config_name": "Name of the configuration.",
+    "config_value": "Value of the configuration."
+  },
+  "UpdateConfigRequest": {
+    "config_value": "New value of the configuration."
+  },
+  "AgentConfig": {
+    "catalog_activity_update_interval_seconds": "Seconds between catalog activity updates.",
+    "enable_topology_force_update": "Whether topology updates are forced.",
+    "heartbeat_interval_seconds": "Seconds between agent heartbeats.",
+    "query_activity_update_interval_seconds": "Seconds between query activity updates.",
+    "topology_update_interval_seconds": "Seconds between topology updates."
+  },
+  "AllowedIP": {
+    "cidr": "IP address or range in CIDR notation, such as 192.168.1.0/24 for a range or 192.168.1.2/32 for a single address.",
+    "id": "Unique identifier of the allow list entry.",
+    "note": "Note recording why the address was allowed."
+  },
+  "Backup": {
+    "id": "Unique identifier of the backup.",
+    "is_automatic": "Whether the backup came from the backup schedule rather than a manual request.",
+    "size_bytes": "Size of the backup, in bytes.",
+    "status": "Current status of the backup.",
+    "tag": "Tag that identifies the backup.",
+    "time": "Time the backup was taken.",
+    "type": "Scope of the data captured by the backup.",
+    "version": "TigerGraph version the backup was taken from."
+  },
+  "BackupRestoreStatus": {
+    "created_at": "Time the restore job started.",
+    "name": "Name of the restore job.",
+    "output": "Log output produced by the restore job.",
+    "status": "Current status of the restore job."
+  },
+  "BackupSchedule": {
+    "max_backup_files": "Maximum number of backups to keep.",
+    "max_reserved_days": "Number of days a backup is kept before it is removed.",
+    "max_retry": "Number of times a failed backup is retried.",
+    "pause": "Whether the schedule is paused.",
+    "schedule": "Cron expression that sets when the backup runs."
+  },
+  "CloudProviderOptions": {
+    "account_id": "Cloud account identifier associated with the provider.",
+    "secure_connection": "Whether the provider uses a private, secure connection."
+  },
+  "CloudProviderResource": {
+    "api_tokens": "API tokens associated with the cloud provider.",
+    "availability_zones": "Availability zones configured for the cloud provider.",
+    "cluster_enabled_log_types": "Kubernetes control-plane log types enabled for the provider.",
+    "component_versions": "Versions of the components installed for the provider.",
+    "created_at": "Time the cloud provider was created.",
+    "created_by": "User who created the cloud provider.",
+    "eks_id": "Identifier of the Amazon EKS cluster.",
+    "endpoint_service_name": "Name of the private endpoint service.",
+    "id": "Unique identifier of the cloud provider.",
+    "last_error": "Most recent error reported while provisioning or updating the provider.",
+    "name": "Name of the cloud provider.",
+    "node_group_config": "Configuration of the Kubernetes node groups.",
+    "options": "Additional cloud-provider configuration options.",
+    "org_id": "Unique identifier of the organization that owns the provider.",
+    "platform": "Cloud platform that hosts the provider.",
+    "region": "Cloud region that hosts the provider.",
+    "role_arn": "Amazon Resource Name of the IAM role TigerGraph assumes.",
+    "role_external_id": "External identifier used when TigerGraph assumes the IAM role.",
+    "security_group_id": "Identifier of the network security group.",
+    "short_id": "Short identifier of the cloud provider.",
+    "status": "Current status of the cloud provider.",
+    "subnet_id": "Identifiers of the subnets used by the provider.",
+    "type": "Access type of the cloud provider.",
+    "updated_at": "Time the cloud provider was last updated.",
+    "version": "Version of the cloud provider deployment.",
+    "version_number": "Internal version number of the cloud provider record.",
+    "vpc_id": "Identifier of the virtual private cloud.",
+    "vpc_owned_by_tg": "Whether TigerGraph owns and manages the virtual private cloud.",
+    "work_dir": "Working directory used while provisioning the provider."
+  },
+  "CreateCloudProviderResourceRequest": {
+    "created_by": "User creating the cloud provider.",
+    "name": "Name for the new cloud provider.",
+    "options": "Additional cloud-provider configuration options.",
+    "platform": "Cloud platform that hosts the provider.",
+    "region": "Cloud region that hosts the provider.",
+    "role_arn": "Amazon Resource Name of the IAM role TigerGraph assumes.",
+    "role_external_id": "External identifier used when TigerGraph assumes the IAM role."
+  },
+  "CreateWorkgroupRequest": {
+    "cloud_provider_id": "Unique identifier of the cloud provider configuration to use.",
+    "enable_application_log": "Whether application logging is enabled.",
+    "enable_encryption": "Whether data is encrypted at rest.",
+    "name": "Name for the new workgroup.",
+    "platform": "Cloud platform that hosts the workgroup.",
+    "region": "Cloud region that hosts the workgroup.",
+    "shared_storage": "Whether workspaces in the workgroup share storage."
+  },
+  "PublicCloudProviderResource": {
+    "component_versions": "Versions of the components installed for the provider.",
+    "id": "Unique identifier of the public cloud provider.",
+    "name": "Name of the public cloud provider.",
+    "org_id": "Unique identifier of the organization that owns the provider.",
+    "platform": "Cloud platform that hosts the provider.",
+    "region": "Cloud region that hosts the provider.",
+    "status": "Current status of the public cloud provider.",
+    "version": "Version of the cloud provider deployment.",
+    "version_number": "Internal version number of the cloud provider record."
+  },
+  "CreateWorkspaceRequest": {
+    "addons": "Add-ons to enable on the new workspace.",
+    "auto_stop_minutes": "Idle minutes before the workspace stops automatically.",
+    "enable_auto_start": "Whether the workspace starts automatically on access.",
+    "enable_ha": "Whether high availability is enabled, which adds redundancy and improves fault tolerance.",
+    "is_rw": "Whether the workspace accepts writes. Backups require a read-write workspace.",
+    "maintenance_window_day_of_week": "Day of the week the maintenance window starts.",
+    "maintenance_window_hour_of_day": "Hour of the day the maintenance window starts.",
+    "maintenance_window_interval_weeks": "Number of weeks between maintenance windows.",
+    "maintenance_window_time_zone": "Time zone used for the maintenance window.",
+    "name": "Name for the new workspace.",
+    "solution_install_request": "Solution to install on the new workspace.",
+    "tg_database_id": "Unique identifier of the database to attach.",
+    "tg_version": "TigerGraph version to run in the workspace.",
+    "update_strategy": "Strategy used to apply workspace updates.",
+    "x_test_env": "Reserved for internal testing."
+  },
+  "DeleteBackupRequest": {
+    "backup_id": "Unique identifier of the backup to delete."
+  },
+  "Error": {
+    "FieldName": "Field associated with the error.",
+    "Reason": "Explanation of why the error occurred.",
+    "Type": "Category of the error."
+  },
+  "FolderStatistics": {
+    "backup_size": "Size of backup data, in bytes.",
+    "billed_size": "Storage size counted for billing, in bytes.",
+    "log_size": "Size of log data, in bytes.",
+    "milvus_size": "Size of vector index data, in bytes.",
+    "total_size": "Total storage size, in bytes.",
+    "workspaces": "Storage used by each workspace."
+  },
+  "IAMUser": {
+    "auth0UserID": "Identifier of the user in the identity provider.",
+    "authID": "Identifier issued by the authentication provider.",
+    "created": "Time the user was created.",
+    "description": "Description of the user.",
+    "email": "Email address of the user.",
+    "enabled": "Whether the user can sign in.",
+    "firstName": "Given name of the user.",
+    "id": "Unique identifier of the user.",
+    "lastName": "Family name of the user.",
+    "metadata": "Additional details about the user.",
+    "path": "Hierarchical path of the user within the organization.",
+    "role": "Role assigned to the user.",
+    "tenantID": "Unique identifier of the tenant the user belongs to.",
+    "trn": "TigerGraph resource name of the user.",
+    "updated": "Time the user was last updated.",
+    "username": "Username of the user."
+  },
+  "InDatabaseUserRequest": {
+    "password": "Password for the in-database user.",
+    "username": "Username for the in-database user."
+  },
+  "OrgListUserResponse": {
+    "auth0UserID": "Identifier of the user in the identity provider.",
+    "authID": "Identifier issued by the authentication provider.",
+    "created": "Time the user was created.",
+    "description": "Description of the user.",
+    "email": "Email address of the user.",
+    "enabled": "Whether the user can sign in.",
+    "firstName": "Given name of the user.",
+    "id": "Unique identifier of the user.",
+    "lastName": "Family name of the user.",
+    "metadata": "Additional details about the user.",
+    "path": "Hierarchical path of the user within the organization.",
+    "roles": "Roles assigned to the user.",
+    "tenantID": "Unique identifier of the tenant the user belongs to.",
+    "trn": "TigerGraph resource name of the user.",
+    "updated": "Time the user was last updated.",
+    "username": "Username of the user."
+  },
+  "OrgMetadata": {
+    "attachedTo": "Resources the user is attached to.",
+    "lastLogin": "Time the user last signed in."
+  },
+  "OrgRole": {
+    "displayName": "Name of the role as it appears in the TigerGraph Savanna console.",
+    "id": "Unique identifier of the role.",
+    "name": "Name of the role.",
+    "path": "Hierarchical path of the role within the organization.",
+    "tenantID": "Unique identifier of the tenant the role belongs to.",
+    "trn": "TigerGraph resource name of the role."
+  },
+  "PutOrgUsersRoles": {
+    "roles": "Roles to assign to the user, replacing the roles they hold now."
+  },
+  "Region": {
+    "description": "Description of the region.",
+    "name": "Name of the region."
+  },
+  "Response": {
+    "Error": "Indicates whether the request returned an error.",
+    "ErrorDetails": "Details about each error returned by the request.",
+    "Message": "Human-readable summary of the request result.",
+    "RequestID": "Unique identifier for tracing the request.",
+    "Result": "Payload returned by the request."
+  },
+  "RestoreBackupRequest": {
+    "backup_id": "Unique identifier of the backup to restore."
+  },
+  "SolutionInstallRequest": {
+    "addons": "Add-ons to enable alongside the solution.",
+    "data_source_origin": "Origin of the sample data loaded with the solution.",
+    "name": "Name for the installed solution.",
+    "solution_catalog_id": "Unique identifier of the solution catalog entry to install."
+  },
+  "TGDatabase": {
+    "create_time": "Time the database was created.",
+    "database_id": "Unique identifier of the database.",
+    "folder_statistics": "Storage statistics for the database.",
+    "name": "Name of the database.",
+    "org_id": "Unique identifier of the organization.",
+    "org_name": "Name of the organization.",
+    "region": "Cloud region that hosts the database.",
+    "tg_version": "TigerGraph version of the database.",
+    "workgroup_id": "Unique identifier of the parent workgroup.",
+    "workspaces": "Workspaces attached to the database."
+  },
+  "TGVersion": {
+    "allow_create": "Whether new workspaces can be created on this version.",
+    "allow_upgrade": "Whether existing workspaces can be upgraded to this version.",
+    "channel": "Release channel the version belongs to.",
+    "end_of_life": "Date the version stops being supported.",
+    "image": "Container image that provides the version.",
+    "incompatible_upgrades_from": "Versions that cannot be upgraded to this version.",
+    "name": "Version number."
+  },
+  "UpdateTGDatabaseRequest": {
+    "tg_database_name": "New name for the database."
+  },
+  "UpdateCloudProviderResourceRequest": {
+    "name": "New name for the cloud provider.",
+    "version": "Cloud provider deployment version to apply."
+  },
+  "UpdateWorkgroupRequest": {
+    "enable_application_log": "Whether application logging is enabled.",
+    "encryption_method": "Encryption method to apply to the workgroup.",
+    "workgroup_name": "New name for the workgroup."
+  },
+  "UpdateWorkspaceRequest": {
+    "addons": "Add-ons to enable on the workspace.",
+    "agent_config": "Agent heartbeat and polling configuration.",
+    "auto_stop_minutes": "Idle minutes before the workspace stops automatically.",
+    "auto_upgrade_state": "State of the automatic version upgrade.",
+    "desired_tg_version": "TigerGraph version to move the workspace to.",
+    "enable_auto_start": "Whether the workspace starts automatically on access.",
+    "enable_ha": "Whether high availability is enabled.",
+    "maintenance_window_day_of_week": "Day of the week the maintenance window starts.",
+    "maintenance_window_hour_of_day": "Hour of the day the maintenance window starts.",
+    "maintenance_window_interval_weeks": "Number of weeks between maintenance windows.",
+    "maintenance_window_time_zone": "Time zone used for the maintenance window.",
+    "pause": "Whether the workspace is paused.",
+    "update_strategy": "Strategy used to apply workspace updates.",
+    "workspace_name": "New name for the workspace.",
+    "workspace_type_name": "Name of the workspace size to apply."
+  },
+  "UpgradeCloudProviderComponent": {
+    "name": "Name of the component to upgrade.",
+    "version": "Target version of the component."
+  },
+  "UpgradeCloudProviderResourceRequest": {
+    "cluster_enabled_log_types": "Kubernetes control-plane log types to enable after the upgrade.",
+    "components": "Components and target versions to apply.",
+    "node_group_config": "Kubernetes node-group configuration to apply during the upgrade."
+  },
+  "ValidateCloudProviderRequest": {
+    "account_id": "Cloud account identifier to validate.",
+    "platform": "Cloud platform to validate.",
+    "region": "Cloud region to validate.",
+    "role_arn": "Amazon Resource Name of the IAM role TigerGraph will assume.",
+    "role_external_id": "External identifier used when TigerGraph assumes the IAM role.",
+    "secure_connection": "Whether to validate a private, secure connection."
+  },
+  "Workgroup": {
+    "cloud_provider_id": "Unique identifier of the cloud provider configuration.",
+    "cloud_provider_name": "Display name of the cloud provider.",
+    "cloud_provider_status": "Current status of the cloud provider configuration.",
+    "cloud_provider_type": "Type of cloud provider configuration.",
+    "creator": "User who created the workgroup.",
+    "enable_allow_list": "Whether the IP allow list is enabled.",
+    "enable_application_log": "Whether application logging is enabled.",
+    "encryption_method": "Encryption method used by the workgroup.",
+    "is_current_ip_allowed": "Whether the current client IP is allowed.",
+    "name": "Name of the workgroup.",
+    "org_id": "Unique identifier of the organization.",
+    "org_name": "Name of the organization.",
+    "platform": "Cloud platform that hosts the workgroup.",
+    "region": "Cloud region that hosts the workgroup.",
+    "shared_storage": "Whether shared storage is enabled.",
+    "tg_databases": "Databases associated with the workgroup.",
+    "workgroup_id": "Unique identifier of the workgroup.",
+    "workspaces": "Workspaces associated with the workgroup."
+  },
+  "Workspace": {
+    "addons": "Add-ons enabled for the workspace.",
+    "agent_config": "Agent heartbeat and polling configuration.",
+    "auto_stop_minutes": "Idle minutes before the workspace stops automatically.",
+    "auto_upgrade_state": "State of the automatic version upgrade.",
+    "cloud_provider_id": "Unique identifier of the cloud provider configuration.",
+    "cloud_provider_name": "Display name of the cloud provider.",
+    "cloud_provider_short_id": "Short identifier of the cloud provider configuration.",
+    "condition_type": "Current condition reported for the workspace.",
+    "created_at": "Time the workspace was created.",
+    "creator": "User who created the workspace.",
+    "database_id": "Unique identifier of the attached database.",
+    "database_name": "Name of the attached database.",
+    "deleted_at": "Time the workspace was deleted.",
+    "desired_tg_version": "TigerGraph version the workspace is moving to.",
+    "display_status": "Status shown in the TigerGraph Savanna console.",
+    "edge_count": "Number of edges stored in the workspace.",
+    "enable_auto_start": "Whether the workspace starts automatically on access.",
+    "enable_copilot": "Whether TigerGraph CoPilot is enabled.",
+    "enable_ha": "Whether high availability is enabled.",
+    "err_message": "Error message reported for the workspace.",
+    "folder_statistics": "Storage statistics for the workspace.",
+    "graph_topology_size_bytes": "Size of the graph topology, in bytes.",
+    "is_rw": "Whether the workspace accepts writes.",
+    "last_maintenance": "Time of the last maintenance run.",
+    "last_modified_time": "Time the workspace was last modified.",
+    "maintenance_window_day_of_week": "Day of the week the maintenance window starts.",
+    "maintenance_window_hour_of_day": "Hour of the day the maintenance window starts.",
+    "maintenance_window_interval_weeks": "Number of weeks between maintenance windows.",
+    "maintenance_window_time_zone": "Time zone used for the maintenance window.",
+    "name": "Name of the workspace.",
+    "nginx_host": "Host name that serves the workspace endpoint.",
+    "org_id": "Unique identifier of the organization.",
+    "org_name": "Name of the organization.",
+    "refresh_message": "Message describing the most recent refresh.",
+    "refresh_status": "Status of the most recent refresh.",
+    "region": "Cloud region that hosts the workspace.",
+    "replicas": "Number of replicas provisioned for the workspace.",
+    "snapshot_time": "Time of the snapshot the workspace was created from.",
+    "solution_catalog_id": "Unique identifier of the solution catalog entry.",
+    "status": "Current status of the workspace.",
+    "tg_version": "TigerGraph version running in the workspace.",
+    "update_strategy": "Strategy used to apply workspace updates.",
+    "version_number": "Internal version number of the workspace record.",
+    "vertex_count": "Number of vertices stored in the workspace.",
+    "workgroup_id": "Unique identifier of the parent workgroup.",
+    "workgroup_name": "Name of the parent workgroup.",
+    "workspace_id": "Unique identifier of the workspace.",
+    "workspace_type": "Compute size and shape of the workspace."
+  },
+  "WorkspaceAddonsRequest": {
+    "addons_id": "Unique identifier of the add-on.",
+    "enable": "Whether the add-on is enabled.",
+    "enable_configuration": "Configuration applied when the add-on is enabled.",
+    "is_free": "Whether the add-on is available at no cost.",
+    "unique_name": "Unique name of the add-on.",
+    "workspace_id": "Unique identifier of the workspace."
+  },
+  "WorkspaceMetadata": {
+    "regions": "Cloud regions available to your org.",
+    "tgVersions": "TigerGraph versions available to your org.",
+    "workspaceTypes": "Workspace sizes available to your org."
+  },
+  "WorkspaceSchedule": {
+    "date": "Date the action runs when the schedule does not repeat.",
+    "id": "Unique identifier of the schedule.",
+    "repeat": "How often the action repeats: daily, weekly, or weekdays.",
+    "repeat_on": "Days the action runs when it repeats weekly.",
+    "time": "Time of day the action runs.",
+    "timezone": "Time zone the schedule is interpreted in.",
+    "workspace_id": "Unique identifier of the scheduled workspace.",
+    "workspace_type_name": "Workspace size to apply when the action runs."
+  },
+  "WorkspaceSize": {
+    "size": "Storage used by the workspace, in bytes.",
+    "workspace_id": "Unique identifier of the workspace."
+  },
+  "WorkspaceType": {
+    "cpu": "Number of vCPUs allocated to the workspace.",
+    "ha": "Number of high-availability replicas.",
+    "memory": "Memory allocated to the workspace.",
+    "partition": "Number of partitions in the workspace.",
+    "typeName": "Name of the workspace size type."
+  },
+  "aws.NodeGroup": {
+    "max_size": "Maximum number of nodes in the group.",
+    "min_size": "Minimum number of nodes in the group.",
+    "overprovisioning_factor": "Additional capacity factor reserved above the requested workload."
+  },
+  "aws.NodeGroupConfig": {
+    "ng_16": "Configuration of the 16-unit node group.",
+    "ng_32": "Configuration of the 32-unit node group.",
+    "ng_48": "Configuration of the 48-unit node group.",
+    "ng_64": "Configuration of the 64-unit node group.",
+    "ng_system": "Configuration of the system node group.",
+    "prefetch_image_list": "Container images to prefetch onto the nodes."
+  }
+}

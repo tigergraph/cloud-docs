@@ -1,0 +1,5 @@
+{
+ "get-workgroup-details": {
+  "200": "{\n  \"Error\": false,\n  \"ErrorDetails\": [],\n  \"Message\": \"Get workgroup detail successfully\",\n  \"RequestID\": \"b8e0e6f2-2a51-4a3e-9f6b-0f2d9c1a7e44\",\n  \"Result\": {\n    \"cloud_provider_id\": \"tg-cloud-provider\",\n    \"cloud_provider_name\": \"TigerGraph Cloud\",\n    \"cloud_provider_status\": \"Active\",\n    \"cloud_provider_type\": \"tg\",\n    \"creator\": \"user@example.com\",\n    \"enable_allow_list\": true,\n    \"enable_application_log\": false,\n    \"encryption_method\": \"TMK\",\n    \"is_current_ip_allowed\": true,\n    \"name\": \"Production\",\n    \"org_id\": \"org-1a2b3c4d\",\n    \"org_name\": \"example-org\",\n    \"platform\": \"aws\",\n    \"region\": \"us-west-2\",\n    \"shared_storage\": false,\n    \"tg_databases\": [],\n    \"workgroup_id\": \"wg-1a2b3c4d\",\n    \"workspaces\": []\n  }\n}"
+ }
+}

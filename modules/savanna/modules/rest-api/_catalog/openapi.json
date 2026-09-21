@@ -1,0 +1,6461 @@
+{
+ "basePath": "/controller/v4/v2",
+ "definitions": {
+  "APIKey": {
+   "properties": {
+    "created_at": {
+     "type": "string"
+    },
+    "creator": {
+     "type": "string"
+    },
+    "description": {
+     "type": "string"
+    },
+    "expires_at": {
+     "type": "string"
+    },
+    "key_name": {
+     "type": "string"
+    },
+    "org_id": {
+     "type": "string"
+    },
+    "plaintext_key": {
+     "type": "string"
+    },
+    "redacted_key": {
+     "type": "string"
+    },
+    "user_id": {
+     "type": "string"
+    }
+   },
+   "type": "object"
+  },
+  "AddOnPricing": {
+   "properties": {
+    "platform": {
+     "type": "string"
+    },
+    "price_per_hour": {
+     "type": "number"
+    },
+    "region": {
+     "type": "string"
+    },
+    "type": {
+     "type": "string"
+    },
+    "workspace_type": {
+     "type": "string"
+    }
+   },
+   "type": "object"
+  },
+  "AgentConfig": {
+   "properties": {
+    "catalog_activity_update_interval_seconds": {
+     "type": "integer"
+    },
+    "enable_topology_force_update": {
+     "type": "boolean"
+    },
+    "heartbeat_interval_seconds": {
+     "type": "integer"
+    },
+    "query_activity_update_interval_seconds": {
+     "type": "integer"
+    },
+    "topology_update_interval_seconds": {
+     "type": "integer"
+    }
+   },
+   "type": "object"
+  },
+  "AllowedIP": {
+   "properties": {
+    "cidr": {
+     "type": "string"
+    },
+    "id": {
+     "type": "string"
+    },
+    "note": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "cidr"
+   ],
+   "type": "object"
+  },
+  "Backup": {
+   "properties": {
+    "id": {
+     "type": "string"
+    },
+    "is_automatic": {
+     "type": "boolean"
+    },
+    "size_bytes": {
+     "type": "string"
+    },
+    "status": {
+     "type": "string"
+    },
+    "tag": {
+     "type": "string"
+    },
+    "time": {
+     "type": "string"
+    },
+    "type": {
+     "type": "string"
+    },
+    "version": {
+     "type": "string"
+    }
+   },
+   "type": "object"
+  },
+  "BackupRestoreStatus": {
+   "properties": {
+    "created_at": {
+     "type": "string"
+    },
+    "name": {
+     "type": "string"
+    },
+    "output": {
+     "type": "string"
+    },
+    "status": {
+     "type": "string"
+    }
+   },
+   "type": "object"
+  },
+  "BackupSchedule": {
+   "properties": {
+    "max_backup_files": {
+     "type": "integer"
+    },
+    "max_reserved_days": {
+     "type": "integer"
+    },
+    "max_retry": {
+     "type": "integer"
+    },
+    "pause": {
+     "type": "boolean"
+    },
+    "schedule": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "schedule"
+   ],
+   "type": "object"
+  },
+  "CloudProviderOptions": {
+   "properties": {
+    "account_id": {
+     "type": "string"
+    },
+    "secure_connection": {
+     "type": "boolean"
+    }
+   },
+   "type": "object"
+  },
+  "CloudProviderResource": {
+   "properties": {
+    "api_tokens": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "availability_zones": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "cluster_enabled_log_types": {
+     "items": {
+      "$ref": "#/definitions/constants.ClusterLogType"
+     },
+     "type": "array"
+    },
+    "component_versions": {
+     "type": "string"
+    },
+    "created_at": {
+     "type": "string"
+    },
+    "created_by": {
+     "type": "string"
+    },
+    "eks_id": {
+     "type": "string"
+    },
+    "endpoint_service_name": {
+     "type": "string"
+    },
+    "id": {
+     "type": "string"
+    },
+    "last_error": {
+     "type": "string"
+    },
+    "name": {
+     "type": "string"
+    },
+    "node_group_config": {
+     "$ref": "#/definitions/aws.NodeGroupConfig"
+    },
+    "options": {
+     "$ref": "#/definitions/CloudProviderOptions"
+    },
+    "org_id": {
+     "type": "string"
+    },
+    "platform": {
+     "type": "string"
+    },
+    "region": {
+     "type": "string"
+    },
+    "role_arn": {
+     "type": "string"
+    },
+    "role_external_id": {
+     "type": "string"
+    },
+    "security_group_id": {
+     "type": "string"
+    },
+    "short_id": {
+     "type": "string"
+    },
+    "status": {
+     "type": "string"
+    },
+    "subnet_id": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "type": {
+     "type": "string"
+    },
+    "updated_at": {
+     "type": "string"
+    },
+    "version": {
+     "type": "string"
+    },
+    "version_number": {
+     "type": "integer"
+    },
+    "vpc_id": {
+     "type": "string"
+    },
+    "vpc_owned_by_tg": {
+     "type": "boolean"
+    },
+    "work_dir": {
+     "type": "string"
+    }
+   },
+   "type": "object"
+  },
+  "CreateAPIKeyRequest": {
+   "properties": {
+    "description": {
+     "type": "string"
+    },
+    "life_time_in_seconds": {
+     "type": "integer"
+    }
+   },
+   "type": "object"
+  },
+  "CreateCloudProviderResourceRequest": {
+   "properties": {
+    "created_by": {
+     "type": "string"
+    },
+    "name": {
+     "type": "string"
+    },
+    "options": {
+     "$ref": "#/definitions/CloudProviderOptions"
+    },
+    "platform": {
+     "type": "string"
+    },
+    "region": {
+     "type": "string"
+    },
+    "role_arn": {
+     "type": "string"
+    },
+    "role_external_id": {
+     "type": "string"
+    },
+    "type": {
+     "description": "Type is used by two sets of API and will be set to 'private' when called by the Admin API\nand 'public' when called by the public cloud provider creation API.",
+     "type": "string"
+    }
+   },
+   "type": "object"
+  },
+  "CreateConfigRequest": {
+   "properties": {
+    "config_name": {
+     "type": "string"
+    },
+    "config_value": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "config_name",
+    "config_value"
+   ],
+   "type": "object"
+  },
+  "CreateWorkgroupRequest": {
+   "properties": {
+    "cloud_provider_id": {
+     "type": "string"
+    },
+    "enable_application_log": {
+     "type": "boolean"
+    },
+    "enable_encryption": {
+     "type": "boolean"
+    },
+    "name": {
+     "type": "string"
+    },
+    "platform": {
+     "$ref": "#/definitions/Platform"
+    },
+    "region": {
+     "type": "string"
+    },
+    "shared_storage": {
+     "type": "boolean"
+    }
+   },
+   "required": [
+    "cloud_provider_id"
+   ],
+   "type": "object"
+  },
+  "CreateWorkspaceRequest": {
+   "description": "Create Workspace Request",
+   "properties": {
+    "addons": {
+     "items": {
+      "$ref": "#/definitions/WorkspaceAddonsRequest"
+     },
+     "type": "array"
+    },
+    "auto_stop_minutes": {
+     "type": "integer"
+    },
+    "enable_auto_start": {
+     "type": "boolean"
+    },
+    "enable_ha": {
+     "type": "boolean"
+    },
+    "is_rw": {
+     "type": "boolean"
+    },
+    "maintenance_window_day_of_week": {
+     "type": "integer"
+    },
+    "maintenance_window_hour_of_day": {
+     "type": "integer"
+    },
+    "maintenance_window_interval_weeks": {
+     "type": "integer"
+    },
+    "maintenance_window_time_zone": {
+     "type": "string"
+    },
+    "name": {
+     "type": "string"
+    },
+    "solution_install_request": {
+     "$ref": "#/definitions/SolutionInstallRequest"
+    },
+    "tg_database_id": {
+     "type": "string"
+    },
+    "tg_version": {
+     "type": "string"
+    },
+    "update_strategy": {
+     "type": "string"
+    },
+    "workspace_type_name": {
+     "description": "Workspace Type Name TG-0/TG-2",
+     "type": "string"
+    },
+    "x_test_env": {
+     "type": "string"
+    }
+   },
+   "type": "object"
+  },
+  "CustomerCreditCard": {
+   "properties": {
+    "brand": {
+     "type": "string"
+    },
+    "card_id": {
+     "type": "string"
+    },
+    "expire_month": {
+     "type": "integer"
+    },
+    "expire_year": {
+     "type": "integer"
+    },
+    "last_4_digits": {
+     "type": "string"
+    },
+    "name_on_card": {
+     "type": "string"
+    },
+    "org_id": {
+     "type": "string"
+    }
+   },
+   "type": "object"
+  },
+  "CustomerResponse": {
+   "properties": {
+    "address": {
+     "$ref": "#/definitions/UpdateAddressRequest"
+    },
+    "customer_email": {
+     "type": "string"
+    },
+    "customer_id": {
+     "type": "string"
+    },
+    "customer_name": {
+     "type": "string"
+    }
+   },
+   "type": "object"
+  },
+  "DataStoragePricing": {
+   "properties": {
+    "platform": {
+     "type": "string"
+    },
+    "price_per_month": {
+     "type": "number"
+    },
+    "region": {
+     "type": "string"
+    }
+   },
+   "type": "object"
+  },
+  "DeleteAPIKeyRequest": {
+   "properties": {
+    "key_name": {
+     "type": "string"
+    }
+   },
+   "type": "object"
+  },
+  "DeleteBackupRequest": {
+   "properties": {
+    "backup_id": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "backup_id"
+   ],
+   "type": "object"
+  },
+  "Error": {
+   "properties": {
+    "FieldName": {
+     "type": "string"
+    },
+    "Reason": {
+     "type": "string"
+    },
+    "Type": {
+     "$ref": "#/definitions/ErrorType"
+    }
+   },
+   "type": "object"
+  },
+  "ErrorType": {
+   "enum": [
+    "Internal-Error",
+    "Bad-Request",
+    "Not-Found",
+    "Forbidden",
+    "Unauthorized",
+    "API-Disabled",
+    "Quota-Exceed",
+    "Unknown"
+   ],
+   "type": "string",
+   "x-enum-varnames": [
+    "ErrInternal",
+    "ErrBadRequest",
+    "ErrNotFound",
+    "ErrForbidden",
+    "ErrUnauthorized",
+    "ErrAPIDisabled",
+    "ErrQuotaExceed",
+    "ErrUnknown"
+   ]
+  },
+  "FeatureFlag": {
+   "properties": {
+    "enabled": {
+     "type": "boolean"
+    },
+    "feature_name": {
+     "type": "string"
+    }
+   },
+   "type": "object"
+  },
+  "FolderStatistics": {
+   "properties": {
+    "backup_size": {
+     "type": "integer"
+    },
+    "billed_size": {
+     "type": "integer"
+    },
+    "log_size": {
+     "type": "integer"
+    },
+    "milvus_size": {
+     "type": "integer"
+    },
+    "total_size": {
+     "type": "integer"
+    },
+    "workspaces": {
+     "items": {
+      "$ref": "#/definitions/WorkspaceSize"
+     },
+     "type": "array"
+    }
+   },
+   "type": "object"
+  },
+  "GetCustomerCreditCardsResponse": {
+   "properties": {
+    "credit_cards": {
+     "items": {
+      "$ref": "#/definitions/CustomerCreditCard"
+     },
+     "type": "array"
+    },
+    "default_card": {
+     "type": "string"
+    }
+   },
+   "type": "object"
+  },
+  "IAMUser": {
+   "properties": {
+    "auth0UserID": {
+     "type": "string"
+    },
+    "created": {
+     "type": "string"
+    },
+    "description": {
+     "type": "string"
+    },
+    "email": {
+     "type": "string"
+    },
+    "enabled": {
+     "type": "boolean"
+    },
+    "firstName": {
+     "type": "string"
+    },
+    "id": {
+     "type": "string"
+    },
+    "lastName": {
+     "type": "string"
+    },
+    "metadata": {
+     "$ref": "#/definitions/tgIAM.Metadata"
+    },
+    "path": {
+     "type": "string"
+    },
+    "role": {
+     "type": "string"
+    },
+    "tenantID": {
+     "type": "string"
+    },
+    "trn": {
+     "type": "string"
+    },
+    "updated": {
+     "type": "string"
+    },
+    "username": {
+     "type": "string"
+    }
+   },
+   "type": "object"
+  },
+  "InDatabaseUserRequest": {
+   "properties": {
+    "password": {
+     "type": "string"
+    },
+    "username": {
+     "type": "string"
+    }
+   },
+   "type": "object"
+  },
+  "OrgListUserResponse": {
+   "properties": {
+    "auth0UserID": {
+     "type": "string"
+    },
+    "authID": {
+     "type": "string"
+    },
+    "created": {
+     "type": "string"
+    },
+    "email": {
+     "type": "string"
+    },
+    "enabled": {
+     "type": "boolean"
+    },
+    "firstName": {
+     "type": "string"
+    },
+    "id": {
+     "type": "string"
+    },
+    "lastName": {
+     "type": "string"
+    },
+    "metadata": {
+     "$ref": "#/definitions/OrgMetadata"
+    },
+    "path": {
+     "type": "string"
+    },
+    "roles": {
+     "items": {
+      "$ref": "#/definitions/OrgRole"
+     },
+     "type": "array"
+    },
+    "tenantID": {
+     "type": "string"
+    },
+    "trn": {
+     "type": "string"
+    },
+    "updated": {
+     "type": "string"
+    },
+    "username": {
+     "type": "string"
+    }
+   },
+   "type": "object"
+  },
+  "OrgMetadata": {
+   "properties": {
+    "attachedTo": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "lastLogin": {
+     "type": "string"
+    }
+   },
+   "type": "object"
+  },
+  "OrgQuota": {
+   "properties": {
+    "max_workspace_memory": {
+     "type": "string"
+    },
+    "max_workspace_type": {
+     "type": "string"
+    },
+    "memory_limit": {
+     "type": "string"
+    },
+    "memory_usage_in_bytes": {
+     "type": "integer"
+    },
+    "org_id": {
+     "type": "string"
+    },
+    "ro_workspace_count_limit": {
+     "type": "integer"
+    },
+    "ro_workspace_count_usage": {
+     "type": "integer"
+    },
+    "rw_workspace_count_limit": {
+     "type": "integer"
+    },
+    "rw_workspace_count_usage": {
+     "type": "integer"
+    },
+    "tier": {
+     "type": "string"
+    },
+    "workspace_auto_backup_count_limit": {
+     "type": "integer"
+    },
+    "workspace_auto_backup_retention_in_days": {
+     "type": "integer"
+    },
+    "workspace_manual_backup_count_limit": {
+     "type": "integer"
+    }
+   },
+   "type": "object"
+  },
+  "OrgRequest": {
+   "properties": {
+    "logoUrl": {
+     "type": "string"
+    },
+    "orgDisplayName": {
+     "type": "string"
+    },
+    "orgID": {
+     "type": "string"
+    },
+    "orgName": {
+     "type": "string"
+    }
+   },
+   "type": "object"
+  },
+  "OrgRole": {
+   "properties": {
+    "displayName": {
+     "type": "string"
+    },
+    "id": {
+     "type": "string"
+    },
+    "name": {
+     "type": "string"
+    },
+    "path": {
+     "type": "string"
+    },
+    "tenantID": {
+     "type": "string"
+    },
+    "trn": {
+     "type": "string"
+    }
+   },
+   "type": "object"
+  },
+  "Organization": {
+   "properties": {
+    "create_time": {
+     "type": "string"
+    },
+    "creator": {
+     "type": "string"
+    },
+    "delinquent_since": {
+     "type": "string"
+    },
+    "feature_flag": {
+     "items": {
+      "$ref": "#/definitions/FeatureFlag"
+     },
+     "type": "array"
+    },
+    "logo_url": {
+     "type": "string"
+    },
+    "org_display_name": {
+     "type": "string"
+    },
+    "org_id": {
+     "type": "string"
+    },
+    "org_name": {
+     "type": "string"
+    }
+   },
+   "type": "object"
+  },
+  "Platform": {
+   "enum": [
+    "aws",
+    "azure",
+    "gcp"
+   ],
+   "type": "string",
+   "x-enum-varnames": [
+    "PlatformAWS",
+    "PlatformAzure",
+    "PlatformGCP"
+   ]
+  },
+  "PublicCloudProviderResource": {
+   "properties": {
+    "component_versions": {
+     "type": "string"
+    },
+    "id": {
+     "type": "string"
+    },
+    "name": {
+     "type": "string"
+    },
+    "org_id": {
+     "type": "string"
+    },
+    "platform": {
+     "type": "string"
+    },
+    "region": {
+     "type": "string"
+    },
+    "status": {
+     "type": "string"
+    },
+    "version": {
+     "type": "string"
+    },
+    "version_number": {
+     "type": "integer"
+    }
+   },
+   "type": "object"
+  },
+  "PutOrgUsersRoles": {
+   "properties": {
+    "roles": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    }
+   },
+   "type": "object"
+  },
+  "Region": {
+   "properties": {
+    "description": {
+     "type": "string"
+    },
+    "name": {
+     "type": "string"
+    }
+   },
+   "type": "object"
+  },
+  "RequestAddonRequest": {
+   "properties": {
+    "addon_name": {
+     "type": "string"
+    },
+    "message": {
+     "type": "string"
+    }
+   },
+   "type": "object"
+  },
+  "ResourcePricing": {
+   "properties": {
+    "addon_pricing": {
+     "items": {
+      "$ref": "#/definitions/AddOnPricing"
+     },
+     "type": "array"
+    },
+    "data_storage_pricing": {
+     "items": {
+      "$ref": "#/definitions/DataStoragePricing"
+     },
+     "type": "array"
+    },
+    "workspace_pricing": {
+     "items": {
+      "$ref": "#/definitions/WorkspacePricing"
+     },
+     "type": "array"
+    }
+   },
+   "type": "object"
+  },
+  "Response": {
+   "properties": {
+    "Error": {
+     "type": "boolean"
+    },
+    "ErrorDetails": {
+     "items": {
+      "$ref": "#/definitions/Error"
+     },
+     "type": "array"
+    },
+    "Message": {
+     "type": "string"
+    },
+    "RequestID": {
+     "type": "string"
+    },
+    "Result": {
+     "type": "object"
+    }
+   },
+   "type": "object"
+  },
+  "RestoreBackupRequest": {
+   "properties": {
+    "backup_id": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "backup_id"
+   ],
+   "type": "object"
+  },
+  "ServerMCPChatRequest": {
+   "properties": {
+    "authorization": {
+     "type": "string"
+    },
+    "debug": {
+     "type": "boolean"
+    },
+    "message": {},
+    "thread_id": {
+     "type": "string"
+    },
+    "type": {
+     "type": "string"
+    },
+    "workspace_id": {
+     "type": "string"
+    }
+   },
+   "type": "object"
+  },
+  "SolutionInstallRequest": {
+   "properties": {
+    "addons": {
+     "items": {
+      "$ref": "#/definitions/WorkspaceAddonsRequest"
+     },
+     "type": "array"
+    },
+    "data_source_origin": {
+     "type": "string"
+    },
+    "name": {
+     "type": "string"
+    },
+    "solution_catalog_id": {
+     "type": "string"
+    }
+   },
+   "type": "object"
+  },
+  "TGDatabase": {
+   "properties": {
+    "create_time": {
+     "type": "string"
+    },
+    "database_id": {
+     "type": "string"
+    },
+    "folder_statistics": {
+     "$ref": "#/definitions/FolderStatistics"
+    },
+    "name": {
+     "type": "string"
+    },
+    "org_id": {
+     "type": "string"
+    },
+    "org_name": {
+     "type": "string"
+    },
+    "region": {
+     "type": "string"
+    },
+    "tg_version": {
+     "type": "string"
+    },
+    "workgroup_id": {
+     "type": "string"
+    },
+    "workspaces": {
+     "items": {
+      "$ref": "#/definitions/Workspace"
+     },
+     "type": "array"
+    }
+   },
+   "type": "object"
+  },
+  "TGVersion": {
+   "properties": {
+    "allow_create": {
+     "type": "boolean"
+    },
+    "allow_upgrade": {
+     "type": "boolean"
+    },
+    "channel": {
+     "type": "string"
+    },
+    "end_of_life": {
+     "type": "string"
+    },
+    "image": {
+     "type": "string"
+    },
+    "incompatible_upgrades_from": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "name": {
+     "type": "string"
+    },
+    "orgs": {
+     "description": "For customized versions",
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    }
+   },
+   "type": "object"
+  },
+  "UpdateAddressRequest": {
+   "properties": {
+    "city": {
+     "type": "string"
+    },
+    "country": {
+     "type": "string"
+    },
+    "line1": {
+     "type": "string"
+    },
+    "postalCode": {
+     "type": "string"
+    },
+    "state": {
+     "type": "string"
+    }
+   },
+   "type": "object"
+  },
+  "UpdateCloudProviderResourceRequest": {
+   "properties": {
+    "name": {
+     "type": "string"
+    },
+    "version": {
+     "type": "string"
+    }
+   },
+   "type": "object"
+  },
+  "UpdateConfigRequest": {
+   "properties": {
+    "config_value": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "config_value"
+   ],
+   "type": "object"
+  },
+  "UpdateTGDatabaseRequest": {
+   "properties": {
+    "tg_database_name": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "tg_database_name"
+   ],
+   "type": "object"
+  },
+  "UpdateWorkgroupRequest": {
+   "properties": {
+    "enable_application_log": {
+     "type": "boolean"
+    },
+    "encryption_method": {
+     "$ref": "#/definitions/data.EncryptionMethod"
+    },
+    "workgroup_name": {
+     "type": "string"
+    }
+   },
+   "type": "object"
+  },
+  "UpdateWorkspaceRequest": {
+   "properties": {
+    "addons": {
+     "items": {
+      "$ref": "#/definitions/WorkspaceAddonsRequest"
+     },
+     "type": "array"
+    },
+    "agent_config": {
+     "$ref": "#/definitions/AgentConfig"
+    },
+    "auto_stop_minutes": {
+     "minimum": 0,
+     "type": "integer"
+    },
+    "auto_upgrade_state": {
+     "type": "string"
+    },
+    "desired_tg_version": {
+     "type": "string"
+    },
+    "enable_auto_start": {
+     "type": "boolean"
+    },
+    "enable_ha": {
+     "type": "boolean"
+    },
+    "maintenance_window_day_of_week": {
+     "type": "integer"
+    },
+    "maintenance_window_hour_of_day": {
+     "type": "integer"
+    },
+    "maintenance_window_interval_weeks": {
+     "type": "integer"
+    },
+    "maintenance_window_time_zone": {
+     "type": "string"
+    },
+    "pause": {
+     "type": "boolean"
+    },
+    "update_strategy": {
+     "type": "string"
+    },
+    "workspace_name": {
+     "type": "string"
+    },
+    "workspace_type_name": {
+     "type": "string"
+    }
+   },
+   "type": "object"
+  },
+  "UpgradeCloudProviderComponent": {
+   "properties": {
+    "name": {
+     "type": "string"
+    },
+    "version": {
+     "type": "string"
+    }
+   },
+   "type": "object"
+  },
+  "UpgradeCloudProviderResourceRequest": {
+   "properties": {
+    "cluster_enabled_log_types": {
+     "items": {
+      "$ref": "#/definitions/constants.ClusterLogType"
+     },
+     "type": "array"
+    },
+    "components": {
+     "items": {
+      "$ref": "#/definitions/UpgradeCloudProviderComponent"
+     },
+     "type": "array"
+    },
+    "node_group_config": {
+     "$ref": "#/definitions/aws.NodeGroupConfig"
+    }
+   },
+   "type": "object"
+  },
+  "UpgradeWorkspaceRequest": {
+   "description": "Upgrade Workspace Request",
+   "properties": {
+    "desired_version": {
+     "type": "string"
+    },
+    "scheduled": {
+     "type": "boolean"
+    }
+   },
+   "type": "object"
+  },
+  "ValidateCloudProviderRequest": {
+   "properties": {
+    "account_id": {
+     "type": "string"
+    },
+    "platform": {
+     "type": "string"
+    },
+    "region": {
+     "type": "string"
+    },
+    "role_arn": {
+     "type": "string"
+    },
+    "role_external_id": {
+     "type": "string"
+    },
+    "secure_connection": {
+     "type": "boolean"
+    }
+   },
+   "required": [
+    "platform",
+    "region",
+    "role_arn"
+   ],
+   "type": "object"
+  },
+  "Workgroup": {
+   "properties": {
+    "cloud_provider_id": {
+     "type": "string"
+    },
+    "cloud_provider_name": {
+     "type": "string"
+    },
+    "cloud_provider_status": {
+     "type": "string"
+    },
+    "cloud_provider_type": {
+     "type": "string"
+    },
+    "creator": {
+     "type": "string"
+    },
+    "enable_allow_list": {
+     "type": "boolean"
+    },
+    "enable_application_log": {
+     "type": "boolean"
+    },
+    "encryption_method": {
+     "$ref": "#/definitions/data.EncryptionMethod"
+    },
+    "is_current_ip_allowed": {
+     "type": "boolean"
+    },
+    "name": {
+     "type": "string"
+    },
+    "org_id": {
+     "type": "string"
+    },
+    "org_name": {
+     "type": "string"
+    },
+    "platform": {
+     "$ref": "#/definitions/Platform"
+    },
+    "region": {
+     "type": "string"
+    },
+    "shared_storage": {
+     "type": "boolean"
+    },
+    "tg_databases": {
+     "items": {
+      "$ref": "#/definitions/TGDatabase"
+     },
+     "type": "array"
+    },
+    "workgroup_id": {
+     "type": "string"
+    },
+    "workspaces": {
+     "items": {
+      "$ref": "#/definitions/Workspace"
+     },
+     "type": "array"
+    }
+   },
+   "type": "object"
+  },
+  "Workspace": {
+   "properties": {
+    "addons": {
+     "items": {
+      "$ref": "#/definitions/WorkspaceAddonsRequest"
+     },
+     "type": "array"
+    },
+    "agent_config": {
+     "$ref": "#/definitions/AgentConfig"
+    },
+    "auto_stop_minutes": {
+     "type": "integer"
+    },
+    "auto_upgrade_state": {
+     "type": "string"
+    },
+    "cloud_provider_id": {
+     "type": "string"
+    },
+    "cloud_provider_name": {
+     "type": "string"
+    },
+    "cloud_provider_short_id": {
+     "type": "string"
+    },
+    "condition_type": {
+     "type": "string"
+    },
+    "created_at": {
+     "type": "string"
+    },
+    "creator": {
+     "type": "string"
+    },
+    "database_id": {
+     "type": "string"
+    },
+    "database_name": {
+     "type": "string"
+    },
+    "deleted_at": {
+     "type": "string"
+    },
+    "desired_tg_version": {
+     "type": "string"
+    },
+    "display_status": {
+     "type": "string"
+    },
+    "edge_count": {
+     "type": "integer"
+    },
+    "enable_auto_start": {
+     "type": "boolean"
+    },
+    "enable_copilot": {
+     "type": "boolean"
+    },
+    "enable_ha": {
+     "type": "boolean"
+    },
+    "err_message": {
+     "type": "string"
+    },
+    "folder_statistics": {
+     "$ref": "#/definitions/FolderStatistics"
+    },
+    "graph_topology_size_bytes": {
+     "type": "integer"
+    },
+    "is_rw": {
+     "type": "boolean"
+    },
+    "last_maintenance": {
+     "type": "string"
+    },
+    "last_modified_time": {
+     "type": "string"
+    },
+    "maintenance_window_day_of_week": {
+     "type": "integer"
+    },
+    "maintenance_window_hour_of_day": {
+     "type": "integer"
+    },
+    "maintenance_window_interval_weeks": {
+     "type": "integer"
+    },
+    "maintenance_window_time_zone": {
+     "type": "string"
+    },
+    "name": {
+     "type": "string"
+    },
+    "nginx_host": {
+     "type": "string"
+    },
+    "org_id": {
+     "type": "string"
+    },
+    "org_name": {
+     "type": "string"
+    },
+    "refresh_message": {
+     "type": "string"
+    },
+    "refresh_status": {
+     "type": "string"
+    },
+    "region": {
+     "type": "string"
+    },
+    "replicas": {
+     "type": "integer"
+    },
+    "snapshot_time": {
+     "type": "string"
+    },
+    "solution_catalog_id": {
+     "type": "string"
+    },
+    "status": {
+     "type": "string"
+    },
+    "tg_version": {
+     "type": "string"
+    },
+    "update_strategy": {
+     "type": "string"
+    },
+    "version_number": {
+     "type": "integer"
+    },
+    "vertex_count": {
+     "type": "integer"
+    },
+    "workgroup_id": {
+     "type": "string"
+    },
+    "workgroup_name": {
+     "type": "string"
+    },
+    "workspace_id": {
+     "type": "string"
+    },
+    "workspace_type": {
+     "$ref": "#/definitions/WorkspaceType"
+    }
+   },
+   "type": "object"
+  },
+  "WorkspaceAddonsRequest": {
+   "properties": {
+    "addons_id": {
+     "type": "string"
+    },
+    "enable": {
+     "type": "boolean"
+    },
+    "enable_configuration": {
+     "additionalProperties": true,
+     "type": "object"
+    },
+    "is_free": {
+     "type": "boolean"
+    },
+    "unique_name": {
+     "type": "string"
+    },
+    "workspace_id": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "addons_id",
+    "enable"
+   ],
+   "type": "object"
+  },
+  "WorkspaceMetadata": {
+   "properties": {
+    "regions": {
+     "items": {
+      "$ref": "#/definitions/Region"
+     },
+     "type": "array"
+    },
+    "tgVersions": {
+     "items": {
+      "$ref": "#/definitions/TGVersion"
+     },
+     "type": "array"
+    },
+    "workspaceTypes": {
+     "items": {
+      "$ref": "#/definitions/WorkspaceType"
+     },
+     "type": "array"
+    }
+   },
+   "type": "object"
+  },
+  "WorkspacePricing": {
+   "properties": {
+    "cloud_provider": {
+     "type": "string"
+    },
+    "ha": {
+     "type": "string"
+    },
+    "platform": {
+     "type": "string"
+    },
+    "price_per_hour": {
+     "type": "number"
+    },
+    "region": {
+     "type": "string"
+    },
+    "workspace_type": {
+     "type": "string"
+    }
+   },
+   "type": "object"
+  },
+  "WorkspaceSchedule": {
+   "properties": {
+    "date": {
+     "type": "string"
+    },
+    "id": {
+     "type": "string"
+    },
+    "repeat": {
+     "type": "string"
+    },
+    "repeat_on": {
+     "type": "string"
+    },
+    "time": {
+     "type": "string"
+    },
+    "timezone": {
+     "type": "string"
+    },
+    "workspace_id": {
+     "type": "string"
+    },
+    "workspace_type_name": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "repeat",
+    "time",
+    "timezone",
+    "workspace_id"
+   ],
+   "type": "object"
+  },
+  "WorkspaceSize": {
+   "properties": {
+    "size": {
+     "type": "integer"
+    },
+    "workspace_id": {
+     "type": "string"
+    }
+   },
+   "type": "object"
+  },
+  "WorkspaceType": {
+   "properties": {
+    "cpu": {
+     "type": "string"
+    },
+    "ha": {
+     "type": "integer"
+    },
+    "memory": {
+     "type": "string"
+    },
+    "partition": {
+     "type": "integer"
+    },
+    "typeName": {
+     "type": "string"
+    }
+   },
+   "type": "object"
+  },
+  "aws.NodeGroup": {
+   "properties": {
+    "max_size": {
+     "type": "integer"
+    },
+    "min_size": {
+     "type": "integer"
+    },
+    "overprovisioning_factor": {
+     "type": "integer"
+    }
+   },
+   "type": "object"
+  },
+  "aws.NodeGroupConfig": {
+   "properties": {
+    "ng_16": {
+     "$ref": "#/definitions/aws.NodeGroup"
+    },
+    "ng_32": {
+     "$ref": "#/definitions/aws.NodeGroup"
+    },
+    "ng_48": {
+     "$ref": "#/definitions/aws.NodeGroup"
+    },
+    "ng_64": {
+     "$ref": "#/definitions/aws.NodeGroup"
+    },
+    "ng_system": {
+     "$ref": "#/definitions/aws.NodeGroup"
+    },
+    "prefetch_image_list": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    }
+   },
+   "type": "object"
+  },
+  "constants.ClusterLogType": {
+   "enum": [
+    "api",
+    "audit",
+    "authenticator",
+    "controllerManager",
+    "scheduler"
+   ],
+   "type": "string",
+   "x-enum-varnames": [
+    "ClusterLogTypeAPIServer",
+    "ClusterLogTypeAudit",
+    "ClusterLogTypeAuthenticator",
+    "ClusterLogTypeControllerManager",
+    "ClusterLogTypeScheduler"
+   ]
+  },
+  "data.EncryptionMethod": {
+   "enum": [
+    "TMK"
+   ],
+   "type": "string",
+   "x-enum-varnames": [
+    "TigerGraphManagedKey"
+   ]
+  },
+  "observability.MetricValue": {
+   "description": "Workspace metric value",
+   "properties": {
+    "avgValue": {
+     "description": "Avg value",
+     "type": "number"
+    }
+   },
+   "type": "object"
+  },
+  "observability.WorkgroupMetric": {
+   "description": "Metrics for workspaces in a workgroup",
+   "properties": {
+    "workgroupID": {
+     "description": "Workgroup ID",
+     "type": "string"
+    },
+    "workspaceMetrics": {
+     "description": "Workspace metrics",
+     "items": {
+      "$ref": "#/definitions/observability.WorkspaceMetric"
+     },
+     "type": "array"
+    }
+   },
+   "type": "object"
+  },
+  "observability.WorkspaceMetric": {
+   "description": "Workspace metric",
+   "properties": {
+    "metrics": {
+     "additionalProperties": {
+      "$ref": "#/definitions/observability.MetricValue"
+     },
+     "description": "Workspace metric map, key is metric name,\nvalue is the certain value for the metric name in the key",
+     "type": "object"
+    },
+    "workspaceID": {
+     "description": "Workspace ID",
+     "type": "string"
+    }
+   },
+   "type": "object"
+  },
+  "tgIAM.Metadata": {
+   "additionalProperties": true,
+   "type": "object"
+  }
+ },
+ "host": "api.tgcloud.io",
+ "info": {
+  "contact": {},
+  "description": "This is a sample TigerGraph Savanna controller server api.",
+  "title": "TigerGraph Savanna Controller API",
+  "version": "2.0"
+ },
+ "paths": {
+  "/cloud-providers/all": {
+   "get": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "List all cloud provider",
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "items": {
+            "$ref": "#/definitions/CloudProviderResource"
+           },
+           "type": "array"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "List all cloud provider for admin",
+    "tags": [
+     "CloudProvider"
+    ]
+   }
+  },
+  "/controller/v4/v2/add-ons/{installedAddonsID}/configs": {
+   "post": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Create a new configuration for a specific installed add-on.",
+    "parameters": [
+     {
+      "description": "Installed Add-on ID",
+      "in": "path",
+      "name": "installedAddonsID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Create Configuration Request",
+      "in": "body",
+      "name": "body",
+      "required": true,
+      "schema": {
+       "$ref": "#/definitions/CreateConfigRequest"
+      }
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "object"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "400": {
+      "description": "Bad creation input.",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "object"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "500": {
+      "description": "Failed to create configuration.",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "object"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Create Add-on Configuration",
+    "tags": [
+     "Add-ons"
+    ]
+   }
+  },
+  "/controller/v4/v2/add-ons/{installedAddonsID}/configs/{configID}": {
+   "delete": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Delete a specific configuration for an add-on.",
+    "parameters": [
+     {
+      "description": "Installed Add-on ID",
+      "in": "path",
+      "name": "installedAddonsID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Configuration ID",
+      "in": "path",
+      "name": "configID",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "boolean"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "400": {
+      "description": "Bad delete input.",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "object"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "500": {
+      "description": "Failed to delete configuration.",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "object"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Delete Add-on Configuration",
+    "tags": [
+     "Add-ons"
+    ]
+   },
+   "put": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Update an existing configuration for an add-on.",
+    "parameters": [
+     {
+      "description": "Installed Add-on ID",
+      "in": "path",
+      "name": "installedAddonsID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Configuration ID",
+      "in": "path",
+      "name": "configID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Update Configuration Request",
+      "in": "body",
+      "name": "body",
+      "required": true,
+      "schema": {
+       "$ref": "#/definitions/UpdateConfigRequest"
+      }
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "object"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "400": {
+      "description": "Bad update input.",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "object"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "500": {
+      "description": "Failed to update configuration.",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "object"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Update Add-on Configuration",
+    "tags": [
+     "Add-ons"
+    ]
+   }
+  },
+  "/controller/v4/v2/addons/meta": {
+   "get": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Get metadata for add-ons.",
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "object"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "400": {
+      "description": "Bad Request",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     },
+     "500": {
+      "description": "Internal Server Error",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Get add-ons meta",
+    "tags": [
+     "Add-ons"
+    ]
+   }
+  },
+  "/controller/v4/v2/addons/request": {
+   "post": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Request an add-on by providing the addon name and a message.",
+    "parameters": [
+     {
+      "description": "Request body",
+      "in": "body",
+      "name": "request",
+      "required": true,
+      "schema": {
+       "$ref": "#/definitions/RequestAddonRequest"
+      }
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "Successfully request addon.",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "string"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "400": {
+      "description": "Invalid request body.",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "string"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "500": {
+      "description": "Failed to request addon.",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "string"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Request an add-on",
+    "tags": [
+     "Add-ons"
+    ]
+   }
+  },
+  "/controller/v4/v2/addons/{addonsID}/install": {
+   "post": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Installs an add-on by ID.",
+    "parameters": [
+     {
+      "description": "Add-on ID",
+      "in": "path",
+      "name": "addonsID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Enable or disable add-on",
+      "in": "query",
+      "name": "enable",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "object"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "400": {
+      "description": "Bad Request",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     },
+     "500": {
+      "description": "Internal Server Error",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Installs an add-on",
+    "tags": [
+     "Add-ons"
+    ]
+   }
+  },
+  "/controller/v4/v2/addons/{addonsID}/workspaces": {
+   "get": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Retrieves a list of workspaces associated with a specific addons ID.",
+    "parameters": [
+     {
+      "description": "Addons ID",
+      "in": "path",
+      "name": "addonsID",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "items": {
+            "$ref": "#/definitions/Workspace"
+           },
+           "type": "array"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "400": {
+      "description": "Bad Request",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     },
+     "500": {
+      "description": "Internal Server Error",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "List Workspaces by add-ons ID",
+    "tags": [
+     "Add-ons"
+    ]
+   }
+  },
+  "/controller/v4/v2/billing/credit": {
+   "get": {
+    "description": "Fetches the total credits available for the specified organization.",
+    "parameters": [
+     {
+      "description": "Bearer token",
+      "in": "header",
+      "name": "Authorization",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "number"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "500": {
+      "description": "Failed to retrieve credits",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "string"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Retrieve organization credits",
+    "tags": [
+     "Billing"
+    ]
+   }
+  },
+  "/controller/v4/v2/billing/credit-cards": {
+   "get": {
+    "description": "Retrieves the Amberlfo customer information based on the organization ID.",
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "Successfully retrieved customer.",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "$ref": "#/definitions/CustomerResponse"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "500": {
+      "description": "Unable to retrieve customer.",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Get Customer Information",
+    "tags": [
+     "Billing"
+    ]
+   }
+  },
+  "/controller/v4/v2/billing/credit-cards/{cardID}": {
+   "delete": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Deletes a customer's credit card by card ID.",
+    "parameters": [
+     {
+      "description": "Card ID",
+      "in": "path",
+      "name": "cardID",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "Successfully deleted customer's card.",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "string"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "400": {
+      "description": "CardID is not provided.",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "string"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "500": {
+      "description": "Unable to delete customer's card.",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "string"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Delete a customer's credit card",
+    "tags": [
+     "Billing"
+    ]
+   },
+   "post": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Updates the default credit card for a customer based on the provided card ID.",
+    "parameters": [
+     {
+      "description": "Card ID",
+      "in": "path",
+      "name": "cardID",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "Successfully updated customer's default card.",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "string"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "400": {
+      "description": "CardID is not provided.",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "string"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "500": {
+      "description": "Unable to update customer's default card.",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "string"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Update Customer Default Card",
+    "tags": [
+     "Billing"
+    ]
+   }
+  },
+  "/controller/v4/v2/billing/payment/invoice": {
+   "post": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Send invoice for payment",
+    "parameters": [
+     {
+      "description": "Year of the invoice",
+      "in": "query",
+      "name": "year",
+      "required": true,
+      "type": "integer"
+     },
+     {
+      "description": "Month of the invoice",
+      "in": "query",
+      "name": "month",
+      "required": true,
+      "type": "integer"
+     },
+     {
+      "description": "Day of the invoice",
+      "in": "query",
+      "name": "day",
+      "required": true,
+      "type": "integer"
+     },
+     {
+      "description": "Product Plan ID used when the invoice was generated",
+      "in": "query",
+      "name": "productPlanId",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "Successfully paid invoice.",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "boolean"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "500": {
+      "description": "Failed to pay invoice.",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "string"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Pay invoice",
+    "tags": [
+     "Billing"
+    ]
+   }
+  },
+  "/controller/v4/v2/billing/resource-pricing": {
+   "get": {
+    "description": "Retrieve the pricing information for resources",
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "$ref": "#/definitions/ResourcePricing"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "500": {
+      "description": "Internal Server Error",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Get resource pricing",
+    "tags": [
+     "Billing"
+    ]
+   }
+  },
+  "/controller/v4/v2/billing/session": {
+   "post": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Creates a new session for the billing manager using the provided organization ID.",
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "Successfully retrieved session.",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "string"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "500": {
+      "description": "Failed to retrieve session.",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Create a new session",
+    "tags": [
+     "Billing"
+    ]
+   }
+  },
+  "/controller/v4/v2/billing/status": {
+   "get": {
+    "description": "Retrieves the marketplace status of each platform and currently active payment method for an organization.",
+    "parameters": [
+     {
+      "description": "Bearer token",
+      "in": "header",
+      "name": "Authorization",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "number"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "500": {
+      "description": "Failed to retrieve billing status",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "string"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Retrieve organization's marketplace status and currently active payment method",
+    "tags": [
+     "Billing"
+    ]
+   }
+  },
+  "/controller/v4/v2/billing/validation": {
+   "get": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Validates if the payment can be processed for the organization",
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful payment validation check",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "boolean"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "500": {
+      "description": "Internal server error",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "string"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Validate payment",
+    "tags": [
+     "Billing"
+    ]
+   }
+  },
+  "/controller/v4/v2/cloud-providers": {
+   "get": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "List all cloud provider belonging to the org",
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "items": {
+            "$ref": "#/definitions/CloudProviderResource"
+           },
+           "type": "array"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "List all cloud provider belonging to the org",
+    "tags": [
+     "CloudProvider"
+    ]
+   },
+   "post": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Create a new cloud provider",
+    "parameters": [
+     {
+      "description": "Create Cloud Provider Resource Request",
+      "in": "body",
+      "name": "request",
+      "required": true,
+      "schema": {
+       "$ref": "#/definitions/CreateCloudProviderResourceRequest"
+      }
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "$ref": "#/definitions/CloudProviderResource"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Create a new cloud provider",
+    "tags": [
+     "CloudProvider"
+    ]
+   }
+  },
+  "/controller/v4/v2/cloud-providers/public": {
+   "get": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "List of public cloud providers",
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "items": {
+            "$ref": "#/definitions/PublicCloudProviderResource"
+           },
+           "type": "array"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "List of public cloud providers",
+    "tags": [
+     "CloudProvider"
+    ]
+   }
+  },
+  "/controller/v4/v2/cloud-providers/validate": {
+   "post": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Validate the cloud provider request",
+    "parameters": [
+     {
+      "description": "Validate Cloud Provider Request",
+      "in": "body",
+      "name": "request",
+      "required": true,
+      "schema": {
+       "$ref": "#/definitions/ValidateCloudProviderRequest"
+      }
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "Successfully validated Cloud Provider",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "string"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Validate the cloud provider request",
+    "tags": [
+     "CloudProvider"
+    ]
+   }
+  },
+  "/controller/v4/v2/cloud-providers/{cloudProviderID}": {
+   "delete": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Delete a cloud provider",
+    "parameters": [
+     {
+      "description": "Cloud Provider ID",
+      "in": "path",
+      "name": "cloudProviderID",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Delete a cloud provider",
+    "tags": [
+     "CloudProvider"
+    ]
+   },
+   "get": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Get a cloud provider by ID",
+    "parameters": [
+     {
+      "description": "Cloud Provider ID",
+      "in": "path",
+      "name": "cloudProviderID",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "$ref": "#/definitions/CloudProviderResource"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Get a cloud provider by ID",
+    "tags": [
+     "CloudProvider"
+    ]
+   },
+   "put": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Update a cloud provider",
+    "parameters": [
+     {
+      "description": "Cloud Provider ID",
+      "in": "path",
+      "name": "cloudProviderID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Update Cloud Provider Resource Request",
+      "in": "body",
+      "name": "request",
+      "required": true,
+      "schema": {
+       "$ref": "#/definitions/UpdateCloudProviderResourceRequest"
+      }
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "$ref": "#/definitions/CloudProviderResource"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Update a cloud provider",
+    "tags": [
+     "CloudProvider"
+    ]
+   }
+  },
+  "/controller/v4/v2/cloud-providers/{cloudProviderID}/upgrade": {
+   "put": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Upgrade a cloud provider",
+    "parameters": [
+     {
+      "description": "Cloud Provider ID",
+      "in": "path",
+      "name": "cloudProviderID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Upgrade Cloud Provider Resource Request",
+      "in": "body",
+      "name": "request",
+      "required": true,
+      "schema": {
+       "$ref": "#/definitions/UpgradeCloudProviderResourceRequest"
+      }
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Upgrade a cloud provider",
+    "tags": [
+     "CloudProvider"
+    ]
+   }
+  },
+  "/controller/v4/v2/installed-addons": {
+   "get": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "List all installed add-ons for the organization.",
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "object"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "500": {
+      "description": "Internal Server Error",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "List all installed add-ons",
+    "tags": [
+     "Add-ons"
+    ]
+   }
+  },
+  "/controller/v4/v2/installed-addons/{installedAddonsID}": {
+   "get": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Get details of an installed add-on by its ID.",
+    "parameters": [
+     {
+      "description": "Installed Add-on ID",
+      "in": "path",
+      "name": "installedAddonsID",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "object"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "400": {
+      "description": "Bad Request",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     },
+     "500": {
+      "description": "Internal Server Error",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Get installed add-on by ID",
+    "tags": [
+     "Add-ons"
+    ]
+   }
+  },
+  "/controller/v4/v2/installed-addons/{installedAddonsID}/configs/{configName}": {
+   "get": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "List configurations for a specific installed add-on.",
+    "parameters": [
+     {
+      "description": "Installed Add-on ID",
+      "in": "path",
+      "name": "installedAddonsID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Configuration Name",
+      "in": "path",
+      "name": "configName",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "object"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "400": {
+      "description": "Failed to parse addons_id.",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "object"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "500": {
+      "description": "Failed to get internal addons configurations.",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "object"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "List Add-on Configurations",
+    "tags": [
+     "Add-ons"
+    ]
+   }
+  },
+  "/controller/v4/v2/org": {
+   "put": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Update organization details such as name, display name, and logo URL",
+    "parameters": [
+     {
+      "description": "Organization request",
+      "in": "body",
+      "name": "request",
+      "required": true,
+      "schema": {
+       "$ref": "#/definitions/OrgRequest"
+      }
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "Successfully updated the org.",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "string"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "400": {
+      "description": "Bad Request",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "string"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "500": {
+      "description": "Internal Server Error",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "string"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Update organization details",
+    "tags": [
+     "Org"
+    ]
+   }
+  },
+  "/controller/v4/v2/org/api-keys": {
+   "delete": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Delete an external organization API key by its name.",
+    "parameters": [
+     {
+      "description": "Delete API Key Request",
+      "in": "body",
+      "name": "request",
+      "required": true,
+      "schema": {
+       "$ref": "#/definitions/DeleteAPIKeyRequest"
+      }
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "Successfully deleted the external org API key.",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     },
+     "400": {
+      "description": "Bad request",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     },
+     "500": {
+      "description": "Internal server error",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     }
+    },
+    "summary": "Delete External Org API Key",
+    "tags": [
+     "APIKey"
+    ]
+   },
+   "get": {
+    "description": "List all external organization API keys.",
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "Successfully listed the external org API keys.",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "$ref": "#/definitions/APIKey"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "500": {
+      "description": "Internal server error",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     }
+    },
+    "summary": "List External Org API Keys",
+    "tags": [
+     "APIKey"
+    ]
+   },
+   "post": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Create a new external organization API key with an optional lifetime.",
+    "parameters": [
+     {
+      "description": "Create API Key Request",
+      "in": "body",
+      "name": "request",
+      "required": true,
+      "schema": {
+       "$ref": "#/definitions/CreateAPIKeyRequest"
+      }
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "Successfully created the external org API key.",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "$ref": "#/definitions/APIKey"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "400": {
+      "description": "Bad request",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     },
+     "500": {
+      "description": "Internal server error",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     }
+    },
+    "summary": "Create External Org API Key",
+    "tags": [
+     "APIKey"
+    ]
+   }
+  },
+  "/controller/v4/v2/org/quota": {
+   "get": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Get the quota details for a specific organization by its ID",
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "Successfully get org quota",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "$ref": "#/definitions/OrgQuota"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "500": {
+      "description": "Internal server error",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Retrieve organization quota",
+    "tags": [
+     "Org"
+    ]
+   }
+  },
+  "/controller/v4/v2/org/self": {
+   "get": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "List of orgs that the user has access to",
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "$ref": "#/definitions/Organization"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "500": {
+      "description": "Internal Server Error",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "string"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "List of orgs that the user has access to",
+    "tags": [
+     "Org"
+    ]
+   }
+  },
+  "/controller/v4/v2/pooled-workgroups/acquire": {
+   "get": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Acquire pooled workgroup in your org",
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "$ref": "#/definitions/Workgroup"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Acquire pooled workgroup in your org",
+    "tags": [
+     "Workgroup"
+    ]
+   }
+  },
+  "/controller/v4/v2/workgroups": {
+   "get": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Get workgroups for your org",
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "items": {
+            "$ref": "#/definitions/Workgroup"
+           },
+           "type": "array"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Get workgroups for your org",
+    "tags": [
+     "Workgroup"
+    ]
+   },
+   "post": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Create workgroups in your org",
+    "parameters": [
+     {
+      "description": "Create workgroup request",
+      "in": "body",
+      "name": "request",
+      "required": true,
+      "schema": {
+       "$ref": "#/definitions/CreateWorkgroupRequest"
+      }
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "$ref": "#/definitions/Workgroup"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Create workgroups in your org",
+    "tags": [
+     "Workgroup"
+    ]
+   }
+  },
+  "/controller/v4/v2/workgroups/{workgroupID}": {
+   "delete": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Get workgroup detail in your org",
+    "parameters": [
+     {
+      "description": "Workgroup ID",
+      "in": "path",
+      "name": "workgroupID",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "string"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "delete workgroup detail in your org",
+    "tags": [
+     "Workgroup"
+    ]
+   },
+   "get": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Get workgroup detail in your org",
+    "parameters": [
+     {
+      "description": "Workgroup ID",
+      "in": "path",
+      "name": "workgroupID",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "$ref": "#/definitions/Workgroup"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Get workgroup detail in your org",
+    "tags": [
+     "Workgroup"
+    ]
+   },
+   "put": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Update workgroups in your org",
+    "parameters": [
+     {
+      "description": "Update workgroup request",
+      "in": "body",
+      "name": "request",
+      "required": true,
+      "schema": {
+       "$ref": "#/definitions/UpdateWorkgroupRequest"
+      }
+     },
+     {
+      "description": "Workgroup ID",
+      "in": "path",
+      "name": "workgroupID",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "$ref": "#/definitions/Workgroup"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Update workgroups in your org",
+    "tags": [
+     "Workgroup"
+    ]
+   }
+  },
+  "/controller/v4/v2/workgroups/{workgroupID}/allow_list": {
+   "get": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "List all allowed IPs in the workgroup",
+    "parameters": [
+     {
+      "description": "Workgroup ID",
+      "in": "path",
+      "name": "workgroupID",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "items": {
+            "$ref": "#/definitions/AllowedIP"
+           },
+           "type": "array"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "500": {
+      "description": "Internal Server Error",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "string"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "List Allowed IPs",
+    "tags": [
+     "AllowedIP"
+    ]
+   },
+   "post": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Add a new allowed IP to the workgroup",
+    "parameters": [
+     {
+      "description": "Workgroup ID",
+      "in": "path",
+      "name": "workgroupID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Allowed IP request",
+      "in": "body",
+      "name": "request",
+      "required": true,
+      "schema": {
+       "$ref": "#/definitions/AllowedIP"
+      }
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "$ref": "#/definitions/AllowedIP"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "400": {
+      "description": "Bad Request",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "string"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "500": {
+      "description": "Internal Server Error",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "string"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Add Allowed IP",
+    "tags": [
+     "AllowedIP"
+    ]
+   }
+  },
+  "/controller/v4/v2/workgroups/{workgroupID}/allow_list/current": {
+   "get": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Get the current IP and check if it is allowed in the workgroup",
+    "parameters": [
+     {
+      "description": "Workgroup ID",
+      "in": "path",
+      "name": "workgroupID",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "properties": {
+            " IsAllowed": {
+             "type": "boolean"
+            },
+            "CurrentIP": {
+             "type": "string"
+            }
+           },
+           "type": "object"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "500": {
+      "description": "Internal Server Error",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "string"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Get Current IP",
+    "tags": [
+     "AllowedIP"
+    ]
+   }
+  },
+  "/controller/v4/v2/workgroups/{workgroupID}/allow_list/disable": {
+   "put": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Disable the allow list for the workgroup",
+    "parameters": [
+     {
+      "description": "Workgroup ID",
+      "in": "path",
+      "name": "workgroupID",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "string"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "500": {
+      "description": "Internal Server Error",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "string"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Disable Allow List",
+    "tags": [
+     "AllowedIP"
+    ]
+   }
+  },
+  "/controller/v4/v2/workgroups/{workgroupID}/allow_list/enable": {
+   "put": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Enable the allow list for the workgroup",
+    "parameters": [
+     {
+      "description": "Workgroup ID",
+      "in": "path",
+      "name": "workgroupID",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "string"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "500": {
+      "description": "Internal Server Error",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "string"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Enable Allow List",
+    "tags": [
+     "AllowedIP"
+    ]
+   }
+  },
+  "/controller/v4/v2/workgroups/{workgroupID}/allow_list/{id}": {
+   "delete": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Delete an existing allowed IP from the workgroup",
+    "parameters": [
+     {
+      "description": "Workgroup ID",
+      "in": "path",
+      "name": "workgroupID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Allowed IP ID",
+      "in": "path",
+      "name": "id",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "string"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "500": {
+      "description": "Internal Server Error",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "string"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Delete Allowed IP",
+    "tags": [
+     "AllowedIP"
+    ]
+   },
+   "put": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Update an existing allowed IP in the workgroup",
+    "parameters": [
+     {
+      "description": "Workgroup ID",
+      "in": "path",
+      "name": "workgroupID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Allowed IP ID",
+      "in": "path",
+      "name": "id",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Allowed IP request",
+      "in": "body",
+      "name": "request",
+      "required": true,
+      "schema": {
+       "$ref": "#/definitions/AllowedIP"
+      }
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "$ref": "#/definitions/AllowedIP"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "400": {
+      "description": "Bad Request",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "string"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "500": {
+      "description": "Internal Server Error",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "string"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Update Allowed IP",
+    "tags": [
+     "AllowedIP"
+    ]
+   }
+  },
+  "/controller/v4/v2/workgroups/{workgroupID}/databases/{databaseID}": {
+   "delete": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Delete database in workgroup",
+    "parameters": [
+     {
+      "description": "Workgroup ID",
+      "in": "path",
+      "name": "workgroupID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Database ID",
+      "in": "path",
+      "name": "databaseID",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Delete database in workgroup",
+    "tags": [
+     "Database"
+    ]
+   },
+   "get": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Get database in workgroup",
+    "parameters": [
+     {
+      "description": "Workgroup ID",
+      "in": "path",
+      "name": "workgroupID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Database ID",
+      "in": "path",
+      "name": "databaseID",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "$ref": "#/definitions/TGDatabase"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Get database in workgroup",
+    "tags": [
+     "Database"
+    ]
+   },
+   "put": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Update database in workgroup",
+    "parameters": [
+     {
+      "description": "Update database request",
+      "in": "body",
+      "name": "request",
+      "required": true,
+      "schema": {
+       "$ref": "#/definitions/UpdateTGDatabaseRequest"
+      }
+     },
+     {
+      "description": "Workgroup ID",
+      "in": "path",
+      "name": "workgroupID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Database ID",
+      "in": "path",
+      "name": "databaseID",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "$ref": "#/definitions/TGDatabase"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Update database in workgroup",
+    "tags": [
+     "Database"
+    ]
+   }
+  },
+  "/controller/v4/v2/workgroups/{workgroupID}/workspaces": {
+   "post": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Create workspace in workgroup",
+    "parameters": [
+     {
+      "description": "Create workspace request",
+      "in": "body",
+      "name": "request",
+      "required": true,
+      "schema": {
+       "$ref": "#/definitions/CreateWorkspaceRequest"
+      }
+     },
+     {
+      "description": "Workgroup ID",
+      "in": "path",
+      "name": "workgroupID",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "$ref": "#/definitions/Workspace"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Create workspace in workgroup",
+    "tags": [
+     "Workspace"
+    ]
+   }
+  },
+  "/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}": {
+   "delete": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Delete workspace in workgroup",
+    "parameters": [
+     {
+      "description": "Workgroup ID",
+      "in": "path",
+      "name": "workgroupID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Workspace ID",
+      "in": "path",
+      "name": "workspaceID",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Delete workspace in workgroup",
+    "tags": [
+     "Workspace"
+    ]
+   },
+   "get": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Get workspace in workgroup",
+    "parameters": [
+     {
+      "description": "Workgroup ID",
+      "in": "path",
+      "name": "workgroupID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Workspace ID",
+      "in": "path",
+      "name": "workspaceID",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "$ref": "#/definitions/Workspace"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Get workspace in workgroup",
+    "tags": [
+     "Workspace"
+    ]
+   },
+   "put": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Update workspace in workgroup",
+    "parameters": [
+     {
+      "description": "Update workspace request",
+      "in": "body",
+      "name": "request",
+      "required": true,
+      "schema": {
+       "$ref": "#/definitions/UpdateWorkspaceRequest"
+      }
+     },
+     {
+      "description": "Workgroup ID",
+      "in": "path",
+      "name": "workgroupID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Workspace ID",
+      "in": "path",
+      "name": "workspaceID",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "$ref": "#/definitions/Workspace"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Update workspace in workgroup",
+    "tags": [
+     "Workspace"
+    ]
+   }
+  },
+  "/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/backups": {
+   "delete": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Delete a backup for a workspace",
+    "parameters": [
+     {
+      "description": "Workspace ID",
+      "in": "path",
+      "name": "workspaceID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Workgroup ID",
+      "in": "path",
+      "name": "workgroupID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Delete Backup Request",
+      "in": "body",
+      "name": "request",
+      "required": true,
+      "schema": {
+       "$ref": "#/definitions/DeleteBackupRequest"
+      }
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "Successfully deleted the backup.",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     },
+     "400": {
+      "description": "Bad request",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     },
+     "500": {
+      "description": "Internal server error",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Delete a backup",
+    "tags": [
+     "Backup"
+    ]
+   },
+   "get": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "List all backups for a workspace",
+    "parameters": [
+     {
+      "description": "Workgroup ID",
+      "in": "path",
+      "name": "workgroupID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Workspace ID",
+      "in": "path",
+      "name": "workspaceID",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "Successfully listed the backups.",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "items": {
+            "$ref": "#/definitions/Backup"
+           },
+           "type": "array"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "500": {
+      "description": "Internal server error",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "List backups",
+    "tags": [
+     "Backup"
+    ]
+   }
+  },
+  "/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/backups/restore": {
+   "post": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Restore a backup for a workspace",
+    "parameters": [
+     {
+      "description": "Workspace ID",
+      "in": "path",
+      "name": "workspaceID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Workgroup ID",
+      "in": "path",
+      "name": "workgroupID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Restore Backup Request",
+      "in": "body",
+      "name": "request",
+      "required": true,
+      "schema": {
+       "$ref": "#/definitions/RestoreBackupRequest"
+      }
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "Successfully restored the backup.",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "string"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "400": {
+      "description": "Bad request",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     },
+     "500": {
+      "description": "Internal server error",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Restore a backup",
+    "tags": [
+     "Backup"
+    ]
+   }
+  },
+  "/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/backups/schedule": {
+   "get": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Get the backup schedule for a workspace",
+    "parameters": [
+     {
+      "description": "Workgroup ID",
+      "in": "path",
+      "name": "workgroupID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Workspace ID",
+      "in": "path",
+      "name": "workspaceID",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "Successfully got the backup schedule.",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "$ref": "#/definitions/BackupSchedule"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "500": {
+      "description": "Internal server error",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Get backup schedule",
+    "tags": [
+     "Backup"
+    ]
+   },
+   "post": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Set a backup schedule for a workspace",
+    "parameters": [
+     {
+      "description": "Workspace ID",
+      "in": "path",
+      "name": "workspaceID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Workgroup ID",
+      "in": "path",
+      "name": "workgroupID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Backup Schedule",
+      "in": "body",
+      "name": "request",
+      "required": true,
+      "schema": {
+       "$ref": "#/definitions/BackupSchedule"
+      }
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "Successfully set the backup schedule.",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     },
+     "400": {
+      "description": "Bad request",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     },
+     "500": {
+      "description": "Internal server error",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Set backup schedule",
+    "tags": [
+     "Backup"
+    ]
+   }
+  },
+  "/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/backups/{job}/status": {
+   "get": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Get the status of a backup restore job",
+    "parameters": [
+     {
+      "description": "Workgroup ID",
+      "in": "path",
+      "name": "workgroupID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Workspace ID",
+      "in": "path",
+      "name": "workspaceID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Job ID",
+      "in": "path",
+      "name": "job",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "Successfully got the backup restore status.",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "$ref": "#/definitions/BackupRestoreStatus"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "500": {
+      "description": "Internal server error",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Get backup restore status",
+    "tags": [
+     "Backup"
+    ]
+   }
+  },
+  "/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/dbuser": {
+   "delete": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Delete an in-database GSQL user in the specified workspace and workgroup.",
+    "parameters": [
+     {
+      "description": "Workgroup ID",
+      "in": "path",
+      "name": "workgroupID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Workspace ID",
+      "in": "path",
+      "name": "workspaceID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "In-database user request",
+      "in": "body",
+      "name": "request",
+      "required": true,
+      "schema": {
+       "$ref": "#/definitions/InDatabaseUserRequest"
+      }
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "Successfully deleted the in-database GSQL user.",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     },
+     "400": {
+      "description": "Bad request",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     },
+     "500": {
+      "description": "Internal server error",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Delete in-database GSQL user",
+    "tags": [
+     "DatabaseUser"
+    ]
+   },
+   "get": {
+    "description": "List all in-database GSQL users in the specified workspace and workgroup.",
+    "parameters": [
+     {
+      "description": "Workgroup ID",
+      "in": "path",
+      "name": "workgroupID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Workspace ID",
+      "in": "path",
+      "name": "workspaceID",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "Successfully listed the in-database GSQL users.",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "items": {
+            "$ref": "#/definitions/IAMUser"
+           },
+           "type": "array"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "500": {
+      "description": "Internal server error",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "List in-database GSQL users",
+    "tags": [
+     "DatabaseUser"
+    ]
+   },
+   "post": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Create a new in-database GSQL user in the specified workspace and workgroup.",
+    "parameters": [
+     {
+      "description": "Workgroup ID",
+      "in": "path",
+      "name": "workgroupID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Workspace ID",
+      "in": "path",
+      "name": "workspaceID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "In-database user request",
+      "in": "body",
+      "name": "request",
+      "required": true,
+      "schema": {
+       "$ref": "#/definitions/InDatabaseUserRequest"
+      }
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "Successfully created the in-database GSQL user.",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "$ref": "#/definitions/IAMUser"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "400": {
+      "description": "Bad request",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     },
+     "500": {
+      "description": "Internal server error",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Create in-database GSQL user",
+    "tags": [
+     "DatabaseUser"
+    ]
+   },
+   "put": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Update the password of an in-database GSQL user in the specified workspace and workgroup.",
+    "parameters": [
+     {
+      "description": "Workgroup ID",
+      "in": "path",
+      "name": "workgroupID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Workspace ID",
+      "in": "path",
+      "name": "workspaceID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "In-database user request",
+      "in": "body",
+      "name": "request",
+      "required": true,
+      "schema": {
+       "$ref": "#/definitions/InDatabaseUserRequest"
+      }
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "Successfully updated the in-database GSQL password.",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     },
+     "400": {
+      "description": "Bad request",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     },
+     "500": {
+      "description": "Internal server error",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Update in-database GSQL user password",
+    "tags": [
+     "DatabaseUser"
+    ]
+   }
+  },
+  "/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/onboarding/chat": {
+   "post": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Handle MCP chat requests and return streaming responses via Server-Sent Events",
+    "parameters": [
+     {
+      "description": "Workgroup ID",
+      "in": "path",
+      "name": "workgroupID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Workspace ID",
+      "in": "path",
+      "name": "workspaceID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Thread ID",
+      "in": "header",
+      "name": "ThreadID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "MCP chat request",
+      "in": "body",
+      "name": "request",
+      "required": true,
+      "schema": {
+       "$ref": "#/definitions/ServerMCPChatRequest"
+      }
+     }
+    ],
+    "produces": [
+     "text/event-stream"
+    ],
+    "responses": {
+     "200": {
+      "description": "Server-Sent Events stream",
+      "schema": {
+       "type": "string"
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "MCP Chat for onboarding",
+    "tags": [
+     "MCP"
+    ]
+   }
+  },
+  "/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/pause": {
+   "post": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Pause workspace in workgroup",
+    "parameters": [
+     {
+      "description": "Workgroup ID",
+      "in": "path",
+      "name": "workgroupID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Workspace ID",
+      "in": "path",
+      "name": "workspaceID",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Pause workspace in workgroup",
+    "tags": [
+     "Workspace"
+    ]
+   }
+  },
+  "/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/refresh": {
+   "post": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Refresh workspace in workgroup",
+    "parameters": [
+     {
+      "description": "Workgroup ID",
+      "in": "path",
+      "name": "workgroupID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Workspace ID",
+      "in": "path",
+      "name": "workspaceID",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Refresh workspace in workgroup",
+    "tags": [
+     "Workspace"
+    ]
+   }
+  },
+  "/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/resume": {
+   "post": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Resume workspace in workgroup",
+    "parameters": [
+     {
+      "description": "Workgroup ID",
+      "in": "path",
+      "name": "workgroupID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Workspace ID",
+      "in": "path",
+      "name": "workspaceID",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Resume workspace in workgroup",
+    "tags": [
+     "Workspace"
+    ]
+   }
+  },
+  "/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/schedules": {
+   "get": {
+    "description": "Retrieve the schedule for a given workspace",
+    "parameters": [
+     {
+      "description": "Workgroup ID",
+      "in": "path",
+      "name": "workgroupID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Workspace ID",
+      "in": "path",
+      "name": "workspaceID",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "items": {
+            "$ref": "#/definitions/WorkspaceSchedule"
+           },
+           "type": "array"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "500": {
+      "description": "Internal Server Error",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Retrieve workspace schedule",
+    "tags": [
+     "WorkspaceSchedule"
+    ]
+   },
+   "post": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Create a new workspace schedule for a given workspace",
+    "parameters": [
+     {
+      "description": "Workgroup ID",
+      "in": "path",
+      "name": "workgroupID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Workspace ID",
+      "in": "path",
+      "name": "workspaceID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Workspace Schedule",
+      "in": "body",
+      "name": "body",
+      "required": true,
+      "schema": {
+       "$ref": "#/definitions/WorkspaceSchedule"
+      }
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "$ref": "#/definitions/WorkspaceSchedule"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "400": {
+      "description": "Bad Request",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     },
+     "500": {
+      "description": "Internal Server Error",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Create a new workspace schedule",
+    "tags": [
+     "WorkspaceSchedule"
+    ]
+   }
+  },
+  "/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/schedules/{scheduleID}": {
+   "delete": {
+    "description": "Delete an existing workspace schedule for a given workspace",
+    "parameters": [
+     {
+      "description": "Workgroup ID",
+      "in": "path",
+      "name": "workgroupID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Workspace ID",
+      "in": "path",
+      "name": "workspaceID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Schedule ID",
+      "in": "path",
+      "name": "scheduleID",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "string"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "500": {
+      "description": "Internal Server Error",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Delete an existing workspace schedule",
+    "tags": [
+     "WorkspaceSchedule"
+    ]
+   },
+   "put": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Update an existing workspace schedule for a given workspace",
+    "parameters": [
+     {
+      "description": "Workgroup ID",
+      "in": "path",
+      "name": "workgroupID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Workspace ID",
+      "in": "path",
+      "name": "workspaceID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Schedule ID",
+      "in": "path",
+      "name": "scheduleID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Workspace Schedule",
+      "in": "body",
+      "name": "body",
+      "required": true,
+      "schema": {
+       "$ref": "#/definitions/WorkspaceSchedule"
+      }
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "type": "string"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     },
+     "400": {
+      "description": "Bad Request",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     },
+     "500": {
+      "description": "Internal Server Error",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Update an existing workspace schedule",
+    "tags": [
+     "WorkspaceSchedule"
+    ]
+   }
+  },
+  "/controller/v4/v2/workgroups/{workgroupID}/workspaces/{workspaceID}/upgrade": {
+   "post": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Upgrade workspace in workgroup",
+    "parameters": [
+     {
+      "description": "Workgroup ID",
+      "in": "path",
+      "name": "workgroupID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Workspace ID",
+      "in": "path",
+      "name": "workspaceID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Upgrade workspace request",
+      "in": "body",
+      "name": "request",
+      "required": true,
+      "schema": {
+       "$ref": "#/definitions/UpgradeWorkspaceRequest"
+      }
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Upgrade workspace in workgroup",
+    "tags": [
+     "Workspace"
+    ]
+   }
+  },
+  "/controller/v4/v2/workspaces/meta": {
+   "get": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Get regions/tgVersions/workspaceTypes supported for your org",
+    "parameters": [
+     {
+      "description": "When true, tgVersions only include versions with allow_upgrade; when false or omitted (default), all create-allowed versions for the org are returned",
+      "in": "query",
+      "name": "upgrade",
+      "type": "boolean"
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "$ref": "#/definitions/WorkspaceMetadata"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Get an metadata for your org",
+    "tags": [
+     "Org"
+    ]
+   }
+  },
+  "/controller/v4/v2/workspaces/upgrade-next-window": {
+   "get": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "List workspaces upgrading in next window",
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "$ref": "#/definitions/Response"
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "List workspaces upgrading in next window",
+    "tags": [
+     "Workspace"
+    ]
+   }
+  },
+  "/metrics/{workgroupID}/{workspaceID}": {
+   "get": {
+    "description": "Returns the latest tigergraph_* samples for the given workspace as Prometheus text exposition format",
+    "parameters": [
+     {
+      "description": "Workgroup ID",
+      "in": "path",
+      "name": "workgroupID",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Workspace ID",
+      "in": "path",
+      "name": "workspaceID",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "produces": [
+     "text/plain"
+    ],
+    "responses": {
+     "200": {
+      "description": "Prometheus exposition format",
+      "schema": {
+       "type": "string"
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Scrape workspace metrics in Prometheus exposition format",
+    "tags": [
+     "Workspace"
+    ]
+   }
+  },
+  "/observability/{workgroupID}/metrics": {
+   "get": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Get workspace metrics in a given workgroup",
+    "parameters": [
+     {
+      "description": "Workgroup ID",
+      "in": "path",
+      "name": "workgroupID",
+      "required": true,
+      "type": "string"
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "allOf": [
+        {
+         "$ref": "#/definitions/Response"
+        },
+        {
+         "properties": {
+          "Result": {
+           "$ref": "#/definitions/observability.WorkgroupMetric"
+          }
+         },
+         "type": "object"
+        }
+       ]
+      }
+     }
+    },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
+    "summary": "Get workspace metrics in a given workgroup",
+    "tags": [
+     "Workgroup"
+    ]
+   }
+  },
+  "/users": {
+   "get": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "List of users in the org. Note: this endpoint is not APIKEY compatible",
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "schema": {
+       "$ref": "#/definitions/OrgListUserResponse"
+      }
+     }
+    },
+    "summary": "List of users in the org",
+    "tags": [
+     "Org"
+    ]
+   }
+  },
+  "/users/{userId}/roles": {
+   "put": {
+    "consumes": [
+     "application/json"
+    ],
+    "description": "Updates the role of an org user. Note: this endpoint is not APIKEY compatible",
+    "parameters": [
+     {
+      "description": "Id of the user",
+      "in": "path",
+      "name": "userId",
+      "required": true,
+      "type": "string"
+     },
+     {
+      "description": "Roles of the user",
+      "in": "body",
+      "name": "body",
+      "required": true,
+      "schema": {
+       "$ref": "#/definitions/PutOrgUsersRoles"
+      }
+     }
+    ],
+    "produces": [
+     "application/json"
+    ],
+    "responses": {
+     "204": {
+      "description": "No Content"
+     }
+    },
+    "summary": "Update the role of an org user",
+    "tags": [
+     "Org"
+    ]
+   }
+  }
+ },
+ "schemes": [],
+ "securityDefinitions": {
+  "ApiKeyAuth": {
+   "description": "Authorization for TigerGraph Savanna",
+   "in": "header",
+   "name": "x-api-key",
+   "type": "apiKey"
+  }
+ },
+ "swagger": "2.0"
+}

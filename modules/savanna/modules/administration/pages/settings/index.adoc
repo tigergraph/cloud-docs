@@ -12,7 +12,7 @@ xref:savanna:administration:settings/how2-use-organization-mgnt.adoc[Organizatio
 
 Configure organization-level options and preferences.
 ¦
-xref:savanna:administration:settings/how2-create-api-key.adoc[Create an API key]
+xref:savanna:rest-api:create-api-key.adoc[Create an API key]
 
 Authenticate scripts and services against the control plane.
 ¦

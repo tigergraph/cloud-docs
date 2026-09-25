@@ -34,7 +34,7 @@ Start with the core graph workflow. Model your domain, load data, query it, and 
 * xref:savanna:graph-development:load-data/index.adoc[Load data] from local files or connect to S3, GCS, Azure Blob, Snowflake, JDBC, and other sources.
 * xref:savanna:graph-development:gsql-editor/index.adoc[Write and run GSQL] to create, install, and run graph queries in a live workspace.
 * xref:savanna:workgroup-workspace:workspaces/connect-via-api.adoc[Query the graph from code] with generated curl, Python, or JavaScript examples for the graph data plane.
-* xref:savanna:rest-api:authentication.adoc[Manage Savanna through the REST API] by authenticating to the control plane for workgroups, workspaces, and organization resources.
+* xref:savanna:rest-api:index.adoc[Manage Savanna through the REST API] to provision workgroups, workspaces, and organization resources.
 
 == Where to go next
 

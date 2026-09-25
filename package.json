@@ -6,7 +6,9 @@
   "scripts": {
     "build": "antora generate --fetch antora-playbook.yml",
     "build:local": "antora generate antora-playbook.local.yml",
-    "dev": "PLAYBOOK=antora-playbook.local.yml gulp",
+    "dev": "PLAYBOOK=antora-playbook.local.yml PORT=5050 gulp devHot",
+    "dev:simple": "PLAYBOOK=antora-playbook.local.yml gulp",
+    "endpoints:split": "node lib/split-endpoints.js",
     "serve": "http-server build/site -c-1"
   },
   "author": "",

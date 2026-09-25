@@ -1,0 +1,99 @@
+= Data-plane APIs (REST++ and GSQL)
+:experimental:
+:page-hidden: true
+
+The xref:savanna:rest-api:index.adoc[Savanna REST API] is the *control plane*: it manages the resources _around_ your graph (workgroups, workspaces, backups). To read and write the data _inside_ a workspace, you call that workspace's *data-plane* APIs directly.
+
+The data-plane APIs are the standard TigerGraph database endpoints, fully documented in the https://www.tigergraph.com/docs/tigergraph-server/4.3/api/[TigerGraph DB REST Endpoints^] reference. That reference is written for self-managed installs, so its examples use `localhost:14240` and username/password auth. This page shows how to reach and authenticate the same endpoints on *Savanna*.
+
+== Two interfaces, one workspace
+
+The data plane exposes two interfaces on the same workspace host. They are not separate planes; they are two doors into the same database.
+
+[options="header",cols="1a,3a"]
+|===
+|Interface |Use it for
+
+|*REST{plus}{plus}* (`/restpp/...`)
+|Execute and move data at speed: run installed queries, and read or upsert vertices and edges.
+
+|*GSQL* (`/gsql/...`)
+|Author and administer: define the schema, load data, write and *install* queries, and manage in-database users. Installing a query is what makes it callable through REST{plus}{plus}.
+|===
+
+[TIP]
+====
+Rule of thumb: *GSQL* to author and administer, *REST{plus}{plus}* to execute and move data.
+====
+
+== Workspace host and base paths
+
+Data-plane requests go to your *workspace host*, not to `api.tgcloud.io`. On Savanna the host is reached over HTTPS on port `443`, so you do not append `:14240` as the TigerGraph DB docs show for self-managed installs.
+
+[source]
+----
+https://<workspace-id>.i.tgcloud.io/restpp/...   # REST++ interface
+https://<workspace-id>.i.tgcloud.io/gsql/...     # GSQL interface
+----
+
+Find your workspace host in the Savanna console from the workspace's *Connect* dialog, or from the control plane with xref:savanna:rest-api:endpoints/get-workspace-details.adoc[Get workspace details].
+
+== Authentication
+
+The data plane does *not* accept the control-plane API key. Where the control plane uses an `x-api-key` header, the data plane authenticates with a xref:savanna:administration:settings/how2-create-database-secret.adoc[database secret] issued for the workspace.
+
+. xref:savanna:administration:settings/how2-create-database-secret.adoc[Create a database secret] for the workspace.
+. Either pass the secret directly, or exchange it for a bearer token, on every request:
+
+[source,bash]
+----
+# Option A: pass the secret directly
+-H "Authorization: GSQL-Secret <your-secret>"
+
+# Option B: exchange the secret for a bearer token, then send the token
+-H "Authorization: Bearer <your-token>"
+----
+
+Tokens are requested per graph. You can find how to exchange a secret for a token, and which privileges each needs, in https://www.tigergraph.com/docs/tigergraph-server/4.3/user-access/user-credentials/[User credentials^].
+
+[CAUTION]
+====
+A database secret does not expire and carries the privileges of its user. Treat it like a password: keep it server-side, never in client code or source control, and revoke it if exposed.
+====
+
+== Example: run an installed query
+
+This calls the installed query `tg_wcc` on the `Transaction_Fraud` graph in one workspace. It is the same `POST /restpp/query/\{graph}/\{queryName}` endpoint from the TigerGraph DB docs, addressed at a Savanna workspace host and authenticated with a database secret.
+
+[source,bash]
+----
+curl -X POST "https://<workspace-id>.i.tgcloud.io/restpp/query/Transaction_Fraud/tg_wcc" \
+  -H "Authorization: Bearer <your-token>" \
+  --data-raw '{"print_limit": 0, "print_results": false, "result_attribute": ""}'
+----
+
+A successful call returns JSON with `version`, `error`, `message`, and `results` fields, described under https://www.tigergraph.com/docs/tigergraph-server/4.3/api/[Output responses^].
+
+[source,json]
+----
+{
+  "version": { "api": "v2", "schema": 0 },
+  "error": false,
+  "message": "",
+  "results": [ { "@@components": 128 } ]
+}
+----
+
+== Endpoint reference
+
+Savanna does not duplicate the data-plane endpoint catalog. You can find the full list of endpoints, parameters, and payload formats in the TigerGraph DB reference; apply the Savanna host and authentication from this page:
+
+* https://www.tigergraph.com/docs/tigergraph-server/4.3/api/[REST Endpoints overview^]. How to send requests, format parameters, and read responses.
+* https://www.tigergraph.com/docs/tigergraph-server/4.3/api/built-in-endpoints[RESTPP & built-in endpoints^]. Run queries and read or upsert graph data.
+* https://www.tigergraph.com/docs/tigergraph-server/4.3/api/[GSQL endpoints^]. Schema, loading, query installation, and user management.
+
+== Related topics
+
+* xref:savanna:workgroup-workspace:workspaces/connect-via-api.adoc[Connect via APIs]. Generated curl, Python, and JavaScript from the Savanna console.
+* xref:savanna:administration:settings/how2-create-database-secret.adoc[Create a database secret]. The credential the data plane uses.
+* xref:savanna:rest-api:index.adoc[Savanna REST API]. The control-plane API for managing workspaces.

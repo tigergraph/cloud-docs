@@ -15,5 +15,5 @@
 ** Settings
 *** xref:administration:settings/index.adoc[Overview]
 *** xref:administration:settings/how2-use-organization-mgnt.adoc[Organization management]
-*** xref:administration:settings/how2-create-api-key.adoc[API keys]
+*** xref:savanna:rest-api:create-api-key.adoc[API keys]
 *** xref:administration:settings/how2-create-database-secret.adoc[Database secrets]

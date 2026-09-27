@@ -21,6 +21,18 @@
         </button>
       </div>
 
+      <section class="api-section" aria-labelledby="api-authorizations-title">
+        <h2 id="api-authorizations-title">Authorizations</h2>
+        <div class="api-field">
+          <div class="api-field-heading">
+            <code>Authorization</code>
+            <span class="api-type">string</span>
+            <span class="api-in">header</span>
+            <span class="api-required">required</span>
+          </div>
+          <p>This endpoint does not accept an API key. Send the signed-in user's ID token in the <code>Authorization</code> request header as <code>Bearer &lt;id-token&gt;</code>.</p>
+        </div>
+      </section>
       <section class="api-section" aria-labelledby="api-path-parameters-title">
         <h2 id="api-path-parameters-title">Path parameters</h2>
         <div class="api-field" id="parameter-user-id">
@@ -86,7 +98,7 @@
         <div class="api-code-body">
           <pre data-request-language="curl"><code class="hljs language-bash">curl --request PUT \
   --url 'https://api.tgcloud.io/users/{userId}/roles' \
-  --header 'x-api-key: &lt;your-api-key&gt;' \
+  --header 'Authorization: Bearer &lt;id-token&gt;' \
   --header 'Content-Type: application/json' \
   --data '{
     "roles": [
@@ -96,7 +108,7 @@
           <pre data-request-language="python" hidden><code class="hljs language-python">import requests
 
 url = "https://api.tgcloud.io/users/{userId}/roles"
-headers = {"x-api-key": "&lt;your-api-key&gt;"}
+headers = {"Authorization": "Bearer &lt;id-token&gt;"}
 payload = {
   "roles": [
     "&lt;string&gt;"
@@ -109,7 +121,7 @@ print(response.json())</code></pre>
   "https://api.tgcloud.io/users/{userId}/roles",
   {
     method: "PUT",
-    headers: { "x-api-key": "&lt;your-api-key&gt;", "Content-Type": "application/json" },
+    headers: { "Authorization": "Bearer &lt;id-token&gt;", "Content-Type": "application/json" },
     body: JSON.stringify({
       "roles": [
         "&lt;string&gt;"
@@ -124,7 +136,7 @@ $request = curl_init(
 );
 curl_setopt($request, CURLOPT_CUSTOMREQUEST, "PUT");
 curl_setopt($request, CURLOPT_HTTPHEADER, [
-  "x-api-key: &lt;your-api-key&gt;",
+  "Authorization: Bearer &lt;id-token&gt;",
   "Content-Type: application/json"
 ]);
 curl_setopt($request, CURLOPT_POSTFIELDS, '{
@@ -144,14 +156,14 @@ request, _ := http.NewRequest(
   "https://api.tgcloud.io/users/{userId}/roles",
   payload,
 )
-request.Header.Add("x-api-key", "&lt;your-api-key&gt;")
+request.Header.Add("Authorization", "Bearer &lt;id-token&gt;")
 request.Header.Add("Content-Type", "application/json")
 response, _ := http.DefaultClient.Do(request)</code></pre>
           <pre data-request-language="java" hidden><code class="hljs language-java">HttpRequest request = HttpRequest.newBuilder()
   .uri(URI.create(
     "https://api.tgcloud.io/users/{userId}/roles"
   ))
-  .header("x-api-key", "&lt;your-api-key&gt;")
+  .header("Authorization", "Bearer &lt;id-token&gt;")
   .header("Content-Type", "application/json")
   .method("PUT", HttpRequest.BodyPublishers.ofString("""
 {
@@ -165,7 +177,7 @@ response, _ := http.DefaultClient.Do(request)</code></pre>
   "https://api.tgcloud.io/users/{userId}/roles"
 )
 request = Net::HTTP::Put.new(uri)
-request["x-api-key"] = "&lt;your-api-key&gt;"
+request["Authorization"] = "Bearer &lt;id-token&gt;"
 request["Content-Type"] = "application/json"
 request.body = &lt;&lt;~JSON
 {

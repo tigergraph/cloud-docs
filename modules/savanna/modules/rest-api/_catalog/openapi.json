@@ -6391,7 +6391,7 @@
     "consumes": [
      "application/json"
     ],
-    "description": "List of users in the org. Note: this endpoint is not APIKEY compatible",
+    "description": "List of users in the org.",
     "produces": [
      "application/json"
     ],
@@ -6403,6 +6403,11 @@
       }
      }
     },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
     "summary": "List of users in the org",
     "tags": [
      "Org"
@@ -6414,7 +6419,7 @@
     "consumes": [
      "application/json"
     ],
-    "description": "Updates the role of an org user. Note: this endpoint is not APIKEY compatible",
+    "description": "Updates the role of an org user.",
     "parameters": [
      {
       "description": "Id of the user",
@@ -6441,6 +6446,11 @@
       "description": "No Content"
      }
     },
+    "security": [
+     {
+      "ApiKeyAuth": []
+     }
+    ],
     "summary": "Update the role of an org user",
     "tags": [
      "Org"

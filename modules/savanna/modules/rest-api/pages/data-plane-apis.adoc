@@ -94,6 +94,7 @@ Savanna does not duplicate the data-plane endpoint catalog. You can find the ful
 
 == Related topics
 
+* xref:savanna:get-started:connect-pytigergraph.adoc[Connect with pyTigerGraph]. Call these endpoints from Python with a database secret.
 * xref:savanna:workgroup-workspace:workspaces/connect-via-api.adoc[Connect via APIs]. Generated curl, Python, and JavaScript from the Savanna console.
 * xref:savanna:administration:settings/how2-create-database-secret.adoc[Create a database secret]. The credential the data plane uses.
 * xref:savanna:rest-api:index.adoc[Savanna REST API]. The control-plane API for managing workspaces.

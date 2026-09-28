@@ -290,7 +290,7 @@ Cursor / VS Code / Claude Code / Claude Desktop
 * The AI application launches `tigergraph-mcp` on your machine.
 * The TigerGraph MCP server exposes TigerGraph operations as MCP tools.
 * The AI application decides which tools to call based on your request.
-* The TigerGraph MCP server uses your configured Savanna connection details to perform the operations.
+* The TigerGraph MCP server uses pyTigerGraph and your configured Savanna connection details to perform the operations. See xref:connect-pytigergraph.adoc[Connect with pyTigerGraph].
 * Tool results return to the AI application and appear in its response.
 
 === Tool behavior

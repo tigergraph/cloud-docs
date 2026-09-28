@@ -1,0 +1,126 @@
+= Connect with pyTigerGraph
+:experimental:
+
+link:https://www.tigergraph.com/docs/pytigergraph/current/intro/[pyTigerGraph^] is TigerGraph's Python client.
+Use it to call a Savanna workspace from a script or application: run installed queries, read and write vertices and edges, and work with the same graph you built in the console.
+
+This page gets you from install to a successful call against your workspace.
+
+== Before you start
+
+* A running Savanna xref:savanna:workgroup-workspace:workspaces/workspace.adoc[workspace] with a graph on it. If you do not have one yet, xref:first-graph-ui.adoc[build a graph in the console] first.
+* A database secret for that workspace. See xref:savanna:administration:settings/how2-create-database-secret.adoc[Create a database secret].
+* Python with `pip` on the machine that will run your script.
+
+pyTigerGraph talks to the *workspace host*, the database behind that workspace.
+Authenticate with a database secret.
+Control-plane calls, such as creating workspaces, use `api.tgcloud.io` and an API key instead. See xref:savanna:rest-api:index.adoc[Savanna REST API].
+If the workgroup uses an IP allowlist, include the machine that runs the script. See xref:savanna:workgroup-workspace:workgroups/how2-config-network-access.adoc[Configure network access].
+
+== Install
+
+[source,bash]
+----
+pip install pyTigerGraph
+----
+
+== Connect
+
+A Savanna connection needs the workspace URL, the graph name, and a database secret.
+
+[cols="1,1,2",options="header"]
+|===
+|Argument |Required |What to use
+
+|`host`
+|Yes
+|Your workspace URL, including `https://`. Open *Workspaces*, select the workspace, and copy its URL. A Savanna host looks like `https://<workspace-id>.i.tgcloud.io`.
+
+|`graphname`
+|Yes
+|The graph this connection uses. Create the graph in xref:savanna:graph-development:design-schema/index.adoc[Design Schema] if you do not have one yet.
+
+|`gsqlSecret`
+|Yes
+|A database secret for that workspace. See xref:savanna:administration:settings/how2-create-database-secret.adoc[Create a database secret].
+|===
+
+When the host contains `tgcloud`, pyTigerGraph treats the instance as TigerGraph Cloud and sends REST{plus}{plus} and GSQL traffic to port `443`, which is how Savanna publishes the workspace.
+Leave `restppPort` and `gsPort` at their defaults.
+
+[source,python]
+----
+from pyTigerGraph import TigerGraphConnection
+
+conn = TigerGraphConnection(
+    host="https://<workspace-id>.i.tgcloud.io",
+    graphname="MyGraph",
+    gsqlSecret="<database-secret>",
+)
+
+print(conn.echo())
+print(conn.getVertexTypes())
+----
+
+`echo()` returns a response when the workspace host answers.
+`getVertexTypes()` returns the vertex type names on the graph when the secret can read it.
+
+Read the secret from the environment so it stays out of source control:
+
+[source,python]
+----
+import os
+from pyTigerGraph import TigerGraphConnection
+
+conn = TigerGraphConnection(
+    host=os.environ["TG_HOST"],
+    graphname=os.environ["TG_GRAPHNAME"],
+    gsqlSecret=os.environ["TG_SECRET"],
+)
+----
+
+== Run a query
+
+`runInstalledQuery` calls a query that is already installed on the graph.
+Install the query in the xref:savanna:graph-development:gsql-editor/index.adoc[GSQL Editor] first, or from pyTigerGraph with the client's query methods.
+
+[source,python]
+----
+result = conn.runInstalledQuery("my_query", params={"param": "value"})
+print(result)
+----
+
+Vertices, edges, schema changes, and loading jobs are covered in the link:https://www.tigergraph.com/docs/pytigergraph/current/intro/[pyTigerGraph documentation^].
+The HTTP calls underneath are the workspace xref:savanna:rest-api:data-plane-apis.adoc[data-plane APIs].
+
+[CAUTION]
+====
+Treat database secrets like passwords. Store them securely and do not commit them to source control.
+A database secret does not expire and remains valid until you delete or revoke it.
+Calls through pyTigerGraph run against the connected database and can modify or delete data.
+====
+
+== Troubleshooting
+
+=== Invalid URL scheme
+
+`host` needs a scheme. Use `https://<workspace-id>.i.tgcloud.io`.
+A hostname alone raises `Invalid URL scheme`.
+
+=== Authentication failed
+
+Create the secret in Savanna for the same workspace, and paste the full value into `gsqlSecret`.
+A control-plane API key is a different credential and will not authenticate this connection.
+See xref:savanna:administration:settings/how2-create-database-secret.adoc[Create a database secret].
+
+=== Connection error
+
+Confirm the workspace status is active, the host is the workspace URL, and your IP is on the workgroup allowlist when one is enabled.
+See xref:savanna:workgroup-workspace:workspaces/workspace.adoc[About workspaces] and xref:savanna:workgroup-workspace:workgroups/how2-config-network-access.adoc[Configure network access].
+
+== Where to go next
+
+* xref:connect-agent-mcp.adoc[Connect AI tools with MCP] when you want an agent to use the same database. TigerGraph MCP calls the database through pyTigerGraph.
+* xref:savanna:workgroup-workspace:workspaces/connect-via-api.adoc[Connect via APIs] for curl, Python, and JavaScript generated in the console.
+* xref:savanna:rest-api:data-plane-apis.adoc[Data-plane APIs] for the REST{plus}{plus} and GSQL endpoints the client calls.
+* link:https://www.tigergraph.com/docs/pytigergraph/current/getting-started/connection[Connecting to TigerGraph^] in the pyTigerGraph reference.

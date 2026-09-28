@@ -1,3 +1,4 @@
 * Start here
 ** xref:first-graph-ui.adoc[Build your graph in Savanna]
+** xref:connect-pytigergraph.adoc[Connect with pyTigerGraph]
 ** xref:connect-agent-mcp.adoc[Connect AI tools with MCP]

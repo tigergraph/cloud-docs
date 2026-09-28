@@ -2,10 +2,10 @@
 :experimental:
 
 Model, load, query, and explore graphs on Savanna.
-New here? Start with xref:savanna:get-started:first-graph-ui.adoc[Build your graph in Savanna], or xref:savanna:get-started:connect-agent-mcp.adoc[Connect AI tools with MCP] once you have a graph.
+New here? Start with xref:savanna:get-started:first-graph-ui.adoc[Build your graph in Savanna], xref:savanna:get-started:connect-pytigergraph.adoc[Connect with pyTigerGraph], or xref:savanna:get-started:connect-agent-mcp.adoc[Connect AI tools with MCP] once you have a graph.
 Or use xref:savanna:build-ai:index.adoc[Build a graph with AI] as a console shortcut.
 
-This hub links the core Build workflows. Use xref:savanna:workgroup-workspace:workspaces/connect-via-api.adoc[Connect via APIs] or xref:savanna:get-started:connect-agent-mcp.adoc[Connect AI tools with MCP] when you are ready to call the same graph from code or an agent.
+This hub links the core Build workflows. Use xref:savanna:get-started:connect-pytigergraph.adoc[Connect with pyTigerGraph], xref:savanna:workgroup-workspace:workspaces/connect-via-api.adoc[Connect via APIs], or xref:savanna:get-started:connect-agent-mcp.adoc[Connect AI tools with MCP] when you are ready to call the same graph from code or an agent.
 
 == xref:load-data/index.adoc[Load Data]
 

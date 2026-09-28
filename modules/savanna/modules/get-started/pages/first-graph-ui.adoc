@@ -69,6 +69,7 @@ If a loading job fails, the mapping is the usual cause: check that the parsed co
 
 == Where to go next
 
+* Call the same graph from Python: xref:connect-pytigergraph.adoc[Connect with pyTigerGraph].
 * Point an AI agent at the same graph: xref:connect-agent-mcp.adoc[Connect AI tools with MCP].
 * Model, load, and query in depth: xref:savanna:graph-development:index.adoc[Build].
 * In a hurry, or want a schema drafted for you? xref:savanna:build-ai:index.adoc[Build a graph with AI] infers one from your files, and a xref:savanna:integrations:solutions.adoc[Marketplace solution] ships with schema, data, and queries already in place.

@@ -10,11 +10,11 @@ Storage and compute are separate, so each scales on its own and you pay for the 
 See xref:savanna:overview:comparison_table.adoc[how the offerings compare].
 
 Every path below gets you to a graph you can query.
-Choose how you want to work. Build and manage your graph in Savanna, or connect AI tools with MCP and work with it using natural language.
+Choose how you want to work. Build and manage your graph in Savanna, connect AI tools with MCP and work in natural language, or connect from Python with pyTigerGraph.
 
 == Get started
 
-[.start-cards,cols="2",grid=none,frame=none, separator=¦]
+[.start-cards,cols="3",grid=none,frame=none, separator=¦]
 |===
 ¦
 xref:savanna:get-started:first-graph-ui.adoc[Build your graph in Savanna]
@@ -24,6 +24,10 @@ Create and manage graphs, define and edit schemas, load data, and run GSQL queri
 xref:savanna:get-started:connect-agent-mcp.adoc[Connect AI tools with MCP]
 
 Use natural language in Cursor, VS Code, Claude Code, or Claude Desktop to create and manage graphs, edit schemas, load data, and run GSQL queries in Savanna.
+¦
+xref:savanna:get-started:connect-pytigergraph.adoc[Connect with pyTigerGraph]
+
+Use pyTigerGraph to create and manage graphs, edit schemas, load data, and run GSQL queries in Savanna.
 |===
 
 == Common tasks
@@ -33,6 +37,7 @@ Start with the core graph workflow. Model your domain, load data, query it, and 
 * xref:savanna:graph-development:design-schema/index.adoc[Design a schema] to define the vertices, edges, and attributes that represent your data.
 * xref:savanna:graph-development:load-data/index.adoc[Load data] from local files or connect to S3, GCS, Azure Blob, Snowflake, JDBC, and other sources.
 * xref:savanna:graph-development:gsql-editor/index.adoc[Write and run GSQL] to create, install, and run graph queries in a live workspace.
+* xref:savanna:get-started:connect-pytigergraph.adoc[Connect with pyTigerGraph] to call the workspace from Python with a database secret.
 * xref:savanna:workgroup-workspace:workspaces/connect-via-api.adoc[Query the graph from code] with generated curl, Python, or JavaScript examples for the graph data plane.
 * xref:savanna:rest-api:index.adoc[Manage Savanna through the REST API] to provision workgroups, workspaces, and organization resources.
 
@@ -40,5 +45,6 @@ Start with the core graph workflow. Model your domain, load data, query it, and 
 
 * xref:savanna:graph-development:index.adoc[Build] covers schemas, loading data, writing GSQL, and exploring graph results.
 * xref:savanna:get-started:connect-agent-mcp.adoc[Connect AI tools with MCP] when you want an AI agent to work against your database.
+* xref:savanna:get-started:connect-pytigergraph.adoc[Connect with pyTigerGraph] when your application calls the database from Python.
 * xref:savanna:workgroup-workspace:workspaces/connect-via-api.adoc[Connect via APIs] for generated curl, Python, or JavaScript against the graph data plane.
 * xref:savanna:workgroup-workspace:index.adoc[Workgroups and workspaces] handles workgroups, workspaces, access, networking, and routine administration.

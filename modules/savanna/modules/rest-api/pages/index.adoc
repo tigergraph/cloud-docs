@@ -116,8 +116,8 @@ Install GraphStudio, Insights, GraphQL, and other add-ons, then attach them to a
 Discover available capacity and manage the people in your org.
 
 * xref:savanna:rest-api:endpoints/get-supported-workspace-options.adoc[Get supported workspace options]: list the regions, TigerGraph versions, and workspace types available to your organization.
-* xref:savanna:rest-api:endpoints/list-org-users.adoc[List org users]: list the users in your organization. This endpoint does not support API key authentication.
-* xref:savanna:rest-api:endpoints/update-an-org-users-role.adoc[Update an org user's role]: update an organization user's role. This endpoint does not support API key authentication.
+* xref:savanna:rest-api:endpoints/list-org-users.adoc[List org users]: list the users in your organization.
+* xref:savanna:rest-api:endpoints/update-an-org-users-role.adoc[Update an org user's role]: update an organization user's role.
 
 == Common use cases
 

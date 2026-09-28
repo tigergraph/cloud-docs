@@ -6,7 +6,7 @@
 
 ++++
 <div class="api-reference-page" data-api-reference>
-  <p class="api-lead">Updates an organization user's role. This endpoint does not support API key authentication.</p>
+  <p class="api-lead">Updates an organization user's role.</p>
 
   <div class="api-reference-layout">
     <div class="api-reference-main">
@@ -21,6 +21,26 @@
         </button>
       </div>
 
+      <section class="api-section" aria-labelledby="api-authorizations-title">
+        <h2 id="api-authorizations-title">Authorizations</h2>
+        <div class="api-field">
+          <div class="api-field-heading">
+            <code>x-api-key</code>
+            <span class="api-type">string</span>
+            <span class="api-in">header</span>
+            <span class="api-required">required</span>
+          </div>
+          <p>Authorization for TigerGraph Savanna. Send the key in the <code>x-api-key</code> request header.</p>
+++++
+
+[subs=macros]
+++++
+xref:rest-api:create-api-key.adoc[Create an API key]
+++++
+
+++++
+        </div>
+      </section>
       <section class="api-section" aria-labelledby="api-path-parameters-title">
         <h2 id="api-path-parameters-title">Path parameters</h2>
         <div class="api-field" id="parameter-user-id">

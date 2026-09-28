@@ -2643,7 +2643,7 @@ GET https://api.tgcloud.io/users
 
 [discrete]
 ==== Description
-List of users in the org. Note: this endpoint is not APIKEY compatible
+List of users in the org.
 
 [discrete]
 ==== Responses
@@ -2678,7 +2678,7 @@ PUT https://api.tgcloud.io/users/{userId}/roles
 
 [discrete]
 ==== Description
-Updates the role of an org user. Note: this endpoint is not APIKEY compatible
+Updates the role of an org user.
 
 [discrete]
 ==== Parameters

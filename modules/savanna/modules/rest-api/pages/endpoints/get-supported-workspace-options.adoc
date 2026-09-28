@@ -31,7 +31,14 @@
             <span class="api-required">required</span>
           </div>
           <p>Authorization for TigerGraph Savanna. Send the key in the <code>x-api-key</code> request header.</p>
-          <a href="../create-api-key.html" class="xref page">Create an API key</a>
+++++
+
+[subs=macros]
+++++
+xref:rest-api:create-api-key.adoc[Create an API key]
+++++
+
+++++
         </div>
       </section>
       <section class="api-section" aria-labelledby="api-query-parameters-title">

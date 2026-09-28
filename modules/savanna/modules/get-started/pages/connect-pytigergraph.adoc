@@ -14,8 +14,6 @@ Your script is the client. There is no server to install or keep running.
 The method reference lives in the link:https://www.tigergraph.com/docs/pytigergraph/current/intro/[pyTigerGraph documentation^].
 This page covers the part that is specific to Savanna: which host to use, which credential to pass, and how to confirm the connection.
 
-Prefer to work in natural language from an AI tool instead of writing code? See xref:connect-agent-mcp.adoc[Connect AI tools with MCP].
-
 == What you can do
 
 From your own code, you can:

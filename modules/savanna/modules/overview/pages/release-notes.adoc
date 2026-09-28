@@ -14,7 +14,7 @@ You can now create database secrets in Savanna and use them to connect pyTigerGr
 Until now you had to leave Savanna, open Admin Portal, and create a database username and password, which was confusing and hard to set up.
 Create the secret in Savanna and paste it into the client instead.
 That keeps credential setup in one place, so you spend less time bouncing between products and fewer connections fail because of a mismatched username or password.
-See xref:savanna:administration:settings/how2-create-database-secret.adoc[Create a database secret].
+See xref:savanna:administration:settings/how2-create-database-secret.adoc[Create a database secret] and xref:savanna:get-started:connect-pytigergraph.adoc[Connect with pyTigerGraph].
 
 === Improvements and bug fixes
 

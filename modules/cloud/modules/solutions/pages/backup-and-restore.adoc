@@ -43,7 +43,6 @@ Aside from scheduled backups, you can also perform and restore backups manually 
 
 [NOTE]
 ====
-
 * If you want to perform a manual backup when there are already seven copies of backups, you must delete an older backup.
 * The maximum number of manual backups is six, as the platform always reserves one spot for scheduled backups.
 ====

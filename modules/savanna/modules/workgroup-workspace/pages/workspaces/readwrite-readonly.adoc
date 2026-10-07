@@ -63,9 +63,10 @@ You can manually sync up the data with Read-Write(RW) workspace when needed.
 //[Placeholder for update read-only workspace]
 
 [NOTE]
+====
 Updating a Read-Only (RO) workspace is an offline operation.
-
 If there are any other operations in progress on the RO workspace, they are likely to be affected during the update process.
+====
 
 [TIP]
 ====
@@ -77,5 +78,3 @@ It is recommended to schedule the update during a time when minimal or no operat
 Next, about xref:savanna:workgroup-workspace:workspaces/workspace-size.adoc[Workspace Sizes] or learn how to xref:savanna:workgroup-workspace:workspaces/expansion-shrink.adoc[Expand and Shrink] a workspace.
 
 Return to the xref:savanna:workgroup-workspace:index.adoc[] page or xref:savanna:overview:index.adoc[Overview] page for a different topic.
-
-

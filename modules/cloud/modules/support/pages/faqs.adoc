@@ -9,12 +9,12 @@
 
 If you clicked "forgot password" during sign in to Cloud and never received an email, there could be a few explanations.
 
-* If you requested a password reset from an organization login screen, you won't get an email if you don't belong to that organization. Try resetting your password from the main login page at link:tgcloud.io[].
+* If you requested a password reset from an organization login screen, you won't get an email if you don't belong to that organization. Try resetting your password from the main login page at link:https://tgcloud.io[].
 * If you signed up through Google authentication, you cannot use a password to log in to the same account. Try logging in with your Google account.
 * Check your junk/spam email folder or run a search for "TigerGraph" in case the email automatically got filtered to another inbox.
 * Double-check the email address you entered to make sure it matches the one you signed up with.
 
-If you're still unable to log in or reset your password, contact TigerGraph Support at support@tigergraph.com for individualized help with your issue.
+If you're still unable to log in or reset your password, contact TigerGraph Support at savanna-support@tigergraph.com for individualized help with your issue.
 
 === *Q:  How does TigerGraph Cloud Classic compare with other DBaaS offerings?*
 
@@ -98,7 +98,6 @@ A:  Please see the section on pricing on our website at our link:https://www.tig
 A: TigerGraph Cloud Classic includes automatic scheduled backup, built-in encryption and other security features, patching, replication and distributed database option.  In addition, you can now provision a distributed database as well as a replica cluster for high availability.
 As a cloud service, many of the administrative and operational tasks - for monitoring, restoring, upgrading, for example - are just a click away.
 In addition to operations and management for your TigerGraph databases, TigerGraph Cloud Classic also offers Starter Kits to provide instant experience to various graph analytics use cases.
-The list of Starter Kits can be found here: link:https://www.tigergraph.com/starterkits/[TigerGraph Cloud Classic Starter Kits]
 
 [#q-is-there-a-quota-for-the-number-of-clusters-i-can-provision-in-a-single-account]
 === *Q: Is there a quota for the number of clusters I can provision in a single account?*
@@ -145,14 +144,14 @@ A: Data must be loaded and queries must be installed first. Please perform the f
 . On the Load Data tab, click the Load button to load the sample dataset.
 . On the Write Query tab, click the Install button to install the sample queries.
 
-Now you can run queries on the starter kit's sample data. Please visit our link:http://tigergraph.com/starterkits[TigerGraph Cloud Classic Starter Kits] page to watch the overview video for each starter kit.
+Now you can run queries on the starter kit's sample data. Please visit link:https://www.youtube.com/@TigerGraph/search?query=starter%20kit[TigerGraph's YouTube channel'] to watch an overview video for your starter kit.
 
 
 === *Q:  How can I monitor my TigerGraph Cloud Classic service?*
 
 A: TigerGraph Cloud Classic is instance-based and offers an administrator portal to monitor the performance and health of each machine instance.
 
-See TigerGraph's xref:gui:admin-portal:overview.adoc[Admin Portal Documentation] for more detailed information.
+See TigerGraph's https://www.tigergraph.com/docs/gui/4.3/admin-portal/overview/[Admin Portal Documentation^] for more detailed information.
 
 
 === *Q:  Is TigerGraph Cloud Classic cloud-agnostic?*
@@ -170,7 +169,7 @@ For additional developer resources for free tier users, join the TigerGraph deve
 
 === *Q: What is the user interface for the TigerGraph Cloud Classic instance?*
 
-A: The TigerGraph xref:gui:graphstudio:overview.adoc[GraphStudio™ UI (User Interface)] provides an intuitive, browser-based interface that helps users get started quickly with graph-based application development tasks: designing a graph schema, creating a schema mapping, loading data, exploring the graph, and writing GSQL queries.
+A: The TigerGraph https://www.tigergraph.com/docs/gui/4.3/graphstudio/overview/[GraphStudio™ UI (User Interface)^] provides an intuitive, browser-based interface that helps users get started quickly with graph-based application development tasks: designing a graph schema, creating a schema mapping, loading data, exploring the graph, and writing GSQL queries.
 
 In addition, for TigerGraph paid tier clusters, users can use GSQL Web Shell to write GSQL commands in an interactive command line shell. Users can access GSQL Web Shell through the cluster panel from their Cloud Portal. This GSQL Web Shell opens up more data loading options such as S3 Loader (parquet format) and Kafka Loader.
 
@@ -179,14 +178,14 @@ In addition, for TigerGraph paid tier clusters, users can use GSQL Web Shell to 
 
 A: TigerGraph uses GSQL, the query language designed for fast and scalable graph operations and analytics. GSQL's similarity to SQL, high-level syntax, Turing completeness, and built-in parallelism brings faster performance, faster development and the ability to describe any algorithm.
 
-You can start learning GSQL from our xref:gsql-ref:tutorials:gsql-101/index.adoc[GSQL tutorials]. We also support a RESTful API and JSON output for easy integration with application languages like Python, Java, and C{pp}.
+You can start learning GSQL from our https://www.tigergraph.com/docs/gsql-ref/4.3/tutorials/gsql-101/[GSQL tutorials^]. We also support a RESTful API and JSON output for easy integration with application languages like Python, Java, and C{pp}.
 
 Start learning GSQL and become a TigerGraph Certified Associate today with our link:https://www.tigergraph.com/certification/[Certification Program].
 
 
 === *Q: Can I have multiple graphs in one TigerGraph Cloud Classic instance?*
 
-A: Yes. If you use V3.0.5+ in TigerGraph Cloud Classic, MultiGraph is supported through GraphStudio. Please refer to our xref:gui:graphstudio:design-schema.adoc[] page for the new MultiGraph Support through GraphStudio.
+A: Yes. If you use V3.0.5+ in TigerGraph Cloud Classic, MultiGraph is supported through GraphStudio. Please refer to our https://www.tigergraph.com/docs/gui/4.3/graphstudio/design-schema/[Design a Schema^] page for the new MultiGraph Support through GraphStudio.
 
 === *Q: What methods do you support for importing data?*
 
@@ -227,7 +226,7 @@ A: Yes, there is a discount for contracting with TigerGraph for a one-year term.
 
 === *Q: Can I purchase TigerGraph Cloud Classic Credits?*
 
-A: Yes. You can purchase cloud credits applied to TigerGraph Cloud Classic usage. Please refer to https://www.tigergraph.com/cloud-credits/
+A: Yes. You can purchase cloud credits applied to TigerGraph Cloud Classic usage.
 
 
 === *Q:  If I delete my instance before the end of the month, what will I have to pay?*
@@ -252,7 +251,7 @@ A: If this happens you can contact link:mailto:sales@tigergraph.com[sales@tigerg
 
 === *Q:  Where can I find TigerGraph's terms and conditions for its products and services?*
 
-A:  You can find our terms and conditions here: http://www.tigergraph.com/terms[www.tigergraph.com/terms].
+A:  You can find our terms and conditions here: https://www.tigergraph.com/terms[www.tigergraph.com/terms].
 
 
 === *Q: How is TigerGraph Cloud Classic priced for development, test, or QA environments?*
@@ -429,7 +428,7 @@ TigerGraph v3.0.6+ supports configurations for a cluster with 1 partition and 3 
 
 A: Partition factor means the number of parts or components your graph data is split into, which also equals the number of instances that collectively store one copy of the full graph.
 For example, if you select a partition factor of 3, each instance will hold approximately 1/3 of your data.
-Please read the xref:tigergraph-server:cluster-and-ha-management:ha-cluster.adoc[] documentation for additional details about partitions and replications.
+Please read the https://www.tigergraph.com/docs/tigergraph-server/4.3/cluster-and-ha-management/ha-cluster/[High Availability Cluster Configuration^] documentation for additional details about partitions and replications.
 
 
 === *Q: How long do I need to wait for the cluster to be ready after provisioning process starts?*
@@ -455,15 +454,15 @@ A: You are not sharing storage with other customers. Each TigerGraph cluster is 
 
 === *Q: How do I access my TigerGraph Cloud Classic account (e.g., username and password)?*
 
-A: When you register your account, you will select a username and password. You can then log in anytime at link:http://www.tgcloud.io/[www.tgcloud.io]. You will also be given a URL using a subdomain name that you select.
+A: When you register your account, you will select a username and password. You can then log in anytime at link:https://www.tgcloud.io/[www.tgcloud.io]. You will also be given a URL using a subdomain name that you select.
 
 === *Q: How do I access my TigerGraph database and POST to TigerGraph?*
 
-A: You can access the database through TigerGraph's GraphStudio visual interface and through RESTful endpoints. Use RESTful endpoints to POST to TigerGraph clusters and develop applications. Please refer to the xref:tigergraph-server:API:index.adoc[RESTful API User Guide] for more information. To find the RESTful endpoints for queries created in GraphStudio, please read our documentation on xref:gui:graphstudio:write-queries.adoc[showing query endpoints]. There is also a recorded webinar which demos the process in detail: link:https://info.tigergraph.com/graph-gurus-24[Graph Gurus Episode 24]
+A: You can access the database through TigerGraph's GraphStudio visual interface and through RESTful endpoints. Use RESTful endpoints to POST to TigerGraph clusters and develop applications. Please refer to the https://www.tigergraph.com/docs/tigergraph-server/4.3/API/[RESTful API User Guide^] for more information. To find the RESTful endpoints for queries created in GraphStudio, please read our documentation on https://www.tigergraph.com/docs/gui/4.3/graphstudio/write-queries/[showing query endpoints^]. There is also a recorded webinar which demos the process in detail: link:https://info.tigergraph.com/graph-gurus-24[Graph Gurus Episode 24]
 
 *Here is the step-by-step instructions:*
 
-TigerGraph Cloud Classic enables xref:tigergraph-server:API:authentication.adoc[REST{pp} Authentication] to securely connect TigerGraph Cloud Classic clusters with your application through an endpoint on port 443 at `443/restpp/<endpoint>`.
+TigerGraph Cloud Classic enables https://www.tigergraph.com/docs/tigergraph-server/4.3/API/authentication/[REST{pp} Authentication^] to securely connect TigerGraph Cloud Classic clusters with your application through an endpoint on port 443 at `443/restpp/<endpoint>`.
 
 [NOTE]
 TigerGraph Cloud Classic clusters created before June 20, 2022 used port 9000 and 14240 for endpoints. See the xref:release-notes:index.adoc[] for details.
@@ -531,7 +530,7 @@ A: TigerGraph Cloud Classic encrypts data at rest and in transit, and SSL is ena
 
 A: The ability to use cloud portal to integrate TigerGraph Cloud Classic into an SSO system will be provided at a future date.
 If you are using a paid tier instance, please submit a support ticket to request advanced service to integrate into an SSO system TigerGraph supports.
-Please see more detailed pages on the xref:tigergraph-server:user-access:sso.adoc[Single Sign On (Server)] and xref:gui:admin-portal:security/sso.adoc[Single Sign On (GUI)] features.
+Please see more detailed pages on the https://www.tigergraph.com/docs/tigergraph-server/4.3/user-access/sso/[Single Sign On (Server)^] and https://www.tigergraph.com/docs/gui/4.3/admin-portal/security/sso/[Single Sign On (GUI)^] features.
 
 == Upgrade
 
@@ -575,7 +574,7 @@ A: TigerGraph is a native parallel graph database built on C{pp}. It is not buil
 
 A: The GraphStudio visual design tool provides several monitors.
 
-The xref:gui:graphstudio:load-data.adoc[]  page includes a real time monitor and statistics. Query performance and many other measures are available on the xref:tigergraph-server:intro:index.adoc[Administrator Portal].
+The https://www.tigergraph.com/docs/gui/4.3/graphstudio/load-data/[Load Data^]  page includes a real time monitor and statistics. Query performance and many other measures are available on the https://www.tigergraph.com/docs/tigergraph-server/4.3/intro/[Administrator Portal^].
 
 
 === *Q: How can I improve the speed of my system?*
@@ -588,4 +587,4 @@ Contact link:mailto:sales@tigergraph.com[sales@tigergraph.com] to discuss query 
 
 === *Q: What third-party software is used in TigerGraph Cloud Classic?*
 
-A: A list of third-party software used in the TigerGraph engine and TigerGraph Cloud Classic is available at xref:tigergraph-server:reference:patents-and-third-party-software.adoc[].
+A: A list of third-party software used in the TigerGraph engine and TigerGraph Cloud Classic is available at https://www.tigergraph.com/docs/tigergraph-server/4.3/reference/patents-and-third-party-software/[Patents and Third-Party Software^].

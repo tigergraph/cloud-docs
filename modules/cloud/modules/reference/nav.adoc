@@ -4,3 +4,4 @@
 ** xref:gcp.adoc[]
 ** xref:glossary.adoc[]
 ** xref:service-limits.adoc[]
+** xref:savanna-transition-faqs.adoc[]

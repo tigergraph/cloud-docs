@@ -9,7 +9,6 @@ This page guides you through the process of creating a *free-tier* cluster (subj
 [CAUTION]
 ====
 Free-tier clusters are for training, learning, and small-scale proof of concept use cases. Free-tier clusters do not support backup and restore.
-
 For more advanced testing and learning, consider adding a payment method and using paid-tier clusters to access the backup and restore feature.
 ====
 
@@ -44,10 +43,11 @@ See the xref:reference:index.adoc[] section for more information.
 The default options are chosen for you automatically in the Free tier.
 
 [NOTE]
-The xref:tigergraph-server:gsql-shell:web.adoc[GSQL Web Shell] is currently not supported on Azure-hosted clusters due to a limitation with Azure Application Gateway.
-
+====
+The https://www.tigergraph.com/docs/tigergraph-server/4.3/gsql-shell/web/[GSQL Web Shell^] is currently not supported on Azure-hosted clusters due to a limitation with Azure Application Gateway.
 Not all TigerGraph versions that are offered on-premises are offered on TigerGraph Cloud Classic.
 In the dropdown list, choose the version of TigerGraph you want to run.
+====
 
 image:cluster-name-and-version.png[]
 

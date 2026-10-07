@@ -7,7 +7,7 @@ Non-technical users can easily and quickly obtain meaningful visual insights tha
 
 [TIP]
 ====
-To learn more about Insights read our xref:insights:intro:index.adoc[Insights Documentation]
+To learn more about Insights read our https://www.tigergraph.com/docs/insights/4.3/intro/[Insights Documentation^]
 ====
 
 == Get Started with the Insights Add-on

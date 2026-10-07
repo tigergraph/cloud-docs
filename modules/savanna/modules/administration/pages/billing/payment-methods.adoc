@@ -1,7 +1,7 @@
 = Payment Method
 :experimental:
 
-Here on the Payment method window you can learn how to manage your payment methods.
+The Payment Methods section allows you to add, manage, and remove payment options for your Savanna account.
 
 == Add a new Payment Method
 
@@ -17,21 +17,117 @@ image::add-creditcard.png[]
 . The btn:[Add Credit Card] panel should apper on the right.
 . Fill in your credit card information and select btn:[ Add ]
 +
-image::creaditcardInfomration.png[]
+image::creditcardInformation.png[]
 
 . After you select btn:[Add] you new payment method should appear in the list.
 +
-image::creaditcard-list.png[]
+image::creditcard-list.png[]
 
-== Delete a payment mothend
+== Delete a payment method
 
 .To delete a payment method:
 . First, in the payment method list select the btn:[ ... ] under the btn:[Action] column.
 +
-image::action-colum-options.png[]
+image::action-column-options.png[]
 . Click on btn:[Delete Card] and the card will be removed from the list.
 +
 image::deletecard.png[]
+
+== Subscriptions
+
+You can also pay for Savanna via AWS marketplace subscription.
+
+* https://aws.amazon.com/marketplace/pp/prodview-txouq7rtexndc[AWS Marketplace]
+
+[NOTE]
+====
+Upon subscription, AWS Marketplace subscription will only be set as the default payment method if there is currently an invoice balance of 0 and no existing usage.
+If you have an existing account or would like to switch payment methods to AWS Marketplace, please contact mailto:savanna-support@tigergraph.com[savanna-support@tigergraph.com].
+====
+
+.To subscribe via AWS Marketplace, follow the steps below:
+. Click the link above to navigate to our AWS Marketplace listing.
+. Select the btn:[View purchase options] button on the right.
++
+image::aws-marketplace-listing.png[]
+
+. Scroll down to the btn:[Subscribe] button on the left and select it.
++
+image::aws-marketplace-subscribe.png[]
+
+. A pop up will then appear at the top. Select the btn:[Set up your account] button on the right to be redirected to Savanna.
++
+NOTE: If you are not signed in, please sign in to Savanna then click the link again to be redirected to the proper page.
++
+image::aws-marketplace-fulfillment.png[]
+
+. Navigate to the btn:[Billing] tab in the left navigation panel.
+. Select the btn:[Payment Methods] tab at the top.
+Your AWS Marketplace subscription should now appear with its status.
++
+NOTE: If it says pending, please wait then refresh. It should be activated momentarily.
++
+image::aws-marketplace-active.png[]
+
+Once subscribed, AWS Marketplace becomes the only available payment method. To change your payment method, you must first unsubscribe from AWS Marketplace.
+
+[NOTE]
+====
+If you subscribe mid-billing cycle, the current cycle is charged to your existing credit card. AWS Marketplace metering begins at the start of the next billing cycle.
+====
+
+=== Unsubscribe from AWS Marketplace
+
+To unsubscribe from AWS Marketplace, follow the steps below:
+
+. Navigate to *Manage subscriptions* in AWS Marketplace and locate the TigerGraph Savanna subscription under *Active subscriptions*.
++
+image::aws-marketplace-manage-subscriptions.png[]
++
+. Click the **Agreement ID** to open the subscription details page.
++
+. On the subscription details page, click **Actions** in the top-right corner.
++
+image::aws-marketplace-actions.png[]
++
+. From the Actions menu, select **Cancel subscription**.
++
+image::aws-marketplace-cancel_.png[]
+
+If the AWS Marketplace subscription has been cancelled and no other payment method is configured, click *Add Credit Card* on the Payment Methods page.
+
+
+=== Billing After Canceling Your AWS Marketplace Subscription
+
+If you cancel your subscription, AWS Marketplace bills TigerGraph usage incurred up to the subscription cancellation date.
+
+*Add a Payment Method* 
+
+To continue using Savanna after canceling your AWS Marketplace subscription, add a valid payment method to your organization. Once added, future TigerGraph usage is billed using that payment method.
+
+For the steps to add a xref:_add_a_new_payment_method[payment method].
+
+*Billing reconciliation*
+
+If you cancel your AWS Marketplace subscription during an active billing cycle, some usage may already have been reported for billing before you switch to direct TigerGraph billing.
+
+TigerGraph reconciles this usage after the transition and applies the appropriate credits to prevent duplicate billing. Billing reconciliation is performed by the TigerGraph team and does not prevent you from continuing to use Savanna after adding a valid payment method.
+
+[IMPORTANT]
+====
+If you cancel mid-billing cycle, we recommend contacting mailto:savanna-support@tigergraph.com[savanna-support@tigergraph.com] to resolve any usage already billed through AWS Marketplace.
+====
+
+*Grace period*
+
+If your organization does not have an active payment method after cancellation, it progresses through a series of grace period stages, which can ultimately result in permanent deletion of your workspaces and associated database resources.
+
+* *Suspend Grace Period*: the period before your workspaces are suspended. Add a valid payment method before it ends to avoid suspension.
+* *Workspace suspended*: no payment method was added before the Suspend Grace Period ended. The Termination Grace Period begins.
+* *Termination Grace Period*: the period before your workspaces are permanently deleted. Add a valid payment method before it ends to restore access.
+* *Workspace terminated*: no payment method was added before the Termination Grace Period ended. Workspaces and associated database resources are permanently deleted.
+
+Grace period durations depend on your organization's subscription tier. See xref:resources:quota_policy.adoc[Subscription Plans and Quota Policy] for details. 
 
 == Next Steps
 

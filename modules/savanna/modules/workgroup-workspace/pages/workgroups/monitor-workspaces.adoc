@@ -26,6 +26,3 @@ image::workspace-monitor-tab.png[]
 Next, Learn how to xref:graph-development:load-data/index.adoc[Load Data] into TigerGraph Savanna.
 
 Return to the xref:savanna:workgroup-workspace:index.adoc[] page or xref:savanna:overview:index.adoc[Overview] page for a different topic.
-
-
-

@@ -1,8 +1,8 @@
-* xref:index.adoc[Marketplace]
-** xref:solutions.adoc[]
-** xref:add-ons.adoc[]
-*** xref:graphstudio.adoc[]
-*** xref:insights.adoc[]
-*** xref:savanna:integrations:graphql.adoc[]
-
-
+* Marketplace
+** xref:index.adoc[Overview]
+** xref:solutions.adoc[Solutions]
+** Add-ons
+*** xref:add-ons.adoc[Overview]
+*** xref:graphstudio.adoc[GraphStudio]
+*** xref:insights.adoc[Insights]
+*** xref:savanna:integrations:graphql.adoc[GraphQL]

@@ -44,11 +44,12 @@ Platform
 Compute resources on TigerGraph Savanna are billed based on the size of the workspace(s) you deploy and the number of hours in use.
 
 [NOTE]
+====
 To simplify pricing, we have discontinued the use of TigerGraph Credits (TCRs) and directly use US dollars ($) instead. The net pricing has not changed.
-
 The following table outlines the price for different sizes of compute resources.
 The compute prices are distinct from the storage fees listed below and are metered based on actual usage.
 For inquiries about pricing, volume discounts, or deploying in other regions, please contact us at sales@tigergraph.com.
+====
 
 [NOTE]
 ====

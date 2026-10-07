@@ -4,6 +4,32 @@
 :toc:
 :toclevels:2
 
+== Oct 2026
+=== 2026-10-07
+==== New billing experience
+
+The Billing page now shows your credits, plan, usage, invoices, and customer details in one place.
+Top up your wallet, check when credits expire, edit billing information, and search past invoices without leaving Savanna.
+Payment Methods remains as it is.
+
+==== Clearer AWS Marketplace cancellation warnings
+
+If you cancel an AWS Marketplace subscription and have no other payment method, your workspaces are eventually suspended and then terminated.
+Savanna now shows the upcoming suspension and termination dates at each stage, so you have time to add a payment method and keep your workspaces running.
+
+==== Clearer workspace startup
+
+Opening GraphStudio or Insights while an idle workspace resumes now shows that the workspace is starting, instead of a blank page or an unexpected login.
+The tool opens on its own once the workspace is ready.
+Stopped workspaces stay stopped until you start them.
+
+==== Improvements and bug fixes
+
+* Free tier Auto Suspend.** Auto Suspend now stays on for Free tier workspaces and can no longer be turned off from Advanced Settings.
+* GSQL Editor workspace switching.** A query still running in one workspace no longer disables *Run Query* in the workspace you switch to.
+
+
+
 == Sep 2026
 === 2026-09-02
 ==== Enhancements

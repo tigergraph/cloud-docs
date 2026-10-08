@@ -6,7 +6,7 @@
 Savanna release notes and product updates.
 Stay up to date with new features, improvements, and bug fixes.
 
-== Oct 2026
+== Oct 7, 2026
 
 === New billing experience
 

@@ -3,7 +3,6 @@
 :page-role: release-notes
 :page-toclevels: 1
 
-=======
 Savanna release notes and product updates.
 Stay up to date with new features, improvements, and bug fixes.
 
@@ -28,8 +27,8 @@ Stopped workspaces stay stopped until you start them.
 
 === Improvements and bug fixes
 
-* Free tier Auto Suspend.** Auto Suspend now stays on for Free tier workspaces and can no longer be turned off from Advanced Settings.
-* GSQL Editor workspace switching.** A query still running in one workspace no longer disables *Run Query* in the workspace you switch to.
+* *Free tier Auto Suspend.* Auto Suspend now stays on for Free tier workspaces and can no longer be turned off from Advanced Settings.
+* *GSQL Editor workspace switching.* A query still running in one workspace no longer disables *Run Query* in the workspace you switch to.
 
 == Sep 2, 2026
 

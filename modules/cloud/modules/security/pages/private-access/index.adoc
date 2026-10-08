@@ -1,4 +1,4 @@
-= Private Access Services
+= Private Access Services&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;image:enterprise-edition-only.png[Enterprise Edition Only,140]
 
 TigerGraph offers private access services through AWS (AWS PrivateLink), Azure (Azure Private Link), and GCP (Private Service Connect).
 

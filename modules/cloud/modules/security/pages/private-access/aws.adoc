@@ -1,4 +1,4 @@
-= AWS PrivateLink
+= AWS PrivateLink&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;image:enterprise-edition-only.png[Enterprise Edition Only,140]
 :experimental:
 :description: Setting up PrivateLink on Amazon Web Services
 :page-aliases: cloud:private-access/aws.adoc

@@ -14,6 +14,8 @@ The Billing page now shows your credits, plan, usage, invoices, and customer det
 Top up your wallet, check when credits expire, edit billing information, and search past invoices without leaving Savanna.
 Payment Methods remains as it is.
 
+image::savanna-billing-page.png[Billing page with wallet, plan, customer information, and invoice history,width=620]
+
 === Clearer AWS Marketplace cancellation warnings
 
 If you cancel an AWS Marketplace subscription and have no other payment method, your workspaces are eventually suspended and then terminated.

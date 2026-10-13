@@ -1,0 +1,189 @@
+= Soft delete and recovery
+:experimental:
+
+Soft delete lets you recover a workspace or database that you deleted by mistake.
+Instead of permanently deleting the resource right away, Savanna moves it to *Deleted Items*, where it stays recoverable for a recovery period.
+During this period, you can restore the resource or delete it permanently.
+
+// Video file location: workgroup-workspace/images/Savanna_Soft_Delete.mp4
+//video::Savanna_Soft_Delete.mp4[]
+
+== What is soft delete?
+
+Savanna supports two types of deletion for workspaces and databases:
+
+[cols="1,3,3",options="header"]
+|===
+| | Soft delete | Permanent delete (hard delete)
+
+| What happens
+| The resource moves to *Deleted Items*. Its configuration and data are kept, but you cannot use it until you restore it.
+| The resource and its data are removed right away.
+
+| Can you recover it?
+| Yes, until the recovery period ends.
+| No. Permanent deletion cannot be undone.
+
+| Available on
+| Paid, Premium, and Enterprise tiers
+| All tiers. On the Free tier, every deletion is permanent.
+|===
+
+Soft delete applies to workspaces and databases only.
+Deleting a workgroup is always permanent.
+
+== What you can do
+
+With soft delete, you can:
+
+* *Recover from mistakes.* Restore a deleted workspace or database with its original configuration and data.
+* *Track what is recoverable.* See when each resource was deleted, how many days it remains recoverable, and when it will be permanently deleted.
+* *Free capacity when you need it.* Delete a resource permanently without waiting for the recovery period to end.
+
+== Before you start
+
+To soft delete a workspace or database:
+
+* Your organization must be on a Paid, Premium, or Enterprise tier.
+* You must have permission to delete the resource. See xref:savanna:administration:how2-access-mgnt.adoc[Access management].
+* Your *Deleted Items* quota for that resource type must have available capacity. See <<_deleted_items_quota>>.
+* A workspace cannot be soft deleted while it is being created, stopped, or deleted.
+* To soft delete a database, every workspace attached to it must already be soft deleted or terminated.
+
+To permanently delete a database, no active workspace can be attached to it.
+
+== Soft delete a workspace or database
+
+// TODO confirm: exact UI path, menu label, and button labels against the released UI.
+. In Savanna, open the workgroup that contains the workspace or database.
+. Next to the workspace or database, click btn:[…] and select *Delete*.
+. Review the confirmation dialog.
+It shows how long the resource will remain recoverable and how much of your *Deleted Items* quota is used.
+. Select the soft delete option and confirm.
+
+The resource moves to *Deleted Items* and no longer appears in your active lists.
+If it is a workspace, Savanna stops it.
+
+// image::soft-delete-dialog.png[Soft delete confirmation dialog]
+
+[NOTE]
+====
+A resource in *Deleted Items* keeps its name.
+You cannot create a new workspace or database with the same name in the workgroup until the original is restored or permanently deleted.
+====
+
+== View deleted items
+
+// TODO confirm: exact UI path to Deleted Items.
+Open *Deleted Items* in the workspaces or databases view of the workgroup.
+
+For each resource, Savanna shows:
+
+* The resource name and type
+* The date it was deleted
+* The number of days it remains recoverable
+* The date it will be permanently deleted
+
+From *Deleted Items*, you can restore a resource or delete it permanently.
+
+// image::deleted-items.png[Deleted Items list]
+
+== Restore a resource
+
+You can restore a resource from *Deleted Items* until Savanna permanently deletes it.
+
+=== Restore a workspace
+
+. In *Deleted Items*, find the workspace you want to restore.
+. Click btn:[Restore] and confirm.
+
+The workspace returns to your active workspace list in the *Stopped* state, with its original configuration and data.
+It does not start automatically. Start it when you are ready to use it.
+
+If the workspace's database is also in *Deleted Items*, Savanna restores the database together with the workspace.
+
+// TODO confirm: whether restore is blocked when the active workspace quota is full (shown in Figma, not stated in the design doc).
+
+// image::restore-workspace.png[Restore workspace dialog]
+
+=== Restore a database
+
+. In *Deleted Items*, find the database you want to restore.
+. Click btn:[Restore] and confirm.
+
+The database returns to your active database list.
+
+[NOTE]
+====
+Restoring a database does not restore its deleted workspaces.
+Restore each workspace separately.
+====
+
+// image::restore-database.png[Restore database dialog]
+
+== Delete a resource permanently
+
+You can delete a resource permanently in two ways:
+
+* *From Deleted Items.* Find the resource, click btn:[Delete Permanently], and confirm.
+* *From your active list.* When you delete the resource, choose to delete it permanently instead of moving it to *Deleted Items*.
+
+// TODO confirm: UI steps for permanently deleting an active resource.
+
+[CAUTION]
+====
+Permanent deletion cannot be undone.
+If you permanently delete a database, any soft-deleted workspaces attached to it are also permanently deleted.
+====
+
+// image::delete-permanently.png[Delete permanently dialog]
+
+== Recovery period
+
+When you soft delete a resource, it stays in *Deleted Items* for the recovery period.
+The length of the recovery period depends on your organization's tier.
+*Deleted Items* shows the exact permanent deletion date for each resource.
+
+If you do not restore or permanently delete the resource, Savanna permanently deletes it after the recovery period ends.
+
+Permanent deletion runs on a schedule, so a resource may remain in *Deleted Items* for a short time after its permanent deletion date.
+Until permanent deletion begins, you can still restore it.
+
+=== Notifications
+
+// TODO confirm: notification channels (email, in-app, or both) and recipients.
+Savanna notifies your organization when a resource moves to *Deleted Items*.
+It sends reminders 5 days and 1 day before the resource is permanently deleted, so you have time to restore it.
+
+== Deleted Items quota
+
+Resources in *Deleted Items* do not count toward your active workspace and database quotas.
+
+*Deleted Items* has its own quota, which depends on your tier.
+Workspaces and databases have separate limits, so reaching the limit for one type does not affect the other.
+
+When the quota for a resource type is full, you cannot soft delete another resource of that type.
+To continue, do one of the following:
+
+* Permanently delete an older resource of the same type from *Deleted Items*.
+* Permanently delete the current resource instead.
+
+For quota limits by tier, see xref:savanna:resources:quota_policy.adoc[Subscription plans and quota policy].
+
+== Deletion on the Free tier
+
+The Free tier does not support soft delete.
+When you delete a workspace or database on the Free tier, Savanna deletes it permanently.
+
+[WARNING]
+====
+Before you confirm deletion on the Free tier, make sure you no longer need the resource.
+Permanent deletion cannot be undone.
+====
+
+== Related
+
+* xref:savanna:workgroup-workspace:workspaces/workspace.adoc[About workspaces]
+* xref:savanna:workgroup-workspace:workgroups/backup-and-restore.adoc[Back up and restore]
+* xref:savanna:resources:quota_policy.adoc[Subscription plans and quota policy]
+* xref:savanna:administration:how2-access-mgnt.adoc[Access management]

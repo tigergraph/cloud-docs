@@ -1,4 +1,6 @@
 = IDP integration with SSO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;image:enterprise-edition-only.png[Enterprise Edition Only,140]
+:navtitle: IDP integration with SSO
+:reftext: IDP integration with SSO
 
 By default, user management in a TigerGraph Cloud Classic organization happens in the xref:manage-org-users.adoc[] section of the TigerGraph Cloud Classic interface.
 

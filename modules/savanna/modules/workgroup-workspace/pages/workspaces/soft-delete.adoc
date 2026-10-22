@@ -72,7 +72,7 @@ The following table shows how each operation affects those quotas.
 |===
 
 Because restoring a workspace returns it to the active experience, Savanna validates your current active R/W or R/O quota before the restore succeeds.
-If the applicable quota is full, the restore is blocked. See <<_restore_a_workspace>>.
+If the applicable quota is full, the restore is blocked. See <<restore-a-workspace>>.
 
 Quota limits depend on your organization's current configuration, so treat the values shown in Savanna as authoritative.
 For limits by tier, see xref:savanna:resources:quota_policy.adoc[Subscription plans and quota policy].
@@ -126,6 +126,7 @@ To continue, do one of the following:
 * Permanently delete an existing archived workspace to free soft delete quota.
 * Permanently delete the current workspace instead of archiving it.
 
+[#restore-a-workspace]
 == Restore a workspace
 
 You can restore a workspace from Archived Items at any time while it remains recoverable.
@@ -177,6 +178,7 @@ Restore Workspace-A
 The active R/W or R/O quota for the workspace must still be available.
 Restoring the database alongside the workspace adds no separate database quota requirement.
 
+[#soft-delete-a-database]
 == Soft delete a database
 
 A database can be archived only when none of its attached workspaces is active.
@@ -192,6 +194,7 @@ This prevents an active workspace from being left attached to an unavailable, ar
 Savanna moves the database to *Archived Items* and retains its data for the recovery period.
 Archiving a database does not consume an archived-resource quota.
 
+[#restore-a-database]
 == Restore a database
 
 You can restore a database independently of its workspaces.

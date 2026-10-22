@@ -77,6 +77,10 @@ A formal description of a graph's data model.
 
 A recoverable deletion that moves a workspace or database to Archived Items and retains it for a recovery period, instead of removing it immediately. Available on the Paid, Premium, and Enterprise tiers.
 
+== soft delete quota
+
+The maximum number of soft-deleted workspaces an organization can keep in Archived Items at the same time. Soft-deleting a workspace consumes one unit; restoring or permanently deleting an archived workspace releases one. It is separate from the active workspace quota and applies to workspaces only. Databases have no soft delete quota.
+
 == solution
 
 The previous name for a cluster, or a fully-managed TigerGraph deployment.

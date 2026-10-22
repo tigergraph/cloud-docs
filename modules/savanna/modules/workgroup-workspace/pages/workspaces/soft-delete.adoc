@@ -46,23 +46,25 @@ It remains recoverable until you restore it, delete it permanently, or its recov
 | All tiers. On the Free tier, every deletion is permanent.
 |===
 
+[#quotas]
 == Quotas
 
 Soft delete interacts with two separate kinds of limits for workspaces, and behaves differently for databases.
 
+[#workspace-quotas]
 === Workspace quotas
 
 Workspaces are governed by two independent quotas:
 
 * *Active workspace quota.* The number of active workspaces your organization can run, counted separately for read-write (R/W) and read-only (R/O) workspaces. See xref:savanna:workgroup-workspace:workspaces/readwrite-readonly.adoc[Read-write and read-only].
 A workspace in the *Stopped* state still consumes active quota. Only archiving releases it.
-* *Archived workspace quota.* A separate count limit for how many workspaces your organization can keep in Archived Items at the same time.
+* *Soft delete quota.* A separate count limit for how many workspaces your organization can keep in Archived Items at the same time.
 
 The following table shows how each operation affects those quotas.
 
 [cols="2,1,1",options="header"]
 |===
-| Operation | Active R/W or R/O quota | Archived workspace quota
+| Operation | Active R/W or R/O quota | Soft delete quota
 
 | Soft delete a workspace | Releases one unit | Consumes one unit
 | Restore a workspace | Consumes one unit (must be available) | Releases one unit
@@ -79,7 +81,7 @@ For limits by tier, see xref:savanna:resources:quota_policy.adoc[Subscription pl
 
 Databases behave differently:
 
-* There is *no* archived-count quota for databases. You can keep any number of databases in Archived Items, and a database can move through the archive and restore lifecycle repeatedly.
+* There is *no* soft delete quota for databases. You can keep any number of databases in Archived Items, and a database can move through the archive and restore lifecycle repeatedly.
 * There is *no* active database quota check on restore. Restoring a database is never blocked by a database count limit, though database and workspace dependency rules still apply.
 
 == Before you start
@@ -88,20 +90,20 @@ To soft delete a workspace or database:
 
 * Your organization must be on the Paid, Premium, or Enterprise tier.
 * You must have permission to delete the resource. See xref:savanna:administration:how2-access-mgnt.adoc[Access management].
-* To soft delete a workspace, your archived workspace quota must have available capacity, and the workspace must not be in the process of being created, stopped, or deleted.
+* To soft delete a workspace, your soft delete quota must have available capacity, and the workspace must not be in the process of being created, stopped, or deleted.
 * To soft delete a database, every workspace attached to it must already be archived or terminated.
 
 == Soft delete a workspace
 
 . In Savanna, open the workgroup that contains the workspace.
 . Next to the workspace, open the actions menu (btn:[…]) and select btn:[Delete].
-. In the confirmation dialog, review the recovery period and your archived workspace quota usage, then select *Move to Archived Items*.
+. In the confirmation dialog, review the recovery period and your soft delete quota usage, then select *Move to Archived Items*.
 . Confirm the deletion.
 
 // image::soft-delete-dialog.png[Soft delete confirmation dialog]
 
 Savanna stops the workspace's compute and moves it to *Archived Items*.
-The workspace keeps its configuration and settings, releases its active R/W or R/O quota, and consumes one archived workspace quota unit.
+The workspace keeps its configuration and settings, releases its active R/W or R/O quota, and consumes one soft delete quota unit.
 
 [NOTE]
 ====
@@ -116,12 +118,12 @@ An archived workspace keeps its name.
 You cannot create a new workspace with the same name in the workgroup until you restore or permanently delete the original.
 ====
 
-=== When the archived workspace quota is full
+=== When the soft delete quota is full
 
-If your archived workspace quota is already full, you cannot archive another workspace.
+If your soft delete quota is already full, you cannot archive another workspace.
 To continue, do one of the following:
 
-* Permanently delete an existing archived workspace to free archived capacity.
+* Permanently delete an existing archived workspace to free soft delete quota.
 * Permanently delete the current workspace instead of archiving it.
 
 == Restore a workspace
@@ -136,7 +138,7 @@ You can restore a workspace from Archived Items at any time while it remains rec
 
 The workspace returns to your active workspace list in the *Stopped* state, with its original configuration and settings.
 It does not start automatically. Start it when you are ready to use it.
-Restoring the workspace releases one archived workspace quota unit and consumes one active R/W or R/O quota unit.
+Restoring the workspace releases one soft delete quota unit and consumes one active R/W or R/O quota unit.
 
 === Active quota is validated on restore
 
@@ -249,7 +251,7 @@ You do not need to wait for the recovery period to end.
 
 // image::delete-permanently.png[Delete permanently dialog]
 
-Permanently deleting an archived workspace releases its archived workspace quota unit.
+Permanently deleting an archived workspace releases its soft delete quota unit.
 The resource is removed and can no longer be restored.
 
 === Deleting an archived database removes its archived workspaces
@@ -267,7 +269,7 @@ Permanently delete Database-A
 ----
 
 Savanna communicates this cascade before you confirm the operation.
-Each archived workspace removed with the database releases its archived workspace quota unit.
+Each archived workspace removed with the database releases its soft delete quota unit.
 
 == Recovery period
 

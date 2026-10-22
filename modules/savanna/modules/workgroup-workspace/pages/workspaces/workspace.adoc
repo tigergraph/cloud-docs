@@ -60,4 +60,6 @@ Read-Only (RO) workspaces are optimized for read-intensive tasks and do not allo
 == Next Steps
 See xref:workspaces/how2-create-a-workspace.adoc[] to get started.
 
+To remove a workspace or database and keep the option to recover it, see xref:savanna:workgroup-workspace:workspaces/soft-delete.adoc[Soft delete and restore].
+
 Return to the xref:savanna:workgroup-workspace:index.adoc[] page or xref:savanna:overview:index.adoc[Overview] page for a different topic.

@@ -11,7 +11,7 @@
 ** xref:savanna:workgroup-workspace:workspaces/settings.adoc[Workspace settings]
 ** xref:savanna:workgroup-workspace:workspaces/expansion-shrink.adoc[Expand and shrink]
 ** xref:savanna:workgroup-workspace:workspaces/schedule.adoc[Schedule operations]
-** xref:savanna:workgroup-workspace:workspaces/soft-delete.adoc[Soft Delete and Restore]
+** xref:savanna:workgroup-workspace:workspaces/soft-delete.adoc[Soft delete and restore]
 ** xref:savanna:workgroup-workspace:workgroups/backup-and-restore.adoc[Back up and restore]
 ** xref:savanna:workgroup-workspace:workgroups/monitor-workspaces.adoc[Monitor workspaces]
 ** xref:savanna:workgroup-workspace:workgroups/workspace-logs.adoc[Workspace logs]

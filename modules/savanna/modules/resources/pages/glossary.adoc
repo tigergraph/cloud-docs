@@ -1,5 +1,9 @@
 = Glossary
 
+== Archived Items
+
+The location where soft-deleted workspaces and databases are listed while they remain recoverable. From Archived Items, you can restore a resource or delete it permanently.
+
 == backup
 
 A snapshot of the state of your clusters at a given point in time.
@@ -29,6 +33,10 @@ One virtual machine or virtual server.
 
 An internal TigerGraph characteristic of a TigerGraph cluster that determines how the data in the database will be distributed
 
+== permanent delete
+
+The irreversible removal of a workspace or database and its data. Unlike soft delete, permanent deletion creates no recovery period and cannot be undone. Also called hard delete.
+
 == read-only workspace
 
 A workspace where only read operations are allowed. It is optimized for read-intensive operations.
@@ -36,6 +44,10 @@ A workspace where only read operations are allowed. It is optimized for read-int
 == read-write workspace
 
 A workspace that allows read and write operations on the graph data.
+
+== recovery period
+
+The window of time during which a soft-deleted workspace or database remains in Archived Items and can be restored. Its length is set when the resource is archived, based on the organization's retention policy.
 
 == replication factor
 
@@ -49,6 +61,10 @@ Allocating more or fewer resources to existing instances, enabling a balance bet
 
 A REST server customized for TigerGraph users.
 
+== restore
+
+Returning a soft-deleted workspace or database from Archived Items to the active experience. A restored workspace returns in the Stopped state and does not start automatically.
+
 == role-based access control
 
 A policy-neutral access-control mechanism defined around roles and privileges.
@@ -56,6 +72,14 @@ A policy-neutral access-control mechanism defined around roles and privileges.
 == schema
 
 A formal description of a graph's data model.
+
+== soft delete
+
+A recoverable deletion that moves a workspace or database to Archived Items and retains it for a recovery period, instead of removing it immediately. Available on the Paid, Premium, and Enterprise tiers.
+
+== soft delete quota
+
+The maximum number of soft-deleted workspaces an organization can keep in Archived Items at the same time. Soft-deleting a workspace consumes one unit; restoring or permanently deleting an archived workspace releases one. It is separate from the active workspace quota and applies to workspaces only. Databases have no soft delete quota.
 
 == solution
 

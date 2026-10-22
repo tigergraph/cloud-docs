@@ -1,0 +1,370 @@
+= Soft delete and restore
+:experimental:
+:page-toclevels: 2
+
+Soft delete lets you recover a workspace or database after an accidental deletion.
+Instead of removing the resource immediately, Savanna moves it to *Archived Items*, where it stays recoverable for a set recovery period.
+During that period, you can restore the resource or delete it permanently.
+If you take no action, Savanna permanently deletes the resource after the recovery period ends.
+
+// Video file location: workgroup-workspace/images/Savanna_Soft_Delete.mp4
+//video::Savanna_Soft_Delete.mp4[]
+
+It applies to workspaces and databases only.
+Deleting a workgroup is always permanent.
+
+The feature is available on the Paid, Premium, and Enterprise tiers.
+On the Free tier, every deletion is permanent.
+
+== How soft delete works
+
+When you delete an eligible workspace or database on a paid tier, Savanna offers two choices:
+
+* *Move to Archived Items*: a recoverable deletion. The resource is retained and can be restored during its recovery period.
+* *Delete permanently*: an immediate, irreversible deletion.
+
+A resource you move to Archived Items is no longer active.
+It does not appear in your active workspace or database lists, it cannot be used or started, and it does not count toward your active quotas.
+It remains recoverable until you restore it, delete it permanently, or its recovery period ends.
+
+=== Soft delete compared to permanent deletion
+
+[cols="1,2,2",options="header"]
+|===
+| | Soft delete (move to Archived Items) | Permanent delete
+
+| What happens
+| The resource moves to *Archived Items*. Its configuration and data are retained, but you cannot use it until you restore it.
+| The resource and its data are removed right away.
+
+| Can you recover it?
+| Yes, until the recovery period ends.
+| No. Permanent deletion cannot be undone.
+
+| Available on
+| Paid, Premium, and Enterprise tiers.
+| All tiers. On the Free tier, every deletion is permanent.
+|===
+
+[#quotas]
+== Quotas
+
+Soft delete interacts with two separate kinds of limits for workspaces, and behaves differently for databases.
+
+[#workspace-quotas]
+=== Workspace quotas
+
+Workspaces are governed by two independent quotas:
+
+* *Active workspace quota.* The number of active workspaces your organization can run, counted separately for read-write (R/W) and read-only (R/O) workspaces. See xref:savanna:workgroup-workspace:workspaces/readwrite-readonly.adoc[Read-write and read-only].
+A workspace in the *Stopped* state still consumes active quota. Only archiving releases it.
+* *Soft delete quota.* A separate count limit for how many workspaces your organization can keep in Archived Items at the same time.
+
+The following table shows how each operation affects those quotas.
+
+[cols="2,1,1",options="header"]
+|===
+| Operation | Active R/W or R/O quota | Soft delete quota
+
+| Soft delete a workspace | Releases one unit | Consumes one unit
+| Restore a workspace | Consumes one unit (must be available) | Releases one unit
+| Permanently delete an archived workspace | No change | Releases one unit
+|===
+
+Because restoring a workspace returns it to the active experience, Savanna validates your current active R/W or R/O quota before the restore succeeds.
+If the applicable quota is full, the restore is blocked. See <<restore-a-workspace>>.
+
+Quota limits depend on your organization's current configuration, so treat the values shown in Savanna as authoritative.
+For limits by tier, see xref:savanna:resources:quota_policy.adoc[Subscription plans and quota policy].
+
+=== Database quotas
+
+Databases behave differently:
+
+* There is *no* soft delete quota for databases. You can keep any number of databases in Archived Items, and a database can move through the archive and restore lifecycle repeatedly.
+* There is *no* active database quota check on restore. Restoring a database is never blocked by a database count limit, though database and workspace dependency rules still apply.
+
+== Before you start
+
+To soft delete a workspace or database:
+
+* Your organization must be on the Paid, Premium, or Enterprise tier.
+* You must have permission to delete the resource. See xref:savanna:administration:how2-access-mgnt.adoc[Access management].
+* To soft delete a workspace, your soft delete quota must have available capacity, and the workspace must not be in the process of being created, stopped, or deleted.
+* To soft delete a database, every workspace attached to it must already be archived or terminated.
+
+== Soft delete a workspace
+
+. In Savanna, open the workgroup that contains the workspace.
+. Next to the workspace, open the actions menu (btn:[…]) and select btn:[Delete].
+. In the confirmation dialog, review the recovery period and your soft delete quota usage, then select *Move to Archived Items*.
+. Confirm the deletion.
+
+// image::soft-delete-dialog.png[Soft delete confirmation dialog]
+
+Savanna stops the workspace's compute and moves it to *Archived Items*.
+The workspace keeps its configuration and settings, releases its active R/W or R/O quota, and consumes one soft delete quota unit.
+
+[NOTE]
+====
+An archived workspace does not resume automatically.
+Traffic, schedules, auto-start, and auto-resume do not restart it.
+You must restore the workspace before you can start it again.
+====
+
+[NOTE]
+====
+An archived workspace keeps its name.
+You cannot create a new workspace with the same name in the workgroup until you restore or permanently delete the original.
+====
+
+=== When the soft delete quota is full
+
+If your soft delete quota is already full, you cannot archive another workspace.
+To continue, do one of the following:
+
+* Permanently delete an existing archived workspace to free soft delete quota.
+* Permanently delete the current workspace instead of archiving it.
+
+[#restore-a-workspace]
+== Restore a workspace
+
+You can restore a workspace from Archived Items at any time while it remains recoverable.
+
+. Open *Archived Items*.
+. Find the workspace you want to restore.
+. Click btn:[Restore] and confirm.
+
+// image::restore-workspace.png[Restore workspace dialog]
+
+The workspace returns to your active workspace list in the *Stopped* state, with its original configuration and settings.
+It does not start automatically. Start it when you are ready to use it.
+Restoring the workspace releases one soft delete quota unit and consumes one active R/W or R/O quota unit.
+
+=== Active quota is validated on restore
+
+Because a restored workspace returns to the active experience, Savanna checks your current active quota for that workspace's access type before the restore succeeds.
+If the applicable R/W or R/O quota is already full, the restore is blocked, and the workspace stays in Archived Items with its existing recovery deadline.
+
+For example, with a read-write quota of three:
+
+[,text]
+----
+R/W quota: 3 of 3 used
+Restore an archived R/W workspace  → Blocked (no R/W capacity)
+
+R/W quota: 2 of 3 used
+Restore an archived R/W workspace  → Allowed; workspace returns Stopped; R/W becomes 3 of 3
+----
+
+Stopping another workspace does not free this capacity, because a Stopped workspace still counts as active.
+To make room, restore after an active workspace is archived or permanently deleted.
+
+=== When the workspace's database is also archived
+
+Every workspace is associated with a database.
+If both the workspace and its associated database are archived, restoring the workspace restores both resources together.
+
+[,text]
+----
+Workspace-A: Archived
+Database-A:  Archived
+
+Restore Workspace-A
+→ Workspace-A becomes Active / Stopped
+→ Database-A  becomes Active
+----
+
+The active R/W or R/O quota for the workspace must still be available.
+Restoring the database alongside the workspace adds no separate database quota requirement.
+
+[#soft-delete-a-database]
+== Soft delete a database
+
+A database can be archived only when none of its attached workspaces is active.
+Every attached workspace must already be archived or terminated.
+This prevents an active workspace from being left attached to an unavailable, archived database.
+
+. In Savanna, open the workgroup that contains the database.
+. Confirm that every workspace attached to the database is archived or terminated.
+. Next to the database, open the actions menu (btn:[…]) and select btn:[Delete].
+. In the confirmation dialog, review the recovery period, then select *Move to Archived Items*.
+. Confirm the deletion.
+
+Savanna moves the database to *Archived Items* and retains its data for the recovery period.
+Archiving a database does not consume an archived-resource quota.
+
+[#restore-a-database]
+== Restore a database
+
+You can restore a database independently of its workspaces.
+
+. Open *Archived Items*.
+. Find the database you want to restore.
+. Click btn:[Restore] and confirm.
+
+// image::restore-database.png[Restore database dialog]
+
+The database returns to your active database list, and its retained data becomes available again.
+Restoring a database is not subject to an active database quota.
+
+[IMPORTANT]
+====
+Restoring a database does not restore its archived workspaces.
+Restore each workspace separately. Each workspace restore is still subject to its active R/W or R/O quota.
+====
+
+[,text]
+----
+Database-A:  Archived
+Workspace-A: Archived
+Workspace-B: Archived
+
+Restore Database-A
+→ Database-A  becomes Active
+→ Workspace-A remains Archived
+→ Workspace-B remains Archived
+----
+
+== Permanently delete a resource
+
+Soft delete is optional on a paid tier. You can permanently delete a resource directly, or permanently delete a resource that is already archived.
+
+[CAUTION]
+====
+Permanent deletion cannot be undone.
+It removes the resource's configuration and data immediately, and no recovery period is created.
+====
+
+=== Permanently delete an active resource
+
+When you delete an active workspace or database, choose *Delete permanently* in the confirmation dialog instead of *Move to Archived Items*.
+The resource is removed immediately and is not placed in Archived Items.
+
+Database and workspace dependency rules still apply.
+If a database has a workspace that is not in a deletable state, the deletion is blocked.
+Permanently deleting a workspace does not imply that its associated database is deleted.
+
+=== Permanently delete an archived resource
+
+You do not need to wait for the recovery period to end.
+
+. Open *Archived Items*.
+. Find the resource, click btn:[Delete permanently], and confirm.
+
+// image::delete-permanently.png[Delete permanently dialog]
+
+Permanently deleting an archived workspace releases its soft delete quota unit.
+The resource is removed and can no longer be restored.
+
+=== Deleting an archived database removes its archived workspaces
+
+If archived workspaces remain attached to an archived database, permanently deleting the database also permanently deletes those workspaces.
+
+[,text]
+----
+Database-A:  Archived
+├── Workspace-A: Archived
+└── Workspace-B: Archived
+
+Permanently delete Database-A
+→ Database-A, Workspace-A, and Workspace-B are all permanently deleted
+----
+
+Savanna communicates this cascade before you confirm the operation.
+Each archived workspace removed with the database releases its soft delete quota unit.
+
+== Recovery period
+
+Savanna sets the recovery period once, when the resource enters Archived Items, based on your organization's retention policy at that moment.
+Archived Items shows the exact permanent deletion date for each resource.
+
+The following recovery periods are examples. Your organization's retention policy determines the actual values, so treat the dates shown in Savanna as authoritative.
+
+[cols="1,2",options="header"]
+|===
+| Tier | Recovery period (example)
+
+| Free | Soft delete not available
+| Paid | 15 days
+| Premium | 30 days
+| Enterprise | 30 days
+|===
+
+Permanent deletion runs on a schedule, so a resource can remain in Archived Items for a short time after its permanent deletion date.
+You can still restore it during that interval, up until the scheduled process begins removing it.
+Once removal begins, the resource can no longer be restored.
+
+[NOTE]
+====
+Recovery period and quota are distinct.
+The recovery period answers _how long this specific archived resource can be recovered_, and is fixed when the resource is archived.
+Quota answers _whether an operation is allowed right now_, and is evaluated against your organization's current limits each time you archive or restore.
+====
+
+=== Recovery period and tier changes
+
+Changing your tier affects future operations only. It does not rewrite the recovery deadline of a resource that is already archived.
+
+Upgrading increases your current quotas and can lengthen the retention policy used for new archive operations, with both taking effect immediately.
+Downgrading reduces them.
+In either case, resources already in Archived Items keep the permanent deletion date they were assigned when they were archived.
+
+Consider a workspace archived on the Paid tier with a 15-day recovery period:
+
+[,text]
+----
+Oct 1   Workspace-A archived on Paid; permanent deletion date = Oct 16
+Oct 5   Organization upgrades to Enterprise (30-day retention)
+        → Workspace-A still has its Oct 16 date
+Oct 6   Workspace-B archived on Enterprise
+        → Workspace-B receives a 30-day recovery period
+----
+
+The recovery period is evaluated again only on a new archive operation.
+If you restore a resource and archive it again, Savanna calculates a fresh recovery period from the retention policy in effect at that time.
+
+==== After a downgrade to Free
+
+A Free organization can temporarily have resources in Archived Items if they were archived before the downgrade.
+Those resources keep their original recovery deadlines and are not purged early.
+
+* You can restore such a workspace, provided your current Free-tier R/W or R/O active quota has capacity.
+* After you restore it, you cannot archive it again while the organization remains on Free. You can only permanently delete it.
+
+The presence of archived resources on a Free organization does not mean the current plan allows new soft deletes.
+
+== Archived Items
+
+Archived Items lists your recoverable resources separately from active resources.
+For each item, Savanna shows:
+
+* The resource name and type
+* The date it was archived
+* Its recovery status
+* The permanent deletion date
+* A *Restore* action
+* A *Delete permanently* action
+
+Archived resources do not appear in active lists, workspace start and stop controls, database attachment flows, or day-to-day active resource counts.
+You restore or permanently delete them directly from Archived Items.
+
+== Deletion on the Free tier
+
+The Free tier does not support soft delete.
+When you delete a workspace or database on the Free tier, Savanna deletes it permanently.
+
+[WARNING]
+====
+Before you confirm a deletion on the Free tier, make sure you no longer need the resource.
+Permanent deletion cannot be undone.
+====
+
+== Related
+
+* xref:savanna:workgroup-workspace:workspaces/workspace.adoc[About workspaces]
+* xref:savanna:workgroup-workspace:workspaces/readwrite-readonly.adoc[Read-write and read-only]
+* xref:savanna:workgroup-workspace:workgroups/backup-and-restore.adoc[Back up and restore]
+* xref:savanna:resources:quota_policy.adoc[Subscription plans and quota policy]
+* xref:savanna:administration:how2-access-mgnt.adoc[Access management]
+* xref:savanna:resources:glossary.adoc[Glossary]

@@ -9,6 +9,7 @@
     "dev": "PLAYBOOK=antora-playbook.local.yml PORT=5050 gulp devHot",
     "dev:simple": "PLAYBOOK=antora-playbook.local.yml gulp",
     "endpoints:split": "node lib/split-endpoints.js",
+    "openapi": "node lib/build-openapi.js",
     "serve": "http-server build/site -c-1"
   },
   "author": "",

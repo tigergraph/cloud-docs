@@ -36,6 +36,10 @@ xref:savanna:workgroup-workspace:workgroups/backup-and-restore.adoc[Backup and r
 
 Create backup points and restore a workspace to a specific point in time.
 ¦
+xref:savanna:workgroup-workspace:workspaces/soft-delete.adoc[Soft delete and restore]
+
+Recover a workspace or database you deleted, or remove it permanently.
+¦
 xref:savanna:workgroup-workspace:workspaces/connect-via-api.adoc[Connect via APIs]
 
 Reach your graph database over REST from your own code.

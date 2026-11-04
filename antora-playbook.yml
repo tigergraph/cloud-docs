@@ -9,11 +9,8 @@ content:
       branches: HEAD
       start_paths: [modules/savanna, modules/cloud]
 
-antora:
-  extensions:
-    - ./lib/markdown-for-llm.js
-    # ./lib/llms-txt.js is kept in the repo for a later site-wide /llms.txt. Do not
-    # enable it here: this playbook only builds Savanna and Cloud Classic.
+# Markdown twins are produced by the doc-site build, which loads
+# ./libs/markdown-for-llm.js from that repo. This playbook does not.
 
 asciidoc:
   extensions:

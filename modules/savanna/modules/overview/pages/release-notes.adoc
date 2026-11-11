@@ -1,7 +1,28 @@
-= Release Notes
+= TigerGraph Savanna Release Notes
 :experimental:
-:page-role: release-notes
-:page-toclevels: 1
+//:page-aliases: change-log.adoc, release-notes.adoc
+:toc:
+:toclevels:2
+
+== Nov 2026
+=== 2026-11-11
+==== Improvements and bug fixes
+
+* Workspace Size Suggestion now requires only your raw data size to recommend a workspace size. Compression ratio and High Availability have been removed from the calculator, while High Availability remains configurable separately.
+
+* When installing a solution, workspaces that already have a solution installed are now visible but disabled, with a tooltip explaining why they cannot be selected.
+
+* The first credit card you add is now automatically set as your default payment method. You can also choose to make a new card the default when adding additional cards.
+
+* Available TigerGraph versions are now sorted, with the latest version selected by default when creating a workspace.
+
+* Fixed an issue where deleting uploaded CSV files during onboarding could prevent you from continuing after uploading another file.
+
+* Fixed the Insights enable add-on link to redirect to the correct page in Savanna instead of Cloud Classic.
+
+* Updated audit log search guidance to clarify that you can search by Username and Details.
+
+
 
 Savanna release notes and product updates.
 Stay up to date with new features, improvements, and bug fixes.

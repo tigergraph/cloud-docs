@@ -1,7 +1,8 @@
-= Release Notes
+= TigerGraph Savanna Release Notes
 :experimental:
-:page-role: release-notes
-:page-toclevels: 1
+//:page-aliases: change-log.adoc, release-notes.adoc
+:toc:
+:toclevels:2
 
 Savanna release notes and product updates.
 Stay up to date with new features, improvements, and bug fixes.
